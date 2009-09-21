@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://www.w3.org/2006/03/test-description#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:log="http://www.w3.org/2000/10/swap/log#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:test="http://www.w3.org/2006/03/test-description#">
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/9001">
+        <dc:contributor>Manu Sporny</dc:contributor>
+        <dc:title>Establishing @prefix using colon syntax</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/9001.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/9001.sparql"/>
+        <purpose>Checks to see if @prefix is properly used to establish a CURIE prefix mapping.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <specificationReference></specificationReference>
+    </TestCase>
+ 
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/9002">
+        <dc:contributor>Manu Sporny</dc:contributor>
+        <dc:title>Establishing @prefix using CSS-like syntax</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/9002.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/9002.sparql"/>
+        <purpose>Demonstrates how we could establish prefixes using a CSS-like syntax.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/9003">
+        <dc:contributor>Manu Sporny</dc:contributor>
+        <dc:title>Establishing @prefix using equal-sign syntax</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/9003.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/9003.sparql"/>
+        <purpose>Demonstrates how we could establish prefixes using a more simple '=' syntax.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/9004">
+        <dc:contributor>Manu Sporny</dc:contributor>
+        <dc:title>Establishing @prefix using space-separated syntax</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/9004.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/9004.sparql"/>
+        <purpose>This design test shows how a space-separated prefix mapping syntax could work.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/9005">
+        <dc:contributor>Manu Sporny</dc:contributor>
+        <dc:title>@prefix can be used on any element</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/9005.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/9005.sparql"/>
+        <purpose>This design test shows that the prefix attribute may be used on any element.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/9006">
+        <dc:contributor>Manu Sporny</dc:contributor>
+        <dc:title>Use of @prefix in HTML4</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/9006.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/9006.sparql"/>
+        <purpose>This design test shows that the prefix attribute can be used in HTML 4.01.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/9007">
+        <dc:contributor>Manu Sporny</dc:contributor>
+        <dc:title>@profile attribute can be used to import prefixes and references</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/9007.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/9007.sparql"/>
+        <purpose>Demonstrates that the profile attribute can be used to import prefixes and references when used with a RDFa parser that understands how to import prefixes.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+</rdf:RDF>

@@ -1,0 +1,13 @@
+         xmlns:ex="http://www.example.com/"
+   <head>
+     <title>Test 0115</title>
+   </head>
+   <body>
+      <p>Description: XML entities in the RDFa content</p>
+      <p>
+        <span property="ex:entity">&lt;string&gt;</span>
+        <span property="ex:entity">Ben &amp; Co.</span>
+        <span property="ex:entity">&#x40;</span>
+        <span property="ex:entity">&#64;</span>
+      </p>
+   </body>

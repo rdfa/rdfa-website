@@ -1,0 +1,9 @@
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+   <head>
+      <title>Test 0069</title>
+   </head>
+   <body>
+      <p>The next test will be
+         <a about="" rel="next" href="0070.xhtml">Test 0070</a>.
+      </p>
+   </body>

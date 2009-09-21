@@ -1,0 +1,2 @@
+AddHandler mod_python .py
+PythonHandler crazyivan

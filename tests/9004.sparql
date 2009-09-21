@@ -1,0 +1,17 @@
+ASK WHERE {
+<http://www.blogtalkradio.com/716radio/2007/06/12/rancid#podcast>
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+      <http://purl.org/media/audio#Recording> .
+
+<http://www.blogtalkradio.com/716radio/2007/06/12/rancid#podcast>
+   <http://purl.org/media#download>
+      <http://www.blogtalkradio.com/716radio/2007/06/12/rancid.mp3> .
+
+<http://www.blogtalkradio.com/716radio/2007/06/12/rancid#podcast>
+   <http://purl.org/dc/terms/contributor>
+      "Tim Armstrong" .
+
+<http://www.blogtalkradio.com/716radio/2007/06/12/rancid#podcast>
+   <http://purl.org/dc/terms/published>
+      "2007-01-11"^^http://www.w3.org/2001/XMLSchema#date .
+}

@@ -1,0 +1,14 @@
+      xmlns:target="http://www.example.org#"
+      xmlns:test="http://www.example.org/lower#"
+      xmlns:TEST="http://www.example.org/upper#"
+      xmlns:TeSt="http://www.example.org/mixed#"
+  <head>
+    <title>Test 0123</title>
+  </head>
+  <body>
+        <div about="[target:sub]">
+                <p rel="test:one" resource="[target:lower]">lower case</p>
+                <p rel="TEST:two" resource="[target:UPPER]">UPPER CASE</p>
+                <p rel="TeSt:three" resource="[target:MiXeD]">Mixed Case</p>
+        </div>
+  </body>

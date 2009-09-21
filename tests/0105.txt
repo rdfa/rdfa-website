@@ -1,0 +1,9 @@
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+  <head>
+	<title>Test 0105</title>
+  </head>
+  <body>
+  	  <div about="" rel="dc:creator">
+         <a rel="myfoobarrel" href="ben.html">Ben</a> created this page.
+      </div>
+  </body>

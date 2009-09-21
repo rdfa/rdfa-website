@@ -1,0 +1,15 @@
+ASK WHERE {
+?a 
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 
+      <http://microformats.org/profiles/hcard#vcard> .
+?a 
+   <http://microformats.org/profiles/hcard#fn> 
+      "Shane McCarron" .
+?b 
+   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 
+      <http://microformats.org/profiles/hcard#vcard> .
+?b 
+   <http://microformats.org/profiles/hcard#fn> 
+      "Mark Birbeck" .
+FILTER (ISBLANK(?a) && ISBLANK(?b))
+}

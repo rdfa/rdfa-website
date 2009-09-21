@@ -1,0 +1,12 @@
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ <head profile="http://www.w3.org/1999/xhtml/vocab">
+      <title>Test 0090</title>
+   </head>
+   <body>
+      <div>
+      	<img	src="http://example.org/example.png"  
+				rel="license"
+           		href="http://creativecommons.org/licenses/by-nc-sa/2.0/"
+				alt="example image" />
+      </div>
+   </body>

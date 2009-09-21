@@ -1,0 +1,11 @@
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+  <head>
+	<title>Test 0022</title>
+  </head>
+  <body>
+    <div id="photo1">
+        This photo was taken by <meta property="dc:creator">Mark Birbeck</meta>.
+    </div>
+  </body>
+
+
