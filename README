@@ -1,0 +1,43 @@
+Introduction
+------------
+
+The RDFa Test Suite is a set of webservices, markup and tests that can 
+be used to verify RDFa Processor conformance. The goal of the suite is
+to provide an easy and comprehensive RDFa testing solution for developers. 
+
+Design
+------
+
+The RDFa Test suite allows developers to mix and match RDFa test manifests, 
+RDFa processor endpoints and SPARQL endpoints. Processing happens in the
+following order:
+
+RDFa Test Manifest -> RDFa Test Suite -> RDFa processor -> SPARQL endpoint
+
+The RDFa Test Suite drives the entire process. The first step is to
+retrieve the list of tests that should be run for a particular manifest.
+Then the RDFa test suite uses the processor that was selected to
+extract the triples and send those triples, along with what triples are
+expected (via a SPARQL query) to the SPARQL endpoint. The end result is a
+yes/no on whether the expected triples were extracted by the RDFa processor.
+
+Running the Test Suite
+----------------------
+
+You can view this test suite at the following URL:
+
+http://rdfa.digitalbazaar.com/test-suite/
+
+Contributing
+------------
+
+If you would like to contribute a new test or a fix to an existing test,
+please follow these steps:
+
+1. Notify the RDFa mailing list, public-rdf-in-xhtml-tf-request@w3.org, 
+   that you will be creating a new test or fix and the purpose of the
+   change.
+2. Clone the git repository: git@github.com:msporny/rdfa-test-suite.git
+3. Make your changes and submit them via github, or via a 'git format-patch'
+   to Manu Sporny <msporny@digitalbazaar.com> or to the RDFa mailing list.
+
