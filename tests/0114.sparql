@@ -1,5 +1,5 @@
 ASK WHERE {
-	<http://rdfa.digitalbazaar.com/test-suite/test-cases/0114.xhtml> <http://www.w3.org/1999/xhtml/vocab#up> <http://rdfa.digitalbazaar.com/test-suite/xhtml-manifest.rdf> .
-	<http://rdfa.digitalbazaar.com/test-suite/test-cases/0114.xhtml> <http://www.w3.org/1999/xhtml/vocab#prev> <http://rdfa.digitalbazaar.com/test-suite/test-cases/0113.xhtml> .
-	<http://rdfa.digitalbazaar.com/test-suite/test-cases/0114.xhtml> <http://creativecommons.org/ns#attributionURL> <http://rdfa.digitalbazaar.com/> .
+	<$TCPATH/0114.xhtml> <http://www.w3.org/1999/xhtml/vocab#up> <http://rdfa.digitalbazaar.com/test-suite/xhtml-manifest.rdf> .
+	<$TCPATH/0114.xhtml> <http://www.w3.org/1999/xhtml/vocab#prev> <$TCPATH/0113.xhtml> .
+	<$TCPATH/0114.xhtml> <http://creativecommons.org/ns#attributionURL> <http://rdfa.digitalbazaar.com/> .
 }

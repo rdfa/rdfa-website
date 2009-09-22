@@ -1,4 +1,4 @@
 ASK WHERE {
-	<http://rdfa.digitalbazaar.com/test-suite/test-cases/0015.xhtml> <http://purl.org/dc/elements/1.1/creator> "Fyodor Dostoevsky" .
-	<http://rdfa.digitalbazaar.com/test-suite/test-cases/0015.xhtml> <http://purl.org/dc/elements/1.1/source> <urn:isbn:0140449132> .
+	<$TCPATH/0015.xhtml> <http://purl.org/dc/elements/1.1/creator> "Fyodor Dostoevsky" .
+	<$TCPATH/0015.xhtml> <http://purl.org/dc/elements/1.1/source> <urn:isbn:0140449132> .
 }

@@ -1,6 +1,6 @@
    <head>
       <title>Test 0061</title>
-      <link rel="next" href="http://rdfa.digitalbazaar.com/test-suite/test-cases/0062.xhtml" />
+      <link rel="next" href="$TCPATH/0062.xhtml" />
    </head>
    <body>
       <p>This is the first chapter in a series of chapters.</p>

@@ -1,14 +1,14 @@
 ASK WHERE {
-<http://rdfa.digitalbazaar.com/test-suite/test-cases/0115.xhtml>
+<$TCPATH/0115.xhtml>
    <http://www.example.com/entity>
       "<string>" .
-<http://rdfa.digitalbazaar.com/test-suite/test-cases/0115.xhtml>
+<$TCPATH/0115.xhtml>
    <http://www.example.com/entity>
       "Ben & Co." .
-<http://rdfa.digitalbazaar.com/test-suite/test-cases/0115.xhtml>
+<$TCPATH/0115.xhtml>
    <http://www.example.com/entity>
       "@" .
-<http://rdfa.digitalbazaar.com/test-suite/test-cases/0115.xhtml>
+<$TCPATH/0115.xhtml>
    <http://www.example.com/entity>
       "@" .
 }

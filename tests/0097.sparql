@@ -1,6 +1,6 @@
 # This test should result in a 'NO', i.e. no triples should be generated from the XHTML+RDFa input document.
 ASK WHERE { 
-	<http://rdfa.digitalbazaar.com/test-suite/test-cases/0097.xhtml> <http://xmlns.com/foaf/0.1/knows> _:a .
+	<$TCPATH/0097.xhtml> <http://xmlns.com/foaf/0.1/knows> _:a .
 	_:a <http://xmlns.com/foaf/0.1/knows> _:b .
 	_:b <http://xmlns.com/foaf/0.1/knows> _:c .
 	_:c <http://xmlns.com/foaf/0.1/name> "Ivan Herman" .

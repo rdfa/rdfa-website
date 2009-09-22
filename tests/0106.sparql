@@ -1,7 +1,7 @@
 ASK WHERE {
- <http://rdfa.digitalbazaar.com/test-suite/test-cases/0106.xhtml> <http://purl.org/dc/elements/1.1/creator>  ?a .
+ <$TCPATH/0106.xhtml> <http://purl.org/dc/elements/1.1/creator>  ?a .
  OPTIONAL {
-   ?x ?y <http://rdfa.digitalbazaar.com/test-suite/test-cases/manu.html> .
+   ?x ?y <$TCPATH/manu.html> .
  }
  FILTER (ISBLANK(?a) && !BOUND(?x) && !BOUND(?y))
 }

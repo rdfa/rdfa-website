@@ -1,3 +1,3 @@
 ASK WHERE {
-	<http://rdfa.digitalbazaar.com/test-suite/test-cases/0063.xhtml> <http://www.w3.org/1999/xhtml/vocab#prev> <http://rdfa.digitalbazaar.com/test-suite/test-cases/0062.xhtml> .
+	<$TCPATH/0063.xhtml> <http://www.w3.org/1999/xhtml/vocab#prev> <$TCPATH/0062.xhtml> .
 }
