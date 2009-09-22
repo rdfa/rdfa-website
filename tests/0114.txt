@@ -3,8 +3,9 @@
     <title>Test 0114</title>
   </head>
   <body>
-  	<div>
-     <a rel="up" href="../..">Test Suite</a>
-     <a rel="cc:attributionURL" href="../../../../../../../../../../../">W3C/Digital Bazaar</a>
-	</div>
+    <div>
+      <a rel="next" href="0115.xhtml">Test Case 0115</a>
+      <a rel="up" href="../../index.html">Test Cases</a>
+      <a rel="cc:attributionURL" href="../../../">W3C/Digital Bazaar</a>
+    </div>
   </body>

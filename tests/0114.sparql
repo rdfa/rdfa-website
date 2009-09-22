@@ -1,4 +1,5 @@
 ASK WHERE {
-	<$TCPATH/0114.xhtml> <http://www.w3.org/1999/xhtml/vocab#up> <http://rdfa.digitalbazaar.com/test-suite> .
-	<$TCPATH/0114.xhtml> <http://creativecommons.org/ns#attributionURL> <http://rdfa.digitalbazaar.com/> .
+   <$TCPATH/0114.xhtml> <http://www.w3.org/1999/xhtml/vocab#next> <$TCPATH/0115.xhtml> .
+   <$TCPATH/0114.xhtml> <http://www.w3.org/1999/xhtml/vocab#up> <http://rdfa.digitalbazaar.com/test-suite/index.html> .
+   <$TCPATH/0114.xhtml> <http://creativecommons.org/ns#attributionURL> <http://rdfa.digitalbazaar.com/> .
 }
