@@ -11,6 +11,8 @@ from rdflib.Graph import Graph
 import xml.sax.saxutils
 from mod_python import apache
 
+BASE_TEST_CASE_URL = "http://rdfa.digitalbazaar.com/test-suite/test-cases/"
+
 ##
 # Retrieves all of the test cases from the given test suite manifest URL and
 # filters the RDF using the given status filter.
@@ -137,7 +139,7 @@ def writeTestCaseRetrievalError(req, tc):
 #
 # Writes the test case alternatives for the given URL
 def writeTestCaseAlternatives(req, arguments):
-    fullUrl = req.parsed_uri[-3]
+    filename = arguments.split("/")[-1]
     req.write("""<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd"> 
 <html version="XHTML+RDFa 1.0" xmlns="http://www.w3.org/1999/xhtml"
@@ -153,22 +155,26 @@ def writeTestCaseAlternatives(req, arguments):
    <p>
       The following documents are associated with this test case:
       <ul>
-         <li><a href="%s.xhtml?version=xhtml1">XHTML 1.1</li>
-         <li><a href="%s.html?version=html4">HTML4</li>
-         <li><a href="%s.html?version=html5">HTML5</li>
-         <li><a href="%s.sparql?version=xhtml1">SPARQL for XHTML 1.1</li>
-         <li><a href="%s.sparql?version=html4">SPARQL for HTML4</li>
-         <li><a href="%s.sparql?version=html5">SPARQL for HTML5</li>
+         <li><a href="%sxhtml1/%s.xhtml">XHTML 1.1</li>
+         <li><a href="%shtml4/%s.html">HTML4</li>
+         <li><a href="%shtml5/%s.html">HTML5</li>
+         <li><a href="%sxhtml1/%s.sparql">SPARQL for XHTML 1.1</li>
+         <li><a href="%shtml4/%s.sparql">SPARQL for HTML4</li>
+         <li><a href="%shtml5/%s.sparql">SPARQL for HTML5</li>
       </ul>
    </p>
    </body>
-</html>""" % (fullUrl, fullUrl, fullUrl, fullUrl,fullUrl, fullUrl))
+</html>""" % (BASE_TEST_CASE_URL, filename, BASE_TEST_CASE_URL, filename, 
+              BASE_TEST_CASE_URL, filename, BASE_TEST_CASE_URL, filename,
+              BASE_TEST_CASE_URL, filename, BASE_TEST_CASE_URL, filename))
 
 ##
 # Writes a test case document for the given URL.
-def writeTestCaseDocument(req, document, args):
+def writeTestCaseDocument(req, path):
     validDocument = True
 
+    version = path[-2]
+    document = path[-1]
     namespaces = ""
     body = ""
 
@@ -206,31 +212,31 @@ def writeTestCaseDocument(req, document, args):
     # Trim up the namespaces string
     namespaces = namespaces[:-1]
 
-    # Create the regular expression to rewrite .xhtml to .xhtml
+    # Create the regular expression to rewrite the contents of the XHTML and
+    # SPARQL files
+    tcpath = BASE_TEST_CASE_URL + version
     htmlre = re.compile("([0-9]{4,4})\.xhtml")
+    tcpathre = re.compile("\$TCPATH")
 
-    if(document.endswith(".xhtml") and args.has_key("version") and
-        args["version"] == "xhtml1"):
+    if(document.endswith(".xhtml") and version == "xhtml1"):
         req.content_type = "application/xhtml+xml"
         req.write("""<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.0" 
 %s>\n""" % (namespaces,))
-        req.write(body)
+        req.write(tcpathre.sub(tcpath, body))
         req.write("</html>")
-    elif(document.endswith(".html") and args.has_key("version") and
-         args["version"] == "html4"):
+    elif(document.endswith(".html") and version == "html4"):
         req.content_type = "text/html"
         req.write("""<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">\n""")
         req.write("""<html version="XHTML+RDFa 1.0"
  %s>\n""" % (namespaces,))
 
         # Rename all of the test case .xhtml files to .html
-        req.write(htmlre.sub("\\1.html", body))
+        req.write(tcpathre.sub(tcpath, htmlre.sub("\\1.html", body)))
 
         req.write("</html>")
-    elif(document.endswith(".html") and args.has_key("version") and
-         args["version"] == "html5"):
+    elif(document.endswith(".html") and version == "html5"):
         req.content_type = "text/html"
         if(len(namespaces) > 0):
             req.write("""<html 
@@ -239,16 +245,16 @@ def writeTestCaseDocument(req, document, args):
             req.write("""<html version="HTML+RDFa 1.0">\n""")
 
         # Rename all of the test case .xhtml files to .html
-        req.write(htmlre.sub("\\1.html", body))
+        req.write(tcpathre.sub(tcpath, htmlre.sub("\\1.html", body)))
         req.write("</html>")
-    elif(document.endswith(".sparql") and args.has_key("version")):
+    elif(document.endswith(".sparql")):
         req.content_type = "application/sparql-query"
 
-        if(args["version"] != "xhtml1"):
+        if(version != "xhtml1"):
             # Rename all of the test case .xhtml files to .html
-            req.write(htmlre.sub("\\1.html", body))
+            req.write(tcpathre.sub(tcpath, htmlre.sub("\\1.html", body)))
         else:
-            req.write(body)
+            req.write(tcpathre.sub(tcpath, body))
     else:
         req.status = apache.HTTP_NOT_FOUND
 
@@ -280,7 +286,7 @@ def writeUnitTestHtml(req, test):
      | 
     <a href=\"javascript:hideUnitTestDetails(%i)\">hide details</a>
      |
-    <a href=\"http://rdfa.digitalbazaar.com/test-suite/test-cases/%s\">xhtml/sparql</a>
+    <a href=\"http://rdfa.digitalbazaar.com/test-suite/test-cases/%s\">source</a>
     </span>
     ]<div style=\"margin-left: 50px\" id=\"unit-test-details-%i\">
     </div>
@@ -385,14 +391,16 @@ def handler(req):
     if(service.startswith("/test-suite/test-cases")):
         req.content_type = 'text/html'
         document = service.replace("/test-suite/test-cases", "").split("/")
-        if(len(document) == 1):
-            writeTestCaseRetrievalError(req, document)
-        elif(len(document) == 2):
+        if(len(document) <= 2):
+            writeTestCaseRetrievalError(req, document[-1])
+        elif(len(document) == 3):
             if(service.endswith(".xhtml") or service.endswith(".html") or
                service.endswith(".sparql")):
-                writeTestCaseDocument(req, document[-1], args)
+                writeTestCaseDocument(req, document)
             else:
                 writeTestCaseAlternatives(req, document[-1])
+        else:
+            req.write("ERROR DOCUMENT:" + str(document))
     elif(service == "/test-suite/retrieve-tests"):
         req.content_type = 'text/html'
 
