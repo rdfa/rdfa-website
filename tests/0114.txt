@@ -4,8 +4,7 @@
   </head>
   <body>
   	<div>
-     <a rel="up" href="../xhtml-manifest.rdf">Manifest</a>
-     <a rel="prev" href="../test-cases/0113.xhtml">Previous Test Case</a>
-     <a rel="cc:attributionURL" href="../../../../../../../../../../">W3C/Digital Bazaar</a>
+     <a rel="up" href="../..">Test Suite</a>
+     <a rel="cc:attributionURL" href="../../../../../../../../../../../">W3C/Digital Bazaar</a>
 	</div>
   </body>
