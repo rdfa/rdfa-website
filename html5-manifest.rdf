@@ -8,1190 +8,1190 @@
  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
  xmlns:test="http://www.w3.org/2006/03/test-description#">
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0001">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0001">
         <dc:contributor>Elias Torres</dc:contributor>
         <dc:title>Predicate establishment with @property</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0001.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0001.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0001.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0001.sparql"/>
         <purpose>Tests @property to establish the predicate; literal object is in the content of the element.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
  
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0002">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0002">
         <dc:contributor>Elias Torres</dc:contributor>
         <dc:title>meta/@property</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0002.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0002.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0002.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0002.sparql"/>
         <purpose>Tests meta/@property to establish the predicate; subject comes from the parent's @about.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#rejected"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0003">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0003">
         <dc:contributor>Elias Torres</dc:contributor>
         <dc:title>meta/@property, no @about in parent</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0003.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0003.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0003.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0003.sparql"/>
         <purpose>Tests meta/@property to establish the predicate; subject will be a blank node.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#rejected"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0004">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0004">
         <dc:contributor>Elias Torres</dc:contributor>
         <dc:title>@xml:base</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0004.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0004.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0004.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0004.sparql"/>
         <purpose>Tests explicitly setting @xml:base.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#rejected"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0005">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0005">
         <dc:contributor>Elias Torres</dc:contributor>
         <dc:title>CURIEs</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0005.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0005.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0005.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0005.sparql"/>
         <purpose>Tests CURIE parsing.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#rejected"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0006">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0006">
         <dc:contributor>Elias Torres</dc:contributor>
         <dc:title>@rel and @rev</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0006.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0006.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0006.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0006.sparql"/>
         <purpose>Tests @rev and @rel together, with the object being specified by @href, ignoring content</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0007">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0007">
         <dc:contributor>Elias Torres</dc:contributor>
         <dc:title>@rel, @rev, @property, @content</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0007.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0007.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0007.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0007.sparql"/>
         <purpose>Tests @rel, @rev, @property, and @content together to generate several RDF triples.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0008">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0008">
         <dc:contributor>Elias Torres</dc:contributor>
         <dc:title>empty string @about</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0008.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0008.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0008.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0008.sparql"/>
         <purpose>Tests empty @about.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0009">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0009">
         <dc:contributor>Elias Torres</dc:contributor>
         <dc:title>@rev</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0009.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0009.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0009.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0009.sparql"/>
         <purpose>Tests @rev.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0010">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0010">
         <dc:contributor>Elias Torres</dc:contributor>
         <dc:title>@rel, @rev, @href</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0010.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0010.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0010.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0010.sparql"/>
         <purpose>Tests @rel, @rev, and @href to generate two RDF triples.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0011">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0011">
         <dc:contributor>Elias Torres</dc:contributor>
         <dc:title>XMLLiteral</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0011.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0011.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0011.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0011.sparql"/>
         <purpose>Tests XMLLiteral content</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0012">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0012">
         <dc:contributor>Elias Torres</dc:contributor>
         <dc:title>@xml:lang</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0012.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0012.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0012.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0012.sparql"/>
         <purpose>Tests @xml:lang</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0013">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0013">
         <dc:contributor>Elias Torres</dc:contributor>
         <dc:title>@xml:lang inheritance</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0013.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0013.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0013.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0013.sparql"/>
         <purpose>Tests @xml:lang inheritance</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0014">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0014">
         <dc:contributor>Elias Torres</dc:contributor>
         <dc:title>@datatype, xsd:integer</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0014.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0014.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0014.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0014.sparql"/>
         <purpose>Tests setting the @datatype to xsd:integer</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0015">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0015">
         <dc:contributor>Elias Torres</dc:contributor>
         <dc:title>meta and link</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0015.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0015.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0015.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0015.sparql"/>
         <purpose>Tests meta and link with no parent @about</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0016">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0016">
         <dc:contributor>Elias Torres</dc:contributor>
         <dc:title>Blank node, explicit</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0016.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0016.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0016.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0016.sparql"/>
         <purpose>Tests setting @about to an explicit blanknode _:a.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#rejected"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0017">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0017">
         <dc:contributor>Elias Torres</dc:contributor>
         <dc:title>Related blanknodes</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0017.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0017.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0017.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0017.sparql"/>
         <purpose>Tests creation of statements involving explicitly created blank nodes.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0018">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0018">
         <dc:contributor>Wing Yung</dc:contributor>
         <dc:title>@rel for predicate</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0018.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0018.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0018.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0018.sparql"/>
         <purpose>Tests @rel to establish predicate.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0019">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0019">
         <dc:contributor>Wing Yung</dc:contributor>
         <dc:title>@about for subject</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0019.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0019.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0019.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0019.sparql"/>
         <purpose>Tests @about to establish subject.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0020">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0020">
         <dc:contributor>Wing Yung</dc:contributor>
         <dc:title>Inheriting @about for subject</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0020.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0020.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0020.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0020.sparql"/>
         <purpose>Tests @about inheritance to establish subject.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0021">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0021">
         <dc:contributor>Wing Yung</dc:contributor>
         <dc:title>Subject inheritance with no @about</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0021.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0021.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0021.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0021.sparql"/>
         <purpose>Tests inheritance of subject when no @about can be found</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0022">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0022">
         <dc:contributor>Wing Yung</dc:contributor>
         <dc:title>meta with parent @id</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0022.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0022.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0022.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0022.sparql"/>
         <purpose>Tests getting subject from parent @id</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#rejected"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0023">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0023">
         <dc:contributor>Wing Yung</dc:contributor>
         <dc:title>@id does not generate subjects</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0023.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0023.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0023.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0023.sparql"/>
         <purpose>Tests that @id does not generate subjects</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0024">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0024">
         <dc:contributor>Wing Yung</dc:contributor>
         <dc:title>Ignore @id for non-meta and non-link</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0024.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0024.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0024.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0024.sparql"/>
         <purpose>Tests igoring @id for non-meta and non-link tag</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#rejected"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0025">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0025">
         <dc:contributor>Ben Adida</dc:contributor>
         <dc:title>simple chaining test</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0025.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0025.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0025.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0025.sparql"/>
         <purpose>Tests simple chaining with cascade of @resource and @property</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0026">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0026">
         <dc:contributor>Wing Yung</dc:contributor>
         <dc:title>@content</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0026.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0026.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0026.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0026.sparql"/>
         <purpose>Tests @content for literal object</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0027">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0027">
         <dc:contributor>Wing Yung</dc:contributor>
         <dc:title>@content, ignore element content</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0027.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0027.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0027.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0027.sparql"/>
         <purpose>Tests @content for literal object, overriding element content.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0028">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0028">
         <dc:contributor>Wing Yung</dc:contributor>
         <dc:title>@xml:lang and @datatype</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0028.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0028.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0028.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0028.sparql"/>
         <purpose>Tests @xml:lang and @datatype.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#rejected"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0029">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0029">
         <dc:contributor>Michael Hausenblas</dc:contributor>
         <dc:title>markup stripping with @datatype</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0029.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0029.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0029.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0029.sparql"/>
         <purpose>Tests markup stripping from a span element with @datatype=xsd:string</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0030">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0030">
         <dc:contributor>Michael Hausenblas</dc:contributor>
         <dc:title>omitted @about</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0030.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0030.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0030.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0030.sparql"/>
         <purpose>Tests omitted @about.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
   
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0031">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0031">
         <dc:contributor>Ralph Swick</dc:contributor>
         <dc:title>simple @resource</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0031.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0031.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0031.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0031.sparql"/>
         <purpose>Tests if @resource sets URIref object correct.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>  
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0032">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0032">
         <dc:contributor>Ralph Swick</dc:contributor>
         <dc:title>@resource overrides @href</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0032.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0032.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0032.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0032.sparql"/>
         <purpose>Tests if @resource overrides @href to set the URIref object.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>   
     
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0033">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0033">
         <dc:contributor>Michael Hausenblas</dc:contributor>
         <dc:title>simple chaining test with bNode</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0033.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0033.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0033.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0033.sparql"/>
         <purpose>Tests simple chaining with cascade of bNode and @property</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
     
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0034">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0034">
         <dc:contributor>Michael Hausenblas</dc:contributor>
         <dc:title>simple img[@src] test</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0034.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0034.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0034.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0034.sparql"/>
         <purpose>Tests if a @src (in img element) correctly sets the URIref object</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
     
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0035">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0035">
         <dc:contributor>Michael Hausenblas</dc:contributor>
         <dc:title>@src/@href test</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0035.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0035.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0035.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0035.sparql"/>
         <purpose>Tests if @href overwrites @src</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>    
     
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0036">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0036">
         <dc:contributor>Michael Hausenblas</dc:contributor>
         <dc:title>@src/@resource test</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0036.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0036.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0036.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0036.sparql"/>
         <purpose>Tests if @resource overwrites @src</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>    
     
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0037">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0037">
         <dc:contributor>Steven Pemberton</dc:contributor>
         <dc:title>@src/@href/@resource test</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0037.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0037.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0037.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0037.sparql"/>
         <purpose>Tests if @resource overwrites both @href and @src</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
     
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0038">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0038">
         <dc:contributor>Mark Birbeck</dc:contributor>
         <dc:title>@rev - img[@src] test</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0038.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0038.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0038.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0038.sparql"/>
         <purpose>Tests if a @src (in img element) correctly sets the URIref subject (due to @rev)</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
     
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0039">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0039">
         <dc:contributor>Mark Birbeck</dc:contributor>
         <dc:title>@rev - @src/@href test</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0039.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0039.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0039.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0039.sparql"/>
         <purpose>Tests if @href overwrites @src correctly to set the URIref subject (due to @rev)</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
     
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0040">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0040">
         <dc:contributor>Mark Birbeck</dc:contributor>
         <dc:title>@rev - @src/@resource test</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0040.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0040.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0040.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0040.sparql"/>
         <purpose>Tests if @resource overwrites @src correctly to set the URIref subject (due to @rev)</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>    
     
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0041">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0041">
         <dc:contributor>Mark Birbeck</dc:contributor>
         <dc:title>@rev - @src/@href/@resource test</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0041.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0041.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0041.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0041.sparql"/>
         <purpose>Tests if @resource overwrites both @href and @src correctly to set the URIref subject (due to @rev)</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>  
     
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0042">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0042">
         <dc:contributor>Ben Adida</dc:contributor>
         <dc:title>img[@src] test with omitted @about</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0042.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0042.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0042.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0042.sparql"/>
         <purpose>Tests if a @src (in img element) correctly sets the URIref object (with omitted @about)</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
   <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0043">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0043">
         <dc:contributor>Ben Adida</dc:contributor>
         <dc:title>@src/@href test with omitted @about</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0043.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0043.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0043.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0043.sparql"/>
         <purpose>Tests if @href overwrites @src (with omitted @about)</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#rejected"/>
         <specificationReference></specificationReference>
     </TestCase> 
     
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0044">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0044">
         <dc:contributor>Ben Adida</dc:contributor>
         <dc:title>@src/@resource test with omitted @about</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0044.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0044.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0044.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0044.sparql"/>
         <purpose>Tests if @resource overwrites @src (with omitted @about)</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#rejected"/>
         <specificationReference></specificationReference>
     </TestCase>  
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0045">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0045">
         <dc:contributor>Ben Adida</dc:contributor>
         <dc:title>@src/@href/@resource test with omitted @about</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0045.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0045.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0045.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0045.sparql"/>
         <purpose>Tests if @resource overwrites both @href and @src (with omitted @about)</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#rejected"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0046">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0046">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>@typeof with @rel present, no @href, @resource, or @about</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0046.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0046.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0046.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0046.sparql"/>
         <purpose>Tests @typeof with @rel present, no @href, @resource, or @about</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
                                
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0047">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0047">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>@typeof with @rel and @resource present, no @about</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0047.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0047.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0047.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0047.sparql"/>
         <purpose>Tests @typeof with @rel and @resource present, no @about</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0048">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0048">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>@typeof with @about and @rel present, no @resource</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0048.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0048.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0048.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0048.sparql"/>
         <purpose>Tests @typeof with @about and @rel present, no @resource</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>           
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0049">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0049">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>@typeof with @about, no @rel or @resource</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0049.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0049.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0049.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0049.sparql"/>
         <purpose>Tests @typeof with @about, no @rel or @resource</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0050">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0050">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>@typeof without anything else</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0050.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0050.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0050.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0050.sparql"/>
         <purpose>Tests @typeof without anything else</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0051">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0051">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>@typeof with a single @property</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0051.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0051.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0051.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0051.sparql"/>
         <purpose>Tests @typeof with a single @property</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
  
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0052">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0052">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>@typeof with @resource and nothing else</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0052.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0052.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0052.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0052.sparql"/>
         <purpose>Tests to ensure that @typeof does not apply to @resource</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0053">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0053">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>@typeof with @resource and nothing else, with a subelement</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0053.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0053.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0053.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0053.sparql"/>
         <purpose>Tests to make sure that @typeof does not apply to @resource, but @resource sets the subject for the next triple to be generated</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0054">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0054">
         <dc:contributor>Fabien Gandon</dc:contributor>
         <dc:title>multiple @property</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0054.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0054.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0054.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0054.sparql"/>
         <purpose>Tests multiple @property separated by white spaces</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0055">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0055">
         <dc:contributor>Fabien Gandon</dc:contributor>
         <dc:title>multiple @rel</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0055.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0055.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0055.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0055.sparql"/>
         <purpose>Tests multiple @rel separated by white spaces</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0056">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0056">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>@typeof applies to @about on same element with hanging rel</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0056.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0056.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0056.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0056.sparql"/>
         <purpose>Tests if @typeof applies to @about on same element with hanging @rel</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0057">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0057">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>hanging @rel creates multiple triples</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0057.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0057.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0057.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0057.sparql"/>
         <purpose>Tests if hanging @rel creates multiple triples</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0058">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0058">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>hanging @rel creates multiple triples, @typeof permutation</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0058.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0058.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0058.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0058.sparql"/>
         <purpose>Tests if hanging @rel creates multiple triples with @typeof permutation</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0059">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0059">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>multiple hanging @rels with multiple children</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0059.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0059.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0059.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0059.sparql"/>
         <purpose>Tests multiple hanging @rels with multiple children</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0060">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0060">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>UTF-8 conformance</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0060.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0060.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0060.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0060.sparql"/>
         <purpose>Tests conformance with UTF-8 encoding</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0061">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0061">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>@rel in head using reserved, non-prefixed XHTML value</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0061.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0061.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0061.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0061.sparql"/>
         <purpose>Tests @rel in head using reserved, non-prefixed XHTML value</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0062">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0062">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>@rev in head using reserved, non-prefixed XHTML value</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0062.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0062.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0062.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0062.sparql"/>
         <purpose>Tests @rev in head using reserved, non-prefixed XHTML value</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0063">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0063">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>@rel in head using reserved XHTML value and empty-prefix CURIE syntax</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0063.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0063.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0063.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0063.sparql"/>
         <purpose>Tests @rel in head using reserved XHTML value and empty-prefix CURIE syntax</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0064">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0064">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>@about with safe CURIE</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0064.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0064.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0064.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0064.sparql"/>
         <purpose>Tests if @about generates a proper triple when a safe CURIE is used</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0065">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0065">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>@rel with safe CURIE</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0065.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0065.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0065.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0065.sparql"/>
         <purpose>Tests if @rel properly connects triples generated when safe CURIEs are used</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0066">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0066">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>@about with @typeof in the head</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0066.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0066.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0066.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0066.sparql"/>
         <purpose>Test to make sure that @about (with current document) is implied in the head, and the proper triples are generated using @typeof</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0067">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0067">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>@property in the head</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0067.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0067.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0067.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0067.sparql"/>
         <purpose>Test to make sure that @property in head uses the implied current document as the subject if no other subject is specified</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0068">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0068">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>Relative URI in @about</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0068.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0068.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0068.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0068.sparql"/>
         <purpose>Tests to ensure that relative URI is resolved correctly when used in @about</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0069">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0069">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>Relative URI in @href</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0069.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0069.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0069.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0069.sparql"/>
         <purpose>Tests to ensure that relative URI is resolved correctly when used in @href</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0070">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0070">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>Relative URI in @resource</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0070.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0070.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0070.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0070.sparql"/>
         <purpose>Tests to ensure that relative URI is resolved correctly when used in @resource</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0071">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0071">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>No explicit @about</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0071.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0071.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0071.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0071.sparql"/>
         <purpose>Tests to ensure that a triple is generated even if @typeof and @about is not specified anywhere in the document</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0072">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0072">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>Relative URI in @about (with XHTML base in head)</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0072.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0072.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0072.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0072.sparql"/>
         <purpose>Tests to ensure that relative URIs are resolved correctly when used in @about with XHTML base set in head</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0073">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0073">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>Relative URI in @resource (with XHTML base in head)</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0073.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0073.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0073.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0073.sparql"/>
         <purpose>Tests to ensure that relative URIs are resolved correctly when used in @resource with XHTML base set in head</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0074">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0074">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>Relative URI in @href (with XHTML base in head)</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0074.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0074.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0074.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0074.sparql"/>
         <purpose>Tests to ensure that relative URIs are resolved correctly when used in @href with XHTML base set in head</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0075">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0075">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>Reserved word 'license' in @rel with no explizit @about</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0075.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0075.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0075.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0075.sparql"/>
         <purpose>Tests to ensure that the XHTML+RDFa reserved word 'license' when used in @rel (with no @about) generates the proper triple</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0076">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0076">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>All reserved XHTML @rel values</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0076.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0076.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0076.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0076.sparql"/>
         <purpose>Tests to ensure that all reserved XHTML words are supported in @rel</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0077">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0077">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>All reserved XHTML @rev values</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0077.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0077.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0077.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0077.sparql"/>
         <purpose>Tests to ensure that all reserved XHTML words are supported in @rev</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0078">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0078">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>Multiple incomplete triples</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0078.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0078.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0078.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0078.sparql"/>
         <purpose>Tests multiple ways of handling incomplete triples; the first two triples should use the same bnode as subject ('merged'). The third should have a separate bNode.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0079">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0079">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>@resource and @href in completing incomplete triples</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0079.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0079.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0079.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0079.sparql"/>
         <purpose>Tests role of @resource and @href in completing incomplete triples (including their mutual priorities)</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0080">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0080">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>@about overrides @resource in incomplete triples</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0080.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0080.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0080.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0080.sparql"/>
         <purpose>Tests if @about has a higher priority than @resource in handling incomplete triples</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>    
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0081">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0081">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>multiple ways of handling incomplete triples (with @rev)</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0081.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0081.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0081.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0081.sparql"/>
         <purpose>Tests multiple ways of handling incomplete triples, this time with @rev</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>    
         
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0082">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0082">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>multiple ways of handling incomplete triples (with @rel and @rev)</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0082.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0082.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0082.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0082.sparql"/>
         <purpose>Tests multiple ways of handling incomplete triples, this time with both @rel and @rev</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>      
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0083">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0083">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>multiple ways of handling incomplete triples (merged)</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0083.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0083.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0083.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0083.sparql"/>
         <purpose>Tests multiple ways of handling incomplete triples; the first two triples should use the same bNode as subject ('merged'); the third case should use @about</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>    
         
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0084">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0084">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>multiple ways of handling incomplete triples, this time with both @rel and @rev</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0084.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0084.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0084.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0084.sparql"/>
         <purpose>Tests multiple ways of handling incomplete triples, this time with both @rel and @rev. There is an intermediate div that should be ignored by the process</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>      
     
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0085">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0085">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>@resource and @href in completing incomplete triples</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0085.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0085.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0085.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0085.sparql"/>
         <purpose>Tests the role of @resource and @href in completing incomplete triples (including their mutual priorities), but with an intermediate layer (ie, bNode) added</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>    
         
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0086">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0086">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>NO triple for a non-reserved @rel value</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0086.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0086.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0086.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0086.sparql"/>
         <purpose>Test that NO triple should be generated for a non-reserved @rel value</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
   <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>      
     
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0087">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0087">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>All reserved XHTML @rel values (with :xxx)</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0087.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0087.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0087.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0087.sparql"/>
         <purpose>Tests to ensure that all reserved XHTML words are supported in @rel (with :xxx)</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>    
         
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0088">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0088">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>Interpretation of the CURIE "_:"</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0088.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0088.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0088.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0088.sparql"/>
         <purpose>Test the interpretation of the CURIE "_:"</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>      
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0089">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0089">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>@src sets a new subject (@typeof)</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0089.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0089.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0089.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0089.sparql"/>
         <purpose>Tests to ensure that @src sets a new subject (focuses on @typeof).</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>      
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0090">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0090">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>@src sets a new subject (@rel/@href)</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0090.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0090.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0090.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0090.sparql"/>
         <purpose>Tests to ensure that @src sets a new subject (focuses on @rel/@href).</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>      
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0091">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0091">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>Non-reserved, un-prefixed CURIE in @property</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0091.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0091.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0091.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0091.sparql"/>
         <purpose>Tests to ensure that non-reserved, un-prefixed CURIEs, when used in @property, generate triples.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>      
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0092">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0092">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>Tests XMLLiteral content with explicit @datatype</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0092.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0092.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0092.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0092.sparql"/>
         <purpose>Tests the explicit specification of an RDF XMLLiteral with @datatype.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>      
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0093">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0093">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>Tests XMLLiteral content with explicit @datatype (user-data-typed literal)</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0093.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0093.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0093.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0093.sparql"/>
         <purpose>Tests the explicit specification of an RDF XMLLiteral with @datatype using a non-RDF namespace, yielding a user-data-typed literal</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>      
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0094">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0094">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>Tests XMLLiteral content with explicit @datatype (unusual prefix - bla:)</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0094.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0094.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0094.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0094.sparql"/>
         <purpose>Tests the explicit specification of an RDF XMLLiteral with @datatype using the proper RDF namespace, but with an unusual prefix - bla:</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>      
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0095">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0095">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>No triples with two nested @rel</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0095.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0095.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0095.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0095.sparql"/>
         <purpose>Tests the filtering out of unnecessary triples (checking the return value mechanism)</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#rejected"/>
         <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>      
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0096">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0096">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>No triples with three nested @rel</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0096.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0096.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0096.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0096.sparql"/>
         <purpose>Tests the filtering out of unnecessary triples (checking the return value mechanism); from the RDFa Syntax document.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#rejected"/>
         <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>      
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0097">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0097">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>No triples with four nested @rel</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0097.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0097.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0097.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0097.sparql"/>
         <purpose>Tests the filtering out of unnecessary triples (checking the return value mechanism); from the RDFa Syntax document.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#rejected"/>
         <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>      
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0098">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0098">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>Single literal in nested pending triples</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0098.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0098.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0098.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0098.sparql"/>
         <purpose>Tests the generation of a single literal that should be returned as valid value in the recursion to generate pending triples.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#rejected"/>
         <specificationReference></specificationReference>
     </TestCase>      
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0099">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0099">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>Preservation of white space in literals</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0099.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0099.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0099.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0099.sparql"/>
         <purpose>Tests the preservation of white space in literals.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>      
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0100">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0100">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>XMLLiteral with explicit namespace</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0100.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0100.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0100.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0100.sparql"/>
         <purpose>Tests XML elements with explicit namespace. Each of the XML elements in the literal should have at least those namespaces declared that are used in that literal (more is acceptable)</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0101">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0101">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>XMLLiteral with explicit namespace and xml:lang</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0101.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0101.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0101.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0101.sparql"/>
         <purpose>Tests XML elements with explicit namespace. Each of the XML elements in the literal should have at least those namespaces declared that are used in that literal (more is acceptable). Furthermore, the xml:lang should also be set for each of those elements.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0102">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0102">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>XMLLiteral with explicit namespace and xml:lang; not overwriting existing langs</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0102.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0102.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0102.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0102.sparql"/>
         <purpose>Tests XML elements with explicit namespace. Each of the XML elements in the literal should have at least those namespaces declared that are used in that literal (more is acceptable). Furthermore, the xml:lang should also be set on the first element but existing language 
  declaration should not be changed.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0103">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0103">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:title>XMLLiteral with explicit namespace; not overwriting local namespaces</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0103.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0103.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0103.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0103.sparql"/>
         <purpose>Tests XML elements with explicit namespace. Each of the XML elements in the literal should have at least those namespaces declared that are used in that literal (more is acceptable), but locally set namespaces should not be changed; i.e., the default namespace for the svg element should remain unchanged in the output</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0104">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0104">
         <dc:contributor>Fabien Gandon</dc:contributor>
         <dc:title>rdf:value</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0104.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0104.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0104.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0104.sparql"/>
         <purpose>Tests rdf:value with blank nodes to give a value with a unit</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
  
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0105">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0105">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>inner @rel neither CURIE nor LinkType</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0105.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0105.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0105.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0105.sparql"/>
         <purpose>Test the behavior of triple generation in a corner case where the inner @rel is neither a CURIE or a LinkType. This test effectively causes a rel="" to be inserted between the outer div subject and the inner @href, which halts chaining.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0106">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0106">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>chaining with empty value in inner @rel</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0106.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0106.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0106.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0106.sparql"/>
         <purpose>Tests the behavior of triple generation in the case where the inner @rel is defined, but is blank, which halts chaining.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0107">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0107">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>no garbage collecting bnodes</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0107.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0107.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0107.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0107.sparql"/>
         <purpose>Checks to make sure that that while we shouldn't garbage collect bnodes no triples are generated.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
   <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
         <specificationReference></specificationReference>
     </TestCase> 
  
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0108">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0108">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>plain literal with datatype="" and xml:lang preservation</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0108.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0108.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0108.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0108.sparql"/>
         <purpose>Checks to make sure that the RDFa parser emits a plain literal when the datatype is specified as "" and preserves the xml:lang value. The text, with control characters and whitespace preserved, reads "Greek\nwhite   space\n".</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>  
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0109">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0109">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>Tests to ensure @xml:base is ignored</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0109.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0109.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0109.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0109.sparql"/>
         <purpose>Tests to make sure that @xml:base is ignored in XHTML+RDFa 1.0. The input test document is invalid XHTML.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>  
  
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0110">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0110">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>bNode generated even though no nested @about exists</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0110.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0110.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0110.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0110.sparql"/>
         <purpose>Tests to make sure that a bNode is generated even though no nested @about exists.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0111">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0111">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>two bNodes generated after three levels of nesting</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0111.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0111.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0111.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0111.sparql"/>
         <purpose>Tests to make sure that two bNodes are generated after three levels of nesting and that the last div does not generate a triple.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
  
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0112">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0112">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>plain literal with datatype=""</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0112.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0112.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0112.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0112.sparql"/>
         <purpose>Checks to make sure that the RDFa parser emits a plain literal when the datatype is specified as "".</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0113">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0113">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>element with @property and no child nodes generates  empty plain literal</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0113.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0113.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0113.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0113.sparql"/>
         <purpose>Checks to make sure that an element with @property and no child nodes generates empty plain literal.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0114">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0114">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>Relative URI</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0114.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0114.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0114.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0114.sparql"/>
         <purpose>Checks to make sure that a relative URI is resolved correctly according to RFC3986, section 5 (even when the relative URI is invalid, in this case).</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0115">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0115">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:contributor>Toby Inkster</dc:contributor>
         <dc:title>XML Entities must be supported by RDFa parser</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0115.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0115.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0115.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0115.sparql"/>
         <purpose>Checks to make sure that XML Entities are treated properly by the RDFa parser.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0116">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0116">
         <dc:contributor>Toby Inkster</dc:contributor>
         <dc:title>Reserved word used in @property should not generate triple</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0116.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0116.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0116.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0116.sparql"/>
         <purpose>Checks to make sure that reserved words that are used in @property do not generate triples. This is a NEGATIVE test case.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
   <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0117">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0117">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>Fragment identifiers stripped from BASE</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0117.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0117.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0117.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0117.sparql"/>
         <purpose>Checks to make sure that fragment identifiers are stripped from [base] when used to generate triples.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0118">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0118">
         <dc:contributor>Ben Adida</dc:contributor>
         <dc:title>empty string "" is not equivalent to NULL - @about</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0118.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0118.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0118.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0118.sparql"/>
         <purpose>Checks to make sure that the empty
   string "" isn't considered as NULL in languages such as Javascript when
   generating triples. This test sets the subject in a chain using @href
@@ -1202,11 +1202,11 @@
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0119">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0119">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>"[prefix:]" CURIE format is valid</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0119.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0119.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0119.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0119.sparql"/>
         <purpose>Checks to make sure that an RDFa processor expands CURIEs having only a prefix and a
   colon if a prefix is properly defined using xmlns.
   </purpose>
@@ -1214,34 +1214,34 @@
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0120">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0120">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>"[:]" CURIE format is valid</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0120.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0120.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0120.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0120.sparql"/>
         <purpose>Checks to make sure that an RDFa processor expands CURIEs having only a colon to the
-  default prefix "http://www.w3.org/1999/test-cases/vocab#".
+  default prefix "http://www.w3.org/1999/test-cases/html5/vocab#".
   </purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0121">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0121">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>"[]" is a valid safe CURIE</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0121.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0121.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0121.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0121.sparql"/>
         <purpose>Checks to make sure RDFa processors resolve the empty CURIE correctly.
   </purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0122">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0122">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>resource="[]" does not set the object since RDFa does not allow non-prefixed CURIEs</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0122.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0122.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0122.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0122.sparql"/>
         <purpose>Checks to make sure that resource="[]" does not set the object since RDFa does not allow non-prefixed CURIEs.
   </purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
@@ -1249,52 +1249,52 @@
   <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0123">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0123">
         <dc:contributor>Shane P. McCarron</dc:contributor>
         <dc:title>case sensitivity in prefix names</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0123.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0123.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0123.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0123.sparql"/>
         <purpose>Checks to make sure that prefix names are treated case sensitive.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0124">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0124">
         <dc:contributor>Shane P. McCarron</dc:contributor>
         <dc:title>XMLLiteral with explicit @datatype=''</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0124.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0124.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0124.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0124.sparql"/>
         <purpose>Checks to make sure that XMLLiteral gets processed properly if surrounding element is tagged with @datatype=''.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0125">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0125">
         <dc:contributor>Shane P. McCarron</dc:contributor>
         <dc:title>datatype XMLLiteral with other embedded RDFa</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0125.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0125.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0125.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0125.sparql"/>
         <purpose>Checks to ensure that when datatype is the default the parser does not generate triples for embedded content.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
         <specificationReference></specificationReference>
   <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/0126">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0126">
         <dc:contributor>Shane P. McCarron</dc:contributor>
         <dc:title>Multiple @typeof values</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0126.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/0126.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0126.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0126.sparql"/>
         <purpose>Checks to ensure that multiple (white space separated) values in @typeof trigger multiple rdf:type triples.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/1001">
+ <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/1001">
         <dc:contributor>Fabien Gandon</dc:contributor>
         <dc:title>Vevent using @typeof</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/1001.html?version=html5"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/1001.sparql?version=html5"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/1001.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/1001.sparql"/>
         <purpose>Tests Vevent using @typeof (inlc. dtstart, dtend, etc.)</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference>N.A.</specificationReference>
