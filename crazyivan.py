@@ -239,10 +239,12 @@ def writeTestCaseDocument(req, path):
     elif(document.endswith(".html") and version == "html5"):
         req.content_type = "text/html"
         if(len(namespaces) > 0):
-            req.write("""<html 
+            req.write("""<!DOCTYPE html>
+<html 
 %s>\n""" % (namespaces,))
         else:
-            req.write("""<html version="HTML+RDFa 1.0">\n""")
+            req.write("""<!DOCTYPE html>
+<html version="HTML+RDFa 1.0">\n""")
 
         # Rename all of the test case .xhtml files to .html
         req.write(tcpathre.sub(tcpath, htmlre.sub("\\1.html", body)))
