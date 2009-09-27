@@ -1,0 +1,8 @@
+<head>
+  <meta charset="utf-8"/>
+  <title>Test</title>
+</head>
+<body>
+<script>var test = '<p xmlns:ex="http://example.org/" property="ex:test">Test</p>'</script>
+
+</body>

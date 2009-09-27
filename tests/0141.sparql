@@ -1,0 +1,3 @@
+ASK WHERE {
+  <$TCPATH/0141.html> <http://www.w3.org/XML/1998/namespacetest> "Test".
+}

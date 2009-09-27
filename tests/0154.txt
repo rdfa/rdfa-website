@@ -1,0 +1,9 @@
+<head>
+  <title>Test</title>
+</head>
+<body>
+<p xmlns:testŀ="http://example.org/">
+  <span xmlns:test="http://example.org/error/" property="testŀ:test">Test</span>
+</p>
+
+</body>

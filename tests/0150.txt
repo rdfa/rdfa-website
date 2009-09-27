@@ -1,0 +1,5 @@
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+<body>
+<p xmlns:ex="http://www.w3.org/XML/1998/namespace" property="ex:test">Test</p>

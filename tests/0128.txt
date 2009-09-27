@@ -1,0 +1,11 @@
+<head>
+  <meta charset="utf-8"/>
+  <title>Test</title>
+</head>
+<body>
+<div xmlns:ex="http://example.org/">
+  <p property="ex:test1">Test 1 <p property="ex:test2">Test 2</p>
+  </p> <!-- (this tag is a parse error in HTML5) -->
+</div>
+
+</body>

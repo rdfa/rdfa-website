@@ -1,0 +1,5 @@
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+<body>
+<p xmlns:xmlns="http://www.w3.org/2000/xmlns/" property="xmlns:test">Test</p>

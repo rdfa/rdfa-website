@@ -1290,6 +1290,391 @@
         <specificationReference></specificationReference>
     </TestCase>
 
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0127">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>HTML parsing (not well-formed XML)</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0127.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0127.sparql"/>
+        <purpose>HTML parsing (not well-formed XML)</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0128">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>HTML parsing (incidentally well-formed XML) (1)</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0128.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0128.sparql"/>
+        <purpose>HTML parsing (incidentally well-formed XML) (1)</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0129">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>HTML parsing (incidentally well-formed XML) (2)</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0129.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0129.sparql"/>
+        <purpose>HTML parsing (incidentally well-formed XML) (2)</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0130">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Whitespace in &lt;link rel> (HTML)</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0130.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0130.sparql"/>
+        <purpose>Whitespace in &lt;link rel> (HTML)</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0132">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Not-whitespace in &lt;link rel></dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0132.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0132.sparql"/>
+        <purpose>Not-whitespace in &lt;link rel></purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0133">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Uppercase in &lt;link rel></dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0133.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0133.sparql"/>
+        <purpose>Uppercase in &lt;link rel></purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0135">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Uppercase xmlns, lowercase CURIE</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0135.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0135.sparql"/>
+        <purpose>Uppercase xmlns, lowercase CURIE</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0136">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Uppercase xmlns, uppercase CURIE</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0136.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0136.sparql"/>
+        <purpose>Uppercase xmlns, uppercase CURIE</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0137">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Non-NCName xmlns prefix</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0137.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0137.sparql"/>
+        <purpose>Non-NCName xmlns prefix</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0138">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Empty xmlns prefix</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0138.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0138.sparql"/>
+        <purpose>Empty xmlns prefix</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0139">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Underscore xmlns prefix</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0139.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0139.sparql"/>
+        <purpose>Underscore xmlns prefix</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0141">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>xmlns prefix 'xml' with correct URI</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0141.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0141.sparql"/>
+        <purpose>xmlns prefix 'xml' with correct URI</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0143">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>xmlns prefix 'xml' with incorrect URI</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0143.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0143.sparql"/>
+        <purpose>xmlns prefix 'xml' with incorrect URI</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0144">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>xmlns prefix 'xmlns' with correct URI</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0144.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0144.sparql"/>
+        <purpose>xmlns prefix 'xmlns' with correct URI</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0145">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>xmlns prefix 'xmlns' with incorrect URI</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0145.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0145.sparql"/>
+        <purpose>xmlns prefix 'xmlns' with incorrect URI</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0146">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>xmlns prefix 'xmlzzz' (reserved)</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0146.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0146.sparql"/>
+        <purpose>xmlns prefix 'xmlzzz' (reserved)</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0148">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Empty xmlns value</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0148.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0148.sparql"/>
+        <purpose>Empty xmlns value</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0149">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Empty xmlns value overriding non-empty</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0149.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0149.sparql"/>
+        <purpose>Empty xmlns value overriding non-empty</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0150">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Invalid (xml URI) xmlns value</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0150.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0150.sparql"/>
+        <purpose>Invalid (xml URI) xmlns value</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0151">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Invalid (xmlns URI) xmlns value</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0151.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0151.sparql"/>
+        <purpose>Invalid (xmlns URI) xmlns value</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0152">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Colon in prefix</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0152.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0152.sparql"/>
+        <purpose>Colon in prefix</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0153">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Non-XML4e xmlns prefix</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0153.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0153.sparql"/>
+        <purpose>Non-XML4e xmlns prefix</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0155">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Non-ASCII case insensitivity in xmlns prefix (1)</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0155.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0155.sparql"/>
+        <purpose>Non-ASCII case insensitivity in xmlns prefix (1)</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0156">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Non-ASCII case insensitivity in xmlns prefix (2)</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0156.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0156.sparql"/>
+        <purpose>Non-ASCII case insensitivity in xmlns prefix (2)</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0157">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Undeclared prefix 'rdf'</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0157.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0157.sparql"/>
+        <purpose>Undeclared prefix 'rdf'</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0159">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Undeclared prefix 'xml'</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0159.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0159.sparql"/>
+        <purpose>Undeclared prefix 'xml'</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0161">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Undeclared prefix 'xmlns'</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0161.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0161.sparql"/>
+        <purpose>Undeclared prefix 'xmlns'</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0163">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Undeclared common prefixes</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0163.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0163.sparql"/>
+        <purpose>Undeclared common prefixes</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0165">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Language in xml:lang</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0165.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0165.sparql"/>
+        <purpose>Language in xml:lang</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0166">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Language in lang</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0166.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0166.sparql"/>
+        <purpose>Language in lang</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0167">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Language inheritance</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0167.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0167.sparql"/>
+        <purpose>Language inheritance</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0168">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Conflicting languages</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0168.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0168.sparql"/>
+        <purpose>Conflicting languages</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0169">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Duplicate language attributes</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0169.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0169.sparql"/>
+        <purpose>Duplicate language attributes</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0170">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Conflicting language inheritance (1)</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0170.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0170.sparql"/>
+        <purpose>Conflicting language inheritance (1)</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0171">
+        <dc:contributor>Philip Taylor</dc:contributor>
+        <dc:title>Conflicting language inheritance (2)</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0171.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0171.sparql"/>
+        <purpose>Conflicting language inheritance (2)</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
  <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/1001">
         <dc:contributor>Fabien Gandon</dc:contributor>
         <dc:title>Vevent using @typeof</dc:title>

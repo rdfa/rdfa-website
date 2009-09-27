@@ -1,0 +1,5 @@
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+<body>
+<p lang="aa"><span lang="bb"><span xmlns:ex="http://example.org/" property="ex:test" lang="cc">Test</span></span></p>

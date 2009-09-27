@@ -1,0 +1,3 @@
+ASK WHERE {
+  <$TCPATH/0167.html> <http://example.org/test> "Test"@cc.
+}

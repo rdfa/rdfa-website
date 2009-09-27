@@ -1,0 +1,11 @@
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+<body>
+<p xmlns:testᾈ="http://example.org/1/">
+  <span xmlns:testᾀ="http://example.org/2/">
+    <span property="testᾈ:one">Test</span>
+    <span property="testᾀ:two">Test</span>
+  </span>
+</p>
+

@@ -1,0 +1,6 @@
+<head>
+  <title>Test</title>
+  <link rel="next&#x20;prev&#x09;first&#x0a;last&#x0d;subsection" href="http://example.org/test.css" />
+</head>
+<body>
+</body>
