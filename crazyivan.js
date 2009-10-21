@@ -340,7 +340,7 @@ function getRdfaExtractorUrl()
    }
    else if(extractor === "rubyrdfa")
    {
-           rval = "http://kellogg-assoc/distiller/xml?uri="
+           rval = "http://kellogg-assoc.com/distiller/xml?uri="
    }
    else if(extractor === "other")
    {
