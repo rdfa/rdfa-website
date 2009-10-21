@@ -338,6 +338,10 @@ function getRdfaExtractorUrl()
    {
            rval = "http://dmz-demo39.demo.marklogic.com/rdfa_extract.xqy?url="
    }
+   else if(extractor === "rubyrdfa")
+   {
+           rval = "http://kellogg-assoc/distiller/xml?uri="
+   }
    else if(extractor === "other")
    {
       rval = document.getElementById('rdfa-extractor-selection-value').value;
