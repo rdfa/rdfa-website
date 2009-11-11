@@ -1347,12 +1347,12 @@
 
     <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0154">
         <dc:contributor>Philip Taylor</dc:contributor>
-        <dc:title>Non-XML4e xmlns prefix</dc:title>
+        <dc:title>Invalid characters should not generate triples per XML 4th edition rules</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0154.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0154.sparql"/>
-        <purpose>Non-XML4e xmlns prefix</purpose>
+        <purpose>XHTML+RDFa is based on XHTML M12N and is thus dependent on XML 4th edition rules, which defines certain characters invalid that the 5th edition rules do not. This test ensures that the 4th edition rules are used instead of the 5th edition rules.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
-        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>
 
