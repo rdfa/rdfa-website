@@ -1244,7 +1244,7 @@
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0122.sparql"/>
         <purpose>Checks to make sure that resource="[]" does not set the object since RDFa does not allow non-prefixed CURIEs.
   </purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
   <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
     </TestCase>
@@ -1255,7 +1255,7 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0123.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0123.sparql"/>
         <purpose>Checks to make sure that prefix names are treated case sensitive.</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
@@ -1286,40 +1286,40 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0126.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0126.sparql"/>
         <purpose>Checks to ensure that multiple (white space separated) values in @typeof trigger multiple rdf:type triples.</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
     </TestCase>
 
     <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0131">
         <dc:contributor>Philip Taylor</dc:contributor>
-        <dc:title>Whitespace in &lt;link rel> (XHTML)</dc:title>
+        <dc:title>Whitespace alternatives in attributes</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0131.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0131.sparql"/>
-        <purpose>Whitespace in &lt;link rel> (XHTML)</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <purpose>Ensures that multiple whitespace alternatives in attributes are allowed.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>
 
     <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0134">
         <dc:contributor>Philip Taylor</dc:contributor>
-        <dc:title>Uppercase in &lt;link rel></dc:title>
+        <dc:title>Uppercase reserved words</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0134.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0134.sparql"/>
-        <purpose>Uppercase in &lt;link rel></purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <purpose>Ensures that mixed-case reserved words generate triples.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>
 
     <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0140">
         <dc:contributor>Philip Taylor</dc:contributor>
-        <dc:title>Underscore xmlns prefix</dc:title>
+        <dc:title>Underscore is not allowed in xmlns</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0140.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0140.sparql"/>
-        <purpose>Underscore xmlns prefix</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
-        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <purpose>Ensures that a prefix cannot start with an underscore character when specified using xmlns.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>
 
