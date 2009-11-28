@@ -5,4 +5,4 @@
 </head> 
 <body xml:lang="en"> 
    <p property="ex:prop" datatype="">A <strong>plain literal</strong> with a lang tag.</p> 
-
+</body>
