@@ -1328,8 +1328,8 @@
         <dc:title>xmlns prefix 'xml' with correct URI</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0142.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0142.sparql"/>
-        <purpose>xmlns prefix 'xml' with correct URI</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <purpose>Ensures that RDFa processors allow a prefix named 'xml' with the correct URI.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#onhold"/>
         <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>
@@ -1339,8 +1339,8 @@
         <dc:title>xmlns prefix 'xmlzzz' (reserved)</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0147.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0147.sparql"/>
-        <purpose>xmlns prefix 'xmlzzz' (reserved)</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <purpose>Ensures that RDFa processors allow the prefix 'xmlzzz', even though it is a reserved prefix in XML.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>
@@ -1351,18 +1351,7 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0154.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0154.sparql"/>
         <purpose>XHTML+RDFa is based on XHTML M12N and is thus dependent on XML 4th edition rules, which defines certain characters invalid that the 5th edition rules do not. This test ensures that the 4th edition rules are used instead of the 5th edition rules.</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
-        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
-        <specificationReference></specificationReference>
-    </TestCase>
-
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0158">
-        <dc:contributor>Philip Taylor</dc:contributor>
-        <dc:title>Undeclared prefix 'rdf'</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0158.xhtml"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0158.sparql"/>
-        <purpose>Undeclared prefix 'rdf'</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#onhold"/>
         <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>
@@ -1372,8 +1361,8 @@
         <dc:title>Undeclared prefix 'xml'</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0160.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0160.sparql"/>
-        <purpose>Undeclared prefix 'xml'</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <purpose>Ensure that the undeclared prefix 'xml' is not used to generate any triples.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>
@@ -1383,8 +1372,8 @@
         <dc:title>Undeclared prefix 'xmlns'</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0162.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0162.sparql"/>
-        <purpose>Undeclared prefix 'xmlns'</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <purpose>Ensure that the undeclared prefix 'xmlns' is not used to generate any triples.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>
@@ -1394,8 +1383,8 @@
         <dc:title>Undeclared common prefixes</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0164.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0164.sparql"/>
-        <purpose>Undeclared common prefixes</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <purpose>Ensure that a number of common prefixes, when undeclared, do not generate any unknown triples.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>
