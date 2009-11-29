@@ -14,6 +14,7 @@
          <a rel=":help" href="http://example.org/help">help</a>
          <a rel=":icon" href="http://example.org/icon">icon</a>
          <a rel=":index" href="http://example.org/index">index</a>
+         <a rel=":first" href="http://example.org/first">first</a>
          <a rel=":last" href="http://example.org/last">last</a>
          <a rel=":license" href="http://example.org/license">license</a>
          <a rel=":meta" href="http://example.org/meta">meta</a>

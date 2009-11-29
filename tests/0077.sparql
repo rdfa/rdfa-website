@@ -62,6 +62,9 @@ ASK WHERE { <$TCPATH/0077.xhtml>
    <http://www.w3.org/1999/xhtml/vocab#up>
       <http://example.org/up> .
 <$TCPATH/0077.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#first>
+      <http://example.org/first> .
+<$TCPATH/0077.xhtml>
    <http://www.w3.org/1999/xhtml/vocab#last>
       <http://example.org/last> .
 <$TCPATH/0077.xhtml>

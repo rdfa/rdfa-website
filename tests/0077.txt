@@ -25,6 +25,8 @@
                href="0077.xhtml">icon</span>
          <span about="http://example.org/index" rev="index"
                href="0077.xhtml">index</span>
+         <span about="http://example.org/first" rev="first"
+               href="0077.xhtml">first</span>
          <span about="http://example.org/last" rev="last"
                href="0077.xhtml">last</span>
          <span about="http://example.org/license" rev="license"
