@@ -5,7 +5,7 @@
    <body>
       <p>Description: XML entities in the RDFa content</p>
       <p>
-        <span property="ex:entity1">&lt;string&gt;</span>
+        <span property="ex:entity1" datatype="">&lt;string&gt;</span>
         <span property="ex:entity2">Ben &amp; Co.</span>
         <span property="ex:entity3">&#x40;</span>
         <span property="ex:entity4">&#64;</span>
