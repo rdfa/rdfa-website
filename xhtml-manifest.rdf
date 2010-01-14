@@ -1395,7 +1395,7 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0172.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0172.sparql"/>
         <purpose>Checks to ensure that when @datatype="" is used on an element that contains child nodes, that the literal that is generated is a plain literal.</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>
@@ -1406,7 +1406,7 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0173.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0173.sparql"/>
         <purpose>Checks to ensure that when @xml:lang="" is used that any parent element language setting is cleared and a language-less literal is generated.</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>
@@ -1417,7 +1417,7 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0174.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0174.sparql"/>
         <purpose>Checks to ensure that the RDFa processor correctly processes single character prefixes when processing CURIEs.</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>
