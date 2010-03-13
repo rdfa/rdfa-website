@@ -6,8 +6,8 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <title>The RDFa Test Harness (Crazy Ivan)</title>
   <link rel="stylesheet" type="text/css" href="css/screen.css" />
-  <script language="javascript" type="text/javascript" 
-          src="crazyivan.js"></script>
+  <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="crazyivan.js"></script>
 </head>
 
 <body onload="javascript:updateConfigurationDisplay();retrieveUnitTests()">
@@ -79,7 +79,7 @@ RDFa extractor URL:
   <option value="rubyrdfa">Ruby RDFa (kellogg-assoc.com) - Ruby</option>
   <option value="other">Other RDFa Extractor:</option>
 </select>
-<input type="text" id="rdfa-extractor-selection-value" size="32"></input>
+<input type="text" id="rdfa-extractor-selection-value" size="32" />
 </p>
 <p>
 SPARQL engine URL: 
@@ -89,11 +89,11 @@ SPARQL engine URL:
   <option value="virtuoso">Virtuoso Web Service (openlinksw.com)</option>
   <option value="other">Other SPARQL Processor:</option>
 </select>
-<input type="text" id="sparql-engine-selection-value" size="32"></input>
+<input type="text" id="sparql-engine-selection-value" size="32" />
 </p>
 
 <p>
-<input type="button" onclick="javascript:performAllUnitTests()" value="Run All Unit Tests"></input>
+<input type="button" onclick="javascript:performAllUnitTests()" value="Run All Unit Tests" />
 </p>
 </div>
 </form>
@@ -107,7 +107,8 @@ SPARQL engine URL:
 <p>
 You can generate an EARL report of the currently selected RDFa parser by clicking the "Generate EARL Report" button. Make sure that you have run all of the unit tests above by clicking the "Run All Unit Tests" button.
 </p>
-<input type="button" onclick="javascript:generateEarlReport()" value="Generate EARL Report"></input>
+<p>
+<input type="button" onclick="javascript:generateEarlReport()" value="Generate EARL Report" />
 </p>
 <pre id="earl-report">
 </pre>

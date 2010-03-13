@@ -12,34 +12,9 @@
  * @param callback the callback to call with the returned data.
  * @param postData the data to use when posting to the given URL.
  */
-function sendRequest(url, callback, callback_data, postData)
+function sendRequest(url, callback, callback_data)
 {
-   var req = createXMLHTTPObject();
-
-   if(!req)
-      return;
-   var method = (postData) ? "POST" : "GET";
-   
-   req.open(method, url, true);
-   req.setRequestHeader('User-Agent','XMLHTTP/1.0');
-   
-   if(postData)
-      req.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-
-   req.onreadystatechange = function()
-   {
-         if(req.readyState != 4)
-            return;
-         if(callback_data)
-            callback(req, callback_data);
-         else
-            callback(req);
-   }
-
-   if(req.readyState == 4)
-      return;
-   
-   req.send(postData);
+   jQuery.get(url, function(data) { callback(data, callback_data); });
 }
 
 /**
@@ -106,9 +81,9 @@ function retrieveUnitTests()
  *
  * @param req the HTTP request object.
  */
-function displayUnitTests(req)
+function displayUnitTests(response, callbackData)
 {
-   document.getElementById('unit-tests').innerHTML = req.responseText;
+   document.getElementById('unit-tests').innerHTML = response;
 }
 
 /**
@@ -175,14 +150,14 @@ function hideUnitTestDetails(num)
  *
  * @param num the unit test number to hide.
  */
-function displayUnitTestResult(req, num)
+function displayUnitTestResult(response, num)
 {
    var unitTestId = 'unit-test-status-' + num;
 
-   if(req.responseText.length < 512)
+   if(response.length < 512)
    {
-      document.getElementById(unitTestId).innerHTML =
-         req.responseText;
+      var e = document.getElementById(unitTestId);
+      e.innerHTML = response;
    }
    else
    {
@@ -220,13 +195,12 @@ function displayUnitTestResult(req, num)
 /**
  * Displays the return HTML value for the unit test details.
  *
- * @param req the HTTP request object.
+ * @param response the HTTP request object.
  * @param num the unit test number to hide.
  */
-function displayUnitTestDetailsResult(req, num)
+function displayUnitTestDetailsResult(response, num)
 {
-   document.getElementById('unit-test-details-' + num).innerHTML =
-      req.responseText;
+   document.getElementById('unit-test-details-' + num).innerHTML = response;
 }
 
 /**

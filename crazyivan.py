@@ -311,7 +311,7 @@ def checkUnitTestHtml(req, num, rdfa_extractor_url, sparql_engine_url,
                       html_url, sparql_url, expected_result):
     if(performUnitTest(rdfa_extractor_url, sparql_engine_url,
                        html_url, sparql_url, expected_result) == True):
-        req.write("<span id=\"unit-test-anchor-%s\" style=\"text-decoration: underline; color: #090\" onclick=\"javascript:checkUnitTest(%s, '%s', '%s', '%s')\"><span id='unit-test-result-%s>PASS</span></span></span>" % (num, num, html_url, sparql_url, expected_result, num))
+        req.write("<span id=\"unit-test-anchor-%s\" style=\"text-decoration: underline; color: #090\" onclick=\"javascript:checkUnitTest(%s, '%s', '%s', '%s')\"><span id='unit-test-result-%s'>PASS</span></span>" % (num, num, html_url, sparql_url, expected_result, num))
     else:
         req.write("<span id=\"unit-test-anchor-%s\" style=\"text-decoration: underline; font-weight: bold; color: #f00\" onclick=\"javascript:checkUnitTest(%s, '%s', '%s', '%s')\"><span id='unit-test-result-%s>FAIL</span></span>" % (num, num, html_url, sparql_url, expected_result, num))
 
