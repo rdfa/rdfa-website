@@ -8,6 +8,50 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:test="http://www.w3.org/2006/03/test-description#">
 
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/8064">
+        <dc:contributor>Manu Sporny</dc:contributor>
+        <dc:title>@about with safe CURIE</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/8064.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/8064.sparql"/>
+        <purpose>Tests if @about generates a proper triple when a CURIE is used</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <specificationReference></specificationReference>
+    </TestCase> 
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/8065">
+       <dc:contributor>Manu Sporny</dc:contributor>
+       <dc:title>@rel with safe CURIE</dc:title>
+       <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/8065.xhtml"/>
+       <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/8065.sparql"/>
+       <purpose>Tests if @rel properly connects triples generated when CURIEs are used</purpose>
+       <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewd"/>
+       <specificationReference></specificationReference>
+    </TestCase> 
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/8119">
+       <dc:contributor>Manu Sporny</dc:contributor>
+       <dc:title>"prefix:" CURIE format is valid</dc:title>
+       <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/8119.xhtml"/>
+       <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/8119.sparql"/>
+       <purpose>Checks to make sure that an RDFa processor expands CURIEs having only a prefix and a
+ colon if a prefix is properly defined using xmlns.
+ </purpose>
+       <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewd"/>
+       <specificationReference></specificationReference>
+     </TestCase>
+
+     <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/8120">
+         <dc:contributor>Manu Sporny</dc:contributor>
+         <dc:title>":" CURIE format is valid</dc:title>
+         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/8120.xhtml"/>
+         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/8120.sparql"/>
+         <purpose>Checks to make sure that an RDFa processor expands CURIEs having only a colon to the
+   default prefix "http://www.w3.org/1999/test-cases/xhtml1/vocab#".
+         </purpose>
+         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewd"/>
+         <specificationReference></specificationReference>
+     </TestCase>
+
     <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/9001">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>Establishing @prefix using colon syntax</dc:title>

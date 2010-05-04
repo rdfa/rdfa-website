@@ -1675,6 +1675,171 @@
         <specificationReference></specificationReference>
     </TestCase>
 
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0172">
+        <dc:contributor>KANZAKI, Masahide</dc:contributor>
+        <dc:title>@datatype="" generates plain literal in presence of child nodes</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0172.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0172.sparql"/>
+        <purpose>Checks to ensure that when @datatype="" is used on an element that contains child nodes, that the literal that is generated is a plain literal.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0174">
+        <dc:contributor>I. Stewartson</dc:contributor>
+        <dc:title>Support single character prefix in CURIEs</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0174.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0174.sparql"/>
+        <purpose>Checks to ensure that the RDFa processor correctly processes single character prefixes when processing CURIEs.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0175">
+        <dc:contributor>Gregg Kellogg</dc:contributor>
+        <dc:title>Property is URI</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0175.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0175.sparql"/>
+        <purpose>Checks to make sure that a URI may be used as a @property value</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0176">
+        <dc:contributor>Gregg Kellogg</dc:contributor>
+        <dc:title>Rel and Rev is URI</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0176.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0176.sparql"/>
+        <purpose>Checks to make sure that a URI may be used as @rel and @rev values</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0176">
+        <dc:contributor>Gregg Kellogg</dc:contributor>
+        <dc:title>Rel and Rev is URI</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0176.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0176.sparql"/>
+        <purpose>Checks to make sure that a URI may be used as @rel and @rev values</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0177">
+        <dc:contributor>Ivan Herman</dc:contributor>
+        <dc:title>Test @profile</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0177.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0177.sparql"/>
+        <purpose>Checks to make sure @profile with a single entry creates a URI mapping</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0178">
+        <dc:contributor>Ivan Herman</dc:contributor>
+        <dc:title>Test @profile with multiple mappings</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0178.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0178.sparql"/>
+        <purpose>Checks to make sure @profile with multiple entires creates multiple URI mappings</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0180">
+        <dc:contributor>Ivan Herman</dc:contributor>
+        <dc:title>Test @profile with empty mapping</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0180.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0180.sparql"/>
+        <purpose>Checks to make sure @profile with empty prefix creates a mapping.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0182">
+        <dc:contributor>Ivan Herman</dc:contributor>
+        <dc:title>Test prefix locality</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0182.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0182.sparql"/>
+        <purpose>Checks to be sure that prefixes are defined within the element hierarchy.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0184">
+        <dc:contributor>Ivan Herman</dc:contributor>
+        <dc:title>Test @profile</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0184.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0184.sparql"/>
+        <purpose>Check that @profile imports terms</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0185">
+        <dc:contributor>Ivan Herman</dc:contributor>
+        <dc:title>Test @profile</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0185.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0185.sparql"/>
+        <purpose>Check that @profile imports prefixes</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0186">
+        <dc:contributor>Ivan Herman</dc:contributor>
+        <dc:title>Test @vocab</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0186.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0186.sparql"/>
+        <purpose>Check that @vocab defines a new default mapping</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0187">
+        <dc:contributor>Ivan Herman</dc:contributor>
+        <dc:title>Test @vocab redefinitnion</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0187.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0187.sparql"/>
+        <purpose>Check that @vocab redefines a previous @vocab definition</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0188">
+        <dc:contributor>Ivan Herman</dc:contributor>
+        <dc:title>Test @vocab</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0188.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0188.sparql"/>
+        <purpose>Check that @vocab defines a new default mapping</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0190">
+        <dc:contributor>Ivan Herman</dc:contributor>
+        <dc:title>Test term case insensitivity</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0190.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0190.sparql"/>
+        <purpose>Check to ensure a mixed case term matches a case insensitive definition</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
  <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/1001">
         <dc:contributor>Fabien Gandon</dc:contributor>
         <dc:title>Vevent using @typeof</dc:title>
