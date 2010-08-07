@@ -320,7 +320,7 @@ function getRdfaExtractorUrl()
    {
            rval = "http://dmz-demo39.demo.marklogic.com/rdfa_extract.xqy?url="
    }
-   else if(extractor === "rubyrdfa")
+   else if(extractor === "RdfContext")
    {
            rval = "http://kellogg-assoc.com/distiller/xml?uri="
    }
