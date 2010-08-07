@@ -218,6 +218,10 @@ function getTestSuiteManifest()
    {
       rval = "http://rdfa.digitalbazaar.com/test-suite/xhtml-manifest.rdf";
    }
+   else if(testsuite === "xhtml11")
+   {
+      rval = "http://rdfa.digitalbazaar.com/test-suite/xhtml1-manifest.rdf";
+   }
    else if(testsuite === "html4")
    {
       rval = "http://rdfa.digitalbazaar.com/test-suite/html4-manifest.rdf";
@@ -247,6 +251,10 @@ function getBaseTcUrl()
    if(testsuite === "xhtml1")
    {
       rval = "http://rdfa.digitalbazaar.com/test-suite/test-cases/";
+   }
+   else if(testsuite === "xhtml11")
+   {
+      rval = "http://rdfa.digitalbazaar.com/test-suite/test-cases";
    }
    else if(testsuite === "html4")
    {

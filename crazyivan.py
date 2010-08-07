@@ -155,16 +155,20 @@ def writeTestCaseAlternatives(req, arguments):
    <p>
       The following documents are associated with this test case:
       <ul>
-         <li><a href="%sxhtml1/%s.xhtml">XHTML 1.1</li>
+          <li><a href="%sxhtml1/%s.xhtml">XHTML 1.1</li>
+          <li><a href="%sxhtml11/%s.xhtml">XHTML+RDFa 1.1</li>
          <li><a href="%shtml4/%s.html">HTML4</li>
          <li><a href="%shtml5/%s.html">HTML5</li>
          <li><a href="%sxhtml1/%s.sparql">SPARQL for XHTML 1.1</li>
+         <li><a href="%sxhtml11/%s.sparql">SPARQL for XHTML+RDFa 1.1</li>
          <li><a href="%shtml4/%s.sparql">SPARQL for HTML4</li>
          <li><a href="%shtml5/%s.sparql">SPARQL for HTML5</li>
       </ul>
    </p>
    </body>
 </html>""" % (BASE_TEST_CASE_URL, filename, BASE_TEST_CASE_URL, filename, 
+              BASE_TEST_CASE_URL, filename, BASE_TEST_CASE_URL, filename, 
+              BASE_TEST_CASE_URL, filename, BASE_TEST_CASE_URL, filename, 
               BASE_TEST_CASE_URL, filename, BASE_TEST_CASE_URL, filename,
               BASE_TEST_CASE_URL, filename, BASE_TEST_CASE_URL, filename))
 
@@ -226,6 +230,14 @@ def writeTestCaseDocument(req, path):
 %s>\n""" % (namespaces,))
         req.write(tcpathre.sub(tcpath, body))
         req.write("</html>")
+    elif(document.endswith(".xhtml") and version == "xhtml11"):
+            req.content_type = "application/xhtml+xml"
+            req.write("""<?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd"> 
+    <html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1" 
+    %s>\n""" % (namespaces,))
+            req.write(tcpathre.sub(tcpath, body))
+            req.write("</html>")
     elif(document.endswith(".html") and version == "html4"):
         req.content_type = "text/html"
         req.write("""<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">\n""")
@@ -252,7 +264,7 @@ def writeTestCaseDocument(req, path):
     elif(document.endswith(".sparql")):
         req.content_type = "application/sparql-query"
 
-        if(version != "xhtml1"):
+        if(version != "xhtml1" && version != "xhtml11"):
             # Rename all of the test case .xhtml files to .html
             req.write(tcpathre.sub(tcpath, htmlre.sub("\\1.html", body)))
         else:
