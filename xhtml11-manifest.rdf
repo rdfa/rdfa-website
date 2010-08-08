@@ -1265,7 +1265,7 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0124.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0124.sparql"/>
         <purpose>Checks to make sure that XMLLiteral gets processed properly if surrounding element is tagged with @datatype=''.</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#onhold"/>
         <specificationReference></specificationReference>
     </TestCase>
 
