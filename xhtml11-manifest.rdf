@@ -1642,6 +1642,16 @@
       <specificationReference></specificationReference>
   </TestCase>
 
+  <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0194">
+      <dc:contributor>Gregg Kellogg</dc:contributor>
+      <dc:title>Test process @profile right to left</dc:title>
+      <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0194.xhtml"/>
+      <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0194.sparql"/>
+      <purpose>Check that profiles are processed from right to left, so that terms defined in left-most profiles take precedence over others</purpose>
+      <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+      <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+      <specificationReference></specificationReference>
+  </TestCase>
   <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/1001">
       <dc:contributor>Fabien Gandon</dc:contributor>
       <dc:title>Vevent using @typeof</dc:title>
