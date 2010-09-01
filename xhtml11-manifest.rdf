@@ -1631,14 +1631,25 @@
       <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
   </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/1001">
-        <dc:contributor>Fabien Gandon</dc:contributor>
-        <dc:title>Vevent using @typeof</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/1001.xhtml"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/1001.sparql"/>
-        <purpose>Tests Vevent using @typeof (inlc. dtstart, dtend, etc.)</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
-        <specificationReference>N.A.</specificationReference>
-    </TestCase>
+  <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0193">
+      <dc:contributor>Gregg Kellogg</dc:contributor>
+      <dc:title>Test @profile defines vocabulary</dc:title>
+      <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0193.xhtml"/>
+      <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0193.sparql"/>
+      <purpose>Check that @profile imports prefixes</purpose>
+      <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+      <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+      <specificationReference></specificationReference>
+  </TestCase>
+
+  <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/1001">
+      <dc:contributor>Fabien Gandon</dc:contributor>
+      <dc:title>Vevent using @typeof</dc:title>
+      <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/1001.xhtml"/>
+      <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/1001.sparql"/>
+      <purpose>Tests Vevent using @typeof (inlc. dtstart, dtend, etc.)</purpose>
+      <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
+      <specificationReference>N.A.</specificationReference>
+  </TestCase>
  
 </rdf:RDF>
