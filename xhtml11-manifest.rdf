@@ -1675,6 +1675,17 @@
       <specificationReference></specificationReference>
   </TestCase>
 
+  <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0197">
+      <dc:contributor>Gregg Kellogg</dc:contributor>
+      <dc:title>Test TERMorCURIEorAbsURI requires an absolute URI</dc:title>
+      <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0197.xhtml"/>
+      <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0197.sparql"/>
+      <purpose>TERMorCURIEorAbsURI requires an absolute URI</purpose>
+      <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+      <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+      <specificationReference></specificationReference>
+  </TestCase>
+
   <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/1001">
       <dc:contributor>Fabien Gandon</dc:contributor>
       <dc:title>Vevent using @typeof</dc:title>
