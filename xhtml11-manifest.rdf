@@ -1652,6 +1652,18 @@
       <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
       <specificationReference></specificationReference>
   </TestCase>
+
+  <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0195">
+      <dc:contributor>Gregg Kellogg</dc:contributor>
+      <dc:title>Test process @profile aborts processing</dc:title>
+      <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0195.xhtml"/>
+      <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0195.sparql"/>
+      <purpose>If any referenced RDFa Profile is not available, then the current element and its children must not place any triples in the default graph</purpose>
+      <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+      <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+      <specificationReference></specificationReference>
+  </TestCase>
+
   <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/1001">
       <dc:contributor>Fabien Gandon</dc:contributor>
       <dc:title>Vevent using @typeof</dc:title>
