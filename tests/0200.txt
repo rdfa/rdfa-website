@@ -1,0 +1,11 @@
+  <head>
+    <title>Test 0200</title>
+  </head>
+  <body profile="$TCPATH/0200.profile.html">
+    <div typeof="Event">
+      <h2 property="title">Last Call</h2>
+      <a rel="factor" href="http://www.w3.org/TR/rdfa-core/">RDFa Core 1.1</a>
+      was published by <span rel="agent"><span typeof="Agent" about="http://www.w3.org/2010/02/rdfa/">RDFa Working Group</span></span>.
+      on <span property="time" content="2010-10-26">26 October 2010</span>.
+    </div>
+  </body>
