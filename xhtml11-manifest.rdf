@@ -114,7 +114,7 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0011.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0011.sparql"/>
         <purpose>Tests XMLLiteral content</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#onhold"/>
         <specificationReference></specificationReference>
     </TestCase>
 
@@ -926,7 +926,7 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0092.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0092.sparql"/>
         <purpose>Tests the explicit specification of an RDF XMLLiteral with @datatype.</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#onhold"/>
         <specificationReference></specificationReference>
     </TestCase>      
 
@@ -946,7 +946,7 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0094.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0094.sparql"/>
         <purpose>Tests the explicit specification of an RDF XMLLiteral with @datatype using the proper RDF namespace, but with an unusual prefix - bla:</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#onhold"/>
         <specificationReference></specificationReference>
     </TestCase>      
 
@@ -1009,7 +1009,7 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0100.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0100.sparql"/>
         <purpose>Tests XML elements with explicit namespace. Each of the XML elements in the literal should have at least those namespaces declared that are used in that literal (more is acceptable)</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#onhold"/>
         <specificationReference></specificationReference>
     </TestCase>
 
@@ -1019,7 +1019,7 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0101.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0101.sparql"/>
         <purpose>Tests XML elements with explicit namespace. Each of the XML elements in the literal should have at least those namespaces declared that are used in that literal (more is acceptable). Furthermore, the xml:lang should also be set for each of those elements.</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#onhold"/>
         <specificationReference></specificationReference>
     </TestCase>
 
@@ -1030,7 +1030,7 @@
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0102.sparql"/>
         <purpose>Tests XML elements with explicit namespace. Each of the XML elements in the literal should have at least those namespaces declared that are used in that literal (more is acceptable). Furthermore, the xml:lang should also be set on the first element but existing language 
  declaration should not be changed.</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#onhold"/>
         <specificationReference></specificationReference>
     </TestCase>
 
@@ -1040,7 +1040,7 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0103.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0103.sparql"/>
         <purpose>Tests XML elements with explicit namespace. Each of the XML elements in the literal should have at least those namespaces declared that are used in that literal (more is acceptable), but locally set namespaces should not be changed; i.e., the default namespace for the svg element should remain unchanged in the output</purpose>
-        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#onhold"/>
         <specificationReference></specificationReference>
     </TestCase>
 
@@ -1054,7 +1054,7 @@
         <specificationReference></specificationReference>
     </TestCase>
  
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0105">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0105">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>inner @rel neither CURIE nor LinkType</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0105.xhtml"/>
@@ -1064,7 +1064,7 @@
         <specificationReference>7.4.3 General Use of Terms in Attributes</specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0106">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0106">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>chaining with empty value in inner @rel</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0106.xhtml"/>
@@ -1074,7 +1074,7 @@
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0107">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0107">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>no garbage collecting bnodes</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0107.xhtml"/>
@@ -1085,7 +1085,7 @@
         <specificationReference></specificationReference>
     </TestCase> 
  
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0108">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0108">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>plain literal with datatype="" and xml:lang preservation</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0108.xhtml"/>
@@ -1095,7 +1095,7 @@
         <specificationReference></specificationReference>
     </TestCase>  
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0109">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0109">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>Tests to ensure @xml:base is ignored</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0109.xhtml"/>
@@ -1105,7 +1105,7 @@
         <specificationReference></specificationReference>
     </TestCase>  
  
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0110">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0110">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>bNode generated even though no nested @about exists</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0110.xhtml"/>
@@ -1115,7 +1115,7 @@
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0111">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0111">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>two bNodes generated after three levels of nesting</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0111.xhtml"/>
@@ -1125,7 +1125,7 @@
         <specificationReference></specificationReference>
     </TestCase>
  
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0112">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0112">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>plain literal with datatype=""</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0112.xhtml"/>
@@ -1135,7 +1135,7 @@
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0113">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0113">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>element with @property and no child nodes generates  empty plain literal</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0113.xhtml"/>
@@ -1145,7 +1145,7 @@
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0114">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0114">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>Relative URI</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0114.xhtml"/>
@@ -1155,7 +1155,7 @@
         <specificationReference></specificationReference>
     </TestCase> 
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0115">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0115">
         <dc:contributor>Ivan Herman</dc:contributor>
         <dc:contributor>Toby Inkster</dc:contributor>
         <dc:title>XML Entities must be supported by RDFa parser</dc:title>
@@ -1166,7 +1166,7 @@
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0116">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0116">
         <dc:contributor>Toby Inkster</dc:contributor>
         <dc:title>Reserved word used in @property should not generate triple</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0116.xhtml"/>
@@ -1174,10 +1174,10 @@
         <purpose>Checks to make sure that reserved words that are used in @property do not generate triples. This is a NEGATIVE test case.</purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#onhold"/>
         <specificationReference>7.4.3 General Use of Terms in Attributes</specificationReference>
-  <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0117">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0117">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>Fragment identifiers stripped from BASE</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0117.xhtml"/>
@@ -1187,7 +1187,7 @@
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0118">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0118">
         <dc:contributor>Ben Adida</dc:contributor>
         <dc:title>empty string "" is not equivalent to NULL - @about</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0118.xhtml"/>
@@ -1226,7 +1226,7 @@
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0121">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0121">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>"[]" is a valid safe CURIE</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0121.xhtml"/>
@@ -1243,13 +1243,13 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0122.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0122.sparql"/>
         <purpose>Checks to make sure that resource="[]" does not set the object since RDFa does not allow non-prefixed CURIEs.
-  </purpose>
+        </purpose>
         <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
         <specificationReference></specificationReference>
-  <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0123">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0123">
         <dc:contributor>Shane P. McCarron</dc:contributor>
         <dc:title>case sensitivity in prefix names</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0123.xhtml"/>
@@ -1259,7 +1259,7 @@
         <specificationReference></specificationReference>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0124">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0124">
         <dc:contributor>Shane P. McCarron</dc:contributor>
         <dc:title>XMLLiteral with explicit @datatype=''</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0124.xhtml"/>
@@ -1280,7 +1280,7 @@
   <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
     </TestCase>
 
- <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0126">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0126">
         <dc:contributor>Shane P. McCarron</dc:contributor>
         <dc:title>Multiple @typeof values</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0126.xhtml"/>
@@ -1610,90 +1610,123 @@
     </TestCase>
 
     <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0191">
-       <dc:contributor>Gregg Kellogg</dc:contributor>
-       <dc:title>Triple is generated for a non-reserved @rel value (opposite of 0086)</dc:title>
-       <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0191.xhtml"/>
-       <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0191.sparql"/>
-       <purpose>Test that a triple is generated for a non-reserved @rel value using the default vocabulary</purpose>
-       <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
-       <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
-       <specificationReference></specificationReference>
-   </TestCase>      
+        <dc:contributor>Gregg Kellogg</dc:contributor>
+        <dc:title>Triple is generated for a non-reserved @rel value (opposite of 0086)</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0191.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0191.sparql"/>
+        <purpose>Test that a triple is generated for a non-reserved @rel value using the default vocabulary</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>      
 
-   <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0192">
-      <dc:contributor>Gregg Kellogg</dc:contributor>
-      <dc:title>Reserved word used in @property should generate triple (opposite of 0116)</dc:title>
-      <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0192.xhtml"/>
-      <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0192.sparql"/>
-      <purpose>Checks to make sure that reserved words that are used in @property generate triples.</purpose>
-      <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#onhold"/>
-      <specificationReference>7.4.3 General Use of Terms in Attributes</specificationReference>
-      <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
-  </TestCase>
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0192">
+        <dc:contributor>Gregg Kellogg</dc:contributor>
+        <dc:title>Reserved word used in @property should generate triple (opposite of 0116)</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0192.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0192.sparql"/>
+        <purpose>Checks to make sure that reserved words that are used in @property generate triples.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#onhold"/>
+        <specificationReference>7.4.3 General Use of Terms in Attributes</specificationReference>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+    </TestCase>
 
-  <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0193">
-      <dc:contributor>Gregg Kellogg</dc:contributor>
-      <dc:title>Test @profile defines vocabulary</dc:title>
-      <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0193.xhtml"/>
-      <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0193.sparql"/>
-      <purpose>Check that @profile imports prefixes</purpose>
-      <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
-      <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
-      <specificationReference></specificationReference>
-  </TestCase>
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0193">
+        <dc:contributor>Gregg Kellogg</dc:contributor>
+        <dc:title>Test @profile defines vocabulary</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0193.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0193.sparql"/>
+        <purpose>Check that @profile imports prefixes</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
 
-  <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0194">
-      <dc:contributor>Gregg Kellogg</dc:contributor>
-      <dc:title>Test process @profile right to left</dc:title>
-      <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0194.xhtml"/>
-      <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0194.sparql"/>
-      <purpose>Check that profiles are processed from right to left, so that terms defined in left-most profiles take precedence over others</purpose>
-      <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
-      <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
-      <specificationReference></specificationReference>
-  </TestCase>
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0194">
+        <dc:contributor>Gregg Kellogg</dc:contributor>
+        <dc:title>Test process @profile right to left</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0194.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0194.sparql"/>
+        <purpose>Check that profiles are processed from right to left, so that terms defined in left-most profiles take precedence over others</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
 
-  <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0195">
-      <dc:contributor>Gregg Kellogg</dc:contributor>
-      <dc:title>Test process @profile aborts processing</dc:title>
-      <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0195.xhtml"/>
-      <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0195.sparql"/>
-      <purpose>If any referenced RDFa Profile is not available, then the current element and its children must not place any triples in the default graph</purpose>
-      <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
-      <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
-      <specificationReference></specificationReference>
-  </TestCase>
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0195">
+        <dc:contributor>Gregg Kellogg</dc:contributor>
+        <dc:title>Test process @profile aborts processing</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0195.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0195.sparql"/>
+        <purpose>If any referenced RDFa Profile is not available, then the current element and its children must not place any triples in the default graph</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
 
-  <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0196">
-      <dc:contributor>Gregg Kellogg</dc:contributor>
-      <dc:title>Test process explicit XMLLiteral</dc:title>
-      <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0196.xhtml"/>
-      <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0196.sparql"/>
-      <purpose>XMLLiteral must be explicitly specified, otherwise a normal untyped literal is created</purpose>
-      <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
-      <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
-      <specificationReference></specificationReference>
-  </TestCase>
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0196">
+        <dc:contributor>Gregg Kellogg</dc:contributor>
+        <dc:title>Test process explicit XMLLiteral</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0196.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0196.sparql"/>
+        <purpose>XMLLiteral must be explicitly specified, otherwise a normal untyped literal is created</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
 
-  <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0197">
-      <dc:contributor>Gregg Kellogg</dc:contributor>
-      <dc:title>Test TERMorCURIEorAbsURI requires an absolute URI</dc:title>
-      <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0197.xhtml"/>
-      <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0197.sparql"/>
-      <purpose>TERMorCURIEorAbsURI requires an absolute URI</purpose>
-      <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
-      <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
-      <specificationReference></specificationReference>
-  </TestCase>
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0197">
+        <dc:contributor>Gregg Kellogg</dc:contributor>
+        <dc:title>Test TERMorCURIEorAbsURI requires an absolute URI</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0197.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0197.sparql"/>
+        <purpose>TERMorCURIEorAbsURI requires an absolute URI</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
 
-  <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/1001">
-      <dc:contributor>Fabien Gandon</dc:contributor>
-      <dc:title>Vevent using @typeof</dc:title>
-      <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/1001.xhtml"/>
-      <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/1001.sparql"/>
-      <purpose>Tests Vevent using @typeof (inlc. dtstart, dtend, etc.)</purpose>
-      <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
-      <specificationReference>N.A.</specificationReference>
-  </TestCase>
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0198">
+        <dc:contributor>Shane P. McCarron</dc:contributor>
+        <dc:title>datatype XMLLiteral with other embedded RDFa</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0198.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0198.sparql"/>
+        <purpose>Checks to ensure that when datatype is the default the parser generates triples for embedded content.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <specificationReference></specificationReference>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0199">
+        <dc:contributor>Gregg kellogg</dc:contributor>
+        <dc:title>datatype XMLLiteral with profile and other embedded RDFa</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0199.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0199.sparql"/>
+        <purpose>Checks to make sure profile is added to elements within an XMLLiteral.</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <specificationReference></specificationReference>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0200">
+        <dc:contributor>Ivan Herman</dc:contributor>
+        <dc:title>Test term case insensitivity</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0200.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0200.sparql"/>
+        <purpose>Check to ensure that terms that differ only in case match to distinct URIs</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#unreviewed"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/1001">
+        <dc:contributor>Fabien Gandon</dc:contributor>
+        <dc:title>Vevent using @typeof</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/1001.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/1001.sparql"/>
+        <purpose>Tests Vevent using @typeof (inlc. dtstart, dtend, etc.)</purpose>
+        <reviewStatus rdf:resource="http://www.w3.org/2006/03/test-description#approved"/>
+        <specificationReference>N.A.</specificationReference>
+    </TestCase>
  
 </rdf:RDF>
