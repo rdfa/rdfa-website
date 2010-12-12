@@ -460,7 +460,7 @@ def handler(req):
     elif(service.find("/test-suite/git-update") != -1):
         gitUpdatePath = os.path.join( \
             os.path.dirname(req.canonical_filename), ".git")
-        p = subprocess.Popen(["git", "--git-dir", gitUpdatePath, "ls"], 
+        p = subprocess.Popen(["git", "--git-dir", gitUpdatePath, "pull"], 
             bufsize=4096, stdout=subprocess.PIPE, stderr=subprocess.PIPE, 
             close_fds=True)
         (so, se) = p.communicate()
