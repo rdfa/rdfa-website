@@ -456,7 +456,8 @@ def handler(req):
 
     # Perform a git update in the current directory
     elif(service.find("/test-suite/git-update") != -1):
-        gitUpdatePath = os.path.dirname(req.canonical_filename)
+        gitUpdatePath = os.path.join( \
+            os.path.dirname(req.canonical_filename), ".git")
         os.system("git --git-dir \"%s\" pull" % gitUpdatePath)
         req.write("Git update successful.")
     else:
