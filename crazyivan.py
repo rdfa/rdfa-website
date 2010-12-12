@@ -464,7 +464,7 @@ def handler(req):
             bufsize=4096, stdout=subprocess.PIPE, stderr=subprocess.PIPE, 
             close_fds=True)
         (so, se) = p.communicate()
-        req.write("%s, so: %s, se: %s" % (gitUpdatePath, so, se))
+        req.write("GIT status: %s%s" % (so, se))
     else:
         req.content_type = 'text/html'
         req.write("<b>ERROR: Unknown CrazyIvan service: %s</b>" % (service,))
