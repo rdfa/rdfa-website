@@ -231,7 +231,8 @@ def writeTestCaseDocument(req, path):
             req.write("</html>")
     elif(document.endswith(".html") and version == "html4"):
         req.content_type = "text/html"
-        req.write("""<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">\n""")
+        req.write("""<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa11-1.dtd">
+        """)
         req.write("""<html %s>\n""" % (namespaces,))
 
         # Rename all of the test case .xhtml files to .html
