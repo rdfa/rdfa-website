@@ -34,7 +34,7 @@ Contributing
 If you would like to contribute a new test or a fix to an existing test,
 please follow these steps:
 
-1. Notify the RDFa mailing list, public-rdf-in-xhtml-tf-request@w3.org, 
+1. Notify the RDFa mailing list, public-rdf-wg@w3.org, 
    that you will be creating a new test or fix and the purpose of the
    change.
 2. Clone the git repository: git@github.com:msporny/rdfa-test-suite.git
