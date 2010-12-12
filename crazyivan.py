@@ -4,6 +4,7 @@
 # @author Manu Sporny
 import os, os.path
 import re
+import subprocess
 from re import search
 from urllib2 import urlopen
 import urllib
@@ -459,8 +460,11 @@ def handler(req):
     elif(service.find("/test-suite/git-update") != -1):
         gitUpdatePath = os.path.join( \
             os.path.dirname(req.canonical_filename), ".git")
-        os.system("git --git-dir \"%s\" pull" % gitUpdatePath)
-        req.write("Git update successful.")
+        p = subprocess.Popen(["git", "--git-dir %s" % gitUpdatePath, "ls"], 
+            bufsize=4096, stdin=subprocess.PIPE, stdout=subprocess.PIPE, 
+            close_fds=True)
+        (so, se) = p.communicate()
+        req.write("%s, so: %s, se: %s" % (gitUpdatePath, so, se))
     else:
         req.content_type = 'text/html'
         req.write("<b>ERROR: Unknown CrazyIvan service: %s</b>" % (service,))
