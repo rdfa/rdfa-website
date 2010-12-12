@@ -25,29 +25,6 @@ function createXMLHTTPObject()
 {
    var xmlHttp;
 
-   // get the IE (ActiveX) version of the xml http object
-   /*@cc_on
-   @if(@_jscript_version >= 5)
-   {
-      try
-      {
-         xmlHttp = new ActiveXObject('Msxml2.XMLHTTP');
-      }
-      catch(e)
-      {
-         try
-         {
-            xmlHttp = new ActiveXObject('Microsoft.XMLHTTP');
-         }
-         catch(e)
-         {
-            // nothing to do
-         }
-      }
-   }
-   @end
-   @*/
-
    // get the non-IE (non-ActiveX) version of the xml http object
    // if the object hasn't been acquired yet
    if(xmlHttp == null && typeof XMLHttpRequest !== 'undefined')
