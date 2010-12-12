@@ -216,23 +216,23 @@ function getTestSuiteManifest()
 
    if(testsuite === "xhtml1")
    {
-      rval = "http://rdfa.digitalbazaar.com/test-suite/xhtml-manifest.rdf";
+      rval = window.location + "xhtml-manifest.rdf";
    }
    else if(testsuite === "xhtml11")
    {
-      rval = "http://rdfa.digitalbazaar.com/test-suite/xhtml1-manifest.rdf";
+      rval = window.location + "xhtml1-manifest.rdf";
    }
    else if(testsuite === "html4")
    {
-      rval = "http://rdfa.digitalbazaar.com/test-suite/html4-manifest.rdf";
+      rval = window.location + "html4-manifest.rdf";
    }
    else if(testsuite === "html5")
    {
-      rval = "http://rdfa.digitalbazaar.com/test-suite/html5-manifest.rdf";
+      rval = window.location + "html5-manifest.rdf";
    }
    else if(testsuite === "design")
    {
-       rval = "http://rdfa.digitalbazaar.com/test-suite/design-manifest.rdf";
+       rval = window.location + "design-manifest.rdf";
    }
 
    return rval;

@@ -53,13 +53,6 @@ p.copyright small { font-size: small }
 a[href]:hover { background: #ffa }
 }
 
-pre { margin-left: 2em }
-/*
-p {
-  margin-top: 0.6em;
-  margin-bottom: 0.6em;
-}
-*/
 dt, dd { margin-top: 0; margin-bottom: 0 } /* opera 3.50 */
 dt { font-weight: bold }
 
@@ -76,5 +69,13 @@ ul.toc, ol.toc {
   p.copyright { volume: x-soft; speech-rate: x-fast }
   dt { pause-before: 20% }
   pre { speak-punctuation: code } 
+}
+
+pre {
+background: #eeeeff;
+padding: 1em;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
 }
 

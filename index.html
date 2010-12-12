@@ -19,8 +19,11 @@
 <p>WARNING: You need Javascript enabled to use this web page!</p>
 </noscript>
 <p>
-The RDFa Test Harness provides an interactive mechanism to check the 
-conformance of an RDFa extractor and SPARQL query engine. This service is intended for anybody that wants to see how RDFa works as well as developers that want to do conformance testing on their own RDFa/SPARQL implementations.
+The RDFa Test Suite provides an interactive mechanism to check the 
+conformance of an RDFa processor and SPARQL query engine. 
+This service is intended for anybody that wants to see how RDFa works as 
+well as developers that want to do conformance testing on their own 
+RDFa/SPARQL implementations.
 </p>
 <p>
 There are several things that you can do on this web page:
@@ -29,15 +32,23 @@ There are several things that you can do on this web page:
 <ul>
  <li>To run a unit test, click on the [TEST] link.</li>
  <li>To see the details of a unit test, click on the [show details] link.</li>
- <li>You can execute every unit test by clicking on the [Run All Unit Tests] button.</li>
- <li>You can modify the Test Suite, Approval Status, RDFa Extractor Service and SPARQL Engine URLs.</li>
+ <li>You can execute every unit test by clicking on the 
+   [Run All Unit Tests] button.</li>
+ <li>You can modify the Test Suite, Approval Status, RDFa Extractor Service 
+   and SPARQL Engine URLs.</li>
 </ul>
 
 <h2>Status</h2>
 <ul>
-<li>The <a href="http://www.w3.org/2006/07/SWD/RDFa/implementation-report/">latest RDFa Implementation Report</a> is available at the W3C site.</li>
-<li>These tests are in development; until a test is approved by the <a href="http://www.w3.org/2001/sw/BestPractices/HTML/">RDF in XHTML Taskforce</a>, it is subject to change without notice.</li>
-<li>All bugs, suggestions and thoughts about The RDFa Test Harness (Crazy Ivan) can be directed towards Manu Sporny on the RDFa task force mailing list.</li>
+<li>These tests are in active development by the 
+<a href="http://www.w3.org/2010/02/rdfa/">RDFa Working Group</a> at
+  the <a href="http://www.w3c.org">World Wide Web Consortium</a>.</li>
+<li>These tests may be used to check conformance for an RDFa 1.1 processor.</li>
+<li>The tests are subject to change at any point between now and June 2011.</li>
+<li>All bugs, suggestions and thoughts about The RDFa Test Suite
+  should be sent to the 
+  <a href="http://lists.w3.org/Archives/Public/public-rdfa-wg/">
+  RDFa Working Group mailing list</a>.</li>
 </ul>
 
 <h2>Configuration</h2>
@@ -48,9 +59,10 @@ There are several things that you can do on this web page:
 Test Suite: 
 <select id="test-suite-selection"
         onchange="javascript:updateConfigurationDisplay();retrieveUnitTests()">
-  <option value="xhtml1">XHTML+RDFa 1.0</option>
-  <option value="html4">HTML4 RDFa 1.0 (unreviewed)</option>
-  <option value="html5">HTML5 RDFa 1.0 (unreviewed)</option>
+  <option value="xhtml1">XHTML+RDFa 1.1</option>
+  <option value="html4">HTML4+RDFa 1.1</option>
+  <option value="html5">HTML5+RDFa 1.1</option>
+  <option value="svg">SVG+RDFa 1.1</option>
   <option value="design">Design Test Suite</option>
 </select>
 <span id="test-suite-selection-value"></span>
@@ -59,9 +71,9 @@ Test Suite:
 Unit Test Status: 
 <select id="unit-test-status-selection" 
         onchange="javascript:updateConfigurationDisplay();retrieveUnitTests()">
-  <option value="approved">Approved</option>
-  <option value="onhold">On Hold</option>
-  <option value="unreviewed">Unreviewed</option>
+  <option value="required">Required</option>
+  <option value="optional">Optional</option>
+  <option value="buggy">Buggy</option>
 </select>
 <span id="unit-test-status-selection-value"></span>
 </p>
@@ -115,13 +127,15 @@ You can generate an EARL report of the currently selected RDFa parser by clickin
 
 <h1>Useful RDFa Resources</h1>
 <ul>
- <li><a href="http://www.w3.org/2006/07/SWD/RDFa/testsuite/">RDFa Test Harness</a></li>
- <li><a href="http://www.w3.org/2006/07/SWD/RDFa/syntax/">RDFa syntax</a></li>
+ <li>The <a href="http://www.w3.org/2010/02/rdfa/">RDFa Working Group</a></li>
+ <li>The <a href="http://www.w3.org/TR/rdfa-core/">RDFa Core 1.1 Specification</a></li>
+ <li>The <a href="http://www.w3.org/TR/xhtml-rdfa/">XHTML+RDFa 1.1 Specification</a></li>
+ <li>The <a href="http://www.w3.org/TR/rdfa-in-html/">HTML+RDFa 1.1 Specification</a></li>
 </ul>
-	
+
 <hr />
 <address>
- Last modified: 2008-02-05, Manu Sporny
+ Last modified: 2010-12-12, Manu Sporny
 </address>
 
 <p><a rel="Copyright"
