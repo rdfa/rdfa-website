@@ -206,8 +206,12 @@ def writeTestCaseDocument(req, path):
         # Extract the namespaces from the top of the document and build
         # the body of the document
         for line in lines:
-            if("<head" in line or "http://www.w3.org/2000/svg" in line):
+            if("<head" in line):
                 foundHead = True
+            if("http://www.w3.org/2000/svg" in line):
+                namespaces += line
+                foundHead = True
+                continue
 
             if(not foundHead):
                 namespaces += line
