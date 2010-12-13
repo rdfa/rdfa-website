@@ -458,11 +458,11 @@ def handler(req):
 
     # Perform a git update in the current directory
     elif(service.find("/test-suite/git-update") != -1):
-        gitUpdatePath = os.path.join( \
-            os.path.dirname(req.canonical_filename), ".git")
+        testSuitePath = os.path.dirname(req.canonical_filename)
+        gitUpdatePath = os.path.join(testSuitePath, ".git")
         p = subprocess.Popen(["git", "--git-dir", gitUpdatePath, "pull"], 
             bufsize=4096, stdout=subprocess.PIPE, stderr=subprocess.PIPE, 
-            close_fds=True)
+            close_fds=True, cwd=testSuitePath)
         (so, se) = p.communicate()
         req.write("GIT status: %s%s" % (so, se))
     else:
