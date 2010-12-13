@@ -1,9 +1,10 @@
 Introduction
 ------------
 
-The RDFa Test Suite is a set of webservices, markup and tests that can 
-be used to verify RDFa Processor conformance. The goal of the suite is
-to provide an easy and comprehensive RDFa testing solution for developers. 
+The RDFa Test Suite is a set of Web Services, markup and tests that can 
+be used to verify RDFa Processor conformance to the set of specifications
+that constitute RDFa 1.1. The goal of the suite is to provide an easy and 
+comprehensive RDFa testing solution for developers creating RDFa Processors.
 
 Design
 ------
@@ -24,7 +25,7 @@ yes/no on whether the expected triples were extracted by the RDFa processor.
 Running the Test Suite
 ----------------------
 
-You can view this test suite at the following URL:
+You can view and run this test suite at the following URL:
 
 http://rdfa.digitalbazaar.com/test-suite/
 
@@ -40,4 +41,40 @@ please follow these steps:
 2. Clone the git repository: git@github.com:msporny/rdfa-test-suite.git
 3. Make your changes and submit them via github, or via a 'git format-patch'
    to Manu Sporny <msporny@digitalbazaar.com> or to the RDFa mailing list.
+
+Optionally, you can ask Manu for direct access to the repository and may make
+changes directly to the RDFa Test Suite source code. All updates to the test 
+suite go live on Digital Bazaar's RDFa Test Suite site within seconds of 
+committing changes to github via a WebHook call.
+
+How to Add a Unit Test
+----------------------
+
+In order to add a unit test, you must follow these steps:
+   
+1. Pick a new unit test number. For example - 250.
+2. Create a markup file in the tests/ directory with a .txt extension. 
+   For example: tests/250.txt
+3. Create a SPARQL query file in the tests/ directory with a .sparql extension.
+   For example: tests/250.sparql
+4. Decide which Test Suite manifest should contain the test. For example,
+   if you would like your example to only apply to HTML4, you would modify
+   the html4-manifest.rdf file. If you would like your example to apply to 
+   all HTML family languages, you would add it to the html4-manifest.rdf, 
+   xhtml-manifest.rdf and html5-manifest.rdf files.
+
+There are three classifications for Unit Tests:
+
+required - These are tests that are required for proper operation per the
+           appropriate RDFa specification.
+optional - These are tests for optional features supported by some RDFa 
+           Processors.
+buggy    - These are tests that are buggy or are not considered valid test
+           cases by all RDFa processor maintainers.
+
+The test suite is designed to empower RDFa processor maintainers to create
+and add tests as they see fit. This may mean that the test suite may become
+unstable from time to time, but this approach has been taken so that the 
+long-term goal of having a comprehensive test suite for RDFa can be achieved
+by the RDFa community.
 
