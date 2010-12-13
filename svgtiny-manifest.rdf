@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://www.w3.org/2006/03/test-description#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:log="http://www.w3.org/2000/10/swap/log#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:test="http://www.w3.org/2006/03/test-description#">
+
+   <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/svgtiny/0201">
+      <dc:contributor>Manu Sporny</dc:contributor>
+      <dc:title>Expressing an attribute using @property</dc:title>
+      <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/svgtiny/0201.svg"/>
+      <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/svgtiny/0201.sparql"/>
+      <purpose>Tests @property to establish the predicate; literal object is in the content of the element.</purpose>
+      <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
+      <specificationReference></specificationReference>
+   </TestCase>
+
+</rdf:RDF>
+

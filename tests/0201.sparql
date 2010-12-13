@@ -1,0 +1,3 @@
+ASK WHERE {
+	<$TCPATH> <http://purl.org/dc/elements/1.1/description> "A yellow rectangle with sharp corners." .
+}

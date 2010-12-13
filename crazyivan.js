@@ -207,6 +207,10 @@ function getTestSuiteManifest()
    {
       rval = window.location + "html5-manifest.rdf";
    }
+   else if(testsuite === "svgtiny")
+   {
+      rval = window.location + "svgtiny-manifest.rdf";
+   }
    else if(testsuite === "design")
    {
        rval = window.location + "design-manifest.rdf";

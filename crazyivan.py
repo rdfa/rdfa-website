@@ -31,12 +31,12 @@ def retrieveTestCases(testSuiteManifestUrl, classificationFilter):
     q = """
     PREFIX test: <http://www.w3.org/2006/03/test-description#> 
     PREFIX dc:   <http://purl.org/dc/elements/1.1/>
-    SELECT ?html_uri ?sparql_uri ?title ?classification ?expected_results
+    SELECT ?doc_uri ?sparql_uri ?title ?classification ?expected_results
     FROM <%s>
     WHERE 
     { 
     ?t dc:title ?title .
-    ?t test:informationResourceInput ?html_uri .
+    ?t test:informationResourceInput ?doc_uri .
     ?t test:informationResourceResults ?sparql_uri .
     ?t test:classification ?classification .
     OPTIONAL
@@ -49,18 +49,23 @@ def retrieveTestCases(testSuiteManifestUrl, classificationFilter):
     # Construct the graph from the given RDF and apply the SPARQL filter above
     g = Graph()
     unittests = []
-    for html, sparql, title, classification_url, expected_results in g.query(q):
+    for doc_uri, sparql, title, classification_url, expected_results in g.query(q):
         classification = classification_url.split("#")[-1]
 
+        print doc_uri
+
         if(classification == classificationFilter):
-            num = search(r'(\d+)\..?html', html).groups(1)
+            matches = search(r'(\d+)\..?html', doc_uri)
+            if(matches == None):
+                matches = search(r'(\d+)\..?svg', doc_uri)
+            num = matches.groups(1)
 
             if(expected_results == None):
                 expected_results = 'true'
 
             unittests.append((int(num[0]),
                               str(title),
-                              str(html),
+                              str(doc_uri),
                               str(sparql),
                               str(classification),
                               str(expected_results)))
@@ -168,8 +173,6 @@ def writeTestCaseAlternatives(req, arguments):
    </body>
 </html>""" % (BASE_TEST_CASE_URL, filename, BASE_TEST_CASE_URL, filename, 
               BASE_TEST_CASE_URL, filename, BASE_TEST_CASE_URL, filename, 
-              BASE_TEST_CASE_URL, filename, BASE_TEST_CASE_URL, filename, 
-              BASE_TEST_CASE_URL, filename, BASE_TEST_CASE_URL, filename,
               BASE_TEST_CASE_URL, filename, BASE_TEST_CASE_URL, filename))
 
 ##
@@ -203,7 +206,7 @@ def writeTestCaseDocument(req, path):
         # Extract the namespaces from the top of the document and build
         # the body of the document
         for line in lines:
-            if("<head" in line):
+            if("<head" in line or "http://www.w3.org/2000/svg" in line):
                 foundHead = True
 
             if(not foundHead):
@@ -223,13 +226,13 @@ def writeTestCaseDocument(req, path):
     tcpathre = re.compile("\$TCPATH")
 
     if(document.endswith(".xhtml") and version == "xhtml1"):
-            req.content_type = "application/xhtml+xml"
-            req.write("""<?xml version="1.0" encoding="UTF-8"?>
+        req.content_type = "application/xhtml+xml"
+        req.write("""<?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd"> 
     <html xmlns="http://www.w3.org/1999/xhtml"
     %s>\n""" % (namespaces,))
-            req.write(tcpathre.sub(tcpath, body))
-            req.write("</html>")
+        req.write(tcpathre.sub(tcpath, body))
+        req.write("</html>")
     elif(document.endswith(".html") and version == "html4"):
         req.content_type = "text/html"
         req.write("""<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa11-1.dtd">
@@ -250,6 +253,12 @@ def writeTestCaseDocument(req, path):
         # Rename all of the test case .xhtml files to .html
         req.write(tcpathre.sub(tcpath, htmlre.sub("\\1.html", body)))
         req.write("</html>")
+    elif(document.endswith(".svg") and version == "svgtiny"):
+        req.content_type = "image/svg+xml"
+        req.write("""<?xml version="1.0" encoding="UTF-8"?>\n<svg %s>\n""" % \
+            (namespaces,))
+        req.write(tcpathre.sub(tcpath, body))
+        req.write("</svg>")
     elif(document.endswith(".sparql")):
         req.content_type = "application/sparql-query"
 
@@ -410,7 +419,7 @@ def handler(req):
             writeTestCaseRetrievalError(req, document[-1])
         elif(len(document) == 3):
             if(service.endswith(".xhtml") or service.endswith(".html") or
-               service.endswith(".sparql")):
+                service.endswith(".svg") or service.endswith(".sparql")):
                 writeTestCaseDocument(req, document)
             else:
                 writeTestCaseAlternatives(req, document[-1])
