@@ -223,6 +223,7 @@ def writeTestCaseDocument(req, path):
     # SPARQL files
     tcpath = BASE_TEST_CASE_URL + version
     htmlre = re.compile("([0-9]{4,4})\.xhtml")
+    svgre = re.compile("([0-9]{4,4})\.svg")
     tcpathre = re.compile("\$TCPATH")
 
     if(document.endswith(".xhtml") and version == "xhtml1"):
