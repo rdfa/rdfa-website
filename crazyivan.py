@@ -52,8 +52,6 @@ def retrieveTestCases(testSuiteManifestUrl, classificationFilter):
     for doc_uri, sparql, title, classification_url, expected_results in g.query(q):
         classification = classification_url.split("#")[-1]
 
-        print doc_uri
-
         if(classification == classificationFilter):
             matches = search(r'(\d+)\..?html', doc_uri)
             if(matches == None):
@@ -84,6 +82,22 @@ def retrieveTestCases(testSuiteManifestUrl, classificationFilter):
     return unittests
 
 ##
+# Performs a SPARQL query given a query and a source URL
+#
+def performSparqlQuery(req, query):
+    rval = False
+
+    # Perform a simple SPARQL query given the input data
+    g = Graph()
+    result = g.query(query)
+    if(req):
+        req.write("%s" % str(result.askAnswer[0]).lower())
+    else:
+        rval = result.askAnswer[0]
+
+    return rval
+
+##
 # Performs a given unit test given the RDF extractor URL, sparql engine URL,
 # HTML file and SPARQL validation file.
 #
@@ -101,18 +115,24 @@ def performUnitTest(rdf_extractor_url, sparql_engine_url,
     sparql_query = sparql_query.replace("ASK WHERE",
                                         "ASK FROM <%s> WHERE" % \
                                         (rdf_extract_url,))
-    
-    # Build the SPARQLer service URL
-    sparql_engine_url += urllib.quote(sparql_query)
-    sparql_engine_url += "&default-graph-uri=&stylesheet=%2Fxml-to-html.xsl"
 
-    # Call the SPARQLer service
-    sparql_engine_result = urlopen(sparql_engine_url).read()
+    # Perform the SPARQL query
+    if(sparql_engine_url.find("/test-suite/sparql-query") != -1):
+        # If the SPARQL query is to this SPARQL endpoint, do the query
+        # internally
+        sparql_value = performSparqlQuery(None, sparql_query)
+    else:
+        # Build the SPARQLer service URL
+        sparql_engine_url += urllib.quote(sparql_query)
+        sparql_engine_url += "&default-graph-uri=&stylesheet=%2Fxml-to-html.xsl"
 
-    # TODO: Remove this hack, it's temporary until Michael Hausenblas puts
-    #       an "expected SPARQL result" flag into the test manifest.
-    query_result = "<boolean>%s</boolean>" % (expected_result,)
-    sparql_value = (sparql_engine_result.find(query_result) != -1)
+        # Call the SPARQLer service
+        sparql_engine_result = urlopen(sparql_engine_url).read()
+
+        # TODO: Remove this hack, it's temporary until Michael Hausenblas puts
+        #       an "expected SPARQL result" flag into the test manifest.
+        query_result = "<boolean>%s</boolean>" % (expected_result,)
+        sparql_value = (sparql_engine_result.find(query_result) != -1)
 
     return sparql_value
 
@@ -313,6 +333,14 @@ def writeUnitTestHtml(req, test):
        status, num, title, num, num, html_url, sparql_url, num, formatted_num, 
        num))
 
+# Returns the HTML encoded version of the given string. This is useful to
+# display a plain ASCII text string on a web page.
+def htmlEncode(s):
+    for code in (('&', '&amp;'), ('<', '&lt;'), ('>', '&gt;'), ('"', '&quot;'),
+        ("'", '&#39;'), ("\\n", '<br/>')):
+        s = s.replace(code[0], code[1])
+    return s
+
 ##
 # Checks a unit test and outputs a simple unit test result as HTML.
 #
@@ -324,11 +352,18 @@ def writeUnitTestHtml(req, test):
 # @param sparql_url the SPARQL file to use when validating the RDF graph.
 def checkUnitTestHtml(req, num, rdfa_extractor_url, sparql_engine_url,
                       html_url, sparql_url, expected_result):
-    if(performUnitTest(rdfa_extractor_url, sparql_engine_url,
-                       html_url, sparql_url, expected_result) == True):
-        req.write("<span id=\"unit-test-anchor-%s\" style=\"text-decoration: underline; color: #090\" onclick=\"javascript:checkUnitTest(%s, '%s', '%s', '%s')\"><span id='unit-test-result-%s'>PASS</span></span>" % (num, num, html_url, sparql_url, expected_result, num))
-    else:
-        req.write("<span id=\"unit-test-anchor-%s\" style=\"text-decoration: underline; font-weight: bold; color: #f00\" onclick=\"javascript:checkUnitTest(%s, '%s', '%s', '%s')\"><span id='unit-test-result-%s>FAIL</span></span>" % (num, num, html_url, sparql_url, expected_result, num))
+    try:
+        if(performUnitTest(rdfa_extractor_url, sparql_engine_url,
+                           html_url, sparql_url, expected_result) == True):
+            req.write("<span id=\"unit-test-anchor-%s\" style=\"text-decoration: underline; color: #090\" onclick=\"javascript:checkUnitTest(%s, '%s', '%s', '%s')\"><span id='unit-test-result-%s'>PASS</span></span>" % (num, num, html_url, sparql_url, expected_result, num))
+        else:
+            req.write("<span id=\"unit-test-anchor-%s\" style=\"text-decoration: underline; font-weight: bold; color: #f00\" onclick=\"javascript:checkUnitTest(%s, '%s', '%s', '%s')\"><span id='unit-test-result-%s'>FAIL</span></span>" % (num, num, html_url, sparql_url, expected_result, num))
+    except Exception, e:
+        import traceback 
+        testSuitePath = os.path.dirname(req.canonical_filename)
+        exceptionText = htmlEncode( \
+            traceback.format_exc().replace(testSuitePath, ""))
+        req.write(exceptionText)
 
 ##
 # Outputs the details related to a given unit test given the unit test number,
@@ -469,6 +504,10 @@ def handler(req):
             req.write("ID, XHTML, SPARQL, RDFA-EXTRACTOR or N3-EXTRACTOR " + \
                       "was not specified in the request URL to the" + \
                       "test harness!")
+
+    elif(service.find("/test-suite/sparql-query") != -1):
+        query = req.read()
+        performSparqlQuery(req, query)
 
     # Perform a git update in the current directory
     elif(service.find("/test-suite/git-update") != -1):

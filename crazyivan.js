@@ -165,7 +165,8 @@ function displayUnitTestResult(response, num)
       document.getElementById(unitTestId).innerHTML =
          "<a href=\"javascript:checkUnitTest(" + num + ",'" +
     htmlUrl + "','" + sparqlUrl + "','" + expectedResult +
-    "')\" style=\"font-weight: bold; color: #f00\">ERROR</a>" ;
+    "')\" style=\"font-weight: bold; color: #f00\">ERROR</a>" +
+    "<pre>" + response + "</pre>";
    }
 }
 
@@ -282,13 +283,13 @@ function getRdfaExtractorUrl()
       rval = "http://arc.web-semantics.org/demos/rdfa_tests/extract.php?url=";
    }
    else if(extractor === "librdfa-python")
-        {
+   {
       rval = "http://rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py?uri="
-        }
-        else if(extractor === "spread")
-        {
-                rval = "http://htmlwg.mn.aptest.com/rdfa/extract_rdfa.pl?format=xml&uri="
-        }
+   }
+   else if(extractor === "spread")
+   {
+      rval = "http://htmlwg.mn.aptest.com/rdfa/extract_rdfa.pl?format=xml&uri="
+   }
    else if(extractor === "cognition")
    {
       rval = "http://srv.buzzword.org.uk/crazy-ivan.cgi?uri="
@@ -299,11 +300,11 @@ function getRdfaExtractorUrl()
    }
    else if(extractor === "marklogic")
    {
-           rval = "http://dmz-demo39.demo.marklogic.com/rdfa_extract.xqy?url="
+      rval = "http://dmz-demo39.demo.marklogic.com/rdfa_extract.xqy?url="
    }
    else if(extractor === "RdfContext")
    {
-           rval = "http://kellogg-assoc.com/distiller/xml?uri="
+      rval = "http://kellogg-assoc.com/distiller/xml?uri="
    }
    else if(extractor === "other")
    {
@@ -323,7 +324,11 @@ function getSparqlEngineUrl()
    var rval = "";
    var engine = document.getElementById('sparql-engine-selection').value;
 
-   if(engine === "sparqler")
+   if(engine === "graphene")
+   {
+      rval = window.location + "sparql-query";
+   }
+   else if(engine === "sparqler")
    {
       rval = "http://sparql.org/sparql?stylesheet=%2Fxml-to-html.xsl&query=";
    }
