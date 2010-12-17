@@ -1013,17 +1013,6 @@
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0116">
-        <dc:contributor>Toby Inkster</dc:contributor>
-        <dc:title>Reserved word used in @property should not generate triple</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0116.html"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0116.sparql"/>
-        <purpose>Checks to make sure that reserved words that are used in @property do not generate triples. This is a NEGATIVE test case.</purpose>
-        <classification rdf:resource="http://www.w3.org/2006/03/test-description#buggy"/>
-        <specificationReference>7.4.3 General Use of Terms in Attributes</specificationReference>
-        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
-    </TestCase>
-
     <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0117">
         <dc:contributor>Manu Sporny</dc:contributor>
         <dc:title>Fragment identifiers stripped from BASE</dc:title>
@@ -1096,16 +1085,6 @@
         <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0123">
-        <dc:contributor>Shane P. McCarron</dc:contributor>
-        <dc:title>case sensitivity in prefix names</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0123.html"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0123.sparql"/>
-        <purpose>Checks to make sure that prefix names are treated case sensitive.</purpose>
-        <classification rdf:resource="http://www.w3.org/2006/03/test-description#buggy"/>
-        <specificationReference></specificationReference>
-    </TestCase>
-
     <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0124">
         <dc:contributor>Shane P. McCarron</dc:contributor>
         <dc:title>XMLLiteral with explicit @datatype=''</dc:title>
@@ -1114,17 +1093,6 @@
         <purpose>Checks to make sure that XMLLiteral gets processed properly if surrounding element is tagged with @datatype=''.</purpose>
         <classification rdf:resource="http://www.w3.org/2006/03/test-description#buggy"/>
         <specificationReference></specificationReference>
-    </TestCase>
-
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0125">
-        <dc:contributor>Shane P. McCarron</dc:contributor>
-        <dc:title>datatype XMLLiteral with other embedded RDFa</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0125.html"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0125.sparql"/>
-        <purpose>Checks to ensure that when datatype is the default the parser does not generate triples for embedded content.</purpose>
-        <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
-        <specificationReference></specificationReference>
-  <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
     </TestCase>
 
     <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0126">
@@ -1231,7 +1199,7 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0164.html"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0164.sparql"/>
         <purpose>Ensure that a number of common prefixes, when undeclared, do not generate any unknown triples.</purpose>
-        <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
+        <classification rdf:resource="http://www.w3.org/2006/03/test-description#buggy"/>
         <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>
@@ -1456,17 +1424,6 @@
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0191">
-        <dc:contributor>Gregg Kellogg</dc:contributor>
-        <dc:title>Triple is generated for a non-reserved @rel value (opposite of 0086)</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0191.html"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0191.sparql"/>
-        <purpose>Test that a triple is generated for a non-reserved @rel value using the default vocabulary</purpose>
-        <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
-        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
-        <specificationReference></specificationReference>
-    </TestCase>      
-
     <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0192">
         <dc:contributor>Gregg Kellogg</dc:contributor>
         <dc:title>Reserved word used in @property should generate triple (opposite of 0116)</dc:title>
@@ -1539,17 +1496,6 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0198.html"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0198.sparql"/>
         <purpose>Checks to ensure that when datatype is the default the parser generates triples for embedded content.</purpose>
-        <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
-        <specificationReference></specificationReference>
-        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
-    </TestCase>
-
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0199">
-        <dc:contributor>Gregg kellogg</dc:contributor>
-        <dc:title>datatype XMLLiteral with profile and other embedded RDFa</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0199.html"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0199.sparql"/>
-        <purpose>Checks to make sure profile is added to elements within an XMLLiteral.</purpose>
         <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
         <specificationReference></specificationReference>
         <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
