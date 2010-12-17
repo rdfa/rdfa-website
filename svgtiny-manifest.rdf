@@ -18,5 +18,25 @@
       <specificationReference></specificationReference>
    </TestCase>
 
+   <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0202">
+       <dc:contributor>Gregg Kellogg</dc:contributor>
+       <dc:title>Tests to ensure @xml:base used in SVG</dc:title>
+       <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0202.xhtml"/>
+       <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0202.sparql"/>
+       <purpose>Tests to make sure that @xml:base is used in SVG+RDFa 1.0.</purpose>
+       <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
+       <specificationReference>http://www.w3.org/QA/2008/12/rdfa_and_svg_tiny_and_the_rdfa.html</specificationReference>
+   </TestCase>  
+
+   <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0203">
+       <dc:contributor>Gregg Kellogg</dc:contributor>
+       <dc:title>Tests to ensure @xml:base used in non-root elements in SVG</dc:title>
+       <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0203.xhtml"/>
+       <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0203.sparql"/>
+       <purpose>Tests to make sure that @xml:base is used in non-root elements in SVG+RDFa 1.0.</purpose>
+       <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
+       <specificationReference>http://www.w3.org/QA/2008/12/rdfa_and_svg_tiny_and_the_rdfa.html</specificationReference>
+   </TestCase>  
+
 </rdf:RDF>
 
