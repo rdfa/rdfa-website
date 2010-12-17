@@ -11,5 +11,5 @@ ASK WHERE {
 ?b 
    <http://microformats.org/profiles/hcard#fn> 
       "Mark Birbeck" .
-FILTER (ISBLANK(?a) && ISBLANK(?b))
+FILTER (isBlank(?a) && isBlank(?b))
 }

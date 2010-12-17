@@ -3,5 +3,5 @@ ASK WHERE {
  OPTIONAL {
    ?x ?y <$TCPATH/manu.html> .
  }
- FILTER (ISBLANK(?a) && !BOUND(?x) && !BOUND(?y))
+ FILTER (isBlank(?a) && !BOUND(?x) && !BOUND(?y))
 }
