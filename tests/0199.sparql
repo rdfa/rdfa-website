@@ -1,6 +1,6 @@
 ASK WHERE {
  <http://www.example.org/me#me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
- <http://www.example.org/me#me> <http://xmlns.com/foaf/0.1/name> "<span xmlns=\"http://www.w3.org/1999/xhtml\" property=\"foaf:firstName\" prefix=\"foaf: http://xmlns.com/foaf/0.1/ rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# xhv: http://www.w3.org/1999/xhtml/vocab#\" profile=\"http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0199.profile.html\" vocab=\"http://www.w3.org/1999/xhtml/vocab#\">Gregg</span> <span xmlns=\"http://www.w3.org/1999/xhtml\" property=\"foaf:surname\" prefix=\"foaf: http://xmlns.com/foaf/0.1/ rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# xhv: http://www.w3.org/1999/xhtml/vocab#\" profile=\"http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml11/0199.profile.html\" vocab=\"http://www.w3.org/1999/xhtml/vocab#\">Kellogg</span>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+ <http://www.example.org/me#me> <http://xmlns.com/foaf/0.1/name> "<span xmlns=\"http://www.w3.org/1999/xhtml\" property=\"foaf:firstName\">Gregg</span> <span xmlns=\"http://www.w3.org/1999/xhtml\" property=\"foaf:surname\">Kellogg</span>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
  <http://www.example.org/me#me> <http://xmlns.com/foaf/0.1/firstName> "Gregg" .
  <http://www.example.org/me#me> <http://xmlns.com/foaf/0.1/surname> "Kellogg" .
 }

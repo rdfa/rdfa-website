@@ -1,5 +1,5 @@
 ASK WHERE {
-<$TCPATH/0116.xhtml>
+<$TCPATH/0192.xhtml>
    <http://www.w3.org/1999/xhtml/vocab#next>
       "valid property" .
 }
