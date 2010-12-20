@@ -2,7 +2,7 @@
     <title>Test 0199</title>
     <base href="http://www.example.org/me" />
   </head>
-  <body profile="$TCPATH/0199.profile.html">
+  <body profile="$TCPATH/../../profiles/0199.profile.html">
     <div about="#me" typeof="foaf:Person">
       <h2 property="foaf:name" datatype="rdf:XMLLiteral"><span property="foaf:firstName">Gregg</span> <span property="foaf:surname">Kellogg</span></h2>
     </div>
