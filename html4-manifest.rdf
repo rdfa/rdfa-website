@@ -1452,7 +1452,7 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0194.html"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0194.sparql"/>
         <purpose>Check that profiles are processed from right to left, so that terms defined in left-most profiles take precedence over others</purpose>
-        <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
+        <classification rdf:resource="http://www.w3.org/2006/03/test-description#rejected"/>
         <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>
@@ -1507,6 +1507,17 @@
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0200.html"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0200.sparql"/>
         <purpose>Check to ensure that terms that differ only in case match to distinct URIs</purpose>
+        <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference></specificationReference>
+    </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0204">
+        <dc:contributor>Gregg Kellogg</dc:contributor>
+        <dc:title>Test process @profile in document order</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0204.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0204.sparql"/>
+        <purpose>Check that profiles are processed in document order, so that terms defined in later profiles take precedence over those processed earlier</purpose>
         <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
         <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
         <specificationReference></specificationReference>
