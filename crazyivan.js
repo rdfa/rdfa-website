@@ -100,7 +100,7 @@ function checkUnitTest(num, html_url, sparql_url, expected_result)
 function showUnitTestDetails(num, html_url, sparql_url)
 {
    var rdfaExtractorUrl = getRdfaExtractorUrl();
-   var n3ExtractorUrl = "http://www.w3.org/2007/08/pyRdfa/extract?format=n3&uri=";
+   var n3ExtractorUrl = "http://www.w3.org/2007/08/pyRdfa/shadowextract?format=n3&uri=";
 
    document.getElementById('unit-test-details-' + num).innerHTML =
       "Retreiving information...";
@@ -276,7 +276,7 @@ function getRdfaExtractorUrl()
 
    if(extractor === "pyrdfa")
    {
-      rval = "http://www.w3.org/2007/08/pyRdfa/extract?uri=";
+      rval = "http://www.w3.org/2007/08/pyRdfa/shadowextract?uri=";
    }
    else if(extractor === "arcrdfa")
    {
