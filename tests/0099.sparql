@@ -1,5 +1,5 @@
 ASK WHERE {
-<http://www.cwi.nl/~steven/> example:likes """
+<http://www.cwi.nl/~steven/> <http://www.example.org/likes> """
     We put thirty spokes together and call it a wheel;
     But it is on the space where there is nothing that the usefulness of the wheel depends.
     We turn clay to make a vessel;
