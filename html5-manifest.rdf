@@ -1546,5 +1546,17 @@
         <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
         <specificationReference>N.A.</specificationReference>
     </TestCase>
+
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0301">
+        <dc:contributor>Ivan Herman</dc:contributor>
+        <dc:title>Usage of Default Profile</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0301.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html5/0301.sparql"/>
+        <purpose>Tests whether the default RDFa 1.1 profile (that contains prefix definitions, among others, to the Semantic Web Standard vocabularies) is properly handled.</purpose>
+        <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
+        <specificationReference>N.A.</specificationReference>
+    </TestCase>
+
+
  
 </rdf:RDF>
