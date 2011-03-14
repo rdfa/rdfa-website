@@ -1557,4 +1557,17 @@
         <specificationReference>N.A.</specificationReference>
     </TestCase>
 
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0208">
+        <dc:contributor>Ivan Herman</dc:contributor>
+        <dc:title>Default Profile should be ignored with version set to 1.0</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0208.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0208.sparql"/>
+        <purpose>Tests whether the default RDFa 1.1 profile is ignored if version is explicitly set to 1.0</purpose>
+        <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
+        <specificationReference>N.A.</specificationReference>
+    </TestCase>
+
+
+
 </rdf:RDF>
