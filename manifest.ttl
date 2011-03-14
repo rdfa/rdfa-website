@@ -1,0 +1,1239 @@
+@base <http://rdfa.digitalbazaar.com/test-suite/> .
+@prefix : <http://www.w3.org/2006/03/test-description#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix log: <http://www.w3.org/2000/10/swap/log#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix test: <http://www.w3.org/2006/03/test-description#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<test-cases/0001> dc:title "Predicate establishment with @property";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0001.html>,
+   <test-cases/0001.xhtml>;
+   :informationResourceResults <test-cases/0001.sparql> .
+<test-cases/0006> dc:title "@rel and @rev";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0006.html>,
+   <test-cases/0006.xhtml>;
+   :informationResourceResults <test-cases/0006.sparql> .
+<test-cases/0007> dc:title "@rel, @rev, @property, @content";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0007.html>,
+   <test-cases/0007.xhtml>;
+   :informationResourceResults <test-cases/0007.sparql> .
+<test-cases/0008> dc:title "empty string @about";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0008.html>,
+   <test-cases/0008.xhtml>;
+   :informationResourceResults <test-cases/0008.sparql> .
+<test-cases/0009> dc:title "@rev";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0009.html>,
+   <test-cases/0009.xhtml>;
+   :informationResourceResults <test-cases/0009.sparql> .
+<test-cases/0010> dc:title "@rel, @rev, @href";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0010.html>,
+   <test-cases/0010.xhtml>;
+   :informationResourceResults <test-cases/0010.sparql> .
+<test-cases/0011> dc:title "XMLLiteral";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0011.html>,
+   <test-cases/0011.xhtml>;
+   :informationResourceResults <test-cases/0011.sparql> .
+<test-cases/0012> dc:title "@xml:lang";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0012.html>,
+   <test-cases/0012.xhtml>;
+   :informationResourceResults <test-cases/0012.sparql> .
+<test-cases/0013> dc:title "@xml:lang inheritance";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0013.html>,
+   <test-cases/0013.xhtml>;
+   :informationResourceResults <test-cases/0013.sparql> .
+<test-cases/0014> dc:title "@datatype, xsd:integer";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0014.html>,
+   <test-cases/0014.xhtml>;
+   :informationResourceResults <test-cases/0014.sparql> .
+<test-cases/0015> dc:title "meta and link";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0015.html>,
+   <test-cases/0015.xhtml>;
+   :informationResourceResults <test-cases/0015.sparql> .
+<test-cases/0017> dc:title "Related blanknodes";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0017.html>,
+   <test-cases/0017.xhtml>;
+   :informationResourceResults <test-cases/0017.sparql> .
+<test-cases/0018> dc:title "@rel for predicate";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0018.html>,
+   <test-cases/0018.xhtml>;
+   :informationResourceResults <test-cases/0018.sparql> .
+<test-cases/0019> dc:title "@about for subject";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0019.html>,
+   <test-cases/0019.xhtml>;
+   :informationResourceResults <test-cases/0019.sparql> .
+<test-cases/0020> dc:title "Inheriting @about for subject";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0020.html>,
+   <test-cases/0020.xhtml>;
+   :informationResourceResults <test-cases/0020.sparql> .
+<test-cases/0021> dc:title "Subject inheritance with no @about";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0021.html>,
+   <test-cases/0021.xhtml>;
+   :informationResourceResults <test-cases/0021.sparql> .
+<test-cases/0023> dc:title "@id does not generate subjects";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0023.html>,
+   <test-cases/0023.xhtml>;
+   :informationResourceResults <test-cases/0023.sparql> .
+<test-cases/0025> dc:title "simple chaining test";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0025.html>,
+   <test-cases/0025.xhtml>;
+   :informationResourceResults <test-cases/0025.sparql> .
+<test-cases/0026> dc:title "@content";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0026.html>,
+   <test-cases/0026.xhtml>;
+   :informationResourceResults <test-cases/0026.sparql> .
+<test-cases/0027> dc:title "@content, ignore element content";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0027.html>,
+   <test-cases/0027.xhtml>;
+   :informationResourceResults <test-cases/0027.sparql> .
+<test-cases/0029> dc:title "markup stripping with @datatype";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0029.html>,
+   <test-cases/0029.xhtml>;
+   :informationResourceResults <test-cases/0029.sparql> .
+<test-cases/0030> dc:title "omitted @about";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0030.html>,
+   <test-cases/0030.xhtml>;
+   :informationResourceResults <test-cases/0030.sparql> .
+<test-cases/0031> dc:title "simple @resource";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0031.html>,
+   <test-cases/0031.xhtml>;
+   :informationResourceResults <test-cases/0031.sparql> .
+<test-cases/0032> dc:title "@resource overrides @href";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0032.html>,
+   <test-cases/0032.xhtml>;
+   :informationResourceResults <test-cases/0032.sparql> .
+<test-cases/0033> dc:title "simple chaining test with bNode";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0033.html>,
+   <test-cases/0033.xhtml>;
+   :informationResourceResults <test-cases/0033.sparql> .
+<test-cases/0034> dc:title "simple img[@src] test";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0034.html>,
+   <test-cases/0034.xhtml>;
+   :informationResourceResults <test-cases/0034.sparql> .
+<test-cases/0035> dc:title "@src/@href test";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0035.html>,
+   <test-cases/0035.xhtml>;
+   :informationResourceResults <test-cases/0035.sparql> .
+<test-cases/0036> dc:title "@src/@resource test";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0036.html>,
+   <test-cases/0036.xhtml>;
+   :informationResourceResults <test-cases/0036.sparql> .
+<test-cases/0037> dc:title "@src/@href/@resource test";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0037.html>,
+   <test-cases/0037.xhtml>;
+   :informationResourceResults <test-cases/0037.sparql> .
+<test-cases/0038> dc:title "@rev - img[@src] test";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0038.html>,
+   <test-cases/0038.xhtml>;
+   :informationResourceResults <test-cases/0038.sparql> .
+<test-cases/0039> dc:title "@rev - @src/@href test";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0039.html>,
+   <test-cases/0039.xhtml>;
+   :informationResourceResults <test-cases/0039.sparql> .
+<test-cases/0040> dc:title "@rev - @src/@resource test";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0040.html>,
+   <test-cases/0040.xhtml>;
+   :informationResourceResults <test-cases/0040.sparql> .
+<test-cases/0041> dc:title "@rev - @src/@href/@resource test";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0041.html>,
+   <test-cases/0041.xhtml>;
+   :informationResourceResults <test-cases/0041.sparql> .
+<test-cases/0042> dc:title "img[@src] test with omitted @about";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0042.html>,
+   <test-cases/0042.xhtml>;
+   :informationResourceResults <test-cases/0042.sparql> .
+<test-cases/0046> dc:title "@typeof with @rel present, no @href, @resource, or @about";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0046.html>,
+   <test-cases/0046.xhtml>;
+   :informationResourceResults <test-cases/0046.sparql> .
+<test-cases/0047> dc:title "@typeof with @rel and @resource present, no @about";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0047.html>,
+   <test-cases/0047.xhtml>;
+   :informationResourceResults <test-cases/0047.sparql> .
+<test-cases/0048> dc:title "@typeof with @about and @rel present, no @resource";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0048.html>,
+   <test-cases/0048.xhtml>;
+   :informationResourceResults <test-cases/0048.sparql> .
+<test-cases/0049> dc:title "@typeof with @about, no @rel or @resource";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0049.html>,
+   <test-cases/0049.xhtml>;
+   :informationResourceResults <test-cases/0049.sparql> .
+<test-cases/0050> dc:title "@typeof without anything else";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0050.html>,
+   <test-cases/0050.xhtml>;
+   :informationResourceResults <test-cases/0050.sparql> .
+<test-cases/0051> dc:title "@typeof with a single @property";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0051.html>,
+   <test-cases/0051.xhtml>;
+   :informationResourceResults <test-cases/0051.sparql> .
+<test-cases/0052> dc:title "@typeof with @resource and nothing else";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0052.html>,
+   <test-cases/0052.xhtml>;
+   :informationResourceResults <test-cases/0052.sparql> .
+<test-cases/0053> dc:title "@typeof with @resource and nothing else, with a subelement";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0053.html>,
+   <test-cases/0053.xhtml>;
+   :informationResourceResults <test-cases/0053.sparql> .
+<test-cases/0054> dc:title "multiple @property";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0054.html>,
+   <test-cases/0054.xhtml>;
+   :informationResourceResults <test-cases/0054.sparql> .
+<test-cases/0055> dc:title "multiple @rel";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0055.html>,
+   <test-cases/0055.xhtml>;
+   :informationResourceResults <test-cases/0055.sparql> .
+<test-cases/0056> dc:title "@typeof applies to @about on same element with hanging rel";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0056.html>,
+   <test-cases/0056.xhtml>;
+   :informationResourceResults <test-cases/0056.sparql> .
+<test-cases/0057> dc:title "hanging @rel creates multiple triples";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0057.html>,
+   <test-cases/0057.xhtml>;
+   :informationResourceResults <test-cases/0057.sparql> .
+<test-cases/0058> dc:title "hanging @rel creates multiple triples, @typeof permutation";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0058.html>,
+   <test-cases/0058.xhtml>;
+   :informationResourceResults <test-cases/0058.sparql> .
+<test-cases/0059> dc:title "multiple hanging @rels with multiple children";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0059.html>,
+   <test-cases/0059.xhtml>;
+   :informationResourceResults <test-cases/0059.sparql> .
+<test-cases/0060> dc:title "UTF-8 conformance";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0060.html>,
+   <test-cases/0060.xhtml>;
+   :informationResourceResults <test-cases/0060.sparql> .
+<test-cases/0061> dc:title "@rel in head using reserved, non-prefixed XHTML value";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0061.html>,
+   <test-cases/0061.xhtml>;
+   :informationResourceResults <test-cases/0061.sparql> .
+<test-cases/0062> dc:title "@rev in head using reserved, non-prefixed XHTML value";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0062.html>,
+   <test-cases/0062.xhtml>;
+   :informationResourceResults <test-cases/0062.sparql> .
+<test-cases/0063> dc:title "@rel in head using reserved XHTML value and empty-prefix CURIE syntax";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0063.html>,
+   <test-cases/0063.xhtml>;
+   :informationResourceResults <test-cases/0063.sparql> .
+<test-cases/0064> dc:title "@about with safe CURIE";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0064.html>,
+   <test-cases/0064.xhtml>;
+   :informationResourceResults <test-cases/0064.sparql> .
+<test-cases/0065> dc:title "@rel with safe CURIE";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0065.html>,
+   <test-cases/0065.xhtml>;
+   :informationResourceResults <test-cases/0065.sparql> .
+<test-cases/0066> dc:title "@about with @typeof in the head";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0066.html>,
+   <test-cases/0066.xhtml>;
+   :informationResourceResults <test-cases/0066.sparql> .
+<test-cases/0067> dc:title "@property in the head";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0067.html>,
+   <test-cases/0067.xhtml>;
+   :informationResourceResults <test-cases/0067.sparql> .
+<test-cases/0068> dc:title "Relative URI in @about";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0068.html>,
+   <test-cases/0068.xhtml>;
+   :informationResourceResults <test-cases/0068.sparql> .
+<test-cases/0069> dc:title "Relative URI in @href";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0069.html>,
+   <test-cases/0069.xhtml>;
+   :informationResourceResults <test-cases/0069.sparql> .
+<test-cases/0070> dc:title "Relative URI in @resource";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0070.html>,
+   <test-cases/0070.xhtml>;
+   :informationResourceResults <test-cases/0070.sparql> .
+<test-cases/0071> dc:title "No explicit @about";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0071.html>,
+   <test-cases/0071.xhtml>;
+   :informationResourceResults <test-cases/0071.sparql> .
+<test-cases/0072> dc:title "Relative URI in @about (with XHTML base in head)";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0072.html>,
+   <test-cases/0072.xhtml>;
+   :informationResourceResults <test-cases/0072.sparql> .
+<test-cases/0073> dc:title "Relative URI in @resource (with XHTML base in head)";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0073.html>,
+   <test-cases/0073.xhtml>;
+   :informationResourceResults <test-cases/0073.sparql> .
+<test-cases/0074> dc:title "Relative URI in @href (with XHTML base in head)";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0074.html>,
+   <test-cases/0074.xhtml>;
+   :informationResourceResults <test-cases/0074.sparql> .
+<test-cases/0075> dc:title "Reserved word 'license' in @rel with no explizit @about";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0075.html>,
+   <test-cases/0075.xhtml>;
+   :informationResourceResults <test-cases/0075.sparql> .
+<test-cases/0076> dc:title "All reserved XHTML @rel values";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0076.html>,
+   <test-cases/0076.xhtml>;
+   :informationResourceResults <test-cases/0076.sparql> .
+<test-cases/0077> dc:title "All reserved XHTML @rev values";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0077.html>,
+   <test-cases/0077.xhtml>;
+   :informationResourceResults <test-cases/0077.sparql> .
+<test-cases/0078> dc:title "Multiple incomplete triples";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0078.html>,
+   <test-cases/0078.xhtml>;
+   :informationResourceResults <test-cases/0078.sparql> .
+<test-cases/0079> dc:title "@resource and @href in completing incomplete triples";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0079.html>,
+   <test-cases/0079.xhtml>;
+   :informationResourceResults <test-cases/0079.sparql> .
+<test-cases/0080> dc:title "@about overrides @resource in incomplete triples";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0080.html>,
+   <test-cases/0080.xhtml>;
+   :informationResourceResults <test-cases/0080.sparql> .
+<test-cases/0081> dc:title "multiple ways of handling incomplete triples (with @rev)";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0081.html>,
+   <test-cases/0081.xhtml>;
+   :informationResourceResults <test-cases/0081.sparql> .
+<test-cases/0082> dc:title "multiple ways of handling incomplete triples (with @rel and @rev)";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0082.html>,
+   <test-cases/0082.xhtml>;
+   :informationResourceResults <test-cases/0082.sparql> .
+<test-cases/0083> dc:title "multiple ways of handling incomplete triples (merged)";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0083.html>,
+   <test-cases/0083.xhtml>;
+   :informationResourceResults <test-cases/0083.sparql> .
+<test-cases/0084> dc:title "multiple ways of handling incomplete triples, this time with both @rel and @rev";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0084.html>,
+   <test-cases/0084.xhtml>;
+   :informationResourceResults <test-cases/0084.sparql> .
+<test-cases/0085> dc:title "@resource and @href in completing incomplete triples";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0085.html>,
+   <test-cases/0085.xhtml>;
+   :informationResourceResults <test-cases/0085.sparql> .
+<test-cases/0086> dc:title "NO triple for a non-reserved @rel value";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0086.html>,
+   <test-cases/0086.xhtml>;
+   :informationResourceResults <test-cases/0086.sparql> .
+<test-cases/0087> dc:title "All reserved XHTML @rel values (with :xxx)";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0087.html>,
+   <test-cases/0087.xhtml>;
+   :informationResourceResults <test-cases/0087.sparql> .
+<test-cases/0088> dc:title "Interpretation of the CURIE \"_:\"";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0088.html>,
+   <test-cases/0088.xhtml>;
+   :informationResourceResults <test-cases/0088.sparql> .
+<test-cases/0089> dc:title "@src sets a new subject (@typeof)";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0089.html>,
+   <test-cases/0089.xhtml>;
+   :informationResourceResults <test-cases/0089.sparql> .
+<test-cases/0090> dc:title "@src sets a new subject (@rel/@href)";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0090.html>,
+   <test-cases/0090.xhtml>;
+   :informationResourceResults <test-cases/0090.sparql> .
+<test-cases/0091> dc:title "Non-reserved, un-prefixed CURIE in @property";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0091.html>,
+   <test-cases/0091.xhtml>;
+   :informationResourceResults <test-cases/0091.sparql> .
+<test-cases/0092> dc:title "Tests XMLLiteral content with explicit @datatype";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0092.html>,
+   <test-cases/0092.xhtml>;
+   :informationResourceResults <test-cases/0092.sparql> .
+<test-cases/0093> dc:title "Tests XMLLiteral content with explicit @datatype (user-data-typed literal)";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0093.html>,
+   <test-cases/0093.xhtml>;
+   :informationResourceResults <test-cases/0093.sparql> .
+<test-cases/0094> dc:title "Tests XMLLiteral content with explicit @datatype (unusual prefix - bla:)";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0094.html>,
+   <test-cases/0094.xhtml>;
+   :informationResourceResults <test-cases/0094.sparql> .
+<test-cases/0099> dc:title "Preservation of white space in literals";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0099.html>,
+   <test-cases/0099.xhtml>;
+   :informationResourceResults <test-cases/0099.sparql> .
+<test-cases/0100> dc:title "XMLLiteral with explicit namespace";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0100.html>,
+   <test-cases/0100.xhtml>;
+   :informationResourceResults <test-cases/0100.sparql> .
+<test-cases/0101> dc:title "XMLLiteral with explicit namespace and xml:lang";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0101.html>,
+   <test-cases/0101.xhtml>;
+   :informationResourceResults <test-cases/0101.sparql> .
+<test-cases/0102> dc:title "XMLLiteral with explicit namespace and xml:lang; not overwriting existing langs";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0102.html>,
+   <test-cases/0102.xhtml>;
+   :informationResourceResults <test-cases/0102.sparql> .
+<test-cases/0103> dc:title "XMLLiteral with explicit namespace; not overwriting local namespaces";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0103.html>,
+   <test-cases/0103.xhtml>;
+   :informationResourceResults <test-cases/0103.sparql> .
+<test-cases/0104> dc:title "rdf:value";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0104.html>,
+   <test-cases/0104.xhtml>;
+   :informationResourceResults <test-cases/0104.sparql> .
+<test-cases/0105> dc:title "inner @rel neither CURIE nor LinkType";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0105.html>,
+   <test-cases/0105.xhtml>;
+   :informationResourceResults <test-cases/0105.sparql> .
+<test-cases/0106> dc:title "chaining with empty value in inner @rel";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0106.html>,
+   <test-cases/0106.xhtml>;
+   :informationResourceResults <test-cases/0106.sparql> .
+<test-cases/0107> dc:title "no garbage collecting bnodes";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0107.html>,
+   <test-cases/0107.xhtml>;
+   :informationResourceResults <test-cases/0107.sparql> .
+<test-cases/0108> dc:title "plain literal with datatype=\"\" and xml:lang preservation";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0108.html>,
+   <test-cases/0108.xhtml>;
+   :informationResourceResults <test-cases/0108.sparql> .
+<test-cases/0109> dc:title "Tests to ensure @xml:base is ignored";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0109.html>,
+   <test-cases/0109.xhtml>;
+   :informationResourceResults <test-cases/0109.sparql> .
+<test-cases/0110> dc:title "bNode generated even though no nested @about exists";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0110.html>,
+   <test-cases/0110.xhtml>;
+   :informationResourceResults <test-cases/0110.sparql> .
+<test-cases/0111> dc:title "two bNodes generated after three levels of nesting";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0111.html>,
+   <test-cases/0111.xhtml>;
+   :informationResourceResults <test-cases/0111.sparql> .
+<test-cases/0112> dc:title "plain literal with datatype=\"\"";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0112.html>,
+   <test-cases/0112.xhtml>;
+   :informationResourceResults <test-cases/0112.sparql> .
+<test-cases/0113> dc:title "element with @property and no child nodes generates  empty plain literal";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0113.html>,
+   <test-cases/0113.xhtml>;
+   :informationResourceResults <test-cases/0113.sparql> .
+<test-cases/0114> dc:title "Relative URI";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0114.html>,
+   <test-cases/0114.xhtml>;
+   :informationResourceResults <test-cases/0114.sparql> .
+<test-cases/0115> dc:title "XML Entities must be supported by RDFa parser";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0115.html>,
+   <test-cases/0115.xhtml>;
+   :informationResourceResults <test-cases/0115.sparql> .
+<test-cases/0117> dc:title "Fragment identifiers stripped from BASE";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0117.html>,
+   <test-cases/0117.xhtml>;
+   :informationResourceResults <test-cases/0117.sparql> .
+<test-cases/0118> dc:title "empty string \"\" is not equivalent to NULL - @about";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0118.html>,
+   <test-cases/0118.xhtml>;
+   :informationResourceResults <test-cases/0118.sparql> .
+<test-cases/0119> dc:title "\"[prefix:]\" CURIE format is valid";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0119.html>,
+   <test-cases/0119.xhtml>;
+   :informationResourceResults <test-cases/0119.sparql> .
+<test-cases/0120> dc:title "\"[:]\" CURIE format is valid";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0120.html>,
+   <test-cases/0120.xhtml>;
+   :informationResourceResults <test-cases/0120.sparql> .
+<test-cases/0121> dc:title "\"[]\" is a valid safe CURIE";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0121.html>,
+   <test-cases/0121.xhtml>;
+   :informationResourceResults <test-cases/0121.sparql> .
+<test-cases/0122> dc:title "resource=\"[]\" does not set the object since RDFa does not allow non-prefixed CURIEs";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0122.html>,
+   <test-cases/0122.xhtml>;
+   :informationResourceResults <test-cases/0122.sparql> .
+<test-cases/0124> dc:title "XMLLiteral with explicit @datatype=''";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0124.html>,
+   <test-cases/0124.xhtml>;
+   :informationResourceResults <test-cases/0124.sparql> .
+<test-cases/0126> dc:title "Multiple @typeof values";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0126.html>,
+   <test-cases/0126.xhtml>;
+   :informationResourceResults <test-cases/0126.sparql> .
+<test-cases/0131> dc:title "Whitespace alternatives in attributes";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0131.html>,
+   <test-cases/0131.xhtml>;
+   :informationResourceResults <test-cases/0131.sparql> .
+<test-cases/0134> dc:title "Uppercase reserved words";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0134.html>,
+   <test-cases/0134.xhtml>;
+   :informationResourceResults <test-cases/0134.sparql> .
+<test-cases/0140> dc:title "Underscore is not allowed in xmlns";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0140.html>,
+   <test-cases/0140.xhtml>;
+   :informationResourceResults <test-cases/0140.sparql> .
+<test-cases/0142> dc:title "xmlns prefix 'xml' with correct URI";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0142.html>,
+   <test-cases/0142.xhtml>;
+   :informationResourceResults <test-cases/0142.sparql> .
+<test-cases/0147> dc:title "xmlns prefix 'xmlzzz' (reserved)";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0147.html>,
+   <test-cases/0147.xhtml>;
+   :informationResourceResults <test-cases/0147.sparql> .
+<test-cases/0154> dc:title "Invalid characters should not generate triples per XML 4th edition rules";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0154.html>,
+   <test-cases/0154.xhtml>;
+   :informationResourceResults <test-cases/0154.sparql> .
+<test-cases/0160> dc:title "Undeclared prefix 'xml'";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0160.html>,
+   <test-cases/0160.xhtml>;
+   :informationResourceResults <test-cases/0160.sparql> .
+<test-cases/0162> dc:title "Undeclared prefix 'xmlns'";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0162.html>,
+   <test-cases/0162.xhtml>;
+   :informationResourceResults <test-cases/0162.sparql> .
+<test-cases/0164> dc:title "Undeclared common prefixes";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0164.html>,
+   <test-cases/0164.xhtml>;
+   :informationResourceResults <test-cases/0164.sparql> .
+<test-cases/0172> dc:title "@datatype=\"\" generates plain literal in presence of child nodes";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0172.html>,
+   <test-cases/0172.xhtml>;
+   :informationResourceResults <test-cases/0172.sparql> .
+<test-cases/0173> dc:title "@xml:lang=\"\" clears language setting";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0173.html>,
+   <test-cases/0173.xhtml>;
+   :informationResourceResults <test-cases/0173.sparql> .
+<test-cases/0174> dc:title "Support single character prefix in CURIEs";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0174.html>,
+   <test-cases/0174.xhtml>;
+   :informationResourceResults <test-cases/0174.sparql> .
+<test-cases/0175> dc:title "Property is URI";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0175.html>,
+   <test-cases/0175.xhtml>;
+   :informationResourceResults <test-cases/0175.sparql> .
+<test-cases/0176> dc:title "Rel and Rev is URI";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0176.html>,
+   <test-cases/0176.xhtml>;
+   :informationResourceResults <test-cases/0176.sparql> .
+<test-cases/0177> dc:title "Test @prefix";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0177.html>,
+   <test-cases/0177.xhtml>;
+   :informationResourceResults <test-cases/0177.sparql> .
+<test-cases/0178> dc:title "Test @prefix with multiple mappings";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0178.html>,
+   <test-cases/0178.xhtml>;
+   :informationResourceResults <test-cases/0178.sparql> .
+<test-cases/0179> dc:title "Test @prefix vs @xmlns priority";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0179.html>,
+   <test-cases/0179.xhtml>;
+   :informationResourceResults <test-cases/0179.sparql> .
+<test-cases/0180> dc:title "Test @prefix with empty mapping";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0180.html>,
+   <test-cases/0180.xhtml>;
+   :informationResourceResults <test-cases/0180.sparql> .
+<test-cases/0181> dc:title "Test default XHTML vocabulary";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0181.html>,
+   <test-cases/0181.xhtml>;
+   :informationResourceResults <test-cases/0181.sparql> .
+<test-cases/0182> dc:title "Test prefix locality";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0182.html>,
+   <test-cases/0182.xhtml>;
+   :informationResourceResults <test-cases/0182.sparql> .
+<test-cases/0183> dc:title "Test @xmlns redefines @prefix";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0183.html>,
+   <test-cases/0183.xhtml>;
+   :informationResourceResults <test-cases/0183.sparql> .
+<test-cases/0184> dc:title "Test @profile";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0184.html>,
+   <test-cases/0184.xhtml>;
+   :informationResourceResults <test-cases/0184.sparql> .
+<test-cases/0185> dc:title "Test @profile";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0185.html>,
+   <test-cases/0185.xhtml>;
+   :informationResourceResults <test-cases/0185.sparql> .
+<test-cases/0186> dc:title "Test @vocab";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0186.html>,
+   <test-cases/0186.xhtml>;
+   :informationResourceResults <test-cases/0186.sparql> .
+<test-cases/0187> dc:title "Test @vocab redefinition";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0187.html>,
+   <test-cases/0187.xhtml>;
+   :informationResourceResults <test-cases/0187.sparql> .
+<test-cases/0188> dc:title "Test @vocab";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0188.html>,
+   <test-cases/0188.xhtml>;
+   :informationResourceResults <test-cases/0188.sparql> .
+<test-cases/0189> dc:title "Test @vocab does not override default term";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0189.html>,
+   <test-cases/0189.xhtml>;
+   :informationResourceResults <test-cases/0189.sparql> .
+<test-cases/0190> dc:title "Test term case insensitivity";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0190.html>,
+   <test-cases/0190.xhtml>;
+   :informationResourceResults <test-cases/0190.sparql> .
+<test-cases/0192> dc:title "Reserved word used in @property should generate triple (opposite of 0116)";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0192.html>,
+   <test-cases/0192.xhtml>;
+   :informationResourceResults <test-cases/0192.sparql> .
+<test-cases/0193> dc:title "Test @profile defines vocabulary";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0193.html>,
+   <test-cases/0193.xhtml>;
+   :informationResourceResults <test-cases/0193.sparql> .
+<test-cases/0194> dc:title "Test process @profile right to left";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0194.html>,
+   <test-cases/0194.xhtml>;
+   :informationResourceResults <test-cases/0194.sparql> .
+<test-cases/0195> dc:title "Test process @profile aborts processing";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0195.html>,
+   <test-cases/0195.xhtml>;
+   :informationResourceResults <test-cases/0195.sparql> .
+<test-cases/0196> dc:title "Test process explicit XMLLiteral";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0196.html>,
+   <test-cases/0196.xhtml>;
+   :informationResourceResults <test-cases/0196.sparql> .
+<test-cases/0197> dc:title "Test TERMorCURIEorAbsURI requires an absolute URI";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0197.html>,
+   <test-cases/0197.xhtml>;
+   :informationResourceResults <test-cases/0197.sparql> .
+<test-cases/0198> dc:title "datatype XMLLiteral with other embedded RDFa";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0198.html>,
+   <test-cases/0198.xhtml>;
+   :informationResourceResults <test-cases/0198.sparql> .
+<test-cases/0200> dc:title "Test term case insensitivity";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0200.html>,
+   <test-cases/0200.xhtml>;
+   :informationResourceResults <test-cases/0200.sparql> .
+<test-cases/0201> dc:title "Expressing an attribute using @property";
+   a :TestCase;
+   :hostLanguage <svgtiny-manifest>;
+   :informationResourceInput <test-cases/0201.svg>;
+   :informationResourceResults <test-cases/0201.sparql> .
+<test-cases/0202> dc:title "Tests to ensure @xml:base used in SVG";
+   a :TestCase;
+   :hostLanguage <svgtiny-manifest>;
+   :informationResourceInput <test-cases/0202.xhtml>;
+   :informationResourceResults <test-cases/0202.sparql> .
+<test-cases/0203> dc:title "Tests to ensure @xml:base used in non-root elements in SVG";
+   a :TestCase;
+   :hostLanguage <svgtiny-manifest>;
+   :informationResourceInput <test-cases/0203.xhtml>;
+   :informationResourceResults <test-cases/0203.sparql> .
+<test-cases/0204> dc:title "Test process @profile in document order";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0204.xhtml>;
+   :informationResourceResults <test-cases/0204.sparql> .
+<test-cases/0205> dc:title "Test that default prefix cannot be redefined";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0205.xhtml>;
+   :informationResourceResults <test-cases/0205.sparql> .
+<test-cases/0206> dc:title "Usage of Default Profile";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0206.html>,
+   <test-cases/0206.xhtml>;
+   :informationResourceResults <test-cases/0206.sparql> .
+<test-cases/0207> dc:title "Vevent using @typeof";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0207.html>,
+   <test-cases/0207.xhtml>;
+   :informationResourceResults <test-cases/0207.sparql> .
+<test-cases/0208> dc:title "Default Profile should be ignored with version set to 1.0";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0208.html>,
+   <test-cases/0208.xhtml>;
+   :informationResourceResults <test-cases/0208.sparql> .
+<test-cases/0209> dc:title "@prefix should be ignored with version set to 1.0";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0209.html>,
+   <test-cases/0209.xhtml>;
+   :informationResourceResults <test-cases/0209.sparql> .
+<test-cases/0210> dc:title "@prefix should be ignored with version set to 1.0, and @xmlns should prevail";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0210.html>,
+   <test-cases/0210.xhtml>;
+   :informationResourceResults <test-cases/0210.sparql> .
+<test-cases/0211> dc:title "@vocab should be ignored with version set to 1.0";
+   a :TestCase;
+   :hostLanguage <html4-manifest>,
+   <html5-manifest>,
+   <xhtml-manifest>;
+   :informationResourceInput <test-cases/0211.html>,
+   <test-cases/0211.xhtml>;
+   :informationResourceResults <test-cases/0211.sparql> .
