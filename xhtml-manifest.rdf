@@ -1272,10 +1272,10 @@
 
     <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0177">
         <dc:contributor>Ivan Herman</dc:contributor>
-        <dc:title>Test @profile</dc:title>
+        <dc:title>Test @prefix</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0177.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0177.sparql"/>
-        <purpose>Checks to make sure @profile with a single entry creates a URI mapping</purpose>
+        <purpose>Checks to make sure @prefix with a single entry creates a URI mapping</purpose>
         <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
         <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
         <specificationReference></specificationReference>
@@ -1283,10 +1283,10 @@
 
     <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0178">
         <dc:contributor>Ivan Herman</dc:contributor>
-        <dc:title>Test @profile with multiple mappings</dc:title>
+        <dc:title>Test @prefix with multiple mappings</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0178.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0178.sparql"/>
-        <purpose>Checks to make sure @profile with multiple entires creates multiple URI mappings</purpose>
+        <purpose>Checks to make sure @prefix with multiple entires creates multiple URI mappings</purpose>
         <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
         <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
         <specificationReference></specificationReference>
@@ -1308,9 +1308,9 @@
         <dc:title>Test @prefix with empty mapping</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0180.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0180.sparql"/>
-        <purpose>Checks to make sure @prefix with empty prefix creates a mapping.</purpose>
-        <classification rdf:resource="http://www.w3.org/2006/03/test-description#rejected"/>
-        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+       <purpose>Checks to make sure @prefix with empty prefix does not create a mapping.</purpose>
+        <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
+        <expectedResults rdf:datatype="xsd:boolean">false</expectedResults>
         <specificationReference></specificationReference>
     </TestCase>
 
@@ -1382,7 +1382,7 @@
 
     <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0187">
         <dc:contributor>Ivan Herman</dc:contributor>
-        <dc:title>Test @vocab redefinitnion</dc:title>
+        <dc:title>Test @vocab redefinition</dc:title>
         <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0187.xhtml"/>
         <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0187.sparql"/>
         <purpose>Check that @vocab redefines a previous @vocab definition</purpose>
@@ -1537,11 +1537,11 @@
         <specificationReference></specificationReference>
     </TestCase>
 
-    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/1001">
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0207">
         <dc:contributor>Fabien Gandon</dc:contributor>
         <dc:title>Vevent using @typeof</dc:title>
-        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/1001.xhtml"/>
-        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/1001.sparql"/>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0207.xhtml"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0207.sparql"/>
         <purpose>Tests Vevent using @typeof (inlc. dtstart, dtend, etc.)</purpose>
         <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
         <specificationReference>N.A.</specificationReference>
