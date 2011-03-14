@@ -1,0 +1,11 @@
+  version="RDFa 1.0"
+<head>
+   <title>Default profile test 0208</title>
+</head>
+<body>
+    <!-- The default profile should not be read, ie, the statements below yield no triples -->
+	<p about ="xsd:maxExclusive" rel="rdf:type" resource="owl:DatatypeProperty">
+	    An OWL Axiom: "xsd:maxExclusive" is a Datatype Property in OWL.
+	</p>
+</body>
+
