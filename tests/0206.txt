@@ -1,0 +1,9 @@
+<head>
+   <title>Default profile test 0301</title>
+</head>
+<body>
+	<p about ="xsd:maxExclusive" rel="rdf:type" resource="owl:DatatypeProperty">
+	    An OWL Axiom: "xsd:maxExclusive" is a Datatype Property in OWL.
+	</p>
+</body>
+
