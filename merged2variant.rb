@@ -10,7 +10,7 @@ require 'getoptlong'
 save_manifests = false
 
 opts = GetoptLong.new(
-  ["--save", GetoptLong::NO_ARGUMENT],
+  ["--save", GetoptLong::NO_ARGUMENT]
 )
 opts.each do |opt, arg|
   case opt
@@ -45,6 +45,9 @@ variants.each do |variant|
     puts "\nManifest for #{variant}:\n"
     STDOUT
   end
+      
+  # As a special case, the path is "xhtml1" for the "xhtml" variant
+  variant = "xhtml1" if variant == "xhtml"
 
   RDF::RDFXML::Writer.new(out,
     :prefixes => r.prefixes,
@@ -56,7 +59,7 @@ variants.each do |variant|
       if o.uri?
         o = RDF::URI(o.to_s.sub("test-cases", "test-cases/#{variant}"))
         case variant
-        when 'xhtml'
+        when 'xhtml1'
           o = RDF::URI(o.to_s.sub(/\.html$/, ".xhtml"))
         when 'svgtiny'
           o = RDF::URI(o.to_s.sub(/\.html$/, ".svg"))
