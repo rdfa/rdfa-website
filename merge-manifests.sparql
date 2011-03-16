@@ -25,6 +25,12 @@ CONSTRUCT {
           :specificationReference ?ref;
           :hostLanguage ?g .
 }
+# All in default graph for option matching
+FROM <xhtml-manifest>
+FROM <html4-manifest>
+FROM <html5-manifest>
+FROM <svgtiny-manifest>
+
 FROM NAMED <xhtml-manifest>
 FROM NAMED <html4-manifest>
 FROM NAMED <html5-manifest>
@@ -39,5 +45,5 @@ WHERE {
     OPTIONAL { ?test dc:contributor ?contrib }
     OPTIONAL { ?test :classification ?class }
     OPTIONAL { ?test :purpose ?purpose }
-    OPTIONAL { ?test :specificationReference ?specificationReference }
+    OPTIONAL { ?test :specificationReference ?ref }
 }
