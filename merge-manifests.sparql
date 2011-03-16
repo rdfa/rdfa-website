@@ -21,6 +21,7 @@ CONSTRUCT {
           :classification ?class;
           :informationResourceInput ?iri;
           :informationResourceResults ?irr;
+          :expectedResults ?expected;
           :purpose ?purpose;
           :specificationReference ?ref;
           :hostLanguage ?g .
@@ -45,5 +46,6 @@ WHERE {
     OPTIONAL { ?test dc:contributor ?contrib }
     OPTIONAL { ?test :classification ?class }
     OPTIONAL { ?test :purpose ?purpose }
+    OPTIONAL { ?test :expectedResults ?expected }
     OPTIONAL { ?test :specificationReference ?ref }
 }
