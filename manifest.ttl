@@ -375,6 +375,7 @@
    dc:title "img[@src] test with omitted @about";
    a :TestCase;
    :classification :required;
+   :expectedResults "false"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -826,6 +827,7 @@
    dc:title "NO triple for a non-reserved @rel value";
    a :TestCase;
    :classification :buggy;
+   :expectedResults "false"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1014,6 +1016,7 @@
    dc:title "no garbage collecting bnodes";
    a :TestCase;
    :classification :required;
+   :expectedResults "false"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1181,6 +1184,7 @@ white   space
    dc:title "resource=\"[]\" does not set the object since RDFa does not allow non-prefixed CURIEs";
    a :TestCase;
    :classification :required;
+   :expectedResults "false"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1215,6 +1219,7 @@ white   space
    dc:title "Whitespace alternatives in attributes";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1226,6 +1231,7 @@ white   space
    dc:title "Uppercase reserved words";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1237,6 +1243,7 @@ white   space
    dc:title "Underscore is not allowed in xmlns";
    a :TestCase;
    :classification :required;
+   :expectedResults "false"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1248,6 +1255,7 @@ white   space
    dc:title "xmlns prefix 'xml' with correct URI";
    a :TestCase;
    :classification :buggy;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1259,6 +1267,7 @@ white   space
    dc:title "xmlns prefix 'xmlzzz' (reserved)";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1270,6 +1279,7 @@ white   space
    dc:title "Invalid characters should not generate triples per XML 4th edition rules";
    a :TestCase;
    :classification :buggy;
+   :expectedResults "false"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1281,6 +1291,7 @@ white   space
    dc:title "Undeclared prefix 'xml'";
    a :TestCase;
    :classification :buggy;
+   :expectedResults "false"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1292,6 +1303,7 @@ white   space
    dc:title "Undeclared prefix 'xmlns'";
    a :TestCase;
    :classification :buggy;
+   :expectedResults "false"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1303,6 +1315,7 @@ white   space
    dc:title "Undeclared common prefixes";
    a :TestCase;
    :classification :buggy;
+   :expectedResults "false"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1314,6 +1327,7 @@ white   space
    dc:title "@datatype=\"\" generates plain literal in presence of child nodes";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1325,6 +1339,7 @@ white   space
    dc:title "@xml:lang=\"\" clears language setting";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1336,6 +1351,7 @@ white   space
    dc:title "Support single character prefix in CURIEs";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1347,6 +1363,7 @@ white   space
    dc:title "Property is URI";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1358,6 +1375,7 @@ white   space
    dc:title "Rel and Rev is URI";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1369,6 +1387,7 @@ white   space
    dc:title "Test @prefix";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1380,6 +1399,7 @@ white   space
    dc:title "Test @prefix with multiple mappings";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1391,6 +1411,7 @@ white   space
    dc:title "Test @prefix vs @xmlns priority";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1402,6 +1423,7 @@ white   space
    dc:title "Test @prefix with empty mapping";
    a :TestCase;
    :classification :required;
+   :expectedResults "false"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1413,6 +1435,7 @@ white   space
    dc:title "Test default XHTML vocabulary";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1424,6 +1447,7 @@ white   space
    dc:title "Test prefix locality";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1435,6 +1459,7 @@ white   space
    dc:title "Test @xmlns redefines @prefix";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1446,6 +1471,7 @@ white   space
    dc:title "Test @profile";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1457,6 +1483,7 @@ white   space
    dc:title "Test @profile";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1468,6 +1495,7 @@ white   space
    dc:title "Test @vocab";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1479,6 +1507,7 @@ white   space
    dc:title "Test @vocab redefinition";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1490,6 +1519,7 @@ white   space
    dc:title "Test @vocab";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1501,6 +1531,7 @@ white   space
    dc:title "Test @vocab does not override default term";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1512,6 +1543,7 @@ white   space
    dc:title "Test term case insensitivity";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1523,6 +1555,7 @@ white   space
    dc:title "Reserved word used in @property should generate triple (opposite of 0116)";
    a :TestCase;
    :classification :buggy;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1534,6 +1567,7 @@ white   space
    dc:title "Test @profile defines vocabulary";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1545,6 +1579,7 @@ white   space
    dc:title "Test process @profile right to left";
    a :TestCase;
    :classification :rejected;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1556,6 +1591,7 @@ white   space
    dc:title "Test process @profile aborts processing";
    a :TestCase;
    :classification :required;
+   :expectedResults "false"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1567,6 +1603,7 @@ white   space
    dc:title "Test process explicit XMLLiteral";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1578,6 +1615,7 @@ white   space
    dc:title "Test TERMorCURIEorAbsURI requires an absolute URI";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1589,6 +1627,7 @@ white   space
    dc:title "datatype XMLLiteral with other embedded RDFa";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1600,6 +1639,7 @@ white   space
    dc:title "Test term case insensitivity";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1638,6 +1678,7 @@ white   space
    dc:title "Test process @profile in document order";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1649,6 +1690,7 @@ white   space
    dc:title "Test that default prefix cannot be redefined";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1685,6 +1727,7 @@ white   space
    dc:title "Default Profile should be ignored with version set to 1.0";
    a :TestCase;
    :classification :required;
+   :expectedResults "false"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1696,6 +1739,7 @@ white   space
    dc:title "@prefix should be ignored with version set to 1.0";
    a :TestCase;
    :classification :required;
+   :expectedResults "false"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1707,6 +1751,7 @@ white   space
    dc:title "@prefix should be ignored with version set to 1.0, and @xmlns should prevail";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1718,6 +1763,7 @@ white   space
    dc:title "@vocab should be ignored with version set to 1.0";
    a :TestCase;
    :classification :required;
+   :expectedResults "false"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1729,6 +1775,7 @@ white   space
    dc:title "Datatype generation for a literal with XML content, version 1.0";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
@@ -1740,6 +1787,7 @@ white   space
    dc:title "Datatype generation for a literal with XML content, version 1.1";
    a :TestCase;
    :classification :required;
+   :expectedResults "true"^^<xsd:boolean>;
    :hostLanguage <html4-manifest>,
    <html5-manifest>,
    <xhtml-manifest>;
