@@ -1,0 +1,51 @@
+#
+# SPARQL query to merge multiple manifests and add a test:hostLanguage property based on
+# the original manifest URI.
+#
+# Currently requires the resulting graph to be modified, as tests are specified with different URIs
+# for each test suite.
+base <http://rdfa.digitalbazaar.com/test-suite/>
+prefix : <http://www.w3.org/2006/03/test-description#>
+prefix dc: <http://purl.org/dc/elements/1.1/>
+prefix log: <http://www.w3.org/2000/10/swap/log#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix test: <http://www.w3.org/2006/03/test-description#>
+
+CONSTRUCT {
+    ?test a :TestCase;
+        dc:title ?title;
+        dc:contributor ?contrib;
+          :classification ?class;
+          :informationResourceInput ?iri;
+          :informationResourceResults ?irr;
+          :expectedResults ?expected;
+          :purpose ?purpose;
+          :specificationReference ?ref;
+          :hostLanguage ?g .
+}
+# All in default graph for option matching
+FROM <xhtml-manifest>
+FROM <html4-manifest>
+FROM <html5-manifest>
+FROM <svgtiny-manifest>
+
+FROM NAMED <xhtml-manifest>
+FROM NAMED <html4-manifest>
+FROM NAMED <html5-manifest>
+FROM NAMED <svgtiny-manifest>
+WHERE {
+    GRAPH ?g {
+        ?test a :TestCase;
+            dc:title ?title;
+              :informationResourceInput ?iri;
+              :informationResourceResults ?irr .
+    }
+    OPTIONAL { ?test dc:contributor ?contrib }
+    OPTIONAL { ?test :classification ?class }
+    OPTIONAL { ?test :purpose ?purpose }
+    OPTIONAL { ?test :expectedResults ?expected }
+    OPTIONAL { ?test :specificationReference ?ref }
+}

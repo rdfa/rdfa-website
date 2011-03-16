@@ -52,16 +52,17 @@ How to Add a Unit Test
 
 In order to add a unit test, you must follow these steps:
    
-1. Pick a new unit test number. For example - 250.
+1. Pick a new unit test number. For example - 250. To be consistent, please use
+   the next available unit test number.
 2. Create a markup file in the tests/ directory with a .txt extension. 
    For example: tests/250.txt
 3. Create a SPARQL query file in the tests/ directory with a .sparql extension.
    For example: tests/250.sparql
-4. Decide which Test Suite manifest should contain the test. For example,
-   if you would like your example to only apply to HTML4, you would modify
-   the html4-manifest.rdf file. If you would like your example to apply to 
-   all HTML family languages, you would add it to the html4-manifest.rdf, 
-   xhtml-manifest.rdf and html5-manifest.rdf files.
+4. Add your test to manifest.ttl and indicate the host language(s) for which
+   it applies. For example, if you would like your example to only apply to HTML4,
+   you would modify add :hostLanguage <html4-manifest>; to the test case entry.
+5. Update the host language specific manifests by running the merged2variant.rb
+   script with the --save option.
 
 There are three classifications for Unit Tests:
 
