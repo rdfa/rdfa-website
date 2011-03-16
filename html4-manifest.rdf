@@ -1600,5 +1600,28 @@
         <specificationReference>N.A.</specificationReference>
     </TestCase>
 
+   <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0212">
+        <dc:contributor>Ivan Herman</dc:contributor>
+        <dc:title>Datatype generation for a literal with XML content, version 1.0</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0212.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0212.sparql"/>
+        <purpose>In RDFa 1.0, if a literal contains XML elements, and no explicit datatype is set, the result is XMLLiteral</purpose>
+        <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference>N.A.</specificationReference>
+    </TestCase>
+    <TestCase rdf:about="http://rdfa.digitalbazaar.com/test-suite/test-cases/xhtml1/0213">
+        <dc:contributor>Ivan Herman</dc:contributor>
+        <dc:title>Datatype generation for a literal with XML content, version 1.1</dc:title>
+        <informationResourceInput rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0213.html"/>
+        <informationResourceResults rdf:resource="http://rdfa.digitalbazaar.com/test-suite/test-cases/html4/0213.sparql"/>
+        <purpose>In RDFa 1.1, even if a literal contains XML elements, and no explicit datatype is set, the result is plain literal</purpose>
+        <classification rdf:resource="http://www.w3.org/2006/03/test-description#required"/>
+        <expectedResults rdf:datatype="xsd:boolean">true</expectedResults>
+        <specificationReference>N.A.</specificationReference>
+    </TestCase>
+
+
+
 
 </rdf:RDF>
