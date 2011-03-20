@@ -92,12 +92,12 @@ function checkUnitTest(num, html_url, sparql_url, expected_result)
  * Shows the details of a particular test case.
  *
  * @param num the unit test ID.
- * @param html_url the HTML test file to use.
+ * @param doc_url the document to use for testing.
  * @param sparql_url the SPARQL test query to use.
  * @param rdfa_extractor_url the RDFa extractor web service URL.
  * @param n3_extractor_url the N3 extractor web service URL.
  */
-function showUnitTestDetails(num, html_url, sparql_url)
+function showUnitTestDetails(num, doc_url, sparql_url)
 {
    var rdfaExtractorUrl = getRdfaExtractorUrl();
    var n3ExtractorUrl = "http://www.w3.org/2007/08/pyRdfa/shadowextract?format=n3&uri=";
@@ -105,8 +105,8 @@ function showUnitTestDetails(num, html_url, sparql_url)
    document.getElementById('unit-test-details-' + num).innerHTML =
       "Retreiving information...";
    sendRequest('test-details?id=' + num +
-               '&xhtml=' + html_url +
-               '&sparql=' + sparql_url +
+               '&document=' + escape(doc_url) +
+               '&sparql=' + escape(sparql_url) +
                '&rdfa-extractor=' + escape(rdfaExtractorUrl) +
                '&n3-extractor=' + escape(n3ExtractorUrl),
                displayUnitTestDetailsResult, num)

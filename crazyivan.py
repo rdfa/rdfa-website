@@ -451,16 +451,16 @@ def checkUnitTestHtml(req, num, rdfa_extractor_url, sparql_engine_url,
 def retrieveUnitTestDetailsHtml(req, num, rdf_extractor_url, n3_extractor_url,
                                 doc_url, sparql_url):
     # Build the RDF extractor URL
-    rdf_extract_url = rdf_extractor_url + urllib.quote(doc_url)
+    rdf_extract_url = rdf_extractor_url + doc_url
 
     # Build the N3 extractor URL
-    n3_extract_url = n3_extractor_url + urllib.quote(doc_url)
+    n3_extract_url = n3_extractor_url + doc_url
 
     # Get the SPARQL query
-    sparql_query = urlopen(sparql_url).read()
+    sparql_query = urlopen(urllib.unquote(sparql_url)).read()
 
     # Get the XHTML data
-    xhtml_text = urlopen(doc_url).read()
+    doc_text = urlopen(urllib.unquote(doc_url)).read()
 
     # get the triples in N3 format
     n3_text = urlopen(n3_extract_url).read()
@@ -485,7 +485,7 @@ def retrieveUnitTestDetailsHtml(req, num, rdf_extractor_url, n3_extractor_url,
     <pre class="code">\n%s\n</pre>
     <em>Source: <a href="%s">%s</a></em>
     """ % (num, 
-           xml.sax.saxutils.escape(xhtml_text),
+           xml.sax.saxutils.escape(doc_text),
            urllib.unquote(doc_url), urllib.unquote(doc_url), 
            num,
            xml.sax.saxutils.escape(n3_text),
@@ -569,13 +569,13 @@ def handler(req):
     # Retrieve the details about a particular unit test
     elif(service.find("/test-suite/test-details") != -1):
         req.content_type = 'text/html'
-        if(args.has_key('id') and args.has_key('xhtml') and
+        if(args.has_key('id') and args.has_key('document') and
            args.has_key('sparql') and args.has_key('rdfa-extractor') and
            args.has_key('n3-extractor')):
             retrieveUnitTestDetailsHtml(req, args['id'],
                                         args['rdfa-extractor'],
                                         args['n3-extractor'],
-                                        args['xhtml'], args['sparql'])
+                                        args['document'], args['sparql'])
         else:
             req.write("ID, XHTML, SPARQL, RDFA-EXTRACTOR or N3-EXTRACTOR " + \
                       "was not specified in the request URL to the" + \
