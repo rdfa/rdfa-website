@@ -12,59 +12,64 @@ from rdflib.Graph import Graph
 import xml.sax.saxutils
 from mod_python import apache
 
-BASE_TEST_CASE_URL = "http://rdfa.digitalbazaar.com/test-suite/test-cases/"
-
 ##
 # Retrieves all of the test cases from the given test suite manifest URL and
 # filters the RDF using the given status filter.
 #
+# @param base_uri the base URL for the test cases
 # @param hostLanguage the host language to use when selecting the list of tests.
 # @param rdfaVersion the version of RDFa to use when selecting the list of 
 #                    tests.
 # @returns a tuple containing all of the filtered test cases including
 #          unit test number, title, Host Language URL, and SPARQL URL.
-def retrieveTestCases(hostLanguage, rdfaVersion):
+def retrieveTestCases(base_uri, hostLanguage, rdfaVersion):
     # query the master test manifest
     q = """
     PREFIX test: <http://www.w3.org/2006/03/test-description#> 
     PREFIX rdfatest: <http://rdfa.digitalbazaar.com/vocabs/rdfa-test#> 
     PREFIX dc:   <http://purl.org/dc/elements/1.1/>
-    SELECT ?doc_uri ?sparql_uri ?title ?classification ?expected_results
+    SELECT ?t ?title ?classification ?expected_results
     FROM <%s>
     WHERE 
     { 
     ?t rdfatest:hostLanguage "%s" .
     ?t rdfatest:rdfaVersion "%s" .
     ?t dc:title ?title .
-    ?t test:informationResourceInput ?doc_uri .
-    ?t test:informationResourceResults ?sparql_uri .
     ?t test:classification ?classification .
     OPTIONAL
     { 
     ?t test:expectedResults ?expected_results .
     }
-    }""" % \
-        ("http://sites.local/rdfa.digitalbazaar.com/test-suite/manifest.ttl",
-            hostLanguage, rdfaVersion)
+    }""" % (base_uri + "manifest.ttl", hostLanguage, rdfaVersion)
 
     # Construct the graph from the given RDF and apply the SPARQL filter above
     g = Graph()
     unittests = []
-    for doc_uri, sparql, title, classification_url, expected_results in g.query(q):
+    for tc, title, classification_url, expected_results in g.query(q):
         classification = classification_url.split("#")[-1]
 
-        matches = search(r'(\d+)\..?html', doc_uri)
-        if(matches == None):
-            matches = search(r'(\d+)\..?svg', doc_uri)
-        num = matches.groups(1)
+        matches = search(r'(\d+)', tc)
+        num = matches.groups(1)[0]
 
         if(expected_results == None):
             expected_results = 'true'
 
-        unittests.append((int(num[0]),
+        # Generate the input document URLs
+        suffix = "xml"
+        if hostLanguage in ["xhtml1", "xhtml5"]:
+            suffix = "xhtml"
+        elif hostLanguage in ["html4", "html5"]:
+            suffix = "xhtml"
+        elif hostLanguage in ["svgtiny1.2", "svg"]:
+            suffix = "svg"
+
+        doc_uri = base_uri + hostLanguage + "/" + rdfaVersion + "/" + \
+            num + "."
+
+        unittests.append((int(num),
                           str(title),
-                          str(doc_uri),
-                          str(sparql),
+                          str(doc_uri + suffix),
+                          str(doc_uri + "sparql"),
                           str(classification),
                           str(expected_results)))
 
@@ -103,12 +108,12 @@ def performSparqlQuery(req, query):
 #
 # @param rdf_extractor_url The RDF extractor web service.
 # @param sparql_engine_url The SPARQL engine URL.
-# @param html_url the HTML file to use as input.
+# @param doc_url the HTML file to use as input.
 # @param sparql_url the SPARQL validation file to use on the RDF graph.
 def performUnitTest(rdf_extractor_url, sparql_engine_url,
-                    html_url, sparql_url, expected_result):
+                    doc_url, sparql_url, expected_result):
     # Build the RDF extractor URL
-    rdf_extract_url = rdf_extractor_url + urllib.quote(html_url)
+    rdf_extract_url = rdf_extractor_url + urllib.quote(doc_url)
 
     # Build the SPARQL query
     sparql_query = urlopen(sparql_url).read()
@@ -154,18 +159,23 @@ def writeTestCaseRetrievalError(req, tc):
    </head>
    <body>
    <p>
-      This feature is not implemented yet, but when it is, you will be able
-      to view all tests cases available via this test suite.
+      There was an error while retrieving the test case. This is often because
+      the URL specified points to a test case that doesn't exist: %s
    </p>
    </body>
 </html>
-""")
+""" % (req.unparsed_uri,))
 
 ##
 # Writes the test case alternatives for the given URL
 #
 # Writes the test case alternatives for the given URL
 def writeTestCaseAlternatives(req, arguments):
+    path = req.parsed_uri[-3]
+    tc = path[path.rfind("/") + 1:]
+    base_uri = req.construct_url( \
+        path[0:path.rfind("/test-cases/")] + "/test-cases/")
+
     filename = arguments.split("/")[-1]
     req.write("""<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd"> 
@@ -180,33 +190,61 @@ def writeTestCaseAlternatives(req, arguments):
    </head>
    <body>
    <p>
-      The following documents are associated with this test case:
+      The following documents are associated with Test Case %s:
       <ul>
-         <li><a href="%sxhtml1/%s.xhtml">XHTML+RDFa 1.1</li>
-         <li><a href="%shtml4/%s.html">HTML4</li>
-         <li><a href="%shtml5/%s.html">HTML5</li>
-         <li><a href="%sxhtml1/%s.sparql">SPARQL for XHTML+RDFa 1.1</li>
-         <li><a href="%shtml4/%s.sparql">SPARQL for HTML4</li>
-         <li><a href="%shtml5/%s.sparql">SPARQL for HTML5</li>
+         <li><a href="%sxml1/rdfa1.1/%s.xml">XML 1.0 + RDFa 1.1</li>
+         <li><a href="%sxhtml1/rdfa1.0/%s.xhtml">XHTML 1.1 + RDFa 1.0</li>
+         <li><a href="%sxhtml1/rdfa1.1/%s.xhtml">XHTML 1.1 + RDFa 1.1</li>
+         <li><a href="%shtml4/rdfa1.1/%s.html">HTML 4.01 + RDFa 1.1</li>
+         <li><a href="%shtml5/rdfa1.1/%s.html">HTML 5 + RDFa 1.1</li>
+         <li><a href="%sxhtml5/rdfa1.1/%s.xhtml">XHTML 5 + RDFa 1.1</li>
+         <li><a href="%ssvgtiny1.2/rdfa1.0/%s.svg">SVGTiny 1.2 + RDFa 1.0</li>
+         <li><a href="%ssvg/rdfa1.1/%s.svg">SVG + RDFa 1.1</li>
+         <li><a href="%sxml1/rdfa1.0/%s.sparql">SPARQL for XML 1.0 + RDFa 1.0</li>
+         <li><a href="%sxhtml1/rdfa1.0/%s.sparql">SPARQL for XHTML 1.1 + RDFa 1.0</li>
+         <li><a href="%sxhtml1/rdfa1.1/%s.sparql">SPARQL for XHTML 1.1 + RDFa 1.1</li>
+         <li><a href="%shtml4/rdfa1.1/%s.sparql">SPARQL for HTML 4.01 + RDFa 1.1</li>
+         <li><a href="%shtml5/rdfa1.1/%s.sparql">SPARQL for HTML 5 + RDFa 1.1</li>
+         <li><a href="%sxhtml5/rdfa1.1/%s.sparql">SPARQL for XHTML 5 + RDFa 1.1</li>
+         <li><a href="%ssvgtiny1.2/rdfa1.0/%s.sparql">SPARQL for SVGTiny 1.2 + RDFa 1.0</li>
+         <li><a href="%ssvg/rdfa1.1/%s.sparql">SPARQL for SVG + RDFa 1.1</li>
       </ul>
    </p>
    </body>
-</html>""" % (BASE_TEST_CASE_URL, filename, BASE_TEST_CASE_URL, filename, 
-              BASE_TEST_CASE_URL, filename, BASE_TEST_CASE_URL, filename, 
-              BASE_TEST_CASE_URL, filename, BASE_TEST_CASE_URL, filename))
+</html>""" % (tc,
+              base_uri, filename, 
+              base_uri, filename, 
+              base_uri, filename, 
+              base_uri, filename, 
+              base_uri, filename, 
+              base_uri, filename, 
+              base_uri, filename, 
+              base_uri, filename, 
+              base_uri, filename, 
+              base_uri, filename, 
+              base_uri, filename, 
+              base_uri, filename, 
+              base_uri, filename, 
+              base_uri, filename, 
+              base_uri, filename, 
+              base_uri, filename))
 
 ##
 # Writes a test case document for the given URL.
 def writeTestCaseDocument(req, path):
-    validDocument = True
-
-    version = path[-2]
+    absolute_path = req.parsed_uri[-3]
+    base_uri = req.construct_url( \
+        absolute_path[0:absolute_path.rfind("/test-cases/")] + "/test-cases/")
+    base_path = os.path.join(req.document_root() + 
+        absolute_path[0:absolute_path.rfind("/test-suite/")] + "/test-suite/")
+    hostLanguage = path[-3]
+    rdfaVersion = path[-2]
     document = path[-1]
     namespaces = ""
     body = ""
 
     # Generate the filename that resides on disk
-    filename = os.path.join(req.document_root(), "test-suite")
+    filename = base_path
     if(document.endswith(".sparql")):
         filename += "/" + os.path.join("tests", document)
     else:
@@ -245,22 +283,47 @@ def writeTestCaseDocument(req, path):
 
     # Create the regular expression to rewrite the contents of the XHTML and
     # SPARQL files
-    tcpath = BASE_TEST_CASE_URL + version
+    tcpath = base_uri + "/" + hostLanguage + "/" + rdfaVersion
     htmlre = re.compile("([0-9]{4,4})\.xhtml")
     svgre = re.compile("([0-9]{4,4})\.svg")
     tcpathre = re.compile("\$TCPATH")
 
-    if(document.endswith(".xhtml") and version == "xhtml1"):
+    if(document.endswith(".sparql")):
+        req.content_type = "application/sparql-query"
+
+        if(hostLanguage == "html4" or hostLanguage == "html5"):
+            # Rename all of the test case .xhtml files to .html
+            req.write(tcpathre.sub(tcpath, htmlre.sub("\\1.html", body)))
+        elif(hostLanguage == "svgtiny1.2"):
+            # Rename all of the test case .xhtml files to .html
+            req.write(tcpathre.sub(tcpath, htmlre.sub("\\1.svg", body)))
+        else:
+            req.write(tcpathre.sub(tcpath, body))
+    elif(hostLanguage == "xhtml1" and rdfaVersion == "rdfa1.1"):
         req.content_type = "application/xhtml+xml"
         req.write("""<?xml version="1.0" encoding="UTF-8"?>
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd"> 
-    <html xmlns="http://www.w3.org/1999/xhtml"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1"
     %s>\n""" % (namespaces,))
         req.write(tcpathre.sub(tcpath, body))
         req.write("</html>")
-    elif(document.endswith(".html") and version == "html4"):
+    elif(hostLanguage == "xhtml1" and rdfaVersion == "rdfa1.0"):
+        req.content_type = "application/xhtml+xml"
+        req.write("""<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.0"
+    %s>\n""" % (namespaces,))
+        req.write(tcpathre.sub(tcpath, body))
+        req.write("</html>")
+    elif(hostLanguage == "xml1" and rdfaVersion == "rdfa1.1"):
+        req.content_type = "text/xml"
+        req.write("""<?xml version="1.0" encoding="UTF-8"?>
+<root %s>\n""" % (namespaces,))
+        req.write(tcpathre.sub(tcpath, body))
+        req.write("</root>")
+    elif(hostLanguage == "html4" and rdfaVersion == "rdfa1.1"):
         req.content_type = "text/html"
-        req.write("""<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa11-1.dtd">
+        req.write("""<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa11-2.dtd">
         """)
         req.write("""<html %s>\n""" % (namespaces,))
 
@@ -268,7 +331,7 @@ def writeTestCaseDocument(req, path):
         req.write(tcpathre.sub(tcpath, htmlre.sub("\\1.html", body)))
 
         req.write("</html>")
-    elif(document.endswith(".html") and version == "html5"):
+    elif(hostLanguage == "html5" and rdfaVersion == "rdfa1.1"):
         req.content_type = "text/html"
         if(len(namespaces) > 0):
             req.write("""<!DOCTYPE html>\n<html %s>\n""" % (namespaces,))
@@ -278,20 +341,29 @@ def writeTestCaseDocument(req, path):
         # Rename all of the test case .xhtml files to .html
         req.write(tcpathre.sub(tcpath, htmlre.sub("\\1.html", body)))
         req.write("</html>")
-    elif(document.endswith(".svg") and version == "svgtiny"):
+    elif(hostLanguage == "xhtml5" and rdfaVersion == "rdfa1.1"):
+        req.content_type = "application/xhtml+xml"
+        req.write("""<?xml version="1.0" encoding="UTF-8"?>\n""")
+        if(len(namespaces) > 0):
+            req.write("""<!DOCTYPE html>\n<html %s>\n""" % (namespaces,))
+        else:
+            req.write("""<!DOCTYPE html>\n<html>\n""")
+
+        # Rename all of the test case .xhtml files to .html
+        req.write(tcpathre.sub(tcpath, htmlre.sub("\\1.html", body)))
+        req.write("</html>")
+    elif(hostLanguage == "svg" and rdfaVersion == "rdfa1.1"):
         req.content_type = "image/svg+xml"
         req.write("""<?xml version="1.0" encoding="UTF-8"?>\n<svg %s>\n""" % \
             (namespaces,))
         req.write(tcpathre.sub(tcpath, body))
         req.write("</svg>")
-    elif(document.endswith(".sparql")):
-        req.content_type = "application/sparql-query"
-
-        if(version != "xhtml1"):
-            # Rename all of the test case .xhtml files to .html
-            req.write(tcpathre.sub(tcpath, htmlre.sub("\\1.html", body)))
-        else:
-            req.write(tcpathre.sub(tcpath, body))
+    elif(hostLanguage == "svgtiny1.2" and rdfaVersion == "rdfa1.0"):
+        req.content_type = "image/svg+xml"
+        req.write("""<?xml version="1.0" encoding="UTF-8"?>\n<svg %s>\n""" % \
+            (namespaces,))
+        req.write(tcpathre.sub(tcpath, body))
+        req.write("</svg>")
     else:
         req.status = apache.HTTP_NOT_FOUND
 
@@ -304,7 +376,7 @@ def writeTestCaseDocument(req, path):
 def writeUnitTestHtml(req, test):
     num = test[0]
     title = test[1]
-    html_url = test[2]
+    doc_url = test[2]
     sparql_url = test[3]
     status = test[4]
     expected_result = test[5]
@@ -329,8 +401,8 @@ def writeUnitTestHtml(req, test):
     </div>
 </p>
 
-""" % (num, num, num, html_url, sparql_url, expected_result, num, num,
-       status, num, title, num, num, html_url, sparql_url, num, formatted_num, 
+""" % (num, num, num, doc_url, sparql_url, expected_result, num, num,
+       status, num, title, num, num, doc_url, sparql_url, num, formatted_num, 
        num))
 
 # Returns the HTML encoded version of the given string. This is useful to
@@ -348,16 +420,16 @@ def htmlEncode(s):
 # @param num the unit test number.
 # @param rdf_extractor_url The RDF extractor web service.
 # @param sparql_engine_url The SPARQL engine URL.
-# @param html_url the HTML file to use as input.
+# @param doc_url the HTML file to use as input.
 # @param sparql_url the SPARQL file to use when validating the RDF graph.
 def checkUnitTestHtml(req, num, rdfa_extractor_url, sparql_engine_url,
-                      html_url, sparql_url, expected_result):
+                      doc_url, sparql_url, expected_result):
     try:
         if(performUnitTest(rdfa_extractor_url, sparql_engine_url,
-                           html_url, sparql_url, expected_result) == True):
-            req.write("<span id=\"unit-test-anchor-%s\" style=\"text-decoration: underline; color: #090\" onclick=\"javascript:checkUnitTest(%s, '%s', '%s', '%s')\"><span id='unit-test-result-%s'>PASS</span></span>" % (num, num, html_url, sparql_url, expected_result, num))
+                           doc_url, sparql_url, expected_result) == True):
+            req.write("<span id=\"unit-test-anchor-%s\" style=\"text-decoration: underline; color: #090\" onclick=\"javascript:checkUnitTest(%s, '%s', '%s', '%s')\"><span id='unit-test-result-%s'>PASS</span></span>" % (num, num, doc_url, sparql_url, expected_result, num))
         else:
-            req.write("<span id=\"unit-test-anchor-%s\" style=\"text-decoration: underline; font-weight: bold; color: #f00\" onclick=\"javascript:checkUnitTest(%s, '%s', '%s', '%s')\"><span id='unit-test-result-%s'>FAIL</span></span>" % (num, num, html_url, sparql_url, expected_result, num))
+            req.write("<span id=\"unit-test-anchor-%s\" style=\"text-decoration: underline; font-weight: bold; color: #f00\" onclick=\"javascript:checkUnitTest(%s, '%s', '%s', '%s')\"><span id='unit-test-result-%s'>FAIL</span></span>" % (num, num, doc_url, sparql_url, expected_result, num))
     except Exception, e:
         import traceback 
         testSuitePath = os.path.dirname(req.canonical_filename)
@@ -374,21 +446,21 @@ def checkUnitTestHtml(req, num, rdfa_extractor_url, sparql_engine_url,
 # @param num the unit test number.
 # @param rdf_extractor_url The RDF extractor web service.
 # @param sparql_engine_url The SPARQL engine URL.
-# @param html_url the HTML file to use as input.
+# @param doc_url the HTML file to use as input.
 # @param sparql_url the SPARQL validation file to use on the RDF graph.
 def retrieveUnitTestDetailsHtml(req, num, rdf_extractor_url, n3_extractor_url,
-                                html_url, sparql_url):
+                                doc_url, sparql_url):
     # Build the RDF extractor URL
-    rdf_extract_url = rdf_extractor_url + urllib.quote(html_url)
+    rdf_extract_url = rdf_extractor_url + urllib.quote(doc_url)
 
     # Build the N3 extractor URL
-    n3_extract_url = n3_extractor_url + urllib.quote(html_url)
+    n3_extract_url = n3_extractor_url + urllib.quote(doc_url)
 
     # Get the SPARQL query
     sparql_query = urlopen(sparql_url).read()
 
     # Get the XHTML data
-    xhtml_text = urlopen(html_url).read()
+    xhtml_text = urlopen(doc_url).read()
 
     # get the triples in N3 format
     n3_text = urlopen(n3_extract_url).read()
@@ -414,7 +486,7 @@ def retrieveUnitTestDetailsHtml(req, num, rdf_extractor_url, n3_extractor_url,
     <em>Source: <a href="%s">%s</a></em>
     """ % (num, 
            xml.sax.saxutils.escape(xhtml_text),
-           urllib.unquote(html_url), urllib.unquote(html_url), 
+           urllib.unquote(doc_url), urllib.unquote(doc_url), 
            num,
            xml.sax.saxutils.escape(n3_text),
            urllib.unquote(n3_extract_url), urllib.unquote(n3_extract_url), 
@@ -438,6 +510,8 @@ def handler(req):
   
     puri = req.parsed_uri
     service = puri[-3]
+    base_uri = req.construct_url( \
+        service[0:service.rfind("/test-suite/")] + "/test-suite/")
     argstr = puri[-2]
     args = {}
 
@@ -451,25 +525,27 @@ def handler(req):
             key, value = argstr.split("=")
             args[urllib.unquote(key)] = urllib.unquote(value)
 
-    # Retrieve all of the unit tests from the W3C website
+    # Retrieve a single test case
+    req.content_type = 'text/plain'
     if(service.find("/test-suite/test-cases") != -1):
         req.content_type = 'text/html'
         document = service.replace("/test-suite/test-cases", "").split("/")
-        if(len(document) <= 2):
+        if(len(document) == 3):
+            writeTestCaseAlternatives(req, document[-1])
+        elif(len(document) <= 4):
             writeTestCaseRetrievalError(req, document[-1])
-        elif(len(document) == 3):
-            if(service.endswith(".xhtml") or service.endswith(".html") or
-                service.endswith(".svg") or service.endswith(".sparql")):
-                writeTestCaseDocument(req, document)
-            else:
-                writeTestCaseAlternatives(req, document[-1])
+        elif(len(document) == 5):
+            writeTestCaseDocument(req, document)
         else:
             req.write("ERROR DOCUMENT:" + str(document))
+
+    # Retrieve a test suite
     elif(service.find("/test-suite/retrieve-tests") != -1):
         req.content_type = 'text/html'
 
-        if(args.has_key('language') and args.has_key('version')):
-            unittests = retrieveTestCases(args['language'], args['version'])
+        if(args.has_key('host-language') and args.has_key('rdfa-version')):
+            unittests = retrieveTestCases( \
+                base_uri, args['host-language'], args['rdfa-version'])
             for ut in unittests:
                 writeUnitTestHtml(req, ut)
         else:

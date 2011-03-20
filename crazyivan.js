@@ -49,8 +49,8 @@ function retrieveUnitTests()
    document.getElementById('unit-tests').innerHTML = "<span style=\"font-size: 150%; font-weight: bold; color: #f00\">Test Cases are Loading...</span>";
 
    // send the HTTP request to the crazy ivan web service
-   sendRequest('retrieve-tests?language=' + manifest +
-               '&version=' + version, displayUnitTests)
+   sendRequest('retrieve-tests?host-language=' + manifest +
+               '&rdfa-version=' + version, displayUnitTests)
 }
 
 /**
@@ -191,7 +191,8 @@ function getTestSuiteHostLanguage()
    var rval = "";
    var testsuite = document.getElementById('test-suite-selection').value;
 
-   languages = ["xml1", "xhtml1", "html4", "html5", "xhtml5", "svgtiny1.2"];
+   languages = ["xml1", "xhtml1", "html4", "html5", "xhtml5", 
+      "svgtiny1.2", "svg"];
    
    // check for all languages in the test suite string
    var arrayLength = languages.length;
@@ -232,7 +233,7 @@ function getTestSuiteRdfaVersion()
       }
    }
    
-   return rval.replace("rdfa", "");
+   return rval;
 }
 
 /**
