@@ -42,15 +42,15 @@ function createXMLHTTPObject()
 function retrieveUnitTests()
 {
    // get the manifest and status filter
-   var manifest = getTestSuiteManifest();
-   var status = getUnitTestStatusFilter();
+   var manifest = getTestSuiteHostLanguage();
+   var version = getTestSuiteRdfaVersion();
 
    // note the test cases are loading
    document.getElementById('unit-tests').innerHTML = "<span style=\"font-size: 150%; font-weight: bold; color: #f00\">Test Cases are Loading...</span>";
 
    // send the HTTP request to the crazy ivan web service
-   sendRequest('retrieve-tests?manifest=' + manifest +
-               '&status=' + status, displayUnitTests)
+   sendRequest('retrieve-tests?language=' + manifest +
+               '&version=' + version, displayUnitTests)
 }
 
 /**
@@ -182,42 +182,57 @@ function displayUnitTestDetailsResult(response, num)
 }
 
 /**
- * Gets the currently selected test suite manifest URL. This URL
- * should be to a RDF file.
+ * Gets the host language identifier for the currently selected test suite.
  *
- * @return the test suite manifest RDF URL.
+ * @return the host language identifier for the currently selected test suite.
  */
-function getTestSuiteManifest()
+function getTestSuiteHostLanguage()
 {
    var rval = "";
    var testsuite = document.getElementById('test-suite-selection').value;
 
-   if(testsuite === "xhtml1")
+   languages = ["xml1", "xhtml1", "html4", "html5", "xhtml5", "svgtiny1.2"];
+   
+   // check for all languages in the test suite string
+   var arrayLength = languages.length;
+   for(var i = 0; i < arrayLength; ++i)
    {
-      rval = window.location + "xhtml-manifest.rdf";
-   }
-   else if(testsuite === "xhtml11")
-   {
-      rval = window.location + "xhtml1-manifest.rdf";
-   }
-   else if(testsuite === "html4")
-   {
-      rval = window.location + "html4-manifest.rdf";
-   }
-   else if(testsuite === "html5")
-   {
-      rval = window.location + "html5-manifest.rdf";
-   }
-   else if(testsuite === "svgtiny")
-   {
-      rval = window.location + "svgtiny-manifest.rdf";
-   }
-   else if(testsuite === "design")
-   {
-       rval = window.location + "design-manifest.rdf";
+      var language = languages[i];
+      if(testsuite.indexOf(language) != -1)
+      {
+         rval = language;
+         break;
+      }
    }
 
    return rval;
+}
+
+/**
+ * Gets the RDFa version identifier for the currently selected test suite.
+ *
+ * @return the RDFa version identifier for the currently selected test suite.
+ */
+function getTestSuiteRdfaVersion()
+{
+   var rval = "";
+   var testsuite = document.getElementById('test-suite-selection').value;
+
+   versions = ["rdfa1.0", "rdfa1.1"];
+   
+   // check for all languages in the test suite string
+   var arrayLength = versions.length;
+   for(var i = 0; i < arrayLength; ++i)
+   {
+      var version = versions[i];
+      if(testsuite.indexOf(version) != -1)
+      {
+         rval = version;
+         break;
+      }
+   }
+   
+   return rval.replace("rdfa", "");
 }
 
 /**
@@ -252,16 +267,6 @@ function getBaseTcUrl()
    }
 
    return rval;
-}
-
-/**
- * Gets the current unit test status filter that is selected.
- *
- * @return the current unit test status filter.
- */
-function getUnitTestStatusFilter()
-{
-   return document.getElementById('unit-test-status-selection').value;
 }
 
 /**
@@ -349,15 +354,12 @@ function getSparqlEngineUrl()
  */
 function updateConfigurationDisplay()
 {
-   var testSuiteManifest = getTestSuiteManifest();
-   var unitTestStatus = getUnitTestStatusFilter();
+   var testSuiteManifest = getTestSuiteHostLanguage();
    var rdfaExtractorUrl = getRdfaExtractorUrl();
    var sparqlEngineUrl = getSparqlEngineUrl();
    
    document.getElementById('test-suite-selection-value').innerHTML =
       testSuiteManifest;
-   document.getElementById('unit-test-status-selection-value').innerHTML =
-      unitTestStatus;
    document.getElementById('rdfa-extractor-selection-value').value =
       rdfaExtractorUrl;
    document.getElementById('sparql-engine-selection-value').value =

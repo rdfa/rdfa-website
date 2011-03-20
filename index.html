@@ -59,23 +59,16 @@ There are several things that you can do on this web page:
 Test Suite: 
 <select id="test-suite-selection"
         onchange="javascript:updateConfigurationDisplay();retrieveUnitTests()">
-  <option value="xhtml1">XHTML+RDFa 1.1</option>
-  <option value="html4">HTML4+RDFa 1.1</option>
-  <option value="html5">HTML5+RDFa 1.1</option>
-  <option value="svgtiny">SVGTiny1.2+RDFa 1.0</option>
-  <option value="design">Design Test Suite</option>
+  <option value="xhtml1+rdfa1.1">XHTML 1.1 + RDFa 1.1</option>
+  <option value="html4+rdfa1.1">HTML 4.01 + RDFa 1.1</option>
+  <option value="xml1+rdfa1.1">XML 1.0 + RDFa 1.1</option>
+  <option value="html5+rdfa1.1">HTML5 + RDFa 1.1</option>
+  <option value="xhtml5+rdfa1.1">XHTML5 + RDFa 1.1</option>
+  <option value="xhtml1+rdfa1.0">XHTML1 + RDFa 1.0</option>
+  <option value="svgtiny1.2+rdfa1.1">SVGTiny1.2 + RDFa 1.1</option>
+  <option value="svgtiny1.2+rdfa1.0">SVGTiny1.2 + RDFa 1.0</option>
 </select>
 <span id="test-suite-selection-value"></span>
-</p>
-<p>
-Unit Test Status: 
-<select id="unit-test-status-selection" 
-        onchange="javascript:updateConfigurationDisplay();retrieveUnitTests()">
-  <option value="required">Required</option>
-  <option value="optional">Optional</option>
-  <option value="buggy">Buggy</option>
-</select>
-<span id="unit-test-status-selection-value"></span>
 </p>
 <p>
 RDFa extractor URL: 
@@ -136,7 +129,7 @@ You can generate an EARL report of the currently selected RDFa parser by clickin
 
 <hr />
 <address>
- Last modified: 2010-12-12, Manu Sporny
+ Last modified: 2011-03-20, Manu Sporny
 </address>
 
 <p><a rel="Copyright"

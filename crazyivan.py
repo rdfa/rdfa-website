@@ -18,23 +18,23 @@ BASE_TEST_CASE_URL = "http://rdfa.digitalbazaar.com/test-suite/test-cases/"
 # Retrieves all of the test cases from the given test suite manifest URL and
 # filters the RDF using the given status filter.
 #
-# @param testSuiteManifestUrl A fully-qualified URL to the RDF file that
-#                             contains the test manifest.
-# @param classification The classification filter, usually something like 
-#                     "required", "optional", or "buggy".
+# @param hostLanguage the host language to use when selecting the list of tests.
+# @param rdfaVersion the version of RDFa to use when selecting the list of 
+#                    tests.
 # @returns a tuple containing all of the filtered test cases including
-#          unit test number, title, XHTML URL, SPARQL URL and status.
-def retrieveTestCases(testSuiteManifestUrl, classificationFilter):
-    # query the RDFa test manifest and generate test methods in the 
-    # RDFaOnlineTest unittest
-    
+#          unit test number, title, Host Language URL, and SPARQL URL.
+def retrieveTestCases(hostLanguage, rdfaVersion):
+    # query the master test manifest
     q = """
     PREFIX test: <http://www.w3.org/2006/03/test-description#> 
+    PREFIX rdfatest: <http://rdfa.digitalbazaar.com/vocabs/rdfa-test#> 
     PREFIX dc:   <http://purl.org/dc/elements/1.1/>
     SELECT ?doc_uri ?sparql_uri ?title ?classification ?expected_results
     FROM <%s>
     WHERE 
     { 
+    ?t rdfatest:hostLanguage "%s" .
+    ?t rdfatest:rdfaVersion "%s" .
     ?t dc:title ?title .
     ?t test:informationResourceInput ?doc_uri .
     ?t test:informationResourceResults ?sparql_uri .
@@ -43,8 +43,9 @@ def retrieveTestCases(testSuiteManifestUrl, classificationFilter):
     { 
     ?t test:expectedResults ?expected_results .
     }
-    }
-    """ % (testSuiteManifestUrl)
+    }""" % \
+        ("http://sites.local/rdfa.digitalbazaar.com/test-suite/manifest.ttl",
+            hostLanguage, rdfaVersion)
 
     # Construct the graph from the given RDF and apply the SPARQL filter above
     g = Graph()
@@ -52,21 +53,20 @@ def retrieveTestCases(testSuiteManifestUrl, classificationFilter):
     for doc_uri, sparql, title, classification_url, expected_results in g.query(q):
         classification = classification_url.split("#")[-1]
 
-        if(classification == classificationFilter):
-            matches = search(r'(\d+)\..?html', doc_uri)
-            if(matches == None):
-                matches = search(r'(\d+)\..?svg', doc_uri)
-            num = matches.groups(1)
+        matches = search(r'(\d+)\..?html', doc_uri)
+        if(matches == None):
+            matches = search(r'(\d+)\..?svg', doc_uri)
+        num = matches.groups(1)
 
-            if(expected_results == None):
-                expected_results = 'true'
+        if(expected_results == None):
+            expected_results = 'true'
 
-            unittests.append((int(num[0]),
-                              str(title),
-                              str(doc_uri),
-                              str(sparql),
-                              str(classification),
-                              str(expected_results)))
+        unittests.append((int(num[0]),
+                          str(title),
+                          str(doc_uri),
+                          str(sparql),
+                          str(classification),
+                          str(expected_results)))
 
     # Sorts the unit tests in unit test number order.
     def sorttests(a, b):
@@ -468,12 +468,12 @@ def handler(req):
     elif(service.find("/test-suite/retrieve-tests") != -1):
         req.content_type = 'text/html'
 
-        if(args.has_key('manifest') and args.has_key('status')):
-            unittests = retrieveTestCases(args['manifest'], args['status'])
+        if(args.has_key('language') and args.has_key('version')):
+            unittests = retrieveTestCases(args['language'], args['version'])
             for ut in unittests:
                 writeUnitTestHtml(req, ut)
         else:
-            req.write("<span style=\"text-decoration: underline; font-weight: bold; color: #f00\">ERROR: Could not retrieve test suite manifest, RDF url or status was not specified!</span>")
+            req.write("<span style=\"text-decoration: underline; font-weight: bold; color: #f00\">ERROR: Could not retrieve test suite, Host Language ('language') and RDFa version ('version') were not specified!</span>")
 
     # Check a particular unit test
     elif(service.find("/test-suite/check-test") != -1):
