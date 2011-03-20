@@ -547,12 +547,12 @@ def handler(req):
     req.content_type = 'text/plain'
     if(service.find("/test-suite/test-cases") != -1):
         req.content_type = 'text/html'
-        document = service.replace("/test-suite/test-cases", "").split("/")
-        if(len(document) == 3):
+        document = service[service.find("test-cases/"):].split("/")
+        if(len(document) == 2):
             writeTestCaseAlternatives(req, document[-1])
-        elif(len(document) <= 4):
+        elif(len(document) <= 3):
             writeTestCaseRetrievalError(req, document[-1])
-        elif(len(document) == 5):
+        elif(len(document) == 4):
             writeTestCaseDocument(req, document)
         else:
             req.write("ERROR DOCUMENT:" + str(document))
