@@ -6,6 +6,7 @@ import os, os.path
 import re
 import subprocess
 from re import search
+import urllib2
 from urllib2 import urlopen
 import urllib
 from rdflib.Graph import Graph
@@ -63,8 +64,8 @@ def retrieveTestCases(base_uri, hostLanguage, rdfaVersion):
         elif hostLanguage in ["svgtiny1.2", "svg"]:
             suffix = "svg"
 
-        doc_uri = base_uri + hostLanguage + "/" + rdfaVersion + "/" + \
-            num + "."
+        doc_uri = "%stest-cases/%s/%s/%s." % \
+            (base_uri, hostLanguage, rdfaVersion, num)
 
         unittests.append((int(num),
                           str(title),
@@ -283,7 +284,7 @@ def writeTestCaseDocument(req, path):
 
     # Create the regular expression to rewrite the contents of the XHTML and
     # SPARQL files
-    tcpath = base_uri + "/" + hostLanguage + "/" + rdfaVersion
+    tcpath = base_uri + hostLanguage + "/" + rdfaVersion
     htmlre = re.compile("([0-9]{4,4})\.xhtml")
     svgre = re.compile("([0-9]{4,4})\.svg")
     tcpathre = re.compile("\$TCPATH")
@@ -395,7 +396,7 @@ def writeUnitTestHtml(req, test):
      | 
     <a href=\"javascript:hideUnitTestDetails(%i)\">hide details</a>
      |
-    <a href=\"http://rdfa.digitalbazaar.com/test-suite/test-cases/%s\">source</a>
+    <a href=\"test-cases/%s\">source</a>
     </span>
     ]<div style=\"margin-left: 50px\" id=\"unit-test-details-%i\">
     </div>
@@ -456,20 +457,37 @@ def retrieveUnitTestDetailsHtml(req, num, rdf_extractor_url, n3_extractor_url,
     # Build the N3 extractor URL
     n3_extract_url = n3_extractor_url + doc_url
 
-    # Get the SPARQL query
-    sparql_query = urlopen(urllib.unquote(sparql_url)).read()
+    # Decode the SPARQL and document URLs
+    sparql_url = urllib.unquote(sparql_url)
+    doc_url = urllib.unquote(doc_url)
 
-    # Get the XHTML data
-    doc_text = urlopen(urllib.unquote(doc_url)).read()
+    # Get the SPARQL query
+    sparql_text = ""
+    try:
+        sparql_text = urlopen(sparql_url).read()
+    except urllib2.HTTPError:
+        sparql_text = "ERROR retrieving " + sparql_url
+
+    # Get the document data
+    doc_text = ""
+    try:
+        doc_text = urlopen(doc_url).read()
+    except urllib2.HTTPError:
+        doc_text = "ERROR retrieving " + doc_url
 
     # get the triples in N3 format
-    n3_text = urlopen(n3_extract_url).read()
+    n3_text = ""
+    try:
+        n3_text = urlopen(n3_extract_url).read()
+    except urllib2.HTTPError:
+        n3_text = "ERROR retrieving " + n3_extract_url
 
     # Get the RDF text
-    rdf_text = urlopen(rdf_extract_url).read()
-
-    # Get the SPARQL text
-    sparql_text = sparql_query
+    rdf_text = ""
+    try:
+        rdf_text = urlopen(rdf_extract_url).read()
+    except urllib2.HTTPError:
+        rdf_text = "ERROR retrieving " + rdf_extract_url
 
     req.write("""
     <h3>Test #%s Source Document</h3>
@@ -569,17 +587,17 @@ def handler(req):
     # Retrieve the details about a particular unit test
     elif(service.find("/test-suite/test-details") != -1):
         req.content_type = 'text/html'
-        if(args.has_key('id') and args.has_key('document') and
+        if(args.has_key('id') and args.has_key('source') and
            args.has_key('sparql') and args.has_key('rdfa-extractor') and
            args.has_key('n3-extractor')):
             retrieveUnitTestDetailsHtml(req, args['id'],
                                         args['rdfa-extractor'],
                                         args['n3-extractor'],
-                                        args['document'], args['sparql'])
+                                        args['source'], args['sparql'])
         else:
-            req.write("ID, XHTML, SPARQL, RDFA-EXTRACTOR or N3-EXTRACTOR " + \
+            req.write("ID, SOURCE, SPARQL, RDFA-EXTRACTOR or N3-EXTRACTOR " + \
                       "was not specified in the request URL to the" + \
-                      "test harness!")
+                      "test harness: " + service)
 
     elif(service.find("/test-suite/sparql-query") != -1):
         query = req.read()
