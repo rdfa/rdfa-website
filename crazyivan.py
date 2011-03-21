@@ -127,7 +127,15 @@ def performUnitTest(rdf_extractor_url, sparql_engine_url,
         # If the SPARQL query is to this SPARQL endpoint, do the query
         # internally
         sparql_value = performSparqlQuery(None, sparql_query)
-    else:
+    elif(sparql_engine_url.find("openlinksw") != -1):
+        # Build the SPARQLer service URL
+        sparql_engine_url += urllib.quote(sparql_query)
+
+        # Call the Virtuoso service
+        sparql_engine_result = urlopen(sparql_engine_url).read()
+
+        sparql_value = (sparql_engine_result.find(expected_result) != -1)
+    elif(sparql_engine_url.find("sparql.org") != -1):
         # Build the SPARQLer service URL
         sparql_engine_url += urllib.quote(sparql_query)
         sparql_engine_url += "&default-graph-uri=&stylesheet=%2Fxml-to-html.xsl"
@@ -236,6 +244,9 @@ def writeTestCaseDocument(req, path):
     absolute_path = req.parsed_uri[-3]
     base_uri = req.construct_url( \
         absolute_path[0:absolute_path.rfind("/test-cases/")] + "/test-cases/")
+    # FIXME: DEBUGging sparql queryies
+    base_uri = base_uri.replace("sites.local/", "")
+    
     base_path = os.path.join(req.document_root() + 
         absolute_path[0:absolute_path.rfind("/test-suite/")] + "/test-suite/")
     hostLanguage = path[-3]
@@ -530,6 +541,8 @@ def handler(req):
     service = puri[-3]
     base_uri = req.construct_url( \
         service[0:service.rfind("/test-suite/")] + "/test-suite/")
+    # FIXME: DEBUGging sparql queryies
+    base_uri = base_uri.replace("sites.local/", "")
     argstr = puri[-2]
     args = {}
 
