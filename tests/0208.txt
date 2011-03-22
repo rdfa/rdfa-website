@@ -1,4 +1,3 @@
-  version="RDFa 1.0"
 <head>
    <title>Default profile test 0208</title>
 </head>
