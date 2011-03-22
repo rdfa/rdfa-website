@@ -1403,7 +1403,7 @@ white   space
 <test-cases/0208> dc:contributor "Ivan Herman";
    dc:title "Default Profile should be ignored with version set to 1.0";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0"";
+   rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
    :expectedResults "false"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1414,7 +1414,7 @@ white   space
 <test-cases/0209> dc:contributor "Ivan Herman";
    dc:title "@prefix should be ignored with version set to 1.0";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0"";
+   rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
    :expectedResults "false"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1425,7 +1425,7 @@ white   space
 <test-cases/0210> dc:contributor "Ivan Herman";
    dc:title "@prefix should be ignored with version set to 1.0, and @xmlns should prevail";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0"";
+   rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1436,7 +1436,7 @@ white   space
 <test-cases/0211> dc:contributor "Ivan Herman";
    dc:title "@vocab should be ignored with version set to 1.0";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0"";
+   rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
    :expectedResults "false"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1447,7 +1447,7 @@ white   space
 <test-cases/0212> dc:contributor "Ivan Herman";
    dc:title "Datatype generation for a literal with XML content, version 1.0";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0"";
+   rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1458,7 +1458,7 @@ white   space
 <test-cases/0213> dc:contributor "Ivan Herman";
    dc:title "Datatype generation for a literal with XML content, version 1.1";
    a test:TestCase;
-   rdfatest:rdfaVersion ""rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
