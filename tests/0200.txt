@@ -1,7 +1,7 @@
   <head>
     <title>Test 0200</title>
   </head>
-  <body profile="$TCPATH/../../profiles/0200.profile.html">
+  <body profile="$TCPATH/../../../profiles/0200.profile.html">
     <div typeof="Event">
       <h2 property="title">Last Call</h2>
       <a rel="factor" href="http://www.w3.org/TR/rdfa-core/">RDFa Core 1.1</a>

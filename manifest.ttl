@@ -1108,7 +1108,7 @@ white   space
 <test-cases/0177> dc:contributor "Ivan Herman";
    dc:title "Test @prefix";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1119,7 +1119,7 @@ white   space
 <test-cases/0178> dc:contributor "Ivan Herman";
    dc:title "Test @prefix with multiple mappings";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1130,7 +1130,7 @@ white   space
 <test-cases/0179> dc:contributor "Ivan Herman";
    dc:title "Test @prefix vs @xmlns priority";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1141,7 +1141,7 @@ white   space
 <test-cases/0180> dc:contributor "Ivan Herman";
    dc:title "Test @prefix with empty mapping";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "false"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1163,7 +1163,7 @@ white   space
 <test-cases/0182> dc:contributor "Ivan Herman";
    dc:title "Test prefix locality";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1174,7 +1174,7 @@ white   space
 <test-cases/0183> dc:contributor "Ivan Herman";
    dc:title "Test @xmlns redefines @prefix";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1185,7 +1185,7 @@ white   space
 <test-cases/0184> dc:contributor "Ivan Herman";
    dc:title "Test @profile";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1196,7 +1196,7 @@ white   space
 <test-cases/0185> dc:contributor "Ivan Herman";
    dc:title "Test @profile";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1207,7 +1207,7 @@ white   space
 <test-cases/0186> dc:contributor "Ivan Herman";
    dc:title "Test @vocab";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1218,7 +1218,7 @@ white   space
 <test-cases/0187> dc:contributor "Ivan Herman";
    dc:title "Test @vocab redefinition";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1229,7 +1229,7 @@ white   space
 <test-cases/0188> dc:contributor "Ivan Herman";
    dc:title "Test @vocab";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1240,7 +1240,7 @@ white   space
 <test-cases/0189> dc:contributor "Ivan Herman";
    dc:title "Test @vocab does not override default term";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1251,7 +1251,7 @@ white   space
 <test-cases/0190> dc:contributor "Ivan Herman";
    dc:title "Test term case insensitivity";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1262,7 +1262,7 @@ white   space
 <test-cases/0193> dc:contributor "Gregg Kellogg";
    dc:title "Test @profile defines vocabulary";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1273,7 +1273,7 @@ white   space
 <test-cases/0195> dc:contributor "Gregg Kellogg";
    dc:title "Test process @profile aborts processing";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "false"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1343,7 +1343,7 @@ white   space
    rdfatest:hostLanguage "svgtiny1.2", "svg";
    test:informationResourceInput <test-cases/0202.html>;
    test:informationResourceResults <test-cases/0202.sparql>;
-   test:purpose "Tests to make sure that @xml:base is used in SVG+RDFa 1.0.";
+   test:purpose "Tests to make sure that @xml:base is used in SVG+RDFa.";
    test:specificationReference "http://www.w3.org/QA/2008/12/rdfa_and_svg_tiny_and_the_rdfa.html" .
 <test-cases/0203> dc:contributor "Gregg Kellogg";
    dc:title "Tests to ensure @xml:base used in non-root elements in SVG";
@@ -1353,12 +1353,12 @@ white   space
    rdfatest:hostLanguage "svgtiny1.2", "svg";
    test:informationResourceInput <test-cases/0203.html>;
    test:informationResourceResults <test-cases/0203.sparql>;
-   test:purpose "Tests to make sure that @xml:base is used in non-root elements in SVG+RDFa 1.0.";
+   test:purpose "Tests to make sure that @xml:base is used in non-root elements in SVG+RDFa.";
    test:specificationReference "http://www.w3.org/QA/2008/12/rdfa_and_svg_tiny_and_the_rdfa.html" .
 <test-cases/0204> dc:contributor "Gregg Kellogg";
    dc:title "Test process @profile in document order";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1383,7 +1383,7 @@ white   space
 <test-cases/0206> dc:contributor "Ivan Herman";
    dc:title "Usage of Default Profile";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0206.html>;
@@ -1414,7 +1414,7 @@ white   space
 <test-cases/0209> dc:contributor "Ivan Herman";
    dc:title "@prefix should be ignored with version set to 1.0";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0"";
    test:classification test:required;
    :expectedResults "false"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1425,7 +1425,7 @@ white   space
 <test-cases/0210> dc:contributor "Ivan Herman";
    dc:title "@prefix should be ignored with version set to 1.0, and @xmlns should prevail";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0"";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1436,7 +1436,7 @@ white   space
 <test-cases/0211> dc:contributor "Ivan Herman";
    dc:title "@vocab should be ignored with version set to 1.0";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0"";
    test:classification test:required;
    :expectedResults "false"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1447,7 +1447,7 @@ white   space
 <test-cases/0212> dc:contributor "Ivan Herman";
    dc:title "Datatype generation for a literal with XML content, version 1.0";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0"";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1458,7 +1458,7 @@ white   space
 <test-cases/0213> dc:contributor "Ivan Herman";
    dc:title "Datatype generation for a literal with XML content, version 1.1";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion ""rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
