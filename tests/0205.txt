@@ -1,5 +1,5 @@
 <head
-  profile="$TCPATH/../../profiles/0205.profile.html"
+  profile="$TCPATH/../../../profiles/0205.profile.html"
   prefix=": http://example.org/prefix#"
 >
   <title>Test 0205</title>
