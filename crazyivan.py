@@ -306,7 +306,10 @@ def writeTestCaseDocument(req, path):
         if(hostLanguage == "html4" or hostLanguage == "html5"):
             # Rename all of the test case .xhtml files to .html
             req.write(tcpathre.sub(tcpath, htmlre.sub("\\1.html", body)))
-        elif(hostLanguage == "svgtiny1.2"):
+        elif(hostLanguage == "xml1"):
+            # Rename all of the test case .xhtml files to .xml
+            req.write(tcpathre.sub(tcpath, htmlre.sub("\\1.xml", body)))
+        elif(hostLanguage == "svgtiny1.2" or hostLanguage == "svg"):
             # Rename all of the test case .xhtml files to .html
             req.write(tcpathre.sub(tcpath, htmlre.sub("\\1.svg", body)))
         else:
@@ -331,7 +334,9 @@ def writeTestCaseDocument(req, path):
         req.content_type = "text/xml"
         req.write("""<?xml version="1.0" encoding="UTF-8"?>
 <root %s>\n""" % (namespaces,))
-        req.write(tcpathre.sub(tcpath, body))
+
+        # Rename all of the test case .xhtml files to .xml
+        req.write(tcpathre.sub(tcpath, htmlre.sub("\\1.xml", body)))
         req.write("</root>")
     elif(hostLanguage == "html4" and rdfaVersion == "rdfa1.1"):
         req.content_type = "text/html"
