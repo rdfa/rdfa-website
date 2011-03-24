@@ -1284,7 +1284,7 @@ white   space
 <test-cases/0196> dc:contributor "Gregg Kellogg";
    dc:title "Test process explicit XMLLiteral";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1306,7 +1306,7 @@ white   space
 <test-cases/0198> dc:contributor "Shane P. McCarron";
    dc:title "datatype XMLLiteral with other embedded RDFa";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
