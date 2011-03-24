@@ -545,7 +545,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0066.html>;
    test:informationResourceResults <test-cases/0066.sparql>;
    test:purpose "Test to make sure that @about (with current document) is implied in the head, and the proper triples are generated using @typeof";
