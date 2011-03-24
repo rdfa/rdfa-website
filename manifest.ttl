@@ -575,7 +575,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0069.html>;
    test:informationResourceResults <test-cases/0069.sparql>;
    test:purpose "Tests to ensure that relative URI is resolved correctly when used in @href";
@@ -585,7 +585,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0070.html>;
    test:informationResourceResults <test-cases/0070.sparql>;
    test:purpose "Tests to ensure that relative URI is resolved correctly when used in @resource";
@@ -645,7 +645,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0076.html>;
    test:informationResourceResults <test-cases/0076.sparql>;
    test:purpose "Tests to ensure that all reserved XHTML words are supported in @rel";
@@ -655,7 +655,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0077.html>;
    test:informationResourceResults <test-cases/0077.sparql>;
    test:purpose "Tests to ensure that all reserved XHTML words are supported in @rev";
@@ -775,7 +775,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0090.html>;
    test:informationResourceResults <test-cases/0090.sparql>;
    test:purpose "Tests to ensure that @src sets a new subject (focuses on @rel/@href).";
@@ -868,7 +868,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0110.html>;
    test:informationResourceResults <test-cases/0110.sparql>;
    test:purpose "Tests to make sure that a bNode is generated even though no nested @about exists.";
@@ -878,7 +878,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0111.html>;
    test:informationResourceResults <test-cases/0111.sparql>;
    test:purpose "Tests to make sure that two bNodes are generated after three levels of nesting and that the last div does not generate a triple.";
@@ -908,7 +908,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0114.html>;
    test:informationResourceResults <test-cases/0114.sparql>;
    test:purpose "Checks to make sure that a relative URI is resolved correctly according to RFC3986, section 5 (even when the relative URI is invalid, in this case).";
@@ -1023,7 +1023,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0134.html>;
    test:informationResourceResults <test-cases/0134.sparql>;
    test:purpose "Ensures that mixed-case reserved words generate triples.";
@@ -1243,7 +1243,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0189.html>;
    test:informationResourceResults <test-cases/0189.sparql>;
    test:purpose "Check that @vocab does not change a default term from XHV";
@@ -1254,7 +1254,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0190.html>;
    test:informationResourceResults <test-cases/0190.sparql>;
    test:purpose "Check to ensure a mixed case term matches a case insensitive definition";
