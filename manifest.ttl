@@ -595,7 +595,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0071.html>;
    test:informationResourceResults <test-cases/0071.sparql>;
    test:purpose "Tests to ensure that a triple is generated even if @typeof and @about is not specified anywhere in the document";
