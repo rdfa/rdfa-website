@@ -1,0 +1,4 @@
+ASK WHERE {
+    <$TCPATH/0214.html> a <http://xmlns.com/foaf/0.1/Document>,
+        <http://purl.org/dc/elements/1.1/title> "Test 0214" .
+}

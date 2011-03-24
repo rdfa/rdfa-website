@@ -1466,4 +1466,15 @@ white   space
    test:informationResourceResults <test-cases/0213.sparql>;
    test:purpose "In RDFa 1.1, even if a literal contains XML elements, and no explicit datatype is set, the result is plain literal";
    test:specificationReference "N.A." .
+<test-cases/0214> dc:contributor "Gregg Kellogg";
+   dc:title "Root element has implicit @about=\"\"";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   :expectedResults "true"^^<xsd:boolean>;
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5", "svg";
+   test:informationResourceInput <test-cases/0214.html>;
+   test:informationResourceResults <test-cases/0214.sparql>;
+   test:purpose "All documents have an implicit @about=\"\"";
+   test:specificationReference "N.A." .
 
