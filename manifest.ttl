@@ -314,7 +314,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0040.html>;
    test:informationResourceResults <test-cases/0040.sparql>;
    test:purpose "Tests if @resource overwrites @src correctly to set the URIref subject (due to @rev)";
@@ -495,7 +495,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0061.html>;
    test:informationResourceResults <test-cases/0061.sparql>;
    test:purpose "Tests @rel in head using reserved, non-prefixed XHTML value";
@@ -505,7 +505,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0062.html>;
    test:informationResourceResults <test-cases/0062.sparql>;
    test:purpose "Tests @rev in head using reserved, non-prefixed XHTML value";
@@ -1012,7 +1012,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0131.html>;
    test:informationResourceResults <test-cases/0131.sparql>;
    test:purpose "Ensures that multiple whitespace alternatives in attributes are allowed.";
