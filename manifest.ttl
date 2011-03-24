@@ -1086,7 +1086,7 @@ white   space
 <test-cases/0175> dc:contributor "Gregg Kellogg";
    dc:title "Property is URI";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
@@ -1097,7 +1097,7 @@ white   space
 <test-cases/0176> dc:contributor "Gregg Kellogg";
    dc:title "Rel and Rev is URI";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
