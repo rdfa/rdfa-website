@@ -366,8 +366,7 @@ def writeTestCaseDocument(req, path):
         else:
             req.write("""<!DOCTYPE html>\n<html>\n""")
 
-        # Rename all of the test case .xhtml files to .html
-        req.write(tcpathre.sub(tcpath, htmlre.sub("\\1.html", body)))
+        req.write(tcpathre.sub(tcpath, body))
         req.write("</html>")
     elif(hostLanguage == "svg" and rdfaVersion == "rdfa1.1"):
         req.content_type = "image/svg+xml"
