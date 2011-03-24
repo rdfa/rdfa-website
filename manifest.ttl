@@ -605,7 +605,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0072.html>;
    test:informationResourceResults <test-cases/0072.sparql>;
    test:purpose "Tests to ensure that relative URIs are resolved correctly when used in @about with XHTML base set in head";
@@ -615,7 +615,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0073.html>;
    test:informationResourceResults <test-cases/0073.sparql>;
    test:purpose "Tests to ensure that relative URIs are resolved correctly when used in @resource with XHTML base set in head";
@@ -625,7 +625,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0074.html>;
    test:informationResourceResults <test-cases/0074.sparql>;
    test:purpose "Tests to ensure that relative URIs are resolved correctly when used in @href with XHTML base set in head";
@@ -635,7 +635,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0075.html>;
    test:informationResourceResults <test-cases/0075.sparql>;
    test:purpose "Tests to ensure that the XHTML+RDFa reserved word 'license' when used in @rel (with no @about) generates the proper triple";
@@ -929,7 +929,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0117.html>;
    test:informationResourceResults <test-cases/0117.sparql>;
    test:purpose "Checks to make sure that fragment identifiers are stripped from [base] when used to generate triples.";
@@ -1056,7 +1056,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0172.html>;
    test:informationResourceResults <test-cases/0172.sparql>;
    test:purpose "Checks to ensure that when @datatype=\"\" is used on an element that contains child nodes, that the literal that is generated is a plain literal.";
@@ -1067,7 +1067,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0173.html>;
    test:informationResourceResults <test-cases/0173.sparql>;
    test:purpose "Checks to ensure that when @xml:lang=\"\" is used that any parent element language setting is cleared and a language-less literal is generated.";
@@ -1111,7 +1111,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0177.html>;
    test:informationResourceResults <test-cases/0177.sparql>;
    test:purpose "Checks to make sure @prefix with a single entry creates a URI mapping";
@@ -1122,7 +1122,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0178.html>;
    test:informationResourceResults <test-cases/0178.sparql>;
    test:purpose "Checks to make sure @prefix with multiple entires creates multiple URI mappings";
@@ -1133,7 +1133,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0179.html>;
    test:informationResourceResults <test-cases/0179.sparql>;
    test:purpose "Checks to make sure @prefix has a higher priority than @xmlns";
@@ -1166,7 +1166,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0182.html>;
    test:informationResourceResults <test-cases/0182.sparql>;
    test:purpose "Checks to be sure that prefixes are defined within the element hierarchy.";
@@ -1177,7 +1177,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0183.html>;
    test:informationResourceResults <test-cases/0183.sparql>;
    test:purpose "A new @xmlns definition should override a previous @prefix definition at this element.";
@@ -1188,7 +1188,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0184.html>;
    test:informationResourceResults <test-cases/0184.sparql>;
    test:purpose "Check that @profile imports terms";
@@ -1199,7 +1199,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0185.html>;
    test:informationResourceResults <test-cases/0185.sparql>;
    test:purpose "Check that @profile imports prefixes";
@@ -1210,7 +1210,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0186.html>;
    test:informationResourceResults <test-cases/0186.sparql>;
    test:purpose "Check that @vocab defines a new default mapping";
@@ -1221,7 +1221,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0187.html>;
    test:informationResourceResults <test-cases/0187.sparql>;
    test:purpose "Check that @vocab redefines a previous @vocab definition";
@@ -1232,7 +1232,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0188.html>;
    test:informationResourceResults <test-cases/0188.sparql>;
    test:purpose "Check that @vocab defines a new default mapping";
@@ -1265,7 +1265,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0193.html>;
    test:informationResourceResults <test-cases/0193.sparql>;
    test:purpose "Check that @profile imports prefixes";
@@ -1298,7 +1298,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0197.html>;
    test:informationResourceResults <test-cases/0197.sparql>;
    test:purpose "TERMorCURIEorAbsURI requires an absolute URI";
@@ -1309,7 +1309,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0198.html>;
    test:informationResourceResults <test-cases/0198.sparql>;
    test:purpose "Checks to ensure that when datatype is the default the parser generates triples for embedded content.";
@@ -1361,7 +1361,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0204.html>;
    test:informationResourceResults <test-cases/0204.sparql>;
    test:purpose "Check that profiles are processed in document order, so that terms defined in later profiles take precedence over those processed earlier";
@@ -1372,7 +1372,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0205.html>;
    test:informationResourceResults <test-cases/0205.sparql>;
    test:purpose """
