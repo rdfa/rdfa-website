@@ -104,7 +104,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0015.html>;
    test:informationResourceResults <test-cases/0015.sparql>;
    test:purpose "Tests meta and link with no parent @about";
@@ -154,7 +154,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0021.html>;
    test:informationResourceResults <test-cases/0021.sparql>;
    test:purpose "Tests inheritance of subject when no @about can be found";
@@ -164,7 +164,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0023.html>;
    test:informationResourceResults <test-cases/0023.sparql>;
    test:purpose "Tests that @id does not generate subjects";
@@ -174,7 +174,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0025.html>;
    test:informationResourceResults <test-cases/0025.sparql>;
    test:purpose "Tests simple chaining with cascade of @resource and @property";
@@ -214,7 +214,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0030.html>;
    test:informationResourceResults <test-cases/0030.sparql>;
    test:purpose "Tests omitted @about.";
@@ -314,7 +314,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0040.html>;
    test:informationResourceResults <test-cases/0040.sparql>;
    test:purpose "Tests if @resource overwrites @src correctly to set the URIref subject (due to @rev)";
@@ -495,7 +495,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0061.html>;
    test:informationResourceResults <test-cases/0061.sparql>;
    test:purpose "Tests @rel in head using reserved, non-prefixed XHTML value";
@@ -505,7 +505,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0062.html>;
    test:informationResourceResults <test-cases/0062.sparql>;
    test:purpose "Tests @rev in head using reserved, non-prefixed XHTML value";
@@ -515,7 +515,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0063.html>;
    test:informationResourceResults <test-cases/0063.sparql>;
    test:purpose "Tests @rel in head using reserved XHTML value and empty-prefix CURIE syntax";
@@ -545,7 +545,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0066.html>;
    test:informationResourceResults <test-cases/0066.sparql>;
    test:purpose "Test to make sure that @about (with current document) is implied in the head, and the proper triples are generated using @typeof";
@@ -555,7 +555,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0067.html>;
    test:informationResourceResults <test-cases/0067.sparql>;
    test:purpose "Test to make sure that @property in head uses the implied current document as the subject if no other subject is specified";
@@ -745,7 +745,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0087.html>;
    test:informationResourceResults <test-cases/0087.sparql>;
    test:purpose "Tests to ensure that all reserved XHTML words are supported in @rel (with :xxx)";
@@ -919,7 +919,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0115.html>;
    test:informationResourceResults <test-cases/0115.sparql>;
    test:purpose "Checks to make sure that XML Entities are treated properly by the RDFa parser.";
@@ -1012,7 +1012,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0131.html>;
    test:informationResourceResults <test-cases/0131.sparql>;
    test:purpose "Ensures that multiple whitespace alternatives in attributes are allowed.";
@@ -1045,7 +1045,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
    :expectedResults "true"^^<xsd:boolean>;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0147.html>;
    test:informationResourceResults <test-cases/0147.sparql>;
    test:purpose "Ensures that RDFa processors allow the prefix 'xmlzzz', even though it is a reserved prefix in XML.";
