@@ -308,9 +308,9 @@ function getRdfaExtractorUrl()
    {
       rval = "http://dmz-demo39.demo.marklogic.com/rdfa_extract.xqy?url="
    }
-   else if(extractor === "RdfContext")
+   else if(extractor === "RDF.rb")
    {
-      rval = "http://kellogg-assoc.com/distiller/xml?uri="
+      rval = "http://rdf.kellogg-assoc.com/distiller?raw=true&fmt=rdfxml&in_fmt=rdfa&uri="
    }
    else if(extractor === "other")
    {
