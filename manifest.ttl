@@ -1480,7 +1480,7 @@ white   space
 <test-cases/0215> dc:contributor "Ivan Herman";
    dc:title "Character encoding should work even in view of a large set of characters as attributes in the header";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
    :expectedResults "true"^^xsd:boolean;
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
@@ -1488,5 +1488,15 @@ white   space
    test:informationResourceResults <test-cases/0215.sparql>;
    test:purpose "Character encoding should work even in view of a large set of characters as attributes in the header, ie, when content sniffing may not work to establish encoding.";
    test:specificationReference "" .
-
+<test-cases/0216> dc:contributor "Ivan Herman";
+   dc:title "Character encoding should work even in view of a large set of characters as attributes in the header";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   :expectedResults "true"^^xsd:boolean;
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0216.html>;
+   test:informationResourceResults <test-cases/0216.sparql>;
+   test:purpose "Character encoding should work even in view of a large set of characters as attributes in the header, ie, when content sniffing may not work to establish encoding.";
+   test:specificationReference "" .
 
