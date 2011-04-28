@@ -978,11 +978,10 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xml1", "xhtml1", "xhtml5";
    test:informationResourceInput <test-cases/0121.html>;
    test:informationResourceResults <test-cases/0121.sparql>;
-   test:purpose """Checks to make sure RDFa processors resolve the empty CURIE correctly.
-  """;
+   test:purpose """Checks to make sure RDFa processors resolve the empty CURIE correctly. Note that this is not valid HTML due to recursive <p> elements.""";
    test:specificationReference "" .
 <test-cases/0122> dc:contributor "Manu Sporny";
    dc:title "resource=\"[]\" does not set the object since RDFa does not allow non-prefixed CURIEs";
