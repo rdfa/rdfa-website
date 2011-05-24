@@ -340,7 +340,7 @@ def writeTestCaseDocument(req, path):
         req.write("</root>")
     elif(hostLanguage == "html4" and rdfaVersion == "rdfa1.1"):
         req.content_type = "text/html"
-        req.write("""<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa11-2.dtd">
+        req.write("""<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa11-1.dtd">
         """)
         req.write("""<html %s>\n""" % (namespaces,))
 
