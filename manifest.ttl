@@ -1185,7 +1185,7 @@ white   space
    dc:title "Test @profile";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
-   test:classification test:required;
+   test:classification test:deprecated;
    :expectedResults "true"^^xsd:boolean;
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0184.html>;
@@ -1196,7 +1196,7 @@ white   space
    dc:title "Test @profile";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
-   test:classification test:required;
+   test:classification test:deprecated;
    :expectedResults "true"^^xsd:boolean;
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0185.html>;
@@ -1262,7 +1262,7 @@ white   space
    dc:title "Test @profile defines vocabulary";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
-   test:classification test:required;
+   test:classification test:deprecated;
    :expectedResults "true"^^xsd:boolean;
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0193.html>;
@@ -1273,7 +1273,7 @@ white   space
    dc:title "Test process @profile aborts processing";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
-   test:classification test:required;
+   test:classification test:deprecated;
    :expectedResults "false"^^xsd:boolean;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0195.html>;
@@ -1358,7 +1358,7 @@ white   space
    dc:title "Test process @profile in document order";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
-   test:classification test:required;
+   test:classification test:deprecated;
    :expectedResults "true"^^xsd:boolean;
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0204.html>;
@@ -1369,7 +1369,7 @@ white   space
    dc:title "Test that default prefix cannot be redefined";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
-   test:classification test:required;
+   test:classification test:deprecated;
    :expectedResults "true"^^xsd:boolean;
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0205.html>;
