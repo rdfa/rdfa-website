@@ -1317,7 +1317,7 @@ white   space
    dc:title "Test term case insensitivity";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
-   test:classification test:required;
+   test:classification test:deprecated;
    :expectedResults "true"^^xsd:boolean;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0200.html>;
