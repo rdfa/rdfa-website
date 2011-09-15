@@ -3,7 +3,7 @@
   <base href="http://example.org/"/>
 </head>
 <body>
-  <div about ="#me" vocab="http://xmlns.com/foaf/0.1/" >
+  <div about="#me" vocab="http://xmlns.com/foaf/0.1/" >
     <p property="name">Gregg Kellogg</p>
   </div>
 </body>
