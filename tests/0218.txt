@@ -1,0 +1,8 @@
+<head>
+  <title>Test 0218</title>
+</head>
+<body>
+  <div about ="">
+    <p rel="rdf:value" inlist=""/>
+  </div>
+</body>
