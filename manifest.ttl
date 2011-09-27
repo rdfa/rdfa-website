@@ -312,9 +312,9 @@
 <test-cases/0040> dc:contributor "Mark Birbeck";
    dc:title "@rev - @src/@resource test";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
-   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4";
    test:informationResourceInput <test-cases/0040.html>;
    test:informationResourceResults <test-cases/0040.sparql>;
    test:purpose "Tests if @resource overwrites @src correctly to set the URIref subject (due to @rev)";
@@ -332,10 +332,10 @@
 <test-cases/0042> dc:contributor "Ben Adida";
    dc:title "img[@src] test with omitted @about";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
    :expectedResults "false"^^xsd:boolean;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4";
    test:informationResourceInput <test-cases/0042.html>;
    test:informationResourceResults <test-cases/0042.sparql>;
    test:purpose "Tests if a @src (in img element) correctly sets the URIref object (with omitted @about)";
@@ -773,9 +773,9 @@
 <test-cases/0090> dc:contributor "Manu Sporny";
    dc:title "@src sets a new subject (@rel/@href)";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
-   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4";
    test:informationResourceInput <test-cases/0090.html>;
    test:informationResourceResults <test-cases/0090.sparql>;
    test:purpose "Tests to ensure that @src sets a new subject (focuses on @rel/@href).";
@@ -1619,4 +1619,44 @@ white   space
    test:informationResourceResults <test-cases/0227.sparql>;
    test:purpose "Use of @inlist with implicit subject uses different list";
    test:specificationReference "" .
-
+<test-cases/0228> dc:contributor "Gregg Kellogg";
+   dc:title "1.1 alternate for test 0040: @rev - @src/@resource test";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0228.html>;
+   test:informationResourceResults <test-cases/0228.sparql>;
+   test:purpose "@src is a lower priority than @resource";
+   test:specificationReference "" .
+<test-cases/0229> dc:contributor "Gregg Kellogg";
+   dc:title "img[@src] test with omitted @about";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   :expectedResults "true"^^xsd:boolean;
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0229.html>;
+   test:informationResourceResults <test-cases/0229.sparql>;
+   test:purpose "Tests if a @src (in img element) does not set the URIref object (with omitted @about) -- from 0042";
+   test:specificationReference "" .
+<test-cases/0230> dc:contributor "Gregg Kellogg";
+   dc:title "@src does not set a new subject (@rel/@href)";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0230.html>;
+   test:informationResourceResults <test-cases/0230.sparql>;
+   test:purpose "Tests to ensure that @src does not set a new subject (oposite of 0090 for 1.0).";
+   test:specificationReference "" .
+<test-cases/0231> dc:contributor "Gregg Kellogg";
+   dc:title "Set image license information";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0230.html>;
+   test:informationResourceResults <test-cases/0230.sparql>;
+   test:purpose "Tests new behavior of @src in 1.1";
+   test:specificationReference "" .
