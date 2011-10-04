@@ -4,6 +4,6 @@
 <body>
   <div about="">
     <p property="rdf:value" inlist="">Foo</p>
-    <a rel="rdf:value" inlist="" href="foo">Foo</p>
+    <a rel="rdf:value" inlist="" href="foo">Foo</a>
   </div>
 </body>
