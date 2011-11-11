@@ -343,9 +343,9 @@
 <test-cases/0046> dc:contributor "Ivan Herman";
    dc:title "@typeof with @rel present, no @href, @resource, or @about";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xml1", "xhtml1";
    test:informationResourceInput <test-cases/0046.html>;
    test:informationResourceResults <test-cases/0046.sparql>;
    test:purpose "Tests @typeof with @rel present, no @href, @resource, or @about";
@@ -353,9 +353,9 @@
 <test-cases/0047> dc:contributor "Ivan Herman";
    dc:title "@typeof with @rel and @resource present, no @about";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xml1", "xhtml1";
    test:informationResourceInput <test-cases/0047.html>;
    test:informationResourceResults <test-cases/0047.sparql>;
    test:purpose "Tests @typeof with @rel and @resource present, no @about";
@@ -1551,8 +1551,8 @@ white   space
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5", "svg";
    test:informationResourceInput <test-cases/0221.html>;
    test:informationResourceResults <test-cases/0221.sparql>;
-   test:purpose "@inlist with @rel and @property creates a list with both IRI and Literl elements.";
-   test:specificationReference "" .
+   test:purpose "@inlist with @rel and @property creates a list with both IRI and Literal elements.";
+   test:specificationReference "7.5 Step 11" .
 <test-cases/0222> dc:contributor "Gregg Kellogg";
    dc:title "@inlist with multi-level elements";
    a test:TestCase;
@@ -1563,7 +1563,7 @@ white   space
    test:informationResourceInput <test-cases/0222.html>;
    test:informationResourceResults <test-cases/0222.sparql>;
    test:purpose "@inlist with @property at different levels of descendence creates single list.";
-   test:specificationReference "" .
+   test:specificationReference "7.5 Step 11" .
 <test-cases/0223> dc:contributor "Gregg Kellogg";
    dc:title "@inlist with non-list property";
    a test:TestCase;
@@ -1574,7 +1574,7 @@ white   space
    test:informationResourceInput <test-cases/0223.html>;
    test:informationResourceResults <test-cases/0223.sparql>;
    test:purpose "Use of predicate with @inlist and without @inlist creates both list and non-list triples.";
-   test:specificationReference "" .
+   test:specificationReference "7.5 Step 9" .
 <test-cases/0224> dc:contributor "Gregg Kellogg";
    dc:title "@inlist hanging @rel";
    a test:TestCase;
@@ -1585,7 +1585,7 @@ white   space
    test:informationResourceInput <test-cases/0224.html>;
    test:informationResourceResults <test-cases/0224.sparql>;
    test:purpose "Use of @rel and @inlist with decendent IRI elements creates list";
-   test:specificationReference "" .
+   test:specificationReference "7.5 Step 11" .
 <test-cases/0225> dc:contributor "Gregg Kellogg";
    dc:title "@inlist on different elements with same subject";
    a test:TestCase;
@@ -1596,7 +1596,7 @@ white   space
    test:informationResourceInput <test-cases/0225.html>;
    test:informationResourceResults <test-cases/0225.sparql>;
    test:purpose "@inlist with same property and subject on different elements creates multiple lists";
-   test:specificationReference "" .
+   test:specificationReference "7.5 Step 11" .
 <test-cases/0226> dc:contributor "Gregg Kellogg";
    dc:title "confusion between multiple implicit collections (resource)";
    a test:TestCase;
@@ -1607,7 +1607,7 @@ white   space
    test:informationResourceInput <test-cases/0226.html>;
    test:informationResourceResults <test-cases/0226.sparql>;
    test:purpose "Use of @inlist with implicit subject uses different list";
-   test:specificationReference "" .
+   test:specificationReference "7.5 Step 8" .
 <test-cases/0227> dc:contributor "Gregg Kellogg";
    dc:title "confusion between multiple implicit collections (about)";
    a test:TestCase;
@@ -1618,7 +1618,7 @@ white   space
    test:informationResourceInput <test-cases/0227.html>;
    test:informationResourceResults <test-cases/0227.sparql>;
    test:purpose "Use of @inlist with implicit subject uses different list";
-   test:specificationReference "" .
+   test:specificationReference "7.5 Step 9" .
 <test-cases/0228> dc:contributor "Gregg Kellogg";
    dc:title "1.1 alternate for test 0040: @rev - @src/@resource test";
    a test:TestCase;
@@ -1628,7 +1628,7 @@ white   space
    test:informationResourceInput <test-cases/0228.html>;
    test:informationResourceResults <test-cases/0228.sparql>;
    test:purpose "@src is a lower priority than @resource";
-   test:specificationReference "" .
+   test:specificationReference "7.5 Step 6" .
 <test-cases/0229> dc:contributor "Gregg Kellogg";
    dc:title "img[@src] test with omitted @about";
    a test:TestCase;
@@ -1639,7 +1639,7 @@ white   space
    test:informationResourceInput <test-cases/0229.html>;
    test:informationResourceResults <test-cases/0229.sparql>;
    test:purpose "Tests if a @src (in img element) does not set the URIref object (with omitted @about) -- from 0042";
-   test:specificationReference "" .
+   test:specificationReference "7.5 Step 6" .
 <test-cases/0230> dc:contributor "Gregg Kellogg";
    dc:title "@src does not set a new subject (@rel/@href)";
    a test:TestCase;
@@ -1649,7 +1649,7 @@ white   space
    test:informationResourceInput <test-cases/0230.html>;
    test:informationResourceResults <test-cases/0230.sparql>;
    test:purpose "Tests to ensure that @src does not set a new subject (oposite of 0090 for 1.0).";
-   test:specificationReference "" .
+   test:specificationReference "7.5 Step 6" .
 <test-cases/0231> dc:contributor "Gregg Kellogg";
    dc:title "Set image license information";
    a test:TestCase;
@@ -1659,4 +1659,24 @@ white   space
    test:informationResourceInput <test-cases/0230.html>;
    test:informationResourceResults <test-cases/0230.sparql>;
    test:purpose "Tests new behavior of @src in 1.1";
+   test:specificationReference "7.5 Step 6" .
+<test-cases/0232> dc:contributor "Gregg Kellogg";
+   dc:title "@typeof with @rel present, no @href, @resource, or @about (1.1 behavior of 0046);";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0232.html>;
+   test:informationResourceResults <test-cases/0232.sparql>;
+   test:purpose "Tests @typeof with @rel present, no @href, @resource, or @about creates a BNode object";
+   test:specificationReference "7.5 Step 6" .
+<test-cases/0233> dc:contributor "Gregg Kellogg";
+   dc:title "@typeof with @rel and @resource present, no @about (1.1 behavior of 0047)";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0233.html>;
+   test:informationResourceResults <test-cases/0233.sparql>;
+   test:purpose "Tests @typeof with @rel and @resource present, no @about adds type to object";
    test:specificationReference "" .
