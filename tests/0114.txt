@@ -1,5 +1,5 @@
       xmlns:cc="http://creativecommons.org/ns#"
-      xmlns:xhv="ttp://www.w3.org/1999/xhtml/vocab#"
+      xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#"
   <head>
     <title>Test 0114</title>
   </head>
