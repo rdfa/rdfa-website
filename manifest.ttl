@@ -495,7 +495,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1";
    test:informationResourceInput <test-cases/0061.html>;
    test:informationResourceResults <test-cases/0061.sparql>;
    test:purpose "Tests @rel in head using reserved, non-prefixed XHTML value";
@@ -505,7 +505,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1";
    test:informationResourceInput <test-cases/0062.html>;
    test:informationResourceResults <test-cases/0062.sparql>;
    test:purpose "Tests @rev in head using reserved, non-prefixed XHTML value";
@@ -655,7 +655,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1";
    test:informationResourceInput <test-cases/0077.html>;
    test:informationResourceResults <test-cases/0077.sparql>;
    test:purpose "Tests to ensure that all reserved XHTML words are supported in @rev";
@@ -1679,4 +1679,14 @@ white   space
    test:informationResourceInput <test-cases/0233.html>;
    test:informationResourceResults <test-cases/0233.sparql>;
    test:purpose "Tests @typeof with @rel and @resource present, no @about adds type to object";
+   test:specificationReference "" .
+<test-cases/0234> dc:contributor "Gregg Kellogg";
+   dc:title "All defined HTML link relation values";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5", "svg";
+   test:informationResourceInput <test-cases/0234.html>;
+   test:informationResourceResults <test-cases/0234.sparql>;
+   test:purpose "Tests to ensure that all defined linked relations expand";
    test:specificationReference "" .
