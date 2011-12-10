@@ -5,7 +5,7 @@
   <body>
   	<div>
      <img src="http://sw-app.org/img/mic_2007_01.jpg"
-           rev="alternate"
+           rev="xhv:alternate"
            resource="http://sw-app.org/img/mic_2006_03.jpg"
            alt="A photo depicting Michael" />	
   	</div>

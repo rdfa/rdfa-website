@@ -1,8 +1,9 @@
+      xmlns:xhv="ttp://www.w3.org/1999/xhtml/vocab#"
   <head>
         <title>Test 0110</title>
   </head>
   <body>
-    <div rel="next">
-      <div rel="next" />
+    <div rel="xhv:next">
+      <div rel="xhv:next" />
     </div>
   </body>
