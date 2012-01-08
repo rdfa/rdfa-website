@@ -1656,8 +1656,8 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
-   test:informationResourceInput <test-cases/0230.html>;
-   test:informationResourceResults <test-cases/0230.sparql>;
+   test:informationResourceInput <test-cases/0231.html>;
+   test:informationResourceResults <test-cases/0231.sparql>;
    test:purpose "Tests new behavior of @src in 1.1";
    test:specificationReference "7.5 Step 6" .
 <test-cases/0232> dc:contributor "Gregg Kellogg";
