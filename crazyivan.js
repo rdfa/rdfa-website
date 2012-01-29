@@ -282,7 +282,7 @@ function getRdfaExtractorUrl()
 
    if(extractor === "pyrdfa")
    {
-      rval = "http://www.w3.org/2007/08/pyRdfa/shadowextract?uri=";
+      rval = "http://www.w3.org/2012/pyRdfa/extract?uri=";
    }
    else if(extractor === "arcrdfa")
    {
