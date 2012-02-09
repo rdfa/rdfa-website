@@ -1,3 +1,0 @@
-ASK WHERE {
-	<http://www.example.org/#somebody> <http://www.w3.org/1999/xhtml/vocab#foobar> <mailto:ivan@w3.org> .
-}

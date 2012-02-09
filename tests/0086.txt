@@ -1,9 +1,0 @@
-      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  <head>
-		<title>Test 0086</title>    
-  </head>
-  <body>
-	<div about="http://www.example.org/#somebody" rel="foobar">
-		<p resource="mailto:ivan@w3.org">mailto:ivan@w3.org</p>
-	</div>
-  </body>

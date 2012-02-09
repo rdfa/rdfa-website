@@ -1,7 +1,0 @@
-ASK WHERE {
- <$TCPATH/0105.xhtml> <http://purl.org/dc/elements/1.1/creator> ?a .
- OPTIONAL {
-   ?x ?y <$TCPATH/ben.html> .
- }
- FILTER (isBlank(?a) && !BOUND(?x) && !BOUND(?y))
-}

@@ -1,6 +1,0 @@
-<head>
-  <title>Test</title>
-</head>
-<body>
-<p property="rdf:test">Test</p>
-</body>

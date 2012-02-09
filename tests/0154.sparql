@@ -1,4 +1,0 @@
-# This is a negative test, the triple below should not be generated.
-ASK WHERE {
-  <$TCPATH/0154.xhtml> <http://example.org/test> "Test".
-}

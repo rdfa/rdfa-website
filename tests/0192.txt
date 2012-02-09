@@ -1,6 +1,0 @@
-   <head>
-     <title>Test 0192</title>
-   </head>
-   <body>
-      <div property="next">valid property</div>
-   </body>

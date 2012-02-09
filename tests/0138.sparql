@@ -1,3 +1,0 @@
-ASK WHERE {
-  <$TCPATH/0138.html> <http://www.w3.org/1999/xhtml/vocab#test> "Test".
-}

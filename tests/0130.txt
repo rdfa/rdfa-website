@@ -1,5 +1,0 @@
-<head>
-  <meta charset="utf-8">
-  <title>Test</title>
-<link rel="next&#x20;prev&#x09;first&#x0a;last&#x0c;section&#x0d;subsection" href="http://example.org/test.css" />
-<p>Test

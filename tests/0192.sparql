@@ -1,5 +1,0 @@
-ASK WHERE {
-<$TCPATH/0192.xhtml>
-   <http://www.w3.org/1999/xhtml/vocab#next>
-      "valid property" .
-}

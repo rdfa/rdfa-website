@@ -1,5 +1,0 @@
-<head>
-  <meta charset="utf-8">
-  <title>Test</title>
-<body>
-<p xmlns:xmlns="http://example.org/" property="xmlns:test">Test</p>
