@@ -1408,7 +1408,7 @@ white   space
    test:purpose "Character encoding should work even in view of a large set of characters as attributes in the header, ie, when content sniffing may not work to establish encoding.";
    test:specificationReference "" .
 <test-cases/0217> dc:contributor "Gregg Kellogg";
-   dc:title "@vocab causes rdfa:hasVocabulary triple to be added";
+   dc:title "@vocab causes rdfa:usesVocabulary triple to be added";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
@@ -1416,7 +1416,7 @@ white   space
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0217.html>;
    test:informationResourceResults <test-cases/0217.sparql>;
-   test:purpose "When encountering @vocab, a processor generates a triple with the base URI, rdfa:hasVocabulary and the IRI of the added vocabulary.";
+   test:purpose "When encountering @vocab, a processor generates a triple with the base URI, rdfa:usesVocabulary and the IRI of the added vocabulary.";
    test:specificationReference "7.5 step 2" .
 <test-cases/0218> dc:contributor "Gregg Kellogg";
    dc:title "@inlist to create empty list";
