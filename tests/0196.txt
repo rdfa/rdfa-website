@@ -1,6 +1,6 @@
   xmlns:ex="http://example.org/rdf/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-<head profile="http://www.w3.org/1999/xhtml/vocab http://www.w3.org/2005/10/profile">
+<head>
 	<title>Test 0196</title>
 </head>
 <body>
