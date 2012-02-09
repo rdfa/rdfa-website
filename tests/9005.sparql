@@ -1,4 +1,0 @@
-ASK WHERE {
-<http://rdfa.digitalbazaar.com/rdfa-test-harness/design-tests/9005.xhtml> <http://purl.org/dc/terms/creator> "Manu Sporny" .
-}
-
