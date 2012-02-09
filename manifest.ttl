@@ -1181,28 +1181,6 @@ white   space
    test:informationResourceResults <test-cases/0183.sparql>;
    test:purpose "A new @xmlns definition should override a previous @prefix definition at this element.";
    test:specificationReference "" .
-<test-cases/0184> dc:contributor "Ivan Herman";
-   dc:title "Test @profile";
-   a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
-   test:classification test:deprecated;
-   :expectedResults "true"^^xsd:boolean;
-   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
-   test:informationResourceInput <test-cases/0184.html>;
-   test:informationResourceResults <test-cases/0184.sparql>;
-   test:purpose "Check that @profile imports terms";
-   test:specificationReference "" .
-<test-cases/0185> dc:contributor "Ivan Herman";
-   dc:title "Test @profile";
-   a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
-   test:classification test:deprecated;
-   :expectedResults "true"^^xsd:boolean;
-   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
-   test:informationResourceInput <test-cases/0185.html>;
-   test:informationResourceResults <test-cases/0185.sparql>;
-   test:purpose "Check that @profile imports prefixes";
-   test:specificationReference "" .
 <test-cases/0186> dc:contributor "Ivan Herman";
    dc:title "Test @vocab";
    a test:TestCase;
@@ -1258,28 +1236,6 @@ white   space
    test:informationResourceResults <test-cases/0190.sparql>;
    test:purpose "Check to ensure a mixed case term matches a case insensitive definition";
    test:specificationReference "" .
-<test-cases/0193> dc:contributor "Gregg Kellogg";
-   dc:title "Test @profile defines vocabulary";
-   a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
-   test:classification test:deprecated;
-   :expectedResults "true"^^xsd:boolean;
-   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
-   test:informationResourceInput <test-cases/0193.html>;
-   test:informationResourceResults <test-cases/0193.sparql>;
-   test:purpose "Check that @profile imports prefixes";
-   test:specificationReference "" .
-<test-cases/0195> dc:contributor "Gregg Kellogg";
-   dc:title "Test process @profile aborts processing";
-   a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
-   test:classification test:deprecated;
-   :expectedResults "false"^^xsd:boolean;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
-   test:informationResourceInput <test-cases/0195.html>;
-   test:informationResourceResults <test-cases/0195.sparql>;
-   test:purpose "If any referenced RDFa Profile is not available, then the current element and its children must not place any triples in the default graph";
-   test:specificationReference "" .
 <test-cases/0196> dc:contributor "Gregg Kellogg";
    dc:title "Test process explicit XMLLiteral";
    a test:TestCase;
@@ -1313,17 +1269,6 @@ white   space
    test:informationResourceResults <test-cases/0198.sparql>;
    test:purpose "Checks to ensure that when datatype is the default the parser generates triples for embedded content.";
    test:specificationReference "" .
-<test-cases/0200> dc:contributor "Ivan Herman";
-   dc:title "Test term case insensitivity";
-   a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
-   test:classification test:deprecated;
-   :expectedResults "true"^^xsd:boolean;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
-   test:informationResourceInput <test-cases/0200.html>;
-   test:informationResourceResults <test-cases/0200.sparql>;
-   test:purpose "Check to ensure that terms that differ only in case match to distinct URIs";
-   test:specificationReference "" .
 <test-cases/0201> dc:contributor "Manu Sporny";
    dc:title "Expressing an attribute using @property";
    a test:TestCase;
@@ -1354,31 +1299,6 @@ white   space
    test:informationResourceResults <test-cases/0203.sparql>;
    test:purpose "Tests to make sure that @xml:base is used in non-root elements in SVG+RDFa.";
    test:specificationReference "http://www.w3.org/QA/2008/12/rdfa_and_svg_tiny_and_the_rdfa.html" .
-<test-cases/0204> dc:contributor "Gregg Kellogg";
-   dc:title "Test process @profile in document order";
-   a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
-   test:classification test:deprecated;
-   :expectedResults "true"^^xsd:boolean;
-   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
-   test:informationResourceInput <test-cases/0204.html>;
-   test:informationResourceResults <test-cases/0204.sparql>;
-   test:purpose "Check that profiles are processed in document order, so that terms defined in later profiles take precedence over those processed earlier";
-   test:specificationReference "" .
-<test-cases/0205> dc:contributor "Gregg Kellogg";
-   dc:title "Test that default prefix cannot be redefined";
-   a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
-   test:classification test:deprecated;
-   :expectedResults "true"^^xsd:boolean;
-   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
-   test:informationResourceInput <test-cases/0205.html>;
-   test:informationResourceResults <test-cases/0205.sparql>;
-   test:purpose """
-          Check that the default prefix is not redefined through @prefix or through @profile @rdfa:prefix.
-          Prefix must be NCName. Default prefix always resolves to http://www.w3.org/1999/xhtml/vocab#.
-        """;
-   test:specificationReference "" .
 <test-cases/0206> dc:contributor "Ivan Herman";
    dc:title "Usage of Default Profile";
    a test:TestCase;
