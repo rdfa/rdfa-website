@@ -310,7 +310,7 @@ function getRdfaExtractorUrl()
    }
    else if(extractor === "RDF.rb")
    {
-      rval = "http://rdf.kellogg-assoc.com/distiller?raw=true&fmt=rdfxml&in_fmt=rdfa&uri="
+      rval = "http://rdf.greggkellogg.net/distiller?raw=true&fmt=rdfxml&in_fmt=rdfa&uri="
    }
    else if(extractor === "other")
    {
@@ -341,6 +341,10 @@ function getSparqlEngineUrl()
    else if(engine === "virtuoso")
    {
       rval = "http://demo.openlinksw.com/sparql/?should-sponge=soft&query=";
+   }
+   else if(engine === "ruby-distiller")
+   {
+      rval = "http://rdf.greggkellogg.net/sparql?query=";
    }
    else if(engine === "other")
    {

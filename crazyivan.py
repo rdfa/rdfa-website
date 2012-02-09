@@ -135,6 +135,14 @@ def performUnitTest(rdf_extractor_url, sparql_engine_url,
         sparql_engine_result = urlopen(sparql_engine_url).read()
 
         sparql_value = (sparql_engine_result.find(expected_result) != -1)
+    elif(sparql_engine_url.find("greggkellogg.net") != -1):
+        # Build the SPARQLer service URL
+        sparql_engine_url += urllib.quote(sparql_query)
+
+        # Call the Virtuoso service
+        sparql_engine_result = urlopen(sparql_engine_url).read()
+
+        sparql_value = (sparql_engine_result.find(expected_result) != -1)
     elif(sparql_engine_url.find("sparql.org") != -1):
         # Build the SPARQLer service URL
         sparql_engine_url += urllib.quote(sparql_query)
