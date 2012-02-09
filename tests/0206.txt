@@ -1,5 +1,5 @@
 <head>
-   <title>Default profile test 0206</title>
+   <title>Default context test 0206</title>
 </head>
 <body>
 	<p about ="xsd:maxExclusive" rel="rdf:type" resource="owl:DatatypeProperty">
