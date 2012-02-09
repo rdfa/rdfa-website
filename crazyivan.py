@@ -147,11 +147,11 @@ def performUnitTest(rdf_extractor_url, sparql_engine_url,
         #       an "expected SPARQL result" flag into the test manifest.
         query_result = "<boolean>%s</boolean>" % (expected_result,)
         sparql_value = (sparql_engine_result.find(query_result) != -1)
-      else
+    else
         # Custom SPARQL engine, presume that it only needs the query URL
         sparql_engine_url += urllib.quote(sparql_query)
 
-        # Call the Virtuoso service
+        # Call the service
         sparql_engine_result = urlopen(sparql_engine_url).read()
 
         sparql_value = (sparql_engine_result.find(expected_result) != -1)
