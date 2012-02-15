@@ -257,7 +257,7 @@ class CrazyIvan < Sinatra::Base
       entry[:doc_uri] = test_uri + entry[:suffix]
       entry[:sparql_url] = test_uri + "sparql"
       entry
-    end
+    end.sort_by {|tc| tc[:num]}
   end
   
   ##
