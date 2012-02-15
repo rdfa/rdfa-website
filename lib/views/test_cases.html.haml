@@ -1,0 +1,13 @@
+!!! 5
+%html{:prefix => "test: http://www.w3.org/2006/03/test-description#"}
+  %head
+    %meta{"http-equiv" => "Content-Type", :content => "text/html;charset=utf-8"}
+    %title= "RDFa Test Suite: Select a Test Case Document"
+  %body
+    %p
+      = "The following documents are associated with Test Case: "
+      = num
+      %ul
+        - test_cases.each do |tc|
+          %li
+            %a{:href => tc[:doc_uri]}= tc[:doc_uri]

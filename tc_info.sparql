@@ -1,0 +1,16 @@
+PREFIX test: <http://www.w3.org/2006/03/test-description#> 
+PREFIX rdfatest: <http://rdfa.digitalbazaar.com/vocabs/rdfa-test#> 
+PREFIX dc:   <http://purl.org/dc/elements/1.1/>
+
+SELECT ?t ?title ?classification ?expected_results ?host_language ?version
+FROM <http://localhost:3000/test-suite/test-cases/0001manifest.ttl>
+WHERE {
+  ?t rdfatest:hostLanguage ?host_language;
+     rdfatest:rdfaVersion ?version;
+     dc:title ?title;
+     test:classification ?classification .
+  OPTIONAL { 
+    ?t test:expectedResults ?expected_results .
+  }
+  FILTER REGEX(STR(?t), "0001$")
+}

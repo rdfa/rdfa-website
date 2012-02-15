@@ -1,0 +1,6 @@
+- if suite == "html4"
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa11-1.dtd">
+- else
+  !!! 5
+%html{namespaces}
+  = content.gsub(HTMLRE, '\1.html')

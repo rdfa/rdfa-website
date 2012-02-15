@@ -1,0 +1,11 @@
+!!! XML
+- if suite == "xhtml1" && version == "rdfa1.0"
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+  - namespaces.merge!({:version => "XHTML+RDFa 1.0"})
+- elsif suite == "xhtml1" && version == "rdfa1.1"
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd"> 
+  - namespaces.merge!({:version => "XHTML+RDFa 1.1"})
+- else
+  !!! 5
+%html{namespaces.merge(:xmlns => "http://www.w3.org/1999/xhtml")}
+  = content
