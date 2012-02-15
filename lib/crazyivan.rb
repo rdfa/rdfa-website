@@ -1,6 +1,6 @@
 require 'linkeddata'
 require 'sparql'
-require 'sinatra/base'
+require 'sinatra'
 require 'sinatra/respond_to'
 require 'sinatra/sparql'
 require 'haml'
@@ -14,6 +14,7 @@ class CrazyIvan < Sinatra::Base
   register Sinatra::RespondTo
   register Sinatra::SPARQL
 
+  set :public_folder, File.expand_path('../../public',  __FILE__)
   set :views, File.expand_path('../views',  __FILE__)
 
   mime_type :sparql, "application/sparql-query"
