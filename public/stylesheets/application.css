@@ -1,0 +1,11 @@
+html.no-js div.alert-message span.close {
+  display: none;
+}
+
+div.alert-message span.close {
+  cursor: pointer;
+}
+
+body {
+  padding-top: 60px;
+}

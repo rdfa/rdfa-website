@@ -11,21 +11,43 @@ class CrazyIvan < Sinatra::Base
   TCPATHRE = Regexp.compile('\$TCPATH')
   MANIFEST_FILE = File.expand_path("../../manifest.ttl", __FILE__)
 
-  register Sinatra::RespondTo
-  register Sinatra::SPARQL
+  configure do
+    set :app_name, "The RDFa Test Harness (Crazy Ivan)"
+    set :public_folder, File.expand_path('../../public',  __FILE__)
+    set :views, File.expand_path('../views',  __FILE__)
 
-  set :public_folder, File.expand_path('../../public',  __FILE__)
-  set :views, File.expand_path('../views',  __FILE__)
+    mime_type :sparql, "application/sparql-query"
+    mime_type :ttl, "text/turtle"
 
-  mime_type :sparql, "application/sparql-query"
-  mime_type :ttl, "text/turtle"
+    register Sinatra::RespondTo
+    register Sinatra::SPARQL
+    register Sinatra::SimpleAssets
+    assets do
+      css :application, [
+        '/stylesheets/bootstrap.css',
+        '/stylesheets/application.css'
+      ]
+      js :application, [
+        '/javascripts/bootstrap.js',
+        '/javascripts/bootstrap-alert.js',
+        '/javascripts/bootstrap-button.js',
+        '/javascripts/bootstrap-modal.js',
+        '/javascripts/application.js'
+      ]
+    end
+  end
 
   before do
     puts "[#{request.path_info}], #{params.inspect}, #{format}, #{request.accept.inspect}"
   end
 
   get '/' do
-    redirect to('/test-suite/index.html')
+    redirect to('/test-suite/')
+  end
+
+  get '/test-suite/' do
+    cache_control :public, :must_revalidate, :max_age => 60
+    haml :index
   end
 
   ##
@@ -51,50 +73,67 @@ class CrazyIvan < Sinatra::Base
 
   ##
   # Writes a test case document for the given URL.
-  get '/test-suite/test-cases/:suite/:version/:test' do
+  get '/test-suite/test-cases/:suite/:version/:num' do
     cache_control :public, :must_revalidate, :max_age => 60
-    etag Digest::SHA1.hexdigest(manifest_ttl + "#{params[:suite]}/#{params[:version]}/#{params[:test]}")
+    etag Digest::SHA1.hexdigest(manifest_ttl + "#{params[:suite]}/#{params[:version]}/#{params[:num]}")
 
-    filename = File.expand_path("../../tests/#{params[:test]}.#{format == :sparql ? 'sparql' : 'txt'}", __FILE__)
-    tcpath = url("/test-cases/#{params[:suite]}/#{params[:version]}")
     begin
-      found_head = format == :sparql
-      namespaces = {}
-      content = File.readlines(filename).map do |line|
-        case line
-        when %r(<head)
-          found_head ||= true
-        end
-        
-        if found_head
-          line.chop
-        else
-          found_head = !!line.match(%r(http://www.w3.org/2000/svg))
-          line.split(/\s+/).each do |defn|
-            namespaces[$1] = $2 if defn.match(/(xmlns[^=]*)=['"](.*)['"]/)
-          end
-          nil
-        end
-      end.compact.join("\n")
-      
-      # Update test-case path
-      content.gsub!(TCPATHRE, tcpath)
+      get_test_content(params[:suite], params[:version], params[:num], format.to_s);
+    rescue Exception => e
+      puts "error: #{e.message}\n#{e.backtrace.join("\n")}"
+      [404, "#{e.message}\n#{e.backtrace.join("\n")}"]
+    end
+  end
 
-      case format
-      when :sparql
-        erb :test_case, :locals => {
-          :namespaces => namespaces,
-          :content => content,
-          :suite => params[:suite],
-          :version => params[:version]
-        }
+  ##
+  # Writes the test case alternatives for the given URL
+  get '/test-suite/test-cases/:num' do
+    format :json if format == :js
+    cache_control :public, :must_revalidate, :max_age => 60
+    etag Digest::SHA1.hexdigest(manifest_ttl + params[:num])
+
+    test_cases = get_test_alternates(params[:num])
+    puts "loaded test cases for #{params[:num]}"
+    respond_to do |wants|
+      wants.html do
+        haml :test_cases, :format => :html5, :locals => {:test_cases => test_cases, :num => params[:num]}
+      end
+      wants.json do
+        test_cases.map {|t| t[:doc_uri].to_s}.to_json
+      end
+    end
+  end
+  
+  # Check a particular unit test
+  get '/test-suite/check-test/:suite/:version/:num' do
+    params["rdfa-extractor"] ||= "http://www.w3.org/2012/pyRdfa/extract?uri="
+    params["expected-results"] ||= true
+    format :json if format == :js
+
+    begin
+      if perform_test_case(params[:suite], params[:version], params[:num], params["rdfa-extractor"], params["expected-results"])
+        status = "PASS"
+        style = "text-decoration: underline; color: #090"
       else
-        haml :test_case, :locals => {
-          :namespaces => namespaces,
-          :content => content,
-          :suite => params[:suite],
-          :version => params[:version]
-        }
+        status = "FAIL"
+        style = "text-decoration: underline; font-weight: bold; color: #f00"
+      end
+      
+      locals = {
+        :num              => params[:num],
+        :doc_url          => get_test_url(params[:suite], params[:version], params[:num]),
+        :sparql_url       => get_test_url(params[:suite], params[:version], params[:num], 'sparql'),
+        :expected_results => params["expected-results"],
+        :status           => status,
+      }
+
+      respond_to do |wants|
+        wants.html do
+          haml :test_result, :locals => locals.merge(:style => style)
+        end
+        wants.json do
+          locals.to_json
+        end
       end
     rescue Exception => e
       puts "error: #{e.message}\n#{e.backtrace.join("\n")}"
@@ -102,96 +141,31 @@ class CrazyIvan < Sinatra::Base
     end
   end
 
-  get '/test-suite/test-cases/:suite/:version' do
-    haml :test_case_error, :format => :html5, :locals => {:unparsed_uri => request.url}
-  end
-  
-  ##
-  # Writes the test case alternatives for the given URL
-  get '/test-suite/test-cases/:test' do
-    cache_control :public, :must_revalidate, :max_age => 60
-    etag Digest::SHA1.hexdigest(manifest_ttl + params[:test])
+  get '/test-suite/test-details/:suite/:version/:num' do
+    params["rdfa-extractor"] ||= "http://www.w3.org/2012/pyRdfa/extract?uri="
+    format :json if format == :js
+    prefixes = {}
 
-    @test_cases = retrieve_test_case_alternates(params[:test].to_i)
-    haml :test_cases, :format => :html5, :locals => {:test_cases => @test_cases, :num => params[:test]}
-  end
-  
-  get '/test-suite/test-cases' do
-    haml :test_case_error, :format => :html5, :locals => {:unparsed_uri => request.url}
-  end
-  
-  # Retrieve a test suite
-  get '/test-suite/retrieve-tests' do
-    format :html  # Only respond with HTML for now
-    unless params["host-language"] && params["rdfa-version"]
-      body %(
-        <span style=\"text-decoration: underline; font-weight: bold; color: #f00\">
-          ERROR: Could not retrieve test suite, Host Language ('language') and RDFa version ('version') were not specified!
-        </span>
-      )
-    else
-      begin
-        cache_control :public, :must_revalidate, :max_age => 60
-        etag Digest::SHA1.hexdigest(manifest_ttl + params["host-language"] + params["rdfa-version"])
-        haml :retrieve_tests, :format => :html5, :locals => {
-          :test_cases => retrieve_test_cases(params["host-language"], params["rdfa-version"])
-        }
-      rescue Exception => e
-        puts "error: #{e.message}\n#{e.backtrace.join("\n")}"
-        [404, "#{e.message}\n#{e.backtrace.join("\n")}"]
+    begin
+      locals = get_test_details(params[:suite], params[:version], params[:num])
+
+      respond_to do |wants|
+        wants.html do
+          haml :test_details, :format => :html5, :locals => locals
+        end
+        wants.json do
+          locals.to_json(::JSON::State.new(
+            :indent       => "  ",
+            :space        => " ",
+            :space_before => "",
+            :object_nl    => "\n",
+            :array_nl     => "\n"
+          ))
+        end
       end
-    end
-  end
-
-  # Check a particular unit test
-  get '/test-suite/check-test' do
-    format :html  # Only respond with HTML for now
-    req_params = %w(id source sparql rdfa-extractor sparql-engine expected-result)
-    unless req_params.all? {|p| params.has_key?(p)}
-      body req_params.detect {|p| !params.has_key?(p)}.map(", ") + "not specified to test harness!\nARGS: #{params.inspect}"
-    else
-      checkUnitTestHtml(("%04d" % params['id'].to_i), params['rdfa-extractor'],
-                        params['sparql-engine'],
-                        params['source'], params['sparql'],
-                        params['expected-result'])
-    end
-  end
-
-  get '/test-suite/test-details' do
-    format :html  # Only respond with HTML for now
-    req_params = %w(id source sparql rdfa-extractor)
-    unless req_params.all? {|p| params.has_key?(p)}
-      body req_params.detect {|p| !params.has_key?(p)}.map(", ") + "not specified to test harness!\nARGS: #{params.inspect}"
-    else
-      cache_control :public, :must_revalidate, :max_age => 60
-      etag Digest::SHA1.hexdigest(manifest_ttl + params.inspect)
-      begin
-        prefixes = {}
-        doc_url = ::URI.decode(params[:source])
-        doc_text = RDF::Util::File.open_file(doc_url).read
-        doc_graph = RDF::Graph.new << RDF::RDFa::Reader.new(doc_text, :format => :rdfa, :prefixes => prefixes)
-        
-        ttl_text = doc_graph.dump(:turtle, :prefixes => prefixes, :base_uri => doc_url)
-        sparql_url = ::URI.decode(params[:sparql])
-        sparql_text = RDF::Util::File.open_file(sparql_url).read
-        
-        rdf_extract_url = params["rdfa-extractor"] + params[:source]
-        rdf_text = RDF::Util::File.open_file(rdf_extract_url).read
-
-        haml :test_details, :format => :html5, :locals => {
-          :num => params[:id],
-          :doc_text => doc_text,
-          :doc_url => doc_url,
-          :ttl_text => ttl_text,
-          :rdf_text => rdf_text,
-          :rdf_url => rdf_extract_url,
-          :sparql_text => sparql_text,
-          :sparql_url => sparql_url
-        }
-      rescue Exception => e
-        puts "error: #{e.message}\n#{e.backtrace.join("\n")}"
-        [404, "#{e.message}\n#{e.backtrace.join("\n")}"]
-      end
+    rescue Exception => e
+      puts "error: #{e.message}\n#{e.backtrace.join("\n")}"
+      [404, "#{e.message}\n#{e.backtrace.join("\n")}"]
     end
   end
 
@@ -209,67 +183,139 @@ class CrazyIvan < Sinatra::Base
   end
 
   ##
-  # Retrieves all of the test cases from the given test suite manifest URL and
-  # filters the RDF using the given status filter.
+  # Return the document URL for a test or SPARQL
   #
-  # @param [String, RDF::URI] base_uri the base URL for the test cases
-  # @param [String] hostLanguage
-  #   the host language to use when selecting the list of tests.
-  # @param [String] rdfaVersion
-  #   the version of RDFa to use when selecting the list of  tests.
-  # @return [Array<Symbol => String>]
-  #   a list containing all of the filtered test cases including
-  #          unit test number, title, Host Language URL, and SPARQL URL.
-  def retrieve_test_cases(host_language, rdfa_version)
-    puts "retrieve_test_cases(#{host_language.inspect}, #{rdfa_version.inspect})"
-    q = %(
-      PREFIX test: <http://www.w3.org/2006/03/test-description#> 
-      PREFIX rdfatest: <http://rdfa.digitalbazaar.com/vocabs/rdfa-test#> 
-      PREFIX dc:   <http://purl.org/dc/elements/1.1/>
+  # @param [String] suite "xhtml1", "html5" ...
+  # @param [String] version "rdfa1.1" or other
+  # @param [String] num "0001" or greater
+  # @param [String] format
+  #   "sparql", "xhtml", "xml", "html", "svg", or
+  #   auto-detects from suite
+  # @return [String]
+  def get_test_url(suite, version, num, suffix = nil)
+    # Load graph from built-in processor
+    suffix ||= case suite
+    when /xhtml1/ then "xhtml"
+    when /html/   then "html"
+    when /svg/    then "svg"
+    else               "xml"
+    end
 
-      SELECT ?t ?title ?classification ?expected_results
-      WHERE {
-        ?t rdfatest:hostLanguage "#{host_language}";
-           rdfatest:rdfaVersion "#{rdfa_version}";
-           dc:title ?title;
-           test:classification ?classification .
-        OPTIONAL { 
-          ?t test:expectedResults ?expected_results .
-        }
-      }
-    )
-    puts "query: #{q}"
-    SPARQL.execute(q, graph).map do |solution|
-      entry = solution.to_hash
-      entry[:classification] = entry[:classification].to_s.split('#').last
-      entry[:num] = entry[:t].to_s.split('/').last
-      entry[:expected_results] ||= true
-    
-      # Generate the input document URLs
-      entry[:suffix] = case host_language
-      when /xhtml1/ then "xhtml"
-      when /html/   then "html"
-      when /svg/    then "svg"
-      else               "xml"
-      end
-    
-      test_uri = url("test-suite/test-cases/#{host_language}/#{rdfa_version}/#{entry[:num]}.")
-      entry[:doc_uri] = test_uri + entry[:suffix]
-      entry[:sparql_url] = test_uri + "sparql"
-      entry
-    end.sort_by {|tc| tc[:num]}
+    url("/test-suite/test-cases/#{suite}/#{version}/#{num}.#{suffix}").
+      sub(/localhost:\d+/, 'rdfa.digitalbazaar.com') # For local testing
   end
-  
+
+  ##
+  # Get the content for a test
+  #
+  # @param [String] suite "rdfa1.1" or other
+  # @param [String] version "xhtml1", "html5" ...
+  # @param [String] num "0001" or greater
+  # @param [String] format "sparql", nil
+  # @return [{:namespaces => {}, :content => String, :suite => String, :version => String}]
+  #   Serialized document and namespaces
+  def get_test_content(suite, version, num, format = nil)
+    # Load graph from built-in processor
+    suffix = case suite
+    when /xhtml1/ then "xhtml"
+    when /html/   then "html"
+    when /svg/    then "svg"
+    else               "xml"
+    end
+
+    filename = File.expand_path("../../tests/#{num}.#{format == 'sparql' ? 'sparql' : 'txt'}", __FILE__)
+    tcpath = url("/test-cases/#{suite}/#{version}").
+      sub(/localhost:\d+/, 'rdfa.digitalbazaar.com') # For local testing
+
+    # Read in the file, extracting namespaces
+    found_head = format == 'sparql'
+    namespaces = {}
+    content = File.readlines(filename).map do |line|
+      case line
+      when %r(<head)
+        found_head ||= true
+      end
+      
+      if found_head
+        line.chop
+      else
+        found_head = !!line.match(%r(http://www.w3.org/2000/svg))
+        line.split(/\s+/).each do |defn|
+          namespaces[$1] = $2 if defn.match(/(xmlns[^=]*)=['"](.*)['"]/)
+        end
+        nil
+      end
+    end.compact.join("\n")
+    
+    content.gsub!(HTMLRE, "\\1.#{suffix}")
+    content.gsub!(TCPATHRE, tcpath)
+
+    locals = {
+      :namespaces => namespaces,
+      :content => content,
+      :suite => suite,
+      :version => version,
+    }
+
+    case format
+    when 'sparql'
+      content
+    else
+      # Invoke Haml directly so that result can be used as a functional value
+      template = File.read(File.expand_path("../views/test_case.#{suffix}.haml", __FILE__))
+      Haml::Engine.new(template).render(self, locals)
+    end
+  end
+
+  ##
+  # Return test details, including doc text, sparql, and extracted results
+  #
+  # @param [String] suite "xhtml1", "html5" ...
+  # @param [String] version "rdfa1.1" or other
+  # @param [String] num "0001" or greater
+  # @return [{Symbol => Object}]
+  #   Serialized documents and URIs
+  def get_test_details(suite, version, num)
+    # Load graph from built-in processor
+    doc_url = get_test_url(suite, version, num)
+    puts "doc_url: #{doc_url}"
+
+    # Short cut document text
+    prefixes = {}
+    doc_text = get_test_content(suite, version, num)
+    doc_graph = RDF::Graph.new << RDF::RDFa::Reader.new(doc_text, :format => :rdfa, :prefixes => prefixes)
+
+    # Turtle version of default graph
+    ttl_text = doc_graph.dump(:turtle, :prefixes => prefixes, :base_uri => doc_url)
+    sparql_url = get_test_url(suite, version, num, 'sparql')
+    sparql_text = get_test_content(suite, version, num, 'sparql')
+
+    # Extracted version of default graph
+    extract_url = params["rdfa-extractor"] + ::URI.encode(doc_url)
+    extracted_text = RDF::Util::File.open_file(extract_url).read
+
+    {
+      :num            => params[:num],
+      :doc_text       => doc_text,
+      :doc_url        => doc_url,
+      :ttl_text       => ttl_text,
+      :extracted_text => extracted_text,
+      :extract_url    => extract_url,
+      :sparql_text    => sparql_text,
+      :sparql_url     => sparql_url
+    }
+  end
+
   ##
   # Retrieves all variations of a particular test case from the given test suite manifest URL
   #
   # @param [String, RDF::URI] base_uri the base URL for the test cases
-  # @param [Integer] num
+  # @param [String] num
   #   Test case number.
   # @return [Array<{Symbol => String}>]
   #   a list containing all of the filtered test cases including
   #          unit test number, title, Host Language URL, and SPARQL URL.
-  def retrieve_test_case_alternates(num)
+  def get_test_alternates(num)
     q = %(
       PREFIX test: <http://www.w3.org/2006/03/test-description#> 
       PREFIX rdfatest: <http://rdfa.digitalbazaar.com/vocabs/rdfa-test#> 
@@ -284,7 +330,7 @@ class CrazyIvan < Sinatra::Base
         OPTIONAL { 
           ?t test:expectedResults ?expected_results .
         }
-        FILTER REGEX(STR(?t), "#{"%04d" % num}$")
+        FILTER REGEX(STR(?t), "#{num}$")
       }
     )
     puts "query: #{q}"
@@ -303,9 +349,8 @@ class CrazyIvan < Sinatra::Base
       else               "xml"
       end
     
-      test_uri = url("test-suite/test-cases/#{entry[:host_language]}/#{entry[:version]}/#{"%04d" % num}.")
-      entry[:doc_uri] = test_uri + entry[:suffix]
-      entry[:sparql_url] = test_uri + "sparql"
+      entry[:doc_uri] = get_test_url(entry[:host_language], entry[:version], num, entry[:suffix])
+      entry[:sparql_url] = get_test_url(entry[:host_language], entry[:version], num, 'sparql')
       entry
     end
   rescue
@@ -313,98 +358,28 @@ class CrazyIvan < Sinatra::Base
   end
 
   ##
-  # Checks a unit test and outputs a simple unit test result as HTML.
-  #
-  # @param req the HTML request object.
-  # @param num the unit test number.
-  # @param rdf_extractor_url The RDF extractor web service.
-  # @param sparql_engine_url The SPARQL engine URL.
-  # @param doc_url the HTML file to use as input.
-  # @param sparql_url the SPARQL file to use when validating the RDF graph.
-  # @param expected_result
-  def checkUnitTestHtml(num, rdfa_extractor_url, sparql_engine_url, doc_url, sparql_url, expected_result)
-    if performUnitTest(num, rdfa_extractor_url, sparql_engine_url, doc_url, sparql_url, expected_result)
-      status = "PASS"
-      style = "text-decoration: underline; color: #090"
-    else
-      status = "FAIL"
-      style = "text-decoration: underline; font-weight: bold; color: #f00"
-    end
-    haml :test_result, :locals => {
-      :num => num.to_i,
-      :doc_url => doc_url,
-      :sparql_url => sparql_url,
-      :expected_result => expected_result,
-      :status => status,
-      :style => style,
-    }
-  rescue Exception => e
-    puts "error: #{e.message}\n#{e.backtrace.join("\n")}"
-    [404, "#{e.message}\n#{e.backtrace.join("\n")}"]
-  end
-
-  ##
   # Performs a given unit test given the RDF extractor URL, sparql engine URL,
   # HTML file and SPARQL validation file.
   #
-  # @param [String] num the unit test number.
-  # @param [RDF::URI, String] rdf_extractor_url The RDF extractor web service.
-  # @param [RDF::URI, String] sparql_engine_url The SPARQL engine URL.
-  # @param [RDF::URI, String] doc_url the HTML file to use as input.
-  # @param [RDF::URI, String] sparql_url the SPARQL validation file to use on the RDF graph.
-  def performUnitTest(num, rdf_extractor_url, sparql_engine_url, doc_url, sparql_url, expected_result)
-    puts "performUnitTest(#{num.inspect}, #{rdf_extractor_url.inspect}, #{sparql_engine_url.inspect}, #{doc_url.inspect}, #{sparql_url.inspect}, #{expected_result.inspect})"
+  # @param [String] suite "xhtml1", "html5" ...
+  # @param [String] version "rdfa1.1" or other
+  # @param [String] num "0001" or greater
+  # @param [RDF::URI, String] extract_url The RDF extractor web service.
+  # @param [Boolean] expected_results `true` or `false`
+  # @return [Boolean] pass or fail
+  def perform_test_case(suite, version, num, extract_url, expected_results)
     # Build the RDF extractor URL
-    rdf_extractor_url += ::URI.decode(doc_url)
+    extract_url += get_test_url(suite, version, num)
 
     # Get the SPARQL query
-    doc_extension = doc_url.split('.').last
-    tcpath = doc_url.sub(/\/[^\/]*$/, '')
-    sparql_query = File.read(File.expand_path("../../tests/#{num}.sparql", __FILE__)).
-      gsub(TCPATHRE, tcpath).
-      gsub(HTMLRE, '\1.' + doc_extension).
-      sub("ASK WHERE", "ASK FROM <#{rdf_extractor_url}> WHERE")
+    sparql_query = get_test_content(suite, version, num, 'sparql').
+      sub("ASK WHERE", "ASK FROM <#{extract_url}> WHERE")
 
     puts "sparql_query: #{sparql_query}"
 
     # Perform the SPARQL query
-    sparql_value = case sparql_engine_url
-    when %r(/test-suite/sparql-query)
-      SPARQL.execute(StringIO.new(sparql_query), nil)
-    when %r(openlinksw)
-      sparql_engine_url += ::URI.encode(sparql_query)
-      sparql_engine_result = RDF::Util::File.open_file(sparql_engine_url).read
-      sparql_engine_result.to_s.include?(expected_result.to_s)
-    when %r(greggkellogg.net)
-      sparql_engine_url += ::URI.encode(sparql_query)
-      sparql_engine_result = RDF::Util::File.open_file(sparql_engine_url).read
-      sparql_engine_result.to_s.include?(expected_result.to_s)
-    when %r(sparql.org)
-      sparql_engine_url += ::URI.encode(sparql_query)
-      sparql_engine_url += "&default-graph-uri=&stylesheet=%2Fxml-to-html.xsl"
-      sparql_engine_result = RDF::Util::File.open_file(sparql_engine_url).read
-      sparql_engine_result.to_s.include?(expected_result.to_s)
-    else
-      # Custom SPARQL engine, presume that it only needs the query URL
-      sparql_engine_url += ::URI.encode(sparql_query)
-      sparql_engine_result = RDF::Util::File.open_file(sparql_engine_url).read
-      sparql_engine_result.to_s.include?(expected_result.to_s)
-    end
-    
-    sparql_value
-  end
-
-  ##
-  # Outputs the details related to a given unit test given the unit test number,
-  # RDF extractor URL, sparql engine URL, HTML file and SPARQL validation file.
-  # The output is written to the req object as HTML.
-  #
-  # @param req the HTTP request.
-  # @param num the unit test number.
-  # @param rdf_extractor_url The RDF extractor web service.
-  # @param sparql_engine_url The SPARQL engine URL.
-  # @param doc_url the HTML file to use as input.
-  # @param sparql_url the SPARQL validation file to use on the RDF graph.
-  def retrieveUnitTestDetailsHtml(req, num, rdf_extractor_url, n3_extractor_url, doc_url, sparql_url)
+    result = SPARQL.execute(StringIO.new(sparql_query), nil)
+    puts "result: #{result.inspect}, expected: #{expected_results.inspect} == #{(result == expected_results).inspect}"
+    result == expected_results
   end
 end

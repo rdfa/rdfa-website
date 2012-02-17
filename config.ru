@@ -3,7 +3,7 @@ $:.unshift(File.expand_path('../lib',  __FILE__))
 
 require 'rubygems' || Gem.clear_paths
 require 'bundler'
-Bundler.setup
+Bundler.require(:default)
 
 require 'crazyivan'
 

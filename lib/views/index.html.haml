@@ -1,0 +1,100 @@
+!!! 5
+%html{:lang => "en"}
+  %head
+    %meta{"http-equiv" => "Content-Type", :content => "text/html;charset=utf-8"}
+    %title= settings.app_name
+    = stylesheet :application
+  %body
+    %div.navbar.navbar-fixed-top
+      %div.navbar-inner
+        %div.container
+          %a.btn.btn-navbar(data-toggle="collapse" data-target=".nav-collapse")
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand{:href => url("/")}= settings.app_name
+          %div.nav-collapse
+            %ul.nav
+              %li
+                %a#menu-rdfa1_0{:href => "#", "data-version" => "rdfa1.0", "data-selector" => "rdfa1_0"}
+                  RDFa 1.0
+              %li.active
+                %a#menu-rdfa1_1{:href => "#", "data-version" => "rdfa1.1", "data-selector" => "rdfa1_1"}
+                  RDFa 1.1
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown"}
+                  Processor
+                  %b.caret
+                %ul.processors.dropdown-menu
+            %form.navbar-search.pull-left
+              %input.search-query.span4#processor-url{:type => "text", :placeholder => "Processor URL"}
+    %div.modal.hide.fade#source-modal
+      %div.modal-header
+        %a.close{"data-dismiss" => 'modal'}= 'x'
+        %h3= "Test source"
+      %div.modal-body
+        Loading Source ...
+    %div.container
+      %div.row
+        %div.span8
+          %div.btn-group#host-languages{"data-toggle" => "buttons-radio"}
+            %button.btn.version.rdfa1_1.suite.html4{"data-suite" => "html4"}= "HTML4"
+            %button.btn.version.rdfa1_1.suite.html5{"data-suite" => "html5"}= "HTML5"
+            %button.btn.version.rdfa1_0.rdfa1_1.suite.svg{"data-suite" => "svg"}= "SVG"
+            %button.btn.version.rdfa1_0.rdfa1_1.suite.xhtml1{"data-suite" => "xhtml1"}= "XHTML1"
+            %button.btn.version.rdfa1_0.rdfa1_1.suite.xhtml5{"data-suite" => "xhtml5"}= "XHTML5"
+            %button.btn.version.rdfa1_0.rdfa1_1.suite.xml1.active{"data-suite" => "xml1"}= "XML1"
+        %div.span2
+          %button.btn.btn-primary= "Run All Tests"
+      %div.row
+        %h2= "Overview"
+        %noscript
+          %p
+            WARNING: You need Javascript enabled to use this web page!
+        %p
+          The RDFa Test Suite provides an interactive mechanism to check the 
+          conformance of an RDFa processor and SPARQL query engine. 
+          This service is intended for anybody that wants to see how RDFa works as 
+          well as developers that want to do conformance testing on their own 
+          RDFa/SPARQL implementations.
+        %p
+          There are several things that you can do on this web page:
+        %ul
+          %li
+            To run a unit test, click on the
+            %button.btn.btn-primary= "Test"
+            link.
+          %li
+            To see the details of a unit test, click on the
+            %button.btn.btn-info= "details"
+            link.
+          %li
+            You can execute every unit test by clicking on the
+            %button.btn.btn-primary= "Run All Tests"
+            button.
+          %li
+            You can modify the Test Suite, Approval Status, RDFa Extractor Service 
+            and SPARQL Engine URLs.
+      %div.row
+        %h2= "Status"
+        %ul
+          %li
+            These tests are in active development by the
+            %a{:href => "http://www.w3.org/2010/02/rdfa/"}
+              RDF Web Applications Working Group
+            at the
+            %a{:href => "http://www.w3c.org"}
+              World Wide Web Consortium
+          %li
+            These tests may be used to check conformance for an RDFa 1.1 processor.
+          %li
+            The tests are subject to change at any point between now and June 2011.
+          %li
+            All bugs, suggestions and thoughts about The RDFa Test Suite
+            should be sent to the
+            %a{:href => "http://lists.w3.org/Archives/Public/public-rdfa-wg/"}
+              RDFa Working Group mailing list.
+      %div#tests
+      %footer
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"}
+    = javascript :application
