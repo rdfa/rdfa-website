@@ -10,7 +10,9 @@ $(function () {
     this.num = testObject["@id"].split('/').pop();
     this.hostLanguages = testObject['rdfatest:hostLanguage'];
     this.versions = testObject['rdfatest:rdfaVersion'];
+    this.description = testObject['dc:title'];
     this.classification = testObject['test:classification'].split(':').pop();
+    this.expectedResults = testObject['test:expectedResults'] || true;
     
     if (!(this.hostLanguages instanceof Array)) { this.hostLanguages = [this.hostLanguages]; }
     if (!(this.versions instanceof Array)) { this.versions = [this.versions]; }
@@ -22,11 +24,17 @@ $(function () {
     version: function() {
       return $("#tests").attr('data-version');
     },
-    
+
     // Return the selected hostLanguage
     // This is set when the hostLanguage is selected on all selected test divs
     suite: function() {
       return $("#tests").attr('data-suite');
+    },
+
+    // Return the selected processor URI
+    // This is set when the hostLanguage is selected on all selected test divs
+    processorURL: function() {
+      return $("#processor-url").val();
     },
 
     newTest: function() {
@@ -44,7 +52,7 @@ $(function () {
               .append(" (")
               .append($('<span>').addClass('classification').text(this.classification))
               .append("): ")
-              .append($('<span>').addClass('description').text(this.value['dc:title'])))
+              .append($('<span>').addClass('description').text(this.description)))
             .append($('<div>').addClass('span3')
               .append($detailButton)
               .append($sourceButton))));
@@ -74,9 +82,11 @@ $(function () {
           
           // Retrieve results from processor and canonical representation
           var test_url = "/test-suite/check-test/" +
-            that.suite() + '/' +
-            that.version() + '/' +
-            that.num;
+            that.suite() +
+            '/' + that.version() +
+            '/' + that.num +
+            '?expected-results=' + that.expectedResults +
+            '&rdfa-extractor=' + that.processorURL();
 
           $.getJSON(test_url, function (data) {
             // Indicate pass/fail and style
@@ -106,9 +116,10 @@ $(function () {
           
           // Retrieve results from processor and canonical representation
           var details_url = "/test-suite/test-details/" +
-            that.suite() + '/' +
-            that.version() + '/' +
-            that.num;
+            that.suite() +
+            '/' + that.version() +
+            '/' + that.num +
+            '?rdfa-extractor=' + that.processorURL();
 
           $.getJSON(details_url, function (data) {
             $(button).button("complete");
@@ -233,7 +244,7 @@ $(function () {
 
   // Load test cases
   $("<div class='row'><h3>" + "Test Cases are Loading..." + "</h3></div>").appendTo('#tests');
-  $.getJSON("/test-suite/manifest.json", function(data) {
+  $.getJSON("/test-suite/manifest", function(data) {
     $("#tests").empty();
     $.each(data["@id"], function(index, value) {
       $("#tests").append(new CrazyIvan(value).newTest());

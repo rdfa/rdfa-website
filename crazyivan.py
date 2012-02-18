@@ -28,7 +28,7 @@ def retrieveTestCases(base_uri, hostLanguage, rdfaVersion):
     q = """
     PREFIX test: <http://www.w3.org/2006/03/test-description#> 
     PREFIX rdfatest: <http://rdfa.digitalbazaar.com/vocabs/rdfa-test#> 
-    PREFIX dc:   <http://purl.org/dc/elements/1.1/>
+    PREFIX dc:   <http://purl.org/dc/terms/>
     SELECT ?t ?title ?classification ?expected_results
     FROM <%s>
     WHERE 
@@ -176,7 +176,7 @@ def writeTestCaseRetrievalError(req, tc):
  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd"> 
 <html version="XHTML+RDFa 1.0" xmlns="http://www.w3.org/1999/xhtml"
    xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#"
-   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:dc="http://purl.org/dc/terms/"
    xmlns:test="http://www.w3.org/2006/03/test-description#"> 
    
    <head> 
@@ -207,7 +207,7 @@ def writeTestCaseAlternatives(req, arguments):
  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd"> 
 <html version="XHTML+RDFa 1.0" xmlns="http://www.w3.org/1999/xhtml"
    xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#"
-   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:dc="http://purl.org/dc/terms/"
    xmlns:test="http://www.w3.org/2006/03/test-description#"> 
    
    <head> 

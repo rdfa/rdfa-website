@@ -1,6 +1,6 @@
 #@base <http://rdfa.digitalbazaar.com/test-suite/> .
 @prefix : <http://www.w3.org/2006/03/test-description#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dc: <http://purl.org/dc/terms/> .
 @prefix log: <http://www.w3.org/2000/10/swap/log#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .

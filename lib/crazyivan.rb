@@ -56,17 +56,19 @@ class CrazyIvan < Sinatra::Base
   #
   # We consider JavaScript and JSON to just return JSON-LD
   get '/test-suite/manifest' do
+    format :json if format == :js
     settings.sparql_options.replace(
       :standard_prefixes => true,
-      :prefixes => {:test => "http://www.w3.org/2006/03/test-description#"}
+      :prefixes => {
+        :test => "http://www.w3.org/2006/03/test-description#",
+        :rdfatest => "http://rdfa.digitalbazaar.com/vocabs/rdfa-test#",
+      }
     )
     cache_control :public, :must_revalidate, :max_age => 60
     etag Digest::SHA1.hexdigest manifest_ttl
     respond_to do |wants|
       wants.ttl { manifest_ttl }
-      wants.js { settings.sparql_options[:format] = :jsonld; graph }
       wants.json { settings.sparql_options[:format] = :jsonld; graph }
-      wants.jsonld { settings.sparql_options[:format] = :jsonld; graph }
       wants.html { graph }
     end
   end
@@ -107,11 +109,12 @@ class CrazyIvan < Sinatra::Base
   # Check a particular unit test
   get '/test-suite/check-test/:suite/:version/:num' do
     params["rdfa-extractor"] ||= "http://www.w3.org/2012/pyRdfa/extract?uri="
-    params["expected-results"] ||= true
+    params["expected-results"] ||= 'true'
+    expected_results = params["expected-results"] == 'true'
     format :json if format == :js
 
     begin
-      if perform_test_case(params[:suite], params[:version], params[:num], params["rdfa-extractor"], params["expected-results"])
+      if perform_test_case(params[:suite], params[:version], params[:num], params["rdfa-extractor"], expected_results)
         status = "PASS"
         style = "text-decoration: underline; color: #090"
       else
@@ -319,7 +322,7 @@ class CrazyIvan < Sinatra::Base
     q = %(
       PREFIX test: <http://www.w3.org/2006/03/test-description#> 
       PREFIX rdfatest: <http://rdfa.digitalbazaar.com/vocabs/rdfa-test#> 
-      PREFIX dc:   <http://purl.org/dc/elements/1.1/>
+      PREFIX dc:   <http://purl.org/dc/terms/>
 
       SELECT ?t ?title ?classification ?expected_results ?host_language ?version
       WHERE {

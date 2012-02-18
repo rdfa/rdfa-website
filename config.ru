@@ -5,6 +5,7 @@ require 'rubygems' || Gem.clear_paths
 require 'bundler'
 Bundler.require(:default)
 
+require 'rack/cache'
 require 'crazyivan'
 
 set :environment, (ENV['RACK_ENV'] || 'production').to_sym
@@ -19,5 +20,10 @@ else
 end
 
 disable :run, :reload
+
+use Rack::Cache,
+  :verbose     => true,
+  :metastore   => "file:" + File.expand_path("../cache/meta", __FILE__),
+  :entitystore => "file:" + File.expand_path("../cache/body", __FILE__)
 
 run CrazyIvan
