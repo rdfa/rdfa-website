@@ -87,7 +87,7 @@ $(function () {
           $(this).button('loading');
           
           // Retrieve results from processor and canonical representation
-          var test_url = "/test-suite/check-test/" +
+          var test_url = "check-test/" +
             that.suite() +
             '/' + that.version() +
             '/' + that.num +
@@ -122,7 +122,7 @@ $(function () {
           $(this).button('loading');
           
           // Retrieve results from processor and canonical representation
-          var details_url = "/test-suite/test-details/" +
+          var details_url = "test-details/" +
             that.suite() +
             '/' + that.version() +
             '/' + that.num +
@@ -177,7 +177,7 @@ $(function () {
           $(this).button('loading');
 
           // Get test URIs associated with this test
-          $.getJSON("/test-suite/test-cases/" + that.num, function(data) {
+          $.getJSON("test-cases/" + that.num, function(data) {
             $(button).button("complete");
             var $sourceDiv = $('<div>')
               .alert()
@@ -248,7 +248,7 @@ $(function () {
 
   // Load test cases
   $("<div class='row'><h3>" + "Test Cases are Loading..." + "</h3></div>").appendTo('#tests');
-  $.getJSON("/test-suite/manifest", function(data) {
+  $.getJSON("manifest", function(data) {
     $("#tests").empty();
     $.each(data["@id"], function(index, value) {
       $("#tests").append(new CrazyIvan(value).newTest());
