@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/gkellogg/sinatra-simple-assets
-  revision: 615dd8177120b30be0a41750ee6ceb781ad3fd08
+  revision: 0a9231fbeb1bdd05aaaa46cbcb1af87bdf6bcbff
   branch: runtime-recovery
   specs:
     sinatra-simple-assets (0.0.4)
