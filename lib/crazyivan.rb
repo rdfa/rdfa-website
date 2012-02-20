@@ -61,7 +61,7 @@ class CrazyIvan < Sinatra::Base
       :standard_prefixes => true,
       :prefixes => {
         :test => "http://www.w3.org/2006/03/test-description#",
-        :rdfatest => "http://rdfa.digitalbazaar.com/vocabs/rdfa-test#",
+        :rdfatest => "http://rdfa.digitalbazaar.com/vocabs/rdfa-test#", # FIXME: new name?
       }
     )
     cache_control :public, :must_revalidate, :max_age => 60
@@ -98,10 +98,15 @@ class CrazyIvan < Sinatra::Base
     puts "loaded test cases for #{params[:num]}"
     respond_to do |wants|
       wants.html do
-        haml :test_cases, :format => :html5, :locals => {:test_cases => test_cases, :num => params[:num]}
+        haml :test_cases, :format => :html5, :locals => {:test_cases => test_cases}
       end
       wants.json do
-        test_cases.map {|t| t[:doc_uri].to_s}.to_json
+        test_cases.map do |tc|
+          {
+            :suite_version => "#{tc[:host_language]}+#{tc[:version]}",
+            :doc_uri => tc[:doc_uri]
+          }
+        end.to_json
       end
     end
   end
@@ -227,7 +232,7 @@ class CrazyIvan < Sinatra::Base
     end
 
     filename = File.expand_path("../../tests/#{num}.#{format == 'sparql' ? 'sparql' : 'txt'}", __FILE__)
-    tcpath = url("/test-cases/#{suite}/#{version}").
+    tcpath = url("/test-suite/test-cases/#{suite}/#{version}").
       sub(/localhost:\d+/, 'rdfa.digitalbazaar.com') # For local testing
 
     # Read in the file, extracting namespaces
@@ -294,7 +299,7 @@ class CrazyIvan < Sinatra::Base
     sparql_text = get_test_content(suite, version, num, 'sparql')
 
     # Extracted version of default graph
-    extract_url = params["rdfa-extractor"] + ::URI.encode(doc_url)
+    extract_url = ::URI.decode(params["rdfa-extractor"]) + ::URI.encode(doc_url)
     extracted_text = RDF::Util::File.open_file(extract_url).read
 
     {
@@ -351,7 +356,7 @@ class CrazyIvan < Sinatra::Base
       when /svg/    then "svg"
       else               "xml"
       end
-    
+
       entry[:doc_uri] = get_test_url(entry[:host_language], entry[:version], num, entry[:suffix])
       entry[:sparql_url] = get_test_url(entry[:host_language], entry[:version], num, 'sparql')
       entry
@@ -372,7 +377,7 @@ class CrazyIvan < Sinatra::Base
   # @return [Boolean] pass or fail
   def perform_test_case(suite, version, num, extract_url, expected_results)
     # Build the RDF extractor URL
-    extract_url += get_test_url(suite, version, num)
+    extract_url = ::URI.decode(extract_url) + get_test_url(suite, version, num)
 
     # Get the SPARQL query
     sparql_query = get_test_content(suite, version, num, 'sparql').

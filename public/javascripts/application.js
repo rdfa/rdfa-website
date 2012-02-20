@@ -40,7 +40,7 @@ $(function () {
     // Return the selected processor URI
     // This is set when the hostLanguage is selected on all selected test divs
     processorURL: function() {
-      return $("#processor-url").val();
+      return escape($("#processor-url").val());
     },
 
     newTest: function() {
@@ -114,7 +114,7 @@ $(function () {
         .button()
         .addClass('btn btn-info')
         .attr('data-loading-text', "Loading details ...")
-        .attr('data-complete-text', "loaded")
+        .attr('data-complete-text', "details")
         .attr('autocomplete', 'off')
         .text("details")
         .click(function() {
@@ -135,11 +135,7 @@ $(function () {
               .attr('id', 'unit-test-details-' + that.num)
               .attr('data-dismiss', 'alert')
               .addClass('row alert fade in')
-              .append($('<a>').addClass('close').text('x'))
-              .bind('closed', function () {
-                $(button).button("complete");
-                $(this).remove();
-              });
+              .append($('<a>').addClass('close').text('x'));
 
             // Content of details pane
             $detailsDiv
@@ -173,7 +169,7 @@ $(function () {
         .button()
         .addClass('btn btn-info')
         .attr('data-loading-text', "Loading tests ...")
-        .attr('data-complete-text', "loaded")
+        .attr('data-complete-text', "source")
         .attr('autocomplete', 'off')
         .text("source")
         .click(function() {
@@ -188,34 +184,35 @@ $(function () {
               .attr('id', 'unit-test-source-' + that.num)
               .attr('data-dismiss', 'alert')
               .addClass('row alert fade in')
-              .append($('<a>').addClass('close').text('x'))
-              .bind('closed', function () {
-                $(button).button("complete");
-                $(this).remove();
-              });
+              .append($('<a>').addClass('close').text('x'));
 
-            $sourceDiv.append(data.join('<br/>'));
-            // FIXME: would like to display source in modal
-            //$.each(data, function(index, url) {
-            //  console.debug('URL: ' + url);
-            //  $sourceDiv.append(
-            //    $('a')
-            //      .attr('href', '#source-modal')
-            //      .attr('data-toggle', 'modal')
-            //      .text(url)
-            //    .append('<br/>'));
-            //});
-
+            $.each(data, function(index, tc) {
+                $('<a>')
+                  .attr('href', tc.doc_uri)
+                  .text(tc.suite_version)
+                  .appendTo($sourceDiv);
+                 $('<br/>').appendTo($sourceDiv);
+            });
+            
             $("div#unit-test-" + that.num + " > div").append($sourceDiv);
           });
         });
     }
   };
 
+  function resetTests() {
+  $("div.row.version button.test")
+    .removeClass('btn-success btn-danger')
+    .addClass('btn-primary')
+    .button('reset');
+  }
+
   function selectVersion(version, suite) {
     var $versionAnchor = $("[data-version='" + version + "']");
     var versionSelector = "." + $versionAnchor.attr('data-selector');
     var testSelector = versionSelector + "." + suite;
+
+    resetTests();
 
     // Set this element to be active
     $("#menu-rdfa1_0, #menu-rdfa1_1").parent().removeClass('active');
@@ -280,6 +277,7 @@ $(function () {
         .attr('data-processor', value)
         .text(key))
       .click(function() {
+        resetTests();
         $("#processor-url").val($(this).children("a").attr("data-processor"));
       });
     
@@ -296,12 +294,10 @@ $(function () {
     $(this).button('loading');
     // Create a message queue and load it up with
     // all tests which are visible
+    resetTests();
     var q = $.makeArray(
       $("div.row.version:visible")
-        .find("button.test")
-        .removeClass('btn-success btn-danger')
-        .addClass('btn-primary')
-        .button('reset'));
+        .find("button.test"));
 
     console.debug("click: " + this.toString());
 
