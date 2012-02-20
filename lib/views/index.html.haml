@@ -45,7 +45,8 @@
             %button.btn.version.rdfa1_0.rdfa1_1.suite.xhtml5{"data-suite" => "xhtml5"}= "XHTML5"
             %button.btn.version.rdfa1_0.rdfa1_1.suite.xml1.active{"data-suite" => "xml1"}= "XML1"
         %div.span2
-          %button.btn.btn-primary= "Run All Tests"
+          %button.btn.btn-primary.run-all{"data-loading-text" => "Running", :autocomplete => "off"}
+            Run All Tests
       %div.row
         %h2= "Overview"
         %noscript

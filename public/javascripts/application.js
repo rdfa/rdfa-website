@@ -2,7 +2,13 @@ $(function () {
   // Hide elements
   //$('.modal').modal('hide');
 
-  // Enable features
+  // FIXME: Strategy for running all tests:
+  // * Create a queue (array)
+  // * when triggering all tests, add all selected elements to array.
+  // * test complete handler removes first element from queue and triggers 'click'.
+  // * Start by triggering 1, 2, or 3 tests from start of queue.
+  //
+  // Issue, how to see queue from event handler?
 
   // Load Manifest JSON-LD
   var CrazyIvan = function(testObject) {
@@ -72,7 +78,7 @@ $(function () {
       var that = this;
       return $('<button>')
         .button()
-        .addClass('btn btn-primary')
+        .addClass('btn btn-primary test')
         .attr('data-loading-text', "Running")
         .attr('autocomplete', 'off')
         .text("Test")
@@ -95,7 +101,8 @@ $(function () {
               .button('reset')
               .text(data.status)
               .removeClass("btn-primary")
-              .addClass(btn_class);
+              .addClass(btn_class)
+              .trigger('complete');
           });
         });
     },
@@ -282,5 +289,34 @@ $(function () {
     }
 
     $li.appendTo($("ul.processors"));
+  });
+
+  // Set message queuing for Run All tests
+  $("button.run-all").click(function() {
+    $(this).button('loading');
+    // Create a message queue and load it up with
+    // all tests which are visible
+    var q = $.makeArray(
+      $("div.row.version:visible")
+        .find("button.test")
+        .removeClass('btn-success btn-danger')
+        .addClass('btn-primary')
+        .button('reset'));
+
+    console.debug("click: " + this.toString());
+
+    // Bind to the complete event of each test button
+    // to trigger the next element in the queue
+    $("button.test").bind('complete', function() {
+      console.debug("complete: " + this.toString());
+      var next = q.shift();
+      if (next === undefined) {
+        $("button.run-all").button('reset');
+      } else {
+        $(next).click();
+      }
+    });
+    
+    $(q.shift()).click();
   });
 });
