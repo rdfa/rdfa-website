@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/gkellogg/sinatra-simple-assets
-  revision: d6bd9daa84f04c05bd19356d2dffc46db11c0b43
+  revision: be4aed1c3f5d0df4b33d26df0f3f0f47b1d0b103
   specs:
     sinatra-simple-assets (0.0.4)
       cssmin (~> 1.0.2)
