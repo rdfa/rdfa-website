@@ -8,7 +8,7 @@ gem 'haml'
 gem 'json'
 gem 'sinatra'
 #gem 'sinatra-simple-assets', :require => 'sinatra/simple_assets'
-gem 'sinatra-simple-assets', :git => "git://github.com/gkellogg/sinatra-simple-assets", :require => 'sinatra/simple_assets'
+gem 'sinatra-simple-assets', :git => "git://github.com/gkellogg/sinatra-simple-assets", :branch => 'runtime-recovery', :require => 'sinatra/simple_assets'
 gem 'sinatra-respond_to', :git => "git://github.com/gkellogg/sinatra-respond_to.git", :require => 'sinatra/respond_to'
 gem 'rack-cache', :require => 'rack/cache'
 
