@@ -201,10 +201,11 @@ $(function () {
   };
 
   function resetTests() {
-  $("div.row.version button.test")
-    .removeClass('btn-success btn-danger')
-    .addClass('btn-primary')
-    .button('reset');
+    $("div.row.version button.test")
+      .removeClass('btn-success btn-danger')
+      .addClass('btn-primary')
+      .button('reset');
+    $("div.test-progress").hide();
   }
 
   function selectVersion(version, suite) {
@@ -289,8 +290,12 @@ $(function () {
     $li.appendTo($("ul.processors"));
   });
 
+  // Hide test progress bar
+  $("div.test-progress").hide();
   // Set message queuing for Run All tests
   $("button.run-all").click(function() {
+    var total = 0;
+
     $(this).button('loading');
     // Create a message queue and load it up with
     // all tests which are visible
@@ -299,12 +304,25 @@ $(function () {
       $("div.row.version:visible")
         .find("button.test"));
 
+    total = q.length;
+
+    $('div.test-progress').show();
+    $('div.test-progress .test-total').text(total.toString());
+
     console.debug("click: " + this.toString());
 
     // Bind to the complete event of each test button
     // to trigger the next element in the queue
     $("button.test").bind('complete', function() {
       console.debug("complete: " + this.toString());
+      
+      // Update progress
+      var passed = $("button.btn-success").length;
+      var failed = $("button.btn-danger").length;
+      $(".test-progress .bar").width((((passed + failed)/total)*100).toString() + "%");
+      $(".test-progress .test-passed").text(passed.toString());
+      $(".test-progress .test-failed").text(failed.toString());
+
       var next = q.shift();
       if (next === undefined) {
         $("button.run-all").button('reset');

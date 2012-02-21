@@ -47,6 +47,21 @@
         %div.span2
           %button.btn.btn-primary.run-all{"data-loading-text" => "Running", :autocomplete => "off"}
             Run All Tests
+      %div.row.test-progress
+        %div.span8
+          %div.progress
+            %div.bar
+        %div.span2
+          %div.test-status
+            %div
+              Total:
+              %span.test-total
+            %div
+              Passed:
+              %span.test-passed
+            %div
+              Failed
+              %span.test-failed
       %div.row
         %h2= "Overview"
         %noscript
