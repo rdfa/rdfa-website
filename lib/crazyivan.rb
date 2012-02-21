@@ -112,7 +112,7 @@ class CrazyIvan < Sinatra::Base
   
   # Check a particular unit test
   get '/test-suite/check-test/:suite/:version/:num' do
-    params["rdfa-extractor"] ||= "http://www.w3.org/2012/pyRdfa/extract?uri="
+    params["rdfa-extractor"] ||= "http://www.w3.org/2012/pyRdfa/extract?format=xml&uri="
     params["expected-results"] ||= 'true'
     expected_results = params["expected-results"] == 'true'
     format :json if format == :js

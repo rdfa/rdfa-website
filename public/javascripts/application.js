@@ -267,7 +267,7 @@ $(function () {
     "cognition":      "http://srv.buzzword.org.uk/crazy-ivan.cgi?uri=",
     "librdfa-python": "http://rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py?uri=",
     "marklogic":      "http://dmz-demo39.demo.marklogic.com/rdfa_extract.xqy?url=",
-    "pyrdfa":         "http://www.w3.org/2012/pyRdfa/extract?uri=",
+    "pyrdfa":         "http://www.w3.org/2012/pyRdfa/extract?format=xml&uri=",
     "RDF.rb":         "http://rdf.greggkellogg.net/distiller?raw=true&fmt=turtle&in_fmt=rdfa&uri=",
     "shark":          "http://shark.informatik.uni-freiburg.de/Ocean/SharkWeb.asmx/Parse?url=",
     "spread":         "http://htmlwg.mn.aptest.com/rdfa/extract_rdfa.pl?format=xml&uri=",
