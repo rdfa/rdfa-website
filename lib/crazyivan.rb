@@ -40,10 +40,6 @@ class CrazyIvan < Sinatra::Base
     puts "[#{request.path_info}], #{params.inspect}, #{format}, #{request.accept.inspect}"
   end
 
-  get '/' do
-    redirect to('/test-suite/')
-  end
-
   get '/test-suite/' do
     cache_control :public, :must_revalidate, :max_age => 60
     haml :index
@@ -175,6 +171,14 @@ class CrazyIvan < Sinatra::Base
       [404, "#{e.message}\n#{e.backtrace.join("\n")}"]
     end
   end
+
+  # These endpoints are here mostly for testing, where Apache will not automatically load
+  # the index.html files.
+  get('/')      { redirect to '/index.html'}
+  get('/play/') { redirect to '/play/index.html'}
+  get('/dev/')  { redirect to '/dev/index.html'}
+  get('/docs/') { redirect to '/docs/index.html'}
+  get('/tools/'){ redirect to '/tools/index.html'}
 
   protected
   ##

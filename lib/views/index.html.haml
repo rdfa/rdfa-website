@@ -12,22 +12,21 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand{:href => url("/")}= settings.app_name
+          %a.brand{:href => url("../")}= "RDFa"
           %div.nav-collapse
             %ul.nav
               %li
-                %a#menu-rdfa1_0{:href => "#", "data-version" => "rdfa1.0", "data-selector" => "rdfa1_0"}
-                  RDFa 1.0
+                %a{:href => '/'}= "Home"
+              %li
+                %a{:href => '/play/'}= "Playground"
+              %li
+                %a{:href => '/docs/'}= "Documentation"
+              %li
+                %a{:href => '/tools/'}= "Tools"
+              %li
+                %a{:href => '/dev/'}= "Developers"
               %li.active
-                %a#menu-rdfa1_1{:href => "#", "data-version" => "rdfa1.1", "data-selector" => "rdfa1_1"}
-                  RDFa 1.1
-              %li.dropdown
-                %a.dropdown-toggle{"data-toggle" => "dropdown"}
-                  Processor
-                  %b.caret
-                %ul.processors.dropdown-menu
-            %form.navbar-search.pull-left
-              %input.search-query.span4#processor-url{:type => "text", :placeholder => "Processor URL"}
+                %a{:href => '/test-suite'}= "Test Suite"
     %div.modal.hide.fade#source-modal
       %div.modal-header
         %a.close{"data-dismiss" => 'modal'}= 'x'
@@ -36,19 +35,34 @@
         Loading Source ...
     %div.container
       %div.row
-        %div.span8
+        %div.span6
+          %div.btn-group.versions{"data-toggle" => "buttons-radio"}
+            %button.btn.versions.rdfa1_0{:href => "#", "data-version" => "rdfa1.0", "data-selector" => "rdfa1_0"}
+              RDFa 1.0
+            %button.btn.versions.active.rdfa1_1{:href => "#", "data-version" => "rdfa1.1", "data-selector" => "rdfa1_1"}
+              RDFa 1.1
+        %div.span2.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown"}
+            Processor
+            %b.caret
+          %ul.processors.dropdown-menu
+        %div.span4
+          %form
+            %input.search-query.span4#processor-url{:type => "text", :placeholder => "Processor URL"}
+      %div.row
+        %div.span10
           %div.btn-group#host-languages{"data-toggle" => "buttons-radio"}
             %button.btn.version.rdfa1_1.suite.html4{"data-suite" => "html4"}= "HTML4"
             %button.btn.version.rdfa1_1.suite.html5{"data-suite" => "html5"}= "HTML5"
             %button.btn.version.rdfa1_0.rdfa1_1.suite.svg{"data-suite" => "svg"}= "SVG"
             %button.btn.version.rdfa1_0.rdfa1_1.suite.xhtml1{"data-suite" => "xhtml1"}= "XHTML1"
-            %button.btn.version.rdfa1_0.rdfa1_1.suite.xhtml5{"data-suite" => "xhtml5"}= "XHTML5"
+            %button.btn.version.rdfa1_1.suite.xhtml5{"data-suite" => "xhtml5"}= "XHTML5"
             %button.btn.version.rdfa1_0.rdfa1_1.suite.xml1.active{"data-suite" => "xml1"}= "XML1"
         %div.span2
           %button.btn.btn-primary.run-all{"data-loading-text" => "Running", :autocomplete => "off"}
             Run All Tests
       %div.row.test-progress
-        %div.span8
+        %div.span10
           %div.progress
             %div.bar
         %div.span2
@@ -112,5 +126,9 @@
               RDFa Working Group mailing list.
       %div#tests
       %footer
+        %p
+          &copy; 2012 -
+          %a{:property => "dc:contributor", :href => "http://w3.org"}
+            The World Wide Web Consortium
     %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"}
     = javascript :application

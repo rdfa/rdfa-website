@@ -59,7 +59,7 @@ $(function () {
               .append($('<span>').addClass('classification').text(this.classification))
               .append("): ")
               .append($('<span>').addClass('description').text(this.description)))
-            .append($('<div>').addClass('span3')
+            .append($('<div>').addClass('span3 pull-right')
               .append($detailButton)
               .append($sourceButton))));
 
@@ -216,8 +216,8 @@ $(function () {
     resetTests();
 
     // Set this element to be active
-    $("#menu-rdfa1_0, #menu-rdfa1_1").parent().removeClass('active');
-    $versionAnchor.parent().addClass('active');
+    $("button.versions").removeClass('active');
+    $versionAnchor.addClass('active');
 
     // Record selected version and suite on div#tests
     $("#tests").attr('data-version', version);
@@ -234,7 +234,7 @@ $(function () {
   }
 
   // Click triggers for versions
-  $("#menu-rdfa1_0, #menu-rdfa1_1").click(function() {
+  $("button.versions").click(function() {
     var version = $(this).attr('data-version');
     var suite = $("#tests").attr('data-suite') || 'xhtml1';
     selectVersion(version, suite);
@@ -256,7 +256,7 @@ $(function () {
     });
   
     // Select active suite
-    var activeVersion = $("ul.nav>li.active>a").attr('data-version');
+    var activeVersion = $("button.versions.active").attr('data-version');
     var activeSuite = $("button.suite.active").attr('data-suite');
     selectVersion(activeVersion, activeSuite);
   });
