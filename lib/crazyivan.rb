@@ -249,7 +249,7 @@ class CrazyIvan < Sinatra::Base
       else
         found_head = !!line.match(%r(http://www.w3.org/2000/svg))
         line.split(/\s+/).each do |defn|
-          namespaces[$1] = $2 if defn.match(/(xmlns[^=]*)=['"](.*)['"]/)
+          namespaces[$1] = $2 if defn.match(/([^=]*)=['"](.*)['"]/)
         end
         nil
       end
