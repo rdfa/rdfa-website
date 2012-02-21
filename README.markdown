@@ -1,36 +1,67 @@
-Introduction
-------------
+= Introduction
+
+This repository controls the [rdfa.info](http://rdfa.info/) webisite, including the
+[RDFa Test Suite](http://rdfa.info/test-suite).
+
+== RDFa Test Suite
 
 The RDFa Test Suite is a set of Web Services, markup and tests that can 
 be used to verify RDFa Processor conformance to the set of specifications
 that constitute RDFa 1.1. The goal of the suite is to provide an easy and 
 comprehensive RDFa testing solution for developers creating RDFa Processors.
 
-Design
-------
+== Design
 
-The RDFa Test suite allows developers to mix and match RDFa test manifests, 
-RDFa processor endpoints and SPARQL endpoints. Processing happens in the
-following order:
+The RDFa Test suite allows developers to mix and match RDFa processor endpoints
+with different RDFa versions and Host Languages.
 
-RDFa Test Manifest -> RDFa Test Suite -> RDFa processor -> SPARQL endpoint
+The RDFa Test Suite is an HTML application driving the entire
+process.
 
 The RDFa Test Suite drives the entire process. The first step is to
-retrieve the list of tests that should be run for a particular manifest.
-Then the RDFa test suite uses the processor that was selected to
-extract the triples and send those triples, along with what triples are
-expected (via a SPARQL query) to the SPARQL endpoint. The end result is a
-yes/no on whether the expected triples were extracted by the RDFa processor.
+retrieve the list of tests associated with different RDFa versions
+and host languages. Then the RDFa Test Suite requests the
+RDFa Service endpoint to run the associated SPARQL query, which
+uses an _ASK_ form to return true or false, and a _FROM_ clause
+to identify a result document. The built-in SPARQL processor will
+poke the URL, referencing the chosen processor endpoint with a
+query parameter indicating the test document, and other parameters
+used to control the processor.
 
-Running the Test Suite
-----------------------
+Processing happens in the following order:
+
+    RDFa Test Suite | RDFa Service | RDFa Processor
+    load webpage    ->
+                    <- test scaffold
+    load manifest   ->
+                    <- JSON-LD manifest
+    run test        -> Load SPARQL query
+                       with FROM referencing
+                       processor and reference
+                       to test document.
+                                    -> Process referenced
+                                       test document and
+                                       return RDF with
+                                       Content-Type indicating
+                                    <- format.
+                       SPARQL runs with
+                       returned document
+                       returning _true_
+    display results <- or _false_.
+
+The processor is indicated by a URL ending with a query
+parameter used to specify the document to be tested. The processor may return
+results as [RDF/XML][], [Turtle][], or [N-Triples][] and should
+indicate the result format in Content-Type using the appropriate
+Mime Type for the format used.
+
+== Running the Test Suite
 
 You can view and run this test suite at the following URL:
 
-http://rdfa.digitalbazaar.com/test-suite/
+[http://rdfa.info/test-suite/](http://rdfa.info/test-suite/)
 
-Contributing
-------------
+== Contributing
 
 If you would like to contribute a new test or a fix to an existing test,
 please follow these steps:
@@ -38,17 +69,15 @@ please follow these steps:
 1. Notify the RDFa mailing list, public-rdf-wg@w3.org, 
    that you will be creating a new test or fix and the purpose of the
    change.
-2. Clone the git repository: git@github.com:msporny/rdfa-test-suite.git
+2. Clone the git repository: [git://github.com/rdfa/rdfa-website.git](https://github.com/rdfa/rdfa-website).
 3. Make your changes and submit them via github, or via a 'git format-patch'
-   to Manu Sporny <msporny@digitalbazaar.com> or to the RDFa mailing list.
+   to the RDFa mailing list.
 
-Optionally, you can ask Manu for direct access to the repository and may make
+Optionally, you can ask for direct access to the repository and may make
 changes directly to the RDFa Test Suite source code. All updates to the test 
-suite go live on Digital Bazaar's RDFa Test Suite site within seconds of 
-committing changes to github via a WebHook call.
+suite go live within seconds of committing changes to github via a WebHook call.
 
-How to Add a Unit Test
-----------------------
+== How to Add a Unit Test
 
 In order to add a unit test, you must follow these steps:
    
@@ -58,11 +87,9 @@ In order to add a unit test, you must follow these steps:
    For example: tests/250.txt
 3. Create a SPARQL query file in the tests/ directory with a .sparql extension.
    For example: tests/250.sparql
-4. Add your test to manifest.ttl and indicate the host language(s) for which
+4. Add your test to manifest.ttl and indicate the host language(s) and version(s) for which
    it applies. For example, if you would like your example to only apply to HTML4,
    you would modify add :hostLanguage <html4-manifest>; to the test case entry.
-5. Update the host language specific manifests by running the merged2variant.rb
-   script with the --save option.
 
 There are three classifications for Unit Tests:
 
