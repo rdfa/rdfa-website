@@ -1,0 +1,81 @@
+Introduction
+------------
+
+The RDFa Test Suite is a set of Web Services, markup and tests that can 
+be used to verify RDFa Processor conformance to the set of specifications
+that constitute RDFa 1.1. The goal of the suite is to provide an easy and 
+comprehensive RDFa testing solution for developers creating RDFa Processors.
+
+Design
+------
+
+The RDFa Test suite allows developers to mix and match RDFa test manifests, 
+RDFa processor endpoints and SPARQL endpoints. Processing happens in the
+following order:
+
+RDFa Test Manifest -> RDFa Test Suite -> RDFa processor -> SPARQL endpoint
+
+The RDFa Test Suite drives the entire process. The first step is to
+retrieve the list of tests that should be run for a particular manifest.
+Then the RDFa test suite uses the processor that was selected to
+extract the triples and send those triples, along with what triples are
+expected (via a SPARQL query) to the SPARQL endpoint. The end result is a
+yes/no on whether the expected triples were extracted by the RDFa processor.
+
+Running the Test Suite
+----------------------
+
+You can view and run this test suite at the following URL:
+
+http://rdfa.digitalbazaar.com/test-suite/
+
+Contributing
+------------
+
+If you would like to contribute a new test or a fix to an existing test,
+please follow these steps:
+
+1. Notify the RDFa mailing list, public-rdf-wg@w3.org, 
+   that you will be creating a new test or fix and the purpose of the
+   change.
+2. Clone the git repository: git@github.com:msporny/rdfa-test-suite.git
+3. Make your changes and submit them via github, or via a 'git format-patch'
+   to Manu Sporny <msporny@digitalbazaar.com> or to the RDFa mailing list.
+
+Optionally, you can ask Manu for direct access to the repository and may make
+changes directly to the RDFa Test Suite source code. All updates to the test 
+suite go live on Digital Bazaar's RDFa Test Suite site within seconds of 
+committing changes to github via a WebHook call.
+
+How to Add a Unit Test
+----------------------
+
+In order to add a unit test, you must follow these steps:
+   
+1. Pick a new unit test number. For example - 250. To be consistent, please use
+   the next available unit test number.
+2. Create a markup file in the tests/ directory with a .txt extension. 
+   For example: tests/250.txt
+3. Create a SPARQL query file in the tests/ directory with a .sparql extension.
+   For example: tests/250.sparql
+4. Add your test to manifest.ttl and indicate the host language(s) for which
+   it applies. For example, if you would like your example to only apply to HTML4,
+   you would modify add :hostLanguage <html4-manifest>; to the test case entry.
+5. Update the host language specific manifests by running the merged2variant.rb
+   script with the --save option.
+
+There are three classifications for Unit Tests:
+
+required - These are tests that are required for proper operation per the
+           appropriate RDFa specification.
+optional - These are tests for optional features supported by some RDFa 
+           Processors.
+buggy    - These are tests that are buggy or are not considered valid test
+           cases by all RDFa processor maintainers.
+
+The test suite is designed to empower RDFa processor maintainers to create
+and add tests as they see fit. This may mean that the test suite may become
+unstable from time to time, but this approach has been taken so that the 
+long-term goal of having a comprehensive test suite for RDFa can be achieved
+by the RDFa community.
+

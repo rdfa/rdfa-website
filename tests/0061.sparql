@@ -1,0 +1,3 @@
+ASK WHERE {
+	<$TCPATH/0061.xhtml> <http://www.w3.org/1999/xhtml/vocab#next> <$TCPATH/0062.xhtml> .
+}

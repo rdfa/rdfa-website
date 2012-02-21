@@ -1,0 +1,23 @@
+- test_cases.each do |tc|
+  %p.unittest
+    - num = tc[:num].to_i
+    - js_args = "#{num}, '#{tc[:doc_uri].sub('localhost:3000', 'rdfa.digitalbazaar.com')}', '#{tc[:sparql_url]}', '#{tc[:expected_results]}'"
+    [
+    %span{:id => "unit-test-status-#{num}"}
+      %a{:id => "unit-test-anchor-#{num}", :href=> "javascript:checkUnitTest(#{js_args})"}
+        %span{:id => "unit-test-result-#{num}"}= "TEST"
+    ]
+    = "Test ##{tc[:num]} (#{tc[:classification]}):"
+    %span{:id => "unit-test-description-#{num}"}= tc[:title]
+    [
+    %span{:id => "unit-test-details-status-#{num}"}
+      %a{:href => "javascript:showUnitTestDetails(#{js_args})"}
+        show details
+      |
+      %a{:href => "javascript:hideUnitTestDetails(#{num})"}
+        hide details
+      |
+      %a{:href => "test-cases/#{tc[:num]}"}
+        source
+    ]
+    %div{:id => "unit-test-details-#{num}", :style => "margin-left: 50px"}

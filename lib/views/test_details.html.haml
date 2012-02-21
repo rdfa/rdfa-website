@@ -1,0 +1,29 @@
+%h3= "Test ##{num} Source Document"
+%pre.code
+  &= doc_text
+%em
+  Source
+  %a{:href => doc_url}
+    &= doc_url
+%h3= "Test ##{num} Turtle (Reference Implementation Triples)"
+%pre.code
+  &= ttl_text
+%em
+  Extracted using:
+  %a{:href => "http://rubygems.org/gems/rdf-rdfa"}
+    Ruby RDF::RDFa
+%h3= "Test ##{num} Extracted"
+%pre.code
+  &= extracted_text
+%em
+  Extracted using:
+  %a{:href => extract_url}
+    &= extract_url
+%h3= "Test ##{num} SPARQL Test"
+%pre.code
+  &= sparql_text
+%em
+  Source:
+  %a{:href => sparql_url}
+    &= sparql_url
+

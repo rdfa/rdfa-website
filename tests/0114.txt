@@ -1,0 +1,12 @@
+      xmlns:cc="http://creativecommons.org/ns#"
+      xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#"
+  <head>
+    <title>Test 0114</title>
+  </head>
+  <body>
+    <div>
+      <a rel="xhv:next" href="0115.xhtml">Test Case 0115</a>
+      <a rel="xhv:up" href="../../index.html">Test Cases</a>
+      <a rel="cc:attributionURL" href="../../../../">W3C/Digital Bazaar</a>
+    </div>
+  </body>

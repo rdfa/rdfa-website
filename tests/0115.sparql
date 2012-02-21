@@ -1,0 +1,14 @@
+ASK WHERE {
+<$TCPATH/0115.xhtml>
+   <http://www.example.com/entity1>
+      ">" .
+<$TCPATH/0115.xhtml>
+   <http://www.example.com/entity2>
+      "Ben & Co." .
+<$TCPATH/0115.xhtml>
+   <http://www.example.com/entity3>
+      "@" .
+<$TCPATH/0115.xhtml>
+   <http://www.example.com/entity4>
+      "@" .
+}

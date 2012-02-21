@@ -1,0 +1,70 @@
+ ASK WHERE { <$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#alternate>
+      <http://example.org/alternate> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#appendix>
+      <http://example.org/appendix> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#bookmark>
+      <http://example.org/bookmark> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#cite>
+      <http://example.org/cite> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#chapter>
+      <http://example.org/chapter> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#contents>
+      <http://example.org/contents> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#copyright>
+      <http://example.org/copyright> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#glossary>
+      <http://example.org/glossary> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#help>
+      <http://example.org/help> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#icon>
+      <http://example.org/icon> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#index>
+      <http://example.org/index> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#meta>
+      <http://example.org/meta> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#next>
+      <http://example.org/next> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#p3pv1>
+      <http://example.org/p3pv1> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#prev>
+      <http://example.org/prev> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#role>
+      <http://example.org/role> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#section>
+      <http://example.org/section> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#subsection>
+      <http://example.org/subsection> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#start>
+      <http://example.org/start> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#license>
+      <http://example.org/license> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#up>
+      <http://example.org/up> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#last>
+      <http://example.org/last> .
+<$TCPATH/0076.xhtml>
+   <http://www.w3.org/1999/xhtml/vocab#stylesheet>
+      <http://example.org/stylesheet> .      
+}

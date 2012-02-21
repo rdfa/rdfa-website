@@ -1,0 +1,5 @@
+ASK WHERE {
+<$TCPATH/0118.xhtml>
+   <http://purl.org/dc/elements/1.1/creator>
+      "Ben" .
+}
