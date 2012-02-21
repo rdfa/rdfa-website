@@ -3,7 +3,6 @@ require 'sparql'
 require 'sinatra'
 require 'sinatra/respond_to'
 require 'sinatra/sparql'
-require 'haml'
 require 'digest/sha1'
 
 class CrazyIvan < Sinatra::Base
@@ -237,7 +236,7 @@ class CrazyIvan < Sinatra::Base
 
     # Read in the file, extracting namespaces
     found_head = format == 'sparql'
-    namespaces = {}
+    namespaces = []
     content = File.readlines(filename).map do |line|
       case line
       when %r(<head)
@@ -245,33 +244,53 @@ class CrazyIvan < Sinatra::Base
       end
       
       if found_head
-        line.chop
+        line
       else
         found_head = !!line.match(%r(http://www.w3.org/2000/svg))
-        line.split(/\s+/).each do |defn|
-          namespaces[$1] = $2 if defn.match(/([^=]*)=['"](.*)['"]/)
-        end
+        namespaces << line.strip
         nil
       end
-    end.compact.join("\n")
+    end.compact.join("")
     
+    namespaces = namespaces.join("\n")
+    namespaces = ' ' + namespaces unless namespaces.empty?
     content.gsub!(HTMLRE, "\\1.#{suffix}")
     content.gsub!(TCPATHRE, tcpath)
-
-    locals = {
-      :namespaces => namespaces,
-      :content => content,
-      :suite => suite,
-      :version => version,
-    }
 
     case format
     when 'sparql'
       content
-    else
-      # Invoke Haml directly so that result can be used as a functional value
-      template = File.read(File.expand_path("../views/test_case.#{suffix}.haml", __FILE__))
-      Haml::Engine.new(template).render(self, locals)
+    when 'html'
+      if suite == 'html4'
+        %(<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa11-1.dtd">\n) +
+        %(<html version="XHTML+RDFa 1.1"#{namespaces}>\n)
+      else
+        "<!DOCTYPE html>\n" +
+        %(<html#{namespaces}>\n)
+      end +
+      content +
+      "</html>"
+    when 'xml'
+      %(<?xml version="1.0" encoding="UTF-8"?>\n<root#{namespaces}>\n) +
+      content +
+      "</root>"
+    when 'svg'
+      %(<?xml version="1.0" encoding="UTF-8"?>\n<svg#{namespaces}>\n) +
+      content +
+      "</svg>"
+    when 'xhtml'
+      %(<?xml version="1.0" encoding="UTF-8"?>\n) +
+      if suite == 'xhtml1' && version == 'rdfa1.0'
+        %(<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">\n) +
+        %(<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.0"#{namespaces}>\n)
+      elsif suite == 'xhtml1'
+        %(<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd">\n) +
+        %(<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1"#{namespaces}>\n)
+      else
+        %(<!DOCTYPE html>\n<html#{namespaces}>\n)
+      end +
+      content +
+      "</html>"
     end
   end
 
