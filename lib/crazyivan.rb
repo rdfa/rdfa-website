@@ -257,7 +257,7 @@ class CrazyIvan < Sinatra::Base
     content.gsub!(HTMLRE, "\\1.#{suffix}")
     content.gsub!(TCPATHRE, tcpath)
 
-    case format
+    case format || suffix
     when 'sparql'
       content
     when 'html'
@@ -291,6 +291,8 @@ class CrazyIvan < Sinatra::Base
       end +
       content +
       "</html>"
+    else
+      raise "unknown format #{(format || suffix).inspect}"
     end
   end
 
