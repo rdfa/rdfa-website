@@ -1,0 +1,44 @@
+!!! 5
+%html{:lang => "en"}
+  %head
+    %meta{"http-equiv" => "Content-Type", :content => "text/html;charset=utf-8"}
+    %title= settings.app_name
+    = stylesheet :application
+  %body
+    %div.navbar.navbar-fixed-top
+      %div.navbar-inner
+        %div.container
+          %a.btn.btn-navbar(data-toggle="collapse" data-target=".nav-collapse")
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand{:href => url("../")}= "RDFa"
+          %div.nav-collapse
+            %ul.nav
+              %li
+                %a{:href => '/'}= "Home"
+              %li
+                %a{:href => '/play/'}= "Playground"
+              %li
+                %a{:href => '/docs/'}= "Documentation"
+              %li
+                %a{:href => '/tools/'}= "Tools"
+              %li
+                %a{:href => '/dev/'}= "Developers"
+              %li.active
+                %a{:href => '/test-suite'}= "Test Suite"
+    %div.modal.hide.fade#source-modal
+      %div.modal-header
+        %a.close{"data-dismiss" => 'modal'}= 'x'
+        %h3= "Test source"
+      %div.modal-body
+        Loading Source ...
+    %div.container
+      = yield
+      %footer
+        %p
+          &copy; 2012 -
+          %a{:property => "dc:contributor", :href => "http://w3.org"}
+            The World Wide Web Consortium
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"}
+    = javascript :application

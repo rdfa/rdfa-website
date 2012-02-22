@@ -15,14 +15,14 @@ if settings.environment == :production
   log = File.new('sinatra.log', 'a')
   STDOUT.reopen(log)
   STDERR.reopen(log)
-
-  use Rack::Cache,
-    :verbose     => true,
-    :metastore   => "file:" + File.expand_path("../cache/meta", __FILE__),
-    :entitystore => "file:" + File.expand_path("../cache/body", __FILE__)
 else
   puts "Mode set to #{settings.environment.inspect}, logging to console"
 end
+
+use Rack::Cache,
+  :verbose     => true,
+  :metastore   => "file:" + File.expand_path("../cache/meta", __FILE__),
+  :entitystore => "file:" + File.expand_path("../cache/body", __FILE__)
 
 disable :run, :reload
 

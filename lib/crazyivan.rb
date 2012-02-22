@@ -42,7 +42,7 @@ class CrazyIvan < Sinatra::Base
 
   get '/test-suite/' do
     cache_control :public, :must_revalidate, :max_age => 60
-    haml :index
+    haml :test_suite
   end
 
   ##
