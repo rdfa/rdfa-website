@@ -180,6 +180,12 @@ class CrazyIvan < Sinatra::Base
   get('/docs/') { redirect to '/docs/index.html'}
   get('/tools/'){ redirect to '/tools/index.html'}
 
+  # Deployment, triggered as a post-receive hook from Github
+  # Called with a parameter :payload, which we just ignore
+  post '/admin/deploy' do
+    system(File.expand_path("../../deploy/after_push", __FILE__))
+  end
+
   protected
   ##
   # Return the Manifest source
