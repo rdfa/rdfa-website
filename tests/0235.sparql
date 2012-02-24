@@ -1,0 +1,4 @@
+PREFIX dc: <http://purl.org/dc/terms/>
+ASK WHERE {
+  <$TCPATH> dc:title "rdfagraph" .
+}

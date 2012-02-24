@@ -1,0 +1,1 @@
+  <div which is not closed should generate a processor error

@@ -1,11 +1,11 @@
-#@base <http://rdfa.digitalbazaar.com/test-suite/> .
+@base <http://rdfa.info/test-suite/manifest> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix log: <http://www.w3.org/2000/10/swap/log#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix test: <http://www.w3.org/2006/03/test-description#> .
-@prefix rdfatest: <http://rdfa.digitalbazaar.com/vocabs/rdfa-test#> .
+@prefix rdfatest: <http://rdfa.info/vocabs/rdfa-test#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <test-cases/0001> dc:contributor "Elias Torres";
@@ -1597,4 +1597,27 @@ white   space
    test:informationResourceInput <test-cases/0234.html>;
    test:informationResourceResults <test-cases/0234.sparql>;
    test:purpose "Tests to ensure that all defined linked relations expand";
+   test:specificationReference "" .
+<test-cases/0235> dc:contributor "Gregg Kellogg";
+   dc:title "rdfagraph='processor' does not generate standard triples";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5", "svg";
+   rdfatest:queryParam "rdfagraph=processor";
+   test:informationResourceInput <test-cases/0235.html>;
+   test:informationResourceResults <test-cases/0235.sparql>;
+   test:purpose "Setting rdfagraph query parameter to 'processor' does not output standard triples";
+   test:expectedResults "false"^^xsd:boolean;
+   test:specificationReference "" .
+<test-cases/0236> dc:contributor "Gregg Kellogg";
+   dc:title "rdfagraph='processor' with a markup error generates rdfa:Error";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5", "svg";
+   rdfatest:queryParam "rdfagraph=processor";
+   test:informationResourceInput <test-cases/0235.html>;
+   test:informationResourceResults <test-cases/0235.sparql>;
+   test:purpose "Setting rdfagraph query parameter to 'processor' generates an rdf:Error";
    test:specificationReference "" .
