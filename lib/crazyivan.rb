@@ -187,6 +187,7 @@ class CrazyIvan < Sinatra::Base
   # Deployment, triggered as a post-receive hook from Github
   # Called with a parameter :payload, which we just ignore
   post '/admin/deploy' do
+    Dir.chdir(File.expand_path("../..", __FILE__))
     system(File.expand_path("../../deploy/after_push", __FILE__))
   end
 

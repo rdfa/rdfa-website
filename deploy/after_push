@@ -11,6 +11,7 @@ echo files changed: $(git diff $oldrev $newrev --diff-filter=ACDMR --name-only |
 
 umask 002
 
+git pull
 git submodule init && git submodule sync && git submodule update
 
 run deploy/before_restart
