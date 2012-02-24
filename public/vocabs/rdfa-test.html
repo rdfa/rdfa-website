@@ -1,0 +1,69 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd">
+<html
+  xmlns="http://www.w3.org/1999/xhtml" version="RDFa 1.1">
+  <head about="http://www.w3.org/profile/rdfa-1.1.html">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>RDFa Test Suite vocabulary</title>
+    <link type="text/css" rel="stylesheet" href="http://www.w3.org/StyleSheets/TR/base.css"/>
+    <style type="text/css">
+	  td:first-child + td a { color:darkGreen}
+	  td:first-child + td { color:darkGreen}
+	  td {
+		  border: inset 1pt;
+	     margin-bottom: 10ex;
+	  }
+	  th { 
+		  text-align: center; 
+		  font-weight: bold;
+		  background: lavender
+	  }
+	  tr:nth-child(even) { background: lavender}
+	  caption { font-weight: bold}
+	</style>
+  </head>
+  <body about="http://www.w3.org/profile/rdfa-1.1"
+		prefix="rdfatest: http://rdfa.info/vocabs/rdfa-test# test: http://www.w3.org/2006/03/test-description#">
+    <div class="head">
+      <p><a href="http://www.w3.org/"> <img alt="W3C" src="http://www.w3.org/Icons/w3c_home"
+            height="48" width="72" /> </a> </p>
+      <h1 property="dcterms:title">RDFa Test Suite vocabulary</h1>
+    </div>
+    <section about="http://rdfa.info/vocabs/test" typeof="owl:Ontology">
+      <h2>Introduction</h2>
+      <p property="dc:description">This document defines the RDFa test vocabulary, used for defining tests on the
+        <a href="http://rdfa.info/test-suite/manifest.ttl">RDFa Test Suite manifest</a>.</p>
+    </section>
+    <section>
+      <h2>Property definitions</h2>
+      <dl>
+        <dt>hostLanguage</dt><dd about="rdfatest:hostLanguage" typeof="owl:DatatypeProperty">
+          <link property="rdfs:domain" href="test:TestCase"/>
+          Defines the
+          <span property="rdfs:range" resource="xsd:string">Host Languages</span>
+          for which this test is defined. Appropriate values include
+          <code>html4</code>,
+          <code>html5</code>,
+          <code>svg</code>,
+          <code>xhtml1</code>,
+          <code>xhtml5</code>, and
+          <code>xml1</code>.
+        </dd>
+        <dt>queryParam</dt><dd about="rdfatest:queryParam" typeof="owl:DatatypeProperty">
+          <link property="rdfs:domain" href="test:TestCase"/>
+          Defines query parameters to add to the
+          <code property="rdfs:range" resource="xsd:string">processor URL</code>
+          when running this test.
+        </dd>
+        <dt>rdfaVersion</dt><dd about="rdfatest:rdfaVersion" typeof="owl:DatatypeProperty">
+          <link property="rdfs:domain" href="test:TestCase"/>
+          Defines the
+          <span property="rdfs:range" resource="xsd:string">RDFa version numbers</span>
+          for which this test is defined.Appropriate values include
+          <code>rdfa1.0</code> and
+          <code>rdfa1.1</code>.
+        </dd>
+      </dl>
+    </section>
+  </body>
+</html>
