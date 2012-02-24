@@ -56,7 +56,7 @@ class CrazyIvan < Sinatra::Base
       :standard_prefixes => true,
       :prefixes => {
         :test => "http://www.w3.org/2006/03/test-description#",
-        :rdfatest => "http://rdfa.digitalbazaar.com/vocabs/rdfa-test#", # FIXME: new name?
+        :rdfatest => "http://rdfa.info/vocabs/rdfa-test#", # FIXME: new name?
       }
     )
     cache_control :public, :must_revalidate, :max_age => 60
@@ -179,6 +179,10 @@ class CrazyIvan < Sinatra::Base
   get('/dev/')  { redirect to '/dev/index.html'}
   get('/docs/') { redirect to '/docs/index.html'}
   get('/tools/'){ redirect to '/tools/index.html'}
+
+  get '/vocabs/rdfa-test' do
+    redirect to('/vocabs/rdfa-test.html')
+  end
 
   # Deployment, triggered as a post-receive hook from Github
   # Called with a parameter :payload, which we just ignore

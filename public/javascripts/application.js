@@ -19,6 +19,7 @@ $(function () {
     this.description = testObject['dc:title'];
     this.classification = testObject['test:classification'].split(':').pop();
     this.expectedResults = testObject['test:expectedResults'] || true;
+    this.queryParam = testObject['rdfatest:queryParam'];
     
     if (!(this.hostLanguages instanceof Array)) { this.hostLanguages = [this.hostLanguages]; }
     if (!(this.versions instanceof Array)) { this.versions = [this.versions]; }
@@ -39,15 +40,12 @@ $(function () {
 
     // Return the selected processor URI
     // This is set when the hostLanguage is selected on all selected test divs
-    // The processorURL is updated with query parameters based on the
-    // presense of data-param and possibly data-param-value
+    // The processorURL is updated with query parameters from the test-case object.
     processorURL: function() {
       var url = $("#processor-url").val();
-      var param = $("#tests").attr('data-param');
-      if (param) {
+      if (this.queryParam) {
         // Add any parameter to the processorURL
-        param += '="' + ($("#tests").attr('data-param-value') || 'true') + '"&';
-        url.replace(/([\?&])([^\?&]*)$/, "$1" + param + "$2");
+        url = url.replace(/([\?&])([^\?&]*)$/, "$1" + this.queryParam + "&$2");
       }
       return escape(url);
     },
@@ -217,25 +215,12 @@ $(function () {
     $("div.test-progress").hide();
   }
 
-  function selectVersion(version, suite, param, param_value) {
+  function selectVersion(version, suite) {
     var $versionAnchor = $("[data-version='" + version + "']");
     var versionSelector = "." + $versionAnchor.attr('data-selector');
     var testSelector = versionSelector + "." + suite;
 
     resetTests();
-
-    // Set or clear processor URI query parameters
-    if (param) {
-      $("#tests").attr('data-param', param);
-      if (param_value) {
-        $("#tests").attr('data-param-value', param_value);
-      } else {
-        $("#tests").removeAttr('data-param-value');
-      }
-    } else {
-      $("#tests").removeAttr('data-param');
-      $("#tests").removeAttr('data-param-value');
-    }
 
     // Set this element to be active
     $("button.versions").removeClass('active');
@@ -259,14 +244,14 @@ $(function () {
   $("button.versions").click(function() {
     var version = $(this).attr('data-version');
     var suite = $("#tests").attr('data-suite') || 'xhtml1';
-    selectVersion(version, suite, $("#tests").attr('data-param'), $("#tests").attr('data-param-value'));
+    selectVersion(version, suite);
   });
 
   // Click triggers for suites
   $("button.suite").click(function() {
     var suite = $(this).attr('data-suite');
     var version = $("#tests").attr('data-version') || 'rdfa1_1';
-    selectVersion(version, suite, $(this).attr('data-param'), $(this).attr('data-param-value'));
+    selectVersion(version, suite);
   });
 
   // Load test cases
