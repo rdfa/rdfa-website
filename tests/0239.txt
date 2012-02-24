@@ -1,0 +1,4 @@
+<div property="rdf:value"
+     resource="[undefined:curie]">
+  Undefined Prefix
+</div>
