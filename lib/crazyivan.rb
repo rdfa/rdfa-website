@@ -187,6 +187,7 @@ class CrazyIvan < Sinatra::Base
   # Deployment, triggered as a post-receive hook from Github
   # Called with a parameter :payload, which we just ignore
   post '/admin/deploy' do
+    puts "deploy application"
     Dir.chdir(File.expand_path("../..", __FILE__))
     system(File.expand_path("../../deploy/after_push", __FILE__))
   end
@@ -362,7 +363,7 @@ class CrazyIvan < Sinatra::Base
   def get_test_alternates(num)
     q = %(
       PREFIX test: <http://www.w3.org/2006/03/test-description#> 
-      PREFIX rdfatest: <http://rdfa.digitalbazaar.com/vocabs/rdfa-test#> 
+      PREFIX rdfatest: <http://rdfa.info/vocabs/rdfa-test#> 
       PREFIX dc:   <http://purl.org/dc/terms/>
 
       SELECT ?t ?title ?classification ?expected_results ?host_language ?version
