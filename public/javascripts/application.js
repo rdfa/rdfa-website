@@ -1,31 +1,25 @@
 $(function () {
-  // Hide elements
-  //$('.modal').modal('hide');
-
-  // FIXME: Strategy for running all tests:
-  // * Create a queue (array)
-  // * when triggering all tests, add all selected elements to array.
-  // * test complete handler removes first element from queue and triggers 'click'.
-  // * Start by triggering 1, 2, or 3 tests from start of queue.
-  //
-  // Issue, how to see queue from event handler?
-
-  // Load Manifest JSON-LD
-  var CrazyIvan = function(testObject) {
+   var CrazyIvan = function(testObject) {
     this.value = testObject;
     this.num = testObject["@id"].split('/').pop();
     this.hostLanguages = testObject['rdfatest:hostLanguage'];
     this.versions = testObject['rdfatest:rdfaVersion'];
     this.description = testObject['dc:title'];
-    this.classification = testObject['test:classification'].split(':').pop();
+    this.classification = (testObject['test:classification'] || 'test:required').split(':').pop();
     this.expectedResults = testObject['test:expectedResults'] || true;
     this.queryParam = testObject['rdfatest:queryParam'];
+    this.result = "unknown";
     
     if (!(this.hostLanguages instanceof Array)) { this.hostLanguages = [this.hostLanguages]; }
     if (!(this.versions instanceof Array)) { this.versions = [this.versions]; }
   };
   
   CrazyIvan.prototype = {
+    // Indicates if this test is active
+    active: function() {
+      $this.div.visible();
+    },
+
     // Return the selected version string
     // This is set when the version is selected on all selected test divs
     version: function() {
@@ -78,7 +72,7 @@ $(function () {
         $testDiv.addClass(hostLanguage);
       });
       
-      return $testDiv;
+      return this.div = $testDiv;
     },
     
     testButton: function() {
@@ -103,6 +97,7 @@ $(function () {
 
           $.getJSON(test_url, function (data) {
             // Indicate pass/fail and style
+            that.result = data.status;
             var btn_class = data.status == "PASS" ? "btn-success" : "btn-danger";
             $(button)
               .button('reset')
@@ -204,6 +199,50 @@ $(function () {
             $("div#unit-test-" + that.num + " > div").append($sourceDiv);
           });
         });
+    },
+    
+    // Generate an EARL report for this test case
+    earl: function() {
+      var details_url = "test-details/" +
+        this.suite() +
+        '/' + this.version() +
+        '/' + this.num +
+        '?rdfa-extractor=' + this.processorURL();
+      var test_url = "check-test/" +
+        that.suite() +
+        '/' + that.version() +
+        '/' + that.num +
+        '?expected-results=' + that.expectedResults +
+        '&rdfa-extractor=' + that.processorURL();
+
+      $('<div typeof="earl:Assertion"/>')
+        .attr('about', details_url)
+        .append($('<dl><dt>Assertor</dt></dl>')
+          .append($('<dd property="assertedBy"/>')
+            .attr('resource', url())
+            .text('RDFa Test Suite'))
+          .append($('<dt>Test Subject</dt>'))
+          .append($('<dd property="earl:subject"/>')
+            .attr('resource', this.processorURL())
+            .append('<a/>').attr('href', this.processorURL()))
+          .append($('<dt>Test Criterion</dt>'))
+          .append($('<dd rel="earl:test" typeof="earl:TestCase"/>')
+            .attr('resource', test_url)
+            .append($('<h3 property="dc:title">').text(this.title))
+            .append($('<p property="dc:description">')).text(this.description))
+          .append($('<dt>Test Result</dt>'))
+          .append($('<dd rel="earl:result" typeof="earlTestResult"')
+            .append($('<span property="earl:outcome"')
+              .attr('resource', 'earl:' + this.result.downcase())
+              .text(this.result))));
+    },
+    
+    reset: function() {
+      this.div
+        .removeClass('btn-success btn-danger')
+        .addClass('btn-primary')
+        .button('reset');
+      this.result = "unknown";
     }
   };
 
@@ -270,14 +309,8 @@ $(function () {
   
   // Load processors
   $.each({
-    "arcrdfa":        "http://arc.web-semantics.org/demos/rdfa_tests/extract.php?url=",
-    "cognition":      "http://srv.buzzword.org.uk/crazy-ivan.cgi?uri=",
-    "librdfa-python": "http://rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py?uri=",
-    "marklogic":      "http://dmz-demo39.demo.marklogic.com/rdfa_extract.xqy?url=",
-    "pyrdfa":         "http://www.w3.org/2012/pyRdfa/extract?format=xml&uri=",
-    "RDF.rb":         "http://rdf.greggkellogg.net/distiller?raw=true&fmt=turtle&in_fmt=rdfa&uri=",
-    "shark":          "http://shark.informatik.uni-freiburg.de/Ocean/SharkWeb.asmx/Parse?url=",
-    "spread":         "http://htmlwg.mn.aptest.com/rdfa/extract_rdfa.pl?format=xml&uri=",
+    "pyrdfa":         "http://www.w3.org/2012/pyRdfa/extract?uri=",
+    "RDF.rb":         "http://rdf.greggkellogg.net/distiller?raw=true&in_fmt=rdfa&uri=",
     "other":          ""
   }, function(key, value) {
     var $li = $("<li>").append(
@@ -299,7 +332,11 @@ $(function () {
 
   // Hide test progress bar
   $("div.test-progress").hide();
+
   // Set message queuing for Run All tests
+  // FIXME: use test models and create
+  // queue of models based on those that
+  // are active
   $("button.run-all").click(function() {
     var total = 0;
 

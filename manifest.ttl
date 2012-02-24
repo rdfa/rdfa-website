@@ -1630,10 +1630,10 @@ white   space
    rdfatest:queryParam "rdfagraph=processor";
    test:informationResourceInput <test-cases/0237.html>;
    test:informationResourceResults <test-cases/0237.sparql>;
-   test:purpose
+   test:purpose """
       Setting rdfagraph query parameter to 'processor' generates an rdf:Warning when given
       a SafeCURIE with an invalid prefix.
-   """";
+   """;
    test:specificationReference "7.6 Processor Status and 7.4.2 General Use of CURIEs in Attributes" .
 <test-cases/0238> dc:contributor "Gregg Kellogg";
    dc:title "rdfagraph='processor' with missing Term definition generates rdfa:Warning";
@@ -1644,10 +1644,10 @@ white   space
    rdfatest:queryParam "rdfagraph=processor";
    test:informationResourceInput <test-cases/0238.html>;
    test:informationResourceResults <test-cases/0238.sparql>;
-   test:purpose
+   test:purpose """
       Setting rdfagraph query parameter to 'processor' generates an rdf:Warning when given
       a missing Term definition.
-   """";
+   """;
    test:specificationReference "7.6 Processor Status and 7.4.3 General Use of Terms in Attributes" .
 <test-cases/0239> dc:contributor "Gregg Kellogg";
    dc:title "rdfagraph='processor' with undefined prefix generates rdfa:Warning";
@@ -1658,8 +1658,8 @@ white   space
    rdfatest:queryParam "rdfagraph=processor";
    test:informationResourceInput <test-cases/0239.html>;
    test:informationResourceResults <test-cases/0239.sparql>;
-   test:purpose
+   test:purpose """
       Setting rdfagraph query parameter to 'processor' generates an rdf:Warning when given
       a SafeCURIE with an undefined prefix.
-   """";
+   """;
    test:specificationReference "7.6 Processor Status and 7.4.2 General Use of CURIEs in Attributes" .
