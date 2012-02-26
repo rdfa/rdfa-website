@@ -24,6 +24,12 @@
         padding-top: 60px;
         padding-bottom: 40px;
       }
+      
+      .bs-icon {
+        float: left;
+        margin: 7px 10px 0 0;
+        opacity: .7;
+      }
     </style>
     <!-- link href="css/bootstrap-responsive.css" rel="stylesheet" -->
   </head>
@@ -39,15 +45,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">RDFa</a>
+          <a class="brand" href="">RDFa</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="/">Home</a></li>
-              <li><a href="./play/">Playground</a></li>
               <li><a href="./docs/">Documentation</a></li>
               <li><a href="./tools/">Tools</a></li>
               <li><a href="./dev/">Developers</a></li>
-              <li><a href="./test-suite/">Test Suite</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -58,38 +61,117 @@
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>Structured Data in HTML</h1>
+        <h1>Linked Data in HTML</h1>
         <p property="doap:description dc:description">
-RDFa is an extension to HTML that helps you markup things like People, Places, 
-Events, Recipes and Reviews so that Search Engines and Web Services
-can easily find and use the data in your page on the Web.</p>
-        <p><a href="./docs/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+RDFa is an extension to HTML5 that helps you markup things like People, Places, 
+Events, Recipes and Reviews. Search Engines and Web Services use this markup
+to generate better search listings and give you better visibility on the Web,
+so that people can find your website more easily.
+        </p>
       </div>
 
       <!-- Example row of columns -->
       <div class="row">
         <div class="span4">
-          <h2>Structured Data</h2>
-           <p></p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <img class="bs-icon" src="img/glyphicons_050_link.png">
+          <h2>Linked Data</h2>
+           <p>
+Linked Data is a relatively new way of thinking about how we publish data. At
+present, there is a great deal of data on the Web, but it is either locked down
+in a private database, or published in a way that is not very useful to 
+computers. The data we have today is disconnected and lives in data silos. 
+These data silos are not linked to one another, which goes against the core
+design of the Web. It is important that we fix both the data silo-ing 
+and data linking problem. If we do so, computers will be able to
+use the data more easily and thus make our lives better as a result.
+             <strong>
+RDFa is a way of publishing Linked Data in HTML5 documents &mdash; it solves 
+both the data silo-ing and data linking problem.
+             </strong>
+           </p>
+           <p><a class="btn" href="http://en.wikipedia.org/wiki/Linked_data">Learn more about Linked Data &raquo;</a></p>
         </div>
         <div class="span4">
-          <h2>HTML5</h2>
-           <p></p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
+          <img class="bs-icon" src="img/glyphicons_079_signal.png">
+          <h2>Immediate Benefits</h2>
+          <p>
+There are immediate benefits for integrating RDFa into your website today.
+By using RDFa to express 
+<a href="http://support.google.com/webmasters/bin/answer.py?hl=en&answer=99170&topic=1088472&ctx=topic">Google Rich Snippets</a> or 
+<a href="http://linter.structured-data.org/examples/">schema.org</a>, 
+your web pages will be displayed in an enhanced format on all major search 
+engines. You can also use Facebook's 
+<a href="http://ogp.me/">Open Graph Protocol</a>, 
+which is based on RDFa, to express concepts that are contained in your web 
+pages, like people, places, events, movies and recipes.
+            <strong>
+The search and social companies are serious about indexing RDFa content, 
+which means that you may want to get serious about adding it into your pages
+before your competitors do.
+            </strong>
+          </p>
+        </div>
         <div class="span4">
-          <h2>Semantics</h2>
-          <p></p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <img class="bs-icon" src="img/icon_html5.png">
+          <h2>Using RDFa in HTML5</h2>
+           <p>
+RDFa not only works in HTML5, but is a general technology for Linked Data 
+markup in a variety of HTML-like languages. This means that it works well in 
+XML documents, SVG documents, as well as HTML4, XHTML1 and XHTML5 documents. 
+In fact, if your markup language is based on XML, then you can already use 
+RDFa in your documents today. There is a version of RDFa for beginners called
+<a href="http://www.w3.org/TR/rdfa-lite/">RDFa Lite</a>. 
+The <a href="http://www.w3.org/TR/rdfa-primer/">full version of RDFa</a> is 
+reserved for expert Web authors and can solve just about any structued data 
+markup problem that you throw at it. 
+             <strong>
+Whatever popular Web document format you use, chances are that RDFa already works in it.
+             </strong>
+           </p>
+           <p><a class="btn" href="http://www.w3.org/TR/rdfa-lite/">Learn more about RDFa Lite &raquo;</a></p>
+       </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="span4">
+          <img class="bs-icon" src="img/glyphicons_012_heart.png">
+          <h2>Learn</h2>
+           <p>
+There are a number of good reads available on this website covering everything 
+from basic RDFa usage, to markup recipes, to advanced technical concepts.
+           </p>
+           <p><a class="btn" href="docs/">Learn more about RDFa &raquo;</a></p>
+        </div>
+
+        <div class="span4">
+          <img class="bs-icon" src="img/glyphicons_280_settings.png">
+          <h2>Tools</h2>
+           <p>
+There are a variety of tools available for RDFa, ranging from online structured 
+data preview tools, to validators, to processing tools and software libraries.
+           </p>
+           <p><a class="btn" href="tools/">Learn more about RDFa software &raquo;</a></p>
+        </div>
+
+        <div class="span4">
+          <img class="bs-icon" src="img/glyphicons_064_lightbulb.png">
+          <h2>Developers</h2>
+           <p>
+If you are a software developer, there are a number of tools and libraries that
+you can use in your software projects to extract and process RDFa markup in
+Web documents.
+           </p>
+           <p><a class="btn" href="dev/">Learn more about RDFa development &raquo;</a></p>
         </div>
       </div>
 
-      <hr>
+      <hr />
 
       <footer>
-        <p>&copy; 2012 - <a property="dc:contributor" href="http://www.w3.org/">
-           The World Wide Web Consortium</a></p>
+        <p>Copyright &copy; 2012 - <a property="dc:contributor" href="http://www.w3.org/">
+           The World Wide Web Consortium</a>. Released under a CC-BY-SA-3.0 License. <a href="http://glyphicons.com/">Glyphicons</a> are CC-BY-SA-3.0.</p>
       </footer>
 
     </div> <!-- /container -->
