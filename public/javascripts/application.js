@@ -6,7 +6,8 @@ $(function () {
     this.versions = testObject['rdfatest:rdfaVersion'];
     this.description = testObject['dc:title'];
     this.classification = (testObject['test:classification'] || 'test:required').split(':').pop();
-    this.expectedResults = testObject['test:expectedResults'] || true;
+    this.expectedResults = testObject['test:expectedResults'];
+    if (this.expectedResults === undefined) { this.expectedResults = true; }
     this.queryParam = testObject['rdfatest:queryParam'];
     this.result = "unknown";
     
