@@ -6,7 +6,7 @@
   %body
     %p
       = "The following documents are associated with Test Case: "
-      = tc[:num]
+      = test_cases.first[:num]
       %ul
         - test_cases.each do |tc|
           %li
