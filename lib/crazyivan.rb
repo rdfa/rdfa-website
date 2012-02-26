@@ -4,6 +4,7 @@ require 'sinatra'
 require 'sinatra/respond_to'
 require 'sinatra/sparql'
 require 'digest/sha1'
+require 'crazyivan/extensions'
 
 class CrazyIvan < Sinatra::Base
   HTMLRE = Regexp.new('([0-9]{4,4})\.xhtml')
@@ -337,7 +338,12 @@ class CrazyIvan < Sinatra::Base
 
     # Extracted version of default graph
     extract_url = ::URI.decode(params["rdfa-extractor"]) + ::URI.encode(doc_url)
-    extracted_text = RDF::Util::File.open_file(extract_url).read
+    begin
+      extracted_text = RDF::Util::File.open_file(extract_url).read
+    rescue Exception => e
+      puts "error extracting text: #{e.class}: #{e.message}"
+      extracted_text = e.message
+    end
 
     {
       :num            => params[:num],
