@@ -372,25 +372,18 @@ class CrazyIvan < Sinatra::Base
       PREFIX rdfatest: <http://rdfa.info/vocabs/rdfa-test#> 
       PREFIX dc:   <http://purl.org/dc/terms/>
 
-      SELECT ?t ?title ?classification ?expected_results ?host_language ?version
+      SELECT ?host_language ?version
       WHERE {
-        ?t rdfatest:hostLanguage ?host_language;
-           rdfatest:rdfaVersion ?version;
-           dc:title ?title;
-           test:classification ?classification .
-        OPTIONAL { 
-          ?t test:expectedResults ?expected_results .
-        }
-        FILTER REGEX(STR(?t), "#{num}$")
+        <http://rdfa.info/test-suite/test-cases/#{num}>
+          rdfatest:hostLanguage ?host_language;
+          rdfatest:rdfaVersion ?version;
       }
     )
     puts "query: #{q}"
     SPARQL.execute(q, graph).map do |solution|
       puts "solution: #{solution.inspect}"
       entry = solution.to_hash
-      entry[:classification] = entry[:classification].to_s.split('#').last
       entry[:num] = num
-      entry[:expected_results] ||= true
     
       # Generate the input document URLs
       entry[:suffix] = case entry[:host_language].to_s
