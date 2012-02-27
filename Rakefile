@@ -1,5 +1,6 @@
 require 'bundler'
 require 'fileutils'
+$:.unshift(File.expand_path('../lib',  __FILE__))
 
 task :environment do
   Bundler.require(:default)
