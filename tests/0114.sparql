@@ -3,6 +3,6 @@ PREFIX cc: <http://creativecommons.org/ns#>
 ASK WHERE {
   <$TCPATH/0114.xhtml> xhv:next <$TCPATH/0115.xhtml>;
     xhv:up ?up;
-    cc:attributionURL <http://rdfa.digitalbazaar.com/> .
+    cc:attributionURL <http://rdfa.info/> .
   FILTER (regex(str(?up), "index.html$"))
 }
