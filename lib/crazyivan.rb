@@ -227,14 +227,14 @@ class CrazyIvan < Sinatra::Base
   # @return [String]
   def get_test_url(suite, version, num, suffix = nil)
     suffix ||= case suite
-    when /xhtml1/ then "xhtml"
+    when /xhtml/  then "xhtml"
     when /html/   then "html"
     when /svg/    then "svg"
     else               "xml"
     end
 
     url("/test-suite/test-cases/#{suite}/#{version}/#{num}.#{suffix}").
-      sub(/localhost:\d+/, 'rdfa.digitalbazaar.com') # For local testing
+      sub(/localhost:\d+/, 'rdfinfo.digitalbazaar.com') # For local testing
   end
 
   ##
@@ -248,7 +248,7 @@ class CrazyIvan < Sinatra::Base
   #   Serialized document and namespaces
   def get_test_content(suite, version, num, format = nil)
     suffix = case suite
-    when /xhtml1/ then "xhtml"
+    when /xhtml/  then "xhtml"
     when /html/   then "html"
     when /svg/    then "svg"
     else               "xml"
@@ -256,7 +256,7 @@ class CrazyIvan < Sinatra::Base
 
     filename = File.expand_path("../../tests/#{num}.#{format == 'sparql' ? 'sparql' : 'txt'}", __FILE__)
     tcpath = url("/test-suite/test-cases/#{suite}/#{version}").
-      sub(/localhost:\d+/, 'rdfa.digitalbazaar.com') # For local testing
+      sub(/localhost:\d+/, 'rdfinfo.digitalbazaar.com') # For local testing
 
     # Read in the file, extracting namespaces
     found_head = format == 'sparql'
@@ -379,7 +379,7 @@ class CrazyIvan < Sinatra::Base
     entries = []
     [test["rdfatest:hostLanguage"]].flatten.each do |host_language|
       suffix = case host_language.to_s
-      when /xhtml1/ then "xhtml"
+      when /xhtml/  then "xhtml"
       when /html/   then "html"
       when /svg/    then "svg"
       else               "xml"
