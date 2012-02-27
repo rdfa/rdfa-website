@@ -23,6 +23,8 @@ else if(flock($tfile, LOCK_EX | LOCK_NB))
       
       echo 'git update successful';
       
+      // Run post-update script
+      system("./deploy/before_restart && ./deploy/restart")
       // Sleep for 5 seconds to throttle the update rate to 12 per minute
       sleep(5);
    }
