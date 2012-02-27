@@ -1214,7 +1214,7 @@ white   space
    test:purpose "Check that @vocab defines a new default mapping";
    test:specificationReference "" .
 <test-cases/0189> dc:contributor "Ivan Herman";
-   dc:title "Test @vocab does not override default term";
+   dc:title "Test @vocab overrides default term";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
@@ -1222,8 +1222,11 @@ white   space
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0189.html>;
    test:informationResourceResults <test-cases/0189.sparql>;
-   test:purpose "Check that @vocab does not change a default term from XHV";
-   test:specificationReference "" .
+   test:purpose """
+    Check that @vocab changes a default term from XHV. Lookup checks default vocabulary before
+    local term mappings.
+   """;
+   test:specificationReference "7.4.3 General Use of Terms in Attributes" .
 <test-cases/0190> dc:contributor "Ivan Herman";
    dc:title "Test term case insensitivity";
    a test:TestCase;
