@@ -10,5 +10,4 @@
       %ul
         - test_cases.each do |tc|
           %li
-            %a{:href => tc[:doc_uri]}
-              = "#{tc[:host_language]}+#{tc[:version]}"
+            %a{:href => tc[:doc_uri]}= "#{tc[:suite_version]}"

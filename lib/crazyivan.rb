@@ -10,6 +10,7 @@ class CrazyIvan < Sinatra::Base
   HTMLRE = Regexp.new('([0-9]{4,4})\.xhtml')
   TCPATHRE = Regexp.compile('\$TCPATH')
   MANIFEST_FILE = File.expand_path("../../manifest.ttl", __FILE__)
+  MANIFEST_JSON = File.expand_path("../../manifest.jsonld", __FILE__)
 
   configure do
     set :app_name, "The RDFa Test Harness (Crazy Ivan)"
@@ -64,7 +65,7 @@ class CrazyIvan < Sinatra::Base
     etag Digest::SHA1.hexdigest manifest_ttl
     respond_to do |wants|
       wants.ttl { manifest_ttl }
-      wants.json { settings.sparql_options[:format] = :jsonld; graph }
+      wants.json { manifest_json }
       wants.html { graph }
     end
   end
@@ -91,18 +92,12 @@ class CrazyIvan < Sinatra::Base
     etag Digest::SHA1.hexdigest(manifest_ttl + params[:num])
 
     test_cases = get_test_alternates(params[:num])
-    puts "loaded test cases for #{params[:num]}"
     respond_to do |wants|
       wants.html do
         haml :test_cases, :format => :html5, :locals => {:test_cases => test_cases}
       end
       wants.json do
-        test_cases.map do |tc|
-          {
-            :suite_version => "#{tc[:host_language]}+#{tc[:version]}",
-            :doc_uri => tc[:doc_uri]
-          }
-        end.to_json
+        test_cases.to_json
       end
     end
   end
@@ -201,6 +196,20 @@ class CrazyIvan < Sinatra::Base
   end
 
   ##
+  # Return the Manifest source
+  def manifest_json
+    unless File.exist?(MANIFEST_JSON) && File.mtime(MANIFEST_JSON) >= File.mtime(MANIFEST_FILE)
+      ::JSON::LD::Writer.open(MANIFEST_JSON,
+        :standard_prefixes => true,
+        :prefixes => {
+          :test => "http://www.w3.org/2006/03/test-description#",
+          :rdfatest => "http://rdfa.info/vocabs/rdfa-test#", # FIXME: new name?
+        }) {|w| w << graph}
+    end
+    @manifest_json = File.read(MANIFEST_JSON)
+  end
+
+  ##
   # Return Manifest graph
   def graph
     @graph ||= RDF::Graph.load(MANIFEST_FILE, :format => :turtle, :base_uri => url("test-suite/manifest.ttl"))
@@ -217,7 +226,6 @@ class CrazyIvan < Sinatra::Base
   #   auto-detects from suite
   # @return [String]
   def get_test_url(suite, version, num, suffix = nil)
-    # Load graph from built-in processor
     suffix ||= case suite
     when /xhtml1/ then "xhtml"
     when /html/   then "html"
@@ -239,7 +247,6 @@ class CrazyIvan < Sinatra::Base
   # @return [{:namespaces => {}, :content => String, :suite => String, :version => String}]
   #   Serialized document and namespaces
   def get_test_content(suite, version, num, format = nil)
-    # Load graph from built-in processor
     suffix = case suite
     when /xhtml1/ then "xhtml"
     when /html/   then "html"
@@ -322,7 +329,6 @@ class CrazyIvan < Sinatra::Base
   # @return [{Symbol => Object}]
   #   Serialized documents and URIs
   def get_test_details(suite, version, num)
-    # Load graph from built-in processor
     doc_url = get_test_url(suite, version, num)
     puts "doc_url: #{doc_url}"
 
@@ -367,36 +373,27 @@ class CrazyIvan < Sinatra::Base
   #   a list containing all of the filtered test cases including
   #          unit test number, title, Host Language URL, and SPARQL URL.
   def get_test_alternates(num)
-    q = %(
-      PREFIX test: <http://www.w3.org/2006/03/test-description#> 
-      PREFIX rdfatest: <http://rdfa.info/vocabs/rdfa-test#> 
-      PREFIX dc:   <http://purl.org/dc/terms/>
-
-      SELECT ?host_language ?version
-      WHERE {
-        <http://rdfa.info/test-suite/test-cases/#{num}>
-          rdfatest:hostLanguage ?host_language;
-          rdfatest:rdfaVersion ?version;
-      }
-    )
-    puts "query: #{q}"
-    SPARQL.execute(q, graph).map do |solution|
-      puts "solution: #{solution.inspect}"
-      entry = solution.to_hash
-      entry[:num] = num
+    tests = ::JSON.load(manifest_json)['@id']
+    test = tests.detect {|t| t['@id'] == "http://rdfa.info/test-suite/test-cases/#{num}"}
     
-      # Generate the input document URLs
-      entry[:suffix] = case entry[:host_language].to_s
+    entries = []
+    [test["rdfatest:hostLanguage"]].flatten.each do |host_language|
+      suffix = case host_language.to_s
       when /xhtml1/ then "xhtml"
       when /html/   then "html"
       when /svg/    then "svg"
       else               "xml"
       end
-
-      entry[:doc_uri] = get_test_url(entry[:host_language], entry[:version], num, entry[:suffix])
-      entry[:sparql_url] = get_test_url(entry[:host_language], entry[:version], num, 'sparql')
-      entry
+      [test["rdfatest:rdfaVersion"]].flatten.each do |version|
+        entries << {
+          :num => num,
+          :doc_uri => get_test_url(host_language, version, num, suffix),
+          :suite_version => "#{host_language}+#{version}"
+        }
+      end
     end
+    puts "entries: #{entries.inspect}"
+    entries
   rescue
     puts "error: #{$!.inspect}"
   end
