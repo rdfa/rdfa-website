@@ -1,4 +1,7 @@
-<div property="rdf:value"
+<head>
+  <title>Test 0235</title>
+</head>
+<body property="rdf:value"
      resource="[undefined:curie]">
   Undefined Prefix
-</div>
+</body>

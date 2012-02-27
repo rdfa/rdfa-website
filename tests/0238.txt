@@ -1,1 +1,6 @@
-<div property="undefined_term">Undefined Term</div>
+<head>
+  <title>Test 0235</title>
+</head>
+<body property="undefined_term">
+  Undefined Term
+</body>
