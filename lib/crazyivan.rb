@@ -74,10 +74,11 @@ class CrazyIvan < Sinatra::Base
   # Writes a test case document for the given URL.
   get '/test-suite/test-cases/:suite/:version/:num' do
     cache_control :public, :must_revalidate, :max_age => 60
-    etag Digest::SHA1.hexdigest(manifest_ttl + "#{params[:suite]}/#{params[:version]}/#{params[:num]}")
 
     begin
-      get_test_content(params[:suite], params[:version], params[:num], format.to_s);
+      content = get_test_content(params[:suite], params[:version], params[:num], format.to_s);
+      etag Digest::SHA1.hexdigest(content)
+      content
     rescue Exception => e
       puts "error: #{e.message}\n#{e.backtrace.join("\n")}"
       [404, "#{e.message}\n#{e.backtrace.join("\n")}"]
