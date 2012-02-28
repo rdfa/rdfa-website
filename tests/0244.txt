@@ -1,0 +1,7 @@
+<head>
+  <title>Test 0244</title>
+</head>
+<body prefix="rdfatest: http://rdfa.info/vocabs/test#">
+  Using the type <code about="_:a" typeof="rdfatest:EqClass">rdfatest:EqClass</code>
+  should cause a triple with <code>rdfatest:BaseClass</code> to be added.
+</body>

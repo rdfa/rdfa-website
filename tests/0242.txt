@@ -1,0 +1,7 @@
+<head>
+  <title>Test 0242</title>
+</head>
+<body prefix="rdfatest: http://rdfa.info/vocabs/test#">
+  Using the property <code property="rdfatest:baseProp" resource="rdfatest:baseProp">rdfatest:eqProp</code>
+  should cause a triple with <code>rdfatest:eqProp</code> to be added.
+</body>
