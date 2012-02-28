@@ -1666,3 +1666,87 @@ white   space
       a SafeCURIE with an undefined prefix.
    """;
    test:specificationReference "7.6 Processor Status and 7.4.2 General Use of CURIEs in Attributes" .
+<test-cases/0240> dc:contributor "Gregg Kellogg";
+   dc:title "vocab_expansion='true' expands sub-property";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1-vocab";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5", "svg";
+   rdfatest:queryParam "vocab_expansion=true";
+   test:informationResourceInput <test-cases/0240.html>;
+   test:informationResourceResults <test-cases/0240.sparql>;
+   test:purpose """
+      A property having an rdfs:subPropertyOf relationship defined in an in-use vocabulary causes
+      triples to be added to the referenced property.
+   """;
+   test:specificationReference "10.1.1 RDFa Vocabulary Entailment" .
+<test-cases/0241> dc:contributor "Gregg Kellogg";
+   dc:title "vocab_expansion='true' expands equivalent-property";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1-vocab";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5", "svg";
+   rdfatest:queryParam "vocab_expansion=true";
+   test:informationResourceInput <test-cases/0241.html>;
+   test:informationResourceResults <test-cases/0241.sparql>;
+   test:purpose """
+      A property having an owl:equivalentProperty relationship defined in an in-use vocabulary causes
+      triples to be added to the referenced property.
+   """;
+   test:specificationReference "10.1.1 RDFa Vocabulary Entailment" .
+<test-cases/0242> dc:contributor "Gregg Kellogg";
+   dc:title "vocab_expansion='true' expands referenced equivalent-property";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1-vocab";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5", "svg";
+   rdfatest:queryParam "vocab_expansion=true";
+   test:informationResourceInput <test-cases/0242.html>;
+   test:informationResourceResults <test-cases/0242.sparql>;
+   test:purpose """
+      A property which is the target of another property having an owl:equivalentProperty relationship defined in an
+      in-use vocabulary causes triples to be added to the defining property.
+   """;
+   test:specificationReference "10.1.1 RDFa Vocabulary Entailment" .
+<test-cases/0243> dc:contributor "Gregg Kellogg";
+   dc:title "vocab_expansion='true' expands sub-class";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1-vocab";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5", "svg";
+   rdfatest:queryParam "vocab_expansion=true";
+   test:informationResourceInput <test-cases/0243.html>;
+   test:informationResourceResults <test-cases/0243.sparql>;
+   test:purpose """
+      A property having an rdfs:subClassOf relationship defined in an in-use vocabulary causes
+      triples to be added to the referenced class.
+   """;
+   test:specificationReference "10.1.1 RDFa Vocabulary Entailment" .
+<test-cases/0244> dc:contributor "Gregg Kellogg";
+   dc:title "vocab_expansion='true' expands equivalent-class";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1-vocab";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5", "svg";
+   rdfatest:queryParam "vocab_expansion=true";
+   test:informationResourceInput <test-cases/0244.html>;
+   test:informationResourceResults <test-cases/0244.sparql>;
+   test:purpose """
+      A class having an owl:equivalentClass relationship defined in an in-use vocabulary causes
+      triples to be added to the referenced class.
+   """;
+   test:specificationReference "10.1.1 RDFa Vocabulary Entailment" .
+<test-cases/0245> dc:contributor "Gregg Kellogg";
+   dc:title "vocab_expansion='true' expands referenced equivalent-class";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1-vocab";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5", "svg";
+   rdfatest:queryParam "vocab_expansion=true";
+   test:informationResourceInput <test-cases/0245.html>;
+   test:informationResourceResults <test-cases/0242.sparql>;
+   test:purpose """
+      A class which is the target of another class having an owl:equivalentClass relationship defined in an
+      in-use vocabulary causes triples to be added to the defining class.
+   """;
+   test:specificationReference "10.1.1 RDFa Vocabulary Entailment" .
