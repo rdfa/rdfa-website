@@ -13,7 +13,7 @@ class CrazyIvan < Sinatra::Base
   MANIFEST_JSON = File.expand_path("../../manifest.jsonld", __FILE__)
 
   configure do
-    set :app_name, "The RDFa Test Harness (Crazy Ivan)"
+    set :app_name, "The RDFa Test Harness"
     set :public_folder, File.expand_path('../../public',  __FILE__)
     set :views, File.expand_path('../views',  __FILE__)
 
