@@ -67,7 +67,7 @@ $(function () {
 
       // Add clases for each suite and host-language
       $.each(this.versions, function(index, version) {
-        $testDiv.addClass(version == 'rdfa1.0' ? 'rdfa1_0' : 'rdfa1_1');
+        $testDiv.addClass(version.replace(/[\.-]/g, '_'));
       });
       $.each(this.hostLanguages, function(index, hostLanguage) {
         $testDiv.addClass(hostLanguage);
@@ -283,7 +283,7 @@ $(function () {
   // Click triggers for versions
   $("button.versions").click(function() {
     var version = $(this).attr('data-version');
-    var suite = $("#tests").attr('data-suite') || 'xhtml1';
+    var suite = $("#tests").attr('data-suite') || 'xml1';
     selectVersion(version, suite);
   });
 

@@ -59,9 +59,41 @@
           <link property="rdfs:domain" href="test:TestCase"/>
           Defines the
           <span property="rdfs:range" resource="xsd:string">RDFa version numbers</span>
-          for which this test is defined.Appropriate values include
-          <code>rdfa1.0</code> and
-          <code>rdfa1.1</code>.
+          for which this test is defined. Appropriate values include
+          <code>rdfa1.0</code>,
+          <code>rdfa1.1</code> and
+          <code>rdfa1.1-vocab</code>.
+        </dd>
+      </dl>
+    </section>
+    <section>
+      <h2>Vocabulary Expansion test reasoning</h2>
+      <p>This section defines some vocabulary terms useful when testing optional RDFa processor
+        vocabulary expansion.</p>
+      <dl>
+        <dt>Base Class</dt><dd about="rdfatest:BaseClass" typeof="rdfs:Class">
+          The class <code>rdfatest:BaseClass</code> defines a base class useful
+          for determining inference rules for sub- and equivalent- classes
+        </dd>
+        <dt>Base Property</dt><dd about="rdfatest:baseProp" typeof="rdfs:Property">
+          The property <code>rdfatest:baseProp</code> defines a base property useful
+          for determining inference rules for sub- and equivalent- properties
+        </dd>
+        <dt>Sub Property</dt><dd about="rdfatest:subProp" typeof="rdfs:Property">
+          The property <code>rdfatest:subProp</code> defines a property which is a
+          sub-property of <code property="rdfs:subPropertOf" resource="rdfatest:baseProp">rdfatest:baseProp</code>.
+        </dd>
+        <dt>Equivalent Property</dt><dd about="rdfatest:eqProp" typeof="rdfs:Property">
+          The property <code>rdfatest:eqProp</code> defines a property which is an equivalent-property of
+          <code property="owl:equivalentProperty" resource="rdfatest:baseProp">rdfatest:baseProp</code>.
+        </dd>
+        <dt>Sub Class</dt><dd about="rdfatest:SubClass" typeof="rdfs:Class">
+          The class <code>rdfatest:SubClass</code> defines a class which is a
+          sub-class of <code property="rdfs:subClassOf" resource="rdfatest:BaseClass">rdfatest:BaseClass</code>.
+        </dd>
+        <dt>Equivalent Class</dt><dd about="rdfatest:EqClass" typeof="rdfs:Property">
+          The class <code>rdfatest:prp_eqp</code> defines a class which is an equivalent-class of
+          <code property="owl:equivalentClass" resource="rdfatest:BaseClass">rdfatest:BaseClass</code>.
         </dd>
       </dl>
     </section>
