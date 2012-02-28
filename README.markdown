@@ -106,3 +106,14 @@ unstable from time to time, but this approach has been taken so that the
 long-term goal of having a comprehensive test suite for RDFa can be achieved
 by the RDFa community.
 
+== Crazy Ivan
+
+The test suite is termed _Crazy Ivan_ because of an unusual manoever popularized in [The Hunt for Red October](http://www.imdb.com/title/tt0099810/quotes?qt=qt0458296)
+and [Firefly](http://www.youtube.com/watch?v=Oi6BLxusAM8). It is a term used to detect problems that are hiding, which is what the test suite.
+
+> Seaman Jones: Conn, sonar! Crazy Ivan! 
+> Capt. Bart Mancuso: All stop! Quick quiet! [the ships engines are shut down completely] 
+> Beaumont: What's goin' on? 
+> Seaman Jones: Russian captains sometime turn suddenly to see if anyone's behind them. We call it "Crazy Ivan." The only thing you can do is go dead. Shut everything down and make like a hole in the water. 
+> Beaumont: So what's the catch? 
+> Seaman Jones: The catch is, a boat this big doesn't exactly stop on a dime... and if we're too close, we'll drift right into the back of him. 
