@@ -1,16 +1,16 @@
-= Introduction
+# Introduction
 
 This repository controls the [rdfa.info](http://rdfa.info/) webisite, including the
 [RDFa Test Suite](http://rdfa.info/test-suite).
 
-== RDFa Test Suite
+## RDFa Test Suite
 
 The RDFa Test Suite is a set of Web Services, markup and tests that can 
 be used to verify RDFa Processor conformance to the set of specifications
 that constitute RDFa 1.1. The goal of the suite is to provide an easy and 
 comprehensive RDFa testing solution for developers creating RDFa Processors.
 
-== Design
+### Design
 
 The RDFa Test suite allows developers to mix and match RDFa processor endpoints
 with different RDFa versions and Host Languages.
@@ -49,35 +49,13 @@ Processing happens in the following order:
                        returning _true_
     display results <- or _false_.
 
-The processor is indicated by a URL ending with a query
-parameter used to specify the document to be tested. The processor may return
-results as [RDF/XML][], [Turtle][], or [N-Triples][] and should
-indicate the result format in Content-Type using the appropriate
-Mime Type for the format used.
-
-== Running the Test Suite
+### Running the Test Suite
 
 You can view and run this test suite at the following URL:
 
 [http://rdfa.info/test-suite/](http://rdfa.info/test-suite/)
 
-== Contributing
-
-If you would like to contribute a new test or a fix to an existing test,
-please follow these steps:
-
-1. Notify the RDFa mailing list, public-rdf-wg@w3.org, 
-   that you will be creating a new test or fix and the purpose of the
-   change.
-2. Clone the git repository: [git://github.com/rdfa/rdfa-website.git](https://github.com/rdfa/rdfa-website).
-3. Make your changes and submit them via github, or via a 'git format-patch'
-   to the RDFa mailing list.
-
-Optionally, you can ask for direct access to the repository and may make
-changes directly to the RDFa Test Suite source code. All updates to the test 
-suite go live within seconds of committing changes to github via a WebHook call.
-
-== How to Add a Unit Test
+## How to Add a Unit Test
 
 In order to add a unit test, you must follow these steps:
    
@@ -106,9 +84,47 @@ unstable from time to time, but this approach has been taken so that the
 long-term goal of having a comprehensive test suite for RDFa can be achieved
 by the RDFa community.
 
-== Crazy Ivan
+### How to create a processor endpoint.
 
-The test suite is termed _Crazy Ivan_ because of an unusual manoever popularized in [The Hunt for Red October](http://www.imdb.com/title/tt0099810/quotes?qt=qt0458296)
+The Test Suite operates by making a call to a _processor endpoint_ with a query parameter that indicates
+the URL of the test document to be processed. Within the test suite, a text box (upper right-hand corner)
+allows a processor endpoint to be selected or added manually. It is presumed that the endpoint URL ends
+with a query parameter to which a test URL can be appended. For example, the _pyrdfa_ endpoint is
+defined as follows: `http://www.w3.org/2012/pyRdfa/extract?uri=`. When invoked, the URL of an actual
+test will be appended, such as the following:
+`http://www.w3.org/2012/pyRdfa/extract?uri=http://rdfa.info/test-suite/test-cases/xml1/rdfa1.1/0001.xml`.
+
+Everything required by a processor can be presumed from the content of the document provided, however
+the test suite will also set a `Content-Type` HTTP header appropriate for the document provided, these include
+* application/xhtml+xml,
+* application/xml,
+* image/svg+xml, and
+* text/haml
+
+The processor is called with HTTP Accept header indicating appropriate result formats (currently,
+`text/turtle` (indicating [Turtle](http://www.w3.org/TR/turtle/)),
+`application/rdf+xml` (indicating [RDF/XML](http://www.w3.org/TR/rdf-syntax-grammar/)), and
+`text/plain` (indicating [N-Triples](http://www.w3.org/TR/rdf-testcases/#ntriples))), and the processor may
+respond with an appropriate RDF format. Processors _SHOULD_ set the HTTP `Content-Type` of the resulting
+document to the associated document Mime Type.
+
+In some cases, the test suite may add additional query parameters to the endpoint URL to test different
+required or optional behaviors, these include `rdfagraph`, taking a value of `original`, `processor`, or
+`original,processor` to control the processor output
+(see [RDFa Core 1.1 Section 7.6.1](http://www.w3.org/TR/rdfa-core/#accessing-the-processor-graph)).
+Also, `vocab_expansion` taking any value is used
+to control optional RDFa vocabulary expansion
+(see [RDFa Core 1.1 Section 10.2](http://www.w3.org/TR/rdfa-core/#s_expansion_control)).
+
+### Document Caching
+
+Test cases are provided with HTTP ETag headers and expiration values.
+Processors _MAY_ cache test case documents but _MUST_ validate the document using HTTP HEAD or conditional GET
+operations.
+
+### Crazy Ivan
+
+The test suite is termed _Crazy Ivan_ because of an unusual maneuver popularized in [The Hunt for Red October](http://www.imdb.com/title/tt0099810/quotes?qt=qt0458296)
 and [Firefly](http://www.youtube.com/watch?v=Oi6BLxusAM8). It is a term used to detect problems that are hiding, which is what the test suite.
 
 > Seaman Jones: Conn, sonar! Crazy Ivan! 
@@ -117,3 +133,20 @@ and [Firefly](http://www.youtube.com/watch?v=Oi6BLxusAM8). It is a term used to 
 > Seaman Jones: Russian captains sometime turn suddenly to see if anyone's behind them. We call it "Crazy Ivan." The only thing you can do is go dead. Shut everything down and make like a hole in the water. 
 > Beaumont: So what's the catch? 
 > Seaman Jones: The catch is, a boat this big doesn't exactly stop on a dime... and if we're too close, we'll drift right into the back of him. 
+
+## Contributing
+
+If you would like to contribute a to the website, include an additional
+test suite processor endpoint, contribute a new test or to a fix to an existing test,
+please follow these steps:
+
+1. Notify the RDFa mailing list, public-rdf-wg@w3.org, 
+   that you will be creating a new test or fix and the purpose of the
+   change.
+2. Clone the git repository: [git://github.com/rdfa/rdfa-website.git](https://github.com/rdfa/rdfa-website).
+3. Make your changes and submit them via github, or via a 'git format-patch'
+   to the RDFa mailing list.
+
+Optionally, you can ask for direct access to the repository and may make
+changes directly to the RDFa Website source code. All updates to the test 
+suite go live within seconds of committing changes to github via a WebHook call.
