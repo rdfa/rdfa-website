@@ -42,26 +42,28 @@ var TestItemView = Backbone.View.extend({
   
   source: function(event) {
     var that = this;
-    $(event.target).button('loading');
+    var button = $(event.target);
+    button.button('loading');
 
     // Retrieve source data and create a vew to display it
     this.model.source(function(data) {
       that.sourceView = new SourceView({model: data});
       that.$el.append(that.sourceView.render().el);
-      $(event.target).button('complete');
+      button.button('complete');
     });
   },
   
   details: function() {
     // Get details with the current processor-url
     var that = this;
-    $(event.target).button('loading');
+    var button = $(event.target);
+    button.button('loading');
 
     // Retrieve details data and create a vew to display it
     this.model.details(function(data) {
       that.detailsView = new DetailsView({model: data});
       that.$el.append(that.detailsView.render().el);
-      $(event.target).button('complete');
+      button.button('complete');
     });
   }
 });

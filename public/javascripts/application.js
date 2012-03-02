@@ -21,6 +21,8 @@ var AppRouter = Backbone.Router.extend({
     this.testList = new TestCollection([], {version: this.version});
     this.testList.fetch();
     this.testListView = new TestListView({model: this.testList});
+    this.runAllView = new RunAllView({model: this.testList});
+    this.progressView = new ProgressView({model: this.testList});
   },
 
   routes: {

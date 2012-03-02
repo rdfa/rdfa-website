@@ -41,6 +41,8 @@ class CrazyIvan < Sinatra::Base
         '/javascripts/views/details-view.js',
         '/javascripts/views/host-language-view.js',
         '/javascripts/views/processor-view.js',
+        '/javascripts/views/progress-view.js',
+        '/javascripts/views/run-all-view.js',
         '/javascripts/views/source-view.js',
         '/javascripts/views/test-view.js',
         '/javascripts/views/version-view.js',

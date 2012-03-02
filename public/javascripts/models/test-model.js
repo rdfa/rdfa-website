@@ -28,6 +28,8 @@ window.Test = Backbone.Model.extend({
   run: function () {
     var that = this;
 
+    this.set("result", "running");
+
     // Retrieve results from processor
     var test_url = "check-test/" +
       that.get('version') +
@@ -72,7 +74,14 @@ window.TestCollection = Backbone.Collection.extend({
   initialize:   function(models, options) {
     if (options) {
       this.version = options.version;
+      this.running = false;
+      this.passed = 0;
+      this.failed = 0;
     }
+    
+    // Bind do our own change event to be notified when tests complete to allow them to
+    // chain to the next
+    this.bind('change', this.run_next, this);
   },
   
   // Update models based on test options
@@ -98,6 +107,44 @@ window.TestCollection = Backbone.Collection.extend({
 
     this.reset(tests);
     return tests;
+  },
+
+  // Run the tests, sequence through each test trigging it to run and signal an update
+  // event for each test completion.
+  run: function() {
+    console.log("start running tests");
+    this.running = true;
+    this.passed = this.failed = 0;
+
+    // Reset test results
+    _.each(this.models, function(test) { test.set('result', null); });
+    
+    // Run first test
+    this.models[0].run();
+  },
+
+  // Triggered when a model changes, which causes chaining if we're running tests
+  run_next: function(test) {
+    var result = test.get('result');
+
+    if (this.running && _.include(["PASS", "FAIL"], result)) {
+      console.log("test " + test.get('num') + ' completed with ' + result);
+      if (result == 'PASS') {
+        this.passed = this.passed + 1;
+      } else {
+        this.failed = this.failed + 1;
+      }
+
+      var total = this.passed + this.failed;
+      var next = this.at(total);
+      if (next) {
+        console.log("next test: " + next.get('num'));
+        next.run();
+      } else {
+        console.log('tests completed');
+        this.running = false;
+      }
+    }
   },
 
   // Override parse() to deal with JSON-LD array semantics
