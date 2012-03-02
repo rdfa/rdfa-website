@@ -15,6 +15,9 @@ window.ProgressView = Backbone.View.extend({
     }, 0);
     console.debug("total: " + total + ", length: " + this.model.length);
     this.$('.bar').width(((total/this.model.length)*100).toString() + "%");
+    if (failed > 0) {
+      this.$('.progress').removeClass('progress-success').addClass('progress-danger');
+    }
     this.$(".test-passed").text(passed.toString());
     this.$(".test-failed").text(failed.toString());
   }
