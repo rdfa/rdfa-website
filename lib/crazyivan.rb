@@ -29,10 +29,21 @@ class CrazyIvan < Sinatra::Base
         '/stylesheets/application.css'
       ]
       js :application, [
-        '/javascripts/bootstrap.js',
+        '/javascripts/underscore-1.3.1.js',
+        '/javascripts/backbone-0.9.1.js',
+        '/javascripts/bootstrap-2.0.1.js',
         '/javascripts/bootstrap-alert.js',
         '/javascripts/bootstrap-button.js',
+        '/javascripts/bootstrap-dropdown.js',
         '/javascripts/bootstrap-modal.js',
+        '/javascripts/models/test-model.js',
+        '/javascripts/models/version-model.js',
+        '/javascripts/views/details-view.js',
+        '/javascripts/views/host-language-view.js',
+        '/javascripts/views/processor-view.js',
+        '/javascripts/views/source-view.js',
+        '/javascripts/views/test-view.js',
+        '/javascripts/views/version-view.js',
         '/javascripts/application.js'
       ]
     end
@@ -72,11 +83,11 @@ class CrazyIvan < Sinatra::Base
 
   ##
   # Writes a test case document for the given URL.
-  get '/test-suite/test-cases/:suite/:version/:num' do
+  get '/test-suite/test-cases/:version/:suite/:num' do
     cache_control :public, :must_revalidate, :max_age => 60
 
     begin
-      content = get_test_content(params[:suite], params[:version], params[:num], format.to_s);
+      content = get_test_content(params[:version], params[:suite], params[:num], format.to_s);
       etag Digest::SHA1.hexdigest(content)
       content
     rescue Exception => e
@@ -95,7 +106,7 @@ class CrazyIvan < Sinatra::Base
     test_cases = get_test_alternates(params[:num])
     respond_to do |wants|
       wants.html do
-        haml :test_cases, :format => :html5, :locals => {:test_cases => test_cases}
+        haml :test_cases, :format => :html5, :locals => {:test_cases => test_cases, :num => params["num"]}
       end
       wants.json do
         test_cases.to_json
@@ -104,14 +115,14 @@ class CrazyIvan < Sinatra::Base
   end
   
   # Check a particular unit test
-  get '/test-suite/check-test/:suite/:version/:num' do
+  get '/test-suite/check-test/:version/:suite/:num' do
     params["rdfa-extractor"] ||= "http://www.w3.org/2012/pyRdfa/extract?format=xml&uri="
     params["expected-results"] ||= 'true'
     expected_results = params["expected-results"] == 'true'
     format :json if format == :js
 
     begin
-      if perform_test_case(params[:suite], params[:version], params[:num], params["rdfa-extractor"], expected_results)
+      if perform_test_case(params[:version], params[:suite], params[:num], params["rdfa-extractor"], expected_results)
         status = "PASS"
         style = "text-decoration: underline; color: #090"
       else
@@ -121,8 +132,8 @@ class CrazyIvan < Sinatra::Base
       
       locals = {
         :num              => params[:num],
-        :doc_url          => get_test_url(params[:suite], params[:version], params[:num]),
-        :sparql_url       => get_test_url(params[:suite], params[:version], params[:num], 'sparql'),
+        :doc_url          => get_test_url(params[:version], params[:suite], params[:num]),
+        :sparql_url       => get_test_url(params[:version], params[:suite], params[:num], 'sparql'),
         :expected_results => params["expected-results"],
         :status           => status,
       }
@@ -141,13 +152,13 @@ class CrazyIvan < Sinatra::Base
     end
   end
 
-  get '/test-suite/test-details/:suite/:version/:num' do
+  get '/test-suite/test-details/:version/:suite/:num' do
     params["rdfa-extractor"] ||= "http://www.w3.org/2012/pyRdfa/extract?uri="
     format :json if format == :js
     prefixes = {}
 
     begin
-      locals = get_test_details(params[:suite], params[:version], params[:num])
+      locals = get_test_details(params[:version], params[:suite], params[:num])
 
       respond_to do |wants|
         wants.html do
@@ -219,14 +230,14 @@ class CrazyIvan < Sinatra::Base
   ##
   # Return the document URL for a test or SPARQL
   #
-  # @param [String] suite "xhtml1", "html5" ...
   # @param [String] version "rdfa1.1" or other
+  # @param [String] suite "xhtml1", "html5" ...
   # @param [String] num "0001" or greater
   # @param [String] format
   #   "sparql", "xhtml", "xml", "html", "svg", or
   #   auto-detects from suite
   # @return [String]
-  def get_test_url(suite, version, num, suffix = nil)
+  def get_test_url(version, suite, num, suffix = nil)
     suffix ||= case suite
     when /xhtml/  then "xhtml"
     when /html/   then "html"
@@ -234,20 +245,20 @@ class CrazyIvan < Sinatra::Base
     else               "xml"
     end
 
-    url("/test-suite/test-cases/#{suite}/#{version}/#{num}.#{suffix}").
-      sub(/localhost:\d+/, 'rdf.info') # For local testing
+    url("/test-suite/test-cases/#{version}/#{suite}/#{num}.#{suffix}").
+      sub(/localhost:\d+/, 'rdfinfo.digitalbazaar.com') # For local testing
   end
 
   ##
   # Get the content for a test
   #
-  # @param [String] suite "rdfa1.1" or other
   # @param [String] version "xhtml1", "html5" ...
+  # @param [String] suite "rdfa1.1" or other
   # @param [String] num "0001" or greater
   # @param [String] format "sparql", nil
   # @return [{:namespaces => {}, :content => String, :suite => String, :version => String}]
   #   Serialized document and namespaces
-  def get_test_content(suite, version, num, format = nil)
+  def get_test_content(version, suite, num, format = nil)
     suffix = case suite
     when /xhtml/  then "xhtml"
     when /html/   then "html"
@@ -256,8 +267,8 @@ class CrazyIvan < Sinatra::Base
     end
 
     filename = File.expand_path("../../tests/#{num}.#{format == 'sparql' ? 'sparql' : 'txt'}", __FILE__)
-    tcpath = url("/test-suite/test-cases/#{suite}/#{version}").
-      sub(/localhost:\d+/, 'rdf.info') # For local testing
+    tcpath = url("/test-suite/test-cases/#{version}/#{suite}").
+      sub(/localhost:\d+/, 'rdfinfo.digitalbazaar.com') # For local testing
 
     # Read in the file, extracting namespaces
     found_head = format == 'sparql'
@@ -324,24 +335,24 @@ class CrazyIvan < Sinatra::Base
   ##
   # Return test details, including doc text, sparql, and extracted results
   #
-  # @param [String] suite "xhtml1", "html5" ...
   # @param [String] version "rdfa1.1" or other
+  # @param [String] suite "xhtml1", "html5" ...
   # @param [String] num "0001" or greater
   # @return [{Symbol => Object}]
   #   Serialized documents and URIs
-  def get_test_details(suite, version, num)
-    doc_url = get_test_url(suite, version, num)
+  def get_test_details(version, suite, num)
+    doc_url = get_test_url(version, suite, num)
     puts "doc_url: #{doc_url}"
 
     # Short cut document text
     prefixes = {}
-    doc_text = get_test_content(suite, version, num)
+    doc_text = get_test_content(version, suite, num)
     doc_graph = RDF::Graph.new << RDF::RDFa::Reader.new(doc_text, :format => :rdfa, :prefixes => prefixes)
 
     # Turtle version of default graph
     ttl_text = doc_graph.dump(:turtle, :prefixes => prefixes, :base_uri => doc_url)
-    sparql_url = get_test_url(suite, version, num, 'sparql')
-    sparql_text = get_test_content(suite, version, num, 'sparql')
+    sparql_url = get_test_url(version, suite, num, 'sparql')
+    sparql_text = get_test_content(version, suite, num, 'sparql')
 
     # Extracted version of default graph
     extract_url = ::URI.decode(params["rdfa-extractor"]) + ::URI.encode(doc_url)
@@ -388,7 +399,7 @@ class CrazyIvan < Sinatra::Base
       [test["rdfatest:rdfaVersion"]].flatten.each do |version|
         entries << {
           :num => num,
-          :doc_uri => get_test_url(host_language, version, num, suffix),
+          :doc_uri => get_test_url(version, host_language, num, suffix),
           :suite_version => "#{host_language}+#{version}"
         }
       end
@@ -403,18 +414,18 @@ class CrazyIvan < Sinatra::Base
   # Performs a given unit test given the RDF extractor URL, sparql engine URL,
   # HTML file and SPARQL validation file.
   #
-  # @param [String] suite "xhtml1", "html5" ...
   # @param [String] version "rdfa1.1" or other
+  # @param [String] suite "xhtml1", "html5" ...
   # @param [String] num "0001" or greater
   # @param [RDF::URI, String] extract_url The RDF extractor web service.
   # @param [Boolean] expected_results `true` or `false`
   # @return [Boolean] pass or fail
-  def perform_test_case(suite, version, num, extract_url, expected_results)
+  def perform_test_case(version, suite, num, extract_url, expected_results)
     # Build the RDF extractor URL
-    extract_url = ::URI.decode(extract_url) + get_test_url(suite, version, num)
+    extract_url = ::URI.decode(extract_url) + get_test_url(version, suite, num)
 
     # Get the SPARQL query
-    sparql_query = get_test_content(suite, version, num, 'sparql').
+    sparql_query = get_test_content(version, suite, num, 'sparql').
       sub("ASK WHERE", "ASK FROM <#{extract_url}> WHERE")
 
     puts "sparql_query: #{sparql_query}"

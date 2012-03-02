@@ -6,8 +6,12 @@
   %body
     %p
       = "The following documents are associated with Test Case: "
-      = test_cases.first[:num]
-      %ul
-        - test_cases.each do |tc|
-          %li
-            %a{:href => tc[:doc_uri]}= "#{tc[:suite_version]}"
+      = num
+      - if test_cases.nil?
+        %br
+        No Test Cases Found
+      - else
+        %ul
+          - test_cases.each do |tc|
+            %li
+              %a{:href => tc[:doc_uri]}= "#{tc[:suite_version]}"
