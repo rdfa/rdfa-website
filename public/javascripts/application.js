@@ -2,6 +2,8 @@
 // for each combination of version and host language.
 var AppRouter = Backbone.Router.extend({
   initialize: function(options) {
+    var that = this;
+
     // Create the version singleton, and instantiate it's view
     this.version = new Version({
       version: $('button#versions:active').attr('data-version') || "rdfa1.1",
@@ -15,6 +17,10 @@ var AppRouter = Backbone.Router.extend({
     $(".dropdown-toggle").dropdown();
     $('.btn').button();
 
+    // Create primary test collection and view
+    this.testList = new TestCollection([], {version: this.version});
+    this.testList.fetch();
+    this.testListView = new TestListView({model: this.testList});
   },
 
   routes: {
@@ -38,16 +44,7 @@ var AppRouter = Backbone.Router.extend({
       version: version,
       hostLanguage: hostLanguage
     });
-
-    // Instantiated list of tests
-    this.testList = new TestCollection([], {
-      version: version,
-      hostLanguage: hostLanguage,
-      processorURL: this.version.get('processorURL')
-    });
-    this.testListView = new TestListView({model: this.testList});
-    this.testList.fetch();
-    this.testListView.render();
+    this.testList.filter();
   },
   
   // Just a single test
@@ -57,15 +54,8 @@ var AppRouter = Backbone.Router.extend({
       hostLanguage: hostLanguage,
       processorURL: this.version.get('processorURL')
     });
-
-    this.testList = new TestCollection([], {
-      version: version,
-      hostLanguage: hostLanguage,
-      num: test
-    });
-    this.testListView = new TestListView({model: this.testList});
-    this.testList.fetch();
-    $('div#tests').html(this.testListView.render().el);
+    // Filter to just test
+    this.testList.filter();
   }
 });
 

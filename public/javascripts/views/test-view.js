@@ -75,11 +75,13 @@ window.TestListView = Backbone.View.extend({
   },
 
   render:function (eventName) {
-      $(this.el).empty();
-      _.each(this.model.models, function (test) {
-        var testView = new TestItemView({model: test, id: "test-" + test.get('num')});
-        $(this.el).append(testView.render().el);
-      }, this);
-      return this;
+    var that = this;
+
+    this.$el.empty();
+    _.each(this.model.models, function (test) {
+      var testView = new TestItemView({model: test, id: "test-" + test.get('num')});
+      that.$el.append(testView.render().el);
+    });
+    return this;
   }
 });

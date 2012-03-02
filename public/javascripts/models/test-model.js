@@ -72,34 +72,55 @@ window.TestCollection = Backbone.Collection.extend({
   initialize:   function(models, options) {
     if (options) {
       this.version = options.version;
-      this.hostLanguage = options.hostLanguage;
-      this.processorURL = options.processorURL;
     }
   },
   
-  // Override parse() to deal with JSON-LD array semantics
-  // Return tests filtered by version and hostLanguage
-  parse: function(response) {
-    var that = this;
-    var filteredTests = _.filter(response['@id'], function(data) {
-      return _.include(_.flatten([data['rdfatest:rdfaVersion']]), that.version) &&
-             _.include(_.flatten([data['rdfatest:hostLanguage']]), that.hostLanguage);
+  // Update models based on test options
+  filter: function(version) {
+    var version = this.version.get('version');
+    var hostLanguage = this.version.get('hostLanguage');
+    var processorURL = this.version.get('processorURL');
+
+    var filteredTests = _.filter(this.loadedData, function(data) {
+      return _.include(data.versions, version) &&
+             _.include(data.hostLanguages, hostLanguage);
     });
     
-    return _.map(filteredTests, function(data) {
+    // Reset the collection with filtered tests
+    var tests = _.map(filteredTests, function(data) {
+      // Add selected version, hostLanguage and processorURL to each test
+      return _.extend({
+        version: version,
+        hostLanguage: hostLanguage,
+        processorURL: processorURL
+      },data);
+    });
+
+    this.reset(tests);
+    return tests;
+  },
+
+  // Override parse() to deal with JSON-LD array semantics
+  // Return all tests
+  parse: function(response) {
+    var that = this;
+
+    this.loadedData = _.map(response['@id'], function(data) {
       // Map to native fields we're interested in
       return {
         classification: (data['test:classification'] || 'required').split(':').pop(),
         description: data['dc:title'],
         expectedResults: data['test:expectedResults'] || true,
-        hostLanguage: that.hostLanguage,
+        hostLanguages: _.flatten([data['rdfatest:hostLanguage']]),
         num: _.last(data['@id'].split('/')),
-        processorURL: that.processorURL,
-        pubpose: data['test:purpose'],
+        purpose: data['test:purpose'],
         queryParam: data['rdfatest:queryParam'],
-        version: that.version
+        versions: _.flatten([data['rdfatest:rdfaVersion']])
       };
     });
+    
+    // Don't return anything on parse, that is done through filtering
+    return this.filter();
   },
 
   // Order tests by test number
