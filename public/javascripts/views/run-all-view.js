@@ -3,6 +3,7 @@ window.RunAllView = Backbone.View.extend({
   initialize: function () {
     this.setElement($("button#run-all"));
     this.model.bind('change', this.render, this);
+    this.model.bind('reset', this.render, this);
   },
 
   // Test events
@@ -11,7 +12,7 @@ window.RunAllView = Backbone.View.extend({
   },
 
   render: function(event) {
-    if (!this.model.running) {
+    if (this.model.running !== "running") {
       this.$el.button('reset');
     }
   },

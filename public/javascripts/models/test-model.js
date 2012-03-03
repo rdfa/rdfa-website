@@ -74,9 +74,6 @@ window.TestCollection = Backbone.Collection.extend({
   initialize:   function(models, options) {
     if (options) {
       this.version = options.version;
-      this.running = false;
-      this.passed = 0;
-      this.failed = 0;
     }
     
     // Bind do our own change event to be notified when tests complete to allow them to
@@ -89,6 +86,9 @@ window.TestCollection = Backbone.Collection.extend({
     var version = this.version.get('version');
     var hostLanguage = this.version.get('hostLanguage');
     var processorURL = this.version.get('processorURL');
+
+    this.running = null;
+    this.passed = this.failed = 0;
 
     var filteredTests = _.filter(this.loadedData, function(data) {
       return _.include(data.versions, version) &&
@@ -113,7 +113,7 @@ window.TestCollection = Backbone.Collection.extend({
   // event for each test completion.
   run: function() {
     console.log("start running tests");
-    this.running = true;
+    this.running = "running";
     this.passed = this.failed = 0;
 
     // Reset test results
@@ -142,7 +142,7 @@ window.TestCollection = Backbone.Collection.extend({
         next.run();
       } else {
         console.log('tests completed');
-        this.running = false;
+        this.running = "completed";
       }
     }
   },
