@@ -54,7 +54,7 @@ window.Test = Backbone.Model.extend({
 
     if (queryParam) {
       // Add any parameter to the processorURL
-      url = url.replace(/([\?&])([^\?&]*)$/, "$1" + this.queryParam + "&$2");
+      url = url.replace(/([\?&])([^\?&]*)$/, "$1" + queryParam + "&$2");
     }
     return escape(url);
   },
@@ -157,7 +157,7 @@ window.TestCollection = Backbone.Collection.extend({
       return {
         classification: (data['test:classification'] || 'required').split(':').pop(),
         description: data['dc:title'],
-        expectedResults: data['test:expectedResults'] || true,
+        expectedResults: (data['test:expectedResults'] === undefined ? true : data['test:expectedResults']),
         hostLanguages: _.flatten([data['rdfatest:hostLanguage']]),
         num: _.last(data['@id'].split('/')),
         purpose: data['test:purpose'],
