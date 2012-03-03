@@ -248,7 +248,7 @@ class CrazyIvan < Sinatra::Base
     end
 
     url("/test-suite/test-cases/#{version}/#{suite}/#{num}.#{suffix}").
-      sub(/localhost:\d+/, 'rdfinfo.digitalbazaar.com') # For local testing
+      sub(/localhost:\d+/, 'rdfainfo.digitalbazaar.com') # For local testing
   end
 
   ##
@@ -270,7 +270,7 @@ class CrazyIvan < Sinatra::Base
 
     filename = File.expand_path("../../tests/#{num}.#{format == 'sparql' ? 'sparql' : 'txt'}", __FILE__)
     tcpath = url("/test-suite/test-cases/#{version}/#{suite}").
-      sub(/localhost:\d+/, 'rdfinfo.digitalbazaar.com') # For local testing
+      sub(/localhost:\d+/, 'rdfainfo.digitalbazaar.com') # For local testing
 
     # Read in the file, extracting namespaces
     found_head = format == 'sparql'

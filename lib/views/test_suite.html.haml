@@ -109,7 +109,7 @@
           %span.classification
             (<%= classification %>):
           %span.description
-            <%= description %>
+            <%= description %> <%= negativeTest %>
         %div.span3.pull-right
           %button.btn.btn-info.details{"data-loading-text" => "Loading details ...",
                                        "data-complete-text" => "details",
@@ -143,7 +143,7 @@
     %a
       <%= extract_url %>
   %h3
-    SPARQL Test
+    SPARQL Test<%= expected %>
   %pre
     %div<
       <%- sparql_text %>

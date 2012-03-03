@@ -14,7 +14,13 @@ var TestItemView = Backbone.View.extend({
   },
   
   render: function () {
-    this.$el.html(this.template(this.model.toJSON()));
+    var templJSON = this.model.toJSON();
+    if (!this.model.get('expectedResults')) {
+      templJSON = _.extend({negativeTest: ": (Negative parser test)"}, templJSON);
+    } else {
+      templJSON = _.extend({negativeTest: ""}, templJSON);
+    }
+    this.$el.html(this.template(templJSON));
     
     // Set Bootstrap.js behaviors
     this.$('button').button();
@@ -61,6 +67,11 @@ var TestItemView = Backbone.View.extend({
 
     // Retrieve details data and create a vew to display it
     this.model.details(function(data) {
+      if (that.model.get('expectedResults')) {
+        data = _.extend({expected: ""}, data);
+      } else {
+        data = _.extend({expected: ": (Negative parser test)"}, data);
+      }
       that.detailsView = new DetailsView({model: data});
       that.$el.append(that.detailsView.render().el);
       button.button('complete');
