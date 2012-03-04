@@ -39,6 +39,7 @@ class CrazyIvan < Sinatra::Base
         '/javascripts/models/test-model.js',
         '/javascripts/models/version-model.js',
         '/javascripts/views/details-view.js',
+        '/javascripts/views/earl-view.js',
         '/javascripts/views/host-language-view.js',
         '/javascripts/views/processor-view.js',
         '/javascripts/views/progress-view.js',

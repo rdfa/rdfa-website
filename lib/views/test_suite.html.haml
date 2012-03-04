@@ -44,6 +44,8 @@
       %div
         Failed
         %span.test-failed
+      %button.btn.btn-primary#earl
+        EARL Report
 %div.row
   %h2= "Overview"
   %noscript
@@ -151,4 +153,33 @@
     Source
     %a
       <%= sparql_url %>
-      
+
+%script#earl-report-template{:type => "text/template"}
+  %h3
+    %a{:rel => "doap:homepage", :property => "doap:name", :href => "http://rdfa.info/"}="RDFa Test Suite"
+  %p.resource.processorURL{:rel => "earl:subject", :typeof=> "earl:TestSubject"}
+    Report on
+    <%= processorURL %>
+    running
+    %em
+      <%= version %>
+    with host language
+    %em
+      <%= hostLanguage %>.
+  %div#earl-report
+
+%script#earl-item-template{:type => "text/template", :rev => "earl:assertedBy"}
+  %section
+    %link.resource.processorURL{:property => "earl:subject"}
+    %div.resource.docURL{:rel => "earl:test", :typeof => "earl:TestCase", :resource => ""}
+      %h4
+        %span{:property => "dc:title"}
+        Test <%= num %>: <%= description %>.
+        %link{:property => "earl:mode", :resource => "earl:automatic"}
+      %span
+        %span{:property => "dc:description"}
+          <%= purpose %>.
+    %p{:rel => "earl:result", :typeof => "earl:TestResult"}
+      Result:
+      %strong.resource.outcome{:property => "earl:outcome", :resource => ""}
+        <%= result %>

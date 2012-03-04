@@ -10,18 +10,19 @@ window.Test = Backbone.Model.extend({
     $.getJSON(source_url, cb);
   },
   
+  // Details URL
+  detailsURL: function() {
+    return "test-details/" +
+      this.get('version') +
+      '/' + this.get('hostLanguage') +
+      '/' + this.get('num') +
+      '?rdfa-extractor=' + this.processorURL();
+  },
+
   // Get the details for a given test
   details: function (cb) {
-    var that = this;
-
     // Retrieve results from processor and canonical representation
-    var details_url = "test-details/" +
-      that.get('version') +
-      '/' + that.get('hostLanguage') +
-      '/' + that.get('num') +
-      '?rdfa-extractor=' + that.processorURL();
-    
-      $.getJSON(details_url, cb);
+    $.getJSON(this.detailsURL(), cb);
   },
   
   // Run the test, causes this.result to be set
@@ -57,6 +58,16 @@ window.Test = Backbone.Model.extend({
       url = url.replace(/([\?&])([^\?&]*)$/, "$1" + queryParam + "&$2");
     }
     return escape(url);
+  },
+  
+  // Document URL
+  docURL: function() {
+    var extension = '.' + this.get('hostLanguage').replace(/\d/, '');
+    return "test-cases" +
+    '/' + this.get('version') +
+    '/' + this.get('hostLanguage') +
+    '/' + this.get('num') +
+    extension;
   },
 
   reset: function () {
