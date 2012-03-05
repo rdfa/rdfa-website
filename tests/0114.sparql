@@ -2,7 +2,5 @@ PREFIX xhv: <http://www.w3.org/1999/xhtml/vocab#>
 PREFIX cc: <http://creativecommons.org/ns#>
 ASK WHERE {
   <$TCPATH/0114.xhtml> xhv:next <$TCPATH/0115.xhtml>;
-    xhv:up ?up;
     cc:attributionURL <http://rdfa.info/> .
-  FILTER (regex(str(?up), "index.html$"))
 }
