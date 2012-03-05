@@ -27,11 +27,6 @@ var EarlItemView = Backbone.View.extend({
 window.EarlView = Backbone.View.extend({
   template: _.template($('#earl-report-template').html()),
 
-  attributes: {
-    "typeof": "earl:Software",
-    "prefix": "earl http://foo/"
-  },
-
   render:function (eventName) {
     var that = this;
     var JSON = this.model.version.toJSON();
@@ -42,7 +37,7 @@ window.EarlView = Backbone.View.extend({
     _.each(this.model.models, function (test) {
       if (test.get('result')) {
         var earlView = new EarlItemView({model: test});
-        that.$el.append(earlView.render().el);
+        that.$(">div").append(earlView.render().el);
       }
     });
     return this;

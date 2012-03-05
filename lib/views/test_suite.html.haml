@@ -44,8 +44,15 @@
       %div
         Failed
         %span.test-failed
-      %button.btn.btn-primary#earl
-        EARL Report
+      %div.btn-group#earl
+        %a.btn.btn-primary.show{:href => "#"}="EARL Report"
+        %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          %span.caret/
+        %ul.dropdown-menu
+          %li
+            %a.show{:href=>"#"}="Show"
+          %li
+            %a.source{:href=>"#"}="Source"
 %div.row
   %h2= "Overview"
   %noscript
@@ -73,8 +80,10 @@
       %button.btn.btn-primary= "Run All Tests"
       button.
     %li
-      You can modify the Test Suite, Approval Status, RDFa Extractor Service 
-      and SPARQL Engine URLs.
+      After running all tests, you can generate an <a href="">EARL Report</a>
+      using the
+      %button.btn.btn-primary= "EARL Report"
+      button.
 %div.row
   %h2= "Status"
   %ul
@@ -154,32 +163,33 @@
     %a
       <%= sparql_url %>
 
-%script#earl-report-template{:type => "text/template"}
-  %h3
-    %a{:rel => "doap:homepage", :property => "doap:name", :href => "http://rdfa.info/"}="RDFa Test Suite"
-  %p.resource.processorURL{:rel => "earl:subject", :typeof=> "earl:TestSubject"}
-    Report on
-    <%= processorURL %>
-    running
-    %em
-      <%= version %>
-    with host language
-    %em
-      <%= hostLanguage %>.
-  %div#earl-report
+%script#earl-report-template{:type => "text/template"}<
+  %div{:about => "http://rdfa.info/test-suite/", :typeof => "earl:Software", :prefix => "earl: http://www.w3.org/ns/earl# doap http://usefulinc.com/ns/doap#"}
+    %h3
+      %a{:rel => "doap:homepage", :property => "doap:name", :href => "http://rdfa.info/"}="RDFa Test Suite"
+    %p.resource.processorURL{:typeof=> "earl:TestSubject"}
+      Report on
+      %code<
+        <%= processorURL %>
+      running
+      %em<
+        <%= version %>
+      with host language
+      %em<
+        <%= hostLanguage %>
+      = "."
 
-%script#earl-item-template{:type => "text/template", :rev => "earl:assertedBy"}
-  %section
-    %link.resource.processorURL{:property => "earl:subject"}
-    %div.resource.docURL{:rel => "earl:test", :typeof => "earl:TestCase", :resource => ""}
-      %h4
-        %span{:property => "dc:title"}
-        Test <%= num %>: <%= description %>.
-        %link{:property => "earl:mode", :resource => "earl:automatic"}
-      %span
-        %span{:property => "dc:description"}
-          <%= purpose %>.
-    %p{:rel => "earl:result", :typeof => "earl:TestResult"}
-      Result:
-      %strong.resource.outcome{:property => "earl:outcome", :resource => ""}
-        <%= result %>
+%script#earl-item-template{:type => "text/template"}
+  %span{:property => "earl:assertedBy", :resource => ""}/
+  %span.resource.processorURL{:property => "earl:subject"}/
+  %div.resource.docURL{:rel => "earl:test", :typeof => "earl:TestCase"}
+    %h4
+      %span{:property => "dc:title"}
+      Test <%= num %>: <%= description %>.
+      %span{:property => "earl:mode", :resource => "earl:automatic"}/
+    %p{:property => "dc:description"}
+      <%= purpose %>.
+  %p{:property => "earl:result", :typeof => "earl:TestResult"}
+    Result:
+    %strong.resource.outcome{:property => "earl:outcome", :resource => ""}<
+      <%= result %>

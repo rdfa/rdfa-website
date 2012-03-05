@@ -8,7 +8,8 @@ window.ProgressView = Backbone.View.extend({
   },
 
   events: {
-    "click button#earl": "earl"
+    "click #earl a.show": "earl",
+    "click #earl a.source": "earlSource"
   },
 
   render: function(event) {
@@ -38,10 +39,31 @@ window.ProgressView = Backbone.View.extend({
       this.$el.hide();
     }
   },
-  
+
   // Generate EARL report
   earl: function(event) {
     var earlView = new EarlView({model: this.model});
-    this.$el.append(earlView.render().el);
+    // Write EARL report to a new document
+    var w = window.open();
+    w.document.write(earlView.render().$el.html());
+    w.document.close();
+  },
+
+  // Generate EARL report
+  earlSource: function(event) {
+    var earlView = new EarlView({model: this.model});
+    // Write EARL report to a new document
+    var w = window.open();
+    w.document.close();
+    var $html = $('<html/>')
+      .append($('<head/>').append($('<base href="http://rdfa.info/test-suite/"/>')))
+      .append($('<body/>').append(earlView.render().$el.html()));
+    var $pre = $("<pre/>").text(
+      "<!DOCTYPE html>\n<html>\n" +
+      $html.html() +
+      "</html>"
+    );
+    //w.document.write($pre.html());
+    $('body', w.document).append($pre);
   }
 });

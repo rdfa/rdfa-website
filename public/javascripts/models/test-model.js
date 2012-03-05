@@ -16,7 +16,7 @@ window.Test = Backbone.Model.extend({
       this.get('version') +
       '/' + this.get('hostLanguage') +
       '/' + this.get('num') +
-      '?rdfa-extractor=' + this.processorURL();
+      '?rdfa-extractor=' + escape(this.processorURL());
   },
 
   // Get the details for a given test
@@ -37,7 +37,7 @@ window.Test = Backbone.Model.extend({
       '/' + that.get('hostLanguage') +
       '/' + that.get('num') +
       '?expected-results=' + that.get('expectedResults') +
-      '&rdfa-extractor=' + that.processorURL();
+      '&rdfa-extractor=' + escape(that.processorURL());
 
     $.getJSON(test_url, function (data) {
       // Indicate pass/fail and style
@@ -57,7 +57,7 @@ window.Test = Backbone.Model.extend({
       // Add any parameter to the processorURL
       url = url.replace(/([\?&])([^\?&]*)$/, "$1" + queryParam + "&$2");
     }
-    return escape(url);
+    return url;
   },
   
   // Document URL
