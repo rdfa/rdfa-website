@@ -97,6 +97,7 @@ window.TestCollection = Backbone.Collection.extend({
     var version = this.version.get('version');
     var hostLanguage = this.version.get('hostLanguage');
     var processorURL = this.version.get('processorURL');
+    var processorName = this.version.get('processorName');
 
     this.running = null;
     this.passed = this.failed = 0;

@@ -33,6 +33,7 @@ window.EarlView = Backbone.View.extend({
 
     this.$el.html(this.template(JSON));
     this.$(".resource.processorURL").attr("resource", JSON.processorURL);
+    this.$(".href.processorURL").attr("href", JSON.processorURL);
 
     _.each(this.model.models, function (test) {
       if (test.get('result')) {

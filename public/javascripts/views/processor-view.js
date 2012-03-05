@@ -7,7 +7,7 @@ window.ProcessorView = Backbone.View.extend({
     
     // Load up set of processors
     $.each(this.model.processors, function(key, value) {
-      elt = _.template("<li><a href='#' data-processor='<%= value %>'><%= key %></a></li>", {key: key, value: value});
+      elt = _.template("<li><a href='#' data-processor='<%= value %>' data-name='<%= key %>'><%= key %></a></li>", {key: key, value: value});
       $("div#processor ul").append($(elt));
     });
     this.render();
@@ -23,7 +23,10 @@ window.ProcessorView = Backbone.View.extend({
   },
 
   processor: function(event) {
-    this.model.set({processorURL: $(event.target).attr('data-processor')});
+    this.model.set({
+      processorURL: $(event.target).attr('data-processor'),
+      processorName: $(event.target).attr('data-name')
+    });
     // Navigate to cause tests to be reloaded
     app.navigate(this.model.get('version') + '/' + this.model.get('hostLanguage'), {trigger: true});
   },

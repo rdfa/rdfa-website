@@ -1,7 +1,8 @@
 // Version, Host Language, and Processor URL
 window.Version = Backbone.Model.extend({
   defaults: {
-    processorURL: "http://www.w3.org/2012/pyRdfa/extract?uri="
+    processorURL: "http://www.w3.org/2012/pyRdfa/extract?uri=",
+    processorName: "pyrdfa"
   },
 
   // List of processors
