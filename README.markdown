@@ -3,14 +3,14 @@
 This repository controls the [rdfa.info](http://rdfa.info/) webisite, including the
 [RDFa Test Suite](http://rdfa.info/test-suite).
 
-## RDFa Test Suite
+# RDFa Test Suite
 
 The RDFa Test Suite is a set of Web Services, markup and tests that can 
 be used to verify RDFa Processor conformance to the set of specifications
 that constitute RDFa 1.1. The goal of the suite is to provide an easy and 
 comprehensive RDFa testing solution for developers creating RDFa Processors.
 
-### Design
+## Design
 
 The RDFa Test suite allows developers to mix and match RDFa processor endpoints
 with different RDFa versions and Host Languages.
@@ -27,6 +27,15 @@ to identify a result document. The built-in SPARQL processor will
 poke the URL, referencing the chosen processor endpoint with a
 query parameter indicating the test document, and other parameters
 used to control the processor.
+
+The test-suite is implemented using [Ruby](http://www.ruby-lang.org/), [Sinatra](http://www.sinatrarb.com/)
+along with the [Linked Data](http://rubygems.org/gems/linkeddata) and [SPARQL](http://rubygems.org/gems/sparql) gems.
+The user interface is implemented in JavaScript using
+[Bootstrap.js](http://twitter.github.com/bootstrap/) and [Backbone.js](http://documentcloud.github.com/backbone/).
+
+Ruby/Sinatra is responsible for running the service, which provides the test files, launches the HTML application, and executes SPARQL queries on request from the HTML app. The SPARQL queries, in turn, are access the processor endpoint to create a graph against which the query is run, with the results returned to the HTML app as a JSON `true` or `false`.
+
+The HTML application is implemented principlly in JavaScript using Backbone.js as a model-viewer-controller, which downloads the test suite manifest and creates a simple user interface using Bootstrap.js to run tests, or get test details.
 
 Processing happens in the following order:
 
@@ -49,13 +58,29 @@ Processing happens in the following order:
                        returning _true_
     display results <- or _false_.
 
-### Running the Test Suite
+## Running the test suite
 
 You can view and run this test suite at the following URL:
 
 [http://rdfa.info/test-suite/](http://rdfa.info/test-suite/)
 
-## How to Add a Unit Test
+### Running locally
+
+The website may be run locally and access either local or remote services. The site
+is implemented as a Ruby/Sinatra application compatible with [Rack][] interfaces, similar to
+Ruby on Rails. On a production installation, this is usually done with Apache and [Passenger](http://www.modrails.com/). Locally, it can be run using rackup of shotgun.
+
+Running the website locally should be as simple as the following:
+
+    git clone [git@github.com:rdfa/rdfa-website.git](https://github.com:rdfa/rdfa-website.git)
+    cd rdfa-website
+    [sudo] gem install bundler
+    bundle install
+    bundle exec shotgun
+
+This will create an instance, usually running on port 9393. If you access as http://localhost:9393/test-suite/, it will re-write test URIs to http://rdfainfo.digitalbazaar.com/test-suite/ so that processors can see any tests that are already uploaded. If you want to run with a local endpoint, run with something else such as http://127.0.0.1/test-suite/, which will inhibit the URI rewriting.
+
+## How to add a unit test
 
 In order to add a unit test, you must follow these steps:
    
@@ -84,7 +109,7 @@ unstable from time to time, but this approach has been taken so that the
 long-term goal of having a comprehensive test suite for RDFa can be achieved
 by the RDFa community.
 
-### How to create a processor endpoint.
+## How to create a processor endpoint.
 
 The Test Suite operates by making a call to a _processor endpoint_ with a query parameter that indicates
 the URL of the test document to be processed. Within the test suite, a text box (upper right-hand corner)
@@ -116,13 +141,22 @@ Also, `vocab_expansion` taking any value is used
 to control optional RDFa vocabulary expansion
 (see [RDFa Core 1.1 Section 10.2](http://www.w3.org/TR/rdfa-core/#s_expansion_control)).
 
-### Document Caching
+To add a processor to the test suite, add to the object definition in
+`public/javascripts/model/version-model.js` in alphabetical order. This is currently defined as follows:
+
+    processors: {
+      "pyrdfa": "http://www.w3.org/2012/pyRdfa/extract?uri=",
+      "RDF.rb": "http://rdf.greggkellogg.net/distiller?raw=true&in_fmt=rdfa&uri=",
+      "other":  ""
+    },
+
+## Document caching
 
 Test cases are provided with HTTP ETag headers and expiration values.
 Processors _MAY_ cache test case documents but _MUST_ validate the document using HTTP HEAD or conditional GET
 operations.
 
-### Crazy Ivan
+## Crazy Ivan
 
 The test suite is termed _Crazy Ivan_ because of an unusual maneuver popularized in [The Hunt for Red October](http://www.imdb.com/title/tt0099810/quotes?qt=qt0458296)
 and [Firefly](http://www.youtube.com/watch?v=Oi6BLxusAM8). It is a term used to detect problems that are hiding, which is what the test suite.
@@ -134,7 +168,7 @@ and [Firefly](http://www.youtube.com/watch?v=Oi6BLxusAM8). It is a term used to 
 > Beaumont: So what's the catch? 
 > Seaman Jones: The catch is, a boat this big doesn't exactly stop on a dime... and if we're too close, we'll drift right into the back of him. 
 
-## Contributing
+# Contributing
 
 If you would like to contribute a to the website, include an additional
 test suite processor endpoint, contribute a new test or to a fix to an existing test,
@@ -150,3 +184,12 @@ please follow these steps:
 Optionally, you can ask for direct access to the repository and may make
 changes directly to the RDFa Website source code. All updates to the test 
 suite go live within seconds of committing changes to github via a WebHook call.
+
+## Caution: Cached assets
+
+The JavaScript and CSS files are minimized into cached assets. Any change to CSS or JavaScript files
+requires that the assets be re-compiled. This can be done as follows:
+
+    rake assets:precompile
+
+Make sure to do this before committing changes that involve any CSS or JavaScript contained within `file:public/stylesheets` or `public/javascripts`.
