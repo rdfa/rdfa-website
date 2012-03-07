@@ -6,6 +6,16 @@ var DetailsView = Backbone.View.extend({
     "data-dismiss": "alert"
   },
 
+  // Open linkes in a new window/tab
+  events: {
+    "click a.window": "open_window"
+  },
+  
+  open_window: function(event) {
+    window.open($(event.target).attr('href'));
+    return false;
+  },
+
   render: function () {
     var that = this;
     this.$el.html(this.template(this.model));

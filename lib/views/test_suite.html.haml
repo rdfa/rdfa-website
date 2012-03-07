@@ -137,7 +137,7 @@
       <%- doc_text %>
   %em.doc_url
     Source
-    %a{:target => "_blank"}
+    %a.window
       <%= doc_url %>
   %h3
     Turtle (Reference Implementation Triples)
@@ -151,7 +151,7 @@
       <%- extracted_text %>
   %em.extract_url
     Source
-    %a{:target => "_blank"}
+    %a.window
       <%= extract_url %>
   %h3
     SPARQL Test<%= expected %>
@@ -160,7 +160,7 @@
       <%- sparql_text %>
   %em.sparql_url
     Source
-    %a{:target => "_blank"}
+    %a.window
       <%= sparql_url %>
 
 %script#earl-report-template{:type => "text/template"}<
