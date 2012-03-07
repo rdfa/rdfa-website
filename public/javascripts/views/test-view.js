@@ -59,7 +59,7 @@ var TestItemView = Backbone.View.extend({
     });
   },
   
-  details: function() {
+  details: function(event) {
     // Get details with the current processor-url
     var that = this;
     var button = $(event.target);
