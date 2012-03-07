@@ -56,6 +56,10 @@ class CrazyIvan < Sinatra::Base
     puts "[#{request.path_info}], #{params.inspect}, #{format}, #{request.accept.inspect}"
   end
 
+  get '/test-suite' do
+    redirect '/test-suite/'
+  end
+
   get '/test-suite/' do
     cache_control :public, :must_revalidate, :max_age => 60
     haml :test_suite
