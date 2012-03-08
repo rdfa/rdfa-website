@@ -136,26 +136,27 @@ class CrazyIvan < Sinatra::Base
         status = "FAIL"
         style = "text-decoration: underline; font-weight: bold; color: #f00"
       end
-      
-      locals = {
-        :num              => params[:num],
-        :doc_url          => get_test_url(params[:version], params[:suite], params[:num]),
-        :sparql_url       => get_test_url(params[:version], params[:suite], params[:num], 'sparql'),
-        :expected_results => params["expected-results"],
-        :status           => status,
-      }
-
-      respond_to do |wants|
-        wants.html do
-          haml :test_result, :locals => locals.merge(:style => style)
-        end
-        wants.json do
-          locals.to_json
-        end
-      end
     rescue Exception => e
-      puts "error: #{e.message}\n#{e.backtrace.join("\n")}"
-      [404, "#{e.message}\n#{e.backtrace.join("\n")}"]
+      puts "test failed with exception: #{e.class}: #{e.message}"
+      status = "FAIL"
+      style = "text-decoration: underline; font-weight: bold; color: #f00"
+    end
+    
+    locals = {
+      :num              => params[:num],
+      :doc_url          => get_test_url(params[:version], params[:suite], params[:num]),
+      :sparql_url       => get_test_url(params[:version], params[:suite], params[:num], 'sparql'),
+      :expected_results => params["expected-results"],
+      :status           => status,
+    }
+
+    respond_to do |wants|
+      wants.html do
+        haml :test_result, :locals => locals.merge(:style => style)
+      end
+      wants.json do
+        locals.to_json
+      end
     end
   end
 

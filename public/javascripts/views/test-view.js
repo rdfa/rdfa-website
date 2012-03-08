@@ -80,6 +80,7 @@ var TestItemView = Backbone.View.extend({
 });
 
 window.TestListView = Backbone.View.extend({
+  loadingTemplate: _.template($('#test-loading').html()),
 
   initialize: function () {
     this.setElement($("div#tests"));
@@ -91,6 +92,8 @@ window.TestListView = Backbone.View.extend({
     var that = this;
 
     this.$el.empty();
+    if (this.model.length === 0) { this.$el.append(this.loadingTemplate({})); }
+
     _.each(this.model.models, function (test) {
       var testView = new TestItemView({model: test, id: "test-" + test.get('num')});
       that.$el.append(testView.render().el);
