@@ -459,10 +459,11 @@
    test:informationResourceResults <test-cases/0057.sparql>;
    test:purpose "Tests if hanging @rel creates multiple triples";
    test:specificationReference "" .
+
 <test-cases/0058> dc:contributor "Manu Sporny";
-   dc:title "hanging @rel creates multiple triples, @typeof permutation";
+   dc:title "hanging @rel creates multiple triples, @typeof permutation; RDFa 1.0 version";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0058.html>;
@@ -660,9 +661,9 @@
    test:purpose "Tests to ensure that all reserved XHTML words are supported in @rev";
    test:specificationReference "" .
 <test-cases/0078> dc:contributor "Ivan Herman";
-   dc:title "Multiple incomplete triples";
+   dc:title "Multiple incomplete triples, RDFa 1.0 version";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0078.html>;
@@ -690,9 +691,9 @@
    test:purpose "Tests if @about has a higher priority than @resource in handling incomplete triples";
    test:specificationReference "" .
 <test-cases/0081> dc:contributor "Ivan Herman";
-   dc:title "multiple ways of handling incomplete triples (with @rev)";
+   dc:title "multiple ways of handling incomplete triples (with @rev); RDFa 1.0 version";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0081.html>;
@@ -700,9 +701,9 @@
    test:purpose "Tests multiple ways of handling incomplete triples, this time with @rev";
    test:specificationReference "" .
 <test-cases/0082> dc:contributor "Ivan Herman";
-   dc:title "multiple ways of handling incomplete triples (with @rel and @rev)";
+   dc:title "multiple ways of handling incomplete triples (with @rel and @rev); RDFa 1.0 version";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0082.html>;
@@ -1750,3 +1751,47 @@ white   space
       in-use vocabulary causes triples to be added to the defining class.
    """;
    test:specificationReference "10.1.1 RDFa Vocabulary Entailment" .
+<test-cases/0246> dc:contributor "Manu Sporny";
+   dc:title "hanging @rel creates multiple triples, @typeof permutation; RDFa 1.1 version";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0246.html>;
+   test:informationResourceResults <test-cases/0247.sparql>;
+   test:purpose "Tests if hanging @rel creates multiple triples with @typeof permutation";
+   test:specificationReference "" .
+<test-cases/0247> dc:contributor "Ivan Herman";
+   dc:title "Multiple incomplete triples, RDFa 1.1version";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0247.html>;
+   test:informationResourceResults <test-cases/0247.sparql>;
+   test:purpose "Tests multiple ways of handling incomplete triples; the first two triples should use the same bnode as subject ('merged'). The third should have a separate bNode.";
+   test:specificationReference "" .
+<test-cases/0248> dc:contributor "Ivan Herman";
+   dc:title "multiple ways of handling incomplete triples (with @rev); RDFa 1.1 version";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0248.html>;
+   test:informationResourceResults <test-cases/0248.sparql>;
+   test:purpose "Tests multiple ways of handling incomplete triples, this time with @rev";
+   test:specificationReference "" .
+<test-cases/0249> dc:contributor "Ivan Herman";
+   dc:title "multiple ways of handling incomplete triples (with @rel and @rev); RDFa 1.1 version";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0249.html>;
+   test:informationResourceResults <test-cases/0249.sparql>;
+   test:purpose "Tests multiple ways of handling incomplete triples, this time with both @rel and @rev";
+   test:specificationReference "" .
+
+
+
+
