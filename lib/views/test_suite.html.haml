@@ -193,10 +193,10 @@
   %span.resource.processorURL{:property => "earl:subject"}/
   %div.resource.docURL{:rel => "earl:test", :typeof => "earl:TestCase"}
     %h4
-      %span{:property => "dc:title"}
+      %span{:property => "dc:title"}<
         Test <%= num %>: <%= description %>.
       %span{:property => "earl:mode", :resource => "earl:automatic"}/
-    %p{:property => "dc:description"}
+    %p{:property => "dc:description"}<
       <%= purpose %>.
   %p{:property => "earl:result", :typeof => "earl:TestResult"}
     Result:
