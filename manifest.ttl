@@ -1619,7 +1619,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5", "svg";
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "svg";
    rdfatest:queryParam "rdfagraph=processor";
    test:informationResourceInput <test-cases/0236.html>;
    test:informationResourceResults <test-cases/0236.sparql>;
@@ -1790,6 +1790,16 @@ white   space
    test:informationResourceInput <test-cases/0249.html>;
    test:informationResourceResults <test-cases/0249.sparql>;
    test:purpose "Tests multiple ways of handling incomplete triples, this time with both @rel and @rev";
+   test:specificationReference "" .
+<test-cases/0250> dc:contributor "Ivan Herman";
+   dc:title "Checking the right behaviour of @typeof with @about, in presence of @property";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0250.html>;
+   test:informationResourceResults <test-cases/0250.sparql>;
+   test:purpose "Tests that @typeof is clearly bound to @about, and @property therefore creates a Literal object";
    test:specificationReference "" .
 
 
