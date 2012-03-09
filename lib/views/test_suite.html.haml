@@ -105,6 +105,14 @@
         RDFa Working Group mailing list.
 %div#tests
 
+%script#test-loading{:type => "text/template"}
+  %div.row
+    %div.span12
+      %h3
+        Test Manifest Loading
+      %p
+        This could take a while if the source manifest was recently updated.
+
 // Templates for Underscore.js rendering
 // Bits inside of "<%= %>" are expanded in Javascript context, not Haml
 %script#test-template{:type => "text/template"}
@@ -164,7 +172,7 @@
       <%= sparql_url %>
 
 %script#earl-report-template{:type => "text/template"}<
-  %div{:about => "http://rdfa.info/test-suite/", :typeof => "earl:Software", :prefix => "earl: http://www.w3.org/ns/earl# doap http://usefulinc.com/ns/doap#"}
+  %div{:about => "http://rdfa.info/test-suite/", :typeof => "earl:Software", :prefix => "earl: http://www.w3.org/ns/earl# doap: http://usefulinc.com/ns/doap#"}
     %h3
       %a{:rel => "doap:homepage", :property => "doap:name", :href => "http://rdfa.info/"}="RDFa Test Suite"
     %p.resource.processorURL{:typeof=> "earl:TestSubject"}
@@ -185,10 +193,10 @@
   %span.resource.processorURL{:property => "earl:subject"}/
   %div.resource.docURL{:rel => "earl:test", :typeof => "earl:TestCase"}
     %h4
-      %span{:property => "dc:title"}
-      Test <%= num %>: <%= description %>.
+      %span{:property => "dc:title"}<
+        Test <%= num %>: <%= description %>.
       %span{:property => "earl:mode", :resource => "earl:automatic"}/
-    %p{:property => "dc:description"}
+    %p{:property => "dc:description"}<
       <%= purpose %>.
   %p{:property => "earl:result", :typeof => "earl:TestResult"}
     Result:

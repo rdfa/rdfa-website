@@ -21,6 +21,18 @@ namespace :assets do
   end
 end
 
+namespace :earl do
+  desc 'Collate reports'
+  task :collate => :environment do
+    require 'earl'
+    earl = EARL.new(Dir.glob(File.expand_path("../earl-reports/*.html", __FILE__)))
+    File.open(File.expand_path("../earl-reports/earl.ttl", __FILE__), "w") do |file|
+      puts "dump #{earl.graph.count} triples"
+      earl.dump(:ttl, file)
+    end
+  end
+end
+
 namespace :cache do
   desc 'Clear document cache'
   task :clear do
