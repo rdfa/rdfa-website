@@ -73,7 +73,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xml1", "xhtml1";
    test:informationResourceInput <test-cases/0012.html>;
    test:informationResourceResults <test-cases/0012.sparql>;
    test:purpose "Tests @xml:lang";
@@ -83,7 +83,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xml1", "xhtml1";
    test:informationResourceInput <test-cases/0013.html>;
    test:informationResourceResults <test-cases/0013.sparql>;
    test:purpose "Tests @xml:lang inheritance";
@@ -846,7 +846,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xml1", "xhtml1";
    test:informationResourceInput <test-cases/0108.html>;
    test:informationResourceResults <test-cases/0108.sparql>;
    test:purpose """Checks to make sure that the RDFa parser emits a plain literal when the datatype is specified as "" and preserves the xml:lang value. The text, with control characters and whitespace preserved, reads "Greek
@@ -898,7 +898,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xml1", "xhtml1";
    test:informationResourceInput <test-cases/0113.html>;
    test:informationResourceResults <test-cases/0113.sparql>;
    test:purpose "Checks to make sure that an element with @property and no child nodes generates empty plain literal.";
@@ -1055,7 +1055,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
    test:expectedResults "true"^^xsd:boolean;
-   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1";
    test:informationResourceInput <test-cases/0172.html>;
    test:informationResourceResults <test-cases/0172.sparql>;
    test:purpose "Checks to ensure that when @datatype=\"\" is used on an element that contains child nodes, that the literal that is generated is a plain literal.";
@@ -1066,7 +1066,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
    test:expectedResults "true"^^xsd:boolean;
-   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1";
    test:informationResourceInput <test-cases/0173.html>;
    test:informationResourceResults <test-cases/0173.sparql>;
    test:purpose "Checks to ensure that when @xml:lang=\"\" is used that any parent element language setting is cleared and a language-less literal is generated.";
@@ -1267,7 +1267,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    test:expectedResults "true"^^xsd:boolean;
-   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "xhtml5";
    test:informationResourceInput <test-cases/0198.html>;
    test:informationResourceResults <test-cases/0198.sparql>;
    test:purpose "Checks to ensure that when datatype is the default the parser generates triples for embedded content.";
@@ -1801,7 +1801,79 @@ white   space
    test:informationResourceResults <test-cases/0250.sparql>;
    test:purpose "Tests that @typeof is clearly bound to @about, and @property therefore creates a Literal object";
    test:specificationReference "" .
-
-
+<test-cases/0251> dc:contributor "Elias Torres";
+   dc:title "lang";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0251.html>;
+   test:informationResourceResults <test-cases/0251.sparql>;
+   test:purpose "Tests lang";
+   test:specificationReference "" .
+<test-cases/0252> dc:contributor "Elias Torres";
+   dc:title "lang inheritance";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0252.html>;
+   test:informationResourceResults <test-cases/0252.sparql>;
+   test:purpose "Tests lang inheritance";
+   test:specificationReference "" .
+<test-cases/0253> dc:contributor "Manu Sporny";
+   dc:title "plain literal with datatype=\"\" and lang preservation";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0253.html>;
+   test:informationResourceResults <test-cases/0253.sparql>;
+   test:purpose """Checks to make sure that the RDFa parser emits a plain literal when the datatype is specified as "" and preserves the xml:lang value. The text, with control characters and whitespace preserved, reads "Greek
+white   space
+".""";
+   test:specificationReference "" .
+<test-cases/0254> dc:contributor "KANZAKI, Masahide";
+   dc:title "@datatype=\"\" generates plain literal in presence of child nodes";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   test:classification test:required;
+   test:expectedResults "true"^^xsd:boolean;
+   rdfatest:hostLanguage "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0254.html>;
+   test:informationResourceResults <test-cases/0254.sparql>;
+   test:purpose "Checks to ensure that when @datatype=\"\" is used on an element that contains child nodes, that the literal that is generated is a plain literal.";
+   test:specificationReference "" .
+<test-cases/0255> dc:contributor "KANZAKI, Masahide";
+   dc:title "lang=\"\" clears language setting";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   test:classification test:required;
+   test:expectedResults "true"^^xsd:boolean;
+   rdfatest:hostLanguage "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0255.html>;
+   test:informationResourceResults <test-cases/0255.sparql>;
+   test:purpose "Checks to ensure that when lang=\"\" is used that any parent element language setting is cleared and a language-less literal is generated.";
+   test:specificationReference "" .
+<test-cases/0256> dc:contributor "Ivan Herman";
+   dc:title "lang and xml:lang on the same element";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0256.html>;
+   test:informationResourceResults <test-cases/0256.sparql>;
+   test:purpose "Tests @xml:lang and @lang on the same element with different values; @xml:lang should prevail.";
+   test:specificationReference "" .
+<test-cases/0257> dc:contributor "Manu Sporny";
+   dc:title "element with @property and no child nodes generates  empty plain literal (HTML5 version)";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage ""html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0257.html>;
+   test:informationResourceResults <test-cases/0257.sparql>;
+   test:purpose "Checks to make sure that an element with @property and no child nodes generates empty plain literal.";
+   test:specificationReference "" .
 
 
