@@ -8,7 +8,7 @@ Bundler.require(:default)
 require 'rack/cache'
 require 'crazyivan'
 
-set :environment, (ENV['RACK_ENV'] || 'development').to_sym
+set :environment, (ENV['RACK_ENV'] || 'production').to_sym
 
 if settings.environment == :production
   puts "Mode set to #{settings.environment.inspect}, logging to sinatra.log"
