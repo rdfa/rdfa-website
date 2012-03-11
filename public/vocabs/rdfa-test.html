@@ -23,11 +23,14 @@
 	</style>
   </head>
   <body about="http://www.w3.org/profile/rdfa-1.1"
-		prefix="rdfatest: http://rdfa.info/vocabs/rdfa-test# test: http://www.w3.org/2006/03/test-description#">
+		prefix="
+		  earl: http://www.w3.org/ns/earl#
+		  rdfatest: http://rdfa.info/vocabs/rdfa-test#
+		  test: http://www.w3.org/2006/03/test-description#">
     <div class="head">
       <p><a href="http://www.w3.org/"> <img alt="W3C" src="http://www.w3.org/Icons/w3c_home"
             height="48" width="72" /> </a> </p>
-      <h1 property="dcterms:title">RDFa Test Suite vocabulary</h1>
+      <h1 property="dc:title">RDFa Test Suite vocabulary</h1>
     </div>
     <section about="http://rdfa.info/vocabs/test" typeof="owl:Ontology">
       <h2>Introduction</h2>
@@ -39,6 +42,18 @@
       <dl>
         <dt>hostLanguage</dt><dd about="rdfatest:hostLanguage" typeof="owl:DatatypeProperty">
           <link property="rdfs:domain" href="test:TestCase"/>
+          Defines the
+          <span property="rdfs:range" resource="xsd:string">Host Languages</span>
+          for which this test is defined. Appropriate values include
+          <code>html4</code>,
+          <code>html5</code>,
+          <code>svg</code>,
+          <code>xhtml1</code>,
+          <code>xhtml5</code>, and
+          <code>xml1</code>.
+        </dd>
+        <dt>num</dt><dd about="rdfatest:num" typeof="owl:DatatypeProperty">
+          <link property="rdfs:domain" href="earl:TestCase"/>
           Defines the
           <span property="rdfs:range" resource="xsd:string">Host Languages</span>
           for which this test is defined. Appropriate values include

@@ -1,0 +1,99 @@
+-# This template is used for generating a rollup EARL report. It expects to be
+-# called with a single _tests_ local with the following structure
+-#
+-#  {
+-#    "@context": "http://rdfa.info/contexts/rdfa-earl.jsonld",
+-#    "@id": "http://rdfa.info/test-suite/",
+-#    "@type": "earl:Software",
+-#    "homepage": "http://rdfa.info/",
+-#    "name": "RDFa Test Suite",
+-#    "processor": [
+-#      {
+-#        "@id": "http://www.w3.org/2012/pyRdfa/extract?uri=",
+-#        "@type": "earl:TestSubject",
+-#        "name": "pyrdfa"
+-#      },
+-#      ...
+-#    ],
+-#    "rdfa1.1": {
+-#      "xml1": [
+-#        {
+-#          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml1/0249.xml",
+-#          "@type": "earl:TestCase",
+-#          "num": "0001",
+-#          "title": "Test 0001: Predicate establishment with @property",
+-#          "description": "Tests @property to establish the predicate; literal object is in the content of the element."
+-#          "mode": "earl:automatic",
+-#          "http://www.w3.org/2012/pyRdfa/extract?uri=": {
+-#            "@id": "http://rdfa.info/test-suite/test-details/rdfa1.1/xml1/0001?rdfa-extractor=http%3A//www.w3.org/2012/pyRdfa/extract%3Furi%3D",
+-#            "@type": "earl:Assertion",
+-#            "assertedBy": "http://rdfa.info/test-suite/",
+-#            "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml1/0249.xml",
+-#            "subject": "http://www.w3.org/2012/pyRdfa/extract?uri=",
+-#            "result": {
+-#              "@type": "earl:TestResult",
+-#              "outcome": "earl:pass"
+-#            },
+-#          }
+-#        },
+-#        ...
+-#      ],
+-#     "xhtml1": [...],
+-#     ...
+-#    }
+-#  }
+!!! 5
+%html{:lang => "en"}
+  - processors = tests['processor']
+  %head
+    %meta{"http-equiv" => "Content-Type", :content => "text/html;charset=utf-8"}
+    %title
+      EARL Report for RDFa 1.1
+  %body{:prefix => "earl: http://www.w3.org/ns/earl# doap: http://usefulinc.com/ns/doap# rdfatest: http://rdfa.info/vocabs/rdfa-test#"}
+    %section#abstract{:about => tests['@id'], :typeof => tests['@type']}
+      %p
+        This document reports processor conformance for [[!RDFA-CORE]] and related specifications
+        according to the requirements of the Evaluation and Report Language (EARL) 1.0 Schema [[!EARL]].
+      %p
+        This document describes
+        %span{:property => "doap:name"}<=tests['name']
+        running at
+        %a{:property => "doap:homepage", :href => tests['homepage']}<=tests['homepage']
+        = '.'
+    %section#sodt
+    %section{:property => "rdfatest:version/rdfa1.1", :typeof => ""}
+      %h1
+        Reports
+      %section
+        %h2
+          Processors
+        %p
+          This report was tested using the following processors:
+        %dl
+          - processors.each do |processor|
+            %dt{:about => processor['@id'], :typeof => processor['@type'], :property => "doap:name"}
+              = processor['name']
+            %dd
+              %a{:href => processor['@id']}=processor['@id']
+      - tests['rdfa1.1'].keys.each do |hostLanguage|
+        - test_cases = tests['rdfa1.1'][hostLanguage]
+        %section{:rel => "rdfatest:hostLanguage/#{hostLanguage}", :typeof => "", :inlist => true}
+          %h2<=hostLanguage
+          %table
+            %tr
+              %th
+                Test Number
+                - processors.each do |processor|
+                  %th
+                    %a{:href => processor['@id']}<=processor['name']
+            - test_cases.each do |test|
+              %tr{:typeof => test['@type'], :resource => test['@id']}
+              %td
+                %span{:property => 'rdfatest:num'}<= test['num']
+                %span{:property => 'dc:title'}<= test['title']
+                %span{:property => 'dc:description'}<= test['description']
+                %link{:property => 'earl:mode', :href => test['mode']}/ 
+              - processors.each do |processor|
+                - url = processor['@id']
+                - assertion = test[url]
+                %td{:class => assertion['result']['outcome'].split(':').last}<=processor['name']
