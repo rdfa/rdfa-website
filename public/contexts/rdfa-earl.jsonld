@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "dc":           "http://purl.org/dc/terms/",
+    "doap":         "http://usefulinc.com/ns/doap#",
+    "earl":         "http://www.w3.org/ns/earl#",
+    "rdfatest":     "http://rdfa.info/vocabs/rdfa-test#",
+    "assertedBy":   {"@id": "earl:assertedBy", "@datatype": "@id"},
+    "description":  {"@id": "dc:description"},
+    "html4":        {"@id": "rdfatest:hostLanguage/html4", "@container": "@list"},
+    "html5":        {"@id": "rdfatest:hostLanguage/html5", "@container": "@list"},
+    "mode":         {"@id": "earl:mode", "@datatype": "@id"},
+    "name":         {"@id": "doap:name"},
+    "num":          {"@id": "rdfatest:num"},
+    "outcome":      {"@id": "earl:outcome", "@datatype": "@id"},
+    "processor":    {"@id": "rdfatest:processor", "@collection": "@set"},
+    "rdfa1.0":      {"@id": "rdfatest:version/rdfa1.0", "@container": "@set"},
+    "rdfa1.1":      {"@id": "rdfatest:version/rdfa1.1", "@container": "@set"},
+    "rdfa1.1-vocab":{"@id": "rdfatest:version/rdfa1.1-vocab", "@container": "@set"},
+    "result":       {"@id": "earl:result"},
+    "subject":      {"@id": "earl:subject", "@datatype": "@id"},
+    "svg":          {"@id": "rdfatest:hostLanguage/svg", "@container": "@list"},
+    "test":         {"@id": "earl:test", "@datatype": "@id"},
+    "title":        {"@id": "dc:title"},
+    "xhtml1":       {"@id": "rdfatest:hostLanguage/xhtml1", "@container": "@list"},
+    "xhtml5":       {"@id": "rdfatest:hostLanguage/xhtml5", "@container": "@list"},
+    "xml1":         {"@id": "rdfatest:hostLanguage/xml1", "@container": "@list"}
+  }
+}
