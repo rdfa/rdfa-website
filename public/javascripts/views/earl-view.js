@@ -2,7 +2,7 @@ var EarlItemView = Backbone.View.extend({
   template: _.template($('#earl-item-template').html()),
 
   attributes: {
-    "typeof": "earl:Assertion" 
+    "typeof": "earl:TestCase" 
   },
 
   initialize: function() {
@@ -16,8 +16,10 @@ var EarlItemView = Backbone.View.extend({
     }, this.model.toJSON());
 
     this.$el.html(this.template(JSON));
-    this.$el.attr("about", this.model.detailsURL());
-    this.$(".resource.processorURL").attr("resource", this.model.processorURL());
+    this.$el.attr("resource", this.model.docURL());
+    this.$(".property.processorURL").attr("property", JSON.processorURL);
+    this.$(".resource.processorURL").attr("resource", JSON.processorURL);
+    this.$(".resource.detailsURL").attr("resource", this.model.detailsURL());
     this.$(".resource.docURL").attr("resource", this.model.docURL());
     this.$(".resource.outcome").attr("resource", 'earl:' + this.model.get('result').toLowerCase());
     return this;
@@ -32,13 +34,14 @@ window.EarlView = Backbone.View.extend({
     var JSON = this.model.version.toJSON();
 
     this.$el.html(this.template(JSON));
-    this.$(".resource.processorURL").attr("resource", JSON.processorURL);
+    this.$(".rel.version").attr("rel", "rdfatest:version/" + JSON.version);
+    this.$(".rel.hostLanguage").attr("rel", "rdfatest:hostLanguage/" + JSON.hostLanguage);
     this.$(".href.processorURL").attr("href", JSON.processorURL);
 
     _.each(this.model.models, function (test) {
       if (test.get('result')) {
         var earlView = new EarlItemView({model: test});
-        that.$(">div").append(earlView.render().el);
+        that.$("#items").append(earlView.render().el);
       }
     });
     return this;

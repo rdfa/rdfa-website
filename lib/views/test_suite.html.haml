@@ -172,33 +172,38 @@
       <%= sparql_url %>
 
 %script#earl-report-template{:type => "text/template"}<
-  %div{:about => "http://rdfa.info/test-suite/", :typeof => "earl:Software", :prefix => "earl: http://www.w3.org/ns/earl# doap: http://usefulinc.com/ns/doap#"}
+  %div{:about => "http://rdfa.info/test-suite/", :typeof => "earl:Software", :prefix => "earl: http://www.w3.org/ns/earl# doap: http://usefulinc.com/ns/doap# rdfatest: http://rdfa.info/vocabs/rdfa-test#"}
     %h3
       %a{:rel => "doap:homepage", :property => "doap:name", :href => "http://rdfa.info/"}="RDFa Test Suite"
-    %p.resource.processorURL{:typeof=> "earl:TestSubject"}
+    %p
       Report on
-      %a.href.processorURL
+      %a.href.processorURL{:rel => "rdfatest:processor", :typeof=> "earl:TestSubject"}
         %span{:property => "doap:name"}<
           <%= processorName %>
-      running
-      %em<
-        <%= version %>
-      with host language
-      %em<
-        <%= hostLanguage %>
-      = "."
+        = "."
+    %div.rel.version{:typeof => ""}
+      RDFa Version <%= version %>.
+      %div.rel.hostLanguage#items{:inlist => true}
+        Host Language: <%= hostLanguage %>.
 
 %script#earl-item-template{:type => "text/template"}
-  %span{:property => "earl:assertedBy", :resource => ""}/
-  %span.resource.processorURL{:property => "earl:subject"}/
-  %div.resource.docURL{:rel => "earl:test", :typeof => "earl:TestCase"}
-    %h4
-      %span{:property => "dc:title"}<
-        Test <%= num %>: <%= description %>.
-      %span{:property => "earl:mode", :resource => "earl:automatic"}/
-    %p{:property => "dc:description"}<
-      <%= purpose %>.
-  %p{:property => "earl:result", :typeof => "earl:TestResult"}
-    Result:
-    %strong.resource.outcome{:property => "earl:outcome", :resource => ""}<
-      <%= result %>
+  %h4
+    [
+    %span{:property => "rdfatest:rdfaVersion"}><
+      <%= version %>
+    %span{:property => "rdfatest:hostLanguage"}<>
+      <%= hostLanguage %>
+    ]
+    %span{:property => "dc:title"}<
+      Test <%= num %>: <%= description %>
+    %span{:property => "earl:mode", :resource => "earl:automatic"}/
+  %p{:property => "dc:description"}<
+    <%= purpose %>
+  %div.property.processorURL.resource.detailsURL{:typeof => "earl:Assertion"}
+    %span{:property => "earl:assertedBy", :resource => ""}/
+    %span.resource.processorURL{:property => "earl:subject"}/
+    %span.resource.docURL{:rel => "earl:test"}/
+    %p{:property => "earl:result", :typeof => "earl:TestResult"}
+      Result:
+      %strong.resource.outcome{:property => "earl:outcome", :resource => ""}<
+        <%= result %>
