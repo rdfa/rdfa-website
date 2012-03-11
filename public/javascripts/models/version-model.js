@@ -1,14 +1,15 @@
 // Version, Host Language, and Processor URL
 window.Version = Backbone.Model.extend({
   defaults: {
-    processorURL: "http://www.w3.org/2012/pyRdfa/extract?uri=",
-    processorName: "pyrdfa"
+    processorURL: "http://rdf.greggkellogg.net/distiller?raw=true&in_fmt=rdfa&uri=",
+    processorName: "RDF.rb"
   },
 
   // List of processors
   processors: {
-    "pyrdfa": "http://www.w3.org/2012/pyRdfa/extract?uri=",
     "RDF.rb": "http://rdf.greggkellogg.net/distiller?raw=true&in_fmt=rdfa&uri=",
+    "pyrdfa": "http://www.w3.org/2012/pyRdfa/extract?uri=",
+    "librdfa": "http://rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py?uri=",
     "other":  ""
   },
   
