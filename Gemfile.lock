@@ -7,6 +7,16 @@ GIT
       rdf (>= 0.3.4)
 
 GIT
+  remote: git://github.com/gkellogg/rdf-rdfa.git
+  revision: 449f75f36d24575724cce83930f98ba3e7ebc91b
+  specs:
+    rdf-rdfa (0.3.9)
+      haml (>= 3.0.0)
+      htmlentities (>= 4.3.0)
+      rdf (>= 0.3.3)
+      rdf-xsd (>= 0.3.5)
+
+GIT
   remote: git://github.com/gkellogg/sinatra-respond_to.git
   revision: bba116582cc48622e6c4a824aeb803d47a117a18
   specs:
@@ -17,7 +27,6 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.2.7)
-    backports (2.3.0)
     builder (3.0.0)
     cssmin (1.0.2)
     equivalent-xml (0.2.9)
@@ -52,7 +61,7 @@ GEM
     rdf (0.3.5)
       addressable (>= 2.2.6)
     rdf-isomorphic (0.3.4)
-      rdf (>= 0.2.3)
+      rdf (>= 0.3.4)
     rdf-json (0.3.0)
       json_pure (>= 1.4.2)
       rdf (~> 0.3.0)
@@ -63,15 +72,9 @@ GEM
       rdf-xsd (>= 0.3.4)
     rdf-n3 (0.3.6)
       rdf (>= 0.3.4)
-    rdf-rdfa (0.3.9)
-      backports
-      haml (>= 3.0.0)
-      htmlentities (>= 4.3.0)
-      rdf (>= 0.3.3)
-      rdf-xsd (>= 0.3.5)
-    rdf-rdfxml (0.3.5)
-      nokogiri (>= 1.4.4)
+    rdf-rdfxml (0.3.6)
       rdf (>= 0.3.4)
+      rdf-xsd (>= 0.3.5)
     rdf-trig (0.1.1)
       rdf (>= 0.3.4)
       rdf-turtle (>= 0.1.1)
@@ -123,6 +126,7 @@ DEPENDENCIES
   linkeddata
   rack-cache
   rake
+  rdf-rdfa!
   shotgun
   sinatra
   sinatra-respond_to!
