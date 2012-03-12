@@ -1,6 +1,7 @@
 <head>
-  <title>Test</title>
+  <title>Blank-node as Predicate Test</title>
 </head>
 <body>
-<p xmlns:_="http://example.org/" property="_:test">Test</p>
+<p>Blank Nodes are not allowed to be predicate identifiers in RDF:</p>
+<p property="_:invalid">Test</p>
 </body>

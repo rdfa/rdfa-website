@@ -984,7 +984,7 @@ white   space
    test:purpose """Checks to make sure RDFa processors resolve the empty CURIE correctly. Note that this is not valid HTML due to recursive <p> elements.""";
    test:specificationReference "" .
 <test-cases/0122> dc:contributor "Manu Sporny";
-   dc:title "resource=\"[]\" does not set the object since RDFa does not allow non-prefixed CURIEs";
+   dc:title "resource=\"[]\" does not set the object";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
@@ -1027,8 +1027,8 @@ white   space
    test:informationResourceResults <test-cases/0134.sparql>;
    test:purpose "Ensures that mixed-case reserved words generate triples.";
    test:specificationReference "" .
-<test-cases/0140> dc:contributor "Philip Taylor";
-   dc:title "Underscore is not allowed in xmlns";
+<test-cases/0140> dc:contributor "Manu Sporny";
+   dc:title "Blank nodes identifiers are not allowed as predicates";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
@@ -1036,7 +1036,7 @@ white   space
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0140.html>;
    test:informationResourceResults <test-cases/0140.sparql>;
-   test:purpose "Ensures that a prefix cannot start with an underscore character when specified using xmlns.";
+   test:purpose "The RDF data model does not allow blank node identifiers in predicates. This test ensures that RDFa processors do not emit invalid triples.";
    test:specificationReference "" .
 <test-cases/0147> dc:contributor "Philip Taylor";
    dc:title "xmlns prefix 'xmlzzz' (reserved)";
@@ -1389,7 +1389,7 @@ white   space
    test:purpose "All documents have an implicit @about=\"\"";
    test:specificationReference "N.A." .
 <test-cases/0215> dc:contributor "Ivan Herman";
-   dc:title "Character encoding should work even in view of a large set of characters as attributes in the header";
+   dc:title "Character encoding detection with large header";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
@@ -1875,5 +1875,15 @@ white   space
    test:informationResourceResults <test-cases/0257.sparql>;
    test:purpose "Checks to make sure that an element with @property and no child nodes generates empty plain literal.";
    test:specificationReference "" .
-
+<test-cases/0258> dc:contributor "Philip Taylor";
+   dc:title "The underscore character is not allowed in xmlns";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   test:classification test:required;
+   test:expectedResults "false"^^xsd:boolean;
+   rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0258.html>;
+   test:informationResourceResults <test-cases/0258.sparql>;
+   test:purpose "Ensures that a prefix cannot start with an underscore character when specified using xmlns or prefix.";
+   test:specificationReference "" .
 
