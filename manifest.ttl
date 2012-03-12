@@ -984,7 +984,7 @@ white   space
    test:purpose """Checks to make sure RDFa processors resolve the empty CURIE correctly. Note that this is not valid HTML due to recursive <p> elements.""";
    test:specificationReference "" .
 <test-cases/0122> dc:contributor "Manu Sporny";
-   dc:title "resource=\"[]\" does not set the object since RDFa does not allow non-prefixed CURIEs";
+   dc:title "resource=\"[]\" does not set the object";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
@@ -1389,7 +1389,7 @@ white   space
    test:purpose "All documents have an implicit @about=\"\"";
    test:specificationReference "N.A." .
 <test-cases/0215> dc:contributor "Ivan Herman";
-   dc:title "Character encoding should work even in view of a large set of characters as attributes in the header";
+   dc:title "Character encoding detection with large header";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
