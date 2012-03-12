@@ -4,461 +4,207 @@ require 'sinatra'
 require 'sinatra/respond_to'
 require 'sinatra/sparql'
 require 'digest/sha1'
+require 'crazyivan/core'
 require 'crazyivan/extensions'
 
-module Sinatra
-  module SimpleAssets
-    class Assets
-      def paths_for(bundle)
-        bundle = @bundles[bundle]
-        return [] unless bundle
+module CrazyIvan
+  class Application < Sinatra::Base
+    include Core
 
-        #if @app.environment == :production
-        #  @hashes[bundle.hash_name] = bundle.name
-        #  [bundle.hashed_path]
-        #else
-          bundle.files
-        #end
+    configure do
+      set :app_name, "The RDFa Test Harness"
+      set :public_folder, File.expand_path('../../public',  __FILE__)
+      set :views, File.expand_path('../views',  __FILE__)
+
+      mime_type :sparql, "application/sparql-query"
+      mime_type :ttl, "text/turtle"
+
+      register Sinatra::RespondTo
+      register Sinatra::SPARQL
+      register Sinatra::SimpleAssets
+      assets do
+        css :application, [
+          '/stylesheets/bootstrap.css',
+          '/stylesheets/application.css'
+        ]
+        js :application, [
+          '/javascripts/underscore-1.3.1.js',
+          '/javascripts/backbone-0.9.1.js',
+          '/javascripts/bootstrap-2.0.1.js',
+          '/javascripts/bootstrap-alert.js',
+          '/javascripts/bootstrap-button.js',
+          '/javascripts/bootstrap-dropdown.js',
+          '/javascripts/bootstrap-modal.js',
+          '/javascripts/models/test-model.js',
+          '/javascripts/models/version-model.js',
+          '/javascripts/views/details-view.js',
+          '/javascripts/views/earl-view.js',
+          '/javascripts/views/host-language-view.js',
+          '/javascripts/views/processor-view.js',
+          '/javascripts/views/progress-view.js',
+          '/javascripts/views/run-all-view.js',
+          '/javascripts/views/source-view.js',
+          '/javascripts/views/test-view.js',
+          '/javascripts/views/version-view.js',
+          '/javascripts/application.js'
+        ]
       end
     end
-  end
-end
 
-class CrazyIvan < Sinatra::Base
-  HTMLRE = Regexp.new('([0-9]{4,4})\.xhtml')
-  TCPATHRE = Regexp.compile('\$TCPATH')
-  MANIFEST_FILE = File.expand_path("../../manifest.ttl", __FILE__)
-  MANIFEST_JSON = File.expand_path("../../manifest.jsonld", __FILE__)
-
-  configure do
-    set :app_name, "The RDFa Test Harness"
-    set :public_folder, File.expand_path('../../public',  __FILE__)
-    set :views, File.expand_path('../views',  __FILE__)
-
-    mime_type :sparql, "application/sparql-query"
-    mime_type :ttl, "text/turtle"
-
-    register Sinatra::RespondTo
-    register Sinatra::SPARQL
-    register Sinatra::SimpleAssets
-    assets do
-      css :application, [
-        '/stylesheets/bootstrap.css',
-        '/stylesheets/application.css'
-      ]
-      js :application, [
-        '/javascripts/underscore-1.3.1.js',
-        '/javascripts/backbone-0.9.1.js',
-        '/javascripts/bootstrap-2.0.1.js',
-        '/javascripts/bootstrap-alert.js',
-        '/javascripts/bootstrap-button.js',
-        '/javascripts/bootstrap-dropdown.js',
-        '/javascripts/bootstrap-modal.js',
-        '/javascripts/models/test-model.js',
-        '/javascripts/models/version-model.js',
-        '/javascripts/views/details-view.js',
-        '/javascripts/views/earl-view.js',
-        '/javascripts/views/host-language-view.js',
-        '/javascripts/views/processor-view.js',
-        '/javascripts/views/progress-view.js',
-        '/javascripts/views/run-all-view.js',
-        '/javascripts/views/source-view.js',
-        '/javascripts/views/test-view.js',
-        '/javascripts/views/version-view.js',
-        '/javascripts/application.js'
-      ]
+    before do
+      puts "[#{request.path_info}], #{params.inspect}, #{format}, #{request.accept.inspect}"
     end
-  end
 
-  before do
-    puts "[#{request.path_info}], #{params.inspect}, #{format}, #{request.accept.inspect}"
-  end
-
-  get '/test-suite' do
-    redirect '/test-suite/'
-  end
-
-  get '/test-suite/' do
-    cache_control :public, :must_revalidate, :max_age => 60
-    haml :test_suite
-  end
-
-  ##
-  # Return a representation of the manifest
-  # Format is determined by content-negotiation
-  #
-  # We consider JavaScript and JSON to just return JSON-LD
-  get '/test-suite/manifest' do
-    format :json if format == :js
-    settings.sparql_options.replace(
-      :standard_prefixes => true,
-      :prefixes => {
-        :test => "http://www.w3.org/2006/03/test-description#",
-        :rdfatest => "http://rdfa.info/vocabs/rdfa-test#", # FIXME: new name?
-      }
-    )
-    cache_control :public, :must_revalidate, :max_age => 60
-    etag Digest::SHA1.hexdigest manifest_ttl
-    respond_to do |wants|
-      wants.ttl { manifest_ttl }
-      wants.json { manifest_json }
-      wants.html { graph }
+    get '/test-suite' do
+      redirect '/test-suite/'
     end
-  end
 
-  ##
-  # Writes a test case document for the given URL.
-  get '/test-suite/test-cases/:version/:suite/:num' do
-    cache_control :public, :must_revalidate, :max_age => 60
-
-    begin
-      content = get_test_content(params[:version], params[:suite], params[:num], format.to_s);
-      etag Digest::SHA1.hexdigest(content)
-      content
-    rescue Exception => e
-      puts "error: #{e.message}\n#{e.backtrace.join("\n")}"
-      [404, "#{e.message}\n#{e.backtrace.join("\n")}"]
+    get '/test-suite/' do
+      cache_control :public, :must_revalidate, :max_age => 60
+      haml :test_suite
     end
-  end
 
-  ##
-  # Writes the test case alternatives for the given URL
-  get '/test-suite/test-cases/:num' do
-    format :json if format == :js
-    cache_control :public, :must_revalidate, :max_age => 60
-    etag Digest::SHA1.hexdigest(manifest_ttl + params[:num])
-
-    test_cases = get_test_alternates(params[:num])
-    respond_to do |wants|
-      wants.html do
-        haml :test_cases, :format => :html5, :locals => {:test_cases => test_cases, :num => params["num"]}
-      end
-      wants.json do
-        test_cases.to_json
-      end
-    end
-  end
-  
-  # Check a particular unit test
-  get '/test-suite/check-test/:version/:suite/:num' do
-    params["rdfa-extractor"] ||= "http://www.w3.org/2012/pyRdfa/extract?format=xml&uri="
-    params["expected-results"] ||= 'true'
-    expected_results = params["expected-results"] == 'true'
-    format :json if format == :js
-
-    begin
-      if perform_test_case(params[:version], params[:suite], params[:num], params["rdfa-extractor"], expected_results)
-        status = "PASS"
-        style = "text-decoration: underline; color: #090"
-      else
-        status = "FAIL"
-        style = "text-decoration: underline; font-weight: bold; color: #f00"
-      end
-    rescue Exception => e
-      puts "test failed with exception: #{e.class}: #{e.message}"
-      status = "FAIL"
-      style = "text-decoration: underline; font-weight: bold; color: #f00"
-    end
-    
-    locals = {
-      :num              => params[:num],
-      :doc_url          => get_test_url(params[:version], params[:suite], params[:num]),
-      :sparql_url       => get_test_url(params[:version], params[:suite], params[:num], 'sparql'),
-      :expected_results => params["expected-results"],
-      :status           => status,
-    }
-
-    respond_to do |wants|
-      wants.html do
-        haml :test_result, :locals => locals.merge(:style => style)
-      end
-      wants.json do
-        locals.to_json
-      end
-    end
-  end
-
-  get '/test-suite/test-details/:version/:suite/:num' do
-    params["rdfa-extractor"] ||= "http://www.w3.org/2012/pyRdfa/extract?uri="
-    format :json if format == :js
-    prefixes = {}
-
-    begin
-      locals = get_test_details(params[:version], params[:suite], params[:num])
-
-      respond_to do |wants|
-        wants.html do
-          haml :test_details, :format => :html5, :locals => locals
-        end
-        wants.json do
-          locals.to_json(::JSON::State.new(
-            :indent       => "  ",
-            :space        => " ",
-            :space_before => "",
-            :object_nl    => "\n",
-            :array_nl     => "\n"
-          ))
-        end
-      end
-    rescue Exception => e
-      puts "error: #{e.message}\n#{e.backtrace.join("\n")}"
-      [404, "#{e.message}\n#{e.backtrace.join("\n")}"]
-    end
-  end
-
-  # These endpoints are here mostly for testing, where Apache will not automatically load
-  # the index.html files.
-  get('/')      { redirect to '/index.html'}
-  get('/play/') { redirect to '/play/index.html'}
-  get('/dev/')  { redirect to '/dev/index.html'}
-  get('/docs/') { redirect to '/docs/index.html'}
-  get('/tools/'){ redirect to '/tools/index.html'}
-
-  get '/vocabs/rdfa-test' do
-    redirect to('/vocabs/rdfa-test.html')
-  end
-
-  # Deployment, triggered as a post-receive hook from Github
-  # Called with a parameter :payload, which we just ignore
-  post '/admin/deploy' do
-    puts "deploy application"
-    Dir.chdir(File.expand_path("../..", __FILE__))
-    system(File.expand_path("../../deploy/after_push", __FILE__))
-  end
-
-  protected
-  ##
-  # Return the Manifest source
-  def manifest_ttl
-    @manifest_ttl = File.read(MANIFEST_FILE)
-  end
-
-  ##
-  # Return the Manifest source
-  def manifest_json
-    unless File.exist?(MANIFEST_JSON) && File.mtime(MANIFEST_JSON) >= File.mtime(MANIFEST_FILE)
-      ::JSON::LD::Writer.open(MANIFEST_JSON,
+    ##
+    # Return a representation of the manifest
+    # Format is determined by content-negotiation
+    #
+    # We consider JavaScript and JSON to just return JSON-LD
+    get '/test-suite/manifest' do
+      format :json if format == :js
+      settings.sparql_options.replace(
         :standard_prefixes => true,
         :prefixes => {
           :test => "http://www.w3.org/2006/03/test-description#",
           :rdfatest => "http://rdfa.info/vocabs/rdfa-test#", # FIXME: new name?
-        }) {|w| w << graph}
-    end
-    @manifest_json = File.read(MANIFEST_JSON)
-  end
-
-  ##
-  # Return Manifest graph
-  def graph
-    @graph ||= RDF::Graph.load(MANIFEST_FILE, :format => :turtle, :base_uri => url("test-suite/manifest.ttl"))
-  end
-
-  ##
-  # Return the document URL for a test or SPARQL
-  #
-  # @param [String] version "rdfa1.1" or other
-  # @param [String] suite "xhtml1", "html5" ...
-  # @param [String] num "0001" or greater
-  # @param [String] format
-  #   "sparql", "xhtml", "xml", "html", "svg", or
-  #   auto-detects from suite
-  # @return [String]
-  def get_test_url(version, suite, num, suffix = nil)
-    suffix ||= case suite
-    when /xhtml/  then "xhtml"
-    when /html/   then "html"
-    when /svg/    then "svg"
-    else               "xml"
-    end
-
-    url("/test-suite/test-cases/#{version}/#{suite}/#{num}.#{suffix}").
-      sub(/localhost:\d+/, 'rdfainfo.digitalbazaar.com') # For local testing
-  end
-
-  ##
-  # Get the content for a test
-  #
-  # @param [String] version "xhtml1", "html5" ...
-  # @param [String] suite "rdfa1.1" or other
-  # @param [String] num "0001" or greater
-  # @param [String] format "sparql", nil
-  # @return [{:namespaces => {}, :content => String, :suite => String, :version => String}]
-  #   Serialized document and namespaces
-  def get_test_content(version, suite, num, format = nil)
-    suffix = case suite
-    when /xhtml/  then "xhtml"
-    when /html/   then "html"
-    when /svg/    then "svg"
-    else               "xml"
-    end
-
-    filename = File.expand_path("../../tests/#{num}.#{format == 'sparql' ? 'sparql' : 'txt'}", __FILE__)
-    tcpath = url("/test-suite/test-cases/#{version}/#{suite}").
-      sub(/localhost:\d+/, 'rdfainfo.digitalbazaar.com') # For local testing
-
-    # Read in the file, extracting namespaces
-    found_head = format == 'sparql'
-    namespaces = []
-    content = File.readlines(filename).map do |line|
-      case line
-      when %r(<head)
-        found_head ||= true
-      end
-      
-      if found_head
-        line
-      else
-        found_head = !!line.match(%r(http://www.w3.org/2000/svg))
-        namespaces << line.strip
-        nil
-      end
-    end.compact.join("")
-    
-    namespaces = namespaces.join("\n")
-    namespaces = ' ' + namespaces unless namespaces.empty?
-    content.gsub!(HTMLRE, "\\1.#{suffix}")
-    content.gsub!(TCPATHRE, tcpath)
-
-    case format || suffix
-    when 'sparql'
-      content
-    when 'html'
-      if suite == 'html4'
-        %(<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa11-1.dtd">\n) +
-        %(<html version="XHTML+RDFa 1.1"#{namespaces}>\n)
-      else
-        "<!DOCTYPE html>\n" +
-        %(<html#{namespaces}>\n)
-      end +
-      content +
-      "</html>"
-    when 'xml'
-      %(<?xml version="1.0" encoding="UTF-8"?>\n<root#{namespaces}>\n) +
-      content +
-      "</root>"
-    when 'svg'
-      %(<?xml version="1.0" encoding="UTF-8"?>\n<svg#{namespaces}>\n) +
-      content +
-      "</svg>"
-    when 'xhtml'
-      %(<?xml version="1.0" encoding="UTF-8"?>\n) +
-      if suite == 'xhtml1' && version == 'rdfa1.0'
-        %(<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">\n) +
-        %(<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.0"#{namespaces}>\n)
-      elsif suite == 'xhtml1'
-        %(<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd">\n) +
-        %(<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1"#{namespaces}>\n)
-      else
-        %(<!DOCTYPE html>\n<html#{namespaces}>\n)
-      end +
-      content +
-      "</html>"
-    else
-      raise "unknown format #{(format || suffix).inspect}"
-    end
-  end
-
-  ##
-  # Return test details, including doc text, sparql, and extracted results
-  #
-  # @param [String] version "rdfa1.1" or other
-  # @param [String] suite "xhtml1", "html5" ...
-  # @param [String] num "0001" or greater
-  # @return [{Symbol => Object}]
-  #   Serialized documents and URIs
-  def get_test_details(version, suite, num)
-    doc_url = get_test_url(version, suite, num)
-    puts "doc_url: #{doc_url}"
-
-    # Short cut document text
-    prefixes = {}
-    doc_text = get_test_content(version, suite, num)
-    doc_graph = RDF::Graph.new << RDF::RDFa::Reader.new(doc_text, :format => :rdfa, :prefixes => prefixes)
-
-    # Turtle version of default graph
-    ttl_text = doc_graph.dump(:turtle, :prefixes => prefixes, :base_uri => doc_url)
-    sparql_url = get_test_url(version, suite, num, 'sparql')
-    sparql_text = get_test_content(version, suite, num, 'sparql')
-
-    # Extracted version of default graph
-    extract_url = ::URI.decode(params["rdfa-extractor"]) + ::URI.encode(doc_url)
-    begin
-      extracted_text = RDF::Util::File.open_file(extract_url).read
-    rescue Exception => e
-      puts "error extracting text: #{e.class}: #{e.message}"
-      extracted_text = e.message
-    end
-
-    {
-      :num            => params[:num],
-      :doc_text       => doc_text,
-      :doc_url        => doc_url,
-      :ttl_text       => ttl_text,
-      :extracted_text => extracted_text,
-      :extract_url    => extract_url,
-      :sparql_text    => sparql_text,
-      :sparql_url     => sparql_url
-    }
-  end
-
-  ##
-  # Retrieves all variations of a particular test case from the given test suite manifest URL
-  #
-  # @param [String, RDF::URI] base_uri the base URL for the test cases
-  # @param [String] num
-  #   Test case number.
-  # @return [Array<{Symbol => String}>]
-  #   a list containing all of the filtered test cases including
-  #          unit test number, title, Host Language URL, and SPARQL URL.
-  def get_test_alternates(num)
-    tests = ::JSON.load(manifest_json)['@id']
-    test = tests.detect {|t| t['@id'] == "http://rdfa.info/test-suite/test-cases/#{num}"}
-    
-    entries = []
-    [test["rdfatest:hostLanguage"]].flatten.each do |host_language|
-      suffix = case host_language.to_s
-      when /xhtml/  then "xhtml"
-      when /html/   then "html"
-      when /svg/    then "svg"
-      else               "xml"
-      end
-      [test["rdfatest:rdfaVersion"]].flatten.each do |version|
-        entries << {
-          :num => num,
-          :doc_uri => get_test_url(version, host_language, num, suffix),
-          :suite_version => "#{host_language}+#{version}"
         }
+      )
+      cache_control :public, :must_revalidate, :max_age => 60
+      etag Digest::SHA1.hexdigest manifest_ttl
+      respond_to do |wants|
+        wants.ttl { manifest_ttl }
+        wants.json { manifest_json }
+        wants.html { graph }
       end
     end
-    puts "entries: #{entries.inspect}"
-    entries
-  rescue
-    puts "error: #{$!.inspect}"
-  end
 
-  ##
-  # Performs a given unit test given the RDF extractor URL, sparql engine URL,
-  # HTML file and SPARQL validation file.
-  #
-  # @param [String] version "rdfa1.1" or other
-  # @param [String] suite "xhtml1", "html5" ...
-  # @param [String] num "0001" or greater
-  # @param [RDF::URI, String] extract_url The RDF extractor web service.
-  # @param [Boolean] expected_results `true` or `false`
-  # @return [Boolean] pass or fail
-  def perform_test_case(version, suite, num, extract_url, expected_results)
-    # Build the RDF extractor URL
-    extract_url = ::URI.decode(extract_url) + get_test_url(version, suite, num)
+    ##
+    # Writes a test case document for the given URL.
+    get '/test-suite/test-cases/:version/:suite/:num' do
+      cache_control :public, :must_revalidate, :max_age => 60
 
-    # Get the SPARQL query
-    sparql_query = get_test_content(version, suite, num, 'sparql').
-      sub("ASK WHERE", "ASK FROM <#{extract_url}> WHERE")
+      begin
+        content = get_test_content(params[:version], params[:suite], params[:num], format.to_s);
+        etag Digest::SHA1.hexdigest(content)
+        content
+      rescue Exception => e
+        puts "error: #{e.message}\n#{e.backtrace.join("\n")}"
+        [404, "#{e.message}\n#{e.backtrace.join("\n")}"]
+      end
+    end
 
-    puts "sparql_query: #{sparql_query}"
+    ##
+    # Writes the test case alternatives for the given URL
+    get '/test-suite/test-cases/:num' do
+      format :json if format == :js
+      cache_control :public, :must_revalidate, :max_age => 60
+      etag Digest::SHA1.hexdigest(manifest_ttl + params[:num])
 
-    # Perform the SPARQL query
-    result = SPARQL.execute(StringIO.new(sparql_query), nil)
-    puts "result: #{result.inspect}, expected: #{expected_results.inspect} == #{(result == expected_results).inspect}"
-    result == expected_results
+      test_cases = get_test_alternates(params[:num])
+      respond_to do |wants|
+        wants.html do
+          haml :test_cases, :format => :html5, :locals => {:test_cases => test_cases, :num => params["num"]}
+        end
+        wants.json do
+          test_cases.to_json
+        end
+      end
+    end
+  
+    # Check a particular unit test
+    get '/test-suite/check-test/:version/:suite/:num' do
+      params["rdfa-extractor"] ||= "http://www.w3.org/2012/pyRdfa/extract?format=xml&uri="
+      params["expected-results"] ||= 'true'
+      expected_results = params["expected-results"] == 'true'
+      format :json if format == :js
+
+      begin
+        if perform_test_case(params[:version], params[:suite], params[:num], params["rdfa-extractor"], expected_results)
+          status = "PASS"
+          style = "text-decoration: underline; color: #090"
+        else
+          status = "FAIL"
+          style = "text-decoration: underline; font-weight: bold; color: #f00"
+        end
+      rescue Exception => e
+        puts "test failed with exception: #{e.class}: #{e.message}"
+        status = "FAIL"
+        style = "text-decoration: underline; font-weight: bold; color: #f00"
+      end
+    
+      locals = {
+        :num              => params[:num],
+        :doc_url          => get_test_url(params[:version], params[:suite], params[:num]),
+        :sparql_url       => get_test_url(params[:version], params[:suite], params[:num], 'sparql'),
+        :expected_results => params["expected-results"],
+        :status           => status,
+      }
+
+      respond_to do |wants|
+        wants.html do
+          haml :test_result, :locals => locals.merge(:style => style)
+        end
+        wants.json do
+          locals.to_json
+        end
+      end
+    end
+
+    get '/test-suite/test-details/:version/:suite/:num' do
+      params["rdfa-extractor"] ||= "http://www.w3.org/2012/pyRdfa/extract?uri="
+      format :json if format == :js
+      prefixes = {}
+
+      begin
+        locals = get_test_details(params[:version], params[:suite], params[:num])
+
+        respond_to do |wants|
+          wants.html do
+            haml :test_details, :format => :html5, :locals => locals
+          end
+          wants.json do
+            locals.to_json(::JSON::State.new(
+              :indent       => "  ",
+              :space        => " ",
+              :space_before => "",
+              :object_nl    => "\n",
+              :array_nl     => "\n"
+            ))
+          end
+        end
+      rescue Exception => e
+        puts "error: #{e.message}\n#{e.backtrace.join("\n")}"
+        [404, "#{e.message}\n#{e.backtrace.join("\n")}"]
+      end
+    end
+
+    # These endpoints are here mostly for testing, where Apache will not automatically load
+    # the index.html files.
+    get('/')      { redirect to '/index.html'}
+    get('/play/') { redirect to '/play/index.html'}
+    get('/dev/')  { redirect to '/dev/index.html'}
+    get('/docs/') { redirect to '/docs/index.html'}
+    get('/tools/'){ redirect to '/tools/index.html'}
+
+    get '/vocabs/rdfa-test' do
+      redirect to('/vocabs/rdfa-test.html')
+    end
+
+    # Deployment, triggered as a post-receive hook from Github
+    # Called with a parameter :payload, which we just ignore
+    post '/admin/deploy' do
+      puts "deploy application"
+      Dir.chdir(File.expand_path("../..", __FILE__))
+      system(File.expand_path("../../deploy/after_push", __FILE__))
+    end
   end
 end

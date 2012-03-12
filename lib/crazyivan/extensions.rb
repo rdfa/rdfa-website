@@ -63,3 +63,22 @@ module RDF::Util
     end
   end
 end
+
+module Sinatra
+  module SimpleAssets
+    class Assets
+      def paths_for(bundle)
+        bundle = @bundles[bundle]
+        return [] unless bundle
+
+        #if @app.environment == :production
+        #  @hashes[bundle.hash_name] = bundle.name
+        #  [bundle.hashed_path]
+        #else
+          bundle.files
+        #end
+      end
+    end
+  end
+end
+

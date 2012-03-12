@@ -26,4 +26,4 @@ use Rack::Cache,
 
 disable :run, :reload
 
-run CrazyIvan
+run CrazyIvan::Application
