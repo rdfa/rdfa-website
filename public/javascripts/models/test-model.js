@@ -164,19 +164,7 @@ window.TestCollection = Backbone.Collection.extend({
   parse: function(response) {
     var that = this;
 
-    this.loadedData = _.map(response['@id'], function(data) {
-      // Map to native fields we're interested in
-      return {
-        classification: (data['test:classification'] || 'required').split(':').pop(),
-        description: data['dc:title'],
-        expectedResults: (data['test:expectedResults'] === undefined ? true : data['test:expectedResults']),
-        hostLanguages: _.flatten([data['rdfatest:hostLanguage']]),
-        num: _.last(data['@id'].split('/')),
-        purpose: data['test:purpose'],
-        queryParam: data['rdfatest:queryParam'],
-        versions: _.flatten([data['rdfatest:rdfaVersion']])
-      };
-    });
+    this.loadedData = response['@graph'];
     
     // Don't return anything on parse, that is done through filtering
     return this.filter();

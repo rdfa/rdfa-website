@@ -15,10 +15,18 @@ namespace :assets do
   
   desc 'Clear precompiled assets'
   task :clear do
+    FileUtils.rm_rf File.expand_path("../manifest.jsonld", __FILE__)
     Dir.glob('./public/*/application-*.{js,css}').each do |f|
       FileUtils.rm f
     end
   end
+end
+
+desc 'Generate manifest.json'
+task :manifest=> :environment do
+  require 'crazyivan/core'
+  FileUtils.rm_rf File.expand_path("../manifest.jsonld", __FILE__)
+  CrazyIvan::StandAlone.new.send(:manifest_json)
 end
 
 namespace :earl do

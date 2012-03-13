@@ -29,6 +29,9 @@ if File.file? 'Rakefile'
 #  changed_assets = `git diff #{oldrev} #{newrev} --name-only -z app/assets`.split("\0")
 #  tasks << "assets:precompile" if changed_assets.size > 0
 
+  # Update manifest (if necessary)
+  tasks << "manifest"
+
   # clean Rack cache
   tasks << "cache:clear"
   

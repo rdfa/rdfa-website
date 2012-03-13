@@ -12,6 +12,45 @@ module CrazyIvan
     MANIFEST_FILE = File.expand_path("../../../manifest.ttl", __FILE__)
     MANIFEST_JSON = File.expand_path("../../../manifest.jsonld", __FILE__)
 
+    TESTS_QUERY = %(
+      PREFIX dc: <http://purl.org/dc/terms/>
+      PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+      PREFIX owl: <http://www.w3.org/2002/07/owl#>
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX test: <http://www.w3.org/2006/03/test-description#>
+      PREFIX rdfatest: <http://rdfa.info/vocabs/rdfa-test#>
+      PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+      SELECT ?id
+             ?classification
+             ?contributor
+             ?description
+             ?expectedResults
+             ?hostLanguage
+             ?input
+             ?purpose
+             ?queryParam
+             ?reference
+             ?results
+             ?version
+      WHERE {
+        ?id dc:contributor ?contributor;
+           dc:title ?description;
+           a test:TestCase;
+           rdfatest:rdfaVersion ?version;
+           rdfatest:hostLanguage ?hostLanguage;
+           test:informationResourceInput ?input;
+           test:informationResourceResults ?results;
+           test:purpose ?purpose;
+           test:specificationReference ?reference .
+        OPTIONAL { ?id test:classification ?classification . }
+        OPTIONAL { ?id test:expectedResults ?expectedResults . }
+        OPTIONAL { ?id rdfatest:queryParam ?queryParam . }
+      }
+      ORDER BY ?id ?version ?hostLanguage
+    ).freeze
+
     ##
     # Return the Manifest source
     def manifest_ttl
@@ -21,14 +60,43 @@ module CrazyIvan
 
     ##
     # Return the Manifest source
+    #
+    # Generate a JSON-LD compatible with framing in /frames/rdfa-test.jsonld
+    # and /contexts/rdfa-test.jsonld
     def manifest_json
       unless File.exist?(MANIFEST_JSON) && File.mtime(MANIFEST_JSON) >= File.mtime(MANIFEST_FILE)
-        ::JSON::LD::Writer.open(MANIFEST_JSON,
-          :standard_prefixes => true,
-          :prefixes => {
-            :test => "http://www.w3.org/2006/03/test-description#",
-            :rdfatest => "http://rdfa.info/vocabs/rdfa-test#", # FIXME: new name?
-          }) {|w| w << graph}
+        hash = Hash.ordered
+        hash["@context"] = "http://rdfa.info/contexts/rdfa-test.jsonld"
+        hash['@graph'] = []
+
+        SPARQL.execute(TESTS_QUERY, graph).each do |tc|
+          tc_hash = hash['@graph'].last
+          unless tc_hash && tc_hash['@id'] == tc[:id]
+            tc_hash = Hash.ordered
+            tc_hash['@id'] = tc[:id].to_s
+            tc_hash['@type'] = 'test:TestCase'
+            tc[:num] = tc_hash['@id'].split('/').last.split('.').first
+            tc[:classification] ||= 'http://www.w3.org/2006/03/test-description#required'
+            %w(num classification contribuor description input purpose queryParam reference results).each do |prop|
+              tc_hash[prop] = tc[prop.to_sym].to_s unless tc[prop.to_sym].nil?
+            end
+            tc_hash['expectedResults'] = tc[:expectedResults].nil? ? true : !!tc[:expectedResults]
+            tc_hash['hostLanguages'] = []
+            tc_hash['versions'] = []
+            hash['@graph'] << tc_hash
+          end
+          tc_hash['hostLanguages'] << tc[:hostLanguage].to_s unless tc_hash['hostLanguages'].include?(tc[:hostLanguage].to_s)
+          tc_hash['versions'] << tc[:version].to_s unless tc_hash['versions'].include?(tc[:version].to_s)
+        end
+
+        json = hash.to_json(::JSON::State.new(
+          :indent       => "  ",
+          :space        => " ",
+          :space_before => "",
+          :object_nl    => "\n",
+          :array_nl     => "\n"
+        ))
+        File.open(MANIFEST_JSON, "w") {|f| f.write(json)}
       end
       @manifest_json = File.read(MANIFEST_JSON)
     end
@@ -37,7 +105,7 @@ module CrazyIvan
     ##
     # Return Manifest graph
     def graph
-      @graph ||= RDF::Graph.load(MANIFEST_FILE, :format => :turtle, :base_uri => url("test-suite/manifest.ttl"))
+      @graph ||= RDF::Graph.load(MANIFEST_FILE, :format => :turtle, :base_uri => url("/test-suite/manifest.ttl"))
     end
     module_function :graph
 
@@ -254,5 +322,15 @@ module CrazyIvan
       result == expected_results
     end
     module_function :perform_test_case
+  end
+  
+  ##
+  # Standalone environment for core functions
+  class StandAlone
+    include Core
+    
+    def url(offset)
+      "http://rdfa.info/test-suite#{offset}"
+    end
   end
 end
