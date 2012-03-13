@@ -49,6 +49,78 @@
     %meta{"http-equiv" => "Content-Type", :content => "text/html;charset=utf-8"}
     %title
       EARL Report for RDFa 1.1
+    %script.remove{:type => "text/javascript", :src => "http://dev.w3.org/2009/dap/ReSpec.js/js/respec.js"}
+    :javascript
+      var respecConfig = {
+          // specification status (e.g. WD, LCWD, NOTE, etc.). If in doubt use ED.
+          specStatus:           "unofficial",
+          //publishDate:          "2010-04-29",
+          copyrightStart:       "2010",
+
+          // the specification's short name, as in http://www.w3.org/TR/short-name/
+          shortName:            "rdfa-earl",
+          subtitle:             "EARL Report for RDFa 1.1",
+          // if you wish the publication date to be other than today, set this
+          // publishDate:  "2009-08-06",
+
+          // if there is a previously published draft, uncomment this and set its YYYY-MM-DD date
+          // and its maturity status
+          //previousPublishDate:  "2011-10-23",
+          //previousMaturity:     "ED",
+          //previousDiffURI:      "http://json-ld.org/spec/ED/json-ld-syntax/20111023/index.html",
+          //diffTool:             "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
+
+          // if there a publicly available Editor's Draft, this is the link
+          edDraftURI:           "http://rdfa.info/earl-reports/earl.html",
+
+          // if this is a LCWD, uncomment and set the end of its review period
+          // lcEnd: "2009-08-05",
+
+          // if you want to have extra CSS, append them to this list
+          // it is recommended that the respec.css stylesheet be kept
+          extraCSS:             [
+              "http://dev.w3.org/2009/dap/ReSpec.js/css/respec.css"
+          ],
+
+          // editors, add as many as you like
+          // only "name" is required
+          editors:  [
+              { name: "Gregg Kellogg", url: "http://greggkellogg.net/",
+                company: "Kellogg Associates", companyURL: "http://kellogg-assoc.com/" },
+          ],
+
+          // authors, add as many as you like.
+          // This is optional, uncomment if you have authors as well as editors.
+          // only "name" is required. Same format as editors.
+          authors:  [
+              { name: "Manu Sporny", url: "http://digitalbazaar.com/",
+                company: "Digital Bazaar", companyURL: "http://digitalbazaar.com/" },
+              { name: "Gregg Kellogg", url: "http://greggkellogg.net/",
+                company: "Kellogg Associates", companyURL: "http://kellogg-assoc.com/" },
+              { name: "Gregg Kellogg", url: "http://greggkellogg.net/",
+                company: "Kellogg Associates", companyURL: "http://kellogg-assoc.com/" },
+              { name: "Iván Herman", url: "http://www.w3.org/People/Ivan/",
+                company: "W3C", companyURL: "http://www.w3.org" }
+          ],
+
+          // name of the WG
+          wg:           "Linking Data in JSON Community Group",
+
+          // URI of the public WG page
+          wgURI:        "http://json-ld.org/",
+
+          // name (with the @w3c.org) of the public mailing to which comments are due
+          wgPublicList: "public-linked-json@w3c.org",
+
+          // URI of the patent status for this WG, for Rec-track documents
+          // !!!! IMPORTANT !!!!
+          // This is important for Rec-track documents, do not copy a patent URI from a random
+          // document unless you know what you're doing. If in doubt ask your friendly neighbourhood
+          // Team Contact.
+          wgPatentURI:  "",
+          maxTocLevel: 4,
+          //alternateFormats: [ {uri: "diff-20120112.html", label: "diff to previous version"} ],
+      };
     :css
       span[property='dc:title'], span[property='dc:description'] { display: none; }
       td.PASS { color: green; }
@@ -103,31 +175,38 @@
               = processor['name']
             %dd
               %a{:href => processor['@id']}=processor['@id']
-      - tests['rdfa1.1'].keys.each do |hostLanguage|
-        - test_cases = tests['rdfa1.1'][hostLanguage]
-        %section{:rel => "rdfatest:hostLanguage/#{hostLanguage}", :typeof => "", :inlist => true}
-          %h2<=hostLanguage
-          %table.report
-            %tr
-              %th
-                Test Number
-                - processors.each do |processor|
+      - %w(rdfa1.0 rdfa1.1 rdfa1.1-vocab).each do |version|
+        - next unless tests.has_key?(version)
+        %section{:rel => "rdfatest:version/#{version}", :typeof => "rdfatest:Version"}
+          %h2<=version
+          - tests[version].keys.sort.each do |hostLanguage|
+            - test_cases = tests[version][hostLanguage]
+            - next unless test_cases.is_a?(Array)
+            %section{:rel => "rdfatest:hostLanguage/#{hostLanguage}", :typeof => "", :inlist => true}
+              %h2<=hostLanguage
+              %table.report
+                %tr
                   %th
-                    %a{:href => processor['@id']}<=processor['name']
-            - test_cases.each do |test|
-              %tr{:typeof => test['@type'], :resource => test['@id']}
-                %td
-                  %span{:property => 'rdfatest:num'}<= test['num']
-                  %span{:property => 'dc:title'}<= test['title']
-                  %span{:property => 'dc:description'}<= test['description']
-                  %link{:property => 'earl:mode', :href => test['mode']}/ 
-                - processors.each do |processor|
-                  - url = processor['@id']
-                  - assertion = test[url]
-                  - pass_fail = assertion['result']['outcome'].split(':').last.upcase
-                  %td{:class => pass_fail, :typeof => assertion['@type']}
-                    %link{:property => "earl:assertedBy", :href => assertion['assertedBy']}
-                    %link{:property => "earl:test", :href => assertion['test']}
-                    %link{:property => "earl:subject", :href => assertion['subject']}
-                    %span{:property => "earl:result", :typeof => assertion['result']['@type'], :resource => assertion['result']['outcome']}
-                      = pass_fail
+                    Test Number
+                    - processors.each do |processor|
+                      - next unless test_cases.first.has_key?(processor['@id'])
+                      %th
+                        %a{:href => processor['@id']}<=processor['name']
+                - test_cases.each do |test|
+                  %tr{:typeof => test['@type'], :resource => test['@id']}
+                    %td
+                      %span{:property => 'rdfatest:num'}<= test['num']
+                      %span{:property => 'dc:title'}<= test['title']
+                      %span{:property => 'dc:description'}<= test['description']
+                      %link{:property => 'earl:mode', :href => test['mode']}/ 
+                    - processors.each do |processor|
+                      - url = processor['@id']
+                      - next unless test.has_key?(url)
+                      - assertion = test[url]
+                      - pass_fail = assertion['result']['outcome'].split(':').last.upcase
+                      %td{:class => pass_fail, :typeof => assertion['@type']}
+                        %link{:property => "earl:assertedBy", :href => assertion['assertedBy']}
+                        %link{:property => "earl:test", :href => assertion['test']}
+                        %link{:property => "earl:subject", :href => assertion['subject']}
+                        %span{:property => "earl:result", :typeof => assertion['result']['@type'], :resource => assertion['result']['outcome']}
+                          = pass_fail

@@ -87,7 +87,7 @@ class EARL
         processor["@id"] = solution[:uri].to_s
         processor["@type"] = "earl:TestSubject"
         processor["name"] = solution[:name].to_s
-        hash[:processor] << processor
+        hash[:processor] << processor unless hash[:processor].include?(processor)
       end
       
       # Collect results
@@ -101,6 +101,7 @@ class EARL
         if version_stmt.predicate.to_s.index(RDFATEST["version/"]) == 0
           # This is a version predicate, it includes hostLanguage predicates
           version = Hash.ordered
+          version['@type'] = "rdfatest:Version"
           vers = version_stmt.predicate.to_s.sub(RDFATEST["version/"].to_s, '')
           hash[vers] = version
           

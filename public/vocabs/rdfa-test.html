@@ -38,46 +38,131 @@
         <a href="http://rdfa.info/test-suite/manifest.ttl">RDFa Test Suite manifest</a>.</p>
     </section>
     <section>
-      <h2>Property definitions</h2>
+      <h2>Test Property definitions</h2>
       <dl>
         <dt>hostLanguage</dt><dd about="rdfatest:hostLanguage" typeof="owl:DatatypeProperty">
-          <link property="rdfs:domain" href="test:TestCase"/>
-          Defines the
-          <span property="rdfs:range" resource="xsd:string">Host Languages</span>
-          for which this test is defined. Appropriate values include
-          <code>html4</code>,
-          <code>html5</code>,
-          <code>svg</code>,
-          <code>xhtml1</code>,
-          <code>xhtml5</code>, and
-          <code>xml</code>.
+          <link property="rdfs:domain" resource="rdfatest:TestCase"/>
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          <span property="rdfs:comment">
+            Defines the
+            <span rel="rdfs:range" resource="xsd:string" property="rdfs:label">Host Language</span>s
+            for which this test is defined. Appropriate values include
+            <code>html4</code>,
+            <code>html5</code>,
+            <code>svg</code>,
+            <code>xhtml1</code>,
+            <code>xhtml5</code>, and
+            <code>xml</code>.
+          </span>
         </dd>
         <dt>num</dt><dd about="rdfatest:num" typeof="owl:DatatypeProperty">
-          <link property="rdfs:domain" href="earl:TestCase"/>
-          Defines the
-          <span property="rdfs:range" resource="xsd:string">Host Languages</span>
-          for which this test is defined. Appropriate values include
-          <code>html4</code>,
-          <code>html5</code>,
-          <code>svg</code>,
-          <code>xhtml1</code>,
-          <code>xhtml5</code>, and
-          <code>xml</code>.
+          <link property="rdfs:domain" resource="earl:TestCase"/>
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          <span property="rdfs:comment">
+            Defines the
+            <span rel="rdfs:range" resource="xsd:string" property="rdfs:label">Test Number</span>
+            of this test.
+          </span>
         </dd>
         <dt>queryParam</dt><dd about="rdfatest:queryParam" typeof="owl:DatatypeProperty">
-          <link property="rdfs:domain" href="test:TestCase"/>
-          Defines query parameters to add to the
-          <code property="rdfs:range" resource="xsd:string">processor URL</code>
-          when running this test.
+          <link property="rdfs:domain" resource="rdfatest:TestCase"/>
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          <span property="rdfs:comment">
+            Defines <span property="rdfs:label">query parameters</span> to add to the
+            <code property="rdfs:range" resource="xsd:string">processor URL</code>
+            when running this test.
+          </span>
         </dd>
         <dt>rdfaVersion</dt><dd about="rdfatest:rdfaVersion" typeof="owl:DatatypeProperty">
-          <link property="rdfs:domain" href="test:TestCase"/>
-          Defines the
-          <span property="rdfs:range" resource="xsd:string">RDFa version numbers</span>
-          for which this test is defined. Appropriate values include
-          <code>rdfa1.0</code>,
-          <code>rdfa1.1</code> and
-          <code>rdfa1.1-vocab</code>.
+          <link property="rdfs:domain" resource="rdfatest:TestCase"/>
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          <span property="rdfs:comment">
+            Defines the
+            <span rel="rdfs:range" resource="xsd:string" property="rdfs:label">RDFa version numbers</span>
+            for which this test is defined. Appropriate values include
+            <code>rdfa1.0</code>,
+            <code>rdfa1.1</code> and
+            <code>rdfa1.1-vocab</code>.
+          </span>
+        </dd>
+      </dl>
+    </section>
+    <section>
+      <h2>Reporting Class Definitions</h2>
+      <dl>
+        <dt>Version</dt><dd about="rdfatest:Version" typeof="owl:Class">
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          <span property="rdfs:comment">
+            Defines the Container Class for <span property="rdfs:label">Version</span> containing a list of
+            <code>rdfatest:hostLanguageReport</code> properties.
+          </span>
+        </dd>
+      </dl>
+    </section>
+    <section>
+      <h2>Reporting Property Definitions</h2>
+      <dl>
+        <dt>hostLanguageReport</dt><dd about="rdfatest:hostLanguageReport" typeof="owl:DatatypeProperty">
+          <link property="rdfs:domain" resource="rdfatest:Version"/>
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          Is the base property identifying
+          <span property="rdfs:label">host language report</span>s.
+          It references a <span property="rdfs:range" resource="rdf:List">list</span> of one or more 
+          <span>Test Case</span>s.
+        </dd>
+        <dt>html4</dt><dd about="rdfatest:hostLanguage/html4" typeof="owl:DatatypeProperty">
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          <span property="rdfs:label">HTML4</span> is a sub-property of
+          <span property="rdfs:subClassOf" resource="rdfatest:hostLanguageReport">host language report</span>.
+        </dd>
+        <dt>html5</dt><dd about="rdfatest:hostLanguage/html5" typeof="owl:DatatypeProperty">
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          <span property="rdfs:label">HTML5</span> is a sub-property of
+          <span property="rdfs:subClassOf" resource="rdfatest:hostLanguageReport">host language report</span>.
+        </dd>
+        <dt>rdfa1.0</dt><dd about="rdfatest:version/rdfa1.0" typeof="owl:DatatypeProperty">
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          <span property="rdfs:label">RDFa 1.0</span> is a sub-property of
+          <span property="rdfs:subClassOf" resource="rdfatest:versionReport">version report</span>.
+        </dd>
+        <dt>rdfa1.1</dt><dd about="rdfatest:version/rdfa1.1" typeof="owl:DatatypeProperty">
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          <span property="rdfs:label">RDFa 1.1</span> is a sub-property of
+          <span property="rdfs:subClassOf" resource="rdfatest:versionReport">version report</span>.
+        </dd>
+        <dt>rdfa1.1-vocab</dt><dd about="rdfatest:version/rdfa1.1-vocab" typeof="owl:DatatypeProperty">
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          <span property="rdfs:label">RDFa 1.1 Vocabulary</span> is a sub-property of
+          <span property="rdfs:subClassOf" resource="rdfatest:versionReport">version report</span>
+          used for reporting on optional Vocabulary Entailment.
+        </dd>
+        <dt>svg</dt><dd about="rdfatest:hostLanguage/svg" typeof="owl:DatatypeProperty">
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          <span property="rdfs:label">SVG</span> is a sub-property of
+          <span property="rdfs:subClassOf" resource="rdfatest:hostLanguageReport">host language report</span>.
+        </dd>
+        <dt>versionReport</dt><dd about="rdfatest:versionReport" typeof="owl:DatatypeProperty">
+          <link property="rdfs:domain" href="earl:Software"/>
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          Is the base property identifying
+          <span property="rdfs:label">version report</span>s.
+          It references one or more 
+          <span property="rdfs:range" resource="rdfatest:Version">Version</span>s.
+        </dd>
+        <dt>xhtml1</dt><dd about="rdfatest:hostLanguage/xhtml1" typeof="owl:DatatypeProperty">
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          <span property="rdfs:label">XHTML1</span> is a sub-property of
+          <span property="rdfs:subClassOf" resource="rdfatest:hostLanguageReport">host language report</span>.
+        </dd>
+        <dt>xhtml5</dt><dd about="rdfatest:hostLanguage/xhtml5" typeof="owl:DatatypeProperty">
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          <span property="rdfs:label">XHTML5</span> is a sub-property of
+          <span property="rdfs:subClassOf" resource="rdfatest:hostLanguageReport">host language report</span>.
+        </dd>
+        <dt>xml</dt><dd about="rdfatest:hostLanguage/xml" typeof="owl:DatatypeProperty">
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          <span property="rdfs:label">XML</span> is a sub-property of
+          <span property="rdfs:subClassOf" resource="rdfatest:hostLanguageReport">host language report</span>.
         </dd>
       </dl>
     </section>
