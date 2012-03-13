@@ -75,7 +75,10 @@ module Sinatra
         #  @hashes[bundle.hash_name] = bundle.name
         #  [bundle.hashed_path]
         #else
-          bundle.files
+          bundle.files.map do |f|
+            hash = File.open(File.join(File.expand_path("../../../public", __FILE__), f)).hash
+            "#{f}?#{hash}"
+          end
         #end
       end
     end
