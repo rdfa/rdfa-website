@@ -1758,7 +1758,7 @@ white   space
    test:classification test:required;
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0246.html>;
-   test:informationResourceResults <test-cases/0247.sparql>;
+   test:informationResourceResults <test-cases/0246.sparql>;
    test:purpose "Tests if hanging @rel creates multiple triples with @typeof permutation";
    test:specificationReference "" .
 <test-cases/0247> dc:contributor "Ivan Herman";
