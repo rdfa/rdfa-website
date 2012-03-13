@@ -7,7 +7,7 @@ var AppRouter = Backbone.Router.extend({
     // Create the version singleton, and instantiate it's view
     this.version = new Version({
       version: $('button#versions:active').attr('data-version') || "rdfa1.1",
-      hostLanguage: $('button#host-languages:active').attr('data-suite') || "xml1"
+      hostLanguage: $('button#host-languages:active').attr('data-suite') || "xml"
     });
     this.versionView = new VersionView({model: this.version});
     this.hostLanguageView = new HostLanguageView({model: this.version});

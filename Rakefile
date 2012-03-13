@@ -23,7 +23,7 @@ namespace :assets do
 end
 
 desc 'Generate manifest.json'
-task :manifest=> :environment do
+task :manifest => :environment do
   require 'crazyivan/core'
   CrazyIvan::StandAlone.new.send(:manifest_json)
 end
@@ -32,12 +32,12 @@ namespace :earl do
   desc 'Collate reports'
   task :collate => :environment do
     require 'earl'
-    earl = EARL.new(Dir.glob(File.expand_path("../earl-reports/*.html", __FILE__)))
-    File.open(File.expand_path("../earl-reports/earl.ttl", __FILE__), "w") do |file|
+    earl = EARL.new(Dir.glob(File.expand_path("../public/earl-reports/*.html", __FILE__)))
+    File.open(File.expand_path("../public/earl-reports/earl.ttl", __FILE__), "w") do |file|
       puts "dump #{earl.graph.count} triples to Turtle"
       earl.dump(:ttl, file)
     end
-    File.open(File.expand_path("../earl-reports/earl.jsonld", __FILE__), "w") do |file|
+    File.open(File.expand_path("../public/earl-reports/earl.jsonld", __FILE__), "w") do |file|
       puts "dump #{earl.graph.count} triples to JSON-LD"
       earl.dump(:jsonld, file)
     end
@@ -46,8 +46,8 @@ namespace :earl do
   desc 'Generate comprehensive report'
   task :report do
     require 'earl'
-    File.open(File.expand_path("../earl-reports/earl.html", __FILE__), "w") do |file|
-      EARL.generate(File.read(File.expand_path("../earl-reports/earl.jsonld", __FILE__)), file)
+    File.open(File.expand_path("../public/earl-reports/earl.html", __FILE__), "w") do |file|
+      EARL.generate(File.read(File.expand_path("../public/earl-reports/earl.jsonld", __FILE__)), file)
     end
   end
 end

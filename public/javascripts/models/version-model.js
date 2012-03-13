@@ -17,8 +17,8 @@ window.Version = Backbone.Model.extend({
   hostLanguages: function() {
     return {
       "rdfa1.0": ["SVG", "XHTML1"],
-      "rdfa1.1": ["HTML4", "HTML5", "SVG", "XHTML1", "XHTML5", "XML1"],
-      "rdfa1.1-vocab": ["HTML4", "HTML5", "SVG", "XHTML1", "XHTML5", "XML1"]
+      "rdfa1.1": ["HTML4", "HTML5", "SVG", "XHTML1", "XHTML5", "XML"],
+      "rdfa1.1-vocab": ["HTML4", "HTML5", "SVG", "XHTML1", "XHTML5", "XML"]
     }[this.get("version")];
   }
 });

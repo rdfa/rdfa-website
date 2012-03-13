@@ -23,6 +23,6 @@
     "title":        {"@id": "dc:title"},
     "xhtml1":       {"@id": "rdfatest:hostLanguage/xhtml1", "@container": "@list"},
     "xhtml5":       {"@id": "rdfatest:hostLanguage/xhtml5", "@container": "@list"},
-    "xml1":         {"@id": "rdfatest:hostLanguage/xml1", "@container": "@list"}
+    "xml":          {"@id": "rdfatest:hostLanguage/xml", "@container": "@list"}
   }
 }

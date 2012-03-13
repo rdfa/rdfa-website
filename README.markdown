@@ -117,7 +117,7 @@ allows a processor endpoint to be selected or added manually. It is presumed tha
 with a query parameter to which a test URL can be appended. For example, the _pyrdfa_ endpoint is
 defined as follows: `http://www.w3.org/2012/pyRdfa/extract?uri=`. When invoked, the URL of an actual
 test will be appended, such as the following:
-`http://www.w3.org/2012/pyRdfa/extract?uri=http://rdfa.info/test-suite/test-cases/xml1/rdfa1.1/0001.xml`.
+`http://www.w3.org/2012/pyRdfa/extract?uri=http://rdfa.info/test-suite/test-cases/xml/rdfa1.1/0001.xml`.
 
 Everything required by a processor can be presumed from the content of the document provided, however
 the test suite will also set a `Content-Type` HTTP header appropriate for the document provided, these include

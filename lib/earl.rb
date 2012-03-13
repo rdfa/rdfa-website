@@ -192,7 +192,7 @@ class EARL
 
     template = File.read(File.expand_path('../views/earl_report.html.haml', __FILE__))
 
-    html = Haml::Engine.new(template).render(self, {:tests => tests})
+    html = Haml::Engine.new(template, :format => :xhtml).render(self, {:tests => tests})
     io.write(html) if io
     html
   end

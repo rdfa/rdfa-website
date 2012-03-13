@@ -16,19 +16,19 @@
 -#      ...
 -#    ],
 -#    "rdfa1.1": {
--#      "xml1": [
+-#      "xml": [
 -#        {
--#          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml1/0249.xml",
+-#          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0249.xml",
 -#          "@type": "earl:TestCase",
 -#          "num": "0001",
 -#          "title": "Test 0001: Predicate establishment with @property",
 -#          "description": "Tests @property to establish the predicate; literal object is in the content of the element."
 -#          "mode": "earl:automatic",
 -#          "http://www.w3.org/2012/pyRdfa/extract?uri=": {
--#            "@id": "http://rdfa.info/test-suite/test-details/rdfa1.1/xml1/0001?rdfa-extractor=http%3A//www.w3.org/2012/pyRdfa/extract%3Furi%3D",
+-#            "@id": "http://rdfa.info/test-suite/test-details/rdfa1.1/xml/0001?rdfa-extractor=http%3A//www.w3.org/2012/pyRdfa/extract%3Furi%3D",
 -#            "@type": "earl:Assertion",
 -#            "assertedBy": "http://rdfa.info/test-suite/",
--#            "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml1/0249.xml",
+-#            "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0249.xml",
 -#            "subject": "http://www.w3.org/2012/pyRdfa/extract?uri=",
 -#            "result": {
 -#              "@type": "earl:TestResult",
@@ -49,6 +49,34 @@
     %meta{"http-equiv" => "Content-Type", :content => "text/html;charset=utf-8"}
     %title
       EARL Report for RDFa 1.1
+    :css
+      span[property='dc:title'], span[property='dc:description'] { display: none; }
+      td.PASS { color: green; }
+      td.FAIL { color: red; }
+      table.report {
+        border-width: 1px;
+        border-spacing: 2px;
+        border-style: outset;
+        border-color: gray;
+        border-collapse: separate;
+        background-color: white;
+      }
+      table.report th {
+        border-width: 1px;
+        padding: 1px;
+        border-style: inset;
+        border-color: gray;
+        background-color: white;
+        -moz-border-radius: ;
+      }
+      table.report td {
+        border-width: 1px;
+        padding: 1px;
+        border-style: inset;
+        border-color: gray;
+        background-color: white;
+        -moz-border-radius: ;
+      }
   %body{:prefix => "earl: http://www.w3.org/ns/earl# doap: http://usefulinc.com/ns/doap# rdfatest: http://rdfa.info/vocabs/rdfa-test#"}
     %section#abstract{:about => tests['@id'], :typeof => tests['@type']}
       %p
@@ -79,7 +107,7 @@
         - test_cases = tests['rdfa1.1'][hostLanguage]
         %section{:rel => "rdfatest:hostLanguage/#{hostLanguage}", :typeof => "", :inlist => true}
           %h2<=hostLanguage
-          %table
+          %table.report
             %tr
               %th
                 Test Number
@@ -88,12 +116,18 @@
                     %a{:href => processor['@id']}<=processor['name']
             - test_cases.each do |test|
               %tr{:typeof => test['@type'], :resource => test['@id']}
-              %td
-                %span{:property => 'rdfatest:num'}<= test['num']
-                %span{:property => 'dc:title'}<= test['title']
-                %span{:property => 'dc:description'}<= test['description']
-                %link{:property => 'earl:mode', :href => test['mode']}/ 
-              - processors.each do |processor|
-                - url = processor['@id']
-                - assertion = test[url]
-                %td{:class => assertion['result']['outcome'].split(':').last}<=processor['name']
+                %td
+                  %span{:property => 'rdfatest:num'}<= test['num']
+                  %span{:property => 'dc:title'}<= test['title']
+                  %span{:property => 'dc:description'}<= test['description']
+                  %link{:property => 'earl:mode', :href => test['mode']}/ 
+                - processors.each do |processor|
+                  - url = processor['@id']
+                  - assertion = test[url]
+                  - pass_fail = assertion['result']['outcome'].split(':').last.upcase
+                  %td{:class => pass_fail, :typeof => assertion['@type']}
+                    %link{:property => "earl:assertedBy", :href => assertion['assertedBy']}
+                    %link{:property => "earl:test", :href => assertion['test']}
+                    %link{:property => "earl:subject", :href => assertion['subject']}
+                    %span{:property => "earl:result", :typeof => assertion['result']['@type'], :resource => assertion['result']['outcome']}
+                      = pass_fail
