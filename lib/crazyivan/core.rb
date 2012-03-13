@@ -80,7 +80,7 @@ module CrazyIvan
             %w(num classification contribuor description input purpose queryParam reference results).each do |prop|
               tc_hash[prop] = tc[prop.to_sym].to_s unless tc[prop.to_sym].nil?
             end
-            tc_hash['expectedResults'] = tc[:expectedResults].nil? ? true : !!tc[:expectedResults]
+            tc_hash['expectedResults'] = tc[:expectedResults].nil? ? true : tc[:expectedResults].object
             tc_hash['hostLanguages'] = []
             tc_hash['versions'] = []
             hash['@graph'] << tc_hash

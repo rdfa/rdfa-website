@@ -25,7 +25,6 @@ end
 desc 'Generate manifest.json'
 task :manifest=> :environment do
   require 'crazyivan/core'
-  FileUtils.rm_rf File.expand_path("../manifest.jsonld", __FILE__)
   CrazyIvan::StandAlone.new.send(:manifest_json)
 end
 
