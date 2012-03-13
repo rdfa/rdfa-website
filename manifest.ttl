@@ -1745,7 +1745,7 @@ white   space
    rdfatest:hostLanguage "xml1", "xhtml1", "html4", "html5", "xhtml5", "svg";
    rdfatest:queryParam "vocab_expansion=true";
    test:informationResourceInput <test-cases/0245.html>;
-   test:informationResourceResults <test-cases/0242.sparql>;
+   test:informationResourceResults <test-cases/0245.sparql>;
    test:purpose """
       A class which is the target of another class having an owl:equivalentClass relationship defined in an
       in-use vocabulary causes triples to be added to the defining class.
