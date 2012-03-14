@@ -3967,7 +3967,7 @@
 <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0235?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26rdfagraph%3Dprocessor%26uri%3D> a earl:Assertion;
    earl:assertedBy <http://rdfa.info/test-suite/>;
    earl:result [ a earl:TestResult;
-     earl:outcome earl:fail];
+     earl:outcome earl:pass];
    earl:subject <http://rdf.greggkellogg.net/distiller?raw=true&in_fmt=rdfa&uri=>;
    earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0235.xhtml> .
 

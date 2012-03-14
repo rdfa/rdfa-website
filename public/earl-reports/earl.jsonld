@@ -8346,7 +8346,7 @@
           "subject": "http://rdf.greggkellogg.net/distiller?raw=true&in_fmt=rdfa&uri=",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "http://www.w3.org/2012/pyRdfa/extract?uri=": {
