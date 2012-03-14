@@ -17,6 +17,14 @@ GIT
       rdf-xsd (>= 0.3.5)
 
 GIT
+  remote: git://github.com/gkellogg/rdf-rdfxml.git
+  revision: b0850defb277f3e8d35232d807883f5f80251bc7
+  specs:
+    rdf-rdfxml (0.3.6)
+      rdf (>= 0.3.4)
+      rdf-xsd (>= 0.3.5)
+
+GIT
   remote: git://github.com/gkellogg/sinatra-respond_to.git
   revision: bba116582cc48622e6c4a824aeb803d47a117a18
   specs:
@@ -61,7 +69,7 @@ GEM
     rdf (0.3.5)
       addressable (>= 2.2.6)
     rdf-isomorphic (0.3.4)
-      rdf (>= 0.3.4)
+      rdf (>= 0.2.3)
     rdf-json (0.3.0)
       json_pure (>= 1.4.2)
       rdf (~> 0.3.0)
@@ -72,9 +80,6 @@ GEM
       rdf-xsd (>= 0.3.4)
     rdf-n3 (0.3.6)
       rdf (>= 0.3.4)
-    rdf-rdfxml (0.3.6)
-      rdf (>= 0.3.4)
-      rdf-xsd (>= 0.3.5)
     rdf-trig (0.1.1)
       rdf (>= 0.3.4)
       rdf-turtle (>= 0.1.1)
@@ -127,6 +132,7 @@ DEPENDENCIES
   rack-cache
   rake
   rdf-rdfa!
+  rdf-rdfxml!
   shotgun
   sinatra
   sinatra-respond_to!
