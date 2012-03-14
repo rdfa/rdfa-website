@@ -128,7 +128,7 @@ module CrazyIvan
       end
 
       url("/test-suite/test-cases/#{version}/#{suite}/#{num}.#{suffix}").
-        sub(/localhost:\d+/, 'rdfainfo.digitalbazaar.com') # For local testing
+        sub(/localhost:\d+/, 'rdf.info') # For local testing
     end
     module_function :get_test_url
 
@@ -151,7 +151,7 @@ module CrazyIvan
 
       filename = TESTS_PATH + "/#{num}.#{format == 'sparql' ? 'sparql' : 'txt'}"
       tcpath = url("/test-suite/test-cases/#{version}/#{suite}").
-        sub(/localhost:\d+/, 'rdfainfo.digitalbazaar.com') # For local testing
+        sub(/localhost:\d+/, 'rdf.info') # For local testing
 
       # Read in the file, extracting namespaces
       found_head = format == 'sparql'
@@ -270,7 +270,7 @@ module CrazyIvan
     #   a list containing all of the filtered test cases including
     #          unit test number, title, Host Language URL, and SPARQL URL.
     def get_test_alternates(num)
-      tests = ::JSON.load(manifest_json)['@id']
+      tests = ::JSON.load(manifest_json)['@graph']
       test = tests.detect {|t| t['@id'] == "http://rdfa.info/test-suite/test-cases/#{num}"}
     
       entries = []
