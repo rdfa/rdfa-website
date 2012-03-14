@@ -153,13 +153,20 @@
     %section#abstract{:about => tests['@id'], :typeof => tests['@type']}
       %p
         This document reports processor conformance for [[!RDFA-CORE]] and related specifications
-        according to the requirements of the Evaluation and Report Language (EARL) 1.0 Schema [[!EARL]].
+        according to the requirements of the Evaluation and Report Language (EARL) 1.0 Schema [[!EARL10-SCHEMA]].
       %p
         This document describes
         %span{:property => "doap:name"}<=tests['name']
         running at
         %a{:property => "doap:homepage", :href => tests['homepage']}<=tests['homepage']
         = '.'
+      %p
+        This report is also available in alternate formats:
+        %a{:href => "earl.ttl"}
+          Turtle
+        and
+        %a{:href => "earl.jsonld"}
+          JSON-LD
     %section#sodt
     %section{:property => "rdfatest:version/rdfa1.1", :typeof => ""}
       %h1
@@ -175,6 +182,12 @@
               = processor['name']
             %dd
               %a{:href => processor['@id']}=processor['@id']
+        %p
+          Individual test results used to construct this report are available here:
+        %ul
+          - source_files.each do |file|
+            %li
+              %a.source{:href => file}<= file
       - %w(rdfa1.0 rdfa1.1 rdfa1.1-vocab).each do |version|
         - next unless tests.has_key?(version)
         %section{:rel => "rdfatest:version/#{version}", :typeof => "rdfatest:Version"}

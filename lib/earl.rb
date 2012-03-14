@@ -100,15 +100,19 @@ class EARL
       @graph.query(:subject => RDF::URI(SUITE_URI)).each do |version_stmt|
         if version_stmt.predicate.to_s.index(RDFATEST["version/"]) == 0
           # This is a version predicate, it includes hostLanguage predicates
-          version = Hash.ordered
-          version['@type'] = "rdfatest:Version"
           vers = version_stmt.predicate.to_s.sub(RDFATEST["version/"].to_s, '')
-          hash[vers] = version
+          version = hash[vers] ||= begin
+            vh = Hash.ordered
+            vh['@type'] = "rdfatest:Version"
+            puts "version: #{vers}"
+            vh
+          end
           
           @graph.query(:subject => version_stmt.object).each do |hl_stmt|
             if hl_stmt.predicate.to_s.index(RDFATEST["hostLanguage/"]) == 0
               # This is a hostLanguage predicate, it includes hostLanguage predicates
               hl = hl_stmt.predicate.to_s.sub(RDFATEST["hostLanguage/"].to_s, '')
+              puts "hostLanguage: #{hl}"
               version[hl] = []
               
               # Iterate though the list and append ordered test assertion
@@ -185,15 +189,16 @@ class EARL
   # If no `io` parameter is provided, the output is returned as a string
   #
   # @param [IO, String, Hash] json
+  # @param [Array<String>] source_files
   # @param [IO] io (nil)
   # @return [String] Generated report, if `io` is nil
-  def self.generate(json, io = nil)
+  def self.generate(json, source_files, io = nil)
     json = json.read if json.respond_to?(:read)
     tests = json.is_a?(String) ? ::JSON.parse(json) : json
 
     template = File.read(File.expand_path('../views/earl_report.html.haml', __FILE__))
 
-    html = Haml::Engine.new(template, :format => :xhtml).render(self, {:tests => tests})
+    html = Haml::Engine.new(template, :format => :xhtml).render(self, {:tests => tests, :source_files => source_files})
     io.write(html) if io
     html
   end

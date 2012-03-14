@@ -46,8 +46,12 @@ namespace :earl do
   desc 'Generate comprehensive report'
   task :report do
     require 'earl'
-    File.open(File.expand_path("../public/earl-reports/earl.html", __FILE__), "w") do |file|
-      EARL.generate(File.read(File.expand_path("../public/earl-reports/earl.jsonld", __FILE__)), file)
+    source_files = Dir.glob(File.expand_path("../public/earl-reports/*-rdfa*.html", __FILE__)).map do |f|
+      f.split('/').last
+    end
+    earl_json = File.read(File.expand_path("../public/earl-reports/earl.jsonld", __FILE__))
+    File.open(File.expand_path("../public/earl-reports/index.html", __FILE__), "w") do |file|
+      EARL.generate(earl_json, source_files, file)
     end
   end
 end

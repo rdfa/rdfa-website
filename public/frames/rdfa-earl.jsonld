@@ -1,0 +1,45 @@
+{
+  "@context": "http://rdfa.info/contexts/rdfa-earl.jsonld",
+  "@type": "earl:Software",
+  "processor": [
+    {
+      "@type": "earl:TestSubject"
+    }
+  ],
+  "rdfa1.1": {
+    "@type": "rdfatest:Version",
+    "html4": [
+      {
+        "@type": "earl:TestCase"
+      }
+    ],
+    "html5": [
+      {
+        "@type": "earl:TestCase"
+      }
+    ],
+    "svg": [
+      {
+        "@type": "earl:TestCase"
+      }
+    ],
+    "xhtml1": [
+      {
+        "@type": "earl:TestCase"
+      }
+    ],
+    "xhtml5": [
+      {
+        "@type": "earl:TestCase"
+      }
+    ]
+  },
+  "rdfa1.1-vocab": {
+    "@type": "rdfatest:Version",
+    "xml": [
+      {
+        "@type": "earl:TestCase"
+      }
+    ]
+  }
+}
