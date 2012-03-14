@@ -1619,7 +1619,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml", "xhtml1", "html4", "svg";
+   rdfatest:hostLanguage "xml", "xhtml1", "svg";
    rdfatest:queryParam "rdfagraph=processor";
    test:informationResourceInput <test-cases/0236.html>;
    test:informationResourceResults <test-cases/0236.sparql>;
