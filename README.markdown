@@ -78,7 +78,7 @@ Running the website locally should be as simple as the following:
     bundle install
     bundle exec shotgun
 
-This will create an instance, usually running on port 9393. If you access as http://localhost:9393/test-suite/, it will re-write test URIs to http://rdf.info/test-suite/ so that processors can see any tests that are already uploaded. If you want to run with a local endpoint, run with something else such as http://127.0.0.1/test-suite/, which will inhibit the URI rewriting.
+This will create an instance, usually running on port 9393. If you access as http://localhost:9393/test-suite/, it will re-write test URIs to http://rdfa.info/test-suite/ so that processors can see any tests that are already uploaded. If you want to run with a local endpoint, run with something else such as http://127.0.0.1/test-suite/, which will inhibit the URI rewriting.
 
 ## How to add a unit test
 
@@ -142,13 +142,32 @@ to control optional RDFa vocabulary expansion
 (see [RDFa Core 1.1 Section 10.2](http://www.w3.org/TR/rdfa-core/#s_expansion_control)).
 
 To add a processor to the test suite, add to the object definition in
-`public/javascripts/model/version-model.js` in alphabetical order. This is currently defined as follows:
+`processors.json` in alphabetical order. This is currently defined as follows:
 
-    processors: {
-      "pyrdfa": "http://www.w3.org/2012/pyRdfa/extract?uri=",
-      "RDF.rb": "http://rdf.greggkellogg.net/distiller?raw=true&in_fmt=rdfa&uri=",
-      "other":  ""
-    },
+    {
+      "librdfa": {
+        "endpoint": "http://rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py?uri=",
+        "doap": "https://github.com/rdfa/librdfa"
+      },
+      "pyRdfa": {
+        "endpoint": "http://www.w3.org/2012/pyRdfa/extract?uri=",
+        "doap": "http://www.w3.org/2012/pyRdfa"
+      },
+      "RDF.rb": {
+        "endpoint": "http://rdf.greggkellogg.net/distiller?raw=true&in_fmt=rdfa&uri=",
+        "doap": "http://rubygems.org/gems/rdf-rdfa",
+        "doap_url": "https://raw.github.com/gkellogg/rdf-rdfa/master/etc/doap.html"
+      },
+      "other":  {
+        "endpoint": "",
+        "doap": ""
+      }
+    }
+
+The `doap` is the IRI defining the processor. It should be an information resource resulting in a
+[DOAP](https://github.com/edumbill/doap/wiki) project description, and will be used when formatting reports.
+
+If the DOAP project description location differs from the identifying IRI, set that location in `doap_url`
 
 ## Document caching
 

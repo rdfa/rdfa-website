@@ -9,6 +9,12 @@ var AppRouter = Backbone.Router.extend({
       version: $('button#versions:active').attr('data-version') || "rdfa1.1",
       hostLanguage: $('button#host-languages:active').attr('data-suite') || "xml"
     });
+    
+    // Load processor definitions
+    $.getJSON("processors.json", function(data) {
+      that.version.set("processors", data);
+    });
+
     this.versionView = new VersionView({model: this.version});
     this.hostLanguageView = new HostLanguageView({model: this.version});
     this.processorView = new ProcessorView({model: this.version});

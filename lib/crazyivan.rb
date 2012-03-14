@@ -79,11 +79,30 @@ module CrazyIvan
         }
       )
       cache_control :public, :must_revalidate, :max_age => 60
-      etag Digest::SHA1.hexdigest manifest_ttl
       respond_to do |wants|
-        wants.ttl { manifest_ttl }
-        wants.json { manifest_json }
-        wants.html { graph }
+        wants.ttl do
+          etag Digest::SHA1.hexdigest manifest_ttl
+          manifest_ttl
+        end
+        wants.json do
+          etag Digest::SHA1.hexdigest manifest_json
+          manifest_json
+        end
+        wants.html do
+          etag Digest::SHA1.hexdigest graph.dump(:ntriples)
+          graph
+        end
+      end
+    end
+
+    ##
+    # Return processor definitions
+    get '/test-suite/processors' do
+      cache_control :public, :must_revalidate, :max_age => 60
+      json = File.read(File.expand_path("../../processors.json", __FILE__))
+      etag Digest::SHA1.hexdigest json
+      respond_to do |wants|
+        wants.json { json }
       end
     end
 

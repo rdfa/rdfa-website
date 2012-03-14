@@ -1,0 +1,19 @@
+{
+  "librdfa": {
+    "endpoint": "http://rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py?uri=",
+    "doap": "https://github.com/rdfa/librdfa"
+  },
+  "pyRdfa": {
+    "endpoint": "http://www.w3.org/2012/pyRdfa/extract?uri=",
+    "doap": "http://www.w3.org/2012/pyRdfa"
+  },
+  "RDF.rb": {
+    "endpoint": "http://rdf.greggkellogg.net/distiller?raw=true&in_fmt=rdfa&uri=",
+    "doap": "http://rubygems.org/gems/rdf-rdfa",
+    "doap_url": "https://raw.github.com/gkellogg/rdf-rdfa/master/etc/doap.html"
+  },
+  "other":  {
+    "endpoint": "",
+    "doap": ""
+  }
+}

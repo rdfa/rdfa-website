@@ -128,7 +128,7 @@ module CrazyIvan
       end
 
       url("/test-suite/test-cases/#{version}/#{suite}/#{num}.#{suffix}").
-        sub(/localhost:\d+/, 'rdf.info') # For local testing
+        sub(/localhost:\d+/, 'rdfa.info') # For local testing
     end
     module_function :get_test_url
 
@@ -151,7 +151,7 @@ module CrazyIvan
 
       filename = TESTS_PATH + "/#{num}.#{format == 'sparql' ? 'sparql' : 'txt'}"
       tcpath = url("/test-suite/test-cases/#{version}/#{suite}").
-        sub(/localhost:\d+/, 'rdf.info') # For local testing
+        sub(/localhost:\d+/, 'rdfa.info') # For local testing
 
       # Read in the file, extracting namespaces
       found_head = format == 'sparql'

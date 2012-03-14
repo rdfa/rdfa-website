@@ -12,7 +12,7 @@ var EarlItemView = Backbone.View.extend({
 
   render: function () {
     var JSON = _.extend({
-      processorURL: this.model.processorURL()
+      processorURL: this.options.processorURL
     }, this.model.toJSON());
 
     this.$el.html(this.template(JSON));
@@ -36,11 +36,11 @@ window.EarlView = Backbone.View.extend({
     this.$el.html(this.template(JSON));
     this.$(".rel.version").attr("rel", "rdfatest:version/" + JSON.version);
     this.$(".rel.hostLanguage").attr("rel", "rdfatest:hostLanguage/" + JSON.hostLanguage);
-    this.$(".href.processorURL").attr("href", JSON.processorURL);
+    this.$(".href.processorURL").attr("href", JSON.processorDOAP);
 
     _.each(this.model.models, function (test) {
       if (test.get('result')) {
-        var earlView = new EarlItemView({model: test});
+        var earlView = new EarlItemView({model: test, processorURL: JSON.doap});
         that.$("#items").append(earlView.render().el);
       }
     });

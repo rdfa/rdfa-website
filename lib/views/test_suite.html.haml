@@ -175,8 +175,8 @@
       %a{:rel => "doap:homepage", :property => "doap:name", :href => "http://rdfa.info/"}="RDFa Test Suite"
     %p
       Report on
-      %a.href.processorURL{:rel => "rdfatest:processor", :typeof=> "earl:TestSubject"}
-        %span{:property => "doap:name"}<
+      %a.href.processorURL{:rel => "rdfatest:processor", :typeof=> "earl:TestSubject"}<
+        %span{:property => "doap:name"}<>
           <%= processorName %>
         = "."
     %div.rel.version{:typeof => ""}
