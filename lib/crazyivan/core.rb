@@ -274,14 +274,14 @@ module CrazyIvan
       test = tests.detect {|t| t['@id'] == "http://rdfa.info/test-suite/test-cases/#{num}"}
     
       entries = []
-      [test["rdfatest:hostLanguage"]].flatten.each do |host_language|
+      [test["hostLanguages"]].flatten.each do |host_language|
         suffix = case host_language.to_s
         when /xhtml/  then "xhtml"
         when /html/   then "html"
         when /svg/    then "svg"
         else               "xml"
         end
-        [test["rdfatest:rdfaVersion"]].flatten.each do |version|
+        [test["versions"]].flatten.each do |version|
           entries << {
             :num => num,
             :doc_uri => get_test_url(version, host_language, num, suffix),
