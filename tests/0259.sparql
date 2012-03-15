@@ -1,5 +1,5 @@
 ASK WHERE {
-  <> <http://www.w3.org/2003/g/data-view#> "GRDDL";
+  ?s <http://www.w3.org/2003/g/data-view#> "GRDDL";
     <http://www.w3.org/ns/ma-ont#> "MA";
     <http://www.w3.org/2002/07/owl#> "OWL";
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "RDF";
@@ -7,20 +7,13 @@ ASK WHERE {
     <http://www.w3.org/2000/01/rdf-schema#> "RDFS";
     <http://www.w3.org/2007/rif#> "RIF";
     <http://www.w3.org/2004/02/skos/core#> "SKOS";
-    <http://www.w3.org/2008/05/skos-xl#> "SKOS";
+    <http://www.w3.org/2008/05/skos-xl#> "SKOS-XL";
     <http://www.w3.org/2007/05/powder#> "WDR";
     <http://rdfs.org/ns/void#> "VOID";
     <http://www.w3.org/2007/05/powder-s#> "WDRS";
     <http://www.w3.org/1999/xhtml/vocab#> "XHV";
     <http://www.w3.org/XML/1998/namespace> "XML";
     <http://www.w3.org/2001/XMLSchema#> "XSD";
-
-    # In development prefixes
-    <http://www.w3.org/ns/sparql-service-description#> "SD";
-    <http://www.w3.org/2008/content#> "CNT";
-    <http://www.w3.org/ns/earl#> "EARL";
-    <http://www.w3.org/2006/http#> "HTTP";
-    <http://www.w3.org/2009/pointers#> "PTR";
 
     # Widely Used prefixes
     <http://creativecommons.org/ns#> "CC";

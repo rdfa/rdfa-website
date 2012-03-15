@@ -21,14 +21,6 @@
     <span property="xsd:">XSD</span>
   </div>
   <div>
-    In development prefixes
-    <span property="sd:">SD</span>
-    <span property="cnt:">CNT</span>
-    <span property="earl:">EARL</span>
-    <span property="ht:">HTTP</span>
-    <span property="ptr:">PTR</span>
-  </div>
-  <div>
     Widely Used prefixes
     <span property="cc:">CC</span>
     <span property="ctag:">CTAG</span>

@@ -1,5 +1,7 @@
+PREFIX xhv: <http://www.w3.org/1999/xhtml/vocab#>
+
 ASK WHERE {
-  <>
+  [
     # Vocabulary Terms
     xhv:alternate "alternate";
     xhv:appendix "appendix";
@@ -27,5 +29,6 @@ ASK WHERE {
     xhv:up "up";
     
     # Other terms
-    xhv:p3pv1 "p3pv1";
+    xhv:p3pv1 "p3pv1"
+  ]
 }
