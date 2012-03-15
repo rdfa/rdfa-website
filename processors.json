@@ -10,7 +10,7 @@
   "RDF.rb": {
     "endpoint": "http://rdf.greggkellogg.net/distiller?raw=true&in_fmt=rdfa&uri=",
     "doap": "http://rubygems.org/gems/rdf-rdfa",
-    "doap_url": "https://raw.github.com/gkellogg/rdf-rdfa/master/etc/doap.html"
+    "doap_url": "http://rdf.greggkellogg.net/doap"
   },
   "other":  {
     "endpoint": "",

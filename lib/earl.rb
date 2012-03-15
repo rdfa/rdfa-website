@@ -17,10 +17,14 @@ class EARL
     PREFIX doap: <http://usefulinc.com/ns/doap#>
     PREFIX rdfatest: <http://rdfa.info/vocabs/rdfa-test#>
     
-    SELECT ?uri ?name
+    SELECT ?uri ?name ?creator ?homepage ?doap_desc ?language
     WHERE {
       [rdfatest:processor ?uri] .
       ?uri doap:name ?name .
+      OPTIONAL { ?uri dc:creator ?creator . }
+      OPTIONAL { ?uri doap:homepage ?homepage . }
+      OPTIONAL { ?uri doap:description ?doap_desc . }
+      OPTIONAL { ?uri doap:programming-language ?language . }
     }
   ).freeze
   
@@ -35,6 +39,7 @@ class EARL
   ).freeze
   
   SUITE_URI = "http://rdfa.info/test-suite/"
+  PROCESSORS_PATH = File.expand_path("../../processors.json", __FILE__)
 
   # Convenience vocabularies
   class EARL < RDF::Vocabulary("http://www.w3.org/ns/earl#"); end
@@ -52,10 +57,27 @@ class EARL
       end
       reader.open(file) {|r| @graph << r}
     end
+    
+    # Load DOAP definitions
+    processors = ::JSON.parse(File.read(PROCESSORS_PATH))
+    processors.each do |proc, info|
+      doap_url = info["doap_url"] || info["doap"]
+      next unless doap_url
+      puts "read doap description for #{proc} from #{doap_url}"
+      begin
+        doap_graph = RDF::Graph.load(doap_url)
+        @graph << doap_graph.query(:subject => RDF::URI(info["doap"])).to_a
+      rescue
+        # Ignore failure
+      end
+    end
   end
 
   ##
   # Dump the collesced output graph
+  #
+  # If there is a DOAP file associated with a processor, load it's information into the
+  # graph.
   #
   # If no `io` parameter is provided, the output is returned as a string
   #
@@ -71,23 +93,34 @@ class EARL
         :earl => "http://www.w3.org/ns/earl#",
       }
     }
+
     if format == :jsonld
       # Customized JSON-LD output
       hash = Hash.ordered
       hash["@context"] = "http://rdfa.info/contexts/rdfa-earl.jsonld"
       hash["@id"] = SUITE_URI
-      hash["@type"] = "earl:Software"
+      hash["@type"] = %w(earl:Software doap:Project)
       hash[:homepage] = "http://rdfa.info/"
       hash[:name] = "RDFa Test Suite"
       hash[:processor] = []
       
       # Get the set of processors
+      proc_info = {}
       SPARQL.execute(PROCESSOR_QUERY, @graph).each do |solution|
+        info = proc_info[solution[:uri].to_s] ||= {}
+        %w(name creator homepage doap_desc language).each do |prop|
+          info[prop] = solution[prop.to_sym].to_s if solution[prop.to_sym]
+        end
+      end
+      
+      proc_info.each do |id, info|
         processor = Hash.ordered
-        processor["@id"] = solution[:uri].to_s
-        processor["@type"] = "earl:TestSubject"
-        processor["name"] = solution[:name].to_s
-        hash[:processor] << processor unless hash[:processor].include?(processor)
+        processor["@id"] = id
+        processor["@type"] = %w(earl:TestSubject doap:Project)
+        %w(name creator doap_desc homepage language).each do |prop|
+          processor[prop] = info[prop] if info[prop]
+        end
+        hash[:processor] << processor
       end
       
       # Collect results
