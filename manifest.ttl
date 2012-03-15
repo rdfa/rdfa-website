@@ -1303,7 +1303,7 @@ white   space
    test:purpose "Tests to make sure that @xml:base is used in non-root elements in SVG+RDFa.";
    test:specificationReference "http://www.w3.org/QA/2008/12/rdfa_and_svg_tiny_and_the_rdfa.html" .
 <test-cases/0206> dc:contributor "Ivan Herman";
-   dc:title "Usage of Default Profile";
+   dc:title "Usage of Initial Context";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
@@ -1886,4 +1886,25 @@ white   space
    test:informationResourceResults <test-cases/0258.sparql>;
    test:purpose "Ensures that a prefix cannot start with an underscore character when specified using xmlns or prefix.";
    test:specificationReference "" .
-
+<test-cases/0259> dc:contributor "Gregg Kellogg";
+   dc:title "XML+RDFa Initial Context";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   test:expectedResults "false"^^xsd:boolean;
+   rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0259.html>;
+   test:informationResourceResults <test-cases/0259.sparql>;
+   test:purpose "All processors must load the RDFa Core Initial Context.";
+   test:specificationReference "4.3 XML+RDFa Document Conformance" .
+<test-cases/0260> dc:contributor "Gregg Kellogg";
+   dc:title "XHTML+RDFa Initial Context";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   test:expectedResults "false"^^xsd:boolean;
+   rdfatest:hostLanguage "xhtml1";
+   test:informationResourceInput <test-cases/0260.html>;
+   test:informationResourceResults <test-cases/0260.sparql>;
+   test:purpose "XHTML+RDFa initial context.";
+   test:specificationReference "XHTML+RDFa 1.1 Section 3. Additional RDFa Processing Rules" .

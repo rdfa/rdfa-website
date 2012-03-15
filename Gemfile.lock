@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/gkellogg/rdf-rdfa.git
-  revision: 3d200a5c6f9e6308f0a356f79c75c837be4f460f
+  revision: c3d78bfbf4460c455d5e81003f60e8aa9a0d7700
   specs:
     rdf-rdfa (0.3.9)
       haml (>= 3.0.0)
