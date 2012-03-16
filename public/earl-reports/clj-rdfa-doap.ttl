@@ -9,6 +9,7 @@
   doap:browse <https://github.com/niklasl/clj-rdfa>;
   dc:created "2011-11-23T16:21:11-08:00"^^xsd:dateTime;
   dc:creator <http://purl.org/NET/dust/foaf#self>;
+  doap:developer <http://purl.org/NET/dust/foaf#self>;
   doap:bug-database <https://github.com/niklasl/clj-rdfa/issues>;
   doap:description "Extract triples from RDFa in XHTML documents using Clojure";
   doap:name "clj-rdfa";

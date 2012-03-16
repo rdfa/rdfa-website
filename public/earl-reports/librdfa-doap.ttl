@@ -8,6 +8,7 @@
   dc:title "librdfa";
   doap:browse <https://github.com/rdfa/librdfa>;
   dc:creator [ a foaf:Person; foaf:name "Manu Sporny"];
+  doap:developer [ a foaf:Person; foaf:name "Manu Sporny"];
   doap:bug-database <https://github.com/rdfa/librdfa/issues>;
   doap:description "SAX-based implementation of an RDFa Processor in C";
   doap:name "librdfa";
