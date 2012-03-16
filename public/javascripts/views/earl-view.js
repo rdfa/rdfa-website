@@ -11,9 +11,8 @@ var EarlItemView = Backbone.View.extend({
   },
 
   render: function () {
-    var JSON = _.extend({
-      processorURL: this.options.processorURL
-    }, this.model.toJSON());
+    var JSON = this.model.toJSON();
+    JSON.processorURL = this.options.processorURL;
 
     this.$el.html(this.template(JSON));
     this.$el.attr("resource", this.model.docURL());
@@ -40,7 +39,7 @@ window.EarlView = Backbone.View.extend({
 
     _.each(this.model.models, function (test) {
       if (test.get('result')) {
-        var earlView = new EarlItemView({model: test, processorURL: JSON.doap});
+        var earlView = new EarlItemView({model: test, processorURL: JSON.processorDOAP});
         that.$("#items").append(earlView.render().el);
       }
     });

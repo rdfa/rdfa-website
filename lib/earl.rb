@@ -15,13 +15,15 @@ class EARL
   attr_reader :graph
   PROCESSOR_QUERY = %(
     PREFIX doap: <http://usefulinc.com/ns/doap#>
+    PREFIX foaf: <http://xmlns.com/foaf/0.1/>
     PREFIX rdfatest: <http://rdfa.info/vocabs/rdfa-test#>
     
-    SELECT ?uri ?name ?developer ?doap_desc ?homepage ?language
+    SELECT ?uri ?name ?developer ?dev_name ?doap_desc ?homepage ?language
     WHERE {
       [rdfatest:processor ?uri] .
       ?uri doap:name ?name .
       OPTIONAL { ?uri doap:developer ?developer . }
+      OPTIONAL { ?developer foaf:name ?dev_name . }
       OPTIONAL { ?uri doap:homepage ?homepage . }
       OPTIONAL { ?uri doap:description ?doap_desc . }
       OPTIONAL { ?uri doap:programming-language ?language . }
@@ -58,19 +60,38 @@ class EARL
       reader.open(file) {|r| @graph << r}
     end
     
-    # Load DOAP definitions
     processors = ::JSON.parse(File.read(PROCESSORS_PATH))
     processors.each do |proc, info|
+      # Load DOAP definitions
       doap_url = info["doap_url"] || info["doap"]
       next unless doap_url
+      doap_url = File.expand_path("../../public", __FILE__) + doap_url if doap_url[0,1] == '/'
       puts "read doap description for #{proc} from #{doap_url}"
       begin
         doap_graph = RDF::Graph.load(doap_url)
         @graph << doap_graph.query(:subject => RDF::URI(info["doap"])).to_a
+
+        # Load FOAF definitions of doap:developers
+        foaf_url = doap_graph.first_object(:predicate => RDF::DOAP.developer)
+        puts "foaf_url for #{proc} #{foaf_url}"
+        subject_triples = case foaf_url
+        when RDF::URI
+          foaf_graph = RDF::Graph.load(foaf_url)
+          puts "read foaf description for #{proc} from #{foaf_url} with #{foaf_graph.count} triples"
+          subject_triples = foaf_graph.query(:subject => foaf_url).to_a
+        when RDF::Node
+          puts "read foaf description for #{proc} from doap"
+          subject_triples = doap_graph.query(:subject => foaf_url).to_a
+        else
+          []
+        end
+        puts "  using #{subject_triples.length} triples"
+        @graph << subject_triples
       rescue
         # Ignore failure
       end
     end
+    
   end
 
   ##
@@ -87,11 +108,8 @@ class EARL
   def dump(format, io = nil)
     options = {
       :base => SUITE_URI,
-      :prefixes => {
-        :dc => "http://purl.org/dc/terms/",
-        :doap => "http://usefulinc.com/ns/doap#",
-        :earl => "http://www.w3.org/ns/earl#",
-      }
+      :standard_prefixes => true,
+      :prefixes => { :earl => "http://www.w3.org/ns/earl#", }
     }
 
     if format == :jsonld
@@ -108,8 +126,13 @@ class EARL
       proc_info = {}
       SPARQL.execute(PROCESSOR_QUERY, @graph).each do |solution|
         info = proc_info[solution[:uri].to_s] ||= {}
-        %w(name developer doap_desc homepage language).each do |prop|
+        %w(name doap_desc homepage language).each do |prop|
           info[prop] = solution[prop.to_sym].to_s if solution[prop.to_sym]
+        end
+        if solution[:dev_name] || solution[:developer].is_a?(RDF::URI)
+          info['developer'] = Hash.ordered
+          info['developer']['@id'] = solution[:developer].to_s if solution[:developer].uri?
+          info['developer']['foaf:name'] = solution[:dev_name].to_s if solution[:dev_name]
         end
       end
       

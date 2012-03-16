@@ -3,6 +3,7 @@
     "dc":           "http://purl.org/dc/terms/",
     "doap":         "http://usefulinc.com/ns/doap#",
     "earl":         "http://www.w3.org/ns/earl#",
+    "foaf":         "http://xmlns.com/foaf/0.1/",
     "rdfatest":     "http://rdfa.info/vocabs/rdfa-test#",
     "assertedBy":   {"@id": "earl:assertedBy", "@type": "@id"},
     "description":  {"@id": "dc:description"},
