@@ -1,4 +1,4 @@
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 ASK WHERE {
-  <$TCPATH/0263.xhtml> rdfs:comment "RDFa test" .
+  <$TCPATH/0263.xhtml> rdfs:comment "This is an RDFa test" .
 }
