@@ -17,11 +17,11 @@ class EARL
     PREFIX doap: <http://usefulinc.com/ns/doap#>
     PREFIX rdfatest: <http://rdfa.info/vocabs/rdfa-test#>
     
-    SELECT ?uri ?name ?creator ?homepage ?doap_desc ?language
+    SELECT ?uri ?name ?developer ?doap_desc ?homepage ?language
     WHERE {
       [rdfatest:processor ?uri] .
       ?uri doap:name ?name .
-      OPTIONAL { ?uri dc:creator ?creator . }
+      OPTIONAL { ?uri doap:developer ?developer . }
       OPTIONAL { ?uri doap:homepage ?homepage . }
       OPTIONAL { ?uri doap:description ?doap_desc . }
       OPTIONAL { ?uri doap:programming-language ?language . }
@@ -108,7 +108,7 @@ class EARL
       proc_info = {}
       SPARQL.execute(PROCESSOR_QUERY, @graph).each do |solution|
         info = proc_info[solution[:uri].to_s] ||= {}
-        %w(name creator homepage doap_desc language).each do |prop|
+        %w(name developer doap_desc homepage language).each do |prop|
           info[prop] = solution[prop.to_sym].to_s if solution[prop.to_sym]
         end
       end
@@ -117,7 +117,7 @@ class EARL
         processor = Hash.ordered
         processor["@id"] = id
         processor["@type"] = %w(earl:TestSubject doap:Project)
-        %w(name creator doap_desc homepage language).each do |prop|
+        %w(name developer doap_desc homepage language).each do |prop|
           processor[prop] = info[prop] if info[prop]
         end
         hash[:processor] << processor
