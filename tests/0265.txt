@@ -1,0 +1,8 @@
+   about="http://www.example.com"
+<head  property="rdfs:seeAlso" resource="http://www.example.org">
+	<title>Test 0265</title>
+</head>
+<body>
+  <p> </p>
+</div>
+</body>
