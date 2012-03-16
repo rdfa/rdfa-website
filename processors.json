@@ -1,7 +1,13 @@
 {
+  "clj-rdfa": {
+    "endpoint": "http://clj-rdfa.herokuapp.com/extract.ttl?url=",
+    "doap": "https://github.com/niklasl/clj-rdfa",
+    "doap_url": "/earl-reports/clj-rdfa-doap.ttl"
+  },
   "librdfa": {
     "endpoint": "http://rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py?uri=",
-    "doap": "https://github.com/rdfa/librdfa"
+    "doap": "https://github.com/rdfa/librdfa",
+    "doap_url": "/earl-reports/librdfa-doap.ttl"
   },
   "pyRdfa": {
     "endpoint": "http://www.w3.org/2012/pyRdfa/extract?uri=",
