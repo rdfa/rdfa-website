@@ -1919,7 +1919,7 @@ white   space
    test:informationResourceResults <test-cases/0261.sparql>;
    test:purpose "Whitespace must be maintained in an XMLLiteral, too";
    test:specificationReference "" .
-<test-cases/0262> dc:contributor "Ivan Herman;
+<test-cases/0262> dc:contributor "Ivan Herman";
    dc:title "Predicate establishment with @property, with white spaces before and after the attribute value";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
@@ -1929,7 +1929,7 @@ white   space
    test:informationResourceResults <test-cases/0262.sparql>;
    test:purpose "Tests @property to establish the predicate; literal object is in the content of the element. There are extra whitespaces before and after the property attribute value which should be ignored";
    test:specificationReference "" .
-<test-cases/0263> dc:contributor "Ivan Herman;
+<test-cases/0263> dc:contributor "Ivan Herman";
    dc:title "@property appearing on the html element yields the base as the subject";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
@@ -1939,7 +1939,7 @@ white   space
    test:informationResourceResults <test-cases/0263.sparql>;
    test:purpose "@property appearing on the html element without @content or @datatype yields the base as the subject";
    test:specificationReference "" .
-<test-cases/0264> dc:contributor "Ivan Herman;
+<test-cases/0264> dc:contributor "Ivan Herman";
    dc:title "@property appearing on the head element gets the subject from <html>, ie, parent";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
@@ -1949,7 +1949,7 @@ white   space
    test:informationResourceResults <test-cases/0264.sparql>;
    test:purpose "@property appearing on the head element gets the subject from <html>, ie, parent";
    test:specificationReference "" .
-<test-cases/0265> dc:contributor "Ivan Herman;
+<test-cases/0265> dc:contributor "Ivan Herman";
    dc:title "@property appearing on the head element gets the subject from <html>, ie, parent";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
@@ -1959,7 +1959,7 @@ white   space
    test:informationResourceResults <test-cases/0265.sparql>;
    test:purpose "@property appearing on the head element gets the subject from <html>, ie, parent; in this case the parent subject is explicitly set via @about";
    test:specificationReference "" .
-<test-cases/0266> dc:contributor "Ivan Herman;
+<test-cases/0266> dc:contributor "Ivan Herman";
    dc:title "@property without @content or @datatype, typed object set by @href and @typeof";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
@@ -1969,7 +1969,7 @@ white   space
    test:informationResourceResults <test-cases/0266.sparql>;
    test:purpose "@property without @content or @datatype, typed object set by @href and @typeof";
    test:specificationReference "" .
-<test-cases/0267> dc:contributor "Ivan Herman;
+<test-cases/0267> dc:contributor "Ivan Herman";
    dc:title "@property without @content or @datatype, typed object set by @resource and @typeof";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
@@ -1979,7 +1979,7 @@ white   space
    test:informationResourceResults <test-cases/0267.sparql>;
    test:purpose "@property without @content or @datatype, typed object set by @resource and @typeof";
    test:specificationReference "" .
-<test-cases/0268> dc:contributor "Ivan Herman;
+<test-cases/0268> dc:contributor "Ivan Herman";
    dc:title "@property without @content or @datatype, typed object set by @src and @typeof";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
@@ -1989,7 +1989,7 @@ white   space
    test:informationResourceResults <test-cases/0268.sparql>;
    test:purpose "@property without @content or @datatype, typed object set by @src and @typeof";
    test:specificationReference "" .
-<test-cases/0269> dc:contributor "Ivan Herman;
+<test-cases/0269> dc:contributor "Ivan Herman";
    dc:title "@property appearing on the html element yields the base as the subject, also with @content";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
@@ -1999,7 +1999,7 @@ white   space
    test:informationResourceResults <test-cases/0269.sparql>;
    test:purpose "@property appearing on the html element without @content or @datatype yields the base as the subject, also with @content";
    test:specificationReference "" .
-<test-cases/0269> dc:contributor "Ivan Herman;
+<test-cases/0269> dc:contributor "Ivan Herman";
    dc:title "@property appearing on the head element gets the subject from parent, also with @content";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
@@ -2009,7 +2009,7 @@ white   space
    test:informationResourceResults <test-cases/0269.sparql>;
    test:purpose "@property appearing on the head element gets the subject from parent, also with @content";
    test:specificationReference "" .
-<test-cases/0271> dc:contributor "Ivan Herman;
+<test-cases/0271> dc:contributor "Ivan Herman";
    dc:title "@property appearing on the head element gets the subject from parent, also with @content and explicit @about at the top";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
