@@ -2,6 +2,7 @@ require 'linkeddata'
 require 'sparql'
 require 'sinatra'
 require 'sinatra/respond_to'
+require 'sinatra/browserid'
 require 'sinatra/sparql'
 require 'digest/sha1'
 require 'crazyivan/core'
@@ -12,17 +13,22 @@ module CrazyIvan
     include Core
 
     configure do
+      register Sinatra::RespondTo
+      register Sinatra::BrowserID
+      register Sinatra::SPARQL
+      register Sinatra::SimpleAssets
+
+      enable :sessions
+      set :session_secret, "xyzzy"
+      set :sessions, true
       set :app_name, "The RDFa Test Harness"
-      set :appkey, "xyzzy"
       set :public_folder, File.expand_path('../../public',  __FILE__)
       set :views, File.expand_path('../views',  __FILE__)
+      set :browserid_login_button, :grey
 
       mime_type :sparql, "application/sparql-query"
       mime_type :ttl, "text/turtle"
 
-      register Sinatra::RespondTo
-      register Sinatra::SPARQL
-      register Sinatra::SimpleAssets
       assets do
         css :application, [
           '/stylesheets/bootstrap.css',
@@ -46,6 +52,7 @@ module CrazyIvan
           '/javascripts/views/run-all-view.js',
           '/javascripts/views/source-view.js',
           '/javascripts/views/test-view.js',
+          '/javascripts/views/unauthorized-view.js',
           '/javascripts/views/version-view.js',
           '/javascripts/application.js'
         ]
@@ -57,12 +64,23 @@ module CrazyIvan
     end
 
     get '/test-suite' do
+      session[:test] = "entered at /test-suite"
+      puts "session: #{session.inspect}"
       redirect '/test-suite/'
     end
 
     get '/test-suite/' do
-      cache_control :public, :must_revalidate, :max_age => 60
-      haml :test_suite, :locals => {:appkey => settings.appkey}
+      cache_control :private
+      locals = { :email => (authorized_email if authorized?)}
+      puts "locals: #{locals.inspect}"
+      #session[:test] ||= "entered at /test-suite/"
+      puts "session: #{session.inspect}"
+      haml :test_suite, :locals => locals
+    end
+    
+    get '/test-suite/logout' do
+      logout!
+      redirect '/test-suite/'
     end
 
     ##
@@ -147,9 +165,7 @@ module CrazyIvan
       expected_results = params["expected-results"] == 'true'
       format :json if format == :js
 
-      if params["appkey"] != settings.appkey
-        return [403, "Access is not allowed"]
-      end
+      return [403, "Unauthorized access is not allowed"] unless authorized?
 
       begin
         if perform_test_case(params[:version], params[:suite], params[:num], params["rdfa-extractor"], expected_results)
@@ -188,9 +204,7 @@ module CrazyIvan
       format :json if format == :js
       prefixes = {}
 
-      if params["appkey"] != settings.appkey
-        return [403, "Access is not allowed"]
-      end
+      return [403, "Unauthorized access is not allowed"] unless authorized?
 
       begin
         locals = get_test_details(params[:version], params[:suite], params[:num])

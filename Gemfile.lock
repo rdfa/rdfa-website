@@ -96,6 +96,8 @@ GEM
       rack (~> 1.3, >= 1.3.6)
       rack-protection (~> 1.2)
       tilt (~> 1.3, >= 1.3.3)
+    sinatra-browserid (0.3)
+      sinatra (>= 1.1.0)
     sinatra-simple-assets (0.0.5)
       cssmin (~> 1.0.2)
       sinatra (~> 1.3.0)
@@ -135,6 +137,7 @@ DEPENDENCIES
   rdf-rdfxml!
   shotgun
   sinatra
+  sinatra-browserid
   sinatra-respond_to!
   sinatra-simple-assets
   sparql

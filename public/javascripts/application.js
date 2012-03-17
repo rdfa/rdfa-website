@@ -23,12 +23,16 @@ var AppRouter = Backbone.Router.extend({
     $(".dropdown-toggle").dropdown();
     $('.btn').button();
 
-    // Create primary test collection and view
-    this.testList = new TestCollection([], {version: this.version});
-    this.testList.fetch();
-    this.testListView = new TestListView({model: this.testList});
-    this.runAllView = new RunAllView({model: this.testList});
-    this.progressView = new ProgressView({model: this.testList});
+    // If logged in, create primary test collection and view
+    if ($("span.email").length > 0) {
+      this.testList = new TestCollection([], {version: this.version});
+      this.testList.fetch();
+      this.testListView = new TestListView({model: this.testList});
+      this.runAllView = new RunAllView({model: this.testList});
+      this.progressView = new ProgressView({model: this.testList});
+    } else {
+      this.unauthorizedView = new UnauthorizedView();
+    }
   },
 
   routes: {

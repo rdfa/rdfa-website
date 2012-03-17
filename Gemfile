@@ -12,6 +12,7 @@ gem 'rdf-rdfa', :git => "git://github.com/gkellogg/rdf-rdfa.git", :require => 'r
 gem 'json-ld', :git => "git://github.com/gkellogg/json-ld.git", :require => 'json/ld'
 gem 'sinatra-simple-assets', :require => 'sinatra/simple_assets'
 gem 'sinatra-respond_to', :git => "git://github.com/gkellogg/sinatra-respond_to.git", :require => 'sinatra/respond_to'
+gem 'sinatra-browserid', :require => 'sinatra/browserid'
 gem 'rack-cache', :require => 'rack/cache'
 
 # Bundle gems for the local environment. Make sure to

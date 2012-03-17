@@ -21,6 +21,16 @@
                 %a{:href => '/tools/'}= "Tools"
               %li.active
                 %a{:href => '/dev/'}= "Developers"
+          %div.navbar-text.pull-right
+            - if email
+              %p.email
+                Logged in as
+                %span.email
+                  = email
+                %a{:href => '/test-suite/logout'}
+                  (logout)
+            - else
+              = render_login_button
     %div.modal.hide.fade#source-modal
       %div.modal-header
         %a.close{"data-dismiss" => 'modal'}= 'x'

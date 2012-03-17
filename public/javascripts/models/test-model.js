@@ -16,8 +16,7 @@ window.Test = Backbone.Model.extend({
       this.get('version') +
       '/' + this.get('hostLanguage') +
       '/' + this.get('num') +
-      '?rdfa-extractor=' + escape(this.processorURL()) +
-      '&appkey=' + appkey;
+      '?rdfa-extractor=' + escape(this.processorURL());
   },
 
   // Get the details for a given test
@@ -45,8 +44,7 @@ window.Test = Backbone.Model.extend({
       '/' + that.get('hostLanguage') +
       '/' + that.get('num') +
       '?expected-results=' + that.get('expectedResults') +
-      '&rdfa-extractor=' + escape(that.processorURL()) +
-      '&appkey=' + appkey;
+      '&rdfa-extractor=' + escape(that.processorURL());
 
     $.ajax({
       url: test_url,
