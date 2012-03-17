@@ -16,13 +16,21 @@ window.Test = Backbone.Model.extend({
       this.get('version') +
       '/' + this.get('hostLanguage') +
       '/' + this.get('num') +
-      '?rdfa-extractor=' + escape(this.processorURL());
+      '?rdfa-extractor=' + escape(this.processorURL()) +
+      '&appkey=' + appkey;
   },
 
   // Get the details for a given test
   details: function (cb) {
     // Retrieve results from processor and canonical representation
-    $.getJSON(this.detailsURL(), cb);
+    $.ajax({
+      url: this.detailsURL(),
+      dataType: 'json',
+      success: cb,
+      error: function (jqXHR, status) {
+        cb({error: "Request failed: " + jqXHR.statusText + ': ' + jqXHR.responseText});
+      }
+    });
   },
   
   // Run the test, causes this.result to be set
@@ -37,11 +45,20 @@ window.Test = Backbone.Model.extend({
       '/' + that.get('hostLanguage') +
       '/' + that.get('num') +
       '?expected-results=' + that.get('expectedResults') +
-      '&rdfa-extractor=' + escape(that.processorURL());
+      '&rdfa-extractor=' + escape(that.processorURL()) +
+      '&appkey=' + appkey;
 
-    $.getJSON(test_url, function (data) {
-      // Indicate pass/fail and style
-      that.set("result", data.status);
+    $.ajax({
+      url: test_url,
+      dataType: 'json',
+      success: function (data) {
+        // Indicate pass/fail and style
+        that.set("result", data.status);
+      },
+      error: function (jqXHR, status) {
+        // Indicate fail and style
+        that.set("result", status);
+      }
     });
   },
   

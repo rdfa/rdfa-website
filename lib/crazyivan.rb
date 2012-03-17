@@ -13,6 +13,7 @@ module CrazyIvan
 
     configure do
       set :app_name, "The RDFa Test Harness"
+      set :appkey, "xyzzy"
       set :public_folder, File.expand_path('../../public',  __FILE__)
       set :views, File.expand_path('../views',  __FILE__)
 
@@ -61,7 +62,7 @@ module CrazyIvan
 
     get '/test-suite/' do
       cache_control :public, :must_revalidate, :max_age => 60
-      haml :test_suite
+      haml :test_suite, :locals => {:appkey => settings.appkey}
     end
 
     ##
@@ -146,6 +147,10 @@ module CrazyIvan
       expected_results = params["expected-results"] == 'true'
       format :json if format == :js
 
+      if params["appkey"] != settings.appkey
+        return [403, "Access is not allowed"]
+      end
+
       begin
         if perform_test_case(params[:version], params[:suite], params[:num], params["rdfa-extractor"], expected_results)
           status = "PASS"
@@ -183,10 +188,11 @@ module CrazyIvan
       format :json if format == :js
       prefixes = {}
 
-      begin
-        # Temporary mechanism to prevent search crawlers from overloading the site
-        raise "Retrieval of test details is temporarily disabled."
+      if params["appkey"] != settings.appkey
+        return [403, "Access is not allowed"]
+      end
 
+      begin
         locals = get_test_details(params[:version], params[:suite], params[:num])
 
         respond_to do |wants|

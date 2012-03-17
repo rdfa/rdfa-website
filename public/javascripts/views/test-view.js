@@ -35,6 +35,9 @@ var TestItemView = Backbone.View.extend({
       case 'FAIL':
         this.$('button.test').removeClass('btn-primary').addClass('btn-danger');
         break;
+      case 'error':
+        this.$('button.test').removeClass('btn-primary').addClass('btn-danger');
+        break;
     }
     return this;
   },
