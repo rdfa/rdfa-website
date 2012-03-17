@@ -206,7 +206,7 @@ module CrazyIvan
           %(<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd">\n) +
           %(<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1"#{namespaces}>\n)
         else
-          %(<!DOCTYPE html>\n<html#{namespaces}>\n)
+          %(<!DOCTYPE html>\n<html xmlns="http://www.w3.org/1999/xhtml"#{namespaces}>\n)
         end +
         content +
         "</html>"
