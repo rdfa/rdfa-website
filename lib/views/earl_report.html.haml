@@ -256,7 +256,8 @@
         common tests with minor rewriting based on host language specific attributes. The tests
         are defined generically here.
       %dl
-        - test_info.keys.sort do |num|
+        - keys = test_info.keys.sort
+        - keys.each do |num|
           - test = test_info[num]
           %dt{:id => "test_#{test['num']}"}
             Test
