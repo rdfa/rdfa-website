@@ -184,6 +184,9 @@ module CrazyIvan
       prefixes = {}
 
       begin
+        # Temporary mechanism to prevent search crawlers from overloading the site
+        raise "Retrieval of test details is temporarily disabled."
+
         locals = get_test_details(params[:version], params[:suite], params[:num])
 
         respond_to do |wants|
