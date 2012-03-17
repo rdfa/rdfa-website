@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/gkellogg/json-ld.git
-  revision: 91cf5e308f54e08ae6a4e080b87490a7272e1c4d
+  revision: e66fd24c734adc48badac1d51f3c8b8232c94bf8
   specs:
     json-ld (0.1.1)
       json (>= 1.6.5)
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/gkellogg/rdf-rdfa.git
-  revision: c3d78bfbf4460c455d5e81003f60e8aa9a0d7700
+  revision: 3a14eff1db9863b66dc7d48a308be7f466b8e512
   specs:
     rdf-rdfa (0.3.9)
       haml (>= 3.0.0)
