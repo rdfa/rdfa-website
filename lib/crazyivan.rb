@@ -9,6 +9,8 @@ require 'crazyivan/core'
 require 'crazyivan/extensions'
 
 module CrazyIvan
+  HOSTNAME = (ENV['hostname'] || 'rdfa.info').freeze
+
   class Application < Sinatra::Base
     include Core
 
@@ -60,21 +62,21 @@ module CrazyIvan
     end
 
     before do
-      puts "[#{request.path_info}], #{params.inspect}, #{format}, #{request.accept.inspect}"
+      puts "[#{request.path_info}], " +
+           "#{params.inspect}, " +
+           "#{format}, " +
+           "#{request.accept.inspect}, " +
+           "#{authorized? ? Digest::SHA1.hexdigest(authorized_email) : 'unauthorized'}"
     end
 
     get '/test-suite' do
       session[:test] = "entered at /test-suite"
-      puts "session: #{session.inspect}"
       redirect '/test-suite/'
     end
 
     get '/test-suite/' do
       cache_control :private
       locals = { :email => (authorized_email if authorized?)}
-      puts "locals: #{locals.inspect}"
-      #session[:test] ||= "entered at /test-suite/"
-      puts "session: #{session.inspect}"
       haml :test_suite, :locals => locals
     end
     
@@ -94,7 +96,7 @@ module CrazyIvan
         :standard_prefixes => true,
         :prefixes => {
           :test => "http://www.w3.org/2006/03/test-description#",
-          :rdfatest => "http://rdfa.info/vocabs/rdfa-test#", # FIXME: new name?
+          :rdfatest => "http://#{HOSTNAME}/vocabs/rdfa-test#"
         }
       )
       cache_control :public, :must_revalidate, :max_age => 60
