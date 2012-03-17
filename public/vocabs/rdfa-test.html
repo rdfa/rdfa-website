@@ -44,7 +44,8 @@
           <link property="rdfs:domain" resource="rdfatest:TestCase"/>
           <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
           <span property="rdfs:comment">
-            Defines the
+            <span property="rdfs:label">Host Language</span>
+            defines the
             <span rel="rdfs:range" resource="xsd:string" property="rdfs:label">Host Language</span>s
             for which this test is defined. Appropriate values include
             <code>html4</code>,
@@ -59,7 +60,8 @@
           <link property="rdfs:domain" resource="earl:TestCase"/>
           <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
           <span property="rdfs:comment">
-            Defines the
+            <span property="rdfs:label">Num</span>ber
+            defines the
             <span rel="rdfs:range" resource="xsd:string" property="rdfs:label">Test Number</span>
             of this test.
           </span>
@@ -68,7 +70,8 @@
           <link property="rdfs:domain" resource="rdfatest:TestCase"/>
           <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
           <span property="rdfs:comment">
-            Defines <span property="rdfs:label">query parameters</span> to add to the
+            <span property="rdfs:label">Query Param</span>
+            defines <span property="rdfs:label">query parameters</span> to add to the
             <code property="rdfs:range" resource="xsd:string">processor URL</code>
             when running this test.
           </span>
@@ -77,7 +80,8 @@
           <link property="rdfs:domain" resource="rdfatest:TestCase"/>
           <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
           <span property="rdfs:comment">
-            Defines the
+            <span property="rdfs:label">RDFa Version</span>
+            defines the
             <span rel="rdfs:range" resource="xsd:string" property="rdfs:label">RDFa version numbers</span>
             for which this test is defined. Appropriate values include
             <code>rdfa1.0</code>,
@@ -93,7 +97,8 @@
         <dt>Version</dt><dd about="rdfatest:Version" typeof="owl:Class">
           <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
           <span property="rdfs:comment">
-            Defines the Container Class for <span property="rdfs:label">Version</span> containing a list of
+            <span property="rdfs:label">Version</span>
+            defines the Container Class for <span property="rdfs:label">Version</span> containing a list of
             <code>rdfatest:hostLanguageReport</code> properties.
           </span>
         </dd>
@@ -105,7 +110,8 @@
         <dt>hostLanguageReport</dt><dd about="rdfatest:hostLanguageReport" typeof="owl:DatatypeProperty">
           <link property="rdfs:domain" resource="rdfatest:Version"/>
           <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
-          Is the base property identifying
+          <span property="rdfs:label">Host Language Report</span>
+          is the base property identifying
           <span property="rdfs:label">host language report</span>s.
           It references a <span property="rdfs:range" resource="rdf:List">list</span> of one or more 
           <span>Test Case</span>s.
@@ -114,32 +120,57 @@
           <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
           <span property="rdfs:label">HTML4</span> is a sub-property of
           <span property="rdfs:subClassOf" resource="rdfatest:hostLanguageReport">host language report</span>.
+          <span property="dc:description">
+            The HTML4 [[!HTML40]] RDFa Host Language is defined in [[!HTML+RDFa]]. HTML+RDFa extends
+            RDFa Core 1.1 [[!RDFA-CORE]] with host-language specific processing rules.
+          </span>
         </dd>
         <dt>html5</dt><dd about="rdfatest:hostLanguage/html5" typeof="owl:DatatypeProperty">
           <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
           <span property="rdfs:label">HTML5</span> is a sub-property of
           <span property="rdfs:subClassOf" resource="rdfatest:hostLanguageReport">host language report</span>.
+          <span property="dc:description">
+            The HTML5 [[!HTML5]] RDFa Host Language is defined in [[!HTML+RDFa]]. HTML+RDFa extends
+            RDFa Core 1.1 [[!RDFA-CORE]] with host-language specific processing rules.
+          </span>
         </dd>
         <dt>rdfa1.0</dt><dd about="rdfatest:version/rdfa1.0" typeof="owl:DatatypeProperty">
           <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
           <span property="rdfs:label">RDFa 1.0</span> is a sub-property of
           <span property="rdfs:subClassOf" resource="rdfatest:versionReport">version report</span>.
+          <span property="dc:description">
+            RDFa 1.0 [[!RDFA-SYNTAX]] defines core processing rules for RDFa in XHTML [[!XHTML11]].
+          </span>
         </dd>
         <dt>rdfa1.1</dt><dd about="rdfatest:version/rdfa1.1" typeof="owl:DatatypeProperty">
           <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
           <span property="rdfs:label">RDFa 1.1</span> is a sub-property of
           <span property="rdfs:subClassOf" resource="rdfatest:versionReport">version report</span>.
+          <span property="dc:description">
+            RDFa Core 1.1 [[!RDFA-CORE]] defines core processing rules for independent of host
+            language, and provides default processing rules for XML-based host languages.
+          </span>
         </dd>
         <dt>rdfa1.1-vocab</dt><dd about="rdfatest:version/rdfa1.1-vocab" typeof="owl:DatatypeProperty">
           <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
           <span property="rdfs:label">RDFa 1.1 Vocabulary</span> is a sub-property of
           <span property="rdfs:subClassOf" resource="rdfatest:versionReport">version report</span>
           used for reporting on optional Vocabulary Entailment.
+          <p property="dc:description" datatype="rdf:XMLLiteral">
+            RDFa Core 1.1 [[!RDFA-CORE]]
+            <cite><a href="http://www.w3.org/TR/rdfa-core/#s_vocab_expansion">Vocabulary Expansion</a></cite>
+            is an optional RDFa extension used to perform
+            limited OWL and RDFS expansion of terms associated with a Vocabulary.
+          </p>
         </dd>
         <dt>svg</dt><dd about="rdfatest:hostLanguage/svg" typeof="owl:DatatypeProperty">
           <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
           <span property="rdfs:label">SVG</span> is a sub-property of
           <span property="rdfs:subClassOf" resource="rdfatest:hostLanguageReport">host language report</span>.
+          <span property="dc:description">
+            SVG [[!SVG12]] supports RDFa by virtue of being an XML-based language, so the XML+RDFa
+            rules defined in RDFa Core 1.1 [[!RDFA-CORE]] apply to processing RDFa in SVG.
+          </span>
         </dd>
         <dt>versionReport</dt><dd about="rdfatest:versionReport" typeof="owl:DatatypeProperty">
           <link property="rdfs:domain" href="earl:Software"/>
@@ -153,16 +184,28 @@
           <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
           <span property="rdfs:label">XHTML1</span> is a sub-property of
           <span property="rdfs:subClassOf" resource="rdfatest:hostLanguageReport">host language report</span>.
+          <span property="dc:description">
+            XHTML+RDFa 1.1 [[XHTML-RDFA]] extends
+            RDFa Core 1.1 [[!RDFA-CORE]] with host-language specific processing rules.
+          </span>
         </dd>
         <dt>xhtml5</dt><dd about="rdfatest:hostLanguage/xhtml5" typeof="owl:DatatypeProperty">
           <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
           <span property="rdfs:label">XHTML5</span> is a sub-property of
           <span property="rdfs:subClassOf" resource="rdfatest:hostLanguageReport">host language report</span>.
+          <span property="dc:description">
+            The HTML5 [[!HTML5]] RDFa Host Language is defined in [[!HTML+RDFa]]. HTML+RDFa extends
+            RDFa Core 1.1 [[!RDFA-CORE]] with host-language specific processing rules.
+          </span>
         </dd>
         <dt>xml</dt><dd about="rdfatest:hostLanguage/xml" typeof="owl:DatatypeProperty">
           <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
           <span property="rdfs:label">XML</span> is a sub-property of
           <span property="rdfs:subClassOf" resource="rdfatest:hostLanguageReport">host language report</span>.
+          <span property="dc:description">
+            RDFa Core 1.1 [[!RDFA-CORE]] defines core processing rules for independent of host
+            language, and provides default processing rules for XML-based host languages.
+          </span>
         </dd>
       </dl>
     </section>

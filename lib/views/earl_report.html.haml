@@ -15,6 +15,9 @@
 -#      },
 -#      ...
 -#    ],
+-#    "vocabulary": {
+-#      "rdfa1.1": "Description",
+-#    }
 -#    "rdfa1.1": {
 -#      "xml": [
 -#        {
@@ -42,6 +45,7 @@
 -#     ...
 -#    }
 -#  }
+- test_info = {}
 !!! 5
 %html{:lang => "en"}
   - processors = tests['processor']
@@ -120,7 +124,7 @@
           //alternateFormats: [ {uri: "diff-20120112.html", label: "diff to previous version"} ],
       };
     :css
-      span[property='dc:title'], span[property='dc:description'] { display: none; }
+      span[property='dc:description'] { display: none; }
       td.PASS { color: green; }
       td.FAIL { color: red; }
       table.report {
@@ -166,58 +170,97 @@
         %a{:href => "earl.jsonld"}
           JSON-LD
     %section#sodt
-    %section{:property => "rdfatest:version/rdfa1.1", :typeof => ""}
-      %h1
-        Reports
-      %section
-        %h2
-          Processors
-        %p
-          This report was tested using the following processors:
-        %dl
-          - processors.each do |processor|
-            %dt{:about => processor['@id'], :typeof => processor['@type'], :property => "doap:name"}
-              = processor['name']
-            %dd
-              %a{:href => processor['@id']}=processor['@id']
-        %p
-          Individual test results used to construct this report are available here:
-        %ul
-          - source_files.each do |file|
-            %li
-              %a.source{:href => file}<= file
-      - %w(rdfa1.0 rdfa1.1 rdfa1.1-vocab).each do |version|
-        - next unless tests.has_key?(version)
-        %section{:rel => "rdfatest:version/#{version}", :typeof => "rdfatest:Version"}
-          %h2<=version
-          - tests[version].keys.sort.each do |hostLanguage|
-            - test_cases = tests[version][hostLanguage]
-            - next unless test_cases.is_a?(Array)
-            %section{:rel => "rdfatest:hostLanguage/#{hostLanguage}", :inlist => true}
-              %h2<=hostLanguage
-              %table.report
-                %tr
-                  %th
-                    Test Number
-                    - processors.each do |processor|
-                      - next unless test_cases.first.has_key?(processor['@id'])
-                      %th
-                        %a{:href => processor['@id']}<=processor['name']
-                - test_cases.each do |test|
-                  %tr{:typeof => test['@type'], :resource => test['@id']}
-                    %td
-                      %span{:property => 'rdfatest:num'}<= test['num']
-                      %span{:property => 'dc:title'}<= test['title']
-                      %span{:property => 'dc:description'}<= test['description']
-                      %link{:property => 'earl:mode', :href => test['mode']}/ 
-                    - processors.each do |processor|
-                      - url = processor['@id']
-                      - next unless test.has_key?(url)
-                      - assertion = test[url]
-                      - pass_fail = assertion['result']['outcome'].split(':').last.upcase
-                      %td{:class => pass_fail, :rel => assertion['@id'], :typeof => assertion['@type']}
-                        %link{:property => "earl:assertedBy", :href => assertion['assertedBy']}
-                        %link{:property => "earl:test", :href => assertion['test']}
-                        %link{:property => "earl:subject", :href => assertion['subject']}
-                        %span{:property => "earl:result", :typeof => assertion['result']['@type'], :resource => assertion['result']['outcome']}
-                          = pass_fail
+    - %w(rdfa1.0 rdfa1.1 rdfa1.1-vocab).each do |version|
+      - next unless tests.has_key?(version)
+      %section{:rel => "rdfatest:version/#{version}", :typeof => "rdfatest:Version"}
+        %h2<=tests['vocabulary'][version]['label']
+        %div
+          = tests['vocabulary'][version]['description']
+        - tests[version].keys.sort.each do |hostLanguage|
+          - test_cases = tests[version][hostLanguage]
+          - next unless test_cases.is_a?(Array)
+          %section{:rel => "rdfatest:hostLanguage/#{hostLanguage}", :inlist => true}
+            %h2<=tests['vocabulary'][hostLanguage]['label']
+            %div
+              = tests['vocabulary'][hostLanguage]['description']
+            %table.report
+              %tr
+                %th
+                  Test
+                  - processors.each do |processor|
+                    - next unless test_cases.first.has_key?(processor['@id'])
+                    %th
+                      %a{:href => processor['@id']}<=processor['name']
+              - test_cases.each do |test|
+                - test_info[test['num']] ||= test.clone
+                %tr{:typeof => test['@type'], :resource => test['@id']}
+                  %td
+                    %a{:property => 'rdfatest:num', :href => "#test_#{test['num']}"}<= test['num']
+                    %span{:property => 'dc:title'}<= test['title']
+                    %span{:property => 'dc:description'}<= test['description']
+                    %link{:property => 'earl:mode', :href => test['mode']}/ 
+                  - processors.each do |processor|
+                    - url = processor['@id']
+                    - next unless test.has_key?(url)
+                    - assertion = test[url]
+                    - pass_fail = assertion['result']['outcome'].split(':').last.upcase
+                    %td{:class => pass_fail, :rel => assertion['@id'], :typeof => assertion['@type']}
+                      %link{:property => "earl:assertedBy", :href => assertion['assertedBy']}
+                      %link{:property => "earl:test", :href => assertion['test']}
+                      %link{:property => "earl:subject", :href => assertion['subject']}
+                      %span{:property => "earl:result", :typeof => assertion['result']['@type'], :resource => assertion['result']['outcome']}
+                        = pass_fail
+    %section.appendix
+      %h2
+        Processors
+      %p
+        This report was tested using the following processors:
+      %dl
+        - processors.each do |processor|
+          %dt{:about => processor['@id'], :typeof => processor['@type'].join(" "), :property => "doap:name"}
+            = processor['name']
+          %dd{:about => processor['@id']}
+            %dl
+              - if processor['doap_desc']
+                %dt= "Description"
+                %dd{:property => "doap:description"}<= processor['doap_desc']
+              - if processor['language']
+                %dt= "Programming Language"
+                %dd{:property => "doap:programming-language"}<= processor['language']
+              - if processor['developer']
+                %dt= "Developer"
+                %dd{:property => "doap:developer", :typeof => "foaf:Person"}
+                  - if processor['developer']['@id']
+                    %a{:href => processor['developer']['@id']}
+                      %span{:property => "foaf:name"}<= processor['developer']['foaf:name']
+                  - else
+                    %span{:property => "foaf:name"}<= processor['developer']['foaf:name']
+              - if processor['homepage']
+                %dt= "Home Page"
+                %dd{:property => "doap:homepage"}
+                  %a{:href=> processor['homepage']}=processor['homepage']
+    %section.appendix
+      %h2
+        Individual Test Results
+      %p
+        Individual test results used to construct this report are available here:
+      %ul
+        - source_files.each do |file|
+          %li
+            %a.source{:href => file}<= file
+    %section.appendix
+      %h2
+        Test Definitions
+      %p
+        Tests are repeated for each RDFa version and Host Language as necessary, but are all based on
+        common tests with minor rewriting based on host language specific attributes. The tests
+        are defined generically here.
+      %dl
+        - test_info.keys.sort do |num|
+          - test = test_info[num]
+          %dt{:id => "test_#{test['num']}"}
+            Test
+            = test['num'] + ":"
+            = test['title']
+          %dd
+            = test['description']

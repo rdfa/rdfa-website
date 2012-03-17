@@ -40,6 +40,19 @@ class EARL
     }
   ).freeze
   
+  VOCAB_QUERY = %(
+    PREFIX dc: <http://purl.org/dc/terms/>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    
+    SELECT ?prop ?label ?description
+    WHERE {
+      ?prop a owl:DatatypeProperty;
+        rdfs:label ?label;
+        dc:description ?description .
+    }
+  )
+
   SUITE_URI = "http://rdfa.info/test-suite/"
   PROCESSORS_PATH = File.expand_path("../../processors.json", __FILE__)
 
@@ -132,6 +145,7 @@ class EARL
         if solution[:dev_name] || solution[:developer].is_a?(RDF::URI)
           info['developer'] = Hash.ordered
           info['developer']['@id'] = solution[:developer].to_s if solution[:developer].uri?
+          info['developer']['@type'] = 'foaf:Person'
           info['developer']['foaf:name'] = solution[:dev_name].to_s if solution[:dev_name]
         end
       end
@@ -146,6 +160,19 @@ class EARL
         hash[:processor] << processor
       end
       
+      # Get vocabulary information for documentation
+      vocab_graph = RDF::Graph.load(File.expand_path("../../public/vocabs/rdfa-test.html", __FILE__))
+      vocab_info = {}
+      SPARQL.execute(VOCAB_QUERY, vocab_graph).each do |solution|
+        prop_name = solution[:prop].to_s.split('/').last
+        vocab_info[prop_name] = {
+          "@id"         => prop_name,
+          "label"       => solution[:label].to_s,
+          "description" => solution[:description].to_s
+        }
+      end
+      hash[:vocabulary] = vocab_info
+
       # Collect results
       results = {}
       SPARQL.execute(RESULT_QUERY, @graph).each do |solution|
