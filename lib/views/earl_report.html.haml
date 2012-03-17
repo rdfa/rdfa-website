@@ -52,20 +52,19 @@
   %head
     %meta{"http-equiv" => "Content-Type", :content => "text/html;charset=utf-8"}
     %title
-      EARL Report for RDFa 1.1
+      RDFa 1.1 Processor Conformance
     %script.remove{:type => "text/javascript", :src => "http://dev.w3.org/2009/dap/ReSpec.js/js/respec.js"}
     :javascript
       var respecConfig = {
           // specification status (e.g. WD, LCWD, NOTE, etc.). If in doubt use ED.
           specStatus:           "unofficial",
-          //publishDate:          "2010-04-29",
           copyrightStart:       "2010",
 
           // the specification's short name, as in http://www.w3.org/TR/short-name/
           shortName:            "rdfa-earl",
-          subtitle:             "EARL Report for RDFa 1.1",
+          subtitle:             "EARL results from the RDFa 1.1 Test Suite",
           // if you wish the publication date to be other than today, set this
-          // publishDate:  "2009-08-06",
+          publishDate:  "#{Time.now.strftime("%Y/%m/%d")}",
 
           // if there is a previously published draft, uncomment this and set its YYYY-MM-DD date
           // and its maturity status
@@ -154,8 +153,8 @@
   %body{:prefix => "earl: http://www.w3.org/ns/earl# doap: http://usefulinc.com/ns/doap# rdfatest: http://rdfa.info/vocabs/rdfa-test#"}
     %section#abstract{:about => tests['@id'], :typeof => tests['@type']}
       %p
-        This document reports processor conformance for [[!RDFA-CORE]] and related specifications
-        according to the requirements of the Evaluation and Report Language (EARL) 1.0 Schema [[!EARL10-SCHEMA]].
+        This document reports processor conformance for [[RDFA-CORE]] and related specifications
+        according to the requirements of the Evaluation and Report Language (EARL) 1.0 Schema [[EARL10-SCHEMA]].
       %p
         This document describes
         %span{:property => "doap:name"}<=tests['name']
