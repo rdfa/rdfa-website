@@ -1,0 +1,8 @@
+<head>
+  <title>Test 0286</title>
+</head>
+<body>
+  <data property="rdf:value" lang="lat" value="veni, vidi, vici" content="I came, I saw, I conquered">
+    @value overrides @content.
+  </time>
+</body>

@@ -2019,3 +2019,173 @@ white   space
    test:informationResourceResults <test-cases/0271.sparql>;
    test:purpose "@property appearing on the head element gets the subject from parent, also with @content and explicit @about at the top";
    test:specificationReference "" .
+<test-cases/0272> dc:contributor "Gregg Kellogg";
+   dc:title "time element with @datetime an xsd:date";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0272.html>;
+   test:informationResourceResults <test-cases/0272.sparql>;
+   test:purpose "The @datetime attribute is used when generating output with valid xsd:date.";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0273> dc:contributor "Gregg Kellogg";
+   dc:title "time element with @datetime an xsd:time";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0273.html>;
+   test:informationResourceResults <test-cases/0273.sparql>;
+   test:purpose "The @datetime attribute is used when generating output with valid xsd:time.";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0274> dc:contributor "Gregg Kellogg";
+   dc:title "time element with @datetime an xsd:dateTime";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0274.html>;
+   test:informationResourceResults <test-cases/0274.sparql>;
+   test:purpose "The @datetime attribute is used when generating output with valid xsd:dateTime.";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0275> dc:contributor "Gregg Kellogg";
+   dc:title "time element with value an xsd:time";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0275.html>;
+   test:informationResourceResults <test-cases/0275.sparql>;
+   test:purpose "The time element value is used when generating output with valid xsd:date.";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0276> dc:contributor "Gregg Kellogg";
+   dc:title "time element with value an xsd:time";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0276.html>;
+   test:informationResourceResults <test-cases/0276.sparql>;
+   test:purpose "The time element value is used when generating output with valid xsd:time.";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0277> dc:contributor "Gregg Kellogg";
+   dc:title "time element with value an xsd:dateTime";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0277.html>;
+   test:informationResourceResults <test-cases/0277.sparql>;
+   test:purpose "The time element value is used when generating output with valid xsd:dateTime.";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0278> dc:contributor "Gregg Kellogg";
+   dc:title "@datetime overrides @content";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0278.html>;
+   test:informationResourceResults <test-cases/0278.sparql>;
+   test:purpose "The @datetime attribute must be utilized when generating output, overriding any value expressed using the @content attribute.";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0279> dc:contributor "Gregg Kellogg";
+   dc:title "@datetype used with @datetime overrides default datatype";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0279.html>;
+   test:informationResourceResults <test-cases/0279.sparql>;
+   test:purpose "If @datatype is specified, it must override the automatic datatype.";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0280> dc:contributor "Gregg Kellogg";
+   dc:title "time element with @datetime an xsd:duration";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0280.html>;
+   test:informationResourceResults <test-cases/0280.sparql>;
+   test:purpose "The @datetime attribute is used when generating output with valid xsd:duration.";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0281> dc:contributor "Gregg Kellogg";
+   dc:title "time element with @datetime an xsd:gYear";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0281.html>;
+   test:informationResourceResults <test-cases/0281.sparql>;
+   test:purpose "The @datetime attribute is used when generating output with valid xsd:gYear.";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0282> dc:contributor "Gregg Kellogg";
+   dc:title "time element with @datetime an xsd:gYearMonth";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0282.html>;
+   test:informationResourceResults <test-cases/0282.sparql>;
+   test:purpose "The @datetime attribute is used when generating output with valid xsd:gYearMonth.";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0283> dc:contributor "Gregg Kellogg";
+   dc:title "time element with @datetime an invalid datatype generates plain literal";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0283.html>;
+   test:informationResourceResults <test-cases/0283.sparql>;
+   test:purpose "If the lexical scope of @datetime does not exactly match a known datatype a plain literal is generated.";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0284> dc:contributor "Gregg Kellogg";
+   dc:title "@data is an IRI attribute";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0284.html>;
+   test:informationResourceResults <test-cases/0284.sparql>;
+   test:purpose "The @data attribute generates an IRI.";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0285> dc:contributor "Gregg Kellogg";
+   dc:title "time element with @datetime an invalid datatype and in scope @lang generates plain literal with language";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0285.html>;
+   test:informationResourceResults <test-cases/0285.sparql>;
+   test:purpose "If no @datatype is specified and the value does not match a xsd:dateTime, xsd:date, or xsd:time pattern, a plain literal must be generated with the associated language of the node, if available.";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0286> dc:contributor "Gregg Kellogg";
+   dc:title "@value attribute overrides @content";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0286.html>;
+   test:informationResourceResults <test-cases/0286.sparql>;
+   test:purpose "the HTML5 @value attribute must be utilized when generating output. If @value is detected, it must override and be processed according to the rules for @content.";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0287> dc:contributor "Gregg Kellogg";
+   dc:title "time element with @datetime an xsd:dateTime with TZ offset";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0287.html>;
+   test:informationResourceResults <test-cases/0287.sparql>;
+   test:purpose "The @datetime attribute is used when generating output with valid xsd:dateTime and a Time Zone offset.";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0288> dc:contributor "Gregg Kellogg";
+   dc:title "object element with @data parses as an IRI";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0288.html>;
+   test:informationResourceResults <test-cases/0288.sparql>;
+   test:purpose "@data is a resource attribute.";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
