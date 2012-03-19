@@ -50,7 +50,7 @@ namespace :earl do
       f.split('/').last
     end
     earl_json = File.read(File.expand_path("../public/earl-reports/earl.jsonld", __FILE__))
-    File.open(File.expand_path("../public/earl-reports/index.html", __FILE__), "w") do |file|
+    File.open(File.expand_path("../public/earl-reports/earl.html", __FILE__), "w") do |file|
       EARL.generate(earl_json, source_files, file)
     end
   end
