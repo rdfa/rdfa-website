@@ -8051,7 +8051,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -8103,7 +8103,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -8185,7 +8185,7 @@
         "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0275.html",
         "@type": "earl:TestCase",
         "num": "0275",
-        "title": "time element with value an xsd:time",
+        "title": "time element with value an xsd:date",
         "description": "The time element value is used when generating output with valid xsd:date.",
         "mode": "earl:automatic",
         "http://rubygems.org/gems/rdf-rdfa": {
@@ -8207,7 +8207,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -8259,7 +8259,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -8363,7 +8363,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -8415,7 +8415,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -8467,7 +8467,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -8623,7 +8623,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -8675,7 +8675,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -8779,7 +8779,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -8831,7 +8831,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -26309,7 +26309,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -26361,7 +26361,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -26443,7 +26443,7 @@
         "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0275.xhtml",
         "@type": "earl:TestCase",
         "num": "0275",
-        "title": "time element with value an xsd:time",
+        "title": "time element with value an xsd:date",
         "description": "The time element value is used when generating output with valid xsd:date.",
         "mode": "earl:automatic",
         "http://rubygems.org/gems/rdf-rdfa": {
@@ -26465,7 +26465,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -26517,7 +26517,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -26621,7 +26621,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -26673,7 +26673,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -26725,7 +26725,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -26881,7 +26881,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -26933,7 +26933,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -27089,7 +27089,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
