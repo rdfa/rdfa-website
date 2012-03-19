@@ -32,14 +32,15 @@ namespace :earl do
   desc 'Collate reports'
   task :collate => :environment do
     require 'earl'
+    puts "parse individual results"
     earl = EARL.new(Dir.glob(File.expand_path("../public/earl-reports/*-rdfa*.html", __FILE__)))
-    File.open(File.expand_path("../public/earl-reports/earl.ttl", __FILE__), "w") do |file|
-      puts "dump #{earl.graph.count} triples to Turtle"
-      earl.dump(:ttl, file)
-    end
     File.open(File.expand_path("../public/earl-reports/earl.jsonld", __FILE__), "w") do |file|
       puts "dump #{earl.graph.count} triples to JSON-LD"
       earl.dump(:jsonld, file)
+    end
+    File.open(File.expand_path("../public/earl-reports/earl.ttl", __FILE__), "w") do |file|
+      puts "dump #{earl.graph.count} triples to Turtle"
+      earl.dump(:ttl, file)
     end
   end
   
