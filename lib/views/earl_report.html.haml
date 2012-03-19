@@ -45,6 +45,12 @@
 -#     ...
 -#    }
 -#  }
+-# Split 'rdfa1.1' into two parts, for defined languages, and other
+
+- MAIN_HOST_LANGUAGES = %w(xhtml1 xml) # Only report on these host languages in the main section
+- tests['rdfa1.1-other'] = tests['rdfa1.1'].reject {|k| MAIN_HOST_LANGUAGES.include?(k)}
+- tests['vocabulary']['rdfa1.1-other'] = {'label' => "Other Host Languages", 'description' => %(The following results are for host languages that are not explicitly specified, or for which standards work is not yet complete.)}
+- tests['rdfa1.1'].select! { |k| MAIN_HOST_LANGUAGES.include?(k)}
 - test_info = {}
 !!! 5
 %html{:lang => "en"}
@@ -169,7 +175,7 @@
         %a{:href => "earl.jsonld"}
           JSON-LD
     %section#sodt
-    - %w(rdfa1.0 rdfa1.1 rdfa1.1-vocab).each do |version|
+    - %w(rdfa1.0 rdfa1.1 rdfa1.1-vocab rdfa1.1-other).each do |version|
       - next unless tests.has_key?(version)
       %section{:rel => "rdfatest:version/#{version}", :typeof => "rdfatest:Version"}
         %h2<=tests['vocabulary'][version]['label']
