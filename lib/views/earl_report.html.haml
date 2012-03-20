@@ -156,6 +156,9 @@
         background-color: white;
         -moz-border-radius: ;
       }
+      pre.example.inputDoc, pre.example.sparqlResults { margin-left: 0;}
+      pre.example.inputDoc::before { content: "Input Document";}
+      pre.example.sparqlResults::before { content: "SPARQL Results";}
   %body{:prefix => "earl: http://www.w3.org/ns/earl# doap: http://usefulinc.com/ns/doap# rdfatest: http://rdfa.info/vocabs/rdfa-test#"}
     %section#abstract{:about => tests['@id'], :typeof => tests['@type']}
       %p
@@ -257,9 +260,11 @@
       %h2
         Test Definitions
       %p
-        Tests are repeated for each RDFa version and Host Language as necessary, but are all based on
-        common tests with minor rewriting based on host language specific attributes. The tests
-        are defined generically here.
+        Tests are repeated for each RDFa version and Host Language as necessary, but are based on
+        common tests with minor rewriting based on host language specific attributes.
+      %p
+        Input and SPARQL representations are shown for XHTML5, but will have some slight variation
+        for different host languages.
       %dl
         - keys = test_info.keys.sort
         - keys.each do |num|
@@ -270,3 +275,7 @@
             = test['title']
           %dd
             = test['description']
+            %dl
+              %dt
+                %pre{:class => "example inputDoc"}<&= CrazyIvan::Core::get_test_content("rdfa1.1", "xhtml5", test['num'])
+                %pre{:class => "example sparqlResults"}<&= CrazyIvan::Core::get_test_content("rdfa1.1", "xhtml5", test['num'], "sparql")

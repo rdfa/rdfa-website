@@ -4,6 +4,7 @@ require 'rdf/turtle'
 require 'json/ld'
 require 'sparql'
 require 'haml'
+require 'crazyivan/core'
 
 ##
 # EARL reporting class.

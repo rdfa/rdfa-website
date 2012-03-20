@@ -4026,7 +4026,7 @@
         "@type": "earl:TestCase",
         "num": "0118",
         "title": "empty string \"\" is not equivalent to NULL - @about",
-        "description": "Checks to make sure that the empty\n  string \"\" isn't considered as NULL in languages such as Javascript when\n  generating triples. This test sets the subject in a chain using @href\n  and then immediately changes the subject using @about and generates a\n  triple. A buggy parser may use the @href subject\n  (http://example.org/javascript.html) instead of the one defined by @about.",
+        "description": "Checks to make sure that the empty\n          string \"\" isn't considered as NULL in languages such as Javascript when\n          generating triples. This test sets the subject in a chain using @href\n          and then immediately changes the subject using @about and generates a\n          triple. A buggy parser may use the @href subject\n          (http://example.org/javascript.html) instead of the one defined by @about.",
         "mode": "earl:automatic",
         "http://rubygems.org/gems/rdf-rdfa": {
           "@id": "http://rdfa.info/test-suite/test-details/rdfa1.1/html5/0118?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26uri%3D",
@@ -4078,7 +4078,7 @@
         "@type": "earl:TestCase",
         "num": "0119",
         "title": "\"[prefix:]\" CURIE format is valid",
-        "description": "Checks to make sure that an RDFa processor expands CURIEs having only a prefix and a\n    colon if a prefix is properly defined using xmlns.\n    ",
+        "description": "Checks to make sure that an RDFa processor expands CURIEs having only a prefix and a\n            colon if a prefix is properly defined using xmlns.\n            ",
         "mode": "earl:automatic",
         "http://rubygems.org/gems/rdf-rdfa": {
           "@id": "http://rdfa.info/test-suite/test-details/rdfa1.1/html5/0119?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26uri%3D",
@@ -4130,7 +4130,7 @@
         "@type": "earl:TestCase",
         "num": "0120",
         "title": "\"[:]\" CURIE format is valid",
-        "description": "Checks to make sure that an RDFa processor expands CURIEs having only a colon to the\n  default prefix \"http://www.w3.org/1999/test-cases/vocab#\".\n        ",
+        "description": "Checks to make sure that an RDFa processor expands CURIEs having only a colon to the\n          default prefix \"http://www.w3.org/1999/test-cases/vocab#\".\n                ",
         "mode": "earl:automatic",
         "http://rubygems.org/gems/rdf-rdfa": {
           "@id": "http://rdfa.info/test-suite/test-details/rdfa1.1/html5/0120?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26uri%3D",
@@ -4182,7 +4182,7 @@
         "@type": "earl:TestCase",
         "num": "0122",
         "title": "resource=\"[]\" does not set the object",
-        "description": "Checks to make sure that resource=\"[]\" does not set the object since RDFa does not allow non-prefixed CURIEs.\n        ",
+        "description": "Checks to make sure that resource=\"[]\" does not set the object since RDFa does not allow non-prefixed CURIEs.\n                ",
         "mode": "earl:automatic",
         "http://rubygems.org/gems/rdf-rdfa": {
           "@id": "http://rdfa.info/test-suite/test-details/rdfa1.1/html5/0122?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26uri%3D",
@@ -5170,7 +5170,7 @@
         "@type": "earl:TestCase",
         "num": "0189",
         "title": "Test @vocab overrides default term",
-        "description": "\n    Check that @vocab changes a default term from XHV. Lookup checks default vocabulary before\n    local term mappings.\n   ",
+        "description": "\n            Check that @vocab changes a default term from XHV. Lookup checks default vocabulary before\n            local term mappings.\n           ",
         "mode": "earl:automatic",
         "http://rubygems.org/gems/rdf-rdfa": {
           "@id": "http://rdfa.info/test-suite/test-details/rdfa1.1/html5/0189?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26uri%3D",
@@ -6626,7 +6626,7 @@
         "@type": "earl:TestCase",
         "num": "0237",
         "title": "rdfagraph='processor' with invalid SafeCURIE generates rdfa:Warning",
-        "description": "\n      Setting rdfagraph query parameter to 'processor' generates an rdf:Warning when given\n      a SafeCURIE with an invalid prefix.\n   ",
+        "description": "\n              Setting rdfagraph query parameter to 'processor' generates an rdf:Warning when given\n              a SafeCURIE with an invalid prefix.\n           ",
         "mode": "earl:automatic",
         "http://rubygems.org/gems/rdf-rdfa": {
           "@id": "http://rdfa.info/test-suite/test-details/rdfa1.1/html5/0237?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26rdfagraph%3Dprocessor%26uri%3D",
@@ -6678,7 +6678,7 @@
         "@type": "earl:TestCase",
         "num": "0238",
         "title": "rdfagraph='processor' with missing Term definition generates rdfa:Warning",
-        "description": "\n      Setting rdfagraph query parameter to 'processor' generates an rdf:Warning when given\n      a missing Term definition.\n   ",
+        "description": "\n              Setting rdfagraph query parameter to 'processor' generates an rdf:Warning when given\n              a missing Term definition.\n           ",
         "mode": "earl:automatic",
         "http://rubygems.org/gems/rdf-rdfa": {
           "@id": "http://rdfa.info/test-suite/test-details/rdfa1.1/html5/0238?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26rdfagraph%3Dprocessor%26uri%3D",
@@ -6730,7 +6730,7 @@
         "@type": "earl:TestCase",
         "num": "0239",
         "title": "rdfagraph='processor' with undefined prefix generates rdfa:Warning",
-        "description": "\n      Setting rdfagraph query parameter to 'processor' generates an rdf:Warning when given\n      a SafeCURIE with an undefined prefix.\n   ",
+        "description": "\n              Setting rdfagraph query parameter to 'processor' generates an rdf:Warning when given\n              a SafeCURIE with an undefined prefix.\n           ",
         "mode": "earl:automatic",
         "http://rubygems.org/gems/rdf-rdfa": {
           "@id": "http://rdfa.info/test-suite/test-details/rdfa1.1/html5/0239?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26rdfagraph%3Dprocessor%26uri%3D",
@@ -7146,7 +7146,7 @@
         "@type": "earl:TestCase",
         "num": "0253",
         "title": "plain literal with datatype=\"\" and lang preservation",
-        "description": "Checks to make sure that the RDFa parser emits a plain literal when the datatype is specified as \"\" and preserves the xml:lang value. The text, with control characters and whitespace preserved, reads \"Greek\nwhite   space\n\".",
+        "description": "Checks to make sure that the RDFa parser emits a plain literal when the datatype is specified as \"\" and preserves the xml:lang value. The text, with control characters and whitespace preserved, reads \"Greek\n        white   space\n        \".",
         "mode": "earl:automatic",
         "http://rubygems.org/gems/rdf-rdfa": {
           "@id": "http://rdfa.info/test-suite/test-details/rdfa1.1/html5/0253?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26uri%3D",
@@ -8062,7 +8062,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -8114,7 +8114,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -8166,7 +8166,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -8218,7 +8218,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -8270,7 +8270,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -8322,7 +8322,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -8374,7 +8374,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -8426,7 +8426,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -8478,7 +8478,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -8530,7 +8530,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -8582,7 +8582,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -8738,7 +8738,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -8790,7 +8790,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -8842,7 +8842,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -8894,7 +8894,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -26320,7 +26320,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -26372,7 +26372,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -26424,7 +26424,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -26476,7 +26476,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -26528,7 +26528,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -26580,7 +26580,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -26632,7 +26632,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -26684,7 +26684,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -26736,7 +26736,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -26788,7 +26788,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -26840,7 +26840,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -26996,7 +26996,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -27037,7 +27037,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -27048,7 +27048,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -27100,7 +27100,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {
@@ -27152,7 +27152,7 @@
           "subject": "https://github.com/niklasl/clj-rdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/rdfa/librdfa": {

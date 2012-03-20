@@ -1712,11 +1712,11 @@ white   space
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0118.html> a earl:TestCase; earl:mode earl:automatic;
   dc:title "empty string "" is not equivalent to NULL - @about";
   dc:description """Checks to make sure that the empty
-  string "" isn't considered as NULL in languages such as Javascript when
-  generating triples. This test sets the subject in a chain using @href
-  and then immediately changes the subject using @about and generates a
-  triple. A buggy parser may use the @href subject
-  (http://example.org/javascript.html) instead of the one defined by @about.""";
+          string "" isn't considered as NULL in languages such as Javascript when
+          generating triples. This test sets the subject in a chain using @href
+          and then immediately changes the subject using @about and generates a
+          triple. A buggy parser may use the @href subject
+          (http://example.org/javascript.html) instead of the one defined by @about.""";
   rdfatest:num "0118";
   rdfatest:rdfaVersion "rdfa1.1";
   rdfatest:hostLanguage "html5", "xhtml1", "xhtml5", "xml";
@@ -1729,8 +1729,8 @@ white   space
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0119.html> a earl:TestCase; earl:mode earl:automatic;
   dc:title ""[prefix:]" CURIE format is valid";
   dc:description """Checks to make sure that an RDFa processor expands CURIEs having only a prefix and a
-    colon if a prefix is properly defined using xmlns.
-    """;
+            colon if a prefix is properly defined using xmlns.
+            """;
   rdfatest:num "0119";
   rdfatest:rdfaVersion "rdfa1.1";
   rdfatest:hostLanguage "html5", "xhtml1", "xhtml5", "xml";
@@ -1743,8 +1743,8 @@ white   space
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0120.html> a earl:TestCase; earl:mode earl:automatic;
   dc:title ""[:]" CURIE format is valid";
   dc:description """Checks to make sure that an RDFa processor expands CURIEs having only a colon to the
-  default prefix "http://www.w3.org/1999/test-cases/vocab#".
-        """;
+          default prefix "http://www.w3.org/1999/test-cases/vocab#".
+                """;
   rdfatest:num "0120";
   rdfatest:rdfaVersion "rdfa1.1";
   rdfatest:hostLanguage "html5", "xhtml1", "xhtml5", "xml";
@@ -1769,7 +1769,7 @@ white   space
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0122.html> a earl:TestCase; earl:mode earl:automatic;
   dc:title "resource="[]" does not set the object";
   dc:description """Checks to make sure that resource="[]" does not set the object since RDFa does not allow non-prefixed CURIEs.
-        """;
+                """;
   rdfatest:num "0122";
   rdfatest:rdfaVersion "rdfa1.1";
   rdfatest:hostLanguage "html5", "xhtml1", "xhtml5", "xml";
@@ -2022,9 +2022,9 @@ white   space
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0189.html> a earl:TestCase; earl:mode earl:automatic;
   dc:title "Test @vocab overrides default term";
   dc:description """
-    Check that @vocab changes a default term from XHV. Lookup checks default vocabulary before
-    local term mappings.
-   """;
+            Check that @vocab changes a default term from XHV. Lookup checks default vocabulary before
+            local term mappings.
+           """;
   rdfatest:num "0189";
   rdfatest:rdfaVersion "rdfa1.1";
   rdfatest:hostLanguage "html5", "xhtml1", "xhtml5";
@@ -2421,9 +2421,9 @@ white   space
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0237.html> a earl:TestCase; earl:mode earl:automatic;
   dc:title "rdfagraph='processor' with invalid SafeCURIE generates rdfa:Warning";
   dc:description """
-      Setting rdfagraph query parameter to 'processor' generates an rdf:Warning when given
-      a SafeCURIE with an invalid prefix.
-   """;
+              Setting rdfagraph query parameter to 'processor' generates an rdf:Warning when given
+              a SafeCURIE with an invalid prefix.
+           """;
   rdfatest:num "0237";
   rdfatest:rdfaVersion "rdfa1.1";
   rdfatest:hostLanguage "html5", "svg", "xhtml1", "xhtml5", "xml";
@@ -2436,9 +2436,9 @@ white   space
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0238.html> a earl:TestCase; earl:mode earl:automatic;
   dc:title "rdfagraph='processor' with missing Term definition generates rdfa:Warning";
   dc:description """
-      Setting rdfagraph query parameter to 'processor' generates an rdf:Warning when given
-      a missing Term definition.
-   """;
+              Setting rdfagraph query parameter to 'processor' generates an rdf:Warning when given
+              a missing Term definition.
+           """;
   rdfatest:num "0238";
   rdfatest:rdfaVersion "rdfa1.1";
   rdfatest:hostLanguage "html5", "svg", "xhtml1", "xhtml5", "xml";
@@ -2451,9 +2451,9 @@ white   space
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0239.html> a earl:TestCase; earl:mode earl:automatic;
   dc:title "rdfagraph='processor' with undefined prefix generates rdfa:Warning";
   dc:description """
-      Setting rdfagraph query parameter to 'processor' generates an rdf:Warning when given
-      a SafeCURIE with an undefined prefix.
-   """;
+              Setting rdfagraph query parameter to 'processor' generates an rdf:Warning when given
+              a SafeCURIE with an undefined prefix.
+           """;
   rdfatest:num "0239";
   rdfatest:rdfaVersion "rdfa1.1";
   rdfatest:hostLanguage "html5", "svg", "xhtml1", "xhtml5", "xml";
@@ -2628,8 +2628,8 @@ white   space
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0253.html> a earl:TestCase; earl:mode earl:automatic;
   dc:title "plain literal with datatype="" and lang preservation";
   dc:description """Checks to make sure that the RDFa parser emits a plain literal when the datatype is specified as "" and preserves the xml:lang value. The text, with control characters and whitespace preserved, reads "Greek
-white   space
-".""";
+        white   space
+        ".""";
   rdfatest:num "0253";
   rdfatest:rdfaVersion "rdfa1.1";
   rdfatest:hostLanguage "html5", "xhtml5";
@@ -8349,7 +8349,7 @@ white   space
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0286.xhtml>;
   earl:subject <http://www.w3.org/2012/pyRdfa>;
-  earl:result [ a earl:Result; earl:fail] .
+  earl:result [ a earl:Result; earl:pass] .
 <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml5/0287?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26uri%3D> a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0287.xhtml>;

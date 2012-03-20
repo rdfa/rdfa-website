@@ -11,6 +11,7 @@ module CrazyIvan
     TESTS_PATH = File.expand_path("../../../tests", __FILE__)
     MANIFEST_FILE = File.expand_path("../../../manifest.ttl", __FILE__)
     MANIFEST_JSON = File.expand_path("../../../manifest.jsonld", __FILE__)
+    HOSTNAME = (ENV['hostname'] || 'rdfa.info').freeze
 
     TESTS_QUERY = %(
       PREFIX dc: <http://purl.org/dc/terms/>
@@ -150,8 +151,9 @@ module CrazyIvan
       end
 
       filename = TESTS_PATH + "/#{num}.#{format == 'sparql' ? 'sparql' : 'txt'}"
-      tcpath = url("/test-suite/test-cases/#{version}/#{suite}").
-        sub(/localhost:\d+/, HOSTNAME) # For local testing
+      
+      tcpath = url("/test-suite/test-cases/#{version}/#{suite}") rescue "http://rdfa.info/test-suite/test-cases/#{version}/#{suite}"
+      tcpath.sub!(/localhost:\d+/, HOSTNAME) # For local testing
 
       # Read in the file, extracting namespaces
       found_head = format == 'sparql'
