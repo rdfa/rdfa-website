@@ -2,7 +2,7 @@
   <title>Test 0286</title>
 </head>
 <body>
-  <span property="rdf:value" lang="lat" value="veni, vidi, vici" content="I came, I saw, I conquered">
-    @value overrides @content.
-  </span>
+  <data property="rdf:value" lang="lat" value="veni, vidi, vici" content="I came, I saw, I conquered">
+    @value overrides @content in the 'data' element.
+  </data>
 </body>
