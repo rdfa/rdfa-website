@@ -1082,8 +1082,8 @@ white   space
    test:informationResourceResults <test-cases/0174.sparql>;
    test:purpose "Checks to ensure that the RDFa processor correctly processes single character prefixes when processing CURIEs.";
    test:specificationReference "" .
-<test-cases/0175> dc:contributor "Gregg Kellogg";
-   dc:title "Property is URI";
+<test-cases/0175> dc:contributor "Manu Sporny";
+   dc:title "IRI for @property is allowed";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
@@ -1094,7 +1094,7 @@ white   space
    test:purpose "Checks to make sure that a URI may be used as a @property value";
    test:specificationReference "" .
 <test-cases/0176> dc:contributor "Gregg Kellogg";
-   dc:title "Rel and Rev is URI";
+   dc:title "IRI for @rel and @rev is allowed";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;

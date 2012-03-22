@@ -2,7 +2,7 @@
     <title>Test 0175</title>
   </head>
   <body>
-    <p about="_:gregg">Gregg knows
-      <a rel="http://xmlns.com/foaf/0.1/knows" href="http://digitalbazaar.com/people/manu">Manu</a>.
+    <p about="_:gregg">My name is
+      <em property="http://xmlns.com/foaf/0.1/name">Gregg Kellogg</em>.
     </p>
   </body>
