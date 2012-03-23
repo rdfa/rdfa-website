@@ -2189,3 +2189,43 @@ white   space
    test:informationResourceResults <test-cases/0288.sparql>;
    test:purpose "@data is a resource attribute.";
    test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0289> dc:contributor "Niklas Lindström";
+   dc:title "@href becomes subject when @property and @content are present";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0289.html>;
+   test:informationResourceResults <test-cases/0289.sparql>;
+   test:purpose "When @property and @content are present but @about, @rel and @rev are not, @href is used as subject.";
+   test:specificationReference "RDFa Core 1.1, section 7.5 step 5.2" .
+<test-cases/0290> dc:contributor "Niklas Lindström";
+   dc:title "@href becomes subject when @property and @datatype are present";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0290.html>;
+   test:informationResourceResults <test-cases/0290.sparql>;
+   test:purpose "When @property and @datatype are present but @about, @rel and @rev are not, @href is used as subject and element content is used as an object literal.";
+   test:specificationReference "RDFa Core 1.1, section 7.5 step 5.2" .
+<test-cases/0291> dc:contributor "Niklas Lindström";
+   dc:title "@href as subject overridden by @about";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0291.html>;
+   test:informationResourceResults <test-cases/0291.sparql>;
+   test:purpose "When @property, @datatype, @href and @about are present but @rel and @rev are not, @about is used as subject.";
+   test:specificationReference "RDFa Core 1.1, section 7.5 step 5.2" .
+<test-cases/0292> dc:contributor "Niklas Lindström";
+   dc:title "@about overriding @href as subject is used as parent resource";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0292.html>;
+   test:informationResourceResults <test-cases/0292.sparql>;
+   test:purpose "When @property, @datatype, @href and @about are present but @rel and @rev are not, @about is used as subject and is also applied to nested descriptions.";
+   test:specificationReference "RDFa Core 1.1, section 7.5 step 5.2" .

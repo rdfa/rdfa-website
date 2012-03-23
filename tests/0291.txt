@@ -1,0 +1,7 @@
+<head>
+  <title>Test 0291</title>
+</head>
+<body>
+  <h1>@href as subject overridden by @about</h1>
+  <a about="http://example.net/" href="http://example.org/" property="rdf:value" content="value">ignored</a>
+</body>
