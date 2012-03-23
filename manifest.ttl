@@ -1182,7 +1182,7 @@ white   space
    test:purpose "A new @xmlns definition should override a previous @prefix definition at this element.";
    test:specificationReference "" .
 <test-cases/0186> dc:contributor "Ivan Herman";
-   dc:title "Test @vocab";
+   dc:title "@vocab after subject declaration";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
@@ -1190,10 +1190,10 @@ white   space
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0186.html>;
    test:informationResourceResults <test-cases/0186.sparql>;
-   test:purpose "Check that @vocab defines a new default mapping";
+   test:purpose "Check that @vocab establishes a new default vocabulary when declared on the same element as a subject declaration via @about.";
    test:specificationReference "" .
 <test-cases/0187> dc:contributor "Ivan Herman";
-   dc:title "Test @vocab redefinition";
+   dc:title "@vocab redefinition";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
@@ -1201,10 +1201,10 @@ white   space
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0187.html>;
    test:informationResourceResults <test-cases/0187.sparql>;
-   test:purpose "Check that @vocab redefines a previous @vocab definition";
+   test:purpose "Check that a more deeply nested @vocab attribute overloads a previous @vocab definition.";
    test:specificationReference "" .
 <test-cases/0188> dc:contributor "Ivan Herman";
-   dc:title "Test @vocab";
+   dc:title "@vocab only affects predicates";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
@@ -1212,10 +1212,10 @@ white   space
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0188.html>;
    test:informationResourceResults <test-cases/0188.sparql>;
-   test:purpose "Check that @vocab defines a new default mapping";
+   test:purpose "Check that @vocab definitions on parent elements only affect predicate establishment.";
    test:specificationReference "" .
 <test-cases/0189> dc:contributor "Ivan Herman";
-   dc:title "Test @vocab overrides default term";
+   dc:title "@vocab overrides default term";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
