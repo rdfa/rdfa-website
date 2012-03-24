@@ -1,0 +1,16 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://any23.org/> a doap:Project;
+  dc:title "any23";
+  doap:browse <http://code.google.com/p/any23/source/browse/>;
+  dc:created "2010-11-19"^^xsd:date;
+  doap:bug-database <https://github.com/niklasl/clj-rdfa/issues>;
+  doap:description "Anything To Triples (any23) is a library, a web service and a command line tool that extracts structured data in RDF format from a variety of Web documents"@en;
+  doap:name "Any23 - Anything to Triples";
+  doap:programming-language "Java";
+  doap:repository <http://any23.googlecode.com/svn/trunk/>;
+  doap:homepage <http://developers.any23.org/>] .

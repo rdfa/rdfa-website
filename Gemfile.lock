@@ -1,16 +1,16 @@
 GIT
   remote: git://github.com/gkellogg/json-ld.git
-  revision: e66fd24c734adc48badac1d51f3c8b8232c94bf8
+  revision: 6b80d0848519ac123ae1e0a1356e02960af58882
   specs:
     json-ld (0.1.1)
       json (>= 1.6.5)
-      rdf (>= 0.3.4)
+      rdf (>= 0.3.5)
 
 GIT
   remote: git://github.com/gkellogg/rdf-rdfa.git
-  revision: 79be47cadc78b0c9652e7e96e9008fca151f560b
+  revision: 9bca5d6b085263ae6fcb6067eab1a93a192c154e
   specs:
-    rdf-rdfa (0.3.9)
+    rdf-rdfa (0.3.10.1)
       haml (>= 3.0.0)
       htmlentities (>= 4.3.0)
       rdf (>= 0.3.3)
@@ -102,17 +102,17 @@ GEM
       cssmin (~> 1.0.2)
       sinatra (~> 1.3.0)
       uglifier (~> 1.2.0)
-    sparql (0.1.0)
+    sparql (0.1.1)
       builder (>= 3.0.0)
       json (>= 1.5.1)
       rdf (>= 0.3.5)
       rdf-xsd (>= 0.3.5)
       sparql-client (>= 0.0.11)
       sxp (>= 0.0.14)
-    sparql-client (0.0.11)
-      json_pure (>= 1.4.2)
+    sparql-client (0.1.0)
+      json_pure (>= 1.6.5)
       net-http-persistent (~> 1.4.1)
-      rdf (>= 0.3.4)
+      rdf (>= 0.3.5)
     sxp (0.0.14)
       json (>= 1.5.1)
     syntax (1.0.0)

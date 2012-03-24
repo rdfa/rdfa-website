@@ -39,7 +39,7 @@ window.ProcessorView = Backbone.View.extend({
   
   url: function(event) {
     this.model.set({
-      processorName: "unknown",
+      processorName: $(event.target).val(),
       processorURL: $(event.target).val(),
       processorDOAP: $(event.target).val()
     });

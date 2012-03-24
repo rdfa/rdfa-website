@@ -194,6 +194,8 @@
         %span{:property => "doap:name"}<>
           <%= processorName %>
         = "."
+    %p
+      Passed <%= passed %> out of <%= total %> test cases ( <%= passed * 100 / total %>%).
     %div.rel.version{:typeof => ""}
       RDFa Version <%= version %>.
       %div.rel.hostLanguage#items{:inlist => true}

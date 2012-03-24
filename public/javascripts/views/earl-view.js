@@ -31,6 +31,9 @@ window.EarlView = Backbone.View.extend({
   render:function (eventName) {
     var that = this;
     var JSON = this.model.version.toJSON();
+    var total = this.model.models.length;
+    var passed = _.filter(this.model.models, function(m) {return m.get('result') == 'PASS';}).length;
+    JSON = _.extend({total: total, passed: passed}, JSON);
 
     this.$el.html(this.template(JSON));
     this.$(".rel.version").attr("rel", "rdfatest:version/" + JSON.version);

@@ -1,19 +1,24 @@
 {
-  "clj-rdfa": {
+  "any23 (Java)": {
+    "endpoint": "http://any23.org/turtle/",
+    "doap": "http://any23.org/",
+    "doap_url": "/earl-reports/any23-doap.ttl"
+  },
+  "clj-rdfa (Clojure)": {
     "endpoint": "http://clj-rdfa.herokuapp.com/extract.ttl?url=",
     "doap": "https://github.com/niklasl/clj-rdfa",
     "doap_url": "/earl-reports/clj-rdfa-doap.ttl"
   },
-  "librdfa": {
+  "librdfa (C)": {
     "endpoint": "http://rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py?uri=",
     "doap": "https://github.com/rdfa/librdfa",
     "doap_url": "/earl-reports/librdfa-doap.ttl"
   },
-  "pyRdfa": {
+  "pyRdfa (Python)": {
     "endpoint": "http://www.w3.org/2012/pyRdfa/extract?uri=",
     "doap": "http://www.w3.org/2012/pyRdfa"
   },
-  "RDF.rb": {
+  "RDF Distiller (Ruby)": {
     "endpoint": "http://rdf.greggkellogg.net/distiller?raw=true&in_fmt=rdfa&uri=",
     "doap": "http://rubygems.org/gems/rdf-rdfa",
     "doap_url": "http://rdf.greggkellogg.net/doap"

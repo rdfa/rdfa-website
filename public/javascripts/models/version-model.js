@@ -2,7 +2,7 @@
 window.Version = Backbone.Model.extend({
   defaults: {
     processorURL: "http://www.w3.org/2012/pyRdfa/extract?uri=",
-    processorName: "pyRdfa",
+    processorName: "pyRdfa (Python)",
     processorDOAP: "http://www.w3.org/2012/pyRdfa",
 
     // List of processors
