@@ -2228,4 +2228,14 @@ white   space
    test:informationResourceInput <test-cases/0292.html>;
    test:informationResourceResults <test-cases/0292.sparql>;
    test:purpose "When @property, @datatype, @href and @about are present but @rel and @rev are not, @about is used as subject and is also applied to nested descriptions.";
-   test:specificationReference "RDFa Core 1.1, section 7.5 step 5.2" .
+   test:specificationReference "RDFa Core 1.1, section 6" .
+<test-cases/0293> dc:contributor "Ivan Herman";
+   dc:title "Testing the ':' character usage in a CURIE";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0293.html>;
+   test:informationResourceResults <test-cases/0293.sparql>;
+   test:purpose "RDFa 1.1 CURIE allows the ':' to appear in the reference part of a CURIE.";
+   test:specificationReference "RDFa Core 1.1, section 6" .
