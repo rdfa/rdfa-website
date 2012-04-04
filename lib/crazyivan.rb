@@ -70,7 +70,6 @@ module CrazyIvan
     end
 
     get '/test-suite' do
-      session[:test] = "entered at /test-suite"
       redirect '/test-suite/'
     end
 
