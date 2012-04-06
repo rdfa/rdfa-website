@@ -11,7 +11,6 @@ GIT
   revision: 9bca5d6b085263ae6fcb6067eab1a93a192c154e
   specs:
     rdf-rdfa (0.3.10.1)
-      backports
       haml (>= 3.0.0)
       htmlentities (>= 4.3.0)
       rdf (>= 0.3.3)
@@ -27,7 +26,7 @@ GIT
 
 GIT
   remote: git://github.com/gkellogg/sinatra-browserid.git
-  revision: fb06b46e55e8d67fa1dc4dfc6e7e942ff404e8b3
+  revision: 6a5bafaf8948396ebd3c45cbb7dfc936e35b266a
   specs:
     sinatra-browserid (0.3)
       sinatra (>= 1.1.0)
@@ -43,7 +42,6 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.2.7)
-    backports (2.5.1)
     builder (3.0.0)
     cssmin (1.0.2)
     equivalent-xml (0.2.9)
