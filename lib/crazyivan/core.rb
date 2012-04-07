@@ -159,6 +159,7 @@ module CrazyIvan
       found_head = format == 'sparql'
       namespaces = []
       content = File.readlines(filename).map do |line|
+        line.force_encoding(Encoding::UTF_8) if line.respond_to?(:force_encoding)
         case line
         when %r(<head)
           found_head ||= true
@@ -244,6 +245,7 @@ module CrazyIvan
       extract_url = ::URI.decode(params["rdfa-extractor"]) + ::URI.encode(doc_url)
       begin
         extracted_text = RDF::Util::File.open_file(extract_url).read
+        extracted_text.force_encoding(Encoding::UTF_8) if extracted_text.respond_to?(:force_encoding)
       rescue Exception => e
         puts "error extracting text: #{e.class}: #{e.message}"
         extracted_text = e.message
