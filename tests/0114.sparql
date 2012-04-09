@@ -1,8 +1,9 @@
 PREFIX xhv: <http://www.w3.org/1999/xhtml/vocab#>
 PREFIX cc: <http://creativecommons.org/ns#>
 ASK WHERE {
-  <$TCPATH/0114.xhtml> xhv:next <$TCPATH/0115.xhtml>;
-    xhv:index <http://rdfa.info/test-suite/> .
-    xhv:up <$TCPATH> .
+  <$TCPATH/0114.xhtml>
+    xhv:index <http://rdfa.info/test-suite/#>;
+    xhv:next <$TCPATH/0115.xhtml>;
+    xhv:up <$TCPATH>;
     cc:attributionURL <http://rdfa.info/> .
 }
