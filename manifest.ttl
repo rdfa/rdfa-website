@@ -904,7 +904,7 @@ white   space
    test:purpose "Checks to make sure that an element with @property and no child nodes generates empty plain literal.";
    test:specificationReference "" .
 <test-cases/0114> dc:contributor "Manu Sporny";
-   dc:title "Relative URI";
+   dc:title "Relative URI dot-segment removal";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
