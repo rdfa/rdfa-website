@@ -11,5 +11,5 @@ ASK WHERE {
     rdfatest:cornerCase2 <http://example.org/>;
     rdfatest:cornerCase3 <$TCPATH/...>;
     rdfatest:cornerCase4 <$TCPATH/?foo=bar../baz>;
-    rdfatest:cornerCase5 <http://rdfa.info/test-suite/tests-cases/.../.htaccess>.
+    rdfatest:cornerCase5 <http://rdfa.info/test-suite/test-cases/.../.htaccess>.
 }
