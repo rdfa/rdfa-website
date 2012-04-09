@@ -4,6 +4,6 @@ ASK WHERE {
   <$TCPATH/0114.xhtml>
     xhv:index <http://rdfa.info/test-suite/#>;
     xhv:next <$TCPATH/0115.xhtml>;
-    xhv:up <$TCPATH>;
+    xhv:up <$TCPATH/>;
     cc:attributionURL <http://rdfa.info/> .
 }
