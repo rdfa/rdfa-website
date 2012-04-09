@@ -3,12 +3,12 @@
 // open the token file
 $tfile = fopen('remote-update-token.txt', 'r');
 
-// Acquire the lock in a non-blocking manner
 if($tfile == FALSE)
 {
    echo 'ERROR: You must create a file called remote-update-token.txt and ' .
       'place a secret token in that file. See the README for more information.';
 }
+// Acquire the lock in a non-blocking manner
 else if(flock($tfile, LOCK_EX | LOCK_NB))
 {
    $token = trim(fgets($tfile));
@@ -24,7 +24,7 @@ else if(flock($tfile, LOCK_EX | LOCK_NB))
       echo 'git update successful';
       
       // Run post-update script
-      system("./deploy/before_restart && ./deploy/restart");
+      system("./deploy/after_push");
       // Sleep for 5 seconds to throttle the update rate to 12 per minute
       sleep(5);
    }
