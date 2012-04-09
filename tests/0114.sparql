@@ -1,5 +1,6 @@
 PREFIX xhv: <http://www.w3.org/1999/xhtml/vocab#>
 PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX rdfatest: <http://rdfa.info/vocabs/rdfa-test#>
 ASK WHERE {
   <$TCPATH/0114.xhtml>
     xhv:index <http://rdfa.info/test-suite/#>;
