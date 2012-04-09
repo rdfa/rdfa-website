@@ -11,7 +11,7 @@
       <a rel="xhv:up" href="./">Test Case 0114</a>
       <a rel="cc:attributionURL" href="../../../../">RDFa Website</a>
       <a rel="rdfatest:cornerCase1" href=".">Corner Case #1</a>
-      <a rel="rdfatest:cornerCase2" href="..">Corner Case #2</a>
+      <a rel="rdfatest:cornerCase2" href="http://example.org/foo/..">Corner Case #2</a>
       <a rel="rdfatest:cornerCase3" href="...">Corner Case #3</a>
       <a rel="rdfatest:cornerCase4" href="?foo=bar../baz">Corner Case #4</a>
       <a rel="rdfatest:cornerCase5" href="../..../../../.../.htaccess">Corner Case #5</a>
