@@ -70,6 +70,8 @@ module CrazyIvan
         hash["@context"] = "http://rdfa.info/contexts/rdfa-test.jsonld"
         hash['@graph'] = []
 
+        start = Time.now
+        puts "Started SPARQL @ #{start.to_s}"
         SPARQL.execute(TESTS_QUERY, graph).each do |tc|
           tc_hash = hash['@graph'].last
           unless tc_hash && tc_hash['@id'] == tc[:id]
@@ -89,6 +91,8 @@ module CrazyIvan
           tc_hash['hostLanguages'] << tc[:hostLanguage].to_s unless tc_hash['hostLanguages'].include?(tc[:hostLanguage].to_s)
           tc_hash['versions'] << tc[:version].to_s unless tc_hash['versions'].include?(tc[:version].to_s)
         end
+        finish = Time.now
+        puts "Finished SPARQL @ #{finish.to_s} #{finish - start} secs"
 
         json = hash.to_json(::JSON::State.new(
           :indent       => "  ",
@@ -173,6 +177,7 @@ module CrazyIvan
           nil
         end
       end.compact.join("")
+      content.force_encoding(Encoding::UTF_8) if content.respond_to?(:force_encoding)
     
       namespaces = namespaces.join("\n")
       namespaces = ' ' + namespaces unless namespaces.empty?
@@ -238,6 +243,7 @@ module CrazyIvan
 
       # Turtle version of default graph
       ttl_text = doc_graph.dump(:turtle, :prefixes => prefixes, :base_uri => doc_url)
+      ttl_text.force_encoding(Encoding::UTF_8) if ttl_text.respond_to?(:force_encoding)
       sparql_url = get_test_url(version, suite, num, 'sparql')
       sparql_text = get_test_content(version, suite, num, 'sparql')
 
