@@ -2245,6 +2245,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.0";
    test:classification test:required;
    rdfatest:hostLanguage "svg", "xhtml1";
+   test:expectedResults "false"^^xsd:boolean;
    test:informationResourceInput <test-cases/0294.html>;
    test:informationResourceResults <test-cases/0294.sparql>;
    test:purpose "RDFa 1.1 defines an initial context containing prefixes and terms. RDFa 1.0 must not define such prefixes and terms.";
