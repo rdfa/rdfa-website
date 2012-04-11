@@ -40,7 +40,5 @@
   <div>
     Vocabulary Terms
     <span property="describedby">DescribedBy</span>
-    <span property="license">License</span>
-    <span property="role">Role</span>
   </div>
 </body>
