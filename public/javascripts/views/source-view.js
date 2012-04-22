@@ -1,7 +1,6 @@
 var SourceView = Backbone.View.extend({
   attributes: {
-    "class":        "row alert fade in",
-    "data-dismiss": "alert"
+    "class":        "row alert fade in"
   },
 
   // Open linkes in a new window/tab
@@ -16,7 +15,7 @@ var SourceView = Backbone.View.extend({
 
   render: function () {
     var that = this;
-    this.$el.append('<a class="close">x</a>').alert();
+    this.$el.append('<a data-dismiss="alert" class="close">x</a>').alert();
     
     _.each(this.model, function(tc) {
       that.$el.append(

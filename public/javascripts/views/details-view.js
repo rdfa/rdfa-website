@@ -2,8 +2,7 @@ var DetailsView = Backbone.View.extend({
   template: _.template($('#details-template').html()),
 
   attributes: {
-    "class":        "row alert fade in",
-    "data-dismiss": "alert"
+    "class":        "row alert fade in"
   },
 
   // Open linkes in a new window/tab
@@ -21,7 +20,7 @@ var DetailsView = Backbone.View.extend({
     if (this.model.error) {
       this.$el.text(this.model.error);
     } else {
-      this.$el.html(this.template(this.model));
+      this.$el.html(this.template(this.model)).alert();
       this.$(".doc_url a").attr('href', this.model.doc_url);
       this.$(".extract_url a").attr('href', this.model.extract_url);
       this.$(".sparql_url a").attr('href', this.model.sparql_url);

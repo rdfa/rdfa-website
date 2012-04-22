@@ -236,6 +236,9 @@ module CrazyIvan
       doc_url = get_test_url(version, suite, num)
       puts "doc_url: #{doc_url}"
 
+      tests = ::JSON.load(manifest_json)['@graph']
+      test = tests.detect {|t| t['@id'] == "http://rdfa.info/test-suite/test-cases/#{num}"}
+
       # Short cut document text
       prefixes = {}
       doc_text = get_test_content(version, suite, num)
@@ -259,6 +262,7 @@ module CrazyIvan
 
       {
         :num            => params[:num],
+        :purpose        => test["purpose"],
         :doc_text       => doc_text,
         :doc_url        => doc_url,
         :ttl_text       => ttl_text,
