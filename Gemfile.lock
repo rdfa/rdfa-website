@@ -1,14 +1,15 @@
 GIT
   remote: git://github.com/gkellogg/json-ld.git
-  revision: f2cae6b6104a6090967e36e3995e95b6a1cdee00
+  revision: e82489472c9b1c6a20789b4eb9c67dc3ea133c55
   specs:
-    json-ld (0.1.1)
+    json-ld (0.1.2)
+      backports
       json (>= 1.6.5)
       rdf (>= 0.3.5)
 
 GIT
   remote: git://github.com/gkellogg/rdf-rdfa.git
-  revision: 9bca5d6b085263ae6fcb6067eab1a93a192c154e
+  revision: 588d3e4478321995cc5fa19575e755e67bc623b3
   specs:
     rdf-rdfa (0.3.10.1)
       haml (>= 3.0.0)
@@ -26,9 +27,10 @@ GIT
 
 GIT
   remote: git://github.com/gkellogg/sinatra-browserid.git
-  revision: 6a5bafaf8948396ebd3c45cbb7dfc936e35b266a
+  revision: ef33f0d9efbdf2df0fc68fa66622057d1f4a05d8
   specs:
     sinatra-browserid (0.3)
+      curb (>= 0.8.0)
       sinatra (>= 1.1.0)
 
 GIT
@@ -42,8 +44,10 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.2.7)
+    backports (2.5.1)
     builder (3.0.0)
     cssmin (1.0.2)
+    curb (0.8.0)
     equivalent-xml (0.2.9)
       nokogiri (>= 1.4.3)
     execjs (1.3.0)
@@ -64,7 +68,7 @@ GEM
       rdf-trig (>= 0.1.1)
       rdf-trix (>= 0.3.0)
       rdf-turtle (>= 0.1.1)
-    multi_json (1.2.0)
+    multi_json (1.3.2)
     net-http-persistent (1.4.1)
     nokogiri (1.5.2)
     rack (1.4.1)
