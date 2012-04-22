@@ -8,7 +8,6 @@ ASK WHERE {
     xhv:up <$TCPATH/>;
     cc:attributionURL <http://rdfa.info/>;
     rdfatest:cornerCase1 <$TCPATH/>;
-    rdfatest:cornerCase2 <http://example.org/>;
     rdfatest:cornerCase3 <$TCPATH/...>;
     rdfatest:cornerCase4 <$TCPATH/0114.xhtml?foo=bar../baz>;
     rdfatest:cornerCase5 <http://rdfa.info/test-suite/test-cases/.../.htaccess>.
