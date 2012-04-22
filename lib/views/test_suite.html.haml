@@ -150,7 +150,11 @@
                                       "data-complete-text" => "source",
                                       :autocomplete => "off"}="source"
 %script#details-template{:type => "text/template"}
-  %a.close="x"
+  %a.close{"data-dismiss" => "alert"}="x"
+  %h3
+    Purpose
+  %p<
+    <%= purpose %>
   %h3
     Source Document
   %pre
