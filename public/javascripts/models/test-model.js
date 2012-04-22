@@ -155,11 +155,12 @@ window.TestCollection = Backbone.Collection.extend({
 
     if (this.running && _.include(["PASS", "FAIL"], result)) {
       console.log("test " + test.get('num') + ' completed with ' + result);
-      if (result == 'PASS') {
-        this.passed = this.passed + 1;
-      } else {
-        this.failed = this.failed + 1;
-      }
+      this.passed = _.reduce(this.models, function(memo, test) {
+        return memo + (test.get('result') == "PASS" ? 1 : 0);
+      }, 0);
+      this.failed = _.reduce(this.models, function(memo, test) {
+        return memo + (test.get('result') == "FAIL" ? 1 : 0);
+      }, 0);
 
       var total = this.passed + this.failed;
       var next = this.at(total);
