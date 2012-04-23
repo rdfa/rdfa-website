@@ -9,7 +9,7 @@
           <a class="href processorURL" rel="rdfatest:processor" typeof="earl:TestSubject" href="http://any23.org/"><span property="doap:name">any23 (Java)</span>.</a>
         </p>
         <p>
-          Passed 89 out of 163 test cases ( 54.60122699386503%).
+          Passed 91 out of 164 test cases ( 55.48780487804878%).
         </p>
         <div class="rel version" typeof="" rel="rdfatest:version/rdfa1.1">
           RDFa Version rdfa1.1.
@@ -182,7 +182,7 @@
           <span class="resource docURL" rel="earl:test" resource="test-cases/rdfa1.1/xhtml1/0015.xhtml"></span>
           <p property="earl:result" typeof="earl:TestResult">
             Result:
-            <strong class="resource outcome" property="earl:outcome" resource="earl:fail">FAIL</strong>
+            <strong class="resource outcome" property="earl:outcome" resource="earl:pass">PASS</strong>
           </p>
         </div>
       </div><div typeof="earl:TestCase" resource="test-cases/rdfa1.1/xhtml1/0017.xhtml">
@@ -1381,7 +1381,7 @@ white   space
         <h4>
           [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">xhtml1</span>]
           Test 0114:
-          <span property="dc:title">Relative URI</span>
+          <span property="dc:title">Relative URI dot-segment removal</span>
           <span property="earl:mode" resource="earl:automatic"></span>
         </h4>
         <p property="dc:description">Checks to make sure that a relative URI is resolved correctly according to RFC3986, section 5 (even when the relative URI is invalid, in this case).</p>
@@ -1391,7 +1391,7 @@ white   space
           <span class="resource docURL" rel="earl:test" resource="test-cases/rdfa1.1/xhtml1/0114.xhtml"></span>
           <p property="earl:result" typeof="earl:TestResult">
             Result:
-            <strong class="resource outcome" property="earl:outcome" resource="earl:pass">PASS</strong>
+            <strong class="resource outcome" property="earl:outcome" resource="earl:fail">FAIL</strong>
           </p>
         </div>
       </div><div typeof="earl:TestCase" resource="test-cases/rdfa1.1/xhtml1/0115.xhtml">
@@ -2023,7 +2023,7 @@ white   space
         <h4>
           [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">xhtml1</span>]
           Test 0216:
-          <span property="dc:title">Character encoding should work even in view of a large set of characters as attributes in the header</span>
+          <span property="dc:title">Proper character encoding detection in spite of large headers</span>
           <span property="earl:mode" resource="earl:automatic"></span>
         </h4>
         <p property="dc:description">Character encoding should work even in view of a large set of characters as attributes in the header, ie, when content sniffing may not work to establish encoding.</p>
@@ -2712,10 +2712,10 @@ white   space
         <h4>
           [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">xhtml1</span>]
           Test 0269:
-          <span property="dc:title">@property appearing on the head element gets the subject from parent, also with @content</span>
+          <span property="dc:title">@property appearing on the html element yields the base as the subject, also with @content</span>
           <span property="earl:mode" resource="earl:automatic"></span>
         </h4>
-        <p property="dc:description">@property appearing on the head element gets the subject from parent, also with @content</p>
+        <p property="dc:description">@property appearing on the html element without @content or @datatype yields the base as the subject, also with @content</p>
         <div class="property processorURL resource detailsURL" typeof="earl:Assertion" property="http://any23.org/" resource="test-details/rdfa1.1/xhtml1/0269?rdfa-extractor=http%3A//any23.org/turtle/">
           <span property="earl:assertedBy" resource=""></span>
           <span class="resource processorURL" property="earl:subject" resource="http://any23.org/"></span>
@@ -2729,7 +2729,7 @@ white   space
         <h4>
           [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">xhtml1</span>]
           Test 0271:
-          <span property="dc:title">@property appearing on the head element gets the subject from parent, also with @content and explicit @about at the top</span>
+          <span property="dc:title">Use of @property in HEAD with explicit parent subject via @about</span>
           <span property="earl:mode" resource="earl:automatic"></span>
         </h4>
         <p property="dc:description">@property appearing on the head element gets the subject from parent, also with @content and explicit @about at the top</p>
@@ -2790,7 +2790,7 @@ white   space
           <span class="resource docURL" rel="earl:test" resource="test-cases/rdfa1.1/xhtml1/0291.xhtml"></span>
           <p property="earl:result" typeof="earl:TestResult">
             Result:
-            <strong class="resource outcome" property="earl:outcome" resource="earl:fail">FAIL</strong>
+            <strong class="resource outcome" property="earl:outcome" resource="earl:pass">PASS</strong>
           </p>
         </div>
       </div><div typeof="earl:TestCase" resource="test-cases/rdfa1.1/xhtml1/0292.xhtml">
@@ -2805,6 +2805,23 @@ white   space
           <span property="earl:assertedBy" resource=""></span>
           <span class="resource processorURL" property="earl:subject" resource="http://any23.org/"></span>
           <span class="resource docURL" rel="earl:test" resource="test-cases/rdfa1.1/xhtml1/0292.xhtml"></span>
+          <p property="earl:result" typeof="earl:TestResult">
+            Result:
+            <strong class="resource outcome" property="earl:outcome" resource="earl:pass">PASS</strong>
+          </p>
+        </div>
+      </div><div typeof="earl:TestCase" resource="test-cases/rdfa1.1/xhtml1/0293.xhtml">
+        <h4>
+          [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">xhtml1</span>]
+          Test 0293:
+          <span property="dc:title">Testing the ':' character usage in a CURIE</span>
+          <span property="earl:mode" resource="earl:automatic"></span>
+        </h4>
+        <p property="dc:description">RDFa 1.1 CURIE allows the ':' to appear in the reference part of a CURIE.</p>
+        <div class="property processorURL resource detailsURL" typeof="earl:Assertion" property="http://any23.org/" resource="test-details/rdfa1.1/xhtml1/0293?rdfa-extractor=http%3A//any23.org/turtle/">
+          <span property="earl:assertedBy" resource=""></span>
+          <span class="resource processorURL" property="earl:subject" resource="http://any23.org/"></span>
+          <span class="resource docURL" rel="earl:test" resource="test-cases/rdfa1.1/xhtml1/0293.xhtml"></span>
           <p property="earl:result" typeof="earl:TestResult">
             Result:
             <strong class="resource outcome" property="earl:outcome" resource="earl:fail">FAIL</strong>

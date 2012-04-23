@@ -6,7 +6,10 @@
         </h3>
         <p>
           Report on
-          <a class="href processorURL" rel="rdfatest:processor" typeof="earl:TestSubject" href="http://rubygems.org/gems/rdf-rdfa"><span property="doap:name">RDF.rb</span>.</a>
+          <a class="href processorURL" rel="rdfatest:processor" typeof="earl:TestSubject" href="http://rubygems.org/gems/rdf-rdfa"><span property="doap:name">RDF Distiller (Ruby)</span>.</a>
+        </p>
+        <p>
+          Passed 113 out of 113 test cases ( 100%).
         </p>
         <div class="rel version" typeof="" rel="rdfatest:version/rdfa1.1">
           RDFa Version rdfa1.1.
@@ -1320,7 +1323,7 @@ white   space
         <h4>
           [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">xml</span>]
           Test 0175:
-          <span property="dc:title">Property is URI</span>
+          <span property="dc:title">IRI for @property is allowed</span>
           <span property="earl:mode" resource="earl:automatic"></span>
         </h4>
         <p property="dc:description">Checks to make sure that a URI may be used as a @property value</p>
@@ -1337,7 +1340,7 @@ white   space
         <h4>
           [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">xml</span>]
           Test 0176:
-          <span property="dc:title">Rel and Rev is URI</span>
+          <span property="dc:title">IRI for @rel and @rev is allowed</span>
           <span property="earl:mode" resource="earl:automatic"></span>
         </h4>
         <p property="dc:description">Checks to make sure that a URI may be used as @rel and @rev values</p>
@@ -1839,10 +1842,10 @@ white   space
         <h4>
           [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">xml</span>]
           Test 0269:
-          <span property="dc:title">@property appearing on the head element gets the subject from parent, also with @content</span>
+          <span property="dc:title">@property appearing on the html element yields the base as the subject, also with @content</span>
           <span property="earl:mode" resource="earl:automatic"></span>
         </h4>
-        <p property="dc:description">@property appearing on the head element gets the subject from parent, also with @content</p>
+        <p property="dc:description">@property appearing on the html element without @content or @datatype yields the base as the subject, also with @content</p>
         <div class="property processorURL resource detailsURL" typeof="earl:Assertion" property="http://rubygems.org/gems/rdf-rdfa" resource="test-details/rdfa1.1/xml/0269?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26uri%3D">
           <span property="earl:assertedBy" resource=""></span>
           <span class="resource processorURL" property="earl:subject" resource="http://rubygems.org/gems/rdf-rdfa"></span>
@@ -1856,7 +1859,7 @@ white   space
         <h4>
           [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">xml</span>]
           Test 0271:
-          <span property="dc:title">@property appearing on the head element gets the subject from parent, also with @content and explicit @about at the top</span>
+          <span property="dc:title">Use of @property in HEAD with explicit parent subject via @about</span>
           <span property="earl:mode" resource="earl:automatic"></span>
         </h4>
         <p property="dc:description">@property appearing on the head element gets the subject from parent, also with @content and explicit @about at the top</p>
@@ -1864,6 +1867,91 @@ white   space
           <span property="earl:assertedBy" resource=""></span>
           <span class="resource processorURL" property="earl:subject" resource="http://rubygems.org/gems/rdf-rdfa"></span>
           <span class="resource docURL" rel="earl:test" resource="test-cases/rdfa1.1/xml/0271.xml"></span>
+          <p property="earl:result" typeof="earl:TestResult">
+            Result:
+            <strong class="resource outcome" property="earl:outcome" resource="earl:pass">PASS</strong>
+          </p>
+        </div>
+      </div><div typeof="earl:TestCase" resource="test-cases/rdfa1.1/xml/0289.xml">
+        <h4>
+          [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">xml</span>]
+          Test 0289:
+          <span property="dc:title">@href becomes subject when @property and @content are present</span>
+          <span property="earl:mode" resource="earl:automatic"></span>
+        </h4>
+        <p property="dc:description">When @property and @content are present but @about, @rel and @rev are not, @href is used as subject.</p>
+        <div class="property processorURL resource detailsURL" typeof="earl:Assertion" property="http://rubygems.org/gems/rdf-rdfa" resource="test-details/rdfa1.1/xml/0289?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26uri%3D">
+          <span property="earl:assertedBy" resource=""></span>
+          <span class="resource processorURL" property="earl:subject" resource="http://rubygems.org/gems/rdf-rdfa"></span>
+          <span class="resource docURL" rel="earl:test" resource="test-cases/rdfa1.1/xml/0289.xml"></span>
+          <p property="earl:result" typeof="earl:TestResult">
+            Result:
+            <strong class="resource outcome" property="earl:outcome" resource="earl:pass">PASS</strong>
+          </p>
+        </div>
+      </div><div typeof="earl:TestCase" resource="test-cases/rdfa1.1/xml/0290.xml">
+        <h4>
+          [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">xml</span>]
+          Test 0290:
+          <span property="dc:title">@href becomes subject when @property and @datatype are present</span>
+          <span property="earl:mode" resource="earl:automatic"></span>
+        </h4>
+        <p property="dc:description">When @property and @datatype are present but @about, @rel and @rev are not, @href is used as subject and element content is used as an object literal.</p>
+        <div class="property processorURL resource detailsURL" typeof="earl:Assertion" property="http://rubygems.org/gems/rdf-rdfa" resource="test-details/rdfa1.1/xml/0290?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26uri%3D">
+          <span property="earl:assertedBy" resource=""></span>
+          <span class="resource processorURL" property="earl:subject" resource="http://rubygems.org/gems/rdf-rdfa"></span>
+          <span class="resource docURL" rel="earl:test" resource="test-cases/rdfa1.1/xml/0290.xml"></span>
+          <p property="earl:result" typeof="earl:TestResult">
+            Result:
+            <strong class="resource outcome" property="earl:outcome" resource="earl:pass">PASS</strong>
+          </p>
+        </div>
+      </div><div typeof="earl:TestCase" resource="test-cases/rdfa1.1/xml/0291.xml">
+        <h4>
+          [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">xml</span>]
+          Test 0291:
+          <span property="dc:title">@href as subject overridden by @about</span>
+          <span property="earl:mode" resource="earl:automatic"></span>
+        </h4>
+        <p property="dc:description">When @property, @datatype, @href and @about are present but @rel and @rev are not, @about is used as subject.</p>
+        <div class="property processorURL resource detailsURL" typeof="earl:Assertion" property="http://rubygems.org/gems/rdf-rdfa" resource="test-details/rdfa1.1/xml/0291?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26uri%3D">
+          <span property="earl:assertedBy" resource=""></span>
+          <span class="resource processorURL" property="earl:subject" resource="http://rubygems.org/gems/rdf-rdfa"></span>
+          <span class="resource docURL" rel="earl:test" resource="test-cases/rdfa1.1/xml/0291.xml"></span>
+          <p property="earl:result" typeof="earl:TestResult">
+            Result:
+            <strong class="resource outcome" property="earl:outcome" resource="earl:pass">PASS</strong>
+          </p>
+        </div>
+      </div><div typeof="earl:TestCase" resource="test-cases/rdfa1.1/xml/0292.xml">
+        <h4>
+          [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">xml</span>]
+          Test 0292:
+          <span property="dc:title">@about overriding @href as subject is used as parent resource</span>
+          <span property="earl:mode" resource="earl:automatic"></span>
+        </h4>
+        <p property="dc:description">When @property, @datatype, @href and @about are present but @rel and @rev are not, @about is used as subject and is also applied to nested descriptions.</p>
+        <div class="property processorURL resource detailsURL" typeof="earl:Assertion" property="http://rubygems.org/gems/rdf-rdfa" resource="test-details/rdfa1.1/xml/0292?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26uri%3D">
+          <span property="earl:assertedBy" resource=""></span>
+          <span class="resource processorURL" property="earl:subject" resource="http://rubygems.org/gems/rdf-rdfa"></span>
+          <span class="resource docURL" rel="earl:test" resource="test-cases/rdfa1.1/xml/0292.xml"></span>
+          <p property="earl:result" typeof="earl:TestResult">
+            Result:
+            <strong class="resource outcome" property="earl:outcome" resource="earl:pass">PASS</strong>
+          </p>
+        </div>
+      </div><div typeof="earl:TestCase" resource="test-cases/rdfa1.1/xml/0293.xml">
+        <h4>
+          [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">xml</span>]
+          Test 0293:
+          <span property="dc:title">Testing the ':' character usage in a CURIE</span>
+          <span property="earl:mode" resource="earl:automatic"></span>
+        </h4>
+        <p property="dc:description">RDFa 1.1 CURIE allows the ':' to appear in the reference part of a CURIE.</p>
+        <div class="property processorURL resource detailsURL" typeof="earl:Assertion" property="http://rubygems.org/gems/rdf-rdfa" resource="test-details/rdfa1.1/xml/0293?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26uri%3D">
+          <span property="earl:assertedBy" resource=""></span>
+          <span class="resource processorURL" property="earl:subject" resource="http://rubygems.org/gems/rdf-rdfa"></span>
+          <span class="resource docURL" rel="earl:test" resource="test-cases/rdfa1.1/xml/0293.xml"></span>
           <p property="earl:result" typeof="earl:TestResult">
             Result:
             <strong class="resource outcome" property="earl:outcome" resource="earl:pass">PASS</strong>

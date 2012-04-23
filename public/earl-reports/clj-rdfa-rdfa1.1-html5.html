@@ -6,7 +6,10 @@
         </h3>
         <p>
           Report on
-          <a class="href processorURL" rel="rdfatest:processor" typeof="earl:TestSubject" href="https://github.com/niklasl/clj-rdfa"><span property="doap:name">clj-rdfa</span>.</a>
+          <a class="href processorURL" rel="rdfatest:processor" typeof="earl:TestSubject" href="https://github.com/niklasl/clj-rdfa"><span property="doap:name">clj-rdfa (Clojure)</span>.</a>
+        </p>
+        <p>
+          Passed 174 out of 174 test cases ( 100%).
         </p>
         <div class="rel version" typeof="" rel="rdfatest:version/rdfa1.1">
           RDFa Version rdfa1.1.
@@ -1240,7 +1243,7 @@
         <h4>
           [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">html5</span>]
           Test 0114:
-          <span property="dc:title">Relative URI</span>
+          <span property="dc:title">Relative URI dot-segment removal</span>
           <span property="earl:mode" resource="earl:automatic"></span>
         </h4>
         <p property="dc:description">Checks to make sure that a relative URI is resolved correctly according to RFC3986, section 5 (even when the relative URI is invalid, in this case).</p>
@@ -1471,7 +1474,7 @@
         <h4>
           [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">html5</span>]
           Test 0175:
-          <span property="dc:title">Property is URI</span>
+          <span property="dc:title">IRI for @property is allowed</span>
           <span property="earl:mode" resource="earl:automatic"></span>
         </h4>
         <p property="dc:description">Checks to make sure that a URI may be used as a @property value</p>
@@ -1488,7 +1491,7 @@
         <h4>
           [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">html5</span>]
           Test 0176:
-          <span property="dc:title">Rel and Rev is URI</span>
+          <span property="dc:title">IRI for @rel and @rev is allowed</span>
           <span property="earl:mode" resource="earl:automatic"></span>
         </h4>
         <p property="dc:description">Checks to make sure that a URI may be used as @rel and @rev values</p>
@@ -1624,10 +1627,10 @@
         <h4>
           [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">html5</span>]
           Test 0186:
-          <span property="dc:title">Test @vocab</span>
+          <span property="dc:title">@vocab after subject declaration</span>
           <span property="earl:mode" resource="earl:automatic"></span>
         </h4>
-        <p property="dc:description">Check that @vocab defines a new default mapping</p>
+        <p property="dc:description">Check that @vocab establishes a new default vocabulary when declared on the same element as a subject declaration via @about.</p>
         <div class="property processorURL resource detailsURL" typeof="earl:Assertion" property="https://github.com/niklasl/clj-rdfa" resource="test-details/rdfa1.1/html5/0186?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D">
           <span property="earl:assertedBy" resource=""></span>
           <span class="resource processorURL" property="earl:subject" resource="https://github.com/niklasl/clj-rdfa"></span>
@@ -1641,10 +1644,10 @@
         <h4>
           [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">html5</span>]
           Test 0187:
-          <span property="dc:title">Test @vocab redefinition</span>
+          <span property="dc:title">@vocab redefinition</span>
           <span property="earl:mode" resource="earl:automatic"></span>
         </h4>
-        <p property="dc:description">Check that @vocab redefines a previous @vocab definition</p>
+        <p property="dc:description">Check that a more deeply nested @vocab attribute overloads a previous @vocab definition.</p>
         <div class="property processorURL resource detailsURL" typeof="earl:Assertion" property="https://github.com/niklasl/clj-rdfa" resource="test-details/rdfa1.1/html5/0187?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D">
           <span property="earl:assertedBy" resource=""></span>
           <span class="resource processorURL" property="earl:subject" resource="https://github.com/niklasl/clj-rdfa"></span>
@@ -1658,10 +1661,10 @@
         <h4>
           [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">html5</span>]
           Test 0188:
-          <span property="dc:title">Test @vocab</span>
+          <span property="dc:title">@vocab only affects predicates</span>
           <span property="earl:mode" resource="earl:automatic"></span>
         </h4>
-        <p property="dc:description">Check that @vocab defines a new default mapping</p>
+        <p property="dc:description">Check that @vocab definitions on parent elements only affect predicate establishment.</p>
         <div class="property processorURL resource detailsURL" typeof="earl:Assertion" property="https://github.com/niklasl/clj-rdfa" resource="test-details/rdfa1.1/html5/0188?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D">
           <span property="earl:assertedBy" resource=""></span>
           <span class="resource processorURL" property="earl:subject" resource="https://github.com/niklasl/clj-rdfa"></span>
@@ -1675,7 +1678,7 @@
         <h4>
           [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">html5</span>]
           Test 0189:
-          <span property="dc:title">Test @vocab overrides default term</span>
+          <span property="dc:title">@vocab overrides default term</span>
           <span property="earl:mode" resource="earl:automatic"></span>
         </h4>
         <p property="dc:description">
@@ -1814,7 +1817,7 @@
         <h4>
           [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">html5</span>]
           Test 0216:
-          <span property="dc:title">Character encoding should work even in view of a large set of characters as attributes in the header</span>
+          <span property="dc:title">Proper character encoding detection in spite of large headers</span>
           <span property="earl:mode" resource="earl:automatic"></span>
         </h4>
         <p property="dc:description">Character encoding should work even in view of a large set of characters as attributes in the header, ie, when content sniffing may not work to establish encoding.</p>
@@ -2607,7 +2610,7 @@ white   space
         <h4>
           [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">html5</span>]
           Test 0271:
-          <span property="dc:title">@property appearing on the head element gets the subject from parent, also with @content and explicit @about at the top</span>
+          <span property="dc:title">Use of @property in HEAD with explicit parent subject via @about</span>
           <span property="earl:mode" resource="earl:automatic"></span>
         </h4>
         <p property="dc:description">@property appearing on the head element gets the subject from parent, also with @content and explicit @about at the top</p>
@@ -2904,6 +2907,91 @@ white   space
           <span property="earl:assertedBy" resource=""></span>
           <span class="resource processorURL" property="earl:subject" resource="https://github.com/niklasl/clj-rdfa"></span>
           <span class="resource docURL" rel="earl:test" resource="test-cases/rdfa1.1/html5/0288.html"></span>
+          <p property="earl:result" typeof="earl:TestResult">
+            Result:
+            <strong class="resource outcome" property="earl:outcome" resource="earl:pass">PASS</strong>
+          </p>
+        </div>
+      </div><div typeof="earl:TestCase" resource="test-cases/rdfa1.1/html5/0289.html">
+        <h4>
+          [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">html5</span>]
+          Test 0289:
+          <span property="dc:title">@href becomes subject when @property and @content are present</span>
+          <span property="earl:mode" resource="earl:automatic"></span>
+        </h4>
+        <p property="dc:description">When @property and @content are present but @about, @rel and @rev are not, @href is used as subject.</p>
+        <div class="property processorURL resource detailsURL" typeof="earl:Assertion" property="https://github.com/niklasl/clj-rdfa" resource="test-details/rdfa1.1/html5/0289?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D">
+          <span property="earl:assertedBy" resource=""></span>
+          <span class="resource processorURL" property="earl:subject" resource="https://github.com/niklasl/clj-rdfa"></span>
+          <span class="resource docURL" rel="earl:test" resource="test-cases/rdfa1.1/html5/0289.html"></span>
+          <p property="earl:result" typeof="earl:TestResult">
+            Result:
+            <strong class="resource outcome" property="earl:outcome" resource="earl:pass">PASS</strong>
+          </p>
+        </div>
+      </div><div typeof="earl:TestCase" resource="test-cases/rdfa1.1/html5/0290.html">
+        <h4>
+          [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">html5</span>]
+          Test 0290:
+          <span property="dc:title">@href becomes subject when @property and @datatype are present</span>
+          <span property="earl:mode" resource="earl:automatic"></span>
+        </h4>
+        <p property="dc:description">When @property and @datatype are present but @about, @rel and @rev are not, @href is used as subject and element content is used as an object literal.</p>
+        <div class="property processorURL resource detailsURL" typeof="earl:Assertion" property="https://github.com/niklasl/clj-rdfa" resource="test-details/rdfa1.1/html5/0290?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D">
+          <span property="earl:assertedBy" resource=""></span>
+          <span class="resource processorURL" property="earl:subject" resource="https://github.com/niklasl/clj-rdfa"></span>
+          <span class="resource docURL" rel="earl:test" resource="test-cases/rdfa1.1/html5/0290.html"></span>
+          <p property="earl:result" typeof="earl:TestResult">
+            Result:
+            <strong class="resource outcome" property="earl:outcome" resource="earl:pass">PASS</strong>
+          </p>
+        </div>
+      </div><div typeof="earl:TestCase" resource="test-cases/rdfa1.1/html5/0291.html">
+        <h4>
+          [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">html5</span>]
+          Test 0291:
+          <span property="dc:title">@href as subject overridden by @about</span>
+          <span property="earl:mode" resource="earl:automatic"></span>
+        </h4>
+        <p property="dc:description">When @property, @datatype, @href and @about are present but @rel and @rev are not, @about is used as subject.</p>
+        <div class="property processorURL resource detailsURL" typeof="earl:Assertion" property="https://github.com/niklasl/clj-rdfa" resource="test-details/rdfa1.1/html5/0291?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D">
+          <span property="earl:assertedBy" resource=""></span>
+          <span class="resource processorURL" property="earl:subject" resource="https://github.com/niklasl/clj-rdfa"></span>
+          <span class="resource docURL" rel="earl:test" resource="test-cases/rdfa1.1/html5/0291.html"></span>
+          <p property="earl:result" typeof="earl:TestResult">
+            Result:
+            <strong class="resource outcome" property="earl:outcome" resource="earl:pass">PASS</strong>
+          </p>
+        </div>
+      </div><div typeof="earl:TestCase" resource="test-cases/rdfa1.1/html5/0292.html">
+        <h4>
+          [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">html5</span>]
+          Test 0292:
+          <span property="dc:title">@about overriding @href as subject is used as parent resource</span>
+          <span property="earl:mode" resource="earl:automatic"></span>
+        </h4>
+        <p property="dc:description">When @property, @datatype, @href and @about are present but @rel and @rev are not, @about is used as subject and is also applied to nested descriptions.</p>
+        <div class="property processorURL resource detailsURL" typeof="earl:Assertion" property="https://github.com/niklasl/clj-rdfa" resource="test-details/rdfa1.1/html5/0292?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D">
+          <span property="earl:assertedBy" resource=""></span>
+          <span class="resource processorURL" property="earl:subject" resource="https://github.com/niklasl/clj-rdfa"></span>
+          <span class="resource docURL" rel="earl:test" resource="test-cases/rdfa1.1/html5/0292.html"></span>
+          <p property="earl:result" typeof="earl:TestResult">
+            Result:
+            <strong class="resource outcome" property="earl:outcome" resource="earl:pass">PASS</strong>
+          </p>
+        </div>
+      </div><div typeof="earl:TestCase" resource="test-cases/rdfa1.1/html5/0293.html">
+        <h4>
+          [<span property="rdfatest:rdfaVersion">rdfa1.1</span><span property="rdfatest:hostLanguage">html5</span>]
+          Test 0293:
+          <span property="dc:title">Testing the ':' character usage in a CURIE</span>
+          <span property="earl:mode" resource="earl:automatic"></span>
+        </h4>
+        <p property="dc:description">RDFa 1.1 CURIE allows the ':' to appear in the reference part of a CURIE.</p>
+        <div class="property processorURL resource detailsURL" typeof="earl:Assertion" property="https://github.com/niklasl/clj-rdfa" resource="test-details/rdfa1.1/html5/0293?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D">
+          <span property="earl:assertedBy" resource=""></span>
+          <span class="resource processorURL" property="earl:subject" resource="https://github.com/niklasl/clj-rdfa"></span>
+          <span class="resource docURL" rel="earl:test" resource="test-cases/rdfa1.1/html5/0293.html"></span>
           <p property="earl:result" typeof="earl:TestResult">
             Result:
             <strong class="resource outcome" property="earl:outcome" resource="earl:pass">PASS</strong>
