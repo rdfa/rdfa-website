@@ -237,7 +237,7 @@
                 %dd{:property => "doap:programming-language"}<= processor['language']
               - if processor['developer']
                 %dt= "Developer"
-                %dd{:property => "doap:developer", :typeof => "foaf:Person"}
+                %dd{:property => "doap:developer", :resource => processor['developer']['@id'], :typeof => processor['developer']['@type']}
                   - if processor['developer']['@id']
                     %a{:href => processor['developer']['@id']}
                       %span{:property => "foaf:name"}<= processor['developer']['foaf:name']

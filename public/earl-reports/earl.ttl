@@ -706,11 +706,15 @@
 # Processor Definitions
 #
 <http://any23.org/> a earl:TestSubject, doap:Project
-  doap:name "Any23 - Anything to Triples";
-  doap:description """Anything To Triples (any23) is a library, a web service and a command line tool that extracts structured data in RDF format from a variety of Web documents""";
+  doap:name "any23";
+  doap:description """
+    Anything To Triples (any23) is a library, a web service and a command line
+    tool that extracts structured data in RDF format from a variety of Web
+    documents
+  """;
   doap:programming-language "Java";
-  doap:developer <http://greggkellogg.net/foaf#me> .
-<http://greggkellogg.net/foaf#me> a foaf:Person foaf:name "Gregg Kellogg" .
+  doap:developer <http://code.google.com/p/any23/> .
+<http://code.google.com/p/any23/> a foaf:Organization foaf:name "Digital Enterprise Research Institute" .
 
 <https://github.com/niklasl/clj-rdfa> a earl:TestSubject, doap:Project
   doap:name "clj-rdfa";

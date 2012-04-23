@@ -19,12 +19,13 @@ class EARL
     PREFIX foaf: <http://xmlns.com/foaf/0.1/>
     PREFIX rdfatest: <http://rdfa.info/vocabs/rdfa-test#>
     
-    SELECT ?uri ?name ?developer ?dev_name ?doap_desc ?homepage ?language
+    SELECT ?uri ?name ?developer ?dev_name ?dev_type ?doap_desc ?homepage ?language
     WHERE {
       [rdfatest:processor ?uri] .
       ?uri doap:name ?name .
       OPTIONAL { ?uri doap:developer ?developer . }
       OPTIONAL { ?developer foaf:name ?dev_name . }
+      OPTIONAL { ?developer a ?dev_type . }
       OPTIONAL { ?uri doap:homepage ?homepage . }
       OPTIONAL { ?uri doap:description ?doap_desc . }
       OPTIONAL { ?uri doap:programming-language ?language . }
@@ -86,24 +87,16 @@ class EARL
       puts "read doap description for #{proc} from #{doap_url}"
       begin
         doap_graph = RDF::Graph.load(doap_url)
-        @graph << doap_graph.query(:subject => RDF::URI(info["doap"])).to_a
+        @graph << doap_graph.to_a
 
         # Load FOAF definitions of doap:developers
         foaf_url = doap_graph.first_object(:predicate => RDF::DOAP.developer)
-        puts "foaf_url for #{proc} #{foaf_url}"
-        subject_triples = case foaf_url
-        when RDF::URI
+        subject_triples = []
+        if foaf_url.url?
           foaf_graph = RDF::Graph.load(foaf_url)
           puts "read foaf description for #{proc} from #{foaf_url} with #{foaf_graph.count} triples"
-          subject_triples = foaf_graph.query(:subject => foaf_url).to_a
-        when RDF::Node
-          puts "read foaf description for #{proc} from doap"
-          subject_triples = doap_graph.query(:subject => foaf_url).to_a
-        else
-          []
+          @graph << foaf_graph.to_a
         end
-        puts "  using #{subject_triples.length} triples"
-        @graph << subject_triples
       rescue
         # Ignore failure
       end
@@ -152,7 +145,11 @@ class EARL
         io.read
       end
     else
-      raise "Format #{format} not supported, use :jsonld or :turtle"
+      if io
+        RDF::Writer.for(format).new(io) {|w| w << graph}
+      else
+        graph.dump(format)
+      end
     end
   end
 
@@ -206,10 +203,11 @@ class EARL
       %w(name doap_desc homepage language).each do |prop|
         info[prop] = solution[prop.to_sym].to_s if solution[prop.to_sym]
       end
-      if solution[:dev_name] || solution[:developer].is_a?(RDF::URI)
+      if solution[:dev_name]
+        dev_type = solution[:dev_type].to_s =~ /Organization/ ? "foaf:Organization" : "foaf:Person"
         info['developer'] = Hash.ordered
         info['developer']['@id'] = solution[:developer].to_s if solution[:developer].uri?
-        info['developer']['@type'] = 'foaf:Person'
+        info['developer']['@type'] = dev_type
         info['developer']['foaf:name'] = solution[:dev_name].to_s if solution[:dev_name]
       end
     end
@@ -425,7 +423,7 @@ class EARL
       res += %(<#{developer['@id']}> a #{[developer['@type']].flatten.join(', ')} )
       res += %(foaf:name "#{developer['foaf:name']}" .\n)
     elsif developer
-      res += %(  doap:developer [ a foaf:Person; foaf:name "#{developer['foaf:name']}"] .\n)
+      res += %(  doap:developer [ a #{developer['@type'] || "foaf:Person"}; foaf:name "#{developer['foaf:name']}"] .\n)
     else
       res += %(  .\n)
     end

@@ -14,13 +14,13 @@
         "earl:TestSubject",
         "doap:Project"
       ],
-      "name": "Any23 - Anything to Triples",
+      "name": "any23",
       "developer": {
-        "@id": "http://greggkellogg.net/foaf#me",
-        "@type": "foaf:Person",
-        "foaf:name": "Gregg Kellogg"
+        "@id": "http://code.google.com/p/any23/",
+        "@type": "foaf:Organization",
+        "foaf:name": "Digital Enterprise Research Institute"
       },
-      "doap_desc": "Anything To Triples (any23) is a library, a web service and a command line tool that extracts structured data in RDF format from a variety of Web documents",
+      "doap_desc": "\n    Anything To Triples (any23) is a library, a web service and a command line\n    tool that extracts structured data in RDF format from a variety of Web\n    documents\n  ",
       "homepage": "http://developers.any23.org/",
       "language": "Java"
     },
@@ -2779,7 +2779,7 @@
           "subject": "https://github.com/rdfa/librdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         }
       },
@@ -30649,7 +30649,7 @@
           "subject": "https://github.com/rdfa/librdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         }
       },
