@@ -5214,7 +5214,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -14241,7 +14241,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {
@@ -24645,7 +24645,7 @@
           "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         },
         "https://github.com/niklasl/clj-rdfa": {

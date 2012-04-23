@@ -4166,7 +4166,7 @@ white   space
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0114.html>;
   earl:subject <http://www.w3.org/2012/pyRdfa>;
-  earl:result [ a earl:Result; earl:fail] .
+  earl:result [ a earl:Result; earl:pass] .
 <http://rdfa.info/test-suite/test-details/rdfa1.1/html5/0115?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26uri%3D> a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0115.html>;
@@ -6651,7 +6651,7 @@ white   space
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0114.xhtml>;
   earl:subject <http://www.w3.org/2012/pyRdfa>;
-  earl:result [ a earl:Result; earl:fail] .
+  earl:result [ a earl:Result; earl:pass] .
 <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0115?rdfa-extractor=http%3A//any23.org/turtle/> a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0115.xhtml>;
@@ -8626,7 +8626,7 @@ white   space
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0114.xhtml>;
   earl:subject <http://www.w3.org/2012/pyRdfa>;
-  earl:result [ a earl:Result; earl:fail] .
+  earl:result [ a earl:Result; earl:pass] .
 <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml5/0115?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26uri%3D> a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0115.xhtml>;
