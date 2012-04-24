@@ -8071,7 +8071,7 @@
           "subject": "https://github.com/rdfa/librdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:fail"
+            "outcome": "earl:pass"
           }
         }
       },
