@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/gkellogg/json-ld.git
-  revision: e82489472c9b1c6a20789b4eb9c67dc3ea133c55
+  revision: affa844602ccf507b0e5976fe0245d0222d20819
   specs:
     json-ld (0.1.2)
       backports
