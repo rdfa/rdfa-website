@@ -1,5 +1,5 @@
 ASK WHERE {
-  <> <http://www.milowski.com/V/bit> [
+  <$TCPATH/0301.xhtml> <http://www.milowski.com/V/bit> [
     a <http://www.milowski.com/V/thing>;
        <http://www.milowski.com/V/name> "Fizzbit"
   ]
