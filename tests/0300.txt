@@ -1,6 +1,6 @@
 <head>
   <title>Test 0300: Testing @resource=[]</title>
 </head>
-<body>
-  <a href="license.xhtml" property="xhv:license" resource="[]">The Foo Document</a>
+<body about="http://www.example.org/">
+  <a href="http://www.example.org/license.xhtml" property="xhv:license" resource="[]">The Foo Document</a>
 </body>
