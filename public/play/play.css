@@ -1,0 +1,21 @@
+/**
+ * Styling for the RDFa Play UI.
+ */
+textarea:focus, input:focus {
+  border: 2px solid #900;
+}
+
+.clear { /* generic container (i.e. div) for floating buttons */
+  overflow: hidden;
+  width: 100%;
+}
+
+.errors {
+  font-style: bold;
+  color: red;
+}
+
+#permalink {
+  text-align: right;
+}
+

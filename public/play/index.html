@@ -5,7 +5,7 @@
   lang="en">
   <head>
     <meta charset="utf-8">
-    <title property="doap:name">RDFa / Playground</title>
+    <title property="doap:name">RDFa / Play</title>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -15,15 +15,51 @@
     <!-- Le styles -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
+      .container {
+        width: 90%;
+      }
       body {
         padding-top: 60px;
         padding-bottom: 40px;
       }
+      
+      .editor .CodeMirror {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        float: left;
+        width: 50%;
+        border: 1px solid black;
+      }
+
+      .output .CodeMirror {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        float: left;
+        width: 100%;
+        border: 1px solid black;
+      }
+      
+      iframe {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 49%;
+        float: left;
+        height: 300px;
+        border: 1px solid black;
+        border-left: 0px;
+      }      
     </style>
+    <link rel="stylesheet" href="codemirror.css" type="text/css" /> 
+    <link rel="stylesheet" href="play.css" type="text/css" /> 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+    <script type="text/javascript" src="codemirror-compressed.js"></script>
+    <script type="text/javascript" src="rdfa.js"></script>
+    <script type="text/javascript" src="play.js"></script>
+    <script type="text/javascript" src="play-examples.js"></script>
     <!-- link href="css/bootstrap-responsive.css" rel="stylesheet" -->
   </head>
 
-  <body>
+  <body onload="play.init();">
 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -38,7 +74,7 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="..">Home</a></li>
-              <li class="active"><a href=".">Playground</a></li>
+              <li class="active"><a href=".">Play</a></li>
               <li><a href="../docs/">Documentation</a></li>
               <li><a href="../tools/">Tools</a></li>
               <li><a href="../dev/">Developers</a></li>
@@ -51,7 +87,56 @@
 
     <div class="container">
 
+      <div id="info hidden">
+         <p>Play around with RDFa markup by typing out
+         some HTML+RDFa below and see what gets generated from it at the 
+         bottom of the page. Pick any of the examples below to get started. 
+         You can learn more about RDFa by reading the 
+         <a href="http://www.w3.org/TR/rdfa-primer/">RDFa Primer</a>.
       </div>
+
+      <div class="btn-group">
+        <button class="btn">Person</button>
+        <button class="btn">Event</button>
+        <button class="btn">Place</button>
+        <button class="btn">Product</button>
+        <button class="btn">Recipe</button>
+      </div>
+
+      <div class="editor">
+        <textarea id="editor">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<head>
+  <title>Test 0001</title>
+</head>
+<body>
+  <p>This photo was taken by <span class="author" about="photo1.jpg" property="dc:creator">Mark Birbeck</span>.</p>
+</body>
+</html>
+        </textarea>
+      </div>
+      <iframe id=preview></iframe>
+    
+      <div id="permalink"></div>
+
+      <div id="markup-errors" class="errors"></div>
+
+      <div id="param-errors" class="errors"></div>
+      
+      <div id="processing-errors" class="errors"></div>
+
+      <ul class="nav nav-tabs">
+        <li><a href="#triples" data-toggle="tab">Triples</a></li>
+        <li><a href="#jsonld" data-toggle="tab">JSON-LD</a></li>
+      </ul>
+
+      <div class="output">
+        <textarea id="outputDisplay"><_:triples> will:appear "here" .</textarea>
+      </div>
+
+    </div>
 
       <hr>
 
