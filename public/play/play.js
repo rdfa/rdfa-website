@@ -95,7 +95,7 @@
           // print the predicate
           ntriples += '<' + p + '> ';
 
-          console.log(o);
+          //console.log(o);
           // print the object
           if(o.type == 'http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral') {
              ntriples += '"' + o.value.replace('"', '\\"') + '"';
@@ -123,6 +123,7 @@
     console.log(ntriples);
     
     play.outputDisplay.setValue(ntriples);
+    play.viz.redraw();
   };
 
   /**

@@ -53,8 +53,10 @@
     <link rel="stylesheet" href="play.css" type="text/css" /> 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
     <script type="text/javascript" src="codemirror-compressed.js"></script>
+    <script type="text/javascript" src="d3.v2.min.js"></script>
     <script type="text/javascript" src="rdfa.js"></script>
     <script type="text/javascript" src="play.js"></script>
+    <script type="text/javascript" src="visualization.js"></script>
     <script type="text/javascript" src="play-examples.js"></script>
     <!-- link href="css/bootstrap-responsive.css" rel="stylesheet" -->
   </head>
@@ -132,11 +134,15 @@
       <div id="processing-errors" class="errors"></div>
 
       <ul class="nav nav-tabs">
-        <li><a href="#triples" data-toggle="tab">Triples</a></li>
+        <li><a href="#triples" data-toggle="tab">Visualization</a></li>
+        <li><a href="#triples" data-toggle="tab">TURTLE</a></li>
+        <li><a href="#triples" data-toggle="tab">TURTLE Lite</a></li>
       </ul>
 
+      <div id="graph"></div>
+
       <div class="output">
-        <textarea id="outputDisplay"><_:triples> will:appear "here" .</textarea>
+        <textarea id="outputDisplay"></textarea>
       </div>
 
     </div>
