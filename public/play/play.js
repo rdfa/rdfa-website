@@ -77,24 +77,25 @@
       var triples = preview.data.getSubjectTriples(s);
       var predicates = triples.predicates;
       
-      // print the subject
-      if(s.charAt(0) == '_') {
-        ntriples += s + ' ';
-      }
-      else {
-        ntriples += '<' + s + '> ';
-      }
-      
       for(p in predicates)
       {
         var objects = triples.predicates[p].objects;
-        
-        // print the predicate
-        ntriples += '<' + p + '> ';
-        
+                
         for(oi in objects) {
           var o = objects[oi];
-          //console.log(o);
+
+          // print the subject
+          if(s.charAt(0) == '_') {
+            ntriples += s + ' ';
+          }
+          else {
+            ntriples += '<' + s + '> ';
+          }
+
+          // print the predicate
+          ntriples += '<' + p + '> ';
+
+          console.log(o);
           // print the object
           if(o.type == 'http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral') {
              ntriples += '"' + o.value.replace('"', '\\"') + '"';
@@ -102,12 +103,22 @@
                 ntriples += '@' + o.language;
              }
           }
-          else if(o.type == '') {
+          else if(o.type == 'http://www.w3.org/1999/02/22-rdf-syntax-ns#object') {
+            if(o.value.charAt(0) == '_') {
+              ntriples += o.value;
+            }
+            else {
+              ntriples += '<' + o.value + '>';
+            }
           }
+          else
+          {
+             ntriples += o.value;
+          }
+          
+          ntriples += ' .\n';
         }
-      }
-      
-      ntriples += '.\n';
+      }      
     }
     console.log(ntriples);
     
