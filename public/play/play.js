@@ -59,7 +59,15 @@
     preview.open();
     preview.write(play.editor.getValue());
     preview.close();
-    RDFa.attach(preview);
+    
+    if(!preview.data)
+    {
+       RDFa.attach(preview);
+    }
+    else
+    {
+       RDFa.attach(preview, true);       
+    }
     
     // iterate through all triples and insert them into the output display
     var ntriples = '';
@@ -86,6 +94,7 @@
         
         for(oi in objects) {
           var o = objects[oi];
+          //console.log(o);
           // print the object
           if(o.type == 'http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral') {
              ntriples += '"' + o.value.replace('"', '\\"') + '"';
