@@ -257,6 +257,7 @@ module CrazyIvan
         extracted_text.force_encoding(Encoding::UTF_8) if extracted_text.respond_to?(:force_encoding)
       rescue Exception => e
         puts "error extracting text: #{e.class}: #{e.message}"
+        puts e.backtrace if settings.environment != :production
         extracted_text = e.message
       end
 
@@ -307,6 +308,7 @@ module CrazyIvan
       entries
     rescue
       puts "error: #{$!.inspect}"
+      puts $!.backtrace if settings.environment != :production
     end
     module_function :get_test_alternates
 
@@ -333,6 +335,13 @@ module CrazyIvan
       # Perform the SPARQL query
       result = SPARQL.execute(StringIO.new(sparql_query), nil)
       puts "result: #{result.inspect}, expected: #{expected_results.inspect} == #{(result == expected_results).inspect}"
+      if result != expected_results && settings.environment != :production
+        extracted = RDF::Util::File.open_file(extract_url)
+        puts "extracted: #{extracted.read}"
+        puts "content-type: #{extracted.content_type.inspect}"
+        graph = RDF::Graph.load(extract_url, :base_url => get_test_url(version, suite, num))
+        puts "graph: #{graph.dump(:ttl)}"
+      end
       result == expected_results
     end
     module_function :perform_test_case

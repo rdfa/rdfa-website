@@ -137,6 +137,7 @@ module CrazyIvan
         content
       rescue Exception => e
         puts "error: #{e.message}\n#{e.backtrace.join("\n")}"
+        puts e.backtrace if settings.environment != :production
         [404, "#{e.message}\n#{e.backtrace.join("\n")}"]
       end
     end
@@ -178,6 +179,7 @@ module CrazyIvan
         end
       rescue Exception => e
         puts "test failed with exception: #{e.class}: #{e.message}"
+        puts e.backtrace if settings.environment != :production
         status = "FAIL"
         style = "text-decoration: underline; font-weight: bold; color: #f00"
       end
@@ -226,6 +228,7 @@ module CrazyIvan
         end
       rescue Exception => e
         puts "error: #{e.message}\n#{e.backtrace.join("\n")}"
+        puts e.backtrace if settings.environment != :production
         [404, "#{e.message}\n#{e.backtrace.join("\n")}"]
       end
     end

@@ -5,7 +5,7 @@
     "rdfatest":   "http://rdfa.info/vocabs/rdfa-test#",
     "test":       "http://www.w3.org/2006/03/test-description#",
 
-    "classification": {"@id": "test:classification"},
+    "classification": {"@id": "test:classification", "@type": "@id"},
     "contributor":    {"@id": "dc:contributor"},
     "description":    {"@id": "dc:title"},
     "expectedResults":{"@id": "test:expectedResults", "@type": "xsd:boolean"},

@@ -858,7 +858,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5";
    test:informationResourceInput <test-cases/0109.html>;
    test:informationResourceResults <test-cases/0109.sparql>;
    test:purpose "Tests to make sure that @xml:base is ignored in XHTML+RDFa 1.0. The input test document is invalid XHTML.";
@@ -1283,24 +1283,24 @@ white   space
    test:purpose "Tests @property to establish the predicate; literal object is in the content of the element.";
    test:specificationReference "" .
 <test-cases/0202> dc:contributor "Gregg Kellogg";
-   dc:title "Tests to ensure @xml:base used in SVG";
+   dc:title "Tests to ensure @xml:base used in SVG and XHTML5";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "svgtiny1.2", "svg";
+   rdfatest:hostLanguage "svgtiny1.2", "svg", "xml", "xhtml5";
    test:informationResourceInput <test-cases/0202.html>;
    test:informationResourceResults <test-cases/0202.sparql>;
-   test:purpose "Tests to make sure that @xml:base is used in SVG+RDFa.";
+   test:purpose "Tests to make sure that @xml:base is used in SVG+RDFa, XML+RDFa and XHTML5+RDFa.";
    test:specificationReference "http://www.w3.org/QA/2008/12/rdfa_and_svg_tiny_and_the_rdfa.html" .
 <test-cases/0203> dc:contributor "Gregg Kellogg";
-   dc:title "Tests to ensure @xml:base used in non-root elements in SVG";
+   dc:title "Tests to ensure @, XML+RDFa used in non-root elements in SVG and XHTML5";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "svgtiny1.2", "svg";
+   rdfatest:hostLanguage "svgtiny1.2", "svg", "xml", "xhtml5";
    test:informationResourceInput <test-cases/0203.html>;
    test:informationResourceResults <test-cases/0203.sparql>;
-   test:purpose "Tests to make sure that @xml:base is used in non-root elements in SVG+RDFa.";
+   test:purpose "Tests to make sure that @xml:base is used in non-root elements in SVG+RDFa, XML+RDFa and XHTML5+RDFa..";
    test:specificationReference "http://www.w3.org/QA/2008/12/rdfa_and_svg_tiny_and_the_rdfa.html" .
 <test-cases/0206> dc:contributor "Ivan Herman";
    dc:title "Usage of Initial Context";
@@ -2250,3 +2250,80 @@ white   space
    test:informationResourceResults <test-cases/0294.sparql>;
    test:purpose "RDFa 1.1 defines an initial context containing prefixes and terms. RDFa 1.0 must not define such prefixes and terms.";
    test:specificationReference "RDFa Syntax 1.0, section 6.3.1.3" .
+<test-cases/0295> dc:contributor "Manu Sporny";
+   dc:title "Benchmark test";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "svg", "html4", "html5", "xhtml5"; # FIXME: xml and xhtml1
+   test:expectedResults "true"^^xsd:boolean;
+   test:informationResourceInput <test-cases/0295.html>;
+   test:informationResourceResults <test-cases/0295.sparql>;
+   test:purpose "Complex benchmark document.";
+   test:specificationReference "" .
+<test-cases/0296> dc:contributor "Manu Sporny";
+   dc:title "@property does set parent object without @typeof";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "svg", "html4", "html5", "xhtml5"; # FIXME: xml and xhtml1
+   test:expectedResults "true"^^xsd:boolean;
+   test:informationResourceInput <test-cases/0296.html>;
+   test:informationResourceResults <test-cases/0296.sparql>;
+   test:purpose "When @property is used with a resource attribute (@href, @resource, ...) it does not set parent object.";
+   test:specificationReference "RDFa Core 1.1 section 7.5 step 5.1 and step 11" .
+<test-cases/0297> dc:contributor "Alex Milowski";
+   dc:title "@about=[] with @typeof does not create a new subject";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "svg", "html4", "html5", "xhtml5"; # FIXME: xml and xhtml1
+   test:expectedResults "true"^^xsd:boolean;
+   test:informationResourceInput <test-cases/0297.html>;
+   test:informationResourceResults <test-cases/0297.sparql>;
+   test:purpose "When the @about resolves to nothing, the typed resource should not create a new subject.";
+   test:specificationReference "RDFa Core 1.1 section 7.5 step 5.1" .
+<test-cases/0298> dc:contributor "Alex Milowski";
+   dc:title "@about=[] with @typeof does not create a new object";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "svg", "html4", "html5", "xhtml5"; # FIXME: xml and xhtml1
+   test:expectedResults "true"^^xsd:boolean;
+   test:informationResourceInput <test-cases/0298.html>;
+   test:informationResourceResults <test-cases/0298.sparql>;
+   test:purpose "When the @about resolves to nothing, the typed resource should not create a new subject (chaining).";
+   test:specificationReference "RDFa Core 1.1 section 7.5 step 5.2" .
+<test-cases/0299> dc:contributor "Alex Milowski";
+   dc:title "@resource=[] with @href or @src uses @href or @src (@rel)";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "svg", "html4", "html5", "xhtml5"; # FIXME: xml and xhtml1
+   test:expectedResults "true"^^xsd:boolean;
+   test:informationResourceInput <test-cases/0299.html>;
+   test:informationResourceResults <test-cases/0299.sparql>;
+   test:purpose "When the @resource resolves to nothing, @href or @src should be used (@rel case).";
+   test:specificationReference "RDFa Core 1.1 section 7.5 step 6" .
+<test-cases/0300> dc:contributor "Alex Milowski";
+   dc:title "@resource=[] with @href or @src uses @href or @src (@property)";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "svg", "html4", "html5", "xhtml5"; # FIXME: xml and xhtml1
+   test:expectedResults "true"^^xsd:boolean;
+   test:informationResourceInput <test-cases/0300.html>;
+   test:informationResourceResults <test-cases/0300.sparql>;
+   test:purpose "When the @resource resolves to nothing, @href or @src should be used (@property case).";
+   test:specificationReference "RDFa Core 1.1 section 7.5 step 11" .
+<test-cases/0301> dc:contributor "Alex Milowski";
+   dc:title "@property with @typeof creates a typed_resource for chaining";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "svg", "html4", "html5", "xhtml5"; # FIXME: xml and xhtml1
+   test:expectedResults "true"^^xsd:boolean;
+   test:informationResourceInput <test-cases/0301.html>;
+   test:informationResourceResults <test-cases/0301.sparql>;
+   test:purpose "@property with @typeof creates a typed_resource for chaining.";
+   test:specificationReference "" .
