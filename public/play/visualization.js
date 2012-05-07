@@ -11,18 +11,25 @@
   // setup the visualization viewport
   var m = [20, 120, 20, 120],
       w = 1024 - m[1] - m[3],
-      h = 400 - m[0] - m[2],
+      h = 450 - m[0] - m[2],
       i = 0,
       root;
 
-  viz.redraw = function() {
+  /**
+   * Redraw the graph visualization on the screen.
+   */  
+  viz.redraw = function(nodes) {
+    // delete any old SVG document
+    $('#graph').empty();
+  
     // create a new tree layout
     viz.tree = d3.layout.tree().size([h, w]);
     
     // create the projection
     viz.diagonal = d3.svg.diagonal()
       .projection(function(d) { return [d.y, d.x]; });
-      
+
+    console.log("viz.initialized", viz.initialized);        
     // create the view for the graph
     viz.view = d3.select("#graph").append("svg:svg")
         .attr("width", w + m[1] + m[3])
@@ -30,19 +37,14 @@
       .append("svg:g")
         .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
-    // process the data
-    root = {
-       "name": "Items",
-       "children": [ {
-         "name": "Item #1",
-         "children": [ { 
-           "name": "name: Manu Sporny" }, { "name": "type: Person" }, { "name": "affiliation",
-           "children": [ { "name": "name: Digital Bazaar" }, { "name": "type: Organization" } ]
-           }
-          ]
-        }
-       ]
-      };
+    // set the root value
+    root = nodes;
+    
+    // if root is invalid, fix it
+    if(root == undefined)
+    {
+      root = {'name': 'Web Page'};
+    }
       
     // set the RDF data
     viz.tree.nodes(root);
@@ -56,6 +58,7 @@
   };
 
   viz.update = function(source) {
+    console.log("viz.update()");
     var duration = d3.event && d3.event.altKey ? 5000 : 500;
 
     // Compute the new tree layout.
