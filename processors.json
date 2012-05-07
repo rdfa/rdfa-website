@@ -9,6 +9,10 @@
     "doap": "https://github.com/niklasl/clj-rdfa",
     "doap_url": "/earl-reports/clj-rdfa-doap.ttl"
   },
+  "Green Turtle (JavaScript)": {
+    "doap": "http://code.google.com/p/green-turtle/",
+    "doap_url": "/earl-reports/green-turtle-doap.ttl"
+  },
   "librdfa (C)": {
     "endpoint": "http://rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py?uri=",
     "doap": "https://github.com/rdfa/librdfa",
@@ -21,7 +25,7 @@
   "RDF Distiller (Ruby)": {
     "endpoint": "http://rdf.greggkellogg.net/distiller?raw=true&in_fmt=rdfa&uri=",
     "doap": "http://rubygems.org/gems/rdf-rdfa",
-    "doap_url": "http://rdf.greggkellogg.net/doap"
+    "doap_url": "/earl-reports/rdf-rdfa-doap.ttl"
   },
   "other":  {
     "endpoint": "",
