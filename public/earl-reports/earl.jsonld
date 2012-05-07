@@ -76,14 +76,12 @@
         "earl:TestSubject",
         "doap:Project"
       ],
-      "name": "pyRdfa",
+      "name": "pyRdfa (Python)",
       "developer": {
-        "@id": "http://www.ivan-herman.net/foaf#me",
+        "@id": "http://bhuga.net/#ben",
         "@type": "foaf:Person",
-        "foaf:name": "Ivan Herman"
-      },
-      "doap_desc": "pyRdfa is a distiller that generates RDF triples from an XML or HTML5 file annotated by RDFa in various RDF serialization formats. It can either be used directly from a command line or via a CGI service.",
-      "language": "Python"
+        "foaf:name": "Ben Lavender"
+      }
     },
     {
       "@id": "http://rubygems.org/gems/rdf-rdfa",
@@ -10242,7 +10240,7 @@
           "subject": "http://code.google.com/p/green-turtle/",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:pass"
+            "outcome": "earl:fail"
           }
         },
         "http://rubygems.org/gems/rdf-rdfa": {
@@ -10316,7 +10314,7 @@
           "subject": "http://code.google.com/p/green-turtle/",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:pass"
+            "outcome": "earl:fail"
           }
         },
         "http://rubygems.org/gems/rdf-rdfa": {
@@ -10390,7 +10388,7 @@
           "subject": "http://code.google.com/p/green-turtle/",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:pass"
+            "outcome": "earl:fail"
           }
         },
         "http://rubygems.org/gems/rdf-rdfa": {
@@ -10464,7 +10462,7 @@
           "subject": "http://code.google.com/p/green-turtle/",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:pass"
+            "outcome": "earl:fail"
           }
         },
         "http://rubygems.org/gems/rdf-rdfa": {
@@ -10538,7 +10536,7 @@
           "subject": "http://code.google.com/p/green-turtle/",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:pass"
+            "outcome": "earl:fail"
           }
         },
         "http://rubygems.org/gems/rdf-rdfa": {
@@ -37281,7 +37279,7 @@
           "subject": "http://code.google.com/p/green-turtle/",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:pass"
+            "outcome": "earl:fail"
           }
         },
         "http://rubygems.org/gems/rdf-rdfa": {
@@ -37344,7 +37342,7 @@
           "subject": "http://code.google.com/p/green-turtle/",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:pass"
+            "outcome": "earl:fail"
           }
         },
         "http://rubygems.org/gems/rdf-rdfa": {
@@ -37407,7 +37405,7 @@
           "subject": "http://code.google.com/p/green-turtle/",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:pass"
+            "outcome": "earl:fail"
           }
         },
         "http://rubygems.org/gems/rdf-rdfa": {
@@ -37470,7 +37468,7 @@
           "subject": "http://code.google.com/p/green-turtle/",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:pass"
+            "outcome": "earl:fail"
           }
         },
         "http://rubygems.org/gems/rdf-rdfa": {
@@ -37533,7 +37531,7 @@
           "subject": "http://code.google.com/p/green-turtle/",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:pass"
+            "outcome": "earl:fail"
           }
         },
         "http://rubygems.org/gems/rdf-rdfa": {

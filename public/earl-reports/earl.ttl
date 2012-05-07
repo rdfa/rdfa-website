@@ -737,11 +737,9 @@
   doap:developer [ a foaf:Person; foaf:name "Manu Sporny"] .
 
 <http://www.w3.org/2012/pyRdfa> a earl:TestSubject, doap:Project
-  doap:name "pyRdfa";
-  doap:description """pyRdfa is a distiller that generates RDF triples from an XML or HTML5 file annotated by RDFa in various RDF serialization formats. It can either be used directly from a command line or via a CGI service.""";
-  doap:programming-language "Python";
-  doap:developer <http://www.ivan-herman.net/foaf#me> .
-<http://www.ivan-herman.net/foaf#me> a foaf:Person foaf:name "Ivan Herman" .
+  doap:name "pyRdfa (Python)";
+  doap:developer <http://bhuga.net/#ben> .
+<http://bhuga.net/#ben> a foaf:Person foaf:name "Ben Lavender" .
 
 <http://rubygems.org/gems/rdf-rdfa> a earl:TestSubject, doap:Project
   doap:name "RDF::RDFa";
@@ -8337,7 +8335,7 @@ white   space
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0235.xhtml>;
   earl:subject <http://code.google.com/p/green-turtle/>;
-  earl:result [ a earl:Result; earl:pass] .
+  earl:result [ a earl:Result; earl:fail] .
 <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0235?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26rdfagraph%3Dprocessor%26uri%3D> a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0235.xhtml>;
@@ -8357,7 +8355,7 @@ white   space
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0236.xhtml>;
   earl:subject <http://code.google.com/p/green-turtle/>;
-  earl:result [ a earl:Result; earl:pass] .
+  earl:result [ a earl:Result; earl:fail] .
 <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0236?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26rdfagraph%3Dprocessor%26uri%3D> a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0236.xhtml>;
@@ -8377,7 +8375,7 @@ white   space
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0237.xhtml>;
   earl:subject <http://code.google.com/p/green-turtle/>;
-  earl:result [ a earl:Result; earl:pass] .
+  earl:result [ a earl:Result; earl:fail] .
 <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0237?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26rdfagraph%3Dprocessor%26uri%3D> a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0237.xhtml>;
@@ -8397,7 +8395,7 @@ white   space
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0238.xhtml>;
   earl:subject <http://code.google.com/p/green-turtle/>;
-  earl:result [ a earl:Result; earl:pass] .
+  earl:result [ a earl:Result; earl:fail] .
 <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0238?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26rdfagraph%3Dprocessor%26uri%3D> a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0238.xhtml>;
@@ -8417,7 +8415,7 @@ white   space
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0239.xhtml>;
   earl:subject <http://code.google.com/p/green-turtle/>;
-  earl:result [ a earl:Result; earl:pass] .
+  earl:result [ a earl:Result; earl:fail] .
 <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0239?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26rdfagraph%3Dprocessor%26uri%3D> a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0239.xhtml>;
@@ -11942,7 +11940,7 @@ white   space
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0235.xml>;
   earl:subject <http://code.google.com/p/green-turtle/>;
-  earl:result [ a earl:Result; earl:pass] .
+  earl:result [ a earl:Result; earl:fail] .
 <http://rdfa.info/test-suite/test-details/rdfa1.1/xml/0235?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26rdfagraph%3Dprocessor%26uri%3D> a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0235.xml>;
@@ -11957,7 +11955,7 @@ white   space
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0236.xml>;
   earl:subject <http://code.google.com/p/green-turtle/>;
-  earl:result [ a earl:Result; earl:pass] .
+  earl:result [ a earl:Result; earl:fail] .
 <http://rdfa.info/test-suite/test-details/rdfa1.1/xml/0236?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26rdfagraph%3Dprocessor%26uri%3D> a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0236.xml>;
@@ -11972,7 +11970,7 @@ white   space
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0237.xml>;
   earl:subject <http://code.google.com/p/green-turtle/>;
-  earl:result [ a earl:Result; earl:pass] .
+  earl:result [ a earl:Result; earl:fail] .
 <http://rdfa.info/test-suite/test-details/rdfa1.1/xml/0237?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26rdfagraph%3Dprocessor%26uri%3D> a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0237.xml>;
@@ -11987,7 +11985,7 @@ white   space
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0238.xml>;
   earl:subject <http://code.google.com/p/green-turtle/>;
-  earl:result [ a earl:Result; earl:pass] .
+  earl:result [ a earl:Result; earl:fail] .
 <http://rdfa.info/test-suite/test-details/rdfa1.1/xml/0238?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26rdfagraph%3Dprocessor%26uri%3D> a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0238.xml>;
@@ -12002,7 +12000,7 @@ white   space
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0239.xml>;
   earl:subject <http://code.google.com/p/green-turtle/>;
-  earl:result [ a earl:Result; earl:pass] .
+  earl:result [ a earl:Result; earl:fail] .
 <http://rdfa.info/test-suite/test-details/rdfa1.1/xml/0239?rdfa-extractor=http%3A//rdf.greggkellogg.net/distiller%3Fraw%3Dtrue%26in_fmt%3Drdfa%26rdfagraph%3Dprocessor%26uri%3D> a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0239.xml>;
