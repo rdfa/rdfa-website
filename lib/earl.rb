@@ -252,7 +252,7 @@ class EARL
     # Collect results
     results = {}
     SPARQL.execute(RESULT_QUERY, @graph).each do |solution|
-      results[solution[:uri]] = solution[:outcome] == EARL.pass
+      results[solution[:uri]] = solution[:outcome] == EARL.passed
     end
 
     hash = Hash.ordered
@@ -309,7 +309,7 @@ class EARL
                 uri = assertions[processor]
                 result_hash = Hash.ordered
                 result_hash['@type'] = 'earl:TestResult'
-                result_hash['outcome'] = results[uri] ? 'earl:pass' : 'earl:fail'
+                result_hash['outcome'] = results[uri] ? 'earl:passed' : 'earl:failed'
                 ta_hash = Hash.ordered
                 ta_hash['@id'] = uri.to_s
                 ta_hash['@type'] = 'earl:Assertion'
