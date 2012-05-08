@@ -35,7 +35,7 @@
 -#            "subject": "http://www.w3.org/2012/pyRdfa/extract?uri=",
 -#            "result": {
 -#              "@type": "earl:TestResult",
--#              "outcome": "earl:pass"
+-#              "outcome": "earl:passed"
 -#            },
 -#          }
 -#        },
@@ -211,7 +211,7 @@
                     - url = processor['@id']
                     - next unless test.has_key?(url)
                     - assertion = test[url]
-                    - pass_fail = assertion['result']['outcome'].split(':').last.upcase
+                    - pass_fail = assertion['result']['outcome'].split(':').last.upcase.sub(/ED$/, '')
                     %td{:class => pass_fail, :rel => assertion['@id'], :typeof => assertion['@type']}
                       %link{:property => "earl:assertedBy", :href => assertion['assertedBy']}
                       %link{:property => "earl:test", :href => assertion['test']}

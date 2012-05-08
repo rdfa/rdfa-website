@@ -87,7 +87,7 @@ class EARL
       puts "read doap description for #{proc} from #{doap_url}"
       begin
         doap_graph = RDF::Graph.load(doap_url)
-        puts "doap: #{doap_graph.dump(:ttl)}"
+        #puts "doap: #{doap_graph.dump(:ttl)}"
         @graph << doap_graph.to_a
 
         # Load FOAF definitions of doap:developers
@@ -96,7 +96,7 @@ class EARL
         if foaf_url.url?
           foaf_graph = RDF::Graph.load(foaf_url)
           puts "read foaf description for #{proc} from #{foaf_url} with #{foaf_graph.count} triples"
-          puts "foaf: #{foaf_graph.dump(:ttl)}"
+          #puts "foaf: #{foaf_graph.dump(:ttl)}"
           @graph << foaf_graph.to_a
         end
       rescue
@@ -252,7 +252,7 @@ class EARL
     # Collect results
     results = {}
     SPARQL.execute(RESULT_QUERY, @graph).each do |solution|
-      results[solution[:uri]] = solution[:outcome] == EARL.pass
+      results[solution[:uri]] = solution[:outcome] == EARL.passed
     end
 
     hash = Hash.ordered
@@ -309,7 +309,7 @@ class EARL
                 uri = assertions[processor]
                 result_hash = Hash.ordered
                 result_hash['@type'] = 'earl:TestResult'
-                result_hash['outcome'] = results[uri] ? 'earl:pass' : 'earl:fail'
+                result_hash['outcome'] = results[uri] ? 'earl:passed' : 'earl:failed'
                 ta_hash = Hash.ordered
                 ta_hash['@id'] = uri.to_s
                 ta_hash['@type'] = 'earl:Assertion'

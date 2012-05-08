@@ -109,6 +109,8 @@ unstable from time to time, but this approach has been taken so that the
 long-term goal of having a comprehensive test suite for RDFa can be achieved
 by the RDFa community.
 
+When running locally, after adding a unit test, run `rake cache:clean` to remove cached files and ensure that necessary HTTP resources are regenerated. For the deployed website, this happens automatically each time a Git commit is pushed to the server.
+
 ## How to create a processor endpoint.
 
 The Test Suite operates by making a call to a _processor endpoint_ with a query parameter that indicates
