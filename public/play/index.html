@@ -54,7 +54,7 @@
     <!-- link href="css/bootstrap-responsive.css" rel="stylesheet" -->
   </head>
 
-  <body onload="play.init();">
+  <body>
 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -135,16 +135,20 @@
       <div class="tabbable">  
         <ul class="nav nav-tabs">
           <li class="active"><a href="#viz-tab" data-toggle="tab">Visualization</a></li>
-          <li><a href="#ntriples" data-toggle="tab">Raw Data</a></li>
+          <li><a href="#turtle" data-toggle="tab">Raw Data</a></li>
+          <!--li><a href="#ntriples" data-toggle="tab">Raw Data (N-Triples)</a></li-->
         </ul>
         
         <div class="tab-content">  
           <div class="tab-pane active" id="viz-tab">  
             <div id="graph"></div>
+          </div>
+          <div class="tab-pane" id="turtle">  
+            <textarea id="turtleOutputDisplay"></textarea>
           </div>  
-          <div class="tab-pane" id="ntriples">  
-            <textarea id="outputDisplay"></textarea>
-          </div>  
+          <!--div class="tab-pane" id="ntriples">  
+            <textarea id="ntriplesOutputDisplay"></textarea>
+          </div-->  
         </div>
       </div>
       
@@ -164,6 +168,7 @@
     <script src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="bootstrap-tab.js"></script>
     <script type="text/javascript" src="codemirror-compressed.js"></script>
+    <script type="text/javascript" src="codemirror-turtle.js"></script>
     <script type="text/javascript" src="d3.v2.min.js"></script>
     <script type="text/javascript" src="rdfa.js"></script>
     <script type="text/javascript" src="play.js"></script>

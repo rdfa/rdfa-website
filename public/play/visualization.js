@@ -29,7 +29,6 @@
     viz.diagonal = d3.svg.diagonal()
       .projection(function(d) { return [d.y, d.x]; });
 
-    console.log("viz.initialized", viz.initialized);        
     // create the view for the graph
     viz.view = d3.select("#graph").append("svg:svg")
         .attr("width", w + m[1] + m[3])
@@ -58,7 +57,6 @@
   };
 
   viz.update = function(source) {
-    console.log("viz.update()");
     var duration = d3.event && d3.event.altKey ? 5000 : 500;
 
     // Compute the new tree layout.
