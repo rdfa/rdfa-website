@@ -19,6 +19,40 @@ textarea:focus, input:focus {
   text-align: right;
 }
 
+.container {
+  width: 90%;
+}
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.editor .CodeMirror {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
+  width: 50%;
+  border: 1px solid black;
+}
+
+.output .CodeMirror {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
+  width: 100%;
+  border: 1px solid black;
+}
+
+iframe {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 49%;
+  float: left;
+  height: 300px;
+  border: 1px solid black;
+  border-left: 0px;
+}     
+
 /* Visualization styling */
 
 .node circle {
@@ -37,3 +71,4 @@ path.link {
   stroke: #ccc;
   stroke-width: 1.5px;
 }
+

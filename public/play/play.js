@@ -109,6 +109,23 @@
     
     // bind to tab change events
     $('a[data-toggle=tab]').bind('click', play.tabSelected);
+    
+    // bind the example buttons to the example callback
+    $('button[class=btn]').bind('click', play.loadExample);
+  };
+
+  /**
+   * Detects the example button that was clicked and loads the associated 
+   * example into the code editor.
+   *
+   * @param e the event object that was fired.
+   */
+  play.loadExample = function(e) {
+     var example = e.currentTarget.id.replace('btn-', '');
+     
+     if(example in play.examples) {
+       play.editor.setValue(play.examples[example]);
+     }
   };
 
   play.tabSelected = function(e) {

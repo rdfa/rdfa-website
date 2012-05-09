@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html prefix="dc: http://purl.org/dc/terms/
+<html prefix="
+  dc: http://purl.org/dc/terms/
   doap: http://usefulinc.com/ns/doap#
   "
   lang="en">
@@ -13,42 +14,7 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">
-      .container {
-        width: 90%;
-      }
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      
-      .editor .CodeMirror {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        float: left;
-        width: 50%;
-        border: 1px solid black;
-      }
-
-      .output .CodeMirror {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        float: left;
-        width: 100%;
-        border: 1px solid black;
-      }
-      
-      iframe {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 49%;
-        float: left;
-        height: 300px;
-        border: 1px solid black;
-        border-left: 0px;
-      }      
-    </style>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="codemirror.css" type="text/css" /> 
     <link rel="stylesheet" href="play.css" type="text/css" /> 
     <!-- link href="css/bootstrap-responsive.css" rel="stylesheet" -->
@@ -88,39 +54,29 @@
          This tool is not yet ready for production use. That said, it's
          pretty useful already, and the bugs preventing production use will
          be sorted out soon.
-         Play around with RDFa markup by typing out
-         some HTML+RDFa below and see what gets generated from it at the 
-         bottom of the page. Pick any of the examples below to get started. 
-         You can learn more about RDFa by reading the 
-         <a href="http://www.w3.org/TR/rdfa-primer/">RDFa Primer</a>.
          </p>
       </div>
 
-      <!-- div class="btn-group">
-        <button class="btn">Person</button>
-        <button class="btn">Event</button>
-        <button class="btn">Place</button>
-        <button class="btn">Product</button>
-        <button class="btn">Recipe</button>
-      </div -->
-
+      <div class="btn-group">
+        <button class="btn btn-disabled">Examples:</button>
+        <button id="btn-person" class="btn">Person</button>
+        <button id="btn-social-network" class="btn">Social Network</button>
+        <button id="btn-event" class="btn">Event</button>
+        <button id="btn-place" class="btn">Place</button>
+        <button id="btn-product" class="btn">Product</button>
+      </div>
+      
       <div class="editor">
-        <textarea id="editor">
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Information about Manu</title>
-</head>
-<body vocab="http://schema.org/">
-  <p typeof="Person">
-    <strong property="name">Manu Sporny</strong> works at
-    <span property="affiliation" typeof="Organization">
-      <em property="name">Digital Bazaar</em>.
-    </span>
-  </p>
-</body>
-</html>
-        </textarea>
+        <textarea id="editor">Paste your HTML+RDFa code in here, or click on an example above. 
+A preview of the page will appear to the right with a data visualization below.
+You can also see the raw data by clicking on the "Raw Data" tab.
+
+You can learn more about RDFa by reading the
+<span vocab="http://schema.org/" typeof="Document">
+   <a property="url" href="http://www.w3.org/TR/rdfa-primer/">
+      <span property="title">RDFa 1.1 Primer</span></a>.
+</span>
+</textarea>
       </div>
       <iframe id=preview></iframe>
     
