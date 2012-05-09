@@ -42,7 +42,7 @@
   '<div vocab="http://schema.org/" typeof="Event">\n'+
   '  <a property="url" href="nba-miami-philidelphia-game3.html">\n'+
   '  NBA Eastern Conference First Round Playoff Tickets:\n'+
-  '  Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)\n'+
+  '  <span itemprop="name">Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)</span>\n'+
   '  </a>\n'+
   '\n'+
   '  <span property="startDate" content="2011-04-21T20:00">\n'+
