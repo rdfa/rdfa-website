@@ -8,7 +8,7 @@
   var examples = window.play.examples;
 
   examples['person'] = 
-    '<div vocab="http://schema.org/" typeof="Person">\n'+
+  '<div vocab="http://schema.org/" typeof="Person">\n'+
   '  <a property="image" href="http://manu.sporny.org/images/manu.png">\n' +
   '    <span property="name">Manu Sporny</span></a>, \n' +
   '  <span property="jobTitle">Founder/CEO</span>\n' +
@@ -16,10 +16,10 @@
   '    Phone: <span property="telephone">(540) 961-4469</span>\n' +
   '  </div>\n' +
   '  <div>\n' +
-  '    E-mail: <a rel="email" href="mailto:msporny@digitalbazaar.com">msporny@digitalbazaar.com</a>\n' +
+  '    E-mail: <a property="email" href="mailto:msporny@digitalbazaar.com">msporny@digitalbazaar.com</a>\n' +
   '  </div>\n' +
   '  <div>\n' +
-  '    Links: <a rel="url" href="http://manu.sporny.org/">Manu\'s homepage</a>\n' +
+  '    Links: <a property="url" href="http://manu.sporny.org/">Manu\'s homepage</a>\n' +
   '  </div>\n' +
   '</div>';
 
@@ -27,8 +27,8 @@
   '<div vocab="http://xmlns.com/foaf/0.1/">\n' +
   '  <div resource="#manu" typeof="Person">\n'+
   '    <span property="name">Manu Sporny</span> knows\n'+
-  '    <a rel="knows" href="#alex">Alex</a> and\n'+
-  '    <a rel="knows" href="#brian">Brian</a>.\n'+
+  '    <a property="knows" href="#alex">Alex</a> and\n'+
+  '    <a property="knows" href="#brian">Brian</a>.\n'+
   '  </div>\n'+
   '  <div resource="#alex" typeof="Person">\n'+
   '    <span property="name">Alex Milowski</span> wrote the RDFa processor for this page.\n'+
@@ -42,7 +42,7 @@
   '<div vocab="http://schema.org/" typeof="Event">\n'+
   '  <a property="url" href="nba-miami-philidelphia-game3.html">\n'+
   '  NBA Eastern Conference First Round Playoff Tickets:\n'+
-  '  Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)\n'+
+  '  <span itemprop="name">Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)</span>\n'+
   '  </a>\n'+
   '\n'+
   '  <span property="startDate" content="2011-04-21T20:00">\n'+
@@ -51,7 +51,7 @@
   '  </span>\n'+
   '\n'+
   '  <div property="location" typeof="Place">\n'+
-  '    <a rel="url" href="wells-fargo-center.html">\n'+
+  '    <a property="url" href="wells-fargo-center.html">\n'+
   '    Wells Fargo Center\n'+
   '    </a>\n'+
   '    <div property="address" typeof="PostalAddress">\n'+
@@ -68,7 +68,7 @@
 
   examples['place'] = 
   '<div vocab="http://schema.org/" resource="#bbg" typeof="LocalBusiness">\n'+
-  '  <h1><span property="name">Beachwalk Beachwear &amp; Giftware</span></h1>\n'+
+  '  <h1 property="name">Beachwalk Beachwear &amp; Giftware</h1>\n'+
   '  <span property="description"> A superb collection of fine gifts and clothing\n'+
   '  to accent your stay in Mexico Beach.</span>\n'+
   '  <div property="address" resource="#bbg-address" typeof="PostalAddress">\n'+
