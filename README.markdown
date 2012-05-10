@@ -3,6 +3,15 @@
 This repository controls the [rdfa.info](http://rdfa.info/) webisite, including the
 [RDFa Test Suite](http://rdfa.info/test-suite).
 
+# License
+
+Unless otherwise noted, all content in this source repository is released
+under a public domain dedication. This includes all HTML, CSS, and JavaScript,
+including all source code and testing files associated with the RDFa Test Suite.
+At this point in time, the only exception to the public domain dedication are
+the icons used on the site, which are copyright by Glyphicons and are
+released under the CC-BY-SA-3.0 license.
+
 # RDFa Test Suite
 
 The RDFa Test Suite is a set of Web Services, markup and tests that can 
