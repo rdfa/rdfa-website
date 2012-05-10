@@ -416,10 +416,16 @@
       }
       rval += '\n';
 
-      for(p in predicates)
+      pList = [];
+      for(p in predicates) { pList.push(p) }
+      var lastP = pList.length - 1;
+
+      for(pi in pList)
       {
+        var p = pList[pi];
         var objects = triples.predicates[p].objects;
-                
+        var lastO = objects.length - 1;
+
         for(oi in objects) {
           var o = objects[oi];
 
@@ -429,7 +435,12 @@
           //console.log(o);
           // print the object
           if(o.type == RDF_PLAIN_LITERAL) {
-             rval += '"' + o.value.replace('"', '\\"') + '"';
+             var lit = o.value.replace('"', '\\"');
+             var sep = '"';
+             if (lit.indexOf('\n') > -1) {
+               sep = '"""';
+             }
+             rval += sep + lit + sep;
              if(o.language != null) {
                 rval += '@' + o.language;
              }
@@ -453,11 +464,10 @@
           }
           
           // place the proper TURTLE statement terminator on the data
-          if(oi <= objects.length) {
+          if (pi == lastP && oi == lastO) {
+            rval += ' .\n';
+          } else {
             rval += ';\n';
-          }
-          else {
-            rval += '.\n';
           }
         }
       }      
