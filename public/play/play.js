@@ -416,10 +416,16 @@
       }
       rval += '\n';
 
-      for(p in predicates)
+      pList = [];
+      for(p in predicates) { pList.push(p) }
+      var lastP = pList.length - 1;
+
+      for(pi in pList)
       {
+        var p = pList[pi];
         var objects = triples.predicates[p].objects;
-                
+        var lastO = objects.length - 1;
+
         for(oi in objects) {
           var o = objects[oi];
 
@@ -453,11 +459,10 @@
           }
           
           // place the proper TURTLE statement terminator on the data
-          if(oi <= objects.length) {
+          if (pi == lastP && oi == lastO) {
+            rval += ' .\n';
+          } else {
             rval += ';\n';
-          }
-          else {
-            rval += '.\n';
           }
         }
       }      
