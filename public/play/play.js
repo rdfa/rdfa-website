@@ -435,7 +435,12 @@
           //console.log(o);
           // print the object
           if(o.type == RDF_PLAIN_LITERAL) {
-             rval += '"' + o.value.replace('"', '\\"') + '"';
+             var lit = o.value.replace('"', '\\"');
+             var sep = '"';
+             if (lit.indexOf('\n') > -1) {
+               sep = '"""';
+             }
+             rval += sep + lit + sep;
              if(o.language != null) {
                 rval += '@' + o.language;
              }
