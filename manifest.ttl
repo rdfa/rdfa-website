@@ -2179,16 +2179,17 @@ white   space
    test:informationResourceResults <test-cases/0287.sparql>;
    test:purpose "The @datetime attribute is used when generating output with valid xsd:dateTime and a Time Zone offset.";
    test:specificationReference "HTML+RDFa 1.1 3.1" .
-<test-cases/0288> dc:contributor "Gregg Kellogg";
-   dc:title "object element with @data parses as an IRI";
-   a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
-   test:classification test:required;
-   rdfatest:hostLanguage "html5", "xhtml5";
-   test:informationResourceInput <test-cases/0288.html>;
-   test:informationResourceResults <test-cases/0288.sparql>;
-   test:purpose "@data is a resource attribute.";
-   test:specificationReference "HTML+RDFa 1.1 3.1" .
+# Rejected in http://www.w3.org/2010/02/rdfa/meetings/2012-05-10
+#<test-cases/0288> dc:contributor "Gregg Kellogg";
+#   dc:title "object element with @data parses as an IRI";
+#   a test:TestCase;
+#   rdfatest:rdfaVersion "rdfa1.1";
+#   test:classification test:required;
+#   rdfatest:hostLanguage "html5", "xhtml5";
+#   test:informationResourceInput <test-cases/0288.html>;
+#   test:informationResourceResults <test-cases/0288.sparql>;
+#   test:purpose "@data is a resource attribute.";
+#   test:specificationReference "HTML+RDFa 1.1 3.1" .
 <test-cases/0289> dc:contributor "Niklas Lindström";
    dc:title "@href becomes subject when @property and @content are present";
    a test:TestCase;
