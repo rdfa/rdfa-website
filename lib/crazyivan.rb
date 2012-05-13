@@ -240,6 +240,8 @@ module CrazyIvan
     get('/dev/')  { redirect to '/dev/index.html'}
     get('/docs/') { redirect to '/docs/index.html'}
     get('/tools/'){ redirect to '/tools/index.html'}
+    get('/wiki')  { redirect to '/wiki/index.html'}
+    get('/wiki/') { redirect to '/wiki/index.html'}
 
     get '/vocabs/rdfa-test' do
       redirect to('/vocabs/rdfa-test.html')
