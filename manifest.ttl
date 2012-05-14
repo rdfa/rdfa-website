@@ -1037,7 +1037,7 @@ white   space
    test:informationResourceInput <test-cases/0140.html>;
    test:informationResourceResults <test-cases/0140.sparql>;
    test:purpose "The RDF data model does not allow blank node identifiers in predicates. This test ensures that RDFa processors do not emit invalid triples.";
-   test:specificationReference "" .
+   test:specificationReference "Section 7.4.4" .
 <test-cases/0147> dc:contributor "Philip Taylor";
    dc:title "xmlns prefix 'xmlzzz' (reserved)";
    a test:TestCase;
