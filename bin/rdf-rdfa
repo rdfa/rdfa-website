@@ -1,0 +1,63 @@
+#!/usr/bin/env ruby
+# RDFa runner for Ruby. Invokes an RDFa to Turtle parser and
+# returns results to standard out.
+#
+# See --help for more
+require 'rubygems'
+require 'rdf/rdfa'
+require 'rdf/turtle'
+require 'getoptlong'
+
+options = {
+  :base_uri      => nil,
+  :format        => :turtle,
+  :host_language => "xhtml1",
+  :output        => STDOUT,
+  :rdfagraph     => [:output],
+  :version       => "rdfa1.1",
+}
+opts = GetoptLong.new(
+  ["--help", "-?", GetoptLong::NO_ARGUMENT],
+  ["--host-language", "-h", GetoptLong::OPTIONAL_ARGUMENT],
+  ["--format", GetoptLong::REQUIRED_ARGUMENT],
+  ["--output", "-o", GetoptLong::REQUIRED_ARGUMENT],
+  ["--rdfagraph", GetoptLong::REQUIRED_ARGUMENT],
+  ["--uri", GetoptLong::REQUIRED_ARGUMENT],
+  ["--version", "-v", GetoptLong::OPTIONAL_ARGUMENT]
+)
+
+def help(options)
+  puts %(The script takes the standard input and generates Turtle on standard output.
+
+Usage: #{$0} [options] [rdfa input]
+Options:
+  --format:             Format for output, defaults to #{options[:format].inspect}
+  --host-language:      Run for specified host language, defaults to #{options[:host_language]}"
+  --rdfagraph:          output, processor or output,processor
+  --version:            Version of processor to use (rdf1.0, rdf1.1). Defaults to #{options[:version]}
+  --uri:                Base URI to use when parsing
+)
+  exit(0)
+end
+
+opts.each do |opt, arg|
+  case opt
+  when '--help'           then help(options)
+  when '--format'         then options[:format] = arg.to_sym
+  when '--host-language'  then options[:host_language] = arg
+  when '--output'         then options[:output] = File.open(arg, "w")
+  when '--rdfagraph'      then options[:rdfagraph] = arg.split(',').map(&:to_sym)
+  when '--uri'            then options[:base_uri] = arg
+  when '--version'        then options[:version] = arg
+  end
+end
+
+processor_graph = RDF::Graph.new if options[:rdfagraph].include?(:processor)
+
+r = if ARGV.empty?
+  RDF::RDFa::Reader.new(STDIN, options)
+else
+  RDF::RDFa::Reader.open(ARGV.first, options)
+end
+g = RDF::Graph.new << r
+options[:output].puts g.dump(options[:format], options.merge(:prefixes => r.prefixes))

@@ -1,29 +1,11 @@
 GIT
   remote: git://github.com/gkellogg/json-ld.git
-  revision: 7f0098ffd63e5050dc8501cfadf8dc72fd62fd63
+  revision: 05aad91acbb6e1fa126192641c9cf4bbfa0225ba
   specs:
     json-ld (0.1.2)
       backports
       json (>= 1.6.5)
       rdf (>= 0.3.5)
-
-GIT
-  remote: git://github.com/gkellogg/rdf-rdfa.git
-  revision: ef991ad8399e722b47b1c2b3e59e3019f1469210
-  specs:
-    rdf-rdfa (0.3.10.1)
-      haml (>= 3.0.0)
-      htmlentities (>= 4.3.0)
-      rdf (>= 0.3.3)
-      rdf-xsd (>= 0.3.5)
-
-GIT
-  remote: git://github.com/gkellogg/rdf-rdfxml.git
-  revision: b0850defb277f3e8d35232d807883f5f80251bc7
-  specs:
-    rdf-rdfxml (0.3.6)
-      rdf (>= 0.3.4)
-      rdf-xsd (>= 0.3.5)
 
 GIT
   remote: git://github.com/gkellogg/sinatra-browserid.git
@@ -39,6 +21,16 @@ GIT
   specs:
     sinatra-respond_to (0.8.0)
       sinatra (~> 1.3)
+
+GIT
+  remote: git://github.com/ruby-rdf/rdf-rdfa.git
+  revision: 28e5441bb47add903c1a563da7a6391d299dd4da
+  specs:
+    rdf-rdfa (0.3.12)
+      haml (>= 3.0.0)
+      htmlentities (>= 4.3.0)
+      rdf (>= 0.3.3)
+      rdf-xsd (>= 0.3.5)
 
 GEM
   remote: http://rubygems.org/
@@ -84,21 +76,24 @@ GEM
     rdf-json (0.3.0)
       json_pure (>= 1.4.2)
       rdf (~> 0.3.0)
-    rdf-microdata (0.2.3.1)
+    rdf-microdata (0.2.4)
       htmlentities (>= 4.3.0)
       json (>= 1.6.1)
       rdf (>= 0.3.4)
       rdf-xsd (>= 0.3.4)
-    rdf-n3 (0.3.6)
+    rdf-n3 (0.3.7)
       rdf (>= 0.3.4)
-    rdf-trig (0.1.2)
+    rdf-rdfxml (0.3.7)
+      rdf (>= 0.3.4)
+      rdf-xsd (>= 0.3.5)
+    rdf-trig (0.1.3)
       rdf (>= 0.3.4)
       rdf-turtle (>= 0.1.1)
     rdf-trix (0.3.0)
       rdf (~> 0.3.0)
-    rdf-turtle (0.1.1)
+    rdf-turtle (0.1.2)
       rdf (>= 0.3.4)
-    rdf-xsd (0.3.5)
+    rdf-xsd (0.3.6)
       nokogiri (>= 1.5.0)
       rdf (>= 0.3.4)
     shotgun (0.9)
@@ -111,12 +106,12 @@ GEM
       cssmin (~> 1.0.2)
       sinatra (~> 1.3.0)
       uglifier (~> 1.2.0)
-    sparql (0.1.1)
+    sparql (0.3.0)
       builder (>= 3.0.0)
       json (>= 1.5.1)
       rdf (>= 0.3.5)
       rdf-xsd (>= 0.3.5)
-      sparql-client (>= 0.0.11)
+      sparql-client (>= 0.1.0)
       sxp (>= 0.0.14)
     sparql-client (0.1.0)
       json_pure (>= 1.6.5)
@@ -143,7 +138,6 @@ DEPENDENCIES
   rack-cache
   rake
   rdf-rdfa!
-  rdf-rdfxml!
   shotgun
   sinatra
   sinatra-browserid!

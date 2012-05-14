@@ -89,6 +89,18 @@ Running the website locally should be as simple as the following:
 
 This will create an instance, usually running on port 9393. If you access as http://localhost:9393/test-suite/, it will re-write test URIs to http://rdfa.info/test-suite/ so that processors can see any tests that are already uploaded. If you want to run with a local endpoint, run with something else such as http://127.0.0.1/test-suite/, which will inhibit the URI rewriting.
 
+### Command line runner
+
+By implementing a command-line runner, the tests can be run using spec/run-suite. This allows a processor that does not implement an HTTP-based distiller to run through test cases using a shell commant.
+
+To use this, implement a shell command accepting input RDFa on standard input generating Turtle or N-Triples on standard output. It should also accept the --host-language, --version and --url options.
+
+For example, to run with the Ruby RDFa processor, invoke the following:
+
+    spec/run-suite spec/rdf-rdfa
+
+See spec/run-suite --help for more on the test runner.
+
 ## How to add a unit test
 
 In order to add a unit test, you must follow these steps:

@@ -1,0 +1,99 @@
+#!/usr/bin/env ruby
+# Run the RDFa test suite against a specified runner.
+#
+# Expects the runner to take STDIN and generate Turtle/N-Triples to STDOUT
+# Passes the options --uri, --host-language, --version
+#
+# Runs each test associated with the RDFa version and Host Language.
+#
+# See --help for more
+require 'rubygems'
+require "bundler/setup"
+$:.unshift(File.expand_path("../../lib", __FILE__))
+
+require 'crazyivan/core'
+require 'getoptlong'
+
+options = {
+  :format        => :turtle,
+  :host_language => "xhtml1",
+  :version       => "rdfa1.1",
+}
+opts = GetoptLong.new(
+  ["--help", "-?", GetoptLong::NO_ARGUMENT],
+  ["--format", GetoptLong::REQUIRED_ARGUMENT],
+  ["--host-language", "-h", GetoptLong::OPTIONAL_ARGUMENT],
+  ["--verbose", GetoptLong::NO_ARGUMENT],
+  ["--version", GetoptLong::REQUIRED_ARGUMENT],
+  ["--num", GetoptLong::REQUIRED_ARGUMENT]
+)
+
+def help(options)
+  puts %(Invokes runner for each test case and indicates test pass/fail.
+
+Usage: #{$0} runner [options]
+Options:
+  --format:             Format for output, defaults to #{options[:format].inspect}
+  --host-language:      Run for specified host language, defaults to #{options[:host_language]}"
+  --num:                Run only specified test number
+  --verbose:            Show input and expected output
+  --version:            Version of processor to use (rdf1.0, rdf1.1). Defaults to #{options[:version]}
+)
+  exit(0)
+end
+
+opts.each do |opt, arg|
+  case opt
+  when '--help'           then help(options)
+  when '--format'         then options[:format] = arg.to_sym
+  when '--host-language'  then options[:host_language] = arg
+  when '--num'            then options[:num] = arg
+  when '--verbose'        then options[:verbose] = true
+  when '--version'        then options[:version] = arg
+  end
+end
+
+help(options) unless ARGV.length > 0
+  
+crazy_ivan = CrazyIvan::StandAlone.new
+
+::JSON.parse(crazy_ivan.send(:manifest_json))['@graph'].each do |tc|
+  next unless tc["versions"].include?(options[:version])
+  next unless tc["hostLanguages"].include?(options[:host_language])
+  next if options[:num] && tc["num"] != options[:num]
+
+  STDOUT.write "#{tc["num"]}: "
+  uri = crazy_ivan.send(:get_test_url, options[:version], options[:host_language], tc["num"])
+  content = crazy_ivan.send(:get_test_content, options[:version], options[:host_language], tc["num"])
+  sparql = crazy_ivan.send(:get_test_content, options[:version], options[:host_language], tc["num"], "sparql")
+
+  if options[:verbose]
+    STDOUT.puts ":\n#{content}\n"
+    STDOUT.puts "query: \n#{sparql}\n"
+  end
+
+  runner_args = ARGV[0].split(/\s+/) + [
+    "--host-language", options[:host_language],
+    "--version", options[:version],
+    "--uri", uri
+  ]
+  
+  if tc["queryParam"]
+    tc["queryParam"].each do |p|
+      arg, value = p.split('=')
+      runner_args << "--#{arg}"
+      runner_args << value if value
+    end
+  end
+
+  IO.popen(runner_args, "r+") do |io|
+    io.write(content)
+    io.close_write
+    out = io.read
+    graph = RDF::Graph.new << RDF::Turtle::Reader.new(out, :base_uri => uri)
+    result = SPARQL.execute(sparql, graph)
+    STDOUT.write "result: " if options[:verbose]
+    expected = tc["expectedResults"] ? RDF::Literal::TRUE : RDF::Literal::FALSE
+    STDOUT.puts result == expected ? "passed" : "failed"
+  end
+end
