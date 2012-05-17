@@ -19,7 +19,7 @@ window.ProcessorView = Backbone.View.extend({
 
     $.each(this.model.get("processors"), function(key, value) {
       var elt = _.template("<li><a href='#' data-name='<%= key %>'><%= key %></a></li>", {key: key});
-      that.$('ul').append($(elt));
+      if (value.endpoint) {that.$('ul').append($(elt));}
     });
 
     this.$('#processor-url').val(this.model.get('processorURL'));
