@@ -2354,3 +2354,19 @@ white   space
      if it is empty.
     """;
    test:specificationReference "" .
+   
+<test-cases/0304> dc:contributor "Toby Inkster";
+  dc:title "Embedded chunks of RDF/XML";
+  a test:TestCase;
+  rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+  test:classification test:required;  # ?!
+  test:expectedResults "true"^^xsd:boolean;
+  rdfatest:hostLanguage "svgtiny1.2", "svg";
+  test:informationResourceInput <test-cases/0304.html>;
+  test:informationResourceResults <test-cases/0304.sparql>;
+  test:purpose "Tests that embedded RDF/XML is added to the same graph.";
+  test:specificationReference
+    "http://www.w3.org/TR/SVGTiny12/metadata.html#Introduction
+    says 'an RDF processor should combine them into the same graph'" .
+   
+   
