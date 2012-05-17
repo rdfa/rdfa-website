@@ -14,4 +14,4 @@
   doap:name "librdfa";
   doap:programming-language "C";
   doap:repository <https://github.com/rdfa/librdfa>;
-  doap:homepage <https://github.com/rdfa/librdfa/wiki>] .
+  doap:homepage <https://github.com/rdfa/librdfa/wiki> .

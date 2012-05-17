@@ -1,0 +1,16 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> a doap:GitRepository, doap:Project;
+  dc:title "RDF::RDFa::Parser";
+  doap:browse <https://metacpan.org/source/TOBYINK/RDF-RDFa-Parser-1.096_01/>;
+  dc:creator [ a foaf:Person; foaf:name "Toby Insker"];
+  doap:developer [ a foaf:Person; foaf:name "Toby Insker"];
+  doap:bug-database <https://rt.cpan.org/NoAuth/Login.html?next=38151745480e9d12d36ec9e3064139af>;
+  doap:description "flexible RDFa parser";
+  doap:name "RDF::RDFa::Parser";
+  doap:programming-language "Perl";
+  doap:homepage <http://www.rootdev.net/maven/projects/java-rdfa/project-info.html> .

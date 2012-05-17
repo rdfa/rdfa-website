@@ -13,6 +13,11 @@
     "doap": "http://code.google.com/p/green-turtle/",
     "doap_url": "/earl-reports/green-turtle-doap.ttl"
   },
+  "java-rdfa (Java)": {
+    "endpoint": "http://rdf-in-html.appspot.com/translate/?parser=XHTML&uri=",
+    "doap": "https://github.com/shellac/java-rdfa",
+    "doap_url": "/earl-reports/java-rdfa-doap.ttl"
+  },
   "librdfa (C)": {
     "endpoint": "http://rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py?uri=",
     "doap": "https://github.com/rdfa/librdfa",
@@ -26,6 +31,11 @@
     "endpoint": "http://rdf.greggkellogg.net/distiller?raw=true&in_fmt=rdfa&uri=",
     "doap": "http://rubygems.org/gems/rdf-rdfa",
     "doap_url": "/earl-reports/rdf-rdfa-doap.ttl"
+  },
+  "RDF::RDFa::Parser (Perl)": {
+    "endpoint": "http://buzzword.org.uk/2012/rdfa-distiller/?format=rdfxml&url=",
+    "doap": "https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01",
+    "doap_url": "/earl-reports/rdf-rdfa-parser-doap.ttl"
   },
   "other":  {
     "endpoint": "",
