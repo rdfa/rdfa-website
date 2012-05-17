@@ -115,6 +115,65 @@ module CrazyIvan
     module_function :graph
 
     ##
+    # Return Suite/Version specific Manifest graph
+    #
+    # @param [String] version
+    # @param [String] suite
+    # @return [RDF::Graph]
+    def version_graph(version, suite)
+      # Get sub-graph matching just version and suite
+      g = SPARQL.execute(%(
+        PREFIX test: <http://www.w3.org/2006/03/test-description#>
+        PREFIX rdfatest: <http://#{HOSTNAME}/vocabs/rdfa-test#>
+        PREFIX dc: <http://purl.org/dc/terms/>
+
+        CONSTRUCT {
+          ?id a test:TestCase;
+            dc:title ?title;
+            dc:contributor ?contributor;
+            test:classification ?classification;
+            test:purpose ?purpose;
+            test:expectedResults ?expected;
+            test:informationResourceInput ?input;
+            test:informationResourceResults ?results .
+        }
+        WHERE {
+          ?id a test:TestCase;
+            dc:title ?title;
+            dc:contributor ?contributor;
+            rdfatest:rdfaVersion "#{version}";
+            rdfatest:hostLanguage "#{suite}";
+            test:classification ?classification;
+            test:purpose ?purpose;
+            test:informationResourceInput ?input;
+            test:informationResourceResults ?results .
+            OPTIONAL { ?id test:classification ?classification . }
+            OPTIONAL { ?id test:expectedResults ?expectedResults . }
+            OPTIONAL { ?id rdfatest:queryParam ?queryParam . }
+        }
+      ), graph)
+
+      # Construct a new graph, substituting graph ID, expanded and input
+      # for their suite/version specific values
+      output_graph = RDF::Graph.new
+      test_base = RDF::URI("http://www.w3.org/2006/03/test-description#")
+      g.each_statement do |statement|
+        num = statement.subject.to_s.split("/").last
+        subj = get_test_url(params[:version], params[:suite], num)
+        sparql = get_test_url(params[:version], params[:suite], num, "sparql")
+        statement.subject = RDF::URI(subj)
+        case statement.predicate.to_s
+        when /informationResourceInput/
+          statement.object = statement.subject
+        when /informationResourceResults/
+          statement.object = RDF::URI(sparql)
+        end
+        output_graph << statement
+      end
+      output_graph
+    end
+
+    ##
     # Return the document URL for a test or SPARQL
     #
     # @param [String] version "rdfa1.1" or other
