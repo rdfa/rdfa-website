@@ -2365,8 +2365,9 @@ white   space
   test:informationResourceInput <test-cases/0304.html>;
   test:informationResourceResults <test-cases/0304.sparql>;
   test:purpose "Tests that embedded RDF/XML is added to the same graph.";
-  test:specificationReference
-    "http://www.w3.org/TR/SVGTiny12/metadata.html#Introduction
-    says 'an RDF processor should combine them into the same graph'" .
+  test:specificationReference """
+    http://www.w3.org/TR/SVGTiny12/metadata.html#Introduction
+    says 'an RDF processor should combine them into the same graph'
+  """" .
    
    
