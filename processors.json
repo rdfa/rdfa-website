@@ -34,7 +34,7 @@
   },
   "RDF::RDFa::Parser (Perl)": {
     "endpoint": "http://buzzword.org.uk/2012/rdfa-distiller/?format=rdfxml&url=",
-    "doap": "https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01",
+    "doap": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/project",
     "doap_url": "/earl-reports/rdf-rdfa-parser-doap.ttl"
   },
   "other":  {

@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/gkellogg/json-ld.git
-  revision: 05aad91acbb6e1fa126192641c9cf4bbfa0225ba
+  revision: 9ad0497e0b0a84c05020b6c8da70c7eb974895e6
   specs:
     json-ld (0.1.2)
       backports
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-rdfa.git
-  revision: 28e5441bb47add903c1a563da7a6391d299dd4da
+  revision: e1acbe7b54fa2b415531dbc599427d6736f538ac
   specs:
     rdf-rdfa (0.3.12)
       haml (>= 3.0.0)
@@ -44,7 +44,7 @@ GEM
       nokogiri (>= 1.4.3)
     execjs (1.3.2)
       multi_json (~> 1.0)
-    haml (3.1.5)
+    haml (3.1.6)
     htmlentities (4.3.1)
     json (1.7.3)
     json_pure (1.7.3)
@@ -83,7 +83,7 @@ GEM
       rdf-xsd (>= 0.3.4)
     rdf-n3 (0.3.7)
       rdf (>= 0.3.4)
-    rdf-rdfxml (0.3.7)
+    rdf-rdfxml (0.3.8)
       rdf (>= 0.3.4)
       rdf-xsd (>= 0.3.5)
     rdf-trig (0.1.3)

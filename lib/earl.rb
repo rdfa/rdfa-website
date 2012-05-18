@@ -80,6 +80,7 @@ class EARL
     
     processors = ::JSON.parse(File.read(PROCESSORS_PATH))
     processors.each do |proc, info|
+      next if proc.nil?
       # Load DOAP definitions
       doap_url = info["doap_url"] || info["doap"]
       next unless doap_url
@@ -87,7 +88,7 @@ class EARL
       puts "read doap description for #{proc} from #{doap_url}"
       begin
         doap_graph = RDF::Graph.load(doap_url)
-        #puts "doap: #{doap_graph.dump(:ttl)}"
+        puts "doap: #{doap_graph.dump(:ttl)}"
         @graph << doap_graph.to_a
 
         # Load FOAF definitions of doap:developers

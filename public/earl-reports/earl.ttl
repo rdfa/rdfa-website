@@ -18,6 +18,7 @@
     <http://code.google.com/p/green-turtle/>,
     <https://github.com/rdfa/librdfa>,
     <http://www.w3.org/2012/pyRdfa>,
+    <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01>,
     <http://rubygems.org/gems/rdf-rdfa>;
   <http://rdfa.info/vocabs/rdfa-test#version/rdfa1.1> [ a rdfatest:Version;
     <http://rdfa.info/vocabs/rdfa-test#hostLanguage/xhtml1> (
@@ -743,6 +744,12 @@
   doap:developer <http://www.ivan-herman.net/foaf#me> .
 <http://www.ivan-herman.net/foaf#me> a foaf:Person foaf:name "Ivan Herman" .
 
+<https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> a earl:TestSubject, doap:Project
+  doap:name "RDF::RDFa::Parser";
+  doap:description """flexible RDFa parser""";
+  doap:programming-language "Perl";
+  doap:developer [ a foaf:Person; foaf:name "Toby Insker"] .
+
 <http://rubygems.org/gems/rdf-rdfa> a earl:TestSubject, doap:Project
   doap:name "RDF::RDFa";
   doap:description """
@@ -767,6 +774,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0001?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0001?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0001?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0006.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -781,6 +789,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0006?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0006?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0006?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0007.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -795,6 +804,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0007?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0007?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0007?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0008.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -809,6 +819,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0008?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0008?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0008?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0009.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -823,6 +834,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0009?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0009?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0009?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0010.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -837,6 +849,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0010?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0010?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0010?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0012.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -851,6 +864,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0012?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0012?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0012?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0013.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -865,6 +879,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0013?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0013?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0013?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0014.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -879,6 +894,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0014?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0014?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0014?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0015.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -893,6 +909,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0015?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0015?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0015?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0017.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -907,6 +924,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0017?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0017?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0017?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0018.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -921,6 +939,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0018?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0018?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0018?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0019.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -935,6 +954,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0019?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0019?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0019?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0020.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -949,6 +969,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0020?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0020?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0020?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0021.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -963,6 +984,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0021?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0021?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0021?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0023.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -977,6 +999,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0023?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0023?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0023?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0025.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -991,6 +1014,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0025?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0025?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0025?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0026.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1005,6 +1029,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0026?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0026?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0026?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0027.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1019,6 +1044,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0027?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0027?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0027?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0029.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1033,6 +1059,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0029?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0029?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0029?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0030.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1047,6 +1074,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0030?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0030?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0030?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0031.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1061,6 +1089,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0031?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0031?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0031?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0032.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1075,6 +1104,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0032?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0032?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0032?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0033.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1089,6 +1119,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0033?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0033?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0033?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0034.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1103,6 +1134,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0034?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0034?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0034?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0035.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1117,6 +1149,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0035?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0035?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0035?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0036.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1131,6 +1164,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0036?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0036?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0036?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0037.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1145,6 +1179,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0037?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0037?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0037?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0038.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1159,6 +1194,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0038?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0038?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0038?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0039.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1173,6 +1209,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0039?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0039?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0039?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0041.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1187,6 +1224,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0041?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0041?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0041?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0048.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1201,6 +1239,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0048?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0048?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0048?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0049.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1215,6 +1254,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0049?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0049?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0049?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0050.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1229,6 +1269,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0050?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0050?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0050?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0051.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1243,6 +1284,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0051?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0051?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0051?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0052.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1257,6 +1299,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0052?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0052?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0052?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0053.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1271,6 +1314,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0053?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0053?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0053?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0054.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1285,6 +1329,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0054?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0054?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0054?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0055.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1299,6 +1344,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0055?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0055?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0055?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0056.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1313,6 +1359,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0056?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0056?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0056?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0057.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1327,6 +1374,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0057?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0057?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0057?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0059.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1341,6 +1389,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0059?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0059?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0059?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0060.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1355,6 +1404,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0060?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0060?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0060?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0061.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1369,6 +1419,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0061?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0061?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0061?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0062.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1383,6 +1434,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0062?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0062?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0062?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0063.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1397,6 +1449,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0063?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0063?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0063?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0064.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1411,6 +1464,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0064?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0064?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0064?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0065.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1425,6 +1479,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0065?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0065?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0065?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0066.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1439,6 +1494,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0066?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0066?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0066?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0067.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1453,6 +1509,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0067?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0067?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0067?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0068.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1467,6 +1524,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0068?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0068?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0068?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0069.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1481,6 +1539,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0069?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0069?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0069?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0070.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1495,6 +1554,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0070?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0070?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0070?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0071.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1509,6 +1569,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0071?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0071?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0071?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0072.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1523,6 +1584,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0072?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0072?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0072?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0073.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1537,6 +1599,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0073?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0073?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0073?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0074.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1551,6 +1614,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0074?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0074?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0074?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0075.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1565,6 +1629,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0075?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0075?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0075?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0076.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1579,6 +1644,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0076?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0076?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0076?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0077.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1593,6 +1659,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0077?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0077?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0077?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0079.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1607,6 +1674,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0079?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0079?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0079?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0080.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1621,6 +1689,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0080?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0080?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0080?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0083.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1635,6 +1704,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0083?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0083?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0083?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0084.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1649,6 +1719,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0084?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0084?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0084?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0085.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1663,6 +1734,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0085?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0085?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0085?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0087.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1677,6 +1749,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0087?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0087?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0087?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0088.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1691,6 +1764,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0088?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0088?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0088?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0089.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1705,6 +1779,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0089?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0089?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0089?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0091.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1719,6 +1794,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0091?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0091?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0091?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0093.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1733,6 +1809,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0093?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0093?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0093?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0099.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1747,6 +1824,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0099?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0099?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0099?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0104.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1761,6 +1839,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0104?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0104?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0104?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0106.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1775,6 +1854,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0106?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0106?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0106?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0107.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1789,6 +1869,7 @@
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0107?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0107?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0107?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0108.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1805,6 +1886,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0108?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0108?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0108?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0109.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1819,6 +1901,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0109?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0109?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0109?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0110.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1833,6 +1916,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0110?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0110?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0110?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0111.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1847,6 +1931,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0111?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0111?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0111?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0112.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1861,6 +1946,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0112?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0112?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0112?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0113.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1875,6 +1961,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0113?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0113?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0113?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0114.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1889,6 +1976,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0114?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0114?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0114?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0115.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1903,6 +1991,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0115?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0115?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0115?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0117.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1917,6 +2006,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0117?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0117?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0117?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0118.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1936,6 +2026,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0118?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0118?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0118?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0119.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1952,6 +2043,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0119?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0119?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0119?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0120.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1968,6 +2060,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0120?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0120?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0120?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0121.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1982,6 +2075,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0121?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0121?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0121?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0122.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -1997,6 +2091,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0122?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0122?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0122?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0126.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2011,6 +2106,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0126?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0126?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0126?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0131.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2025,6 +2121,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0131?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0131?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0131?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0134.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2039,6 +2136,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0134?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0134?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0134?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0140.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2053,6 +2151,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0140?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0140?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0140?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0147.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2067,6 +2166,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0147?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0147?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0147?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0172.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2081,6 +2181,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0172?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0172?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0172?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0173.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2095,6 +2196,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0173?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0173?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0173?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0174.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2109,6 +2211,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0174?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0174?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0174?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0175.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2123,6 +2226,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0175?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0175?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0175?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0176.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2137,6 +2241,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0176?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0176?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0176?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0177.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2151,6 +2256,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0177?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0177?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0177?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0178.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2165,6 +2271,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0178?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0178?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0178?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0179.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2179,6 +2286,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0179?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0179?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0179?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0180.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2193,6 +2301,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0180?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0180?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0180?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0181.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2207,6 +2316,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0181?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0181?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0181?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0182.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2221,6 +2331,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0182?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0182?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0182?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0183.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2235,6 +2346,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0183?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0183?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0183?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0186.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2249,6 +2361,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0186?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0186?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0186?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0187.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2263,6 +2376,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0187?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0187?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0187?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0188.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2277,6 +2391,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0188?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0188?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0188?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0189.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2294,6 +2409,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0189?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0189?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0189?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0190.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2308,6 +2424,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0190?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0190?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0190?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0196.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2322,6 +2439,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0196?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0196?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0196?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0197.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2336,6 +2454,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0197?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0197?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0197?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0198.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2350,6 +2469,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0198?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0198?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0198?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0201.svg> a earl:TestCase; earl:mode earl:automatic;
@@ -2362,11 +2482,12 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/svg/0201?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/svg/0201?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/svg/0201?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0202.svg> a earl:TestCase; earl:mode earl:automatic;
-  dc:title "Tests to ensure @xml:base used in SVG";
-  dc:description """Tests to make sure that @xml:base is used in SVG+RDFa.""";
+  dc:title "Tests to ensure @xml:base used in SVG and XHTML5";
+  dc:description """Tests to make sure that @xml:base is used in SVG+RDFa, XML+RDFa and XHTML5+RDFa.""";
   rdfatest:num "0202";
   rdfatest:rdfaVersion "rdfa1.1";
   rdfatest:hostLanguage "svg";
@@ -2374,11 +2495,12 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/svg/0202?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/svg/0202?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/svg/0202?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0203.svg> a earl:TestCase; earl:mode earl:automatic;
-  dc:title "Tests to ensure @xml:base used in non-root elements in SVG";
-  dc:description """Tests to make sure that @xml:base is used in non-root elements in SVG+RDFa.""";
+  dc:title "Tests to ensure @, XML+RDFa used in non-root elements in SVG and XHTML5";
+  dc:description """Tests to make sure that @xml:base is used in non-root elements in SVG+RDFa, XML+RDFa and XHTML5+RDFa..""";
   rdfatest:num "0203";
   rdfatest:rdfaVersion "rdfa1.1";
   rdfatest:hostLanguage "svg";
@@ -2386,6 +2508,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/svg/0203?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/svg/0203?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/svg/0203?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0206.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2400,6 +2523,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0206?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0206?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0206?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0207.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2414,6 +2538,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0207?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0207?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0207?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0213.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2428,6 +2553,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0213?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0213?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0213?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0214.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2442,6 +2568,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0214?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0214?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0214?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0216.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2456,6 +2583,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0216?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0216?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0216?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0217.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2470,6 +2598,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0217?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0217?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0217?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0218.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2484,6 +2613,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0218?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0218?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0218?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0219.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2498,6 +2628,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0219?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0219?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0219?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0220.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2512,6 +2643,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0220?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0220?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0220?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0221.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2526,6 +2658,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0221?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0221?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0221?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0222.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2540,6 +2673,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0222?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0222?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0222?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0223.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2554,6 +2688,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0223?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0223?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0223?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0224.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2568,6 +2703,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0224?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0224?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0224?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0225.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2582,6 +2718,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0225?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0225?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0225?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0226.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2596,6 +2733,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0226?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0226?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0226?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0227.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2610,6 +2748,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0227?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0227?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0227?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0228.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2624,6 +2763,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0228?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0228?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0228?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0229.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2638,6 +2778,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0229?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0229?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0229?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0230.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2652,6 +2793,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0230?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0230?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0230?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0231.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2666,6 +2808,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0231?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0231?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0231?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0232.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2680,6 +2823,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0232?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0232?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0232?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0233.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2694,6 +2838,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0233?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0233?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0233?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0234.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2708,6 +2853,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0234?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0234?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0234?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0235.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2722,6 +2868,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0235?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Frdfagraph%3Dprocessor%26url%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0235?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Frdfagraph%3Dprocessor%26uri%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0235?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26rdfagraph%3Dprocessor%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0236.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2736,6 +2883,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0236?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Frdfagraph%3Dprocessor%26url%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0236?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Frdfagraph%3Dprocessor%26uri%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0236?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26rdfagraph%3Dprocessor%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0237.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2753,6 +2901,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0237?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Frdfagraph%3Dprocessor%26url%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0237?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Frdfagraph%3Dprocessor%26uri%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0237?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26rdfagraph%3Dprocessor%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0238.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2770,6 +2919,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0238?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Frdfagraph%3Dprocessor%26url%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0238?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Frdfagraph%3Dprocessor%26uri%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0238?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26rdfagraph%3Dprocessor%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0239.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2787,6 +2937,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0239?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Frdfagraph%3Dprocessor%26url%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0239?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Frdfagraph%3Dprocessor%26uri%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0239?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26rdfagraph%3Dprocessor%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml1/0240.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2885,6 +3036,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0246?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0246?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0246?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0247.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2899,6 +3051,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0247?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0247?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0247?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0248.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2913,6 +3066,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0248?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0248?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0248?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0249.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2927,6 +3081,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0249?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0249?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0249?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0250.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -2941,6 +3096,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0250?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0250?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0250?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0251.html> a earl:TestCase; earl:mode earl:automatic;
@@ -3030,7 +3186,7 @@ white   space
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0258.xhtml> a earl:TestCase; earl:mode earl:automatic;
-  dc:title "The underscore character is not allowed in xmlns";
+  dc:title "The underscore character is not allowed as a prefix or in xmlns";
   dc:description """Ensures that a prefix cannot start with an underscore character when specified using xmlns or prefix.""";
   rdfatest:num "0258";
   rdfatest:rdfaVersion "rdfa1.1";
@@ -3041,6 +3197,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0258?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0258?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0258?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0259.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -3055,6 +3212,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0259?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0259?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0259?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0260.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -3069,6 +3227,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0260?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0260?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0260?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0261.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -3083,6 +3242,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0261?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0261?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0261?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0262.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -3097,6 +3257,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0262?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0262?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0262?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0263.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -3111,6 +3272,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0263?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0263?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0263?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0264.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -3125,6 +3287,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0264?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0264?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0264?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0265.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -3139,6 +3302,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0265?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0265?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0265?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0266.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -3153,6 +3317,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0266?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0266?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0266?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0267.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -3167,6 +3332,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0267?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0267?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0267?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0268.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -3181,11 +3347,12 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0268?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0268?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0268?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0269.xhtml> a earl:TestCase; earl:mode earl:automatic;
   dc:title "@property appearing on the html element yields the base as the subject, also with @content";
-  dc:description """@property appearing on the html element without @content or @datatype yields the base as the subject, also with @content""";
+  dc:description """@property appearing on the head element gets the subject from parent, also with @content""";
   rdfatest:num "0269";
   rdfatest:rdfaVersion "rdfa1.1";
   rdfatest:hostLanguage "html5", "xhtml1", "xhtml5", "xml";
@@ -3195,6 +3362,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0269?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0269?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0269?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0271.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -3209,6 +3377,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0271?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0271?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0271?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0272.html> a earl:TestCase; earl:mode earl:automatic;
@@ -3427,6 +3596,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0289?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0289?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0289?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0290.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -3441,6 +3611,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0290?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0290?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0290?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0291.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -3455,6 +3626,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0291?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0291?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0291?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0292.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -3469,6 +3641,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0292?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0292?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0292?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0293.xhtml> a earl:TestCase; earl:mode earl:automatic;
@@ -3483,6 +3656,7 @@ white   space
   <http://www.w3.org/2012/pyRdfa> <>;
   <https://github.com/niklasl/clj-rdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0293?rdfa-extractor=http%3A//clj-rdfa.herokuapp.com/extract.ttl%3Furl%3D>;
   <https://github.com/rdfa/librdfa> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0293?rdfa-extractor=http%3A//rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py%3Furi%3D>;
+  <https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> <http://rdfa.info/test-suite/test-details/rdfa1.1/xhtml1/0293?rdfa-extractor=http%3A//buzzword.org.uk/2012/rdfa-distiller/%3Fformat%3Drdfxml%26url%3D>;
   .
 
 #
