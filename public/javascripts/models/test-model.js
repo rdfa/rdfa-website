@@ -177,12 +177,10 @@ window.TestCollection = Backbone.Collection.extend({
   // Override parse() to deal with JSON-LD array semantics
   // Return all tests
   parse: function(response) {
-    var that = this;
-
     this.loadedData = response['@graph'];
     
     // Initialize Host Language Version mappings by inspecting each test
-    var map = []
+    var map = [];
     _.each(this.loadedData, function(test) {
       _.each(test.versions, function(vers) {
         if (map[vers] == null) { map[vers] = []; }
@@ -194,7 +192,9 @@ window.TestCollection = Backbone.Collection.extend({
         });
       });
     });
-    that.version.set('versionHostLanguageMap', map);
+    // Hard-code host languages for RDFa 1.0
+    map['rdfa1.0'] = ["XHTML1", "XML"];
+    this.version.set('versionHostLanguageMap', map);
 
     // Don't return anything on parse, that is done through filtering
     return this.filter();

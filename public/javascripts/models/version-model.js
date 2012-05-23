@@ -12,7 +12,7 @@ window.Version = Backbone.Model.extend({
     versionNames: {},
 
     // Mapping of version to hostLanguage/suite which uses it
-    versionHostLanguageMap: {}
+    versionHostLanguageMap: {"rdfa1.0": ["XHTML1", "XML"]}
   },
   
   // Appropriate hostLanguages/suites for the current version
