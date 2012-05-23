@@ -1,16 +1,51 @@
-@prefix dc: <http://purl.org/dc/terms/> .
-@prefix doap: <http://usefulinc.com/ns/doap#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix :        <http://usefulinc.com/ns/doap#> .
+@prefix dcs:     <http://ontologi.es/doap-changeset#> .
+@prefix dc:      <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix my:      <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix toby:    <http://tobyinkster.co.uk/#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://metacpan.org/release/TOBYINK/RDF-RDFa-Parser-1.096_01> a doap:GitRepository, doap:Project;
-  dc:title "RDF::RDFa::Parser";
-  doap:browse <https://metacpan.org/source/TOBYINK/RDF-RDFa-Parser-1.096_01/>;
-  dc:creator [ a foaf:Person; foaf:name "Toby Insker"];
-  doap:developer [ a foaf:Person; foaf:name "Toby Insker"];
-  doap:bug-database <https://rt.cpan.org/NoAuth/Login.html?next=38151745480e9d12d36ec9e3064139af>;
-  doap:description "flexible RDFa parser";
-  doap:name "RDF::RDFa::Parser";
-  doap:programming-language "Perl";
-  doap:homepage <http://www.rootdev.net/maven/projects/java-rdfa/project-info.html> .
+my:project
+	a               :Project ;
+	:name           "RDF-RDFa-Parser" ;
+	:shortdesc      "flexible RDFa parser"@en ;
+	:programming-language  "Perl" ;
+	:homepage       <https://metacpan.org/release/RDF-RDFa-Parser> ;
+	:download-page  <https://metacpan.org/release/RDF-RDFa-Parser> ;
+	:bug-database   <http://rt.cpan.org/Dist/Display.html?Queue=RDF-RDFa-Parser> ;
+	:repository     [ a :HgRepository ; :browse <https://bitbucket.org/tobyink/p5-rdf-rdfa-parser> ] ;
+	:maintainer     toby:i ;
+	:developer      toby:i ;
+	:documenter     toby:i ;
+	:tester         toby:i ;
+	:created        "2009-01-13"^^xsd:date ;
+	:license        <http://dev.perl.org/licenses/> ;
+	:category
+		[ rdfs:label "RDF"@en ] ,
+		[ rdfs:label "RDFa"@en ] ,
+		[ rdfs:label "Semantic Web"@en ] ,
+		[ rdfs:label "HTML"@en ] ,
+		[ rdfs:label "HTML 3.2"@en ] ,
+		[ rdfs:label "HTML 4"@en ] ,
+		[ rdfs:label "HTML5"@en ] ,
+		[ rdfs:label "XHTML"@en ] ,
+		[ rdfs:label "Atom"@en ] ,
+		[ rdfs:label "SVG"@en ] ,
+		[ rdfs:label "XML"@en ] ,
+		[ rdfs:label "Open Document"@en ] ,
+		[ rdfs:label "ODF"@en ] ,
+		[ rdfs:label "Metadata"@en ] ,
+		[ rdfs:label "OpenGraphProtocol"@en ] ,
+		[ rdfs:label "Open Graph Protocol"@en ] ,
+		[ rdfs:label "OGP"@en ] ,
+		[ rdfs:label "ccREL"@en ] .
+
+toby:i
+	a               foaf:Person ;
+	foaf:name       "Toby Inkster" ;
+	foaf:homepage   <http://tobyinkster.co.uk/> ;
+	foaf:page       <https://metacpan.org/author/TOBYINK> ;
+	foaf:mbox       <mailto:tobyink@cpan.org> ;
+	<http://www.w3.org/2002/07/owl#sameAs> <http://purl.org/NET/cpan-uri/person/tobyink> .

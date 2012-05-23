@@ -15,6 +15,11 @@ var AppRouter = Backbone.Router.extend({
       that.version.set("processors", data);
     });
 
+    // Load version definitions
+    $.getJSON("versionNames.json", function(data) {
+      that.version.set("versionNames", data);
+    });
+
     this.versionView = new VersionView({model: this.version});
     this.hostLanguageView = new HostLanguageView({model: this.version});
     this.processorView = new ProcessorView({model: this.version});
@@ -24,12 +29,12 @@ var AppRouter = Backbone.Router.extend({
     $('.btn').button();
 
     // If logged in, create primary test collection and view
+    this.testList = new TestCollection([], {version: this.version});
+    this.runAllView = new RunAllView({model: this.testList});
+    this.progressView = new ProgressView({model: this.testList});
     if ($("span.email").length > 0) {
-      this.testList = new TestCollection([], {version: this.version});
       this.testList.fetch();
       this.testListView = new TestListView({model: this.testList});
-      this.runAllView = new RunAllView({model: this.testList});
-      this.progressView = new ProgressView({model: this.testList});
     } else {
       this.unauthorizedView = new UnauthorizedView();
     }

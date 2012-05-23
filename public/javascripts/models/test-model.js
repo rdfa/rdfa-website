@@ -128,7 +128,7 @@ window.TestCollection = Backbone.Collection.extend({
         version: version,
         hostLanguage: hostLanguage,
         processorURL: processorURL
-      },data);
+      }, data);
     });
 
     this.reset(tests);
@@ -181,6 +181,21 @@ window.TestCollection = Backbone.Collection.extend({
 
     this.loadedData = response['@graph'];
     
+    // Initialize Host Language Version mappings by inspecting each test
+    var map = []
+    _.each(this.loadedData, function(test) {
+      _.each(test.versions, function(vers) {
+        if (map[vers] == null) { map[vers] = []; }
+        _.each(test.hostLanguages, function(hl) {
+          var hlUpper = hl.toUpperCase();
+          if (_.indexOf(map[vers], hlUpper) === -1) {
+            map[vers].push(hlUpper);
+          }
+        });
+      });
+    });
+    that.version.set('versionHostLanguageMap', map);
+
     // Don't return anything on parse, that is done through filtering
     return this.filter();
   },

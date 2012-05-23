@@ -10,9 +10,26 @@ window.VersionView = Backbone.View.extend({
   },
 
   render: function(event) {
+    var that = this;
+    var versions = _.keys(this.model.get("versionHostLanguageMap"));
+    var versionNames = this.model.get("versionNames");
+
+    this.$el.empty();
+
+    // Load processor buttons
+    _.sortBy(versions, function(key) {
+      var sel = key.replace(/[\.\-]/, '_');
+      that.$el.append(
+        $("<button class='btn versions' href='#'/>")
+          .addClass(sel)
+          .attr('data-version', key)
+          .attr('data-selector', sel)
+          .text(versionNames[key])
+      );
+    });
+
     // Synchronize button with version state
-    this.$("button").removeClass('active');
-    this.$("button." + this.model.get("version").replace(/[\.-]/, '_')).addClass('active');
+    this.$("button." + this.model.get("version").replace(/[\.\-]/, '_')).addClass('active');
   },
 
   version: function (event) {

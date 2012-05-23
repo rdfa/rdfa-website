@@ -76,7 +76,7 @@ module Sinatra
         #  [bundle.hashed_path]
         #else
           bundle.files.map do |f|
-            hash = File.open(File.join(File.expand_path("../../../public", __FILE__), f)).hash
+            hash = File.read(File.join(File.expand_path("../../../public", __FILE__), f)).hash
             "#{f}?#{hash}"
           end
         #end

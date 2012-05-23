@@ -10,11 +10,16 @@ window.HostLanguageView = Backbone.View.extend({
   },
 
   render: function(event) {
-    // Synchronize button with hostLanguge state
-    this.$("button").removeClass('active').hide();
-    _.each(this.model.hostLanguages(), function (suite) {
-      // Only show suites that are associated with this version.
-      this.$("button." + suite.toLowerCase()).show();
+    var that = this;
+    this.$el.empty();
+    _.sortBy(this.model.hostLanguages(), function(hl) {
+      var sel = hl.toLowerCase();
+      that.$el.append(
+        $("<button class='btn suite' href='#'/>")
+          .addClass(sel)
+          .attr('data-suite', sel)
+          .text(hl)
+      );
     });
     this.$("button." + this.model.get("hostLanguage")).addClass('active');
   },

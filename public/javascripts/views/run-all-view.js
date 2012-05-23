@@ -12,8 +12,13 @@ window.RunAllView = Backbone.View.extend({
   },
 
   render: function(event) {
-    if (this.model.running !== "running") {
-      this.$el.button('reset');
+    if (this.model.length > 0) {
+      this.$el.show();
+      if (this.model.running !== "running") {
+        this.$el.button('reset');
+      }
+    } else {
+      this.$el.hide();
     }
   },
 

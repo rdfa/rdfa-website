@@ -159,6 +159,17 @@ module CrazyIvan
     end
 
     ##
+    # Return version definitions
+    get '/test-suite/versionNames' do
+      cache_control :public, :must_revalidate, :max_age => 60
+      json = File.read(File.expand_path("../../versionNames.json", __FILE__))
+      etag Digest::SHA1.hexdigest json
+      respond_to do |wants|
+        wants.json { json }
+      end
+    end
+
+    ##
     # Writes a test case document for the given URL.
     get '/test-suite/test-cases/:version/:suite/:num' do
       cache_control :public, :must_revalidate, :max_age => 60

@@ -15,7 +15,7 @@ window.ProcessorView = Backbone.View.extend({
     var that = this;
 
     // Load up set of processors
-    this.$('ul').empty();
+    this.$el.empty();
 
     $.each(this.model.get("processors"), function(key, value) {
       var elt = _.template("<li><a href='#' data-name='<%= key %>'><%= key %></a></li>", {key: key});
