@@ -1277,7 +1277,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "svgtiny1.2", "svg";
+   rdfatest:hostLanguage "svg";
    test:informationResourceInput <test-cases/0201.html>;
    test:informationResourceResults <test-cases/0201.sparql>;
    test:purpose "Tests @property to establish the predicate; literal object is in the content of the element.";
@@ -1287,7 +1287,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "svgtiny1.2", "svg", "xml", "xhtml5";
+   rdfatest:hostLanguage "svg", "xml", "xhtml5";
    test:informationResourceInput <test-cases/0202.html>;
    test:informationResourceResults <test-cases/0202.sparql>;
    test:purpose "Tests to make sure that @xml:base is used in SVG+RDFa, XML+RDFa and XHTML5+RDFa.";
@@ -1297,7 +1297,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "svgtiny1.2", "svg", "xml", "xhtml5";
+   rdfatest:hostLanguage "svg", "xml", "xhtml5";
    test:informationResourceInput <test-cases/0203.html>;
    test:informationResourceResults <test-cases/0203.sparql>;
    test:purpose "Tests to make sure that @xml:base is used in non-root elements in SVG+RDFa, XML+RDFa and XHTML5+RDFa..";
@@ -2361,7 +2361,7 @@ white   space
   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
   test:classification test:required;  # ?!
   test:expectedResults "true"^^xsd:boolean;
-  rdfatest:hostLanguage "svgtiny1.2", "svg";
+  rdfatest:hostLanguage "svg";
   test:informationResourceInput <test-cases/0304.html>;
   test:informationResourceResults <test-cases/0304.sparql>;
   test:purpose "Tests that embedded RDF/XML is added to the same graph.";
