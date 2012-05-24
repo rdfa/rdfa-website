@@ -1605,7 +1605,7 @@ white   space
 <test-cases/0235> dc:contributor "Gregg Kellogg";
    dc:title "rdfagraph='processor' does not generate standard triples";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1-proc";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5", "svg";
    rdfatest:queryParam "rdfagraph=processor";
@@ -1617,7 +1617,7 @@ white   space
 <test-cases/0236> dc:contributor "Gregg Kellogg";
    dc:title "rdfagraph='processor' with a markup error generates rdfa:Error";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1-proc";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "svg";
    rdfatest:queryParam "rdfagraph=processor";
@@ -1628,7 +1628,7 @@ white   space
 <test-cases/0237> dc:contributor "Gregg Kellogg";
    dc:title "rdfagraph='processor' with invalid SafeCURIE generates rdfa:Warning";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1-proc";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5", "svg";
    rdfatest:queryParam "rdfagraph=processor";
@@ -1642,7 +1642,7 @@ white   space
 <test-cases/0238> dc:contributor "Gregg Kellogg";
    dc:title "rdfagraph='processor' with missing Term definition generates rdfa:Warning";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1-proc";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5", "svg";
    rdfatest:queryParam "rdfagraph=processor";
@@ -1656,7 +1656,7 @@ white   space
 <test-cases/0239> dc:contributor "Gregg Kellogg";
    dc:title "rdfagraph='processor' with undefined prefix generates rdfa:Warning";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1-proc";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5", "svg";
    rdfatest:queryParam "rdfagraph=processor";
