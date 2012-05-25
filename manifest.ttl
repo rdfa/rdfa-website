@@ -2370,4 +2370,18 @@ white   space
     says 'an RDF processor should combine them into the same graph'
   """" .
    
+<test-cases/0305> dc:contributor "Shane McCarron";
+  dc:title "role attribute with explicit id and term";
+  a test:TestCase;
+  rdfatest:rdfaVersion "rdfa1.1-role";
+  test:classification test:required;  # ?!
+  test:expectedResults "true"^^xsd:boolean;
+  rdfatest:hostLanguage "xml", "xhtml1", "html5", "xhtml5";
+  test:informationResourceInput <test-cases/0305.html>;
+  test:informationResourceResults <test-cases/0305.sparql>;
+  test:purpose "When role is specified along with an id the appropriate triple is created.";
+  test:specificationReference """
+    http://www.w3.org/TR/role-attribute/#using-role-in-conjunction-with-rdfa
+    says 'if @id is present, it is used to supply the subject...'
+  """" .
    
