@@ -2385,3 +2385,63 @@ white   space
     says 'if @id is present, it is used to supply the subject...'
   """" .
    
+<test-cases/0306> dc:contributor "Shane McCarron";
+  dc:title "role attribute with explicit base id and term";
+  a test:TestCase;
+  rdfatest:rdfaVersion "rdfa1.1-role";
+  test:classification test:required;  # ?!
+  test:expectedResults "true"^^xsd:boolean;
+  rdfatest:hostLanguage "xml", "xhtml1", "html5", "xhtml5";
+  test:informationResourceInput <test-cases/0306.html>;
+  test:informationResourceResults <test-cases/0306.sparql>;
+  test:purpose "When role is specified along with an id the appropriate triple is created.";
+  test:specificationReference """
+    http://www.w3.org/TR/role-attribute/#using-role-in-conjunction-with-rdfa
+    says 'if @id is present, it is used to supply the subject...'
+  """" .
+   
+<test-cases/0307> dc:contributor "Shane McCarron";
+  dc:title "role attribute with term and no id";
+  a test:TestCase;
+  rdfatest:rdfaVersion "rdfa1.1-role";
+  test:classification test:required;  # ?!
+  test:expectedResults "true"^^xsd:boolean;
+  rdfatest:hostLanguage "xml", "xhtml1", "html5", "xhtml5";
+  test:informationResourceInput <test-cases/0307.html>;
+  test:informationResourceResults <test-cases/0307.sparql>;
+  test:purpose "When role is specified along with an id the appropriate triple is created.";
+  test:specificationReference """
+    http://www.w3.org/TR/role-attribute/#using-role-in-conjunction-with-rdfa
+    says 'if @id is present, it is used to supply the subject...'
+  """" .
+   
+<test-cases/0308> dc:contributor "Shane McCarron";
+  dc:title "role attribute with explicit id and IRI as object";
+  a test:TestCase;
+  rdfatest:rdfaVersion "rdfa1.1-role";
+  test:classification test:required;  # ?!
+  test:expectedResults "true"^^xsd:boolean;
+  rdfatest:hostLanguage "xml", "xhtml1", "html5", "xhtml5";
+  test:informationResourceInput <test-cases/0308.html>;
+  test:informationResourceResults <test-cases/0308.sparql>;
+  test:purpose "When role is specified along with an id the appropriate triple is created.";
+  test:specificationReference """
+    http://www.w3.org/TR/role-attribute/#using-role-in-conjunction-with-rdfa
+    says 'if @id is present, it is used to supply the subject...'
+  """" .
+   
+<test-cases/0309> dc:contributor "Shane McCarron";
+  dc:title "role attribute with explicit id and CURIE as object";
+  a test:TestCase;
+  rdfatest:rdfaVersion "rdfa1.1-role";
+  test:classification test:required;  # ?!
+  test:expectedResults "true"^^xsd:boolean;
+  rdfatest:hostLanguage "xml", "xhtml1", "html5", "xhtml5";
+  test:informationResourceInput <test-cases/0309.html>;
+  test:informationResourceResults <test-cases/0309.sparql>;
+  test:purpose "When role is specified along with an id the appropriate triple is created.";
+  test:specificationReference """
+    http://www.w3.org/TR/role-attribute/#using-role-in-conjunction-with-rdfa
+    says 'if @id is present, it is used to supply the subject...'
+  """" .
+   
