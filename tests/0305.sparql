@@ -1,3 +1,3 @@
 ASK WHERE {
-    <#heading1> <http://www.w3.org/1999/xhtml/role> <http://www.w3.org/1999/xhtml/heading> .
+    <$TCPATH/0305.xhtml#heading1> <http://www.w3.org/1999/xhtml/role> <http://www.w3.org/1999/xhtml/heading> .
 }
