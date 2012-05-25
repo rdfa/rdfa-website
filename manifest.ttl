@@ -2445,3 +2445,18 @@ white   space
     says 'if @id is present, it is used to supply the subject...'
   """" .
    
+<test-cases/0310> dc:contributor "Shane McCarron";
+  dc:title "role attribute with multiple values";
+  a test:TestCase;
+  rdfatest:rdfaVersion "rdfa1.1-role";
+  test:classification test:required;  # ?!
+  test:expectedResults "true"^^xsd:boolean;
+  rdfatest:hostLanguage "xml", "xhtml1", "html5", "xhtml5";
+  test:informationResourceInput <test-cases/0310.html>;
+  test:informationResourceResults <test-cases/0310.sparql>;
+  test:purpose "The datatype permits multiple whitespace separated roles";
+  test:specificationReference """
+    http://www.w3.org/TR/role-attribute/#s_role_module_attributes
+    says 'The role attribute takes as its value one or more whitespace separated TERMorCURIEorAbsIRIs'
+  """" .
+   

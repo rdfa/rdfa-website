@@ -1,0 +1,5 @@
+ASK WHERE {
+    <$TCPATH/0310.xhtml#therole> <http://www.w3.org/1999/xhtml/role> <http://www.example.com/roles/somerole>
+    <$TCPATH/0310.xhtml#therole> <http://www.w3.org/1999/xhtml/role> <http://www.w3.org/1999/xhtml/someOtherRole>
+    <$TCPATH/0310.xhtml#therole> <http://www.w3.org/1999/xhtml/role> <http://www.example.com/alternate/role>
+}
