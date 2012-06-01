@@ -1,3 +1,4 @@
+PREFIX xhv: <http://www.w3.org/1999/xhtml/vocab#>
 ASK WHERE {
-    <http://www.example.com/tests/0306.xhtml#heading1> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#heading> .
+    <http://www.example.com/tests/0306#heading1> xhv:role xhv:heading .
 }

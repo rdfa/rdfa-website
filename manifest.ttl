@@ -2391,7 +2391,7 @@ white   space
   rdfatest:rdfaVersion "rdfa1.1-role";
   test:classification test:required;  # ?!
   test:expectedResults "true"^^xsd:boolean;
-  rdfatest:hostLanguage "xml", "xhtml1", "html5", "xhtml5";
+  rdfatest:hostLanguage "xhtml1", "html5", "xhtml5";
   test:informationResourceInput <test-cases/0306.html>;
   test:informationResourceResults <test-cases/0306.sparql>;
   test:purpose "When role is specified along with an id the appropriate triple is created.";
