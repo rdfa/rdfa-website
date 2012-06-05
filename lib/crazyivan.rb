@@ -99,7 +99,7 @@ module CrazyIvan
           :rdfatest => "http://#{HOSTNAME}/vocabs/rdfa-test#"
         }
       )
-      cache_control :public, :must_revalidate, :max_age => 60
+      cache_control :public, :must_revalidate, :max_age => 3600
       respond_to do |wants|
         wants.ttl do
           etag Digest::SHA1.hexdigest manifest_ttl
@@ -130,7 +130,8 @@ module CrazyIvan
       # Get sub-graph matching just version and suite
       output_graph = version_graph(params[:version], params[:suite])
       
-      cache_control :public, :must_revalidate, :max_age => 60
+      cache_control :public, :must_revalidate, :max_age => 3600
+      etag Digest::SHA1.hexdigest manifest_ttl
       respond_to do |wants|
         wants.ttl do
           output_graph.dump(:ttl, settings.sparql_options)
@@ -150,7 +151,7 @@ module CrazyIvan
     ##
     # Return processor definitions
     get '/test-suite/processors' do
-      cache_control :public, :must_revalidate, :max_age => 60
+      cache_control :public, :must_revalidate, :max_age => 3600
       json = File.read(File.expand_path("../../processors.json", __FILE__))
       etag Digest::SHA1.hexdigest json
       respond_to do |wants|
@@ -161,7 +162,7 @@ module CrazyIvan
     ##
     # Return version definitions
     get '/test-suite/versionNames' do
-      cache_control :public, :must_revalidate, :max_age => 60
+      cache_control :public, :must_revalidate, :max_age => 3600
       json = File.read(File.expand_path("../../versionNames.json", __FILE__))
       etag Digest::SHA1.hexdigest json
       respond_to do |wants|
@@ -172,7 +173,7 @@ module CrazyIvan
     ##
     # Writes a test case document for the given URL.
     get '/test-suite/test-cases/:version/:suite/:num' do
-      cache_control :public, :must_revalidate, :max_age => 60
+      cache_control :public, :must_revalidate, :max_age => 3600
 
       begin
         content = get_test_content(params[:version], params[:suite], params[:num], format.to_s);
@@ -189,7 +190,7 @@ module CrazyIvan
     # Writes the test case alternatives for the given URL
     get '/test-suite/test-cases/:num' do
       format :json if format == :js
-      cache_control :public, :must_revalidate, :max_age => 60
+      cache_control :public, :must_revalidate, :max_age => 3600
       etag Digest::SHA1.hexdigest(manifest_ttl + params[:num])
 
       test_cases = get_test_alternates(params[:num])
