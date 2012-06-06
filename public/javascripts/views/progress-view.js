@@ -14,6 +14,7 @@ window.ProgressView = Backbone.View.extend({
 
   render: function(event) {
     if (this.model.running) {
+      this.$el.show();
       var passed = this.model.passed;
       var failed = this.model.failed;
       var total = passed + failed;
