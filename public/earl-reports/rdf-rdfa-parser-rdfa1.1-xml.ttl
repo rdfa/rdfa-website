@@ -1,0 +1,4014 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>
+  tobyink / p5-rdf-rdfa-parser / source &mdash; Bitbucket
+</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!--[if lt IE 9]>
+  <script src="https://dwz7u9t8u8usb.cloudfront.net/m/7643968c8bac/js/lib/html5.js"></script>
+  <![endif]-->
+
+  <script>
+    (function (window) {
+      // prevent stray occurrences of `console.log` from causing errors in IE
+      var console = window.console || (window.console = {});
+      console.log || (console.log = function () {});
+
+      var BB = window.BB || (window.BB = {});
+      BB.debug = false;
+      BB.cname = false;
+      BB.CANON_URL = 'https://bitbucket.org';
+      BB.MEDIA_URL = 'https://dwz7u9t8u8usb.cloudfront.net/m/7643968c8bac/';
+      BB.images = {
+        invitation: 'https://dwz7u9t8u8usb.cloudfront.net/m/7643968c8bac/img/icons/fugue/card_address.png',
+        noAvatar: 'https://dwz7u9t8u8usb.cloudfront.net/m/7643968c8bac/img/no_avatar.png'
+      };
+      BB.user = {"isKbdShortcutsEnabled": true, "isSshEnabled": false};
+      BB.user.has = (function () {
+        var betaFeatures = [];
+        betaFeatures.push('repo2');
+        return function (feature) {
+          return _.contains(betaFeatures, feature);
+        };
+      }());
+      BB.targetUser = BB.user;
+  
+    
+  
+      BB.repo || (BB.repo = {});
+  
+      
+        BB.user.repoPrivilege = null;
+      
+      
+        
+          BB.user.accountPrivilege = null;
+        
+      
+      BB.repo.id = 502566;
+    
+    
+      BB.repo.language = null;
+      BB.repo.pygmentsLanguage = null;
+    
+    
+      BB.repo.slug = 'p5\u002Drdf\u002Drdfa\u002Dparser';
+    
+    
+      BB.repo.owner = {
+        username: 'tobyink',
+        is_team: false
+      };
+    
+    
+      
+        
+      
+    
+    
+      // Coerce `BB.repo` to a string to get
+      // "davidchambers/mango" or whatever.
+      BB.repo.toString = function () {
+        return BB.cname ? this.slug : '{owner.username}/{slug}'.format(this);
+      }
+    
+    
+      BB.changeset = 'da334b813b35'
+    
+    
+  
+    }(this));
+  </script>
+
+  
+
+
+  <link rel="stylesheet" href="https://dwz7u9t8u8usb.cloudfront.net/m/7643968c8bac/bun/css/bundle.css"/>
+
+
+
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Bitbucket" />
+  <link rel="icon" href="https://dwz7u9t8u8usb.cloudfront.net/m/7643968c8bac/img/logo_new.png" type="image/png" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+
+
+  
+  
+    <script src="https://dwz7u9t8u8usb.cloudfront.net/m/7643968c8bac/bun/js/bundle.js"></script>
+  
+
+
+
+</head>
+
+<body id="" class=" ">
+  <script>
+    if (navigator.userAgent.indexOf(' AppleWebKit/') === -1) {
+      $('body').addClass('non-webkit')
+    }
+    $('body')
+      .addClass($.client.os.toLowerCase())
+      .addClass($.client.browser.toLowerCase())
+  </script>
+  <!--[if IE 8]>
+  <script>jQuery(document.body).addClass('ie8')</script>
+  <![endif]-->
+  <!--[if IE 9]>
+  <script>jQuery(document.body).addClass('ie9')</script>
+  <![endif]-->
+
+  <div id="wrapper">
+
+
+
+  <div id="header-wrap">
+    <div id="header">
+    <ul id="global-nav">
+      <li><a class="home" href="http://www.atlassian.com">Atlassian Home</a></li>
+      <li><a class="docs" href="http://confluence.atlassian.com/display/BITBUCKET">Documentation</a></li>
+      <li><a class="support" href="/support">Support</a></li>
+      <li><a class="blog" href="http://blog.bitbucket.org">Blog</a></li>
+      <li><a class="forums" href="http://groups.google.com/group/bitbucket-users">Forums</a></li>
+    </ul>
+    <a href="/" id="logo">Bitbucket by Atlassian</a>
+
+    <div id="main-nav">
+    
+      <ul class="clearfix">
+        <li><a href="/plans">Pricing &amp; signup</a></li>
+        <li><a id="explore-link" href="/explore">Explore Bitbucket</a></li>
+        <li><a href="/account/signin/?next=/tobyink/p5-rdf-rdfa-parser/src/tip/meta/earl/xml-rdfa11-tests.ttl">Log in</a></li>
+        
+
+<li class="search-box">
+  
+    <form action="/repo/all">
+      <input type="search" results="5" autosave="bitbucket-explore-search"
+             name="name" id="searchbox"
+             placeholder="owner/repo" />
+  
+  </form>
+</li>
+
+      </ul>
+    
+    </div>
+
+  
+
+    </div>
+  </div>
+
+    <div id="header-messages">
+  
+    
+    
+    
+    
+  
+
+    
+   </div>
+
+
+
+    <div id="content">
+      <div id="source">
+      
+  
+  
+
+
+
+
+
+  <script>
+    jQuery(function ($) {
+        var cookie = $.cookie,
+            cookieOptions, date,
+            $content = $('#content'),
+            $pane = $('#what-is-bitbucket'),
+            $hide = $pane.find('[href="#hide"]').css('display', 'block').hide();
+
+        date = new Date();
+        date.setTime(date.getTime() + 365 * 24 * 60 * 60 * 1000);
+        cookieOptions = { path: '/', expires: date };
+
+        if (cookie('toggle_status') == 'hide') $content.addClass('repo-desc-hidden');
+
+        $('#toggle-repo-content').click(function (event) {
+            event.preventDefault();
+            $content.toggleClass('repo-desc-hidden');
+            cookie('toggle_status', cookie('toggle_status') == 'show' ? 'hide' : 'show', cookieOptions);
+        });
+
+        if (!cookie('hide_intro_message')) $pane.show();
+
+        $hide.click(function (event) {
+            event.preventDefault();
+            cookie('hide_intro_message', true, cookieOptions);
+            $pane.slideUp('slow');
+        });
+
+        $pane.hover(
+            function () { $hide.fadeIn('fast'); },
+            function () { $hide.fadeOut('fast'); });
+
+      (function () {
+        // Update "recently-viewed-repos" cookie for
+        // the "repositories" drop-down.
+        var
+          id = BB.repo.id,
+          cookieName = 'recently-viewed-repos_' + BB.user.id,
+          rvr = cookie(cookieName),
+          ids = rvr? rvr.split(','): [],
+          idx = _.indexOf(ids, '' + id);
+
+        // Remove `id` from `ids` if present.
+        if (~idx) ids.splice(idx, 1);
+
+        cookie(
+          cookieName,
+          // Insert `id` as the first item, then call
+          // `join` on the resulting array to produce
+          // something like "114694,27542,89002,84570".
+          [id].concat(ids.slice(0, 4)).join(),
+          {path: '/', expires: 1e6} // "never" expires
+        );
+      }());
+    });
+  </script>
+
+
+
+    <div id="what-is-bitbucket" class="new-to-bitbucket">
+      <h2>Toby Inkster <span id="slogan">is sharing code with you</span></h2>
+      <img src="https://secure.gravatar.com/avatar/c42f5f533d5e2032aae76abe2eb3584b?d=identicon&amp;s=32" alt="" class="avatar" />
+      <p>Bitbucket is a code hosting site. Unlimited public and private repositories. Free for small teams.</p>
+      <div class="primary-action-link signup"><a href="/account/signup/?utm_source=internal&utm_medium=banner&utm_campaign=what_is_bitbucket">Try Bitbucket free</a></div>
+      <a href="#hide" title="Don't show this again">Don't show this again</a>
+    </div>
+
+
+<div id="tabs" class="tabs">
+  <ul>
+    
+      <li>
+        <a href="/tobyink/p5-rdf-rdfa-parser/overview" id="repo-overview-link">Overview</a>
+      </li>
+    
+
+    
+      <li>
+        <a href="/tobyink/p5-rdf-rdfa-parser/downloads" id="repo-downloads-link">Downloads (<span id="downloads-count">0</span>)</a>
+      </li>
+    
+
+    
+      
+    
+
+    
+      <li>
+        <a href="/tobyink/p5-rdf-rdfa-parser/pull-requests" id="repo-pr-link">Pull requests (0)</a>
+      </li>
+    
+
+    
+      <li class="selected">
+        
+          <a href="/tobyink/p5-rdf-rdfa-parser/src" id="repo-source-link">Source</a>
+        
+      </li>
+    
+
+    
+      <li>
+        <a href="/tobyink/p5-rdf-rdfa-parser/changesets" id="repo-commits-link">Commits</a>
+      </li>
+    
+
+    <li id="wiki-tab" class="dropdown"
+      style="display:
+          block 
+        
+      ">
+      <a href="/tobyink/p5-rdf-rdfa-parser/wiki" id="repo-wiki-link">Wiki</a>
+    </li>
+
+    <li id="issues-tab" class="dropdown inertial-hover"
+      style="display:
+                      none  
+        
+      ">
+      <a href="/tobyink/p5-rdf-rdfa-parser/issues?status=new&amp;status=open" id="repo-issues-link">Issues (0) &raquo;</a>
+      <ul>
+        <li><a href="/tobyink/p5-rdf-rdfa-parser/issues/new">Create new issue</a></li>
+        <li><a href="/tobyink/p5-rdf-rdfa-parser/issues?status=new">New issues</a></li>
+        <li><a href="/tobyink/p5-rdf-rdfa-parser/issues?status=new&amp;status=open">Open issues</a></li>
+        <li><a href="/tobyink/p5-rdf-rdfa-parser/issues?status=duplicate&amp;status=invalid&amp;status=resolved&amp; status=wontfix">Closed issues</a></li>
+        
+        <li><a href="/tobyink/p5-rdf-rdfa-parser/issues">All issues</a></li>
+        <li><a href="/tobyink/p5-rdf-rdfa-parser/issues/query">Advanced query</a></li>
+      </ul>
+    </li>
+
+    
+  </ul>
+
+  <ul>
+    
+      <li>
+        <a href="/tobyink/p5-rdf-rdfa-parser/descendants" id="repo-forks-link">Forks/queues (0)</a>
+      </li>
+    
+
+    
+      <li>
+        <a href="/tobyink/p5-rdf-rdfa-parser/zealots">Followers (<span id="followers-count">1</span>)</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+ 
+
+
+  <div class="repo-menu" id="repo-menu">
+    <ul id="repo-menu-links">
+    
+    
+      <li>
+        <a href="/tobyink/p5-rdf-rdfa-parser/rss" class="rss" title="RSS feed for p5-rdf-rdfa-parser">RSS</a>
+      </li>
+
+      <li><a id="repo-fork-link" href="/tobyink/p5-rdf-rdfa-parser/fork" class="fork">fork</a></li>
+      
+        
+          <li><a id="repo-patch-queue-link" href="/tobyink/p5-rdf-rdfa-parser/hack" class="patch-queue">patch queue</a></li>
+        
+      
+      <li>
+        <a id="repo-follow-link" rel="nofollow" href="/tobyink/p5-rdf-rdfa-parser/follow" class="follow">follow</a>
+      </li>
+      
+          
+      
+      
+        <li class="get-source inertial-hover">
+          <a class="source">get source</a>
+          <ul class="downloads">
+            
+              
+              <li><a rel="nofollow" href="/tobyink/p5-rdf-rdfa-parser/get/da334b813b35.zip">zip</a></li>
+              <li><a rel="nofollow" href="/tobyink/p5-rdf-rdfa-parser/get/da334b813b35.tar.gz">gz</a></li>
+              <li><a rel="nofollow" href="/tobyink/p5-rdf-rdfa-parser/get/da334b813b35.tar.bz2">bz2</a></li>
+            
+          </ul>
+        </li>
+      
+      
+    </ul>
+
+  
+    <ul class="metadata">
+      
+      
+      
+        <li class="branches inertial-hover">branches
+          <ul>
+            <li><a href="/tobyink/p5-rdf-rdfa-parser/src/da334b813b35" title="RDF-RDFa-Parser">RDF-RDFa-Parser</a>
+              
+              
+            </li>
+          </ul>
+        </li>
+      
+      
+      <li class="tags inertial-hover">tags
+        <ul>
+          <li><a href="/tobyink/p5-rdf-rdfa-parser/src/da334b813b35">tip</a>
+            
+            </li>
+          <li><a href="/tobyink/p5-rdf-rdfa-parser/src/bba07fd0468c">1.096_04</a>
+            
+            
+              <a rel="nofollow" class='menu-compare'
+                 href="/tobyink/p5-rdf-rdfa-parser/compare/..1.096_04"
+                 title="Show changes between 1.096_04 and the main branch.">compare</a>
+            </li>
+          <li><a href="/tobyink/p5-rdf-rdfa-parser/src/2ce50fa68838">1.096_03</a>
+            
+            
+              <a rel="nofollow" class='menu-compare'
+                 href="/tobyink/p5-rdf-rdfa-parser/compare/..1.096_03"
+                 title="Show changes between 1.096_03 and the main branch.">compare</a>
+            </li>
+          <li><a href="/tobyink/p5-rdf-rdfa-parser/src/2d00b7e7afce">1.096_02</a>
+            
+            
+              <a rel="nofollow" class='menu-compare'
+                 href="/tobyink/p5-rdf-rdfa-parser/compare/..1.096_02"
+                 title="Show changes between 1.096_02 and the main branch.">compare</a>
+            </li>
+          <li><a href="/tobyink/p5-rdf-rdfa-parser/src/9694bc47d482">1.096_01</a>
+            
+            
+              <a rel="nofollow" class='menu-compare'
+                 href="/tobyink/p5-rdf-rdfa-parser/compare/..1.096_01"
+                 title="Show changes between 1.096_01 and the main branch.">compare</a>
+            </li>
+        </ul>
+      </li>
+     
+     
+      
+    </ul>
+  
+  </div>
+
+
+
+
+<div class="repo-menu" id="repo-desc">
+    <ul id="repo-menu-links-mini">
+      
+
+      
+      <li>
+        <a href="/tobyink/p5-rdf-rdfa-parser/rss" class="rss" title="RSS feed for p5-rdf-rdfa-parser"></a>
+      </li>
+
+      <li><a href="/tobyink/p5-rdf-rdfa-parser/fork" class="fork" title="Fork"></a></li>
+      
+        
+          <li><a href="/tobyink/p5-rdf-rdfa-parser/hack" class="patch-queue" title="Patch queue"></a></li>
+        
+      
+      <li>
+        <a rel="nofollow" href="/tobyink/p5-rdf-rdfa-parser/follow" class="follow">follow</a>
+      </li>
+      
+          
+      
+      
+        <li>
+          <a class="source" title="Get source"></a>
+          <ul class="downloads">
+            
+              
+              <li><a rel="nofollow" href="/tobyink/p5-rdf-rdfa-parser/get/da334b813b35.zip">zip</a></li>
+              <li><a rel="nofollow" href="/tobyink/p5-rdf-rdfa-parser/get/da334b813b35.tar.gz">gz</a></li>
+              <li><a rel="nofollow" href="/tobyink/p5-rdf-rdfa-parser/get/da334b813b35.tar.bz2">bz2</a></li>
+            
+          </ul>
+        </li>
+      
+    </ul>
+
+    <h3 id="repo-heading" class="public hg">
+      <a class="owner-username" href="/tobyink">tobyink</a> /
+      <a class="repo-name" href="/tobyink/p5-rdf-rdfa-parser">p5-rdf-rdfa-parser</a>
+    
+      <span><a href="https://metacpan.org/release/RDF-RDFa-Parser">https://metacpan.org/release/RDF-RDFa-Parser</a></span>
+    
+
+    
+    </h3>
+
+    
+
+  <div id="repo-desc-cloneinfo">Clone this repository (size: 11.0 MB):
+    <a href="https://bitbucket.org/tobyink/p5-rdf-rdfa-parser" class="https">HTTPS</a> /
+    <a href="ssh://hg@bitbucket.org/tobyink/p5-rdf-rdfa-parser" class="ssh">SSH</a>
+    
+      <div id="sourcetree-clone-link" class="clone-in-client mac anonymous help-activated"
+          data-desktop-clone-url-ssh="sourcetree://cloneRepo/ssh://hg@bitbucket.org/tobyink/p5-rdf-rdfa-parser"
+          data-desktop-clone-url-https="sourcetree://cloneRepo/https://bitbucket.org/tobyink/p5-rdf-rdfa-parser">
+         /
+           <a class="desktop-ssh"
+             href="sourcetree://cloneRepo/ssh://hg@bitbucket.org/tobyink/p5-rdf-rdfa-parser">SourceTree</a>
+           <a class="desktop-https"
+             href="sourcetree://cloneRepo/https://bitbucket.org/tobyink/p5-rdf-rdfa-parser">SourceTree</a>
+      </div>
+    
+    <pre id="clone-url-https">hg clone https://bitbucket.org/tobyink/p5-rdf-rdfa-parser</pre>
+    <pre id="clone-url-ssh">hg clone ssh://hg@bitbucket.org/tobyink/p5-rdf-rdfa-parser</pre>
+    
+  </div>
+
+        <a href="#" id="toggle-repo-content"></a>
+
+        
+
+</div>
+
+
+
+
+
+
+      
+  <div id="source-container">
+    
+
+  <div id="source-path">
+    <h1>
+      <a href="/tobyink/p5-rdf-rdfa-parser/src" class="src-pjax">p5-rdf-rdfa-parser</a> /
+
+  
+    
+      <a href="/tobyink/p5-rdf-rdfa-parser/src/da334b813b35/meta/" class="src-pjax">meta</a> /
+    
+  
+
+  
+    
+      <a href="/tobyink/p5-rdf-rdfa-parser/src/da334b813b35/meta/earl/" class="src-pjax">earl</a> /
+    
+  
+
+  
+    
+      <span>xml-rdfa11-tests.ttl</span>
+    
+  
+
+    </h1>
+  </div>
+
+  <div class="labels labels-csv">
+  
+    <dl>
+  
+    
+  
+  
+    
+  
+  
+    <dt>Branch</dt>
+    
+      
+        <dd class="branch unabridged"><a href="/tobyink/p5-rdf-rdfa-parser/changesets/tip/branch(%22RDF-RDFa-Parser%22)" title="RDF-RDFa-Parser">RDF-RDFa-Parser</a></dd>
+      
+    
+  
+</dl>
+
+  
+  </div>
+
+
+  
+  <div id="source-view">
+    <div class="header">
+      <ul class="metadata">
+        <li><code>da334b813b35</code></li>
+        
+          
+            <li>1664 loc</li>
+          
+        
+        <li>55.7 KB</li>
+      </ul>
+      <ul class="source-view-links">
+        
+        <li><a id="embed-link" href="https://bitbucket.org/tobyink/p5-rdf-rdfa-parser/src/da334b813b35/meta/earl/xml-rdfa11-tests.ttl?embed=t">embed</a></li>
+        
+        <li><a href="/tobyink/p5-rdf-rdfa-parser/history/meta/earl/xml-rdfa11-tests.ttl">history</a></li>
+        
+        <li><a href="/tobyink/p5-rdf-rdfa-parser/annotate/da334b813b35/meta/earl/xml-rdfa11-tests.ttl">annotate</a></li>
+        
+        <li><a href="/tobyink/p5-rdf-rdfa-parser/raw/da334b813b35/meta/earl/xml-rdfa11-tests.ttl">raw</a></li>
+        <li>
+          <form action="/tobyink/p5-rdf-rdfa-parser/diff/meta/earl/xml-rdfa11-tests.ttl" class="source-view-form">
+          
+            <input type="hidden" name="diff2" value="da334b813b35" />
+            <select name="diff1">
+            
+              
+            
+              
+                <option value="c5c92fc06af8">c5c92fc06af8</option>
+              
+            
+              
+                <option value="2ce50fa68838">2ce50fa68838</option>
+              
+            
+              
+                <option value="c05e56359303">c05e56359303</option>
+              
+            
+            </select>
+            <input type="submit" value="diff" />
+          
+          </form>
+        </li>
+      </ul>
+    </div>
+  
+    <div>
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><a href="#cl-1">   1</a>
+<a href="#cl-2">   2</a>
+<a href="#cl-3">   3</a>
+<a href="#cl-4">   4</a>
+<a href="#cl-5">   5</a>
+<a href="#cl-6">   6</a>
+<a href="#cl-7">   7</a>
+<a href="#cl-8">   8</a>
+<a href="#cl-9">   9</a>
+<a href="#cl-10">  10</a>
+<a href="#cl-11">  11</a>
+<a href="#cl-12">  12</a>
+<a href="#cl-13">  13</a>
+<a href="#cl-14">  14</a>
+<a href="#cl-15">  15</a>
+<a href="#cl-16">  16</a>
+<a href="#cl-17">  17</a>
+<a href="#cl-18">  18</a>
+<a href="#cl-19">  19</a>
+<a href="#cl-20">  20</a>
+<a href="#cl-21">  21</a>
+<a href="#cl-22">  22</a>
+<a href="#cl-23">  23</a>
+<a href="#cl-24">  24</a>
+<a href="#cl-25">  25</a>
+<a href="#cl-26">  26</a>
+<a href="#cl-27">  27</a>
+<a href="#cl-28">  28</a>
+<a href="#cl-29">  29</a>
+<a href="#cl-30">  30</a>
+<a href="#cl-31">  31</a>
+<a href="#cl-32">  32</a>
+<a href="#cl-33">  33</a>
+<a href="#cl-34">  34</a>
+<a href="#cl-35">  35</a>
+<a href="#cl-36">  36</a>
+<a href="#cl-37">  37</a>
+<a href="#cl-38">  38</a>
+<a href="#cl-39">  39</a>
+<a href="#cl-40">  40</a>
+<a href="#cl-41">  41</a>
+<a href="#cl-42">  42</a>
+<a href="#cl-43">  43</a>
+<a href="#cl-44">  44</a>
+<a href="#cl-45">  45</a>
+<a href="#cl-46">  46</a>
+<a href="#cl-47">  47</a>
+<a href="#cl-48">  48</a>
+<a href="#cl-49">  49</a>
+<a href="#cl-50">  50</a>
+<a href="#cl-51">  51</a>
+<a href="#cl-52">  52</a>
+<a href="#cl-53">  53</a>
+<a href="#cl-54">  54</a>
+<a href="#cl-55">  55</a>
+<a href="#cl-56">  56</a>
+<a href="#cl-57">  57</a>
+<a href="#cl-58">  58</a>
+<a href="#cl-59">  59</a>
+<a href="#cl-60">  60</a>
+<a href="#cl-61">  61</a>
+<a href="#cl-62">  62</a>
+<a href="#cl-63">  63</a>
+<a href="#cl-64">  64</a>
+<a href="#cl-65">  65</a>
+<a href="#cl-66">  66</a>
+<a href="#cl-67">  67</a>
+<a href="#cl-68">  68</a>
+<a href="#cl-69">  69</a>
+<a href="#cl-70">  70</a>
+<a href="#cl-71">  71</a>
+<a href="#cl-72">  72</a>
+<a href="#cl-73">  73</a>
+<a href="#cl-74">  74</a>
+<a href="#cl-75">  75</a>
+<a href="#cl-76">  76</a>
+<a href="#cl-77">  77</a>
+<a href="#cl-78">  78</a>
+<a href="#cl-79">  79</a>
+<a href="#cl-80">  80</a>
+<a href="#cl-81">  81</a>
+<a href="#cl-82">  82</a>
+<a href="#cl-83">  83</a>
+<a href="#cl-84">  84</a>
+<a href="#cl-85">  85</a>
+<a href="#cl-86">  86</a>
+<a href="#cl-87">  87</a>
+<a href="#cl-88">  88</a>
+<a href="#cl-89">  89</a>
+<a href="#cl-90">  90</a>
+<a href="#cl-91">  91</a>
+<a href="#cl-92">  92</a>
+<a href="#cl-93">  93</a>
+<a href="#cl-94">  94</a>
+<a href="#cl-95">  95</a>
+<a href="#cl-96">  96</a>
+<a href="#cl-97">  97</a>
+<a href="#cl-98">  98</a>
+<a href="#cl-99">  99</a>
+<a href="#cl-100"> 100</a>
+<a href="#cl-101"> 101</a>
+<a href="#cl-102"> 102</a>
+<a href="#cl-103"> 103</a>
+<a href="#cl-104"> 104</a>
+<a href="#cl-105"> 105</a>
+<a href="#cl-106"> 106</a>
+<a href="#cl-107"> 107</a>
+<a href="#cl-108"> 108</a>
+<a href="#cl-109"> 109</a>
+<a href="#cl-110"> 110</a>
+<a href="#cl-111"> 111</a>
+<a href="#cl-112"> 112</a>
+<a href="#cl-113"> 113</a>
+<a href="#cl-114"> 114</a>
+<a href="#cl-115"> 115</a>
+<a href="#cl-116"> 116</a>
+<a href="#cl-117"> 117</a>
+<a href="#cl-118"> 118</a>
+<a href="#cl-119"> 119</a>
+<a href="#cl-120"> 120</a>
+<a href="#cl-121"> 121</a>
+<a href="#cl-122"> 122</a>
+<a href="#cl-123"> 123</a>
+<a href="#cl-124"> 124</a>
+<a href="#cl-125"> 125</a>
+<a href="#cl-126"> 126</a>
+<a href="#cl-127"> 127</a>
+<a href="#cl-128"> 128</a>
+<a href="#cl-129"> 129</a>
+<a href="#cl-130"> 130</a>
+<a href="#cl-131"> 131</a>
+<a href="#cl-132"> 132</a>
+<a href="#cl-133"> 133</a>
+<a href="#cl-134"> 134</a>
+<a href="#cl-135"> 135</a>
+<a href="#cl-136"> 136</a>
+<a href="#cl-137"> 137</a>
+<a href="#cl-138"> 138</a>
+<a href="#cl-139"> 139</a>
+<a href="#cl-140"> 140</a>
+<a href="#cl-141"> 141</a>
+<a href="#cl-142"> 142</a>
+<a href="#cl-143"> 143</a>
+<a href="#cl-144"> 144</a>
+<a href="#cl-145"> 145</a>
+<a href="#cl-146"> 146</a>
+<a href="#cl-147"> 147</a>
+<a href="#cl-148"> 148</a>
+<a href="#cl-149"> 149</a>
+<a href="#cl-150"> 150</a>
+<a href="#cl-151"> 151</a>
+<a href="#cl-152"> 152</a>
+<a href="#cl-153"> 153</a>
+<a href="#cl-154"> 154</a>
+<a href="#cl-155"> 155</a>
+<a href="#cl-156"> 156</a>
+<a href="#cl-157"> 157</a>
+<a href="#cl-158"> 158</a>
+<a href="#cl-159"> 159</a>
+<a href="#cl-160"> 160</a>
+<a href="#cl-161"> 161</a>
+<a href="#cl-162"> 162</a>
+<a href="#cl-163"> 163</a>
+<a href="#cl-164"> 164</a>
+<a href="#cl-165"> 165</a>
+<a href="#cl-166"> 166</a>
+<a href="#cl-167"> 167</a>
+<a href="#cl-168"> 168</a>
+<a href="#cl-169"> 169</a>
+<a href="#cl-170"> 170</a>
+<a href="#cl-171"> 171</a>
+<a href="#cl-172"> 172</a>
+<a href="#cl-173"> 173</a>
+<a href="#cl-174"> 174</a>
+<a href="#cl-175"> 175</a>
+<a href="#cl-176"> 176</a>
+<a href="#cl-177"> 177</a>
+<a href="#cl-178"> 178</a>
+<a href="#cl-179"> 179</a>
+<a href="#cl-180"> 180</a>
+<a href="#cl-181"> 181</a>
+<a href="#cl-182"> 182</a>
+<a href="#cl-183"> 183</a>
+<a href="#cl-184"> 184</a>
+<a href="#cl-185"> 185</a>
+<a href="#cl-186"> 186</a>
+<a href="#cl-187"> 187</a>
+<a href="#cl-188"> 188</a>
+<a href="#cl-189"> 189</a>
+<a href="#cl-190"> 190</a>
+<a href="#cl-191"> 191</a>
+<a href="#cl-192"> 192</a>
+<a href="#cl-193"> 193</a>
+<a href="#cl-194"> 194</a>
+<a href="#cl-195"> 195</a>
+<a href="#cl-196"> 196</a>
+<a href="#cl-197"> 197</a>
+<a href="#cl-198"> 198</a>
+<a href="#cl-199"> 199</a>
+<a href="#cl-200"> 200</a>
+<a href="#cl-201"> 201</a>
+<a href="#cl-202"> 202</a>
+<a href="#cl-203"> 203</a>
+<a href="#cl-204"> 204</a>
+<a href="#cl-205"> 205</a>
+<a href="#cl-206"> 206</a>
+<a href="#cl-207"> 207</a>
+<a href="#cl-208"> 208</a>
+<a href="#cl-209"> 209</a>
+<a href="#cl-210"> 210</a>
+<a href="#cl-211"> 211</a>
+<a href="#cl-212"> 212</a>
+<a href="#cl-213"> 213</a>
+<a href="#cl-214"> 214</a>
+<a href="#cl-215"> 215</a>
+<a href="#cl-216"> 216</a>
+<a href="#cl-217"> 217</a>
+<a href="#cl-218"> 218</a>
+<a href="#cl-219"> 219</a>
+<a href="#cl-220"> 220</a>
+<a href="#cl-221"> 221</a>
+<a href="#cl-222"> 222</a>
+<a href="#cl-223"> 223</a>
+<a href="#cl-224"> 224</a>
+<a href="#cl-225"> 225</a>
+<a href="#cl-226"> 226</a>
+<a href="#cl-227"> 227</a>
+<a href="#cl-228"> 228</a>
+<a href="#cl-229"> 229</a>
+<a href="#cl-230"> 230</a>
+<a href="#cl-231"> 231</a>
+<a href="#cl-232"> 232</a>
+<a href="#cl-233"> 233</a>
+<a href="#cl-234"> 234</a>
+<a href="#cl-235"> 235</a>
+<a href="#cl-236"> 236</a>
+<a href="#cl-237"> 237</a>
+<a href="#cl-238"> 238</a>
+<a href="#cl-239"> 239</a>
+<a href="#cl-240"> 240</a>
+<a href="#cl-241"> 241</a>
+<a href="#cl-242"> 242</a>
+<a href="#cl-243"> 243</a>
+<a href="#cl-244"> 244</a>
+<a href="#cl-245"> 245</a>
+<a href="#cl-246"> 246</a>
+<a href="#cl-247"> 247</a>
+<a href="#cl-248"> 248</a>
+<a href="#cl-249"> 249</a>
+<a href="#cl-250"> 250</a>
+<a href="#cl-251"> 251</a>
+<a href="#cl-252"> 252</a>
+<a href="#cl-253"> 253</a>
+<a href="#cl-254"> 254</a>
+<a href="#cl-255"> 255</a>
+<a href="#cl-256"> 256</a>
+<a href="#cl-257"> 257</a>
+<a href="#cl-258"> 258</a>
+<a href="#cl-259"> 259</a>
+<a href="#cl-260"> 260</a>
+<a href="#cl-261"> 261</a>
+<a href="#cl-262"> 262</a>
+<a href="#cl-263"> 263</a>
+<a href="#cl-264"> 264</a>
+<a href="#cl-265"> 265</a>
+<a href="#cl-266"> 266</a>
+<a href="#cl-267"> 267</a>
+<a href="#cl-268"> 268</a>
+<a href="#cl-269"> 269</a>
+<a href="#cl-270"> 270</a>
+<a href="#cl-271"> 271</a>
+<a href="#cl-272"> 272</a>
+<a href="#cl-273"> 273</a>
+<a href="#cl-274"> 274</a>
+<a href="#cl-275"> 275</a>
+<a href="#cl-276"> 276</a>
+<a href="#cl-277"> 277</a>
+<a href="#cl-278"> 278</a>
+<a href="#cl-279"> 279</a>
+<a href="#cl-280"> 280</a>
+<a href="#cl-281"> 281</a>
+<a href="#cl-282"> 282</a>
+<a href="#cl-283"> 283</a>
+<a href="#cl-284"> 284</a>
+<a href="#cl-285"> 285</a>
+<a href="#cl-286"> 286</a>
+<a href="#cl-287"> 287</a>
+<a href="#cl-288"> 288</a>
+<a href="#cl-289"> 289</a>
+<a href="#cl-290"> 290</a>
+<a href="#cl-291"> 291</a>
+<a href="#cl-292"> 292</a>
+<a href="#cl-293"> 293</a>
+<a href="#cl-294"> 294</a>
+<a href="#cl-295"> 295</a>
+<a href="#cl-296"> 296</a>
+<a href="#cl-297"> 297</a>
+<a href="#cl-298"> 298</a>
+<a href="#cl-299"> 299</a>
+<a href="#cl-300"> 300</a>
+<a href="#cl-301"> 301</a>
+<a href="#cl-302"> 302</a>
+<a href="#cl-303"> 303</a>
+<a href="#cl-304"> 304</a>
+<a href="#cl-305"> 305</a>
+<a href="#cl-306"> 306</a>
+<a href="#cl-307"> 307</a>
+<a href="#cl-308"> 308</a>
+<a href="#cl-309"> 309</a>
+<a href="#cl-310"> 310</a>
+<a href="#cl-311"> 311</a>
+<a href="#cl-312"> 312</a>
+<a href="#cl-313"> 313</a>
+<a href="#cl-314"> 314</a>
+<a href="#cl-315"> 315</a>
+<a href="#cl-316"> 316</a>
+<a href="#cl-317"> 317</a>
+<a href="#cl-318"> 318</a>
+<a href="#cl-319"> 319</a>
+<a href="#cl-320"> 320</a>
+<a href="#cl-321"> 321</a>
+<a href="#cl-322"> 322</a>
+<a href="#cl-323"> 323</a>
+<a href="#cl-324"> 324</a>
+<a href="#cl-325"> 325</a>
+<a href="#cl-326"> 326</a>
+<a href="#cl-327"> 327</a>
+<a href="#cl-328"> 328</a>
+<a href="#cl-329"> 329</a>
+<a href="#cl-330"> 330</a>
+<a href="#cl-331"> 331</a>
+<a href="#cl-332"> 332</a>
+<a href="#cl-333"> 333</a>
+<a href="#cl-334"> 334</a>
+<a href="#cl-335"> 335</a>
+<a href="#cl-336"> 336</a>
+<a href="#cl-337"> 337</a>
+<a href="#cl-338"> 338</a>
+<a href="#cl-339"> 339</a>
+<a href="#cl-340"> 340</a>
+<a href="#cl-341"> 341</a>
+<a href="#cl-342"> 342</a>
+<a href="#cl-343"> 343</a>
+<a href="#cl-344"> 344</a>
+<a href="#cl-345"> 345</a>
+<a href="#cl-346"> 346</a>
+<a href="#cl-347"> 347</a>
+<a href="#cl-348"> 348</a>
+<a href="#cl-349"> 349</a>
+<a href="#cl-350"> 350</a>
+<a href="#cl-351"> 351</a>
+<a href="#cl-352"> 352</a>
+<a href="#cl-353"> 353</a>
+<a href="#cl-354"> 354</a>
+<a href="#cl-355"> 355</a>
+<a href="#cl-356"> 356</a>
+<a href="#cl-357"> 357</a>
+<a href="#cl-358"> 358</a>
+<a href="#cl-359"> 359</a>
+<a href="#cl-360"> 360</a>
+<a href="#cl-361"> 361</a>
+<a href="#cl-362"> 362</a>
+<a href="#cl-363"> 363</a>
+<a href="#cl-364"> 364</a>
+<a href="#cl-365"> 365</a>
+<a href="#cl-366"> 366</a>
+<a href="#cl-367"> 367</a>
+<a href="#cl-368"> 368</a>
+<a href="#cl-369"> 369</a>
+<a href="#cl-370"> 370</a>
+<a href="#cl-371"> 371</a>
+<a href="#cl-372"> 372</a>
+<a href="#cl-373"> 373</a>
+<a href="#cl-374"> 374</a>
+<a href="#cl-375"> 375</a>
+<a href="#cl-376"> 376</a>
+<a href="#cl-377"> 377</a>
+<a href="#cl-378"> 378</a>
+<a href="#cl-379"> 379</a>
+<a href="#cl-380"> 380</a>
+<a href="#cl-381"> 381</a>
+<a href="#cl-382"> 382</a>
+<a href="#cl-383"> 383</a>
+<a href="#cl-384"> 384</a>
+<a href="#cl-385"> 385</a>
+<a href="#cl-386"> 386</a>
+<a href="#cl-387"> 387</a>
+<a href="#cl-388"> 388</a>
+<a href="#cl-389"> 389</a>
+<a href="#cl-390"> 390</a>
+<a href="#cl-391"> 391</a>
+<a href="#cl-392"> 392</a>
+<a href="#cl-393"> 393</a>
+<a href="#cl-394"> 394</a>
+<a href="#cl-395"> 395</a>
+<a href="#cl-396"> 396</a>
+<a href="#cl-397"> 397</a>
+<a href="#cl-398"> 398</a>
+<a href="#cl-399"> 399</a>
+<a href="#cl-400"> 400</a>
+<a href="#cl-401"> 401</a>
+<a href="#cl-402"> 402</a>
+<a href="#cl-403"> 403</a>
+<a href="#cl-404"> 404</a>
+<a href="#cl-405"> 405</a>
+<a href="#cl-406"> 406</a>
+<a href="#cl-407"> 407</a>
+<a href="#cl-408"> 408</a>
+<a href="#cl-409"> 409</a>
+<a href="#cl-410"> 410</a>
+<a href="#cl-411"> 411</a>
+<a href="#cl-412"> 412</a>
+<a href="#cl-413"> 413</a>
+<a href="#cl-414"> 414</a>
+<a href="#cl-415"> 415</a>
+<a href="#cl-416"> 416</a>
+<a href="#cl-417"> 417</a>
+<a href="#cl-418"> 418</a>
+<a href="#cl-419"> 419</a>
+<a href="#cl-420"> 420</a>
+<a href="#cl-421"> 421</a>
+<a href="#cl-422"> 422</a>
+<a href="#cl-423"> 423</a>
+<a href="#cl-424"> 424</a>
+<a href="#cl-425"> 425</a>
+<a href="#cl-426"> 426</a>
+<a href="#cl-427"> 427</a>
+<a href="#cl-428"> 428</a>
+<a href="#cl-429"> 429</a>
+<a href="#cl-430"> 430</a>
+<a href="#cl-431"> 431</a>
+<a href="#cl-432"> 432</a>
+<a href="#cl-433"> 433</a>
+<a href="#cl-434"> 434</a>
+<a href="#cl-435"> 435</a>
+<a href="#cl-436"> 436</a>
+<a href="#cl-437"> 437</a>
+<a href="#cl-438"> 438</a>
+<a href="#cl-439"> 439</a>
+<a href="#cl-440"> 440</a>
+<a href="#cl-441"> 441</a>
+<a href="#cl-442"> 442</a>
+<a href="#cl-443"> 443</a>
+<a href="#cl-444"> 444</a>
+<a href="#cl-445"> 445</a>
+<a href="#cl-446"> 446</a>
+<a href="#cl-447"> 447</a>
+<a href="#cl-448"> 448</a>
+<a href="#cl-449"> 449</a>
+<a href="#cl-450"> 450</a>
+<a href="#cl-451"> 451</a>
+<a href="#cl-452"> 452</a>
+<a href="#cl-453"> 453</a>
+<a href="#cl-454"> 454</a>
+<a href="#cl-455"> 455</a>
+<a href="#cl-456"> 456</a>
+<a href="#cl-457"> 457</a>
+<a href="#cl-458"> 458</a>
+<a href="#cl-459"> 459</a>
+<a href="#cl-460"> 460</a>
+<a href="#cl-461"> 461</a>
+<a href="#cl-462"> 462</a>
+<a href="#cl-463"> 463</a>
+<a href="#cl-464"> 464</a>
+<a href="#cl-465"> 465</a>
+<a href="#cl-466"> 466</a>
+<a href="#cl-467"> 467</a>
+<a href="#cl-468"> 468</a>
+<a href="#cl-469"> 469</a>
+<a href="#cl-470"> 470</a>
+<a href="#cl-471"> 471</a>
+<a href="#cl-472"> 472</a>
+<a href="#cl-473"> 473</a>
+<a href="#cl-474"> 474</a>
+<a href="#cl-475"> 475</a>
+<a href="#cl-476"> 476</a>
+<a href="#cl-477"> 477</a>
+<a href="#cl-478"> 478</a>
+<a href="#cl-479"> 479</a>
+<a href="#cl-480"> 480</a>
+<a href="#cl-481"> 481</a>
+<a href="#cl-482"> 482</a>
+<a href="#cl-483"> 483</a>
+<a href="#cl-484"> 484</a>
+<a href="#cl-485"> 485</a>
+<a href="#cl-486"> 486</a>
+<a href="#cl-487"> 487</a>
+<a href="#cl-488"> 488</a>
+<a href="#cl-489"> 489</a>
+<a href="#cl-490"> 490</a>
+<a href="#cl-491"> 491</a>
+<a href="#cl-492"> 492</a>
+<a href="#cl-493"> 493</a>
+<a href="#cl-494"> 494</a>
+<a href="#cl-495"> 495</a>
+<a href="#cl-496"> 496</a>
+<a href="#cl-497"> 497</a>
+<a href="#cl-498"> 498</a>
+<a href="#cl-499"> 499</a>
+<a href="#cl-500"> 500</a>
+<a href="#cl-501"> 501</a>
+<a href="#cl-502"> 502</a>
+<a href="#cl-503"> 503</a>
+<a href="#cl-504"> 504</a>
+<a href="#cl-505"> 505</a>
+<a href="#cl-506"> 506</a>
+<a href="#cl-507"> 507</a>
+<a href="#cl-508"> 508</a>
+<a href="#cl-509"> 509</a>
+<a href="#cl-510"> 510</a>
+<a href="#cl-511"> 511</a>
+<a href="#cl-512"> 512</a>
+<a href="#cl-513"> 513</a>
+<a href="#cl-514"> 514</a>
+<a href="#cl-515"> 515</a>
+<a href="#cl-516"> 516</a>
+<a href="#cl-517"> 517</a>
+<a href="#cl-518"> 518</a>
+<a href="#cl-519"> 519</a>
+<a href="#cl-520"> 520</a>
+<a href="#cl-521"> 521</a>
+<a href="#cl-522"> 522</a>
+<a href="#cl-523"> 523</a>
+<a href="#cl-524"> 524</a>
+<a href="#cl-525"> 525</a>
+<a href="#cl-526"> 526</a>
+<a href="#cl-527"> 527</a>
+<a href="#cl-528"> 528</a>
+<a href="#cl-529"> 529</a>
+<a href="#cl-530"> 530</a>
+<a href="#cl-531"> 531</a>
+<a href="#cl-532"> 532</a>
+<a href="#cl-533"> 533</a>
+<a href="#cl-534"> 534</a>
+<a href="#cl-535"> 535</a>
+<a href="#cl-536"> 536</a>
+<a href="#cl-537"> 537</a>
+<a href="#cl-538"> 538</a>
+<a href="#cl-539"> 539</a>
+<a href="#cl-540"> 540</a>
+<a href="#cl-541"> 541</a>
+<a href="#cl-542"> 542</a>
+<a href="#cl-543"> 543</a>
+<a href="#cl-544"> 544</a>
+<a href="#cl-545"> 545</a>
+<a href="#cl-546"> 546</a>
+<a href="#cl-547"> 547</a>
+<a href="#cl-548"> 548</a>
+<a href="#cl-549"> 549</a>
+<a href="#cl-550"> 550</a>
+<a href="#cl-551"> 551</a>
+<a href="#cl-552"> 552</a>
+<a href="#cl-553"> 553</a>
+<a href="#cl-554"> 554</a>
+<a href="#cl-555"> 555</a>
+<a href="#cl-556"> 556</a>
+<a href="#cl-557"> 557</a>
+<a href="#cl-558"> 558</a>
+<a href="#cl-559"> 559</a>
+<a href="#cl-560"> 560</a>
+<a href="#cl-561"> 561</a>
+<a href="#cl-562"> 562</a>
+<a href="#cl-563"> 563</a>
+<a href="#cl-564"> 564</a>
+<a href="#cl-565"> 565</a>
+<a href="#cl-566"> 566</a>
+<a href="#cl-567"> 567</a>
+<a href="#cl-568"> 568</a>
+<a href="#cl-569"> 569</a>
+<a href="#cl-570"> 570</a>
+<a href="#cl-571"> 571</a>
+<a href="#cl-572"> 572</a>
+<a href="#cl-573"> 573</a>
+<a href="#cl-574"> 574</a>
+<a href="#cl-575"> 575</a>
+<a href="#cl-576"> 576</a>
+<a href="#cl-577"> 577</a>
+<a href="#cl-578"> 578</a>
+<a href="#cl-579"> 579</a>
+<a href="#cl-580"> 580</a>
+<a href="#cl-581"> 581</a>
+<a href="#cl-582"> 582</a>
+<a href="#cl-583"> 583</a>
+<a href="#cl-584"> 584</a>
+<a href="#cl-585"> 585</a>
+<a href="#cl-586"> 586</a>
+<a href="#cl-587"> 587</a>
+<a href="#cl-588"> 588</a>
+<a href="#cl-589"> 589</a>
+<a href="#cl-590"> 590</a>
+<a href="#cl-591"> 591</a>
+<a href="#cl-592"> 592</a>
+<a href="#cl-593"> 593</a>
+<a href="#cl-594"> 594</a>
+<a href="#cl-595"> 595</a>
+<a href="#cl-596"> 596</a>
+<a href="#cl-597"> 597</a>
+<a href="#cl-598"> 598</a>
+<a href="#cl-599"> 599</a>
+<a href="#cl-600"> 600</a>
+<a href="#cl-601"> 601</a>
+<a href="#cl-602"> 602</a>
+<a href="#cl-603"> 603</a>
+<a href="#cl-604"> 604</a>
+<a href="#cl-605"> 605</a>
+<a href="#cl-606"> 606</a>
+<a href="#cl-607"> 607</a>
+<a href="#cl-608"> 608</a>
+<a href="#cl-609"> 609</a>
+<a href="#cl-610"> 610</a>
+<a href="#cl-611"> 611</a>
+<a href="#cl-612"> 612</a>
+<a href="#cl-613"> 613</a>
+<a href="#cl-614"> 614</a>
+<a href="#cl-615"> 615</a>
+<a href="#cl-616"> 616</a>
+<a href="#cl-617"> 617</a>
+<a href="#cl-618"> 618</a>
+<a href="#cl-619"> 619</a>
+<a href="#cl-620"> 620</a>
+<a href="#cl-621"> 621</a>
+<a href="#cl-622"> 622</a>
+<a href="#cl-623"> 623</a>
+<a href="#cl-624"> 624</a>
+<a href="#cl-625"> 625</a>
+<a href="#cl-626"> 626</a>
+<a href="#cl-627"> 627</a>
+<a href="#cl-628"> 628</a>
+<a href="#cl-629"> 629</a>
+<a href="#cl-630"> 630</a>
+<a href="#cl-631"> 631</a>
+<a href="#cl-632"> 632</a>
+<a href="#cl-633"> 633</a>
+<a href="#cl-634"> 634</a>
+<a href="#cl-635"> 635</a>
+<a href="#cl-636"> 636</a>
+<a href="#cl-637"> 637</a>
+<a href="#cl-638"> 638</a>
+<a href="#cl-639"> 639</a>
+<a href="#cl-640"> 640</a>
+<a href="#cl-641"> 641</a>
+<a href="#cl-642"> 642</a>
+<a href="#cl-643"> 643</a>
+<a href="#cl-644"> 644</a>
+<a href="#cl-645"> 645</a>
+<a href="#cl-646"> 646</a>
+<a href="#cl-647"> 647</a>
+<a href="#cl-648"> 648</a>
+<a href="#cl-649"> 649</a>
+<a href="#cl-650"> 650</a>
+<a href="#cl-651"> 651</a>
+<a href="#cl-652"> 652</a>
+<a href="#cl-653"> 653</a>
+<a href="#cl-654"> 654</a>
+<a href="#cl-655"> 655</a>
+<a href="#cl-656"> 656</a>
+<a href="#cl-657"> 657</a>
+<a href="#cl-658"> 658</a>
+<a href="#cl-659"> 659</a>
+<a href="#cl-660"> 660</a>
+<a href="#cl-661"> 661</a>
+<a href="#cl-662"> 662</a>
+<a href="#cl-663"> 663</a>
+<a href="#cl-664"> 664</a>
+<a href="#cl-665"> 665</a>
+<a href="#cl-666"> 666</a>
+<a href="#cl-667"> 667</a>
+<a href="#cl-668"> 668</a>
+<a href="#cl-669"> 669</a>
+<a href="#cl-670"> 670</a>
+<a href="#cl-671"> 671</a>
+<a href="#cl-672"> 672</a>
+<a href="#cl-673"> 673</a>
+<a href="#cl-674"> 674</a>
+<a href="#cl-675"> 675</a>
+<a href="#cl-676"> 676</a>
+<a href="#cl-677"> 677</a>
+<a href="#cl-678"> 678</a>
+<a href="#cl-679"> 679</a>
+<a href="#cl-680"> 680</a>
+<a href="#cl-681"> 681</a>
+<a href="#cl-682"> 682</a>
+<a href="#cl-683"> 683</a>
+<a href="#cl-684"> 684</a>
+<a href="#cl-685"> 685</a>
+<a href="#cl-686"> 686</a>
+<a href="#cl-687"> 687</a>
+<a href="#cl-688"> 688</a>
+<a href="#cl-689"> 689</a>
+<a href="#cl-690"> 690</a>
+<a href="#cl-691"> 691</a>
+<a href="#cl-692"> 692</a>
+<a href="#cl-693"> 693</a>
+<a href="#cl-694"> 694</a>
+<a href="#cl-695"> 695</a>
+<a href="#cl-696"> 696</a>
+<a href="#cl-697"> 697</a>
+<a href="#cl-698"> 698</a>
+<a href="#cl-699"> 699</a>
+<a href="#cl-700"> 700</a>
+<a href="#cl-701"> 701</a>
+<a href="#cl-702"> 702</a>
+<a href="#cl-703"> 703</a>
+<a href="#cl-704"> 704</a>
+<a href="#cl-705"> 705</a>
+<a href="#cl-706"> 706</a>
+<a href="#cl-707"> 707</a>
+<a href="#cl-708"> 708</a>
+<a href="#cl-709"> 709</a>
+<a href="#cl-710"> 710</a>
+<a href="#cl-711"> 711</a>
+<a href="#cl-712"> 712</a>
+<a href="#cl-713"> 713</a>
+<a href="#cl-714"> 714</a>
+<a href="#cl-715"> 715</a>
+<a href="#cl-716"> 716</a>
+<a href="#cl-717"> 717</a>
+<a href="#cl-718"> 718</a>
+<a href="#cl-719"> 719</a>
+<a href="#cl-720"> 720</a>
+<a href="#cl-721"> 721</a>
+<a href="#cl-722"> 722</a>
+<a href="#cl-723"> 723</a>
+<a href="#cl-724"> 724</a>
+<a href="#cl-725"> 725</a>
+<a href="#cl-726"> 726</a>
+<a href="#cl-727"> 727</a>
+<a href="#cl-728"> 728</a>
+<a href="#cl-729"> 729</a>
+<a href="#cl-730"> 730</a>
+<a href="#cl-731"> 731</a>
+<a href="#cl-732"> 732</a>
+<a href="#cl-733"> 733</a>
+<a href="#cl-734"> 734</a>
+<a href="#cl-735"> 735</a>
+<a href="#cl-736"> 736</a>
+<a href="#cl-737"> 737</a>
+<a href="#cl-738"> 738</a>
+<a href="#cl-739"> 739</a>
+<a href="#cl-740"> 740</a>
+<a href="#cl-741"> 741</a>
+<a href="#cl-742"> 742</a>
+<a href="#cl-743"> 743</a>
+<a href="#cl-744"> 744</a>
+<a href="#cl-745"> 745</a>
+<a href="#cl-746"> 746</a>
+<a href="#cl-747"> 747</a>
+<a href="#cl-748"> 748</a>
+<a href="#cl-749"> 749</a>
+<a href="#cl-750"> 750</a>
+<a href="#cl-751"> 751</a>
+<a href="#cl-752"> 752</a>
+<a href="#cl-753"> 753</a>
+<a href="#cl-754"> 754</a>
+<a href="#cl-755"> 755</a>
+<a href="#cl-756"> 756</a>
+<a href="#cl-757"> 757</a>
+<a href="#cl-758"> 758</a>
+<a href="#cl-759"> 759</a>
+<a href="#cl-760"> 760</a>
+<a href="#cl-761"> 761</a>
+<a href="#cl-762"> 762</a>
+<a href="#cl-763"> 763</a>
+<a href="#cl-764"> 764</a>
+<a href="#cl-765"> 765</a>
+<a href="#cl-766"> 766</a>
+<a href="#cl-767"> 767</a>
+<a href="#cl-768"> 768</a>
+<a href="#cl-769"> 769</a>
+<a href="#cl-770"> 770</a>
+<a href="#cl-771"> 771</a>
+<a href="#cl-772"> 772</a>
+<a href="#cl-773"> 773</a>
+<a href="#cl-774"> 774</a>
+<a href="#cl-775"> 775</a>
+<a href="#cl-776"> 776</a>
+<a href="#cl-777"> 777</a>
+<a href="#cl-778"> 778</a>
+<a href="#cl-779"> 779</a>
+<a href="#cl-780"> 780</a>
+<a href="#cl-781"> 781</a>
+<a href="#cl-782"> 782</a>
+<a href="#cl-783"> 783</a>
+<a href="#cl-784"> 784</a>
+<a href="#cl-785"> 785</a>
+<a href="#cl-786"> 786</a>
+<a href="#cl-787"> 787</a>
+<a href="#cl-788"> 788</a>
+<a href="#cl-789"> 789</a>
+<a href="#cl-790"> 790</a>
+<a href="#cl-791"> 791</a>
+<a href="#cl-792"> 792</a>
+<a href="#cl-793"> 793</a>
+<a href="#cl-794"> 794</a>
+<a href="#cl-795"> 795</a>
+<a href="#cl-796"> 796</a>
+<a href="#cl-797"> 797</a>
+<a href="#cl-798"> 798</a>
+<a href="#cl-799"> 799</a>
+<a href="#cl-800"> 800</a>
+<a href="#cl-801"> 801</a>
+<a href="#cl-802"> 802</a>
+<a href="#cl-803"> 803</a>
+<a href="#cl-804"> 804</a>
+<a href="#cl-805"> 805</a>
+<a href="#cl-806"> 806</a>
+<a href="#cl-807"> 807</a>
+<a href="#cl-808"> 808</a>
+<a href="#cl-809"> 809</a>
+<a href="#cl-810"> 810</a>
+<a href="#cl-811"> 811</a>
+<a href="#cl-812"> 812</a>
+<a href="#cl-813"> 813</a>
+<a href="#cl-814"> 814</a>
+<a href="#cl-815"> 815</a>
+<a href="#cl-816"> 816</a>
+<a href="#cl-817"> 817</a>
+<a href="#cl-818"> 818</a>
+<a href="#cl-819"> 819</a>
+<a href="#cl-820"> 820</a>
+<a href="#cl-821"> 821</a>
+<a href="#cl-822"> 822</a>
+<a href="#cl-823"> 823</a>
+<a href="#cl-824"> 824</a>
+<a href="#cl-825"> 825</a>
+<a href="#cl-826"> 826</a>
+<a href="#cl-827"> 827</a>
+<a href="#cl-828"> 828</a>
+<a href="#cl-829"> 829</a>
+<a href="#cl-830"> 830</a>
+<a href="#cl-831"> 831</a>
+<a href="#cl-832"> 832</a>
+<a href="#cl-833"> 833</a>
+<a href="#cl-834"> 834</a>
+<a href="#cl-835"> 835</a>
+<a href="#cl-836"> 836</a>
+<a href="#cl-837"> 837</a>
+<a href="#cl-838"> 838</a>
+<a href="#cl-839"> 839</a>
+<a href="#cl-840"> 840</a>
+<a href="#cl-841"> 841</a>
+<a href="#cl-842"> 842</a>
+<a href="#cl-843"> 843</a>
+<a href="#cl-844"> 844</a>
+<a href="#cl-845"> 845</a>
+<a href="#cl-846"> 846</a>
+<a href="#cl-847"> 847</a>
+<a href="#cl-848"> 848</a>
+<a href="#cl-849"> 849</a>
+<a href="#cl-850"> 850</a>
+<a href="#cl-851"> 851</a>
+<a href="#cl-852"> 852</a>
+<a href="#cl-853"> 853</a>
+<a href="#cl-854"> 854</a>
+<a href="#cl-855"> 855</a>
+<a href="#cl-856"> 856</a>
+<a href="#cl-857"> 857</a>
+<a href="#cl-858"> 858</a>
+<a href="#cl-859"> 859</a>
+<a href="#cl-860"> 860</a>
+<a href="#cl-861"> 861</a>
+<a href="#cl-862"> 862</a>
+<a href="#cl-863"> 863</a>
+<a href="#cl-864"> 864</a>
+<a href="#cl-865"> 865</a>
+<a href="#cl-866"> 866</a>
+<a href="#cl-867"> 867</a>
+<a href="#cl-868"> 868</a>
+<a href="#cl-869"> 869</a>
+<a href="#cl-870"> 870</a>
+<a href="#cl-871"> 871</a>
+<a href="#cl-872"> 872</a>
+<a href="#cl-873"> 873</a>
+<a href="#cl-874"> 874</a>
+<a href="#cl-875"> 875</a>
+<a href="#cl-876"> 876</a>
+<a href="#cl-877"> 877</a>
+<a href="#cl-878"> 878</a>
+<a href="#cl-879"> 879</a>
+<a href="#cl-880"> 880</a>
+<a href="#cl-881"> 881</a>
+<a href="#cl-882"> 882</a>
+<a href="#cl-883"> 883</a>
+<a href="#cl-884"> 884</a>
+<a href="#cl-885"> 885</a>
+<a href="#cl-886"> 886</a>
+<a href="#cl-887"> 887</a>
+<a href="#cl-888"> 888</a>
+<a href="#cl-889"> 889</a>
+<a href="#cl-890"> 890</a>
+<a href="#cl-891"> 891</a>
+<a href="#cl-892"> 892</a>
+<a href="#cl-893"> 893</a>
+<a href="#cl-894"> 894</a>
+<a href="#cl-895"> 895</a>
+<a href="#cl-896"> 896</a>
+<a href="#cl-897"> 897</a>
+<a href="#cl-898"> 898</a>
+<a href="#cl-899"> 899</a>
+<a href="#cl-900"> 900</a>
+<a href="#cl-901"> 901</a>
+<a href="#cl-902"> 902</a>
+<a href="#cl-903"> 903</a>
+<a href="#cl-904"> 904</a>
+<a href="#cl-905"> 905</a>
+<a href="#cl-906"> 906</a>
+<a href="#cl-907"> 907</a>
+<a href="#cl-908"> 908</a>
+<a href="#cl-909"> 909</a>
+<a href="#cl-910"> 910</a>
+<a href="#cl-911"> 911</a>
+<a href="#cl-912"> 912</a>
+<a href="#cl-913"> 913</a>
+<a href="#cl-914"> 914</a>
+<a href="#cl-915"> 915</a>
+<a href="#cl-916"> 916</a>
+<a href="#cl-917"> 917</a>
+<a href="#cl-918"> 918</a>
+<a href="#cl-919"> 919</a>
+<a href="#cl-920"> 920</a>
+<a href="#cl-921"> 921</a>
+<a href="#cl-922"> 922</a>
+<a href="#cl-923"> 923</a>
+<a href="#cl-924"> 924</a>
+<a href="#cl-925"> 925</a>
+<a href="#cl-926"> 926</a>
+<a href="#cl-927"> 927</a>
+<a href="#cl-928"> 928</a>
+<a href="#cl-929"> 929</a>
+<a href="#cl-930"> 930</a>
+<a href="#cl-931"> 931</a>
+<a href="#cl-932"> 932</a>
+<a href="#cl-933"> 933</a>
+<a href="#cl-934"> 934</a>
+<a href="#cl-935"> 935</a>
+<a href="#cl-936"> 936</a>
+<a href="#cl-937"> 937</a>
+<a href="#cl-938"> 938</a>
+<a href="#cl-939"> 939</a>
+<a href="#cl-940"> 940</a>
+<a href="#cl-941"> 941</a>
+<a href="#cl-942"> 942</a>
+<a href="#cl-943"> 943</a>
+<a href="#cl-944"> 944</a>
+<a href="#cl-945"> 945</a>
+<a href="#cl-946"> 946</a>
+<a href="#cl-947"> 947</a>
+<a href="#cl-948"> 948</a>
+<a href="#cl-949"> 949</a>
+<a href="#cl-950"> 950</a>
+<a href="#cl-951"> 951</a>
+<a href="#cl-952"> 952</a>
+<a href="#cl-953"> 953</a>
+<a href="#cl-954"> 954</a>
+<a href="#cl-955"> 955</a>
+<a href="#cl-956"> 956</a>
+<a href="#cl-957"> 957</a>
+<a href="#cl-958"> 958</a>
+<a href="#cl-959"> 959</a>
+<a href="#cl-960"> 960</a>
+<a href="#cl-961"> 961</a>
+<a href="#cl-962"> 962</a>
+<a href="#cl-963"> 963</a>
+<a href="#cl-964"> 964</a>
+<a href="#cl-965"> 965</a>
+<a href="#cl-966"> 966</a>
+<a href="#cl-967"> 967</a>
+<a href="#cl-968"> 968</a>
+<a href="#cl-969"> 969</a>
+<a href="#cl-970"> 970</a>
+<a href="#cl-971"> 971</a>
+<a href="#cl-972"> 972</a>
+<a href="#cl-973"> 973</a>
+<a href="#cl-974"> 974</a>
+<a href="#cl-975"> 975</a>
+<a href="#cl-976"> 976</a>
+<a href="#cl-977"> 977</a>
+<a href="#cl-978"> 978</a>
+<a href="#cl-979"> 979</a>
+<a href="#cl-980"> 980</a>
+<a href="#cl-981"> 981</a>
+<a href="#cl-982"> 982</a>
+<a href="#cl-983"> 983</a>
+<a href="#cl-984"> 984</a>
+<a href="#cl-985"> 985</a>
+<a href="#cl-986"> 986</a>
+<a href="#cl-987"> 987</a>
+<a href="#cl-988"> 988</a>
+<a href="#cl-989"> 989</a>
+<a href="#cl-990"> 990</a>
+<a href="#cl-991"> 991</a>
+<a href="#cl-992"> 992</a>
+<a href="#cl-993"> 993</a>
+<a href="#cl-994"> 994</a>
+<a href="#cl-995"> 995</a>
+<a href="#cl-996"> 996</a>
+<a href="#cl-997"> 997</a>
+<a href="#cl-998"> 998</a>
+<a href="#cl-999"> 999</a>
+<a href="#cl-1000">1000</a>
+<a href="#cl-1001">1001</a>
+<a href="#cl-1002">1002</a>
+<a href="#cl-1003">1003</a>
+<a href="#cl-1004">1004</a>
+<a href="#cl-1005">1005</a>
+<a href="#cl-1006">1006</a>
+<a href="#cl-1007">1007</a>
+<a href="#cl-1008">1008</a>
+<a href="#cl-1009">1009</a>
+<a href="#cl-1010">1010</a>
+<a href="#cl-1011">1011</a>
+<a href="#cl-1012">1012</a>
+<a href="#cl-1013">1013</a>
+<a href="#cl-1014">1014</a>
+<a href="#cl-1015">1015</a>
+<a href="#cl-1016">1016</a>
+<a href="#cl-1017">1017</a>
+<a href="#cl-1018">1018</a>
+<a href="#cl-1019">1019</a>
+<a href="#cl-1020">1020</a>
+<a href="#cl-1021">1021</a>
+<a href="#cl-1022">1022</a>
+<a href="#cl-1023">1023</a>
+<a href="#cl-1024">1024</a>
+<a href="#cl-1025">1025</a>
+<a href="#cl-1026">1026</a>
+<a href="#cl-1027">1027</a>
+<a href="#cl-1028">1028</a>
+<a href="#cl-1029">1029</a>
+<a href="#cl-1030">1030</a>
+<a href="#cl-1031">1031</a>
+<a href="#cl-1032">1032</a>
+<a href="#cl-1033">1033</a>
+<a href="#cl-1034">1034</a>
+<a href="#cl-1035">1035</a>
+<a href="#cl-1036">1036</a>
+<a href="#cl-1037">1037</a>
+<a href="#cl-1038">1038</a>
+<a href="#cl-1039">1039</a>
+<a href="#cl-1040">1040</a>
+<a href="#cl-1041">1041</a>
+<a href="#cl-1042">1042</a>
+<a href="#cl-1043">1043</a>
+<a href="#cl-1044">1044</a>
+<a href="#cl-1045">1045</a>
+<a href="#cl-1046">1046</a>
+<a href="#cl-1047">1047</a>
+<a href="#cl-1048">1048</a>
+<a href="#cl-1049">1049</a>
+<a href="#cl-1050">1050</a>
+<a href="#cl-1051">1051</a>
+<a href="#cl-1052">1052</a>
+<a href="#cl-1053">1053</a>
+<a href="#cl-1054">1054</a>
+<a href="#cl-1055">1055</a>
+<a href="#cl-1056">1056</a>
+<a href="#cl-1057">1057</a>
+<a href="#cl-1058">1058</a>
+<a href="#cl-1059">1059</a>
+<a href="#cl-1060">1060</a>
+<a href="#cl-1061">1061</a>
+<a href="#cl-1062">1062</a>
+<a href="#cl-1063">1063</a>
+<a href="#cl-1064">1064</a>
+<a href="#cl-1065">1065</a>
+<a href="#cl-1066">1066</a>
+<a href="#cl-1067">1067</a>
+<a href="#cl-1068">1068</a>
+<a href="#cl-1069">1069</a>
+<a href="#cl-1070">1070</a>
+<a href="#cl-1071">1071</a>
+<a href="#cl-1072">1072</a>
+<a href="#cl-1073">1073</a>
+<a href="#cl-1074">1074</a>
+<a href="#cl-1075">1075</a>
+<a href="#cl-1076">1076</a>
+<a href="#cl-1077">1077</a>
+<a href="#cl-1078">1078</a>
+<a href="#cl-1079">1079</a>
+<a href="#cl-1080">1080</a>
+<a href="#cl-1081">1081</a>
+<a href="#cl-1082">1082</a>
+<a href="#cl-1083">1083</a>
+<a href="#cl-1084">1084</a>
+<a href="#cl-1085">1085</a>
+<a href="#cl-1086">1086</a>
+<a href="#cl-1087">1087</a>
+<a href="#cl-1088">1088</a>
+<a href="#cl-1089">1089</a>
+<a href="#cl-1090">1090</a>
+<a href="#cl-1091">1091</a>
+<a href="#cl-1092">1092</a>
+<a href="#cl-1093">1093</a>
+<a href="#cl-1094">1094</a>
+<a href="#cl-1095">1095</a>
+<a href="#cl-1096">1096</a>
+<a href="#cl-1097">1097</a>
+<a href="#cl-1098">1098</a>
+<a href="#cl-1099">1099</a>
+<a href="#cl-1100">1100</a>
+<a href="#cl-1101">1101</a>
+<a href="#cl-1102">1102</a>
+<a href="#cl-1103">1103</a>
+<a href="#cl-1104">1104</a>
+<a href="#cl-1105">1105</a>
+<a href="#cl-1106">1106</a>
+<a href="#cl-1107">1107</a>
+<a href="#cl-1108">1108</a>
+<a href="#cl-1109">1109</a>
+<a href="#cl-1110">1110</a>
+<a href="#cl-1111">1111</a>
+<a href="#cl-1112">1112</a>
+<a href="#cl-1113">1113</a>
+<a href="#cl-1114">1114</a>
+<a href="#cl-1115">1115</a>
+<a href="#cl-1116">1116</a>
+<a href="#cl-1117">1117</a>
+<a href="#cl-1118">1118</a>
+<a href="#cl-1119">1119</a>
+<a href="#cl-1120">1120</a>
+<a href="#cl-1121">1121</a>
+<a href="#cl-1122">1122</a>
+<a href="#cl-1123">1123</a>
+<a href="#cl-1124">1124</a>
+<a href="#cl-1125">1125</a>
+<a href="#cl-1126">1126</a>
+<a href="#cl-1127">1127</a>
+<a href="#cl-1128">1128</a>
+<a href="#cl-1129">1129</a>
+<a href="#cl-1130">1130</a>
+<a href="#cl-1131">1131</a>
+<a href="#cl-1132">1132</a>
+<a href="#cl-1133">1133</a>
+<a href="#cl-1134">1134</a>
+<a href="#cl-1135">1135</a>
+<a href="#cl-1136">1136</a>
+<a href="#cl-1137">1137</a>
+<a href="#cl-1138">1138</a>
+<a href="#cl-1139">1139</a>
+<a href="#cl-1140">1140</a>
+<a href="#cl-1141">1141</a>
+<a href="#cl-1142">1142</a>
+<a href="#cl-1143">1143</a>
+<a href="#cl-1144">1144</a>
+<a href="#cl-1145">1145</a>
+<a href="#cl-1146">1146</a>
+<a href="#cl-1147">1147</a>
+<a href="#cl-1148">1148</a>
+<a href="#cl-1149">1149</a>
+<a href="#cl-1150">1150</a>
+<a href="#cl-1151">1151</a>
+<a href="#cl-1152">1152</a>
+<a href="#cl-1153">1153</a>
+<a href="#cl-1154">1154</a>
+<a href="#cl-1155">1155</a>
+<a href="#cl-1156">1156</a>
+<a href="#cl-1157">1157</a>
+<a href="#cl-1158">1158</a>
+<a href="#cl-1159">1159</a>
+<a href="#cl-1160">1160</a>
+<a href="#cl-1161">1161</a>
+<a href="#cl-1162">1162</a>
+<a href="#cl-1163">1163</a>
+<a href="#cl-1164">1164</a>
+<a href="#cl-1165">1165</a>
+<a href="#cl-1166">1166</a>
+<a href="#cl-1167">1167</a>
+<a href="#cl-1168">1168</a>
+<a href="#cl-1169">1169</a>
+<a href="#cl-1170">1170</a>
+<a href="#cl-1171">1171</a>
+<a href="#cl-1172">1172</a>
+<a href="#cl-1173">1173</a>
+<a href="#cl-1174">1174</a>
+<a href="#cl-1175">1175</a>
+<a href="#cl-1176">1176</a>
+<a href="#cl-1177">1177</a>
+<a href="#cl-1178">1178</a>
+<a href="#cl-1179">1179</a>
+<a href="#cl-1180">1180</a>
+<a href="#cl-1181">1181</a>
+<a href="#cl-1182">1182</a>
+<a href="#cl-1183">1183</a>
+<a href="#cl-1184">1184</a>
+<a href="#cl-1185">1185</a>
+<a href="#cl-1186">1186</a>
+<a href="#cl-1187">1187</a>
+<a href="#cl-1188">1188</a>
+<a href="#cl-1189">1189</a>
+<a href="#cl-1190">1190</a>
+<a href="#cl-1191">1191</a>
+<a href="#cl-1192">1192</a>
+<a href="#cl-1193">1193</a>
+<a href="#cl-1194">1194</a>
+<a href="#cl-1195">1195</a>
+<a href="#cl-1196">1196</a>
+<a href="#cl-1197">1197</a>
+<a href="#cl-1198">1198</a>
+<a href="#cl-1199">1199</a>
+<a href="#cl-1200">1200</a>
+<a href="#cl-1201">1201</a>
+<a href="#cl-1202">1202</a>
+<a href="#cl-1203">1203</a>
+<a href="#cl-1204">1204</a>
+<a href="#cl-1205">1205</a>
+<a href="#cl-1206">1206</a>
+<a href="#cl-1207">1207</a>
+<a href="#cl-1208">1208</a>
+<a href="#cl-1209">1209</a>
+<a href="#cl-1210">1210</a>
+<a href="#cl-1211">1211</a>
+<a href="#cl-1212">1212</a>
+<a href="#cl-1213">1213</a>
+<a href="#cl-1214">1214</a>
+<a href="#cl-1215">1215</a>
+<a href="#cl-1216">1216</a>
+<a href="#cl-1217">1217</a>
+<a href="#cl-1218">1218</a>
+<a href="#cl-1219">1219</a>
+<a href="#cl-1220">1220</a>
+<a href="#cl-1221">1221</a>
+<a href="#cl-1222">1222</a>
+<a href="#cl-1223">1223</a>
+<a href="#cl-1224">1224</a>
+<a href="#cl-1225">1225</a>
+<a href="#cl-1226">1226</a>
+<a href="#cl-1227">1227</a>
+<a href="#cl-1228">1228</a>
+<a href="#cl-1229">1229</a>
+<a href="#cl-1230">1230</a>
+<a href="#cl-1231">1231</a>
+<a href="#cl-1232">1232</a>
+<a href="#cl-1233">1233</a>
+<a href="#cl-1234">1234</a>
+<a href="#cl-1235">1235</a>
+<a href="#cl-1236">1236</a>
+<a href="#cl-1237">1237</a>
+<a href="#cl-1238">1238</a>
+<a href="#cl-1239">1239</a>
+<a href="#cl-1240">1240</a>
+<a href="#cl-1241">1241</a>
+<a href="#cl-1242">1242</a>
+<a href="#cl-1243">1243</a>
+<a href="#cl-1244">1244</a>
+<a href="#cl-1245">1245</a>
+<a href="#cl-1246">1246</a>
+<a href="#cl-1247">1247</a>
+<a href="#cl-1248">1248</a>
+<a href="#cl-1249">1249</a>
+<a href="#cl-1250">1250</a>
+<a href="#cl-1251">1251</a>
+<a href="#cl-1252">1252</a>
+<a href="#cl-1253">1253</a>
+<a href="#cl-1254">1254</a>
+<a href="#cl-1255">1255</a>
+<a href="#cl-1256">1256</a>
+<a href="#cl-1257">1257</a>
+<a href="#cl-1258">1258</a>
+<a href="#cl-1259">1259</a>
+<a href="#cl-1260">1260</a>
+<a href="#cl-1261">1261</a>
+<a href="#cl-1262">1262</a>
+<a href="#cl-1263">1263</a>
+<a href="#cl-1264">1264</a>
+<a href="#cl-1265">1265</a>
+<a href="#cl-1266">1266</a>
+<a href="#cl-1267">1267</a>
+<a href="#cl-1268">1268</a>
+<a href="#cl-1269">1269</a>
+<a href="#cl-1270">1270</a>
+<a href="#cl-1271">1271</a>
+<a href="#cl-1272">1272</a>
+<a href="#cl-1273">1273</a>
+<a href="#cl-1274">1274</a>
+<a href="#cl-1275">1275</a>
+<a href="#cl-1276">1276</a>
+<a href="#cl-1277">1277</a>
+<a href="#cl-1278">1278</a>
+<a href="#cl-1279">1279</a>
+<a href="#cl-1280">1280</a>
+<a href="#cl-1281">1281</a>
+<a href="#cl-1282">1282</a>
+<a href="#cl-1283">1283</a>
+<a href="#cl-1284">1284</a>
+<a href="#cl-1285">1285</a>
+<a href="#cl-1286">1286</a>
+<a href="#cl-1287">1287</a>
+<a href="#cl-1288">1288</a>
+<a href="#cl-1289">1289</a>
+<a href="#cl-1290">1290</a>
+<a href="#cl-1291">1291</a>
+<a href="#cl-1292">1292</a>
+<a href="#cl-1293">1293</a>
+<a href="#cl-1294">1294</a>
+<a href="#cl-1295">1295</a>
+<a href="#cl-1296">1296</a>
+<a href="#cl-1297">1297</a>
+<a href="#cl-1298">1298</a>
+<a href="#cl-1299">1299</a>
+<a href="#cl-1300">1300</a>
+<a href="#cl-1301">1301</a>
+<a href="#cl-1302">1302</a>
+<a href="#cl-1303">1303</a>
+<a href="#cl-1304">1304</a>
+<a href="#cl-1305">1305</a>
+<a href="#cl-1306">1306</a>
+<a href="#cl-1307">1307</a>
+<a href="#cl-1308">1308</a>
+<a href="#cl-1309">1309</a>
+<a href="#cl-1310">1310</a>
+<a href="#cl-1311">1311</a>
+<a href="#cl-1312">1312</a>
+<a href="#cl-1313">1313</a>
+<a href="#cl-1314">1314</a>
+<a href="#cl-1315">1315</a>
+<a href="#cl-1316">1316</a>
+<a href="#cl-1317">1317</a>
+<a href="#cl-1318">1318</a>
+<a href="#cl-1319">1319</a>
+<a href="#cl-1320">1320</a>
+<a href="#cl-1321">1321</a>
+<a href="#cl-1322">1322</a>
+<a href="#cl-1323">1323</a>
+<a href="#cl-1324">1324</a>
+<a href="#cl-1325">1325</a>
+<a href="#cl-1326">1326</a>
+<a href="#cl-1327">1327</a>
+<a href="#cl-1328">1328</a>
+<a href="#cl-1329">1329</a>
+<a href="#cl-1330">1330</a>
+<a href="#cl-1331">1331</a>
+<a href="#cl-1332">1332</a>
+<a href="#cl-1333">1333</a>
+<a href="#cl-1334">1334</a>
+<a href="#cl-1335">1335</a>
+<a href="#cl-1336">1336</a>
+<a href="#cl-1337">1337</a>
+<a href="#cl-1338">1338</a>
+<a href="#cl-1339">1339</a>
+<a href="#cl-1340">1340</a>
+<a href="#cl-1341">1341</a>
+<a href="#cl-1342">1342</a>
+<a href="#cl-1343">1343</a>
+<a href="#cl-1344">1344</a>
+<a href="#cl-1345">1345</a>
+<a href="#cl-1346">1346</a>
+<a href="#cl-1347">1347</a>
+<a href="#cl-1348">1348</a>
+<a href="#cl-1349">1349</a>
+<a href="#cl-1350">1350</a>
+<a href="#cl-1351">1351</a>
+<a href="#cl-1352">1352</a>
+<a href="#cl-1353">1353</a>
+<a href="#cl-1354">1354</a>
+<a href="#cl-1355">1355</a>
+<a href="#cl-1356">1356</a>
+<a href="#cl-1357">1357</a>
+<a href="#cl-1358">1358</a>
+<a href="#cl-1359">1359</a>
+<a href="#cl-1360">1360</a>
+<a href="#cl-1361">1361</a>
+<a href="#cl-1362">1362</a>
+<a href="#cl-1363">1363</a>
+<a href="#cl-1364">1364</a>
+<a href="#cl-1365">1365</a>
+<a href="#cl-1366">1366</a>
+<a href="#cl-1367">1367</a>
+<a href="#cl-1368">1368</a>
+<a href="#cl-1369">1369</a>
+<a href="#cl-1370">1370</a>
+<a href="#cl-1371">1371</a>
+<a href="#cl-1372">1372</a>
+<a href="#cl-1373">1373</a>
+<a href="#cl-1374">1374</a>
+<a href="#cl-1375">1375</a>
+<a href="#cl-1376">1376</a>
+<a href="#cl-1377">1377</a>
+<a href="#cl-1378">1378</a>
+<a href="#cl-1379">1379</a>
+<a href="#cl-1380">1380</a>
+<a href="#cl-1381">1381</a>
+<a href="#cl-1382">1382</a>
+<a href="#cl-1383">1383</a>
+<a href="#cl-1384">1384</a>
+<a href="#cl-1385">1385</a>
+<a href="#cl-1386">1386</a>
+<a href="#cl-1387">1387</a>
+<a href="#cl-1388">1388</a>
+<a href="#cl-1389">1389</a>
+<a href="#cl-1390">1390</a>
+<a href="#cl-1391">1391</a>
+<a href="#cl-1392">1392</a>
+<a href="#cl-1393">1393</a>
+<a href="#cl-1394">1394</a>
+<a href="#cl-1395">1395</a>
+<a href="#cl-1396">1396</a>
+<a href="#cl-1397">1397</a>
+<a href="#cl-1398">1398</a>
+<a href="#cl-1399">1399</a>
+<a href="#cl-1400">1400</a>
+<a href="#cl-1401">1401</a>
+<a href="#cl-1402">1402</a>
+<a href="#cl-1403">1403</a>
+<a href="#cl-1404">1404</a>
+<a href="#cl-1405">1405</a>
+<a href="#cl-1406">1406</a>
+<a href="#cl-1407">1407</a>
+<a href="#cl-1408">1408</a>
+<a href="#cl-1409">1409</a>
+<a href="#cl-1410">1410</a>
+<a href="#cl-1411">1411</a>
+<a href="#cl-1412">1412</a>
+<a href="#cl-1413">1413</a>
+<a href="#cl-1414">1414</a>
+<a href="#cl-1415">1415</a>
+<a href="#cl-1416">1416</a>
+<a href="#cl-1417">1417</a>
+<a href="#cl-1418">1418</a>
+<a href="#cl-1419">1419</a>
+<a href="#cl-1420">1420</a>
+<a href="#cl-1421">1421</a>
+<a href="#cl-1422">1422</a>
+<a href="#cl-1423">1423</a>
+<a href="#cl-1424">1424</a>
+<a href="#cl-1425">1425</a>
+<a href="#cl-1426">1426</a>
+<a href="#cl-1427">1427</a>
+<a href="#cl-1428">1428</a>
+<a href="#cl-1429">1429</a>
+<a href="#cl-1430">1430</a>
+<a href="#cl-1431">1431</a>
+<a href="#cl-1432">1432</a>
+<a href="#cl-1433">1433</a>
+<a href="#cl-1434">1434</a>
+<a href="#cl-1435">1435</a>
+<a href="#cl-1436">1436</a>
+<a href="#cl-1437">1437</a>
+<a href="#cl-1438">1438</a>
+<a href="#cl-1439">1439</a>
+<a href="#cl-1440">1440</a>
+<a href="#cl-1441">1441</a>
+<a href="#cl-1442">1442</a>
+<a href="#cl-1443">1443</a>
+<a href="#cl-1444">1444</a>
+<a href="#cl-1445">1445</a>
+<a href="#cl-1446">1446</a>
+<a href="#cl-1447">1447</a>
+<a href="#cl-1448">1448</a>
+<a href="#cl-1449">1449</a>
+<a href="#cl-1450">1450</a>
+<a href="#cl-1451">1451</a>
+<a href="#cl-1452">1452</a>
+<a href="#cl-1453">1453</a>
+<a href="#cl-1454">1454</a>
+<a href="#cl-1455">1455</a>
+<a href="#cl-1456">1456</a>
+<a href="#cl-1457">1457</a>
+<a href="#cl-1458">1458</a>
+<a href="#cl-1459">1459</a>
+<a href="#cl-1460">1460</a>
+<a href="#cl-1461">1461</a>
+<a href="#cl-1462">1462</a>
+<a href="#cl-1463">1463</a>
+<a href="#cl-1464">1464</a>
+<a href="#cl-1465">1465</a>
+<a href="#cl-1466">1466</a>
+<a href="#cl-1467">1467</a>
+<a href="#cl-1468">1468</a>
+<a href="#cl-1469">1469</a>
+<a href="#cl-1470">1470</a>
+<a href="#cl-1471">1471</a>
+<a href="#cl-1472">1472</a>
+<a href="#cl-1473">1473</a>
+<a href="#cl-1474">1474</a>
+<a href="#cl-1475">1475</a>
+<a href="#cl-1476">1476</a>
+<a href="#cl-1477">1477</a>
+<a href="#cl-1478">1478</a>
+<a href="#cl-1479">1479</a>
+<a href="#cl-1480">1480</a>
+<a href="#cl-1481">1481</a>
+<a href="#cl-1482">1482</a>
+<a href="#cl-1483">1483</a>
+<a href="#cl-1484">1484</a>
+<a href="#cl-1485">1485</a>
+<a href="#cl-1486">1486</a>
+<a href="#cl-1487">1487</a>
+<a href="#cl-1488">1488</a>
+<a href="#cl-1489">1489</a>
+<a href="#cl-1490">1490</a>
+<a href="#cl-1491">1491</a>
+<a href="#cl-1492">1492</a>
+<a href="#cl-1493">1493</a>
+<a href="#cl-1494">1494</a>
+<a href="#cl-1495">1495</a>
+<a href="#cl-1496">1496</a>
+<a href="#cl-1497">1497</a>
+<a href="#cl-1498">1498</a>
+<a href="#cl-1499">1499</a>
+<a href="#cl-1500">1500</a>
+<a href="#cl-1501">1501</a>
+<a href="#cl-1502">1502</a>
+<a href="#cl-1503">1503</a>
+<a href="#cl-1504">1504</a>
+<a href="#cl-1505">1505</a>
+<a href="#cl-1506">1506</a>
+<a href="#cl-1507">1507</a>
+<a href="#cl-1508">1508</a>
+<a href="#cl-1509">1509</a>
+<a href="#cl-1510">1510</a>
+<a href="#cl-1511">1511</a>
+<a href="#cl-1512">1512</a>
+<a href="#cl-1513">1513</a>
+<a href="#cl-1514">1514</a>
+<a href="#cl-1515">1515</a>
+<a href="#cl-1516">1516</a>
+<a href="#cl-1517">1517</a>
+<a href="#cl-1518">1518</a>
+<a href="#cl-1519">1519</a>
+<a href="#cl-1520">1520</a>
+<a href="#cl-1521">1521</a>
+<a href="#cl-1522">1522</a>
+<a href="#cl-1523">1523</a>
+<a href="#cl-1524">1524</a>
+<a href="#cl-1525">1525</a>
+<a href="#cl-1526">1526</a>
+<a href="#cl-1527">1527</a>
+<a href="#cl-1528">1528</a>
+<a href="#cl-1529">1529</a>
+<a href="#cl-1530">1530</a>
+<a href="#cl-1531">1531</a>
+<a href="#cl-1532">1532</a>
+<a href="#cl-1533">1533</a>
+<a href="#cl-1534">1534</a>
+<a href="#cl-1535">1535</a>
+<a href="#cl-1536">1536</a>
+<a href="#cl-1537">1537</a>
+<a href="#cl-1538">1538</a>
+<a href="#cl-1539">1539</a>
+<a href="#cl-1540">1540</a>
+<a href="#cl-1541">1541</a>
+<a href="#cl-1542">1542</a>
+<a href="#cl-1543">1543</a>
+<a href="#cl-1544">1544</a>
+<a href="#cl-1545">1545</a>
+<a href="#cl-1546">1546</a>
+<a href="#cl-1547">1547</a>
+<a href="#cl-1548">1548</a>
+<a href="#cl-1549">1549</a>
+<a href="#cl-1550">1550</a>
+<a href="#cl-1551">1551</a>
+<a href="#cl-1552">1552</a>
+<a href="#cl-1553">1553</a>
+<a href="#cl-1554">1554</a>
+<a href="#cl-1555">1555</a>
+<a href="#cl-1556">1556</a>
+<a href="#cl-1557">1557</a>
+<a href="#cl-1558">1558</a>
+<a href="#cl-1559">1559</a>
+<a href="#cl-1560">1560</a>
+<a href="#cl-1561">1561</a>
+<a href="#cl-1562">1562</a>
+<a href="#cl-1563">1563</a>
+<a href="#cl-1564">1564</a>
+<a href="#cl-1565">1565</a>
+<a href="#cl-1566">1566</a>
+<a href="#cl-1567">1567</a>
+<a href="#cl-1568">1568</a>
+<a href="#cl-1569">1569</a>
+<a href="#cl-1570">1570</a>
+<a href="#cl-1571">1571</a>
+<a href="#cl-1572">1572</a>
+<a href="#cl-1573">1573</a>
+<a href="#cl-1574">1574</a>
+<a href="#cl-1575">1575</a>
+<a href="#cl-1576">1576</a>
+<a href="#cl-1577">1577</a>
+<a href="#cl-1578">1578</a>
+<a href="#cl-1579">1579</a>
+<a href="#cl-1580">1580</a>
+<a href="#cl-1581">1581</a>
+<a href="#cl-1582">1582</a>
+<a href="#cl-1583">1583</a>
+<a href="#cl-1584">1584</a>
+<a href="#cl-1585">1585</a>
+<a href="#cl-1586">1586</a>
+<a href="#cl-1587">1587</a>
+<a href="#cl-1588">1588</a>
+<a href="#cl-1589">1589</a>
+<a href="#cl-1590">1590</a>
+<a href="#cl-1591">1591</a>
+<a href="#cl-1592">1592</a>
+<a href="#cl-1593">1593</a>
+<a href="#cl-1594">1594</a>
+<a href="#cl-1595">1595</a>
+<a href="#cl-1596">1596</a>
+<a href="#cl-1597">1597</a>
+<a href="#cl-1598">1598</a>
+<a href="#cl-1599">1599</a>
+<a href="#cl-1600">1600</a>
+<a href="#cl-1601">1601</a>
+<a href="#cl-1602">1602</a>
+<a href="#cl-1603">1603</a>
+<a href="#cl-1604">1604</a>
+<a href="#cl-1605">1605</a>
+<a href="#cl-1606">1606</a>
+<a href="#cl-1607">1607</a>
+<a href="#cl-1608">1608</a>
+<a href="#cl-1609">1609</a>
+<a href="#cl-1610">1610</a>
+<a href="#cl-1611">1611</a>
+<a href="#cl-1612">1612</a>
+<a href="#cl-1613">1613</a>
+<a href="#cl-1614">1614</a>
+<a href="#cl-1615">1615</a>
+<a href="#cl-1616">1616</a>
+<a href="#cl-1617">1617</a>
+<a href="#cl-1618">1618</a>
+<a href="#cl-1619">1619</a>
+<a href="#cl-1620">1620</a>
+<a href="#cl-1621">1621</a>
+<a href="#cl-1622">1622</a>
+<a href="#cl-1623">1623</a>
+<a href="#cl-1624">1624</a>
+<a href="#cl-1625">1625</a>
+<a href="#cl-1626">1626</a>
+<a href="#cl-1627">1627</a>
+<a href="#cl-1628">1628</a>
+<a href="#cl-1629">1629</a>
+<a href="#cl-1630">1630</a>
+<a href="#cl-1631">1631</a>
+<a href="#cl-1632">1632</a>
+<a href="#cl-1633">1633</a>
+<a href="#cl-1634">1634</a>
+<a href="#cl-1635">1635</a>
+<a href="#cl-1636">1636</a>
+<a href="#cl-1637">1637</a>
+<a href="#cl-1638">1638</a>
+<a href="#cl-1639">1639</a>
+<a href="#cl-1640">1640</a>
+<a href="#cl-1641">1641</a>
+<a href="#cl-1642">1642</a>
+<a href="#cl-1643">1643</a>
+<a href="#cl-1644">1644</a>
+<a href="#cl-1645">1645</a>
+<a href="#cl-1646">1646</a>
+<a href="#cl-1647">1647</a>
+<a href="#cl-1648">1648</a>
+<a href="#cl-1649">1649</a>
+<a href="#cl-1650">1650</a>
+<a href="#cl-1651">1651</a>
+<a href="#cl-1652">1652</a>
+<a href="#cl-1653">1653</a>
+<a href="#cl-1654">1654</a>
+<a href="#cl-1655">1655</a>
+<a href="#cl-1656">1656</a>
+<a href="#cl-1657">1657</a>
+<a href="#cl-1658">1658</a>
+<a href="#cl-1659">1659</a>
+<a href="#cl-1660">1660</a>
+<a href="#cl-1661">1661</a>
+<a href="#cl-1662">1662</a>
+<a href="#cl-1663">1663</a>
+<a href="#cl-1664">1664</a>
+</pre></div></td><td class="code"><div class="highlight"><pre><a name="cl-1"></a>@prefix dc: &lt;http://purl.org/dc/terms/&gt; .
+<a name="cl-2"></a>@prefix dist: &lt;http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/&gt; .
+<a name="cl-3"></a>@prefix earl: &lt;http://www.w3.org/ns/earl#&gt; .
+<a name="cl-4"></a>@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+<a name="cl-5"></a>@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+<a name="cl-6"></a>@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+<a name="cl-7"></a>@prefix rrp: &lt;tag:buzzword.org.uk,2012:RDF-RDFa-Parser:&gt; .
+<a name="cl-8"></a>@prefix test: &lt;http://rdfa.info/vocabs/rdfa-test#&gt; .
+<a name="cl-9"></a>@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+<a name="cl-10"></a>
+<a name="cl-11"></a>[] dc:date &quot;2012-06-05T23:36:56Z&quot;^^xsd:dateTime ;
+<a name="cl-12"></a>        a earl:Assertion ;
+<a name="cl-13"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-14"></a>        earl:mode earl:automatic ;
+<a name="cl-15"></a>        earl:result [
+<a name="cl-16"></a>                a earl:TestResult ;
+<a name="cl-17"></a>                earl:outcome earl:passed
+<a name="cl-18"></a>        ] ;
+<a name="cl-19"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-20"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0001.xhtml&gt; .
+<a name="cl-21"></a>[] dc:date &quot;2012-06-05T23:36:56Z&quot;^^xsd:dateTime ;
+<a name="cl-22"></a>        a earl:Assertion ;
+<a name="cl-23"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-24"></a>        earl:mode earl:automatic ;
+<a name="cl-25"></a>        earl:result [
+<a name="cl-26"></a>                a earl:TestResult ;
+<a name="cl-27"></a>                earl:outcome earl:passed
+<a name="cl-28"></a>        ] ;
+<a name="cl-29"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-30"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0006.xhtml&gt; .
+<a name="cl-31"></a>[] dc:date &quot;2012-06-05T23:36:57Z&quot;^^xsd:dateTime ;
+<a name="cl-32"></a>        a earl:Assertion ;
+<a name="cl-33"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-34"></a>        earl:mode earl:automatic ;
+<a name="cl-35"></a>        earl:result [
+<a name="cl-36"></a>                a earl:TestResult ;
+<a name="cl-37"></a>                earl:outcome earl:passed
+<a name="cl-38"></a>        ] ;
+<a name="cl-39"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-40"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0007.xhtml&gt; .
+<a name="cl-41"></a>[] dc:date &quot;2012-06-05T23:36:57Z&quot;^^xsd:dateTime ;
+<a name="cl-42"></a>        a earl:Assertion ;
+<a name="cl-43"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-44"></a>        earl:mode earl:automatic ;
+<a name="cl-45"></a>        earl:result [
+<a name="cl-46"></a>                earl:outcome earl:passed ;
+<a name="cl-47"></a>                a earl:TestResult
+<a name="cl-48"></a>        ] ;
+<a name="cl-49"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-50"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0008.xhtml&gt; .
+<a name="cl-51"></a>[] dc:date &quot;2012-06-05T23:36:57Z&quot;^^xsd:dateTime ;
+<a name="cl-52"></a>        a earl:Assertion ;
+<a name="cl-53"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-54"></a>        earl:mode earl:automatic ;
+<a name="cl-55"></a>        earl:result [
+<a name="cl-56"></a>                a earl:TestResult ;
+<a name="cl-57"></a>                earl:outcome earl:passed
+<a name="cl-58"></a>        ] ;
+<a name="cl-59"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-60"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0009.xhtml&gt; .
+<a name="cl-61"></a>[] dc:date &quot;2012-06-05T23:36:57Z&quot;^^xsd:dateTime ;
+<a name="cl-62"></a>        a earl:Assertion ;
+<a name="cl-63"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-64"></a>        earl:mode earl:automatic ;
+<a name="cl-65"></a>        earl:result [
+<a name="cl-66"></a>                a earl:TestResult ;
+<a name="cl-67"></a>                earl:outcome earl:passed
+<a name="cl-68"></a>        ] ;
+<a name="cl-69"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-70"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0010.xhtml&gt; .
+<a name="cl-71"></a>[] dc:date &quot;2012-06-05T23:36:57Z&quot;^^xsd:dateTime ;
+<a name="cl-72"></a>        a earl:Assertion ;
+<a name="cl-73"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-74"></a>        earl:mode earl:automatic ;
+<a name="cl-75"></a>        earl:result [
+<a name="cl-76"></a>                a earl:TestResult ;
+<a name="cl-77"></a>                earl:outcome earl:passed
+<a name="cl-78"></a>        ] ;
+<a name="cl-79"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-80"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0012.xhtml&gt; .
+<a name="cl-81"></a>[] dc:date &quot;2012-06-05T23:36:57Z&quot;^^xsd:dateTime ;
+<a name="cl-82"></a>        a earl:Assertion ;
+<a name="cl-83"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-84"></a>        earl:mode earl:automatic ;
+<a name="cl-85"></a>        earl:result [
+<a name="cl-86"></a>                a earl:TestResult ;
+<a name="cl-87"></a>                earl:outcome earl:passed
+<a name="cl-88"></a>        ] ;
+<a name="cl-89"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-90"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0013.xhtml&gt; .
+<a name="cl-91"></a>[] dc:date &quot;2012-06-05T23:36:57Z&quot;^^xsd:dateTime ;
+<a name="cl-92"></a>        a earl:Assertion ;
+<a name="cl-93"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-94"></a>        earl:mode earl:automatic ;
+<a name="cl-95"></a>        earl:result [
+<a name="cl-96"></a>                earl:outcome earl:passed ;
+<a name="cl-97"></a>                a earl:TestResult
+<a name="cl-98"></a>        ] ;
+<a name="cl-99"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-100"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0014.xhtml&gt; .
+<a name="cl-101"></a>[] dc:date &quot;2012-06-05T23:36:57Z&quot;^^xsd:dateTime ;
+<a name="cl-102"></a>        a earl:Assertion ;
+<a name="cl-103"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-104"></a>        earl:mode earl:automatic ;
+<a name="cl-105"></a>        earl:result [
+<a name="cl-106"></a>                a earl:TestResult ;
+<a name="cl-107"></a>                earl:outcome earl:passed
+<a name="cl-108"></a>        ] ;
+<a name="cl-109"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-110"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0015.xhtml&gt; .
+<a name="cl-111"></a>[] dc:date &quot;2012-06-05T23:36:57Z&quot;^^xsd:dateTime ;
+<a name="cl-112"></a>        a earl:Assertion ;
+<a name="cl-113"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-114"></a>        earl:mode earl:automatic ;
+<a name="cl-115"></a>        earl:result [
+<a name="cl-116"></a>                earl:outcome earl:passed ;
+<a name="cl-117"></a>                a earl:TestResult
+<a name="cl-118"></a>        ] ;
+<a name="cl-119"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-120"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0017.xhtml&gt; .
+<a name="cl-121"></a>[] dc:date &quot;2012-06-05T23:36:58Z&quot;^^xsd:dateTime ;
+<a name="cl-122"></a>        a earl:Assertion ;
+<a name="cl-123"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-124"></a>        earl:mode earl:automatic ;
+<a name="cl-125"></a>        earl:result [
+<a name="cl-126"></a>                earl:outcome earl:passed ;
+<a name="cl-127"></a>                a earl:TestResult
+<a name="cl-128"></a>        ] ;
+<a name="cl-129"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-130"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0018.xhtml&gt; .
+<a name="cl-131"></a>[] dc:date &quot;2012-06-05T23:36:58Z&quot;^^xsd:dateTime ;
+<a name="cl-132"></a>        a earl:Assertion ;
+<a name="cl-133"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-134"></a>        earl:mode earl:automatic ;
+<a name="cl-135"></a>        earl:result [
+<a name="cl-136"></a>                a earl:TestResult ;
+<a name="cl-137"></a>                earl:outcome earl:passed
+<a name="cl-138"></a>        ] ;
+<a name="cl-139"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-140"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0019.xhtml&gt; .
+<a name="cl-141"></a>[] dc:date &quot;2012-06-05T23:36:58Z&quot;^^xsd:dateTime ;
+<a name="cl-142"></a>        a earl:Assertion ;
+<a name="cl-143"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-144"></a>        earl:mode earl:automatic ;
+<a name="cl-145"></a>        earl:result [
+<a name="cl-146"></a>                a earl:TestResult ;
+<a name="cl-147"></a>                earl:outcome earl:passed
+<a name="cl-148"></a>        ] ;
+<a name="cl-149"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-150"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0020.xhtml&gt; .
+<a name="cl-151"></a>[] dc:date &quot;2012-06-05T23:36:58Z&quot;^^xsd:dateTime ;
+<a name="cl-152"></a>        a earl:Assertion ;
+<a name="cl-153"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-154"></a>        earl:mode earl:automatic ;
+<a name="cl-155"></a>        earl:result [
+<a name="cl-156"></a>                earl:outcome earl:passed ;
+<a name="cl-157"></a>                a earl:TestResult
+<a name="cl-158"></a>        ] ;
+<a name="cl-159"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-160"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0021.xhtml&gt; .
+<a name="cl-161"></a>[] dc:date &quot;2012-06-05T23:36:58Z&quot;^^xsd:dateTime ;
+<a name="cl-162"></a>        a earl:Assertion ;
+<a name="cl-163"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-164"></a>        earl:mode earl:automatic ;
+<a name="cl-165"></a>        earl:result [
+<a name="cl-166"></a>                a earl:TestResult ;
+<a name="cl-167"></a>                earl:outcome earl:passed
+<a name="cl-168"></a>        ] ;
+<a name="cl-169"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-170"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0023.xhtml&gt; .
+<a name="cl-171"></a>[] dc:date &quot;2012-06-05T23:36:58Z&quot;^^xsd:dateTime ;
+<a name="cl-172"></a>        a earl:Assertion ;
+<a name="cl-173"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-174"></a>        earl:mode earl:automatic ;
+<a name="cl-175"></a>        earl:result [
+<a name="cl-176"></a>                a earl:TestResult ;
+<a name="cl-177"></a>                earl:outcome earl:passed
+<a name="cl-178"></a>        ] ;
+<a name="cl-179"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-180"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0025.xhtml&gt; .
+<a name="cl-181"></a>[] dc:date &quot;2012-06-05T23:36:58Z&quot;^^xsd:dateTime ;
+<a name="cl-182"></a>        a earl:Assertion ;
+<a name="cl-183"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-184"></a>        earl:mode earl:automatic ;
+<a name="cl-185"></a>        earl:result [
+<a name="cl-186"></a>                a earl:TestResult ;
+<a name="cl-187"></a>                earl:outcome earl:passed
+<a name="cl-188"></a>        ] ;
+<a name="cl-189"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-190"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0026.xhtml&gt; .
+<a name="cl-191"></a>[] dc:date &quot;2012-06-05T23:36:58Z&quot;^^xsd:dateTime ;
+<a name="cl-192"></a>        a earl:Assertion ;
+<a name="cl-193"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-194"></a>        earl:mode earl:automatic ;
+<a name="cl-195"></a>        earl:result [
+<a name="cl-196"></a>                a earl:TestResult ;
+<a name="cl-197"></a>                earl:outcome earl:passed
+<a name="cl-198"></a>        ] ;
+<a name="cl-199"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-200"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0027.xhtml&gt; .
+<a name="cl-201"></a>[] dc:date &quot;2012-06-05T23:36:58Z&quot;^^xsd:dateTime ;
+<a name="cl-202"></a>        a earl:Assertion ;
+<a name="cl-203"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-204"></a>        earl:mode earl:automatic ;
+<a name="cl-205"></a>        earl:result [
+<a name="cl-206"></a>                a earl:TestResult ;
+<a name="cl-207"></a>                earl:outcome earl:passed
+<a name="cl-208"></a>        ] ;
+<a name="cl-209"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-210"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0029.xhtml&gt; .
+<a name="cl-211"></a>[] dc:date &quot;2012-06-05T23:36:59Z&quot;^^xsd:dateTime ;
+<a name="cl-212"></a>        a earl:Assertion ;
+<a name="cl-213"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-214"></a>        earl:mode earl:automatic ;
+<a name="cl-215"></a>        earl:result [
+<a name="cl-216"></a>                earl:outcome earl:passed ;
+<a name="cl-217"></a>                a earl:TestResult
+<a name="cl-218"></a>        ] ;
+<a name="cl-219"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-220"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0030.xhtml&gt; .
+<a name="cl-221"></a>[] dc:date &quot;2012-06-05T23:36:59Z&quot;^^xsd:dateTime ;
+<a name="cl-222"></a>        a earl:Assertion ;
+<a name="cl-223"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-224"></a>        earl:mode earl:automatic ;
+<a name="cl-225"></a>        earl:result [
+<a name="cl-226"></a>                earl:outcome earl:passed ;
+<a name="cl-227"></a>                a earl:TestResult
+<a name="cl-228"></a>        ] ;
+<a name="cl-229"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-230"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0031.xhtml&gt; .
+<a name="cl-231"></a>[] dc:date &quot;2012-06-05T23:36:59Z&quot;^^xsd:dateTime ;
+<a name="cl-232"></a>        a earl:Assertion ;
+<a name="cl-233"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-234"></a>        earl:mode earl:automatic ;
+<a name="cl-235"></a>        earl:result [
+<a name="cl-236"></a>                a earl:TestResult ;
+<a name="cl-237"></a>                earl:outcome earl:passed
+<a name="cl-238"></a>        ] ;
+<a name="cl-239"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-240"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0032.xhtml&gt; .
+<a name="cl-241"></a>[] dc:date &quot;2012-06-05T23:36:59Z&quot;^^xsd:dateTime ;
+<a name="cl-242"></a>        a earl:Assertion ;
+<a name="cl-243"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-244"></a>        earl:mode earl:automatic ;
+<a name="cl-245"></a>        earl:result [
+<a name="cl-246"></a>                earl:outcome earl:passed ;
+<a name="cl-247"></a>                a earl:TestResult
+<a name="cl-248"></a>        ] ;
+<a name="cl-249"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-250"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0033.xhtml&gt; .
+<a name="cl-251"></a>[] dc:date &quot;2012-06-05T23:36:59Z&quot;^^xsd:dateTime ;
+<a name="cl-252"></a>        a earl:Assertion ;
+<a name="cl-253"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-254"></a>        earl:mode earl:automatic ;
+<a name="cl-255"></a>        earl:result [
+<a name="cl-256"></a>                earl:outcome earl:passed ;
+<a name="cl-257"></a>                a earl:TestResult
+<a name="cl-258"></a>        ] ;
+<a name="cl-259"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-260"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0034.xhtml&gt; .
+<a name="cl-261"></a>[] dc:date &quot;2012-06-05T23:36:59Z&quot;^^xsd:dateTime ;
+<a name="cl-262"></a>        a earl:Assertion ;
+<a name="cl-263"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-264"></a>        earl:mode earl:automatic ;
+<a name="cl-265"></a>        earl:result [
+<a name="cl-266"></a>                earl:outcome earl:passed ;
+<a name="cl-267"></a>                a earl:TestResult
+<a name="cl-268"></a>        ] ;
+<a name="cl-269"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-270"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0035.xhtml&gt; .
+<a name="cl-271"></a>[] dc:date &quot;2012-06-05T23:36:59Z&quot;^^xsd:dateTime ;
+<a name="cl-272"></a>        a earl:Assertion ;
+<a name="cl-273"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-274"></a>        earl:mode earl:automatic ;
+<a name="cl-275"></a>        earl:result [
+<a name="cl-276"></a>                earl:outcome earl:passed ;
+<a name="cl-277"></a>                a earl:TestResult
+<a name="cl-278"></a>        ] ;
+<a name="cl-279"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-280"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0036.xhtml&gt; .
+<a name="cl-281"></a>[] dc:date &quot;2012-06-05T23:36:59Z&quot;^^xsd:dateTime ;
+<a name="cl-282"></a>        a earl:Assertion ;
+<a name="cl-283"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-284"></a>        earl:mode earl:automatic ;
+<a name="cl-285"></a>        earl:result [
+<a name="cl-286"></a>                earl:outcome earl:passed ;
+<a name="cl-287"></a>                a earl:TestResult
+<a name="cl-288"></a>        ] ;
+<a name="cl-289"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-290"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0037.xhtml&gt; .
+<a name="cl-291"></a>[] dc:date &quot;2012-06-05T23:36:59Z&quot;^^xsd:dateTime ;
+<a name="cl-292"></a>        a earl:Assertion ;
+<a name="cl-293"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-294"></a>        earl:mode earl:automatic ;
+<a name="cl-295"></a>        earl:result [
+<a name="cl-296"></a>                a earl:TestResult ;
+<a name="cl-297"></a>                earl:outcome earl:passed
+<a name="cl-298"></a>        ] ;
+<a name="cl-299"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-300"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0038.xhtml&gt; .
+<a name="cl-301"></a>[] dc:date &quot;2012-06-05T23:37:00Z&quot;^^xsd:dateTime ;
+<a name="cl-302"></a>        a earl:Assertion ;
+<a name="cl-303"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-304"></a>        earl:mode earl:automatic ;
+<a name="cl-305"></a>        earl:result [
+<a name="cl-306"></a>                earl:outcome earl:passed ;
+<a name="cl-307"></a>                a earl:TestResult
+<a name="cl-308"></a>        ] ;
+<a name="cl-309"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-310"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0039.xhtml&gt; .
+<a name="cl-311"></a>[] dc:date &quot;2012-06-05T23:37:00Z&quot;^^xsd:dateTime ;
+<a name="cl-312"></a>        a earl:Assertion ;
+<a name="cl-313"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-314"></a>        earl:mode earl:automatic ;
+<a name="cl-315"></a>        earl:result [
+<a name="cl-316"></a>                a earl:TestResult ;
+<a name="cl-317"></a>                earl:outcome earl:passed
+<a name="cl-318"></a>        ] ;
+<a name="cl-319"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-320"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0041.xhtml&gt; .
+<a name="cl-321"></a>[] dc:date &quot;2012-06-05T23:37:00Z&quot;^^xsd:dateTime ;
+<a name="cl-322"></a>        a earl:Assertion ;
+<a name="cl-323"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-324"></a>        earl:mode earl:automatic ;
+<a name="cl-325"></a>        earl:result [
+<a name="cl-326"></a>                earl:outcome earl:passed ;
+<a name="cl-327"></a>                a earl:TestResult
+<a name="cl-328"></a>        ] ;
+<a name="cl-329"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-330"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0048.xhtml&gt; .
+<a name="cl-331"></a>[] dc:date &quot;2012-06-05T23:37:00Z&quot;^^xsd:dateTime ;
+<a name="cl-332"></a>        a earl:Assertion ;
+<a name="cl-333"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-334"></a>        earl:mode earl:automatic ;
+<a name="cl-335"></a>        earl:result [
+<a name="cl-336"></a>                earl:outcome earl:passed ;
+<a name="cl-337"></a>                a earl:TestResult
+<a name="cl-338"></a>        ] ;
+<a name="cl-339"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-340"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0049.xhtml&gt; .
+<a name="cl-341"></a>[] dc:date &quot;2012-06-05T23:37:00Z&quot;^^xsd:dateTime ;
+<a name="cl-342"></a>        a earl:Assertion ;
+<a name="cl-343"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-344"></a>        earl:mode earl:automatic ;
+<a name="cl-345"></a>        earl:result [
+<a name="cl-346"></a>                earl:outcome earl:passed ;
+<a name="cl-347"></a>                a earl:TestResult
+<a name="cl-348"></a>        ] ;
+<a name="cl-349"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-350"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0050.xhtml&gt; .
+<a name="cl-351"></a>[] dc:date &quot;2012-06-05T23:37:00Z&quot;^^xsd:dateTime ;
+<a name="cl-352"></a>        a earl:Assertion ;
+<a name="cl-353"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-354"></a>        earl:mode earl:automatic ;
+<a name="cl-355"></a>        earl:result [
+<a name="cl-356"></a>                a earl:TestResult ;
+<a name="cl-357"></a>                earl:outcome earl:passed
+<a name="cl-358"></a>        ] ;
+<a name="cl-359"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-360"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0051.xhtml&gt; .
+<a name="cl-361"></a>[] dc:date &quot;2012-06-05T23:37:00Z&quot;^^xsd:dateTime ;
+<a name="cl-362"></a>        a earl:Assertion ;
+<a name="cl-363"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-364"></a>        earl:mode earl:automatic ;
+<a name="cl-365"></a>        earl:result [
+<a name="cl-366"></a>                earl:outcome earl:passed ;
+<a name="cl-367"></a>                a earl:TestResult
+<a name="cl-368"></a>        ] ;
+<a name="cl-369"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-370"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0052.xhtml&gt; .
+<a name="cl-371"></a>[] dc:date &quot;2012-06-05T23:37:00Z&quot;^^xsd:dateTime ;
+<a name="cl-372"></a>        a earl:Assertion ;
+<a name="cl-373"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-374"></a>        earl:mode earl:automatic ;
+<a name="cl-375"></a>        earl:result [
+<a name="cl-376"></a>                earl:outcome earl:passed ;
+<a name="cl-377"></a>                a earl:TestResult
+<a name="cl-378"></a>        ] ;
+<a name="cl-379"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-380"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0053.xhtml&gt; .
+<a name="cl-381"></a>[] dc:date &quot;2012-06-05T23:37:01Z&quot;^^xsd:dateTime ;
+<a name="cl-382"></a>        a earl:Assertion ;
+<a name="cl-383"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-384"></a>        earl:mode earl:automatic ;
+<a name="cl-385"></a>        earl:result [
+<a name="cl-386"></a>                a earl:TestResult ;
+<a name="cl-387"></a>                earl:outcome earl:passed
+<a name="cl-388"></a>        ] ;
+<a name="cl-389"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-390"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0054.xhtml&gt; .
+<a name="cl-391"></a>[] dc:date &quot;2012-06-05T23:37:01Z&quot;^^xsd:dateTime ;
+<a name="cl-392"></a>        a earl:Assertion ;
+<a name="cl-393"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-394"></a>        earl:mode earl:automatic ;
+<a name="cl-395"></a>        earl:result [
+<a name="cl-396"></a>                earl:outcome earl:passed ;
+<a name="cl-397"></a>                a earl:TestResult
+<a name="cl-398"></a>        ] ;
+<a name="cl-399"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-400"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0055.xhtml&gt; .
+<a name="cl-401"></a>[] dc:date &quot;2012-06-05T23:37:01Z&quot;^^xsd:dateTime ;
+<a name="cl-402"></a>        a earl:Assertion ;
+<a name="cl-403"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-404"></a>        earl:mode earl:automatic ;
+<a name="cl-405"></a>        earl:result [
+<a name="cl-406"></a>                a earl:TestResult ;
+<a name="cl-407"></a>                earl:outcome earl:passed
+<a name="cl-408"></a>        ] ;
+<a name="cl-409"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-410"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0056.xhtml&gt; .
+<a name="cl-411"></a>[] dc:date &quot;2012-06-05T23:37:01Z&quot;^^xsd:dateTime ;
+<a name="cl-412"></a>        a earl:Assertion ;
+<a name="cl-413"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-414"></a>        earl:mode earl:automatic ;
+<a name="cl-415"></a>        earl:result [
+<a name="cl-416"></a>                earl:outcome earl:passed ;
+<a name="cl-417"></a>                a earl:TestResult
+<a name="cl-418"></a>        ] ;
+<a name="cl-419"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-420"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0057.xhtml&gt; .
+<a name="cl-421"></a>[] dc:date &quot;2012-06-05T23:37:01Z&quot;^^xsd:dateTime ;
+<a name="cl-422"></a>        a earl:Assertion ;
+<a name="cl-423"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-424"></a>        earl:mode earl:automatic ;
+<a name="cl-425"></a>        earl:result [
+<a name="cl-426"></a>                a earl:TestResult ;
+<a name="cl-427"></a>                earl:outcome earl:passed
+<a name="cl-428"></a>        ] ;
+<a name="cl-429"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-430"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0059.xhtml&gt; .
+<a name="cl-431"></a>[] dc:date &quot;2012-06-05T23:37:02Z&quot;^^xsd:dateTime ;
+<a name="cl-432"></a>        a earl:Assertion ;
+<a name="cl-433"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-434"></a>        earl:mode earl:automatic ;
+<a name="cl-435"></a>        earl:result [
+<a name="cl-436"></a>                a earl:TestResult ;
+<a name="cl-437"></a>                earl:outcome earl:passed
+<a name="cl-438"></a>        ] ;
+<a name="cl-439"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-440"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0060.xhtml&gt; .
+<a name="cl-441"></a>[] dc:date &quot;2012-06-05T23:37:02Z&quot;^^xsd:dateTime ;
+<a name="cl-442"></a>        a earl:Assertion ;
+<a name="cl-443"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-444"></a>        earl:mode earl:automatic ;
+<a name="cl-445"></a>        earl:result [
+<a name="cl-446"></a>                a earl:TestResult ;
+<a name="cl-447"></a>                earl:outcome earl:passed
+<a name="cl-448"></a>        ] ;
+<a name="cl-449"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-450"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0063.xhtml&gt; .
+<a name="cl-451"></a>[] dc:date &quot;2012-06-05T23:37:02Z&quot;^^xsd:dateTime ;
+<a name="cl-452"></a>        a earl:Assertion ;
+<a name="cl-453"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-454"></a>        earl:mode earl:automatic ;
+<a name="cl-455"></a>        earl:result [
+<a name="cl-456"></a>                a earl:TestResult ;
+<a name="cl-457"></a>                earl:outcome earl:passed
+<a name="cl-458"></a>        ] ;
+<a name="cl-459"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-460"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0064.xhtml&gt; .
+<a name="cl-461"></a>[] dc:date &quot;2012-06-05T23:37:02Z&quot;^^xsd:dateTime ;
+<a name="cl-462"></a>        a earl:Assertion ;
+<a name="cl-463"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-464"></a>        earl:mode earl:automatic ;
+<a name="cl-465"></a>        earl:result [
+<a name="cl-466"></a>                a earl:TestResult ;
+<a name="cl-467"></a>                earl:outcome earl:passed
+<a name="cl-468"></a>        ] ;
+<a name="cl-469"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-470"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0065.xhtml&gt; .
+<a name="cl-471"></a>[] dc:date &quot;2012-06-05T23:37:02Z&quot;^^xsd:dateTime ;
+<a name="cl-472"></a>        a earl:Assertion ;
+<a name="cl-473"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-474"></a>        earl:mode earl:automatic ;
+<a name="cl-475"></a>        earl:result [
+<a name="cl-476"></a>                earl:outcome earl:passed ;
+<a name="cl-477"></a>                a earl:TestResult
+<a name="cl-478"></a>        ] ;
+<a name="cl-479"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-480"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0067.xhtml&gt; .
+<a name="cl-481"></a>[] dc:date &quot;2012-06-05T23:37:02Z&quot;^^xsd:dateTime ;
+<a name="cl-482"></a>        a earl:Assertion ;
+<a name="cl-483"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-484"></a>        earl:mode earl:automatic ;
+<a name="cl-485"></a>        earl:result [
+<a name="cl-486"></a>                earl:outcome earl:passed ;
+<a name="cl-487"></a>                a earl:TestResult
+<a name="cl-488"></a>        ] ;
+<a name="cl-489"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-490"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0068.xhtml&gt; .
+<a name="cl-491"></a>[] dc:date &quot;2012-06-05T23:37:02Z&quot;^^xsd:dateTime ;
+<a name="cl-492"></a>        a earl:Assertion ;
+<a name="cl-493"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-494"></a>        earl:mode earl:automatic ;
+<a name="cl-495"></a>        earl:result [
+<a name="cl-496"></a>                a earl:TestResult ;
+<a name="cl-497"></a>                earl:outcome earl:passed
+<a name="cl-498"></a>        ] ;
+<a name="cl-499"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-500"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0071.xhtml&gt; .
+<a name="cl-501"></a>[] dc:date &quot;2012-06-05T23:37:02Z&quot;^^xsd:dateTime ;
+<a name="cl-502"></a>        a earl:Assertion ;
+<a name="cl-503"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-504"></a>        earl:mode earl:automatic ;
+<a name="cl-505"></a>        earl:result [
+<a name="cl-506"></a>                a earl:TestResult ;
+<a name="cl-507"></a>                earl:outcome earl:passed
+<a name="cl-508"></a>        ] ;
+<a name="cl-509"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-510"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0079.xhtml&gt; .
+<a name="cl-511"></a>[] dc:date &quot;2012-06-05T23:37:03Z&quot;^^xsd:dateTime ;
+<a name="cl-512"></a>        a earl:Assertion ;
+<a name="cl-513"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-514"></a>        earl:mode earl:automatic ;
+<a name="cl-515"></a>        earl:result [
+<a name="cl-516"></a>                a earl:TestResult ;
+<a name="cl-517"></a>                earl:outcome earl:passed
+<a name="cl-518"></a>        ] ;
+<a name="cl-519"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-520"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0080.xhtml&gt; .
+<a name="cl-521"></a>[] dc:date &quot;2012-06-05T23:37:03Z&quot;^^xsd:dateTime ;
+<a name="cl-522"></a>        a earl:Assertion ;
+<a name="cl-523"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-524"></a>        earl:mode earl:automatic ;
+<a name="cl-525"></a>        earl:result [
+<a name="cl-526"></a>                earl:outcome earl:passed ;
+<a name="cl-527"></a>                a earl:TestResult
+<a name="cl-528"></a>        ] ;
+<a name="cl-529"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-530"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0083.xhtml&gt; .
+<a name="cl-531"></a>[] dc:date &quot;2012-06-05T23:37:03Z&quot;^^xsd:dateTime ;
+<a name="cl-532"></a>        a earl:Assertion ;
+<a name="cl-533"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-534"></a>        earl:mode earl:automatic ;
+<a name="cl-535"></a>        earl:result [
+<a name="cl-536"></a>                earl:outcome earl:passed ;
+<a name="cl-537"></a>                a earl:TestResult
+<a name="cl-538"></a>        ] ;
+<a name="cl-539"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-540"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0084.xhtml&gt; .
+<a name="cl-541"></a>[] dc:date &quot;2012-06-05T23:37:03Z&quot;^^xsd:dateTime ;
+<a name="cl-542"></a>        a earl:Assertion ;
+<a name="cl-543"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-544"></a>        earl:mode earl:automatic ;
+<a name="cl-545"></a>        earl:result [
+<a name="cl-546"></a>                a earl:TestResult ;
+<a name="cl-547"></a>                earl:outcome earl:passed
+<a name="cl-548"></a>        ] ;
+<a name="cl-549"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-550"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0085.xhtml&gt; .
+<a name="cl-551"></a>[] dc:date &quot;2012-06-05T23:37:04Z&quot;^^xsd:dateTime ;
+<a name="cl-552"></a>        a earl:Assertion ;
+<a name="cl-553"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-554"></a>        earl:mode earl:automatic ;
+<a name="cl-555"></a>        earl:result [
+<a name="cl-556"></a>                a earl:TestResult ;
+<a name="cl-557"></a>                earl:outcome earl:passed
+<a name="cl-558"></a>        ] ;
+<a name="cl-559"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-560"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0087.xhtml&gt; .
+<a name="cl-561"></a>[] dc:date &quot;2012-06-05T23:37:04Z&quot;^^xsd:dateTime ;
+<a name="cl-562"></a>        a earl:Assertion ;
+<a name="cl-563"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-564"></a>        earl:mode earl:automatic ;
+<a name="cl-565"></a>        earl:result [
+<a name="cl-566"></a>                a earl:TestResult ;
+<a name="cl-567"></a>                earl:outcome earl:passed
+<a name="cl-568"></a>        ] ;
+<a name="cl-569"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-570"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0088.xhtml&gt; .
+<a name="cl-571"></a>[] dc:date &quot;2012-06-05T23:37:04Z&quot;^^xsd:dateTime ;
+<a name="cl-572"></a>        a earl:Assertion ;
+<a name="cl-573"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-574"></a>        earl:mode earl:automatic ;
+<a name="cl-575"></a>        earl:result [
+<a name="cl-576"></a>                a earl:TestResult ;
+<a name="cl-577"></a>                earl:outcome earl:passed
+<a name="cl-578"></a>        ] ;
+<a name="cl-579"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-580"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0089.xhtml&gt; .
+<a name="cl-581"></a>[] dc:date &quot;2012-06-05T23:37:05Z&quot;^^xsd:dateTime ;
+<a name="cl-582"></a>        a earl:Assertion ;
+<a name="cl-583"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-584"></a>        earl:mode earl:automatic ;
+<a name="cl-585"></a>        earl:result [
+<a name="cl-586"></a>                a earl:TestResult ;
+<a name="cl-587"></a>                earl:outcome earl:passed
+<a name="cl-588"></a>        ] ;
+<a name="cl-589"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-590"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0091.xhtml&gt; .
+<a name="cl-591"></a>[] dc:date &quot;2012-06-05T23:37:05Z&quot;^^xsd:dateTime ;
+<a name="cl-592"></a>        a earl:Assertion ;
+<a name="cl-593"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-594"></a>        earl:mode earl:automatic ;
+<a name="cl-595"></a>        earl:result [
+<a name="cl-596"></a>                earl:outcome earl:passed ;
+<a name="cl-597"></a>                a earl:TestResult
+<a name="cl-598"></a>        ] ;
+<a name="cl-599"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-600"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0093.xhtml&gt; .
+<a name="cl-601"></a>[] dc:date &quot;2012-06-05T23:37:05Z&quot;^^xsd:dateTime ;
+<a name="cl-602"></a>        a earl:Assertion ;
+<a name="cl-603"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-604"></a>        earl:mode earl:automatic ;
+<a name="cl-605"></a>        earl:result [
+<a name="cl-606"></a>                a earl:TestResult ;
+<a name="cl-607"></a>                earl:outcome earl:passed
+<a name="cl-608"></a>        ] ;
+<a name="cl-609"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-610"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0099.xhtml&gt; .
+<a name="cl-611"></a>[] dc:date &quot;2012-06-05T23:37:05Z&quot;^^xsd:dateTime ;
+<a name="cl-612"></a>        a earl:Assertion ;
+<a name="cl-613"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-614"></a>        earl:mode earl:automatic ;
+<a name="cl-615"></a>        earl:result [
+<a name="cl-616"></a>                earl:outcome earl:passed ;
+<a name="cl-617"></a>                a earl:TestResult
+<a name="cl-618"></a>        ] ;
+<a name="cl-619"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-620"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0104.xhtml&gt; .
+<a name="cl-621"></a>[] dc:date &quot;2012-06-05T23:37:05Z&quot;^^xsd:dateTime ;
+<a name="cl-622"></a>        a earl:Assertion ;
+<a name="cl-623"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-624"></a>        earl:mode earl:automatic ;
+<a name="cl-625"></a>        earl:result [
+<a name="cl-626"></a>                earl:outcome earl:passed ;
+<a name="cl-627"></a>                a earl:TestResult
+<a name="cl-628"></a>        ] ;
+<a name="cl-629"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-630"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0106.xhtml&gt; .
+<a name="cl-631"></a>[] dc:date &quot;2012-06-05T23:37:05Z&quot;^^xsd:dateTime ;
+<a name="cl-632"></a>        a earl:Assertion ;
+<a name="cl-633"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-634"></a>        earl:mode earl:automatic ;
+<a name="cl-635"></a>        earl:result [
+<a name="cl-636"></a>                earl:outcome earl:passed ;
+<a name="cl-637"></a>                a earl:TestResult
+<a name="cl-638"></a>        ] ;
+<a name="cl-639"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-640"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0107.xhtml&gt; .
+<a name="cl-641"></a>[] dc:date &quot;2012-06-05T23:37:05Z&quot;^^xsd:dateTime ;
+<a name="cl-642"></a>        a earl:Assertion ;
+<a name="cl-643"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-644"></a>        earl:mode earl:automatic ;
+<a name="cl-645"></a>        earl:result [
+<a name="cl-646"></a>                a earl:TestResult ;
+<a name="cl-647"></a>                earl:outcome earl:passed
+<a name="cl-648"></a>        ] ;
+<a name="cl-649"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-650"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0108.xhtml&gt; .
+<a name="cl-651"></a>[] dc:date &quot;2012-06-05T23:37:05Z&quot;^^xsd:dateTime ;
+<a name="cl-652"></a>        a earl:Assertion ;
+<a name="cl-653"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-654"></a>        earl:mode earl:automatic ;
+<a name="cl-655"></a>        earl:result [
+<a name="cl-656"></a>                a earl:TestResult ;
+<a name="cl-657"></a>                earl:outcome earl:passed
+<a name="cl-658"></a>        ] ;
+<a name="cl-659"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-660"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0112.xhtml&gt; .
+<a name="cl-661"></a>[] dc:date &quot;2012-06-05T23:37:06Z&quot;^^xsd:dateTime ;
+<a name="cl-662"></a>        a earl:Assertion ;
+<a name="cl-663"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-664"></a>        earl:mode earl:automatic ;
+<a name="cl-665"></a>        earl:result [
+<a name="cl-666"></a>                a earl:TestResult ;
+<a name="cl-667"></a>                earl:outcome earl:passed
+<a name="cl-668"></a>        ] ;
+<a name="cl-669"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-670"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0113.xhtml&gt; .
+<a name="cl-671"></a>[] dc:date &quot;2012-06-05T23:37:06Z&quot;^^xsd:dateTime ;
+<a name="cl-672"></a>        a earl:Assertion ;
+<a name="cl-673"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-674"></a>        earl:mode earl:automatic ;
+<a name="cl-675"></a>        earl:result [
+<a name="cl-676"></a>                a earl:TestResult ;
+<a name="cl-677"></a>                earl:outcome earl:passed
+<a name="cl-678"></a>        ] ;
+<a name="cl-679"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-680"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0115.xhtml&gt; .
+<a name="cl-681"></a>[] dc:date &quot;2012-06-05T23:37:06Z&quot;^^xsd:dateTime ;
+<a name="cl-682"></a>        a earl:Assertion ;
+<a name="cl-683"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-684"></a>        earl:mode earl:automatic ;
+<a name="cl-685"></a>        earl:result [
+<a name="cl-686"></a>                earl:outcome earl:passed ;
+<a name="cl-687"></a>                a earl:TestResult
+<a name="cl-688"></a>        ] ;
+<a name="cl-689"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-690"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0118.xhtml&gt; .
+<a name="cl-691"></a>[] dc:date &quot;2012-06-05T23:37:06Z&quot;^^xsd:dateTime ;
+<a name="cl-692"></a>        a earl:Assertion ;
+<a name="cl-693"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-694"></a>        earl:mode earl:automatic ;
+<a name="cl-695"></a>        earl:result [
+<a name="cl-696"></a>                earl:outcome earl:passed ;
+<a name="cl-697"></a>                a earl:TestResult
+<a name="cl-698"></a>        ] ;
+<a name="cl-699"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-700"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0119.xhtml&gt; .
+<a name="cl-701"></a>[] dc:date &quot;2012-06-05T23:37:06Z&quot;^^xsd:dateTime ;
+<a name="cl-702"></a>        a earl:Assertion ;
+<a name="cl-703"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-704"></a>        earl:mode earl:automatic ;
+<a name="cl-705"></a>        earl:result [
+<a name="cl-706"></a>                a earl:TestResult ;
+<a name="cl-707"></a>                earl:outcome earl:passed
+<a name="cl-708"></a>        ] ;
+<a name="cl-709"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-710"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0120.xhtml&gt; .
+<a name="cl-711"></a>[] dc:date &quot;2012-06-05T23:37:06Z&quot;^^xsd:dateTime ;
+<a name="cl-712"></a>        a earl:Assertion ;
+<a name="cl-713"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-714"></a>        earl:mode earl:automatic ;
+<a name="cl-715"></a>        earl:result [
+<a name="cl-716"></a>                a earl:TestResult ;
+<a name="cl-717"></a>                earl:outcome earl:passed
+<a name="cl-718"></a>        ] ;
+<a name="cl-719"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-720"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0121.xhtml&gt; .
+<a name="cl-721"></a>[] dc:date &quot;2012-06-05T23:37:06Z&quot;^^xsd:dateTime ;
+<a name="cl-722"></a>        a earl:Assertion ;
+<a name="cl-723"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-724"></a>        earl:mode earl:automatic ;
+<a name="cl-725"></a>        earl:result [
+<a name="cl-726"></a>                earl:outcome earl:passed ;
+<a name="cl-727"></a>                a earl:TestResult
+<a name="cl-728"></a>        ] ;
+<a name="cl-729"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-730"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0122.xhtml&gt; .
+<a name="cl-731"></a>[] dc:date &quot;2012-06-05T23:37:07Z&quot;^^xsd:dateTime ;
+<a name="cl-732"></a>        a earl:Assertion ;
+<a name="cl-733"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-734"></a>        earl:mode earl:automatic ;
+<a name="cl-735"></a>        earl:result [
+<a name="cl-736"></a>                a earl:TestResult ;
+<a name="cl-737"></a>                earl:outcome earl:passed
+<a name="cl-738"></a>        ] ;
+<a name="cl-739"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-740"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0126.xhtml&gt; .
+<a name="cl-741"></a>[] dc:date &quot;2012-06-05T23:37:07Z&quot;^^xsd:dateTime ;
+<a name="cl-742"></a>        a earl:Assertion ;
+<a name="cl-743"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-744"></a>        earl:mode earl:automatic ;
+<a name="cl-745"></a>        earl:result [
+<a name="cl-746"></a>                earl:info &quot;wilful violation pending spec ref&quot; ;
+<a name="cl-747"></a>                earl:outcome earl:notTested ;
+<a name="cl-748"></a>                a earl:TestResult
+<a name="cl-749"></a>        ] ;
+<a name="cl-750"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-751"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0140.xhtml&gt; .
+<a name="cl-752"></a>[] dc:date &quot;2012-06-05T23:37:07Z&quot;^^xsd:dateTime ;
+<a name="cl-753"></a>        a earl:Assertion ;
+<a name="cl-754"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-755"></a>        earl:mode earl:automatic ;
+<a name="cl-756"></a>        earl:result [
+<a name="cl-757"></a>                a earl:TestResult ;
+<a name="cl-758"></a>                earl:outcome earl:passed
+<a name="cl-759"></a>        ] ;
+<a name="cl-760"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-761"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0147.xhtml&gt; .
+<a name="cl-762"></a>[] dc:date &quot;2012-06-05T23:37:07Z&quot;^^xsd:dateTime ;
+<a name="cl-763"></a>        a earl:Assertion ;
+<a name="cl-764"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-765"></a>        earl:mode earl:automatic ;
+<a name="cl-766"></a>        earl:result [
+<a name="cl-767"></a>                a earl:TestResult ;
+<a name="cl-768"></a>                earl:outcome earl:passed
+<a name="cl-769"></a>        ] ;
+<a name="cl-770"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-771"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0174.xhtml&gt; .
+<a name="cl-772"></a>[] dc:date &quot;2012-06-05T23:37:07Z&quot;^^xsd:dateTime ;
+<a name="cl-773"></a>        a earl:Assertion ;
+<a name="cl-774"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-775"></a>        earl:mode earl:automatic ;
+<a name="cl-776"></a>        earl:result [
+<a name="cl-777"></a>                earl:outcome earl:passed ;
+<a name="cl-778"></a>                a earl:TestResult
+<a name="cl-779"></a>        ] ;
+<a name="cl-780"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-781"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0175.xhtml&gt; .
+<a name="cl-782"></a>[] dc:date &quot;2012-06-05T23:37:07Z&quot;^^xsd:dateTime ;
+<a name="cl-783"></a>        a earl:Assertion ;
+<a name="cl-784"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-785"></a>        earl:mode earl:automatic ;
+<a name="cl-786"></a>        earl:result [
+<a name="cl-787"></a>                earl:outcome earl:passed ;
+<a name="cl-788"></a>                a earl:TestResult
+<a name="cl-789"></a>        ] ;
+<a name="cl-790"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-791"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0176.xhtml&gt; .
+<a name="cl-792"></a>[] dc:date &quot;2012-06-05T23:37:07Z&quot;^^xsd:dateTime ;
+<a name="cl-793"></a>        a earl:Assertion ;
+<a name="cl-794"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-795"></a>        earl:mode earl:automatic ;
+<a name="cl-796"></a>        earl:result [
+<a name="cl-797"></a>                earl:outcome earl:passed ;
+<a name="cl-798"></a>                a earl:TestResult
+<a name="cl-799"></a>        ] ;
+<a name="cl-800"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-801"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0180.xhtml&gt; .
+<a name="cl-802"></a>[] dc:date &quot;2012-06-05T23:37:07Z&quot;^^xsd:dateTime ;
+<a name="cl-803"></a>        a earl:Assertion ;
+<a name="cl-804"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-805"></a>        earl:mode earl:automatic ;
+<a name="cl-806"></a>        earl:result [
+<a name="cl-807"></a>                a earl:TestResult ;
+<a name="cl-808"></a>                earl:outcome earl:passed
+<a name="cl-809"></a>        ] ;
+<a name="cl-810"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-811"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0181.xhtml&gt; .
+<a name="cl-812"></a>[] dc:date &quot;2012-06-05T23:37:07Z&quot;^^xsd:dateTime ;
+<a name="cl-813"></a>        a earl:Assertion ;
+<a name="cl-814"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-815"></a>        earl:mode earl:automatic ;
+<a name="cl-816"></a>        earl:result [
+<a name="cl-817"></a>                a earl:TestResult ;
+<a name="cl-818"></a>                earl:outcome earl:passed
+<a name="cl-819"></a>        ] ;
+<a name="cl-820"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-821"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0196.xhtml&gt; .
+<a name="cl-822"></a>[] dc:date &quot;2012-06-05T23:37:08Z&quot;^^xsd:dateTime ;
+<a name="cl-823"></a>        a earl:Assertion ;
+<a name="cl-824"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-825"></a>        earl:mode earl:automatic ;
+<a name="cl-826"></a>        earl:result [
+<a name="cl-827"></a>                earl:outcome earl:passed ;
+<a name="cl-828"></a>                a earl:TestResult
+<a name="cl-829"></a>        ] ;
+<a name="cl-830"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-831"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0202.svg&gt; .
+<a name="cl-832"></a>[] dc:date &quot;2012-06-05T23:37:08Z&quot;^^xsd:dateTime ;
+<a name="cl-833"></a>        a earl:Assertion ;
+<a name="cl-834"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-835"></a>        earl:mode earl:automatic ;
+<a name="cl-836"></a>        earl:result [
+<a name="cl-837"></a>                earl:outcome earl:passed ;
+<a name="cl-838"></a>                a earl:TestResult
+<a name="cl-839"></a>        ] ;
+<a name="cl-840"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-841"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0203.svg&gt; .
+<a name="cl-842"></a>[] dc:date &quot;2012-06-05T23:37:08Z&quot;^^xsd:dateTime ;
+<a name="cl-843"></a>        a earl:Assertion ;
+<a name="cl-844"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-845"></a>        earl:mode earl:automatic ;
+<a name="cl-846"></a>        earl:result [
+<a name="cl-847"></a>                a earl:TestResult ;
+<a name="cl-848"></a>                earl:outcome earl:passed
+<a name="cl-849"></a>        ] ;
+<a name="cl-850"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-851"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0206.xhtml&gt; .
+<a name="cl-852"></a>[] dc:date &quot;2012-06-05T23:37:08Z&quot;^^xsd:dateTime ;
+<a name="cl-853"></a>        a earl:Assertion ;
+<a name="cl-854"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-855"></a>        earl:mode earl:automatic ;
+<a name="cl-856"></a>        earl:result [
+<a name="cl-857"></a>                earl:outcome earl:passed ;
+<a name="cl-858"></a>                a earl:TestResult
+<a name="cl-859"></a>        ] ;
+<a name="cl-860"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-861"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0207.xhtml&gt; .
+<a name="cl-862"></a>[] dc:date &quot;2012-06-05T23:37:08Z&quot;^^xsd:dateTime ;
+<a name="cl-863"></a>        a earl:Assertion ;
+<a name="cl-864"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-865"></a>        earl:mode earl:automatic ;
+<a name="cl-866"></a>        earl:result [
+<a name="cl-867"></a>                a earl:TestResult ;
+<a name="cl-868"></a>                earl:outcome earl:passed
+<a name="cl-869"></a>        ] ;
+<a name="cl-870"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-871"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0213.xhtml&gt; .
+<a name="cl-872"></a>[] dc:date &quot;2012-06-05T23:37:08Z&quot;^^xsd:dateTime ;
+<a name="cl-873"></a>        a earl:Assertion ;
+<a name="cl-874"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-875"></a>        earl:mode earl:automatic ;
+<a name="cl-876"></a>        earl:result [
+<a name="cl-877"></a>                earl:outcome earl:passed ;
+<a name="cl-878"></a>                a earl:TestResult
+<a name="cl-879"></a>        ] ;
+<a name="cl-880"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-881"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0214.xhtml&gt; .
+<a name="cl-882"></a>[] dc:date &quot;2012-06-05T23:37:08Z&quot;^^xsd:dateTime ;
+<a name="cl-883"></a>        a earl:Assertion ;
+<a name="cl-884"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-885"></a>        earl:mode earl:automatic ;
+<a name="cl-886"></a>        earl:result [
+<a name="cl-887"></a>                a earl:TestResult ;
+<a name="cl-888"></a>                earl:outcome earl:passed
+<a name="cl-889"></a>        ] ;
+<a name="cl-890"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-891"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0229.xhtml&gt; .
+<a name="cl-892"></a>[] dc:date &quot;2012-06-05T23:37:09Z&quot;^^xsd:dateTime ;
+<a name="cl-893"></a>        a earl:Assertion ;
+<a name="cl-894"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-895"></a>        earl:mode earl:automatic ;
+<a name="cl-896"></a>        earl:result [
+<a name="cl-897"></a>                earl:outcome earl:passed ;
+<a name="cl-898"></a>                a earl:TestResult
+<a name="cl-899"></a>        ] ;
+<a name="cl-900"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-901"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0246.xhtml&gt; .
+<a name="cl-902"></a>[] dc:date &quot;2012-06-05T23:37:09Z&quot;^^xsd:dateTime ;
+<a name="cl-903"></a>        a earl:Assertion ;
+<a name="cl-904"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-905"></a>        earl:mode earl:automatic ;
+<a name="cl-906"></a>        earl:result [
+<a name="cl-907"></a>                a earl:TestResult ;
+<a name="cl-908"></a>                earl:outcome earl:passed
+<a name="cl-909"></a>        ] ;
+<a name="cl-910"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-911"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0247.xhtml&gt; .
+<a name="cl-912"></a>[] dc:date &quot;2012-06-05T23:37:09Z&quot;^^xsd:dateTime ;
+<a name="cl-913"></a>        a earl:Assertion ;
+<a name="cl-914"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-915"></a>        earl:mode earl:automatic ;
+<a name="cl-916"></a>        earl:result [
+<a name="cl-917"></a>                a earl:TestResult ;
+<a name="cl-918"></a>                earl:outcome earl:passed
+<a name="cl-919"></a>        ] ;
+<a name="cl-920"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-921"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0248.xhtml&gt; .
+<a name="cl-922"></a>[] dc:date &quot;2012-06-05T23:37:09Z&quot;^^xsd:dateTime ;
+<a name="cl-923"></a>        a earl:Assertion ;
+<a name="cl-924"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-925"></a>        earl:mode earl:automatic ;
+<a name="cl-926"></a>        earl:result [
+<a name="cl-927"></a>                earl:outcome earl:passed ;
+<a name="cl-928"></a>                a earl:TestResult
+<a name="cl-929"></a>        ] ;
+<a name="cl-930"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-931"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0249.xhtml&gt; .
+<a name="cl-932"></a>[] dc:date &quot;2012-06-05T23:37:10Z&quot;^^xsd:dateTime ;
+<a name="cl-933"></a>        a earl:Assertion ;
+<a name="cl-934"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-935"></a>        earl:mode earl:automatic ;
+<a name="cl-936"></a>        earl:result [
+<a name="cl-937"></a>                earl:outcome earl:passed ;
+<a name="cl-938"></a>                a earl:TestResult
+<a name="cl-939"></a>        ] ;
+<a name="cl-940"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-941"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0250.xhtml&gt; .
+<a name="cl-942"></a>[] dc:date &quot;2012-06-05T23:37:10Z&quot;^^xsd:dateTime ;
+<a name="cl-943"></a>        a earl:Assertion ;
+<a name="cl-944"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-945"></a>        earl:mode earl:automatic ;
+<a name="cl-946"></a>        earl:result [
+<a name="cl-947"></a>                a earl:TestResult ;
+<a name="cl-948"></a>                earl:outcome earl:passed
+<a name="cl-949"></a>        ] ;
+<a name="cl-950"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-951"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0258.xhtml&gt; .
+<a name="cl-952"></a>[] dc:date &quot;2012-06-05T23:37:10Z&quot;^^xsd:dateTime ;
+<a name="cl-953"></a>        a earl:Assertion ;
+<a name="cl-954"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-955"></a>        earl:mode earl:automatic ;
+<a name="cl-956"></a>        earl:result [
+<a name="cl-957"></a>                a earl:TestResult ;
+<a name="cl-958"></a>                earl:outcome earl:passed
+<a name="cl-959"></a>        ] ;
+<a name="cl-960"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-961"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0259.xhtml&gt; .
+<a name="cl-962"></a>[] dc:date &quot;2012-06-05T23:37:10Z&quot;^^xsd:dateTime ;
+<a name="cl-963"></a>        a earl:Assertion ;
+<a name="cl-964"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-965"></a>        earl:mode earl:automatic ;
+<a name="cl-966"></a>        earl:result [
+<a name="cl-967"></a>                earl:outcome earl:passed ;
+<a name="cl-968"></a>                a earl:TestResult
+<a name="cl-969"></a>        ] ;
+<a name="cl-970"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-971"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0261.xhtml&gt; .
+<a name="cl-972"></a>[] dc:date &quot;2012-06-05T23:37:11Z&quot;^^xsd:dateTime ;
+<a name="cl-973"></a>        a earl:Assertion ;
+<a name="cl-974"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-975"></a>        earl:mode earl:automatic ;
+<a name="cl-976"></a>        earl:result [
+<a name="cl-977"></a>                earl:outcome earl:passed ;
+<a name="cl-978"></a>                a earl:TestResult
+<a name="cl-979"></a>        ] ;
+<a name="cl-980"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-981"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0262.xhtml&gt; .
+<a name="cl-982"></a>[] dc:date &quot;2012-06-05T23:37:11Z&quot;^^xsd:dateTime ;
+<a name="cl-983"></a>        a earl:Assertion ;
+<a name="cl-984"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-985"></a>        earl:mode earl:automatic ;
+<a name="cl-986"></a>        earl:result [
+<a name="cl-987"></a>                earl:outcome earl:passed ;
+<a name="cl-988"></a>                a earl:TestResult
+<a name="cl-989"></a>        ] ;
+<a name="cl-990"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-991"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0263.xhtml&gt; .
+<a name="cl-992"></a>[] dc:date &quot;2012-06-05T23:37:11Z&quot;^^xsd:dateTime ;
+<a name="cl-993"></a>        a earl:Assertion ;
+<a name="cl-994"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-995"></a>        earl:mode earl:automatic ;
+<a name="cl-996"></a>        earl:result [
+<a name="cl-997"></a>                earl:outcome earl:passed ;
+<a name="cl-998"></a>                a earl:TestResult
+<a name="cl-999"></a>        ] ;
+<a name="cl-1000"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-1001"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0264.xhtml&gt; .
+<a name="cl-1002"></a>[] dc:date &quot;2012-06-05T23:37:11Z&quot;^^xsd:dateTime ;
+<a name="cl-1003"></a>        a earl:Assertion ;
+<a name="cl-1004"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-1005"></a>        earl:mode earl:automatic ;
+<a name="cl-1006"></a>        earl:result [
+<a name="cl-1007"></a>                earl:outcome earl:passed ;
+<a name="cl-1008"></a>                a earl:TestResult
+<a name="cl-1009"></a>        ] ;
+<a name="cl-1010"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-1011"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0265.xhtml&gt; .
+<a name="cl-1012"></a>[] dc:date &quot;2012-06-05T23:37:11Z&quot;^^xsd:dateTime ;
+<a name="cl-1013"></a>        a earl:Assertion ;
+<a name="cl-1014"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-1015"></a>        earl:mode earl:automatic ;
+<a name="cl-1016"></a>        earl:result [
+<a name="cl-1017"></a>                earl:outcome earl:passed ;
+<a name="cl-1018"></a>                a earl:TestResult
+<a name="cl-1019"></a>        ] ;
+<a name="cl-1020"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-1021"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0266.xhtml&gt; .
+<a name="cl-1022"></a>[] dc:date &quot;2012-06-05T23:37:11Z&quot;^^xsd:dateTime ;
+<a name="cl-1023"></a>        a earl:Assertion ;
+<a name="cl-1024"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-1025"></a>        earl:mode earl:automatic ;
+<a name="cl-1026"></a>        earl:result [
+<a name="cl-1027"></a>                earl:outcome earl:passed ;
+<a name="cl-1028"></a>                a earl:TestResult
+<a name="cl-1029"></a>        ] ;
+<a name="cl-1030"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-1031"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0267.xhtml&gt; .
+<a name="cl-1032"></a>[] dc:date &quot;2012-06-05T23:37:11Z&quot;^^xsd:dateTime ;
+<a name="cl-1033"></a>        a earl:Assertion ;
+<a name="cl-1034"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-1035"></a>        earl:mode earl:automatic ;
+<a name="cl-1036"></a>        earl:result [
+<a name="cl-1037"></a>                earl:outcome earl:passed ;
+<a name="cl-1038"></a>                a earl:TestResult
+<a name="cl-1039"></a>        ] ;
+<a name="cl-1040"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-1041"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0268.xhtml&gt; .
+<a name="cl-1042"></a>[] dc:date &quot;2012-06-05T23:37:11Z&quot;^^xsd:dateTime ;
+<a name="cl-1043"></a>        a earl:Assertion ;
+<a name="cl-1044"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-1045"></a>        earl:mode earl:automatic ;
+<a name="cl-1046"></a>        earl:result [
+<a name="cl-1047"></a>                earl:outcome earl:passed ;
+<a name="cl-1048"></a>                a earl:TestResult
+<a name="cl-1049"></a>        ] ;
+<a name="cl-1050"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-1051"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0269.xhtml&gt; .
+<a name="cl-1052"></a>[] dc:date &quot;2012-06-05T23:37:12Z&quot;^^xsd:dateTime ;
+<a name="cl-1053"></a>        a earl:Assertion ;
+<a name="cl-1054"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-1055"></a>        earl:mode earl:automatic ;
+<a name="cl-1056"></a>        earl:result [
+<a name="cl-1057"></a>                a earl:TestResult ;
+<a name="cl-1058"></a>                earl:outcome earl:passed
+<a name="cl-1059"></a>        ] ;
+<a name="cl-1060"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-1061"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0271.xhtml&gt; .
+<a name="cl-1062"></a>[] dc:date &quot;2012-06-05T23:37:12Z&quot;^^xsd:dateTime ;
+<a name="cl-1063"></a>        a earl:Assertion ;
+<a name="cl-1064"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-1065"></a>        earl:mode earl:automatic ;
+<a name="cl-1066"></a>        earl:result [
+<a name="cl-1067"></a>                a earl:TestResult ;
+<a name="cl-1068"></a>                earl:outcome earl:passed
+<a name="cl-1069"></a>        ] ;
+<a name="cl-1070"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-1071"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0289.xhtml&gt; .
+<a name="cl-1072"></a>[] dc:date &quot;2012-06-05T23:37:12Z&quot;^^xsd:dateTime ;
+<a name="cl-1073"></a>        a earl:Assertion ;
+<a name="cl-1074"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-1075"></a>        earl:mode earl:automatic ;
+<a name="cl-1076"></a>        earl:result [
+<a name="cl-1077"></a>                earl:outcome earl:passed ;
+<a name="cl-1078"></a>                a earl:TestResult
+<a name="cl-1079"></a>        ] ;
+<a name="cl-1080"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-1081"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0290.xhtml&gt; .
+<a name="cl-1082"></a>[] dc:date &quot;2012-06-05T23:37:12Z&quot;^^xsd:dateTime ;
+<a name="cl-1083"></a>        a earl:Assertion ;
+<a name="cl-1084"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-1085"></a>        earl:mode earl:automatic ;
+<a name="cl-1086"></a>        earl:result [
+<a name="cl-1087"></a>                a earl:TestResult ;
+<a name="cl-1088"></a>                earl:outcome earl:passed
+<a name="cl-1089"></a>        ] ;
+<a name="cl-1090"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-1091"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0291.xhtml&gt; .
+<a name="cl-1092"></a>[] dc:date &quot;2012-06-05T23:37:12Z&quot;^^xsd:dateTime ;
+<a name="cl-1093"></a>        a earl:Assertion ;
+<a name="cl-1094"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-1095"></a>        earl:mode earl:automatic ;
+<a name="cl-1096"></a>        earl:result [
+<a name="cl-1097"></a>                a earl:TestResult ;
+<a name="cl-1098"></a>                earl:outcome earl:passed
+<a name="cl-1099"></a>        ] ;
+<a name="cl-1100"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-1101"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0292.xhtml&gt; .
+<a name="cl-1102"></a>[] dc:date &quot;2012-06-05T23:37:12Z&quot;^^xsd:dateTime ;
+<a name="cl-1103"></a>        a earl:Assertion ;
+<a name="cl-1104"></a>        earl:assertedBy rrp:xt ;
+<a name="cl-1105"></a>        earl:mode earl:automatic ;
+<a name="cl-1106"></a>        earl:result [
+<a name="cl-1107"></a>                a earl:TestResult ;
+<a name="cl-1108"></a>                earl:outcome earl:passed
+<a name="cl-1109"></a>        ] ;
+<a name="cl-1110"></a>        earl:subject dist:v_1-097 ;
+<a name="cl-1111"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0293.xhtml&gt; .
+<a name="cl-1112"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0001.xhtml&gt; dc:identifier &quot;0001&quot; ;
+<a name="cl-1113"></a>        dc:title &quot;Predicate establishment with @property&quot; ;
+<a name="cl-1114"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1115"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1116"></a>        a earl:TestCase .
+<a name="cl-1117"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0006.xhtml&gt; dc:identifier &quot;0006&quot; ;
+<a name="cl-1118"></a>        dc:title &quot;@rel and @rev&quot; ;
+<a name="cl-1119"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1120"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1121"></a>        a earl:TestCase .
+<a name="cl-1122"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0007.xhtml&gt; dc:identifier &quot;0007&quot; ;
+<a name="cl-1123"></a>        dc:title &quot;@rel, @rev, @property, @content&quot; ;
+<a name="cl-1124"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1125"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1126"></a>        a earl:TestCase .
+<a name="cl-1127"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0008.xhtml&gt; dc:identifier &quot;0008&quot; ;
+<a name="cl-1128"></a>        dc:title &quot;empty string @about&quot; ;
+<a name="cl-1129"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1130"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1131"></a>        a earl:TestCase .
+<a name="cl-1132"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0009.xhtml&gt; dc:identifier &quot;0009&quot; ;
+<a name="cl-1133"></a>        dc:title &quot;@rev&quot; ;
+<a name="cl-1134"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1135"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1136"></a>        a earl:TestCase .
+<a name="cl-1137"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0010.xhtml&gt; dc:identifier &quot;0010&quot; ;
+<a name="cl-1138"></a>        dc:title &quot;@rel, @rev, @href&quot; ;
+<a name="cl-1139"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1140"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1141"></a>        a earl:TestCase .
+<a name="cl-1142"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0012.xhtml&gt; dc:identifier &quot;0012&quot; ;
+<a name="cl-1143"></a>        dc:title &quot;@xml:lang&quot; ;
+<a name="cl-1144"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1145"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1146"></a>        a earl:TestCase .
+<a name="cl-1147"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0013.xhtml&gt; dc:identifier &quot;0013&quot; ;
+<a name="cl-1148"></a>        dc:title &quot;@xml:lang inheritance&quot; ;
+<a name="cl-1149"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1150"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1151"></a>        a earl:TestCase .
+<a name="cl-1152"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0014.xhtml&gt; dc:identifier &quot;0014&quot; ;
+<a name="cl-1153"></a>        dc:title &quot;@datatype, xsd:integer&quot; ;
+<a name="cl-1154"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1155"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1156"></a>        a earl:TestCase .
+<a name="cl-1157"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0015.xhtml&gt; dc:identifier &quot;0015&quot; ;
+<a name="cl-1158"></a>        dc:title &quot;meta and link&quot; ;
+<a name="cl-1159"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1160"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1161"></a>        a earl:TestCase .
+<a name="cl-1162"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0017.xhtml&gt; dc:identifier &quot;0017&quot; ;
+<a name="cl-1163"></a>        dc:title &quot;Related blanknodes&quot; ;
+<a name="cl-1164"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1165"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1166"></a>        a earl:TestCase .
+<a name="cl-1167"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0018.xhtml&gt; dc:identifier &quot;0018&quot; ;
+<a name="cl-1168"></a>        dc:title &quot;@rel for predicate&quot; ;
+<a name="cl-1169"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1170"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1171"></a>        a earl:TestCase .
+<a name="cl-1172"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0019.xhtml&gt; dc:identifier &quot;0019&quot; ;
+<a name="cl-1173"></a>        dc:title &quot;@about for subject&quot; ;
+<a name="cl-1174"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1175"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1176"></a>        a earl:TestCase .
+<a name="cl-1177"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0020.xhtml&gt; dc:identifier &quot;0020&quot; ;
+<a name="cl-1178"></a>        dc:title &quot;Inheriting @about for subject&quot; ;
+<a name="cl-1179"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1180"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1181"></a>        a earl:TestCase .
+<a name="cl-1182"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0021.xhtml&gt; dc:identifier &quot;0021&quot; ;
+<a name="cl-1183"></a>        dc:title &quot;Subject inheritance with no @about&quot; ;
+<a name="cl-1184"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1185"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1186"></a>        a earl:TestCase .
+<a name="cl-1187"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0023.xhtml&gt; dc:identifier &quot;0023&quot; ;
+<a name="cl-1188"></a>        dc:title &quot;@id does not generate subjects&quot; ;
+<a name="cl-1189"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1190"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1191"></a>        a earl:TestCase .
+<a name="cl-1192"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0025.xhtml&gt; dc:identifier &quot;0025&quot; ;
+<a name="cl-1193"></a>        dc:title &quot;simple chaining test&quot; ;
+<a name="cl-1194"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1195"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1196"></a>        a earl:TestCase .
+<a name="cl-1197"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0026.xhtml&gt; dc:identifier &quot;0026&quot; ;
+<a name="cl-1198"></a>        dc:title &quot;@content&quot; ;
+<a name="cl-1199"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1200"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1201"></a>        a earl:TestCase .
+<a name="cl-1202"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0027.xhtml&gt; dc:identifier &quot;0027&quot; ;
+<a name="cl-1203"></a>        dc:title &quot;@content, ignore element content&quot; ;
+<a name="cl-1204"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1205"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1206"></a>        a earl:TestCase .
+<a name="cl-1207"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0029.xhtml&gt; dc:identifier &quot;0029&quot; ;
+<a name="cl-1208"></a>        dc:title &quot;markup stripping with @datatype&quot; ;
+<a name="cl-1209"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1210"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1211"></a>        a earl:TestCase .
+<a name="cl-1212"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0030.xhtml&gt; dc:identifier &quot;0030&quot; ;
+<a name="cl-1213"></a>        dc:title &quot;omitted @about&quot; ;
+<a name="cl-1214"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1215"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1216"></a>        a earl:TestCase .
+<a name="cl-1217"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0031.xhtml&gt; dc:identifier &quot;0031&quot; ;
+<a name="cl-1218"></a>        dc:title &quot;simple @resource&quot; ;
+<a name="cl-1219"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1220"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1221"></a>        a earl:TestCase .
+<a name="cl-1222"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0032.xhtml&gt; dc:identifier &quot;0032&quot; ;
+<a name="cl-1223"></a>        dc:title &quot;@resource overrides @href&quot; ;
+<a name="cl-1224"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1225"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1226"></a>        a earl:TestCase .
+<a name="cl-1227"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0033.xhtml&gt; dc:identifier &quot;0033&quot; ;
+<a name="cl-1228"></a>        dc:title &quot;simple chaining test with bNode&quot; ;
+<a name="cl-1229"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1230"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1231"></a>        a earl:TestCase .
+<a name="cl-1232"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0034.xhtml&gt; dc:identifier &quot;0034&quot; ;
+<a name="cl-1233"></a>        dc:title &quot;simple img[@src] test&quot; ;
+<a name="cl-1234"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1235"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1236"></a>        a earl:TestCase .
+<a name="cl-1237"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0035.xhtml&gt; dc:identifier &quot;0035&quot; ;
+<a name="cl-1238"></a>        dc:title &quot;@src/@href test&quot; ;
+<a name="cl-1239"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1240"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1241"></a>        a earl:TestCase .
+<a name="cl-1242"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0036.xhtml&gt; dc:identifier &quot;0036&quot; ;
+<a name="cl-1243"></a>        dc:title &quot;@src/@resource test&quot; ;
+<a name="cl-1244"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1245"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1246"></a>        a earl:TestCase .
+<a name="cl-1247"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0037.xhtml&gt; dc:identifier &quot;0037&quot; ;
+<a name="cl-1248"></a>        dc:title &quot;@src/@href/@resource test&quot; ;
+<a name="cl-1249"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1250"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1251"></a>        a earl:TestCase .
+<a name="cl-1252"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0038.xhtml&gt; dc:identifier &quot;0038&quot; ;
+<a name="cl-1253"></a>        dc:title &quot;@rev - img[@src] test&quot; ;
+<a name="cl-1254"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1255"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1256"></a>        a earl:TestCase .
+<a name="cl-1257"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0039.xhtml&gt; dc:identifier &quot;0039&quot; ;
+<a name="cl-1258"></a>        dc:title &quot;@rev - @src/@href test&quot; ;
+<a name="cl-1259"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1260"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1261"></a>        a earl:TestCase .
+<a name="cl-1262"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0041.xhtml&gt; dc:identifier &quot;0041&quot; ;
+<a name="cl-1263"></a>        dc:title &quot;@rev - @src/@href/@resource test&quot; ;
+<a name="cl-1264"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1265"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1266"></a>        a earl:TestCase .
+<a name="cl-1267"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0048.xhtml&gt; dc:identifier &quot;0048&quot; ;
+<a name="cl-1268"></a>        dc:title &quot;@typeof with @about and @rel present, no @resource&quot; ;
+<a name="cl-1269"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1270"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1271"></a>        a earl:TestCase .
+<a name="cl-1272"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0049.xhtml&gt; dc:identifier &quot;0049&quot; ;
+<a name="cl-1273"></a>        dc:title &quot;@typeof with @about, no @rel or @resource&quot; ;
+<a name="cl-1274"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1275"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1276"></a>        a earl:TestCase .
+<a name="cl-1277"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0050.xhtml&gt; dc:identifier &quot;0050&quot; ;
+<a name="cl-1278"></a>        dc:title &quot;@typeof without anything else&quot; ;
+<a name="cl-1279"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1280"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1281"></a>        a earl:TestCase .
+<a name="cl-1282"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0051.xhtml&gt; dc:identifier &quot;0051&quot; ;
+<a name="cl-1283"></a>        dc:title &quot;@typeof with a single @property&quot; ;
+<a name="cl-1284"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1285"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1286"></a>        a earl:TestCase .
+<a name="cl-1287"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0052.xhtml&gt; dc:identifier &quot;0052&quot; ;
+<a name="cl-1288"></a>        dc:title &quot;@typeof with @resource and nothing else&quot; ;
+<a name="cl-1289"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1290"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1291"></a>        a earl:TestCase .
+<a name="cl-1292"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0053.xhtml&gt; dc:identifier &quot;0053&quot; ;
+<a name="cl-1293"></a>        dc:title &quot;@typeof with @resource and nothing else, with a subelement&quot; ;
+<a name="cl-1294"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1295"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1296"></a>        a earl:TestCase .
+<a name="cl-1297"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0054.xhtml&gt; dc:identifier &quot;0054&quot; ;
+<a name="cl-1298"></a>        dc:title &quot;multiple @property&quot; ;
+<a name="cl-1299"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1300"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1301"></a>        a earl:TestCase .
+<a name="cl-1302"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0055.xhtml&gt; dc:identifier &quot;0055&quot; ;
+<a name="cl-1303"></a>        dc:title &quot;multiple @rel&quot; ;
+<a name="cl-1304"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1305"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1306"></a>        a earl:TestCase .
+<a name="cl-1307"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0056.xhtml&gt; dc:identifier &quot;0056&quot; ;
+<a name="cl-1308"></a>        dc:title &quot;@typeof applies to @about on same element with hanging rel&quot; ;
+<a name="cl-1309"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1310"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1311"></a>        a earl:TestCase .
+<a name="cl-1312"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0057.xhtml&gt; dc:identifier &quot;0057&quot; ;
+<a name="cl-1313"></a>        dc:title &quot;hanging @rel creates multiple triples&quot; ;
+<a name="cl-1314"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1315"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1316"></a>        a earl:TestCase .
+<a name="cl-1317"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0059.xhtml&gt; dc:identifier &quot;0059&quot; ;
+<a name="cl-1318"></a>        dc:title &quot;multiple hanging @rels with multiple children&quot; ;
+<a name="cl-1319"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1320"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1321"></a>        a earl:TestCase .
+<a name="cl-1322"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0060.xhtml&gt; dc:identifier &quot;0060&quot; ;
+<a name="cl-1323"></a>        dc:title &quot;UTF-8 conformance&quot; ;
+<a name="cl-1324"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1325"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1326"></a>        a earl:TestCase .
+<a name="cl-1327"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0063.xhtml&gt; dc:identifier &quot;0063&quot; ;
+<a name="cl-1328"></a>        dc:title &quot;@rel in head using reserved XHTML value and empty-prefix CURIE syntax&quot; ;
+<a name="cl-1329"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1330"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1331"></a>        a earl:TestCase .
+<a name="cl-1332"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0064.xhtml&gt; dc:identifier &quot;0064&quot; ;
+<a name="cl-1333"></a>        dc:title &quot;@about with safe CURIE&quot; ;
+<a name="cl-1334"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1335"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1336"></a>        a earl:TestCase .
+<a name="cl-1337"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0065.xhtml&gt; dc:identifier &quot;0065&quot; ;
+<a name="cl-1338"></a>        dc:title &quot;@rel with safe CURIE&quot; ;
+<a name="cl-1339"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1340"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1341"></a>        a earl:TestCase .
+<a name="cl-1342"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0067.xhtml&gt; dc:identifier &quot;0067&quot; ;
+<a name="cl-1343"></a>        dc:title &quot;@property in the head&quot; ;
+<a name="cl-1344"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1345"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1346"></a>        a earl:TestCase .
+<a name="cl-1347"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0068.xhtml&gt; dc:identifier &quot;0068&quot; ;
+<a name="cl-1348"></a>        dc:title &quot;Relative URI in @about&quot; ;
+<a name="cl-1349"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1350"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1351"></a>        a earl:TestCase .
+<a name="cl-1352"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0071.xhtml&gt; dc:identifier &quot;0071&quot; ;
+<a name="cl-1353"></a>        dc:title &quot;No explicit @about&quot; ;
+<a name="cl-1354"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1355"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1356"></a>        a earl:TestCase .
+<a name="cl-1357"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0079.xhtml&gt; dc:identifier &quot;0079&quot; ;
+<a name="cl-1358"></a>        dc:title &quot;@resource and @href in completing incomplete triples&quot; ;
+<a name="cl-1359"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1360"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1361"></a>        a earl:TestCase .
+<a name="cl-1362"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0080.xhtml&gt; dc:identifier &quot;0080&quot; ;
+<a name="cl-1363"></a>        dc:title &quot;@about overrides @resource in incomplete triples&quot; ;
+<a name="cl-1364"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1365"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1366"></a>        a earl:TestCase .
+<a name="cl-1367"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0083.xhtml&gt; dc:identifier &quot;0083&quot; ;
+<a name="cl-1368"></a>        dc:title &quot;multiple ways of handling incomplete triples (merged)&quot; ;
+<a name="cl-1369"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1370"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1371"></a>        a earl:TestCase .
+<a name="cl-1372"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0084.xhtml&gt; dc:identifier &quot;0084&quot; ;
+<a name="cl-1373"></a>        dc:title &quot;multiple ways of handling incomplete triples, this time with both @rel and @rev&quot; ;
+<a name="cl-1374"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1375"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1376"></a>        a earl:TestCase .
+<a name="cl-1377"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0085.xhtml&gt; dc:identifier &quot;0085&quot; ;
+<a name="cl-1378"></a>        dc:title &quot;@resource and @href in completing incomplete triples&quot; ;
+<a name="cl-1379"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1380"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1381"></a>        a earl:TestCase .
+<a name="cl-1382"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0087.xhtml&gt; dc:identifier &quot;0087&quot; ;
+<a name="cl-1383"></a>        dc:title &quot;All reserved XHTML @rel values (with :xxx)&quot; ;
+<a name="cl-1384"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1385"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1386"></a>        a earl:TestCase .
+<a name="cl-1387"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0088.xhtml&gt; dc:identifier &quot;0088&quot; ;
+<a name="cl-1388"></a>        dc:title &quot;Interpretation of the CURIE \&quot;_:\&quot;&quot; ;
+<a name="cl-1389"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1390"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1391"></a>        a earl:TestCase .
+<a name="cl-1392"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0089.xhtml&gt; dc:identifier &quot;0089&quot; ;
+<a name="cl-1393"></a>        dc:title &quot;@src sets a new subject (@typeof)&quot; ;
+<a name="cl-1394"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1395"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1396"></a>        a earl:TestCase .
+<a name="cl-1397"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0091.xhtml&gt; dc:identifier &quot;0091&quot; ;
+<a name="cl-1398"></a>        dc:title &quot;Non-reserved, un-prefixed CURIE in @property&quot; ;
+<a name="cl-1399"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1400"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1401"></a>        a earl:TestCase .
+<a name="cl-1402"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0093.xhtml&gt; dc:identifier &quot;0093&quot; ;
+<a name="cl-1403"></a>        dc:title &quot;Tests XMLLiteral content with explicit @datatype (user-data-typed literal)&quot; ;
+<a name="cl-1404"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1405"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1406"></a>        a earl:TestCase .
+<a name="cl-1407"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0099.xhtml&gt; dc:identifier &quot;0099&quot; ;
+<a name="cl-1408"></a>        dc:title &quot;Preservation of white space in literals&quot; ;
+<a name="cl-1409"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1410"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1411"></a>        a earl:TestCase .
+<a name="cl-1412"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0104.xhtml&gt; dc:identifier &quot;0104&quot; ;
+<a name="cl-1413"></a>        dc:title &quot;rdf:value&quot; ;
+<a name="cl-1414"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1415"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1416"></a>        a earl:TestCase .
+<a name="cl-1417"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0106.xhtml&gt; dc:identifier &quot;0106&quot; ;
+<a name="cl-1418"></a>        dc:title &quot;chaining with empty value in inner @rel&quot; ;
+<a name="cl-1419"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1420"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1421"></a>        a earl:TestCase .
+<a name="cl-1422"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0107.xhtml&gt; dc:identifier &quot;0107&quot; ;
+<a name="cl-1423"></a>        dc:title &quot;no garbage collecting bnodes&quot; ;
+<a name="cl-1424"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1425"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1426"></a>        a earl:TestCase .
+<a name="cl-1427"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0108.xhtml&gt; dc:identifier &quot;0108&quot; ;
+<a name="cl-1428"></a>        dc:title &quot;plain literal with datatype=\&quot;\&quot; and xml:lang preservation&quot; ;
+<a name="cl-1429"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1430"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1431"></a>        a earl:TestCase .
+<a name="cl-1432"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0112.xhtml&gt; dc:identifier &quot;0112&quot; ;
+<a name="cl-1433"></a>        dc:title &quot;plain literal with datatype=\&quot;\&quot;&quot; ;
+<a name="cl-1434"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1435"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1436"></a>        a earl:TestCase .
+<a name="cl-1437"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0113.xhtml&gt; dc:identifier &quot;0113&quot; ;
+<a name="cl-1438"></a>        dc:title &quot;element with @property and no child nodes generates  empty plain literal&quot; ;
+<a name="cl-1439"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1440"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1441"></a>        a earl:TestCase .
+<a name="cl-1442"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0115.xhtml&gt; dc:identifier &quot;0115&quot; ;
+<a name="cl-1443"></a>        dc:title &quot;XML Entities must be supported by RDFa parser&quot; ;
+<a name="cl-1444"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1445"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1446"></a>        a earl:TestCase .
+<a name="cl-1447"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0118.xhtml&gt; dc:identifier &quot;0118&quot; ;
+<a name="cl-1448"></a>        dc:title &quot;empty string \&quot;\&quot; is not equivalent to NULL - @about&quot; ;
+<a name="cl-1449"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1450"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1451"></a>        a earl:TestCase .
+<a name="cl-1452"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0119.xhtml&gt; dc:identifier &quot;0119&quot; ;
+<a name="cl-1453"></a>        dc:title &quot;\&quot;[prefix:]\&quot; CURIE format is valid&quot; ;
+<a name="cl-1454"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1455"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1456"></a>        a earl:TestCase .
+<a name="cl-1457"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0120.xhtml&gt; dc:identifier &quot;0120&quot; ;
+<a name="cl-1458"></a>        dc:title &quot;\&quot;[:]\&quot; CURIE format is valid&quot; ;
+<a name="cl-1459"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1460"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1461"></a>        a earl:TestCase .
+<a name="cl-1462"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0121.xhtml&gt; dc:identifier &quot;0121&quot; ;
+<a name="cl-1463"></a>        dc:title &quot;\&quot;[]\&quot; is a valid safe CURIE&quot; ;
+<a name="cl-1464"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1465"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1466"></a>        a earl:TestCase .
+<a name="cl-1467"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0122.xhtml&gt; dc:identifier &quot;0122&quot; ;
+<a name="cl-1468"></a>        dc:title &quot;resource=\&quot;[]\&quot; does not set the object&quot; ;
+<a name="cl-1469"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1470"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1471"></a>        a earl:TestCase .
+<a name="cl-1472"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0126.xhtml&gt; dc:identifier &quot;0126&quot; ;
+<a name="cl-1473"></a>        dc:title &quot;Multiple @typeof values&quot; ;
+<a name="cl-1474"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1475"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1476"></a>        a earl:TestCase .
+<a name="cl-1477"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0140.xhtml&gt; dc:identifier &quot;0140&quot; ;
+<a name="cl-1478"></a>        dc:title &quot;Blank nodes identifiers are not allowed as predicates&quot; ;
+<a name="cl-1479"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1480"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1481"></a>        a earl:TestCase .
+<a name="cl-1482"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0147.xhtml&gt; dc:identifier &quot;0147&quot; ;
+<a name="cl-1483"></a>        dc:title &quot;xmlns prefix &#39;xmlzzz&#39; (reserved)&quot; ;
+<a name="cl-1484"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1485"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1486"></a>        a earl:TestCase .
+<a name="cl-1487"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0174.xhtml&gt; dc:identifier &quot;0174&quot; ;
+<a name="cl-1488"></a>        dc:title &quot;Support single character prefix in CURIEs&quot; ;
+<a name="cl-1489"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1490"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1491"></a>        a earl:TestCase .
+<a name="cl-1492"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0175.xhtml&gt; dc:identifier &quot;0175&quot; ;
+<a name="cl-1493"></a>        dc:title &quot;IRI for @property is allowed&quot; ;
+<a name="cl-1494"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1495"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1496"></a>        a earl:TestCase .
+<a name="cl-1497"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0176.xhtml&gt; dc:identifier &quot;0176&quot; ;
+<a name="cl-1498"></a>        dc:title &quot;IRI for @rel and @rev is allowed&quot; ;
+<a name="cl-1499"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1500"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1501"></a>        a earl:TestCase .
+<a name="cl-1502"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0180.xhtml&gt; dc:identifier &quot;0180&quot; ;
+<a name="cl-1503"></a>        dc:title &quot;Test @prefix with empty mapping&quot; ;
+<a name="cl-1504"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1505"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1506"></a>        a earl:TestCase .
+<a name="cl-1507"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0181.xhtml&gt; dc:identifier &quot;0181&quot; ;
+<a name="cl-1508"></a>        dc:title &quot;Test default XHTML vocabulary&quot; ;
+<a name="cl-1509"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1510"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1511"></a>        a earl:TestCase .
+<a name="cl-1512"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0196.xhtml&gt; dc:identifier &quot;0196&quot; ;
+<a name="cl-1513"></a>        dc:title &quot;Test process explicit XMLLiteral&quot; ;
+<a name="cl-1514"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1515"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1516"></a>        a earl:TestCase .
+<a name="cl-1517"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0202.svg&gt; dc:identifier &quot;0202&quot; ;
+<a name="cl-1518"></a>        dc:title &quot;Tests to ensure @xml:base used in SVG and XHTML5&quot; ;
+<a name="cl-1519"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1520"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1521"></a>        a earl:TestCase .
+<a name="cl-1522"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0203.svg&gt; dc:identifier &quot;0203&quot; ;
+<a name="cl-1523"></a>        dc:title &quot;Tests to ensure @, XML+RDFa used in non-root elements in SVG and XHTML5&quot; ;
+<a name="cl-1524"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1525"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1526"></a>        a earl:TestCase .
+<a name="cl-1527"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0206.xhtml&gt; dc:identifier &quot;0206&quot; ;
+<a name="cl-1528"></a>        dc:title &quot;Usage of Initial Context&quot; ;
+<a name="cl-1529"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1530"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1531"></a>        a earl:TestCase .
+<a name="cl-1532"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0207.xhtml&gt; dc:identifier &quot;0207&quot; ;
+<a name="cl-1533"></a>        dc:title &quot;Vevent using @typeof&quot; ;
+<a name="cl-1534"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1535"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1536"></a>        a earl:TestCase .
+<a name="cl-1537"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0213.xhtml&gt; dc:identifier &quot;0213&quot; ;
+<a name="cl-1538"></a>        dc:title &quot;Datatype generation for a literal with XML content, version 1.1&quot; ;
+<a name="cl-1539"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1540"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1541"></a>        a earl:TestCase .
+<a name="cl-1542"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0214.xhtml&gt; dc:identifier &quot;0214&quot; ;
+<a name="cl-1543"></a>        dc:title &quot;Root element has implicit @about=\&quot;\&quot;&quot; ;
+<a name="cl-1544"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1545"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1546"></a>        a earl:TestCase .
+<a name="cl-1547"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0229.xhtml&gt; dc:identifier &quot;0229&quot; ;
+<a name="cl-1548"></a>        dc:title &quot;img[@src] test with omitted @about&quot; ;
+<a name="cl-1549"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1550"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1551"></a>        a earl:TestCase .
+<a name="cl-1552"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0246.xhtml&gt; dc:identifier &quot;0246&quot; ;
+<a name="cl-1553"></a>        dc:title &quot;hanging @rel creates multiple triples, @typeof permutation; RDFa 1.1 version&quot; ;
+<a name="cl-1554"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1555"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1556"></a>        a earl:TestCase .
+<a name="cl-1557"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0247.xhtml&gt; dc:identifier &quot;0247&quot; ;
+<a name="cl-1558"></a>        dc:title &quot;Multiple incomplete triples, RDFa 1.1version&quot; ;
+<a name="cl-1559"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1560"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1561"></a>        a earl:TestCase .
+<a name="cl-1562"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0248.xhtml&gt; dc:identifier &quot;0248&quot; ;
+<a name="cl-1563"></a>        dc:title &quot;multiple ways of handling incomplete triples (with @rev); RDFa 1.1 version&quot; ;
+<a name="cl-1564"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1565"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1566"></a>        a earl:TestCase .
+<a name="cl-1567"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0249.xhtml&gt; dc:identifier &quot;0249&quot; ;
+<a name="cl-1568"></a>        dc:title &quot;multiple ways of handling incomplete triples (with @rel and @rev); RDFa 1.1 version&quot; ;
+<a name="cl-1569"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1570"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1571"></a>        a earl:TestCase .
+<a name="cl-1572"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0250.xhtml&gt; dc:identifier &quot;0250&quot; ;
+<a name="cl-1573"></a>        dc:title &quot;Checking the right behaviour of @typeof with @about, in presence of @property&quot; ;
+<a name="cl-1574"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1575"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1576"></a>        a earl:TestCase .
+<a name="cl-1577"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0258.xhtml&gt; dc:identifier &quot;0258&quot; ;
+<a name="cl-1578"></a>        dc:title &quot;The underscore character is not allowed as a prefix or in xmlns&quot; ;
+<a name="cl-1579"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1580"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1581"></a>        a earl:TestCase .
+<a name="cl-1582"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0259.xhtml&gt; dc:identifier &quot;0259&quot; ;
+<a name="cl-1583"></a>        dc:title &quot;XML+RDFa Initial Context&quot; ;
+<a name="cl-1584"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1585"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1586"></a>        a earl:TestCase .
+<a name="cl-1587"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0261.xhtml&gt; dc:identifier &quot;0261&quot; ;
+<a name="cl-1588"></a>        dc:title &quot;White space preservation in XMLLiteral&quot; ;
+<a name="cl-1589"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1590"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1591"></a>        a earl:TestCase .
+<a name="cl-1592"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0262.xhtml&gt; dc:identifier &quot;0262&quot; ;
+<a name="cl-1593"></a>        dc:title &quot;Predicate establishment with @property, with white spaces before and after the attribute value&quot; ;
+<a name="cl-1594"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1595"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1596"></a>        a earl:TestCase .
+<a name="cl-1597"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0263.xhtml&gt; dc:identifier &quot;0263&quot; ;
+<a name="cl-1598"></a>        dc:title &quot;@property appearing on the html element yields the base as the subject&quot; ;
+<a name="cl-1599"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1600"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1601"></a>        a earl:TestCase .
+<a name="cl-1602"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0264.xhtml&gt; dc:identifier &quot;0264&quot; ;
+<a name="cl-1603"></a>        dc:title &quot;@property appearing on the head element gets the subject from &lt;html&gt;, ie, parent&quot; ;
+<a name="cl-1604"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1605"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1606"></a>        a earl:TestCase .
+<a name="cl-1607"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0265.xhtml&gt; dc:identifier &quot;0265&quot; ;
+<a name="cl-1608"></a>        dc:title &quot;@property appearing on the head element gets the subject from &lt;html&gt;, ie, parent&quot; ;
+<a name="cl-1609"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1610"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1611"></a>        a earl:TestCase .
+<a name="cl-1612"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0266.xhtml&gt; dc:identifier &quot;0266&quot; ;
+<a name="cl-1613"></a>        dc:title &quot;@property without @content or @datatype, typed object set by @href and @typeof&quot; ;
+<a name="cl-1614"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1615"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1616"></a>        a earl:TestCase .
+<a name="cl-1617"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0267.xhtml&gt; dc:identifier &quot;0267&quot; ;
+<a name="cl-1618"></a>        dc:title &quot;@property without @content or @datatype, typed object set by @resource and @typeof&quot; ;
+<a name="cl-1619"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1620"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1621"></a>        a earl:TestCase .
+<a name="cl-1622"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0268.xhtml&gt; dc:identifier &quot;0268&quot; ;
+<a name="cl-1623"></a>        dc:title &quot;@property without @content or @datatype, typed object set by @src and @typeof&quot; ;
+<a name="cl-1624"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1625"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1626"></a>        a earl:TestCase .
+<a name="cl-1627"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0269.xhtml&gt; dc:identifier &quot;0269&quot; ;
+<a name="cl-1628"></a>        dc:title &quot;Use of @property in HEAD without explicit subject&quot; ;
+<a name="cl-1629"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1630"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1631"></a>        a earl:TestCase .
+<a name="cl-1632"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0271.xhtml&gt; dc:identifier &quot;0271&quot; ;
+<a name="cl-1633"></a>        dc:title &quot;Use of @property in HEAD with explicit parent subject via @about&quot; ;
+<a name="cl-1634"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1635"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1636"></a>        a earl:TestCase .
+<a name="cl-1637"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0289.xhtml&gt; dc:identifier &quot;0289&quot; ;
+<a name="cl-1638"></a>        dc:title &quot;@href becomes subject when @property and @content are present&quot; ;
+<a name="cl-1639"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1640"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1641"></a>        a earl:TestCase .
+<a name="cl-1642"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0290.xhtml&gt; dc:identifier &quot;0290&quot; ;
+<a name="cl-1643"></a>        dc:title &quot;@href becomes subject when @property and @datatype are present&quot; ;
+<a name="cl-1644"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1645"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1646"></a>        a earl:TestCase .
+<a name="cl-1647"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0291.xhtml&gt; dc:identifier &quot;0291&quot; ;
+<a name="cl-1648"></a>        dc:title &quot;@href as subject overridden by @about&quot; ;
+<a name="cl-1649"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1650"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1651"></a>        a earl:TestCase .
+<a name="cl-1652"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0292.xhtml&gt; dc:identifier &quot;0292&quot; ;
+<a name="cl-1653"></a>        dc:title &quot;@about overriding @href as subject is used as parent resource&quot; ;
+<a name="cl-1654"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1655"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1656"></a>        a earl:TestCase .
+<a name="cl-1657"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0293.xhtml&gt; dc:identifier &quot;0293&quot; ;
+<a name="cl-1658"></a>        dc:title &quot;Testing the &#39;:&#39; character usage in a CURIE&quot; ;
+<a name="cl-1659"></a>        test:hostLanguage &quot;xml&quot; ;
+<a name="cl-1660"></a>        test:rdfaVersion &quot;1.1&quot; ;
+<a name="cl-1661"></a>        a earl:TestCase .
+<a name="cl-1662"></a>rrp:xt a earl:Software ;
+<a name="cl-1663"></a>        foaf:name &quot;RDF-RDFa-Parser Author Tests&quot; ;
+<a name="cl-1664"></a>        foaf:page &lt;https://bitbucket.org/tobyink/p5-rdf-rdfa-parser/src/tip/xt&gt; .
+</pre></div>
+</td></tr></table>
+    </div>
+  
+  </div>
+  
+
+
+  <div id="mask"><div></div></div>
+
+  </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <ul id="footer-nav">
+      <li>Copyright © 2012 <a href="http://atlassian.com">Atlassian</a></li>
+      <li><a href="http://www.atlassian.com/hosted/terms.jsp">Terms of Service</a></li>
+      <li><a href="http://www.atlassian.com/about/privacy.jsp">Privacy</a></li>
+      <li><a href="//bitbucket.org/site/master/issues/new">Report a Bug to Bitbucket</a></li>
+      <li><a href="http://confluence.atlassian.com/x/IYBGDQ">API</a></li>
+      <li><a href="http://status.bitbucket.org/">Server Status</a></li>
+    </ul>
+    <ul id="social-nav">
+      <li class="blog"><a href="http://blog.bitbucket.org">Bitbucket Blog</a></li>
+      <li class="twitter"><a href="http://www.twitter.com/bitbucket">Twitter</a></li>
+    </ul>
+    <h5>We run</h5>
+    <ul id="technologies">
+      <li><a href="http://www.djangoproject.com/">Django 1.3.1</a></li>
+      <li><a href="//bitbucket.org/jespern/django-piston/">Piston 0.3dev</a></li>
+      <li><a href="http://git-scm.com/">Git 1.7.10.3</a></li>
+      <li><a href="http://www.selenic.com/mercurial/">Hg 2.2.2</a></li>
+      <li><a href="http://www.python.org">Python 2.7.3</a></li>
+      <li>bd31f89ee3e3 | bitbucket03</li>
+    </ul>
+  </div>
+
+  <script src="https://dwz7u9t8u8usb.cloudfront.net/m/7643968c8bac/js/lib/global.js"></script>
+
+
+
+
+
+
+  <script>
+    BB.gaqPush(['_trackPageview']);
+  
+    BB.gaqPush(['atl._trackPageview']);
+
+    
+
+    
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        ga.setAttribute('async', 'true');
+        document.documentElement.firstChild.appendChild(ga);
+    }());
+  </script>
+
+</body>
+</html>
