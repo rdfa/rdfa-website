@@ -54,8 +54,38 @@ module CrazyIvan
 
     ##
     # Return the Manifest source
-    def manifest_ttl
-      @manifest_ttl = File.read(MANIFEST_FILE)
+    #
+    # @param [String] version
+    # @param [String] suite
+    def manifest_ttl(version = nil, suite = nil)
+      if version && suite
+        # Return specific subset of manifest based on host_language and version
+        # with appropriate URI re-writing
+        ttl = %{@prefix dc: <http://purl.org/dc/terms/> .
+          @prefix log: <http://www.w3.org/2000/10/swap/log#> .
+          @prefix owl: <http://www.w3.org/2002/07/owl#> .
+          @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+          @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+          @prefix test: <http://www.w3.org/2006/03/test-description#> .
+          @prefix rdfatest: <http://rdfa.info/vocabs/rdfa-test#> .
+          @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+        }.gsub(/^\s+/, '')
+        ::JSON.load(manifest_json)['@graph'].each do |tc|
+          next unless tc['hostLanguages'].include?(suite) && tc['versions'].include?(version)
+          ttl << "\n"
+          ttl << %{<#{tc['num']}> a #{tc['@type']};\n}
+          ttl << %{  test:classification test:#{tc['classification'].split('#').last};\n}
+          ttl << %{  dc:title """#{tc['description']}""";\n}
+          ttl << %{  test:purpose """#{tc['purpose']}""";\n}
+          ttl << %{  test:specificationReference """#{tc['reference']}""";\n} unless tc['reference'].empty?
+          ttl << %{  test:informationResourceInput <#{get_test_url(version, suite, tc['num'])}>;\n}
+          ttl << %{  test:informationResourceResults <#{get_test_url(version, suite, tc['num'], 'sparql')}>;\n}
+          ttl << %{  test:expectedResults #{tc['expectedResults']}.\n}
+        end
+        ttl
+      else
+        @manifest_ttl = File.read(MANIFEST_FILE)
+      end
     end
     module_function :manifest_ttl
 

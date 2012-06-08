@@ -117,35 +117,13 @@ module CrazyIvan
     end
 
     # Alternative access to specific version/host language manifests
+    # Always return Turtle representation
     get "/test-suite/:version/:suite/manifest" do
-      format :json if format == :js
-      settings.sparql_options.replace(
-        :standard_prefixes => true,
-        :prefixes => {
-          :test => "http://www.w3.org/2006/03/test-description#",
-          :rdfatest => "http://#{HOSTNAME}/vocabs/rdfa-test#"
-        }
-      )
-      
-      # Get sub-graph matching just version and suite
-      output_graph = version_graph(params[:version], params[:suite])
+      format :ttl
       
       cache_control :public, :must_revalidate, :max_age => 3600
       etag Digest::SHA1.hexdigest manifest_ttl
-      respond_to do |wants|
-        wants.ttl do
-          output_graph.dump(:ttl, settings.sparql_options)
-        end
-        wants.rdf do
-          output_graph.dump(:rdfxml, settings.sparql_options)
-        end
-        wants.json do
-          output_graph.dump(:jsonld, settings.sparql_options)
-        end
-        wants.html do
-          output_graph.dump(:rdfa, settings.sparql_options)
-        end
-      end
+      manifest_ttl(params[:version], params[:suite])
     end
 
     ##
