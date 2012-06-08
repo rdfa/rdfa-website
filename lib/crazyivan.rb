@@ -286,6 +286,13 @@ module CrazyIvan
     get('/tools/'){ redirect to '/tools/index.html'}
     get('/wiki')  { redirect to '/wiki/index.html'}
     get('/wiki/') { redirect to '/wiki/index.html'}
+    get('/:dir')  do
+      if Dir.exist?(File.expand_path("../../public/#{params[:dir]}",  __FILE__))
+        redirect to "/#{params[:dir]}/"
+      else
+        [404, "Not Found"]
+      end
+    end
 
     get '/vocabs/rdfa-test' do
       redirect to('/vocabs/rdfa-test.html')
