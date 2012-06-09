@@ -201,16 +201,18 @@
     %span{:property => "rdfatest:hostLanguage"}<>
       <%= hostLanguage %>
     ]
-    Test <%= num %>: 
+    Test
+    %span{:property => "dc:identifier"}<
+      <%= num %>: 
     %span{:property => "dc:title"}<
       <%= description %>
-    %span{:property => "earl:mode", :resource => "earl:automatic"}/
   %p{:property => "dc:description"}<
     <%= purpose %>
-  %div.property.processorURL.resource.detailsURL{:typeof => "earl:Assertion"}
+  %div{:typeof => "earl:Assertion"}
     %span{:property => "earl:assertedBy", :resource => ""}/
     %span.resource.processorURL{:property => "earl:subject"}/
     %span.resource.docURL{:rel => "earl:test"}/
+    %span{:property => "earl:mode", :resource => "earl:automatic"}/
     %p{:property => "earl:result", :typeof => "earl:TestResult"}
       Result:
       %strong.resource.outcome{:property => "earl:outcome", :resource => ""}<
