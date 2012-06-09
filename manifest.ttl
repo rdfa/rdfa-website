@@ -2256,7 +2256,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "svg", "html4", "html5", "xhtml5"; # FIXME: xml and xhtml1
+   rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
    test:expectedResults "true"^^xsd:boolean;
    test:informationResourceInput <test-cases/0295.html>;
    test:informationResourceResults <test-cases/0295.sparql>;
@@ -2267,7 +2267,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "svg", "html4", "html5", "xhtml5"; # FIXME: xml and xhtml1
+   rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
    test:expectedResults "true"^^xsd:boolean;
    test:informationResourceInput <test-cases/0296.html>;
    test:informationResourceResults <test-cases/0296.sparql>;
@@ -2278,7 +2278,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "svg", "html4", "html5", "xhtml5"; # FIXME: xml and xhtml1
+   rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
    test:expectedResults "true"^^xsd:boolean;
    test:informationResourceInput <test-cases/0297.html>;
    test:informationResourceResults <test-cases/0297.sparql>;
@@ -2289,7 +2289,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "svg", "html4", "html5", "xhtml5"; # FIXME: xml and xhtml1
+   rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
    test:expectedResults "true"^^xsd:boolean;
    test:informationResourceInput <test-cases/0298.html>;
    test:informationResourceResults <test-cases/0298.sparql>;
@@ -2300,7 +2300,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "svg", "html4", "html5", "xhtml5"; # FIXME: xml and xhtml1
+   rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
    test:expectedResults "true"^^xsd:boolean;
    test:informationResourceInput <test-cases/0299.html>;
    test:informationResourceResults <test-cases/0299.sparql>;
@@ -2311,7 +2311,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "svg", "html4", "html5", "xhtml5"; # FIXME: xml and xhtml1
+   rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
    test:expectedResults "true"^^xsd:boolean;
    test:informationResourceInput <test-cases/0300.html>;
    test:informationResourceResults <test-cases/0300.sparql>;
@@ -2322,7 +2322,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "svg", "html4", "html5", "xhtml5"; # FIXME: xml and xhtml1
+   rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
    test:expectedResults "true"^^xsd:boolean;
    test:informationResourceInput <test-cases/0301.html>;
    test:informationResourceResults <test-cases/0301.sparql>;
@@ -2333,7 +2333,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "svg", "html4", "html5", "xhtml5"; # FIXME: xml and xhtml1
+   rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
    test:expectedResults "true"^^xsd:boolean;
    test:informationResourceInput <test-cases/0302.html>;
    test:informationResourceResults <test-cases/0302.sparql>;
