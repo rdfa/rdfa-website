@@ -1,1612 +1,463 @@
-
-
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-  <title>
-  tobyink / p5-rdf-rdfa-parser / source &mdash; Bitbucket
-</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <!--[if lt IE 9]>
-  <script src="https://dwz7u9t8u8usb.cloudfront.net/m/7643968c8bac/js/lib/html5.js"></script>
-  <![endif]-->
-
-  <script>
-    (function (window) {
-      // prevent stray occurrences of `console.log` from causing errors in IE
-      var console = window.console || (window.console = {});
-      console.log || (console.log = function () {});
-
-      var BB = window.BB || (window.BB = {});
-      BB.debug = false;
-      BB.cname = false;
-      BB.CANON_URL = 'https://bitbucket.org';
-      BB.MEDIA_URL = 'https://dwz7u9t8u8usb.cloudfront.net/m/7643968c8bac/';
-      BB.images = {
-        invitation: 'https://dwz7u9t8u8usb.cloudfront.net/m/7643968c8bac/img/icons/fugue/card_address.png',
-        noAvatar: 'https://dwz7u9t8u8usb.cloudfront.net/m/7643968c8bac/img/no_avatar.png'
-      };
-      BB.user = {"isKbdShortcutsEnabled": true, "isSshEnabled": false};
-      BB.user.has = (function () {
-        var betaFeatures = [];
-        betaFeatures.push('repo2');
-        return function (feature) {
-          return _.contains(betaFeatures, feature);
-        };
-      }());
-      BB.targetUser = BB.user;
-  
-    
-  
-      BB.repo || (BB.repo = {});
-  
-      
-        BB.user.repoPrivilege = null;
-      
-      
-        
-          BB.user.accountPrivilege = null;
-        
-      
-      BB.repo.id = 502566;
-    
-    
-      BB.repo.language = null;
-      BB.repo.pygmentsLanguage = null;
-    
-    
-      BB.repo.slug = 'p5\u002Drdf\u002Drdfa\u002Dparser';
-    
-    
-      BB.repo.owner = {
-        username: 'tobyink',
-        is_team: false
-      };
-    
-    
-      
-        
-      
-    
-    
-      // Coerce `BB.repo` to a string to get
-      // "davidchambers/mango" or whatever.
-      BB.repo.toString = function () {
-        return BB.cname ? this.slug : '{owner.username}/{slug}'.format(this);
-      }
-    
-    
-      BB.changeset = 'da334b813b35'
-    
-    
-  
-    }(this));
-  </script>
-
-  
-
-
-  <link rel="stylesheet" href="https://dwz7u9t8u8usb.cloudfront.net/m/7643968c8bac/bun/css/bundle.css"/>
-
-
-
-  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Bitbucket" />
-  <link rel="icon" href="https://dwz7u9t8u8usb.cloudfront.net/m/7643968c8bac/img/logo_new.png" type="image/png" />
-  <link type="text/plain" rel="author" href="/humans.txt" />
-
-
-  
-  
-    <script src="https://dwz7u9t8u8usb.cloudfront.net/m/7643968c8bac/bun/js/bundle.js"></script>
-  
-
-
-
-</head>
-
-<body id="" class=" ">
-  <script>
-    if (navigator.userAgent.indexOf(' AppleWebKit/') === -1) {
-      $('body').addClass('non-webkit')
-    }
-    $('body')
-      .addClass($.client.os.toLowerCase())
-      .addClass($.client.browser.toLowerCase())
-  </script>
-  <!--[if IE 8]>
-  <script>jQuery(document.body).addClass('ie8')</script>
-  <![endif]-->
-  <!--[if IE 9]>
-  <script>jQuery(document.body).addClass('ie9')</script>
-  <![endif]-->
-
-  <div id="wrapper">
-
-
-
-  <div id="header-wrap">
-    <div id="header">
-    <ul id="global-nav">
-      <li><a class="home" href="http://www.atlassian.com">Atlassian Home</a></li>
-      <li><a class="docs" href="http://confluence.atlassian.com/display/BITBUCKET">Documentation</a></li>
-      <li><a class="support" href="/support">Support</a></li>
-      <li><a class="blog" href="http://blog.bitbucket.org">Blog</a></li>
-      <li><a class="forums" href="http://groups.google.com/group/bitbucket-users">Forums</a></li>
-    </ul>
-    <a href="/" id="logo">Bitbucket by Atlassian</a>
-
-    <div id="main-nav">
-    
-      <ul class="clearfix">
-        <li><a href="/plans">Pricing &amp; signup</a></li>
-        <li><a id="explore-link" href="/explore">Explore Bitbucket</a></li>
-        <li><a href="/account/signin/?next=/tobyink/p5-rdf-rdfa-parser/src/tip/meta/earl/svg-rdfa11-tests.ttl">Log in</a></li>
-        
-
-<li class="search-box">
-  
-    <form action="/repo/all">
-      <input type="search" results="5" autosave="bitbucket-explore-search"
-             name="name" id="searchbox"
-             placeholder="owner/repo" />
-  
-  </form>
-</li>
-
-      </ul>
-    
-    </div>
-
-  
-
-    </div>
-  </div>
-
-    <div id="header-messages">
-  
-    
-    
-    
-    
-  
-
-    
-   </div>
-
-
-
-    <div id="content">
-      <div id="source">
-      
-  
-  
-
-
-
-
-
-  <script>
-    jQuery(function ($) {
-        var cookie = $.cookie,
-            cookieOptions, date,
-            $content = $('#content'),
-            $pane = $('#what-is-bitbucket'),
-            $hide = $pane.find('[href="#hide"]').css('display', 'block').hide();
-
-        date = new Date();
-        date.setTime(date.getTime() + 365 * 24 * 60 * 60 * 1000);
-        cookieOptions = { path: '/', expires: date };
-
-        if (cookie('toggle_status') == 'hide') $content.addClass('repo-desc-hidden');
-
-        $('#toggle-repo-content').click(function (event) {
-            event.preventDefault();
-            $content.toggleClass('repo-desc-hidden');
-            cookie('toggle_status', cookie('toggle_status') == 'show' ? 'hide' : 'show', cookieOptions);
-        });
-
-        if (!cookie('hide_intro_message')) $pane.show();
-
-        $hide.click(function (event) {
-            event.preventDefault();
-            cookie('hide_intro_message', true, cookieOptions);
-            $pane.slideUp('slow');
-        });
-
-        $pane.hover(
-            function () { $hide.fadeIn('fast'); },
-            function () { $hide.fadeOut('fast'); });
-
-      (function () {
-        // Update "recently-viewed-repos" cookie for
-        // the "repositories" drop-down.
-        var
-          id = BB.repo.id,
-          cookieName = 'recently-viewed-repos_' + BB.user.id,
-          rvr = cookie(cookieName),
-          ids = rvr? rvr.split(','): [],
-          idx = _.indexOf(ids, '' + id);
-
-        // Remove `id` from `ids` if present.
-        if (~idx) ids.splice(idx, 1);
-
-        cookie(
-          cookieName,
-          // Insert `id` as the first item, then call
-          // `join` on the resulting array to produce
-          // something like "114694,27542,89002,84570".
-          [id].concat(ids.slice(0, 4)).join(),
-          {path: '/', expires: 1e6} // "never" expires
-        );
-      }());
-    });
-  </script>
-
-
-
-    <div id="what-is-bitbucket" class="new-to-bitbucket">
-      <h2>Toby Inkster <span id="slogan">is sharing code with you</span></h2>
-      <img src="https://secure.gravatar.com/avatar/c42f5f533d5e2032aae76abe2eb3584b?d=identicon&amp;s=32" alt="" class="avatar" />
-      <p>Bitbucket is a code hosting site. Unlimited public and private repositories. Free for small teams.</p>
-      <div class="primary-action-link signup"><a href="/account/signup/?utm_source=internal&utm_medium=banner&utm_campaign=what_is_bitbucket">Try Bitbucket free</a></div>
-      <a href="#hide" title="Don't show this again">Don't show this again</a>
-    </div>
-
-
-<div id="tabs" class="tabs">
-  <ul>
-    
-      <li>
-        <a href="/tobyink/p5-rdf-rdfa-parser/overview" id="repo-overview-link">Overview</a>
-      </li>
-    
-
-    
-      <li>
-        <a href="/tobyink/p5-rdf-rdfa-parser/downloads" id="repo-downloads-link">Downloads (<span id="downloads-count">0</span>)</a>
-      </li>
-    
-
-    
-      
-    
-
-    
-      <li>
-        <a href="/tobyink/p5-rdf-rdfa-parser/pull-requests" id="repo-pr-link">Pull requests (0)</a>
-      </li>
-    
-
-    
-      <li class="selected">
-        
-          <a href="/tobyink/p5-rdf-rdfa-parser/src" id="repo-source-link">Source</a>
-        
-      </li>
-    
-
-    
-      <li>
-        <a href="/tobyink/p5-rdf-rdfa-parser/changesets" id="repo-commits-link">Commits</a>
-      </li>
-    
-
-    <li id="wiki-tab" class="dropdown"
-      style="display:
-          block 
-        
-      ">
-      <a href="/tobyink/p5-rdf-rdfa-parser/wiki" id="repo-wiki-link">Wiki</a>
-    </li>
-
-    <li id="issues-tab" class="dropdown inertial-hover"
-      style="display:
-                      none  
-        
-      ">
-      <a href="/tobyink/p5-rdf-rdfa-parser/issues?status=new&amp;status=open" id="repo-issues-link">Issues (0) &raquo;</a>
-      <ul>
-        <li><a href="/tobyink/p5-rdf-rdfa-parser/issues/new">Create new issue</a></li>
-        <li><a href="/tobyink/p5-rdf-rdfa-parser/issues?status=new">New issues</a></li>
-        <li><a href="/tobyink/p5-rdf-rdfa-parser/issues?status=new&amp;status=open">Open issues</a></li>
-        <li><a href="/tobyink/p5-rdf-rdfa-parser/issues?status=duplicate&amp;status=invalid&amp;status=resolved&amp; status=wontfix">Closed issues</a></li>
-        
-        <li><a href="/tobyink/p5-rdf-rdfa-parser/issues">All issues</a></li>
-        <li><a href="/tobyink/p5-rdf-rdfa-parser/issues/query">Advanced query</a></li>
-      </ul>
-    </li>
-
-    
-  </ul>
-
-  <ul>
-    
-      <li>
-        <a href="/tobyink/p5-rdf-rdfa-parser/descendants" id="repo-forks-link">Forks/queues (0)</a>
-      </li>
-    
-
-    
-      <li>
-        <a href="/tobyink/p5-rdf-rdfa-parser/zealots">Followers (<span id="followers-count">1</span>)</a>
-      </li>
-    
-  </ul>
-</div>
-
-
-
- 
-
-
-  <div class="repo-menu" id="repo-menu">
-    <ul id="repo-menu-links">
-    
-    
-      <li>
-        <a href="/tobyink/p5-rdf-rdfa-parser/rss" class="rss" title="RSS feed for p5-rdf-rdfa-parser">RSS</a>
-      </li>
-
-      <li><a id="repo-fork-link" href="/tobyink/p5-rdf-rdfa-parser/fork" class="fork">fork</a></li>
-      
-        
-          <li><a id="repo-patch-queue-link" href="/tobyink/p5-rdf-rdfa-parser/hack" class="patch-queue">patch queue</a></li>
-        
-      
-      <li>
-        <a id="repo-follow-link" rel="nofollow" href="/tobyink/p5-rdf-rdfa-parser/follow" class="follow">follow</a>
-      </li>
-      
-          
-      
-      
-        <li class="get-source inertial-hover">
-          <a class="source">get source</a>
-          <ul class="downloads">
-            
-              
-              <li><a rel="nofollow" href="/tobyink/p5-rdf-rdfa-parser/get/da334b813b35.zip">zip</a></li>
-              <li><a rel="nofollow" href="/tobyink/p5-rdf-rdfa-parser/get/da334b813b35.tar.gz">gz</a></li>
-              <li><a rel="nofollow" href="/tobyink/p5-rdf-rdfa-parser/get/da334b813b35.tar.bz2">bz2</a></li>
-            
-          </ul>
-        </li>
-      
-      
-    </ul>
-
-  
-    <ul class="metadata">
-      
-      
-      
-        <li class="branches inertial-hover">branches
-          <ul>
-            <li><a href="/tobyink/p5-rdf-rdfa-parser/src/da334b813b35" title="RDF-RDFa-Parser">RDF-RDFa-Parser</a>
-              
-              
-            </li>
-          </ul>
-        </li>
-      
-      
-      <li class="tags inertial-hover">tags
-        <ul>
-          <li><a href="/tobyink/p5-rdf-rdfa-parser/src/da334b813b35">tip</a>
-            
-            </li>
-          <li><a href="/tobyink/p5-rdf-rdfa-parser/src/bba07fd0468c">1.096_04</a>
-            
-            
-              <a rel="nofollow" class='menu-compare'
-                 href="/tobyink/p5-rdf-rdfa-parser/compare/..1.096_04"
-                 title="Show changes between 1.096_04 and the main branch.">compare</a>
-            </li>
-          <li><a href="/tobyink/p5-rdf-rdfa-parser/src/2ce50fa68838">1.096_03</a>
-            
-            
-              <a rel="nofollow" class='menu-compare'
-                 href="/tobyink/p5-rdf-rdfa-parser/compare/..1.096_03"
-                 title="Show changes between 1.096_03 and the main branch.">compare</a>
-            </li>
-          <li><a href="/tobyink/p5-rdf-rdfa-parser/src/2d00b7e7afce">1.096_02</a>
-            
-            
-              <a rel="nofollow" class='menu-compare'
-                 href="/tobyink/p5-rdf-rdfa-parser/compare/..1.096_02"
-                 title="Show changes between 1.096_02 and the main branch.">compare</a>
-            </li>
-          <li><a href="/tobyink/p5-rdf-rdfa-parser/src/9694bc47d482">1.096_01</a>
-            
-            
-              <a rel="nofollow" class='menu-compare'
-                 href="/tobyink/p5-rdf-rdfa-parser/compare/..1.096_01"
-                 title="Show changes between 1.096_01 and the main branch.">compare</a>
-            </li>
-        </ul>
-      </li>
-     
-     
-      
-    </ul>
-  
-  </div>
-
-
-
-
-<div class="repo-menu" id="repo-desc">
-    <ul id="repo-menu-links-mini">
-      
-
-      
-      <li>
-        <a href="/tobyink/p5-rdf-rdfa-parser/rss" class="rss" title="RSS feed for p5-rdf-rdfa-parser"></a>
-      </li>
-
-      <li><a href="/tobyink/p5-rdf-rdfa-parser/fork" class="fork" title="Fork"></a></li>
-      
-        
-          <li><a href="/tobyink/p5-rdf-rdfa-parser/hack" class="patch-queue" title="Patch queue"></a></li>
-        
-      
-      <li>
-        <a rel="nofollow" href="/tobyink/p5-rdf-rdfa-parser/follow" class="follow">follow</a>
-      </li>
-      
-          
-      
-      
-        <li>
-          <a class="source" title="Get source"></a>
-          <ul class="downloads">
-            
-              
-              <li><a rel="nofollow" href="/tobyink/p5-rdf-rdfa-parser/get/da334b813b35.zip">zip</a></li>
-              <li><a rel="nofollow" href="/tobyink/p5-rdf-rdfa-parser/get/da334b813b35.tar.gz">gz</a></li>
-              <li><a rel="nofollow" href="/tobyink/p5-rdf-rdfa-parser/get/da334b813b35.tar.bz2">bz2</a></li>
-            
-          </ul>
-        </li>
-      
-    </ul>
-
-    <h3 id="repo-heading" class="public hg">
-      <a class="owner-username" href="/tobyink">tobyink</a> /
-      <a class="repo-name" href="/tobyink/p5-rdf-rdfa-parser">p5-rdf-rdfa-parser</a>
-    
-      <span><a href="https://metacpan.org/release/RDF-RDFa-Parser">https://metacpan.org/release/RDF-RDFa-Parser</a></span>
-    
-
-    
-    </h3>
-
-    
-
-  <div id="repo-desc-cloneinfo">Clone this repository (size: 11.0 MB):
-    <a href="https://bitbucket.org/tobyink/p5-rdf-rdfa-parser" class="https">HTTPS</a> /
-    <a href="ssh://hg@bitbucket.org/tobyink/p5-rdf-rdfa-parser" class="ssh">SSH</a>
-    
-      <div id="sourcetree-clone-link" class="clone-in-client mac anonymous help-activated"
-          data-desktop-clone-url-ssh="sourcetree://cloneRepo/ssh://hg@bitbucket.org/tobyink/p5-rdf-rdfa-parser"
-          data-desktop-clone-url-https="sourcetree://cloneRepo/https://bitbucket.org/tobyink/p5-rdf-rdfa-parser">
-         /
-           <a class="desktop-ssh"
-             href="sourcetree://cloneRepo/ssh://hg@bitbucket.org/tobyink/p5-rdf-rdfa-parser">SourceTree</a>
-           <a class="desktop-https"
-             href="sourcetree://cloneRepo/https://bitbucket.org/tobyink/p5-rdf-rdfa-parser">SourceTree</a>
-      </div>
-    
-    <pre id="clone-url-https">hg clone https://bitbucket.org/tobyink/p5-rdf-rdfa-parser</pre>
-    <pre id="clone-url-ssh">hg clone ssh://hg@bitbucket.org/tobyink/p5-rdf-rdfa-parser</pre>
-    
-  </div>
-
-        <a href="#" id="toggle-repo-content"></a>
-
-        
-
-</div>
-
-
-
-
-
-
-      
-  <div id="source-container">
-    
-
-  <div id="source-path">
-    <h1>
-      <a href="/tobyink/p5-rdf-rdfa-parser/src" class="src-pjax">p5-rdf-rdfa-parser</a> /
-
-  
-    
-      <a href="/tobyink/p5-rdf-rdfa-parser/src/da334b813b35/meta/" class="src-pjax">meta</a> /
-    
-  
-
-  
-    
-      <a href="/tobyink/p5-rdf-rdfa-parser/src/da334b813b35/meta/earl/" class="src-pjax">earl</a> /
-    
-  
-
-  
-    
-      <span>svg-rdfa11-tests.ttl</span>
-    
-  
-
-    </h1>
-  </div>
-
-  <div class="labels labels-csv">
-  
-    <dl>
-  
-    
-  
-  
-    
-  
-  
-    <dt>Branch</dt>
-    
-      
-        <dd class="branch unabridged"><a href="/tobyink/p5-rdf-rdfa-parser/changesets/tip/branch(%22RDF-RDFa-Parser%22)" title="RDF-RDFa-Parser">RDF-RDFa-Parser</a></dd>
-      
-    
-  
-</dl>
-
-  
-  </div>
-
-
-  
-  <div id="source-view">
-    <div class="header">
-      <ul class="metadata">
-        <li><code>da334b813b35</code></li>
-        
-          
-            <li>463 loc</li>
-          
-        
-        <li>15.7 KB</li>
-      </ul>
-      <ul class="source-view-links">
-        
-        <li><a id="embed-link" href="https://bitbucket.org/tobyink/p5-rdf-rdfa-parser/src/da334b813b35/meta/earl/svg-rdfa11-tests.ttl?embed=t">embed</a></li>
-        
-        <li><a href="/tobyink/p5-rdf-rdfa-parser/history/meta/earl/svg-rdfa11-tests.ttl">history</a></li>
-        
-        <li><a href="/tobyink/p5-rdf-rdfa-parser/annotate/da334b813b35/meta/earl/svg-rdfa11-tests.ttl">annotate</a></li>
-        
-        <li><a href="/tobyink/p5-rdf-rdfa-parser/raw/da334b813b35/meta/earl/svg-rdfa11-tests.ttl">raw</a></li>
-        <li>
-          <form action="/tobyink/p5-rdf-rdfa-parser/diff/meta/earl/svg-rdfa11-tests.ttl" class="source-view-form">
-          
-            <input type="hidden" name="diff2" value="da334b813b35" />
-            <select name="diff1">
-            
-              
-            
-              
-                <option value="c5c92fc06af8">c5c92fc06af8</option>
-              
-            
-              
-                <option value="2ce50fa68838">2ce50fa68838</option>
-              
-            
-              
-                <option value="c05e56359303">c05e56359303</option>
-              
-            
-            </select>
-            <input type="submit" value="diff" />
-          
-          </form>
-        </li>
-      </ul>
-    </div>
-  
-    <div>
-    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><a href="#cl-1">  1</a>
-<a href="#cl-2">  2</a>
-<a href="#cl-3">  3</a>
-<a href="#cl-4">  4</a>
-<a href="#cl-5">  5</a>
-<a href="#cl-6">  6</a>
-<a href="#cl-7">  7</a>
-<a href="#cl-8">  8</a>
-<a href="#cl-9">  9</a>
-<a href="#cl-10"> 10</a>
-<a href="#cl-11"> 11</a>
-<a href="#cl-12"> 12</a>
-<a href="#cl-13"> 13</a>
-<a href="#cl-14"> 14</a>
-<a href="#cl-15"> 15</a>
-<a href="#cl-16"> 16</a>
-<a href="#cl-17"> 17</a>
-<a href="#cl-18"> 18</a>
-<a href="#cl-19"> 19</a>
-<a href="#cl-20"> 20</a>
-<a href="#cl-21"> 21</a>
-<a href="#cl-22"> 22</a>
-<a href="#cl-23"> 23</a>
-<a href="#cl-24"> 24</a>
-<a href="#cl-25"> 25</a>
-<a href="#cl-26"> 26</a>
-<a href="#cl-27"> 27</a>
-<a href="#cl-28"> 28</a>
-<a href="#cl-29"> 29</a>
-<a href="#cl-30"> 30</a>
-<a href="#cl-31"> 31</a>
-<a href="#cl-32"> 32</a>
-<a href="#cl-33"> 33</a>
-<a href="#cl-34"> 34</a>
-<a href="#cl-35"> 35</a>
-<a href="#cl-36"> 36</a>
-<a href="#cl-37"> 37</a>
-<a href="#cl-38"> 38</a>
-<a href="#cl-39"> 39</a>
-<a href="#cl-40"> 40</a>
-<a href="#cl-41"> 41</a>
-<a href="#cl-42"> 42</a>
-<a href="#cl-43"> 43</a>
-<a href="#cl-44"> 44</a>
-<a href="#cl-45"> 45</a>
-<a href="#cl-46"> 46</a>
-<a href="#cl-47"> 47</a>
-<a href="#cl-48"> 48</a>
-<a href="#cl-49"> 49</a>
-<a href="#cl-50"> 50</a>
-<a href="#cl-51"> 51</a>
-<a href="#cl-52"> 52</a>
-<a href="#cl-53"> 53</a>
-<a href="#cl-54"> 54</a>
-<a href="#cl-55"> 55</a>
-<a href="#cl-56"> 56</a>
-<a href="#cl-57"> 57</a>
-<a href="#cl-58"> 58</a>
-<a href="#cl-59"> 59</a>
-<a href="#cl-60"> 60</a>
-<a href="#cl-61"> 61</a>
-<a href="#cl-62"> 62</a>
-<a href="#cl-63"> 63</a>
-<a href="#cl-64"> 64</a>
-<a href="#cl-65"> 65</a>
-<a href="#cl-66"> 66</a>
-<a href="#cl-67"> 67</a>
-<a href="#cl-68"> 68</a>
-<a href="#cl-69"> 69</a>
-<a href="#cl-70"> 70</a>
-<a href="#cl-71"> 71</a>
-<a href="#cl-72"> 72</a>
-<a href="#cl-73"> 73</a>
-<a href="#cl-74"> 74</a>
-<a href="#cl-75"> 75</a>
-<a href="#cl-76"> 76</a>
-<a href="#cl-77"> 77</a>
-<a href="#cl-78"> 78</a>
-<a href="#cl-79"> 79</a>
-<a href="#cl-80"> 80</a>
-<a href="#cl-81"> 81</a>
-<a href="#cl-82"> 82</a>
-<a href="#cl-83"> 83</a>
-<a href="#cl-84"> 84</a>
-<a href="#cl-85"> 85</a>
-<a href="#cl-86"> 86</a>
-<a href="#cl-87"> 87</a>
-<a href="#cl-88"> 88</a>
-<a href="#cl-89"> 89</a>
-<a href="#cl-90"> 90</a>
-<a href="#cl-91"> 91</a>
-<a href="#cl-92"> 92</a>
-<a href="#cl-93"> 93</a>
-<a href="#cl-94"> 94</a>
-<a href="#cl-95"> 95</a>
-<a href="#cl-96"> 96</a>
-<a href="#cl-97"> 97</a>
-<a href="#cl-98"> 98</a>
-<a href="#cl-99"> 99</a>
-<a href="#cl-100">100</a>
-<a href="#cl-101">101</a>
-<a href="#cl-102">102</a>
-<a href="#cl-103">103</a>
-<a href="#cl-104">104</a>
-<a href="#cl-105">105</a>
-<a href="#cl-106">106</a>
-<a href="#cl-107">107</a>
-<a href="#cl-108">108</a>
-<a href="#cl-109">109</a>
-<a href="#cl-110">110</a>
-<a href="#cl-111">111</a>
-<a href="#cl-112">112</a>
-<a href="#cl-113">113</a>
-<a href="#cl-114">114</a>
-<a href="#cl-115">115</a>
-<a href="#cl-116">116</a>
-<a href="#cl-117">117</a>
-<a href="#cl-118">118</a>
-<a href="#cl-119">119</a>
-<a href="#cl-120">120</a>
-<a href="#cl-121">121</a>
-<a href="#cl-122">122</a>
-<a href="#cl-123">123</a>
-<a href="#cl-124">124</a>
-<a href="#cl-125">125</a>
-<a href="#cl-126">126</a>
-<a href="#cl-127">127</a>
-<a href="#cl-128">128</a>
-<a href="#cl-129">129</a>
-<a href="#cl-130">130</a>
-<a href="#cl-131">131</a>
-<a href="#cl-132">132</a>
-<a href="#cl-133">133</a>
-<a href="#cl-134">134</a>
-<a href="#cl-135">135</a>
-<a href="#cl-136">136</a>
-<a href="#cl-137">137</a>
-<a href="#cl-138">138</a>
-<a href="#cl-139">139</a>
-<a href="#cl-140">140</a>
-<a href="#cl-141">141</a>
-<a href="#cl-142">142</a>
-<a href="#cl-143">143</a>
-<a href="#cl-144">144</a>
-<a href="#cl-145">145</a>
-<a href="#cl-146">146</a>
-<a href="#cl-147">147</a>
-<a href="#cl-148">148</a>
-<a href="#cl-149">149</a>
-<a href="#cl-150">150</a>
-<a href="#cl-151">151</a>
-<a href="#cl-152">152</a>
-<a href="#cl-153">153</a>
-<a href="#cl-154">154</a>
-<a href="#cl-155">155</a>
-<a href="#cl-156">156</a>
-<a href="#cl-157">157</a>
-<a href="#cl-158">158</a>
-<a href="#cl-159">159</a>
-<a href="#cl-160">160</a>
-<a href="#cl-161">161</a>
-<a href="#cl-162">162</a>
-<a href="#cl-163">163</a>
-<a href="#cl-164">164</a>
-<a href="#cl-165">165</a>
-<a href="#cl-166">166</a>
-<a href="#cl-167">167</a>
-<a href="#cl-168">168</a>
-<a href="#cl-169">169</a>
-<a href="#cl-170">170</a>
-<a href="#cl-171">171</a>
-<a href="#cl-172">172</a>
-<a href="#cl-173">173</a>
-<a href="#cl-174">174</a>
-<a href="#cl-175">175</a>
-<a href="#cl-176">176</a>
-<a href="#cl-177">177</a>
-<a href="#cl-178">178</a>
-<a href="#cl-179">179</a>
-<a href="#cl-180">180</a>
-<a href="#cl-181">181</a>
-<a href="#cl-182">182</a>
-<a href="#cl-183">183</a>
-<a href="#cl-184">184</a>
-<a href="#cl-185">185</a>
-<a href="#cl-186">186</a>
-<a href="#cl-187">187</a>
-<a href="#cl-188">188</a>
-<a href="#cl-189">189</a>
-<a href="#cl-190">190</a>
-<a href="#cl-191">191</a>
-<a href="#cl-192">192</a>
-<a href="#cl-193">193</a>
-<a href="#cl-194">194</a>
-<a href="#cl-195">195</a>
-<a href="#cl-196">196</a>
-<a href="#cl-197">197</a>
-<a href="#cl-198">198</a>
-<a href="#cl-199">199</a>
-<a href="#cl-200">200</a>
-<a href="#cl-201">201</a>
-<a href="#cl-202">202</a>
-<a href="#cl-203">203</a>
-<a href="#cl-204">204</a>
-<a href="#cl-205">205</a>
-<a href="#cl-206">206</a>
-<a href="#cl-207">207</a>
-<a href="#cl-208">208</a>
-<a href="#cl-209">209</a>
-<a href="#cl-210">210</a>
-<a href="#cl-211">211</a>
-<a href="#cl-212">212</a>
-<a href="#cl-213">213</a>
-<a href="#cl-214">214</a>
-<a href="#cl-215">215</a>
-<a href="#cl-216">216</a>
-<a href="#cl-217">217</a>
-<a href="#cl-218">218</a>
-<a href="#cl-219">219</a>
-<a href="#cl-220">220</a>
-<a href="#cl-221">221</a>
-<a href="#cl-222">222</a>
-<a href="#cl-223">223</a>
-<a href="#cl-224">224</a>
-<a href="#cl-225">225</a>
-<a href="#cl-226">226</a>
-<a href="#cl-227">227</a>
-<a href="#cl-228">228</a>
-<a href="#cl-229">229</a>
-<a href="#cl-230">230</a>
-<a href="#cl-231">231</a>
-<a href="#cl-232">232</a>
-<a href="#cl-233">233</a>
-<a href="#cl-234">234</a>
-<a href="#cl-235">235</a>
-<a href="#cl-236">236</a>
-<a href="#cl-237">237</a>
-<a href="#cl-238">238</a>
-<a href="#cl-239">239</a>
-<a href="#cl-240">240</a>
-<a href="#cl-241">241</a>
-<a href="#cl-242">242</a>
-<a href="#cl-243">243</a>
-<a href="#cl-244">244</a>
-<a href="#cl-245">245</a>
-<a href="#cl-246">246</a>
-<a href="#cl-247">247</a>
-<a href="#cl-248">248</a>
-<a href="#cl-249">249</a>
-<a href="#cl-250">250</a>
-<a href="#cl-251">251</a>
-<a href="#cl-252">252</a>
-<a href="#cl-253">253</a>
-<a href="#cl-254">254</a>
-<a href="#cl-255">255</a>
-<a href="#cl-256">256</a>
-<a href="#cl-257">257</a>
-<a href="#cl-258">258</a>
-<a href="#cl-259">259</a>
-<a href="#cl-260">260</a>
-<a href="#cl-261">261</a>
-<a href="#cl-262">262</a>
-<a href="#cl-263">263</a>
-<a href="#cl-264">264</a>
-<a href="#cl-265">265</a>
-<a href="#cl-266">266</a>
-<a href="#cl-267">267</a>
-<a href="#cl-268">268</a>
-<a href="#cl-269">269</a>
-<a href="#cl-270">270</a>
-<a href="#cl-271">271</a>
-<a href="#cl-272">272</a>
-<a href="#cl-273">273</a>
-<a href="#cl-274">274</a>
-<a href="#cl-275">275</a>
-<a href="#cl-276">276</a>
-<a href="#cl-277">277</a>
-<a href="#cl-278">278</a>
-<a href="#cl-279">279</a>
-<a href="#cl-280">280</a>
-<a href="#cl-281">281</a>
-<a href="#cl-282">282</a>
-<a href="#cl-283">283</a>
-<a href="#cl-284">284</a>
-<a href="#cl-285">285</a>
-<a href="#cl-286">286</a>
-<a href="#cl-287">287</a>
-<a href="#cl-288">288</a>
-<a href="#cl-289">289</a>
-<a href="#cl-290">290</a>
-<a href="#cl-291">291</a>
-<a href="#cl-292">292</a>
-<a href="#cl-293">293</a>
-<a href="#cl-294">294</a>
-<a href="#cl-295">295</a>
-<a href="#cl-296">296</a>
-<a href="#cl-297">297</a>
-<a href="#cl-298">298</a>
-<a href="#cl-299">299</a>
-<a href="#cl-300">300</a>
-<a href="#cl-301">301</a>
-<a href="#cl-302">302</a>
-<a href="#cl-303">303</a>
-<a href="#cl-304">304</a>
-<a href="#cl-305">305</a>
-<a href="#cl-306">306</a>
-<a href="#cl-307">307</a>
-<a href="#cl-308">308</a>
-<a href="#cl-309">309</a>
-<a href="#cl-310">310</a>
-<a href="#cl-311">311</a>
-<a href="#cl-312">312</a>
-<a href="#cl-313">313</a>
-<a href="#cl-314">314</a>
-<a href="#cl-315">315</a>
-<a href="#cl-316">316</a>
-<a href="#cl-317">317</a>
-<a href="#cl-318">318</a>
-<a href="#cl-319">319</a>
-<a href="#cl-320">320</a>
-<a href="#cl-321">321</a>
-<a href="#cl-322">322</a>
-<a href="#cl-323">323</a>
-<a href="#cl-324">324</a>
-<a href="#cl-325">325</a>
-<a href="#cl-326">326</a>
-<a href="#cl-327">327</a>
-<a href="#cl-328">328</a>
-<a href="#cl-329">329</a>
-<a href="#cl-330">330</a>
-<a href="#cl-331">331</a>
-<a href="#cl-332">332</a>
-<a href="#cl-333">333</a>
-<a href="#cl-334">334</a>
-<a href="#cl-335">335</a>
-<a href="#cl-336">336</a>
-<a href="#cl-337">337</a>
-<a href="#cl-338">338</a>
-<a href="#cl-339">339</a>
-<a href="#cl-340">340</a>
-<a href="#cl-341">341</a>
-<a href="#cl-342">342</a>
-<a href="#cl-343">343</a>
-<a href="#cl-344">344</a>
-<a href="#cl-345">345</a>
-<a href="#cl-346">346</a>
-<a href="#cl-347">347</a>
-<a href="#cl-348">348</a>
-<a href="#cl-349">349</a>
-<a href="#cl-350">350</a>
-<a href="#cl-351">351</a>
-<a href="#cl-352">352</a>
-<a href="#cl-353">353</a>
-<a href="#cl-354">354</a>
-<a href="#cl-355">355</a>
-<a href="#cl-356">356</a>
-<a href="#cl-357">357</a>
-<a href="#cl-358">358</a>
-<a href="#cl-359">359</a>
-<a href="#cl-360">360</a>
-<a href="#cl-361">361</a>
-<a href="#cl-362">362</a>
-<a href="#cl-363">363</a>
-<a href="#cl-364">364</a>
-<a href="#cl-365">365</a>
-<a href="#cl-366">366</a>
-<a href="#cl-367">367</a>
-<a href="#cl-368">368</a>
-<a href="#cl-369">369</a>
-<a href="#cl-370">370</a>
-<a href="#cl-371">371</a>
-<a href="#cl-372">372</a>
-<a href="#cl-373">373</a>
-<a href="#cl-374">374</a>
-<a href="#cl-375">375</a>
-<a href="#cl-376">376</a>
-<a href="#cl-377">377</a>
-<a href="#cl-378">378</a>
-<a href="#cl-379">379</a>
-<a href="#cl-380">380</a>
-<a href="#cl-381">381</a>
-<a href="#cl-382">382</a>
-<a href="#cl-383">383</a>
-<a href="#cl-384">384</a>
-<a href="#cl-385">385</a>
-<a href="#cl-386">386</a>
-<a href="#cl-387">387</a>
-<a href="#cl-388">388</a>
-<a href="#cl-389">389</a>
-<a href="#cl-390">390</a>
-<a href="#cl-391">391</a>
-<a href="#cl-392">392</a>
-<a href="#cl-393">393</a>
-<a href="#cl-394">394</a>
-<a href="#cl-395">395</a>
-<a href="#cl-396">396</a>
-<a href="#cl-397">397</a>
-<a href="#cl-398">398</a>
-<a href="#cl-399">399</a>
-<a href="#cl-400">400</a>
-<a href="#cl-401">401</a>
-<a href="#cl-402">402</a>
-<a href="#cl-403">403</a>
-<a href="#cl-404">404</a>
-<a href="#cl-405">405</a>
-<a href="#cl-406">406</a>
-<a href="#cl-407">407</a>
-<a href="#cl-408">408</a>
-<a href="#cl-409">409</a>
-<a href="#cl-410">410</a>
-<a href="#cl-411">411</a>
-<a href="#cl-412">412</a>
-<a href="#cl-413">413</a>
-<a href="#cl-414">414</a>
-<a href="#cl-415">415</a>
-<a href="#cl-416">416</a>
-<a href="#cl-417">417</a>
-<a href="#cl-418">418</a>
-<a href="#cl-419">419</a>
-<a href="#cl-420">420</a>
-<a href="#cl-421">421</a>
-<a href="#cl-422">422</a>
-<a href="#cl-423">423</a>
-<a href="#cl-424">424</a>
-<a href="#cl-425">425</a>
-<a href="#cl-426">426</a>
-<a href="#cl-427">427</a>
-<a href="#cl-428">428</a>
-<a href="#cl-429">429</a>
-<a href="#cl-430">430</a>
-<a href="#cl-431">431</a>
-<a href="#cl-432">432</a>
-<a href="#cl-433">433</a>
-<a href="#cl-434">434</a>
-<a href="#cl-435">435</a>
-<a href="#cl-436">436</a>
-<a href="#cl-437">437</a>
-<a href="#cl-438">438</a>
-<a href="#cl-439">439</a>
-<a href="#cl-440">440</a>
-<a href="#cl-441">441</a>
-<a href="#cl-442">442</a>
-<a href="#cl-443">443</a>
-<a href="#cl-444">444</a>
-<a href="#cl-445">445</a>
-<a href="#cl-446">446</a>
-<a href="#cl-447">447</a>
-<a href="#cl-448">448</a>
-<a href="#cl-449">449</a>
-<a href="#cl-450">450</a>
-<a href="#cl-451">451</a>
-<a href="#cl-452">452</a>
-<a href="#cl-453">453</a>
-<a href="#cl-454">454</a>
-<a href="#cl-455">455</a>
-<a href="#cl-456">456</a>
-<a href="#cl-457">457</a>
-<a href="#cl-458">458</a>
-<a href="#cl-459">459</a>
-<a href="#cl-460">460</a>
-<a href="#cl-461">461</a>
-<a href="#cl-462">462</a>
-<a href="#cl-463">463</a>
-</pre></div></td><td class="code"><div class="highlight"><pre><a name="cl-1"></a>@prefix dc: &lt;http://purl.org/dc/terms/&gt; .
-<a name="cl-2"></a>@prefix dist: &lt;http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/&gt; .
-<a name="cl-3"></a>@prefix earl: &lt;http://www.w3.org/ns/earl#&gt; .
-<a name="cl-4"></a>@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
-<a name="cl-5"></a>@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
-<a name="cl-6"></a>@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-<a name="cl-7"></a>@prefix rrp: &lt;tag:buzzword.org.uk,2012:RDF-RDFa-Parser:&gt; .
-<a name="cl-8"></a>@prefix test: &lt;http://rdfa.info/vocabs/rdfa-test#&gt; .
-<a name="cl-9"></a>@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-<a name="cl-10"></a>
-<a name="cl-11"></a>[] dc:date &quot;2012-06-05T23:36:27Z&quot;^^xsd:dateTime ;
-<a name="cl-12"></a>        a earl:Assertion ;
-<a name="cl-13"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-14"></a>        earl:mode earl:automatic ;
-<a name="cl-15"></a>        earl:result [
-<a name="cl-16"></a>                a earl:TestResult ;
-<a name="cl-17"></a>                earl:outcome earl:passed
-<a name="cl-18"></a>        ] ;
-<a name="cl-19"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-20"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0201.svg&gt; .
-<a name="cl-21"></a>[] dc:date &quot;2012-06-05T23:36:27Z&quot;^^xsd:dateTime ;
-<a name="cl-22"></a>        a earl:Assertion ;
-<a name="cl-23"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-24"></a>        earl:mode earl:automatic ;
-<a name="cl-25"></a>        earl:result [
-<a name="cl-26"></a>                earl:outcome earl:passed ;
-<a name="cl-27"></a>                a earl:TestResult
-<a name="cl-28"></a>        ] ;
-<a name="cl-29"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-30"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0202.svg&gt; .
-<a name="cl-31"></a>[] dc:date &quot;2012-06-05T23:36:27Z&quot;^^xsd:dateTime ;
-<a name="cl-32"></a>        a earl:Assertion ;
-<a name="cl-33"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-34"></a>        earl:mode earl:automatic ;
-<a name="cl-35"></a>        earl:result [
-<a name="cl-36"></a>                earl:outcome earl:passed ;
-<a name="cl-37"></a>                a earl:TestResult
-<a name="cl-38"></a>        ] ;
-<a name="cl-39"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-40"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0203.svg&gt; .
-<a name="cl-41"></a>[] dc:date &quot;2012-06-05T23:36:27Z&quot;^^xsd:dateTime ;
-<a name="cl-42"></a>        a earl:Assertion ;
-<a name="cl-43"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-44"></a>        earl:mode earl:automatic ;
-<a name="cl-45"></a>        earl:result [
-<a name="cl-46"></a>                earl:outcome earl:passed ;
-<a name="cl-47"></a>                a earl:TestResult
-<a name="cl-48"></a>        ] ;
-<a name="cl-49"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-50"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0214.xhtml&gt; .
-<a name="cl-51"></a>[] dc:date &quot;2012-06-05T23:36:27Z&quot;^^xsd:dateTime ;
-<a name="cl-52"></a>        a earl:Assertion ;
-<a name="cl-53"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-54"></a>        earl:mode earl:automatic ;
-<a name="cl-55"></a>        earl:result [
-<a name="cl-56"></a>                a earl:TestResult ;
-<a name="cl-57"></a>                earl:outcome earl:passed
-<a name="cl-58"></a>        ] ;
-<a name="cl-59"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-60"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0218.xhtml&gt; .
-<a name="cl-61"></a>[] dc:date &quot;2012-06-05T23:36:28Z&quot;^^xsd:dateTime ;
-<a name="cl-62"></a>        a earl:Assertion ;
-<a name="cl-63"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-64"></a>        earl:mode earl:automatic ;
-<a name="cl-65"></a>        earl:result [
-<a name="cl-66"></a>                earl:outcome earl:passed ;
-<a name="cl-67"></a>                a earl:TestResult
-<a name="cl-68"></a>        ] ;
-<a name="cl-69"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-70"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0219.xhtml&gt; .
-<a name="cl-71"></a>[] dc:date &quot;2012-06-05T23:36:28Z&quot;^^xsd:dateTime ;
-<a name="cl-72"></a>        a earl:Assertion ;
-<a name="cl-73"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-74"></a>        earl:mode earl:automatic ;
-<a name="cl-75"></a>        earl:result [
-<a name="cl-76"></a>                a earl:TestResult ;
-<a name="cl-77"></a>                earl:outcome earl:passed
-<a name="cl-78"></a>        ] ;
-<a name="cl-79"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-80"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0220.xhtml&gt; .
-<a name="cl-81"></a>[] dc:date &quot;2012-06-05T23:36:28Z&quot;^^xsd:dateTime ;
-<a name="cl-82"></a>        a earl:Assertion ;
-<a name="cl-83"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-84"></a>        earl:mode earl:automatic ;
-<a name="cl-85"></a>        earl:result [
-<a name="cl-86"></a>                a earl:TestResult ;
-<a name="cl-87"></a>                earl:outcome earl:passed
-<a name="cl-88"></a>        ] ;
-<a name="cl-89"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-90"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0221.xhtml&gt; .
-<a name="cl-91"></a>[] dc:date &quot;2012-06-05T23:36:28Z&quot;^^xsd:dateTime ;
-<a name="cl-92"></a>        a earl:Assertion ;
-<a name="cl-93"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-94"></a>        earl:mode earl:automatic ;
-<a name="cl-95"></a>        earl:result [
-<a name="cl-96"></a>                a earl:TestResult ;
-<a name="cl-97"></a>                earl:outcome earl:passed
-<a name="cl-98"></a>        ] ;
-<a name="cl-99"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-100"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0222.xhtml&gt; .
-<a name="cl-101"></a>[] dc:date &quot;2012-06-05T23:36:28Z&quot;^^xsd:dateTime ;
-<a name="cl-102"></a>        a earl:Assertion ;
-<a name="cl-103"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-104"></a>        earl:mode earl:automatic ;
-<a name="cl-105"></a>        earl:result [
-<a name="cl-106"></a>                earl:outcome earl:passed ;
-<a name="cl-107"></a>                a earl:TestResult
-<a name="cl-108"></a>        ] ;
-<a name="cl-109"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-110"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0223.xhtml&gt; .
-<a name="cl-111"></a>[] dc:date &quot;2012-06-05T23:36:28Z&quot;^^xsd:dateTime ;
-<a name="cl-112"></a>        a earl:Assertion ;
-<a name="cl-113"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-114"></a>        earl:mode earl:automatic ;
-<a name="cl-115"></a>        earl:result [
-<a name="cl-116"></a>                earl:outcome earl:passed ;
-<a name="cl-117"></a>                a earl:TestResult
-<a name="cl-118"></a>        ] ;
-<a name="cl-119"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-120"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0224.xhtml&gt; .
-<a name="cl-121"></a>[] dc:date &quot;2012-06-05T23:36:28Z&quot;^^xsd:dateTime ;
-<a name="cl-122"></a>        a earl:Assertion ;
-<a name="cl-123"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-124"></a>        earl:mode earl:automatic ;
-<a name="cl-125"></a>        earl:result [
-<a name="cl-126"></a>                earl:outcome earl:passed ;
-<a name="cl-127"></a>                a earl:TestResult
-<a name="cl-128"></a>        ] ;
-<a name="cl-129"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-130"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0225.xhtml&gt; .
-<a name="cl-131"></a>[] dc:date &quot;2012-06-05T23:36:29Z&quot;^^xsd:dateTime ;
-<a name="cl-132"></a>        a earl:Assertion ;
-<a name="cl-133"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-134"></a>        earl:mode earl:automatic ;
-<a name="cl-135"></a>        earl:result [
-<a name="cl-136"></a>                earl:outcome earl:passed ;
-<a name="cl-137"></a>                a earl:TestResult
-<a name="cl-138"></a>        ] ;
-<a name="cl-139"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-140"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0226.xhtml&gt; .
-<a name="cl-141"></a>[] dc:date &quot;2012-06-05T23:36:29Z&quot;^^xsd:dateTime ;
-<a name="cl-142"></a>        a earl:Assertion ;
-<a name="cl-143"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-144"></a>        earl:mode earl:automatic ;
-<a name="cl-145"></a>        earl:result [
-<a name="cl-146"></a>                a earl:TestResult ;
-<a name="cl-147"></a>                earl:outcome earl:passed
-<a name="cl-148"></a>        ] ;
-<a name="cl-149"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-150"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0227.xhtml&gt; .
-<a name="cl-151"></a>[] dc:date &quot;2012-06-05T23:36:29Z&quot;^^xsd:dateTime ;
-<a name="cl-152"></a>        a earl:Assertion ;
-<a name="cl-153"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-154"></a>        earl:mode earl:automatic ;
-<a name="cl-155"></a>        earl:result [
-<a name="cl-156"></a>                a earl:TestResult ;
-<a name="cl-157"></a>                earl:outcome earl:passed
-<a name="cl-158"></a>        ] ;
-<a name="cl-159"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-160"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0234.xhtml&gt; .
-<a name="cl-161"></a>[] dc:date &quot;2012-06-05T23:36:30Z&quot;^^xsd:dateTime ;
-<a name="cl-162"></a>        a earl:Assertion ;
-<a name="cl-163"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-164"></a>        earl:mode earl:automatic ;
-<a name="cl-165"></a>        earl:result [
-<a name="cl-166"></a>                a earl:TestResult ;
-<a name="cl-167"></a>                earl:outcome earl:passed
-<a name="cl-168"></a>        ] ;
-<a name="cl-169"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-170"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0259.xhtml&gt; .
-<a name="cl-171"></a>[] dc:date &quot;2012-06-05T23:36:30Z&quot;^^xsd:dateTime ;
-<a name="cl-172"></a>        a earl:Assertion ;
-<a name="cl-173"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-174"></a>        earl:mode earl:automatic ;
-<a name="cl-175"></a>        earl:result [
-<a name="cl-176"></a>                a earl:TestResult ;
-<a name="cl-177"></a>                earl:outcome earl:passed
-<a name="cl-178"></a>        ] ;
-<a name="cl-179"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-180"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0289.xhtml&gt; .
-<a name="cl-181"></a>[] dc:date &quot;2012-06-05T23:36:30Z&quot;^^xsd:dateTime ;
-<a name="cl-182"></a>        a earl:Assertion ;
-<a name="cl-183"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-184"></a>        earl:mode earl:automatic ;
-<a name="cl-185"></a>        earl:result [
-<a name="cl-186"></a>                earl:outcome earl:passed ;
-<a name="cl-187"></a>                a earl:TestResult
-<a name="cl-188"></a>        ] ;
-<a name="cl-189"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-190"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0290.xhtml&gt; .
-<a name="cl-191"></a>[] dc:date &quot;2012-06-05T23:36:30Z&quot;^^xsd:dateTime ;
-<a name="cl-192"></a>        a earl:Assertion ;
-<a name="cl-193"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-194"></a>        earl:mode earl:automatic ;
-<a name="cl-195"></a>        earl:result [
-<a name="cl-196"></a>                earl:outcome earl:passed ;
-<a name="cl-197"></a>                a earl:TestResult
-<a name="cl-198"></a>        ] ;
-<a name="cl-199"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-200"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0291.xhtml&gt; .
-<a name="cl-201"></a>[] dc:date &quot;2012-06-05T23:36:30Z&quot;^^xsd:dateTime ;
-<a name="cl-202"></a>        a earl:Assertion ;
-<a name="cl-203"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-204"></a>        earl:mode earl:automatic ;
-<a name="cl-205"></a>        earl:result [
-<a name="cl-206"></a>                earl:outcome earl:passed ;
-<a name="cl-207"></a>                a earl:TestResult
-<a name="cl-208"></a>        ] ;
-<a name="cl-209"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-210"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0292.xhtml&gt; .
-<a name="cl-211"></a>[] dc:date &quot;2012-06-05T23:36:30Z&quot;^^xsd:dateTime ;
-<a name="cl-212"></a>        a earl:Assertion ;
-<a name="cl-213"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-214"></a>        earl:mode earl:automatic ;
-<a name="cl-215"></a>        earl:result [
-<a name="cl-216"></a>                a earl:TestResult ;
-<a name="cl-217"></a>                earl:outcome earl:passed
-<a name="cl-218"></a>        ] ;
-<a name="cl-219"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-220"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0293.xhtml&gt; .
-<a name="cl-221"></a>[] dc:date &quot;2012-06-05T23:36:33Z&quot;^^xsd:dateTime ;
-<a name="cl-222"></a>        a earl:Assertion ;
-<a name="cl-223"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-224"></a>        earl:mode earl:automatic ;
-<a name="cl-225"></a>        earl:result [
-<a name="cl-226"></a>                earl:outcome earl:passed ;
-<a name="cl-227"></a>                a earl:TestResult
-<a name="cl-228"></a>        ] ;
-<a name="cl-229"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-230"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0295.xhtml&gt; .
-<a name="cl-231"></a>[] dc:date &quot;2012-06-05T23:36:34Z&quot;^^xsd:dateTime ;
-<a name="cl-232"></a>        a earl:Assertion ;
-<a name="cl-233"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-234"></a>        earl:mode earl:automatic ;
-<a name="cl-235"></a>        earl:result [
-<a name="cl-236"></a>                a earl:TestResult ;
-<a name="cl-237"></a>                earl:outcome earl:passed
-<a name="cl-238"></a>        ] ;
-<a name="cl-239"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-240"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0296.xhtml&gt; .
-<a name="cl-241"></a>[] dc:date &quot;2012-06-05T23:36:34Z&quot;^^xsd:dateTime ;
-<a name="cl-242"></a>        a earl:Assertion ;
-<a name="cl-243"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-244"></a>        earl:mode earl:automatic ;
-<a name="cl-245"></a>        earl:result [
-<a name="cl-246"></a>                earl:outcome earl:passed ;
-<a name="cl-247"></a>                a earl:TestResult
-<a name="cl-248"></a>        ] ;
-<a name="cl-249"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-250"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0297.xhtml&gt; .
-<a name="cl-251"></a>[] dc:date &quot;2012-06-05T23:36:34Z&quot;^^xsd:dateTime ;
-<a name="cl-252"></a>        a earl:Assertion ;
-<a name="cl-253"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-254"></a>        earl:mode earl:automatic ;
-<a name="cl-255"></a>        earl:result [
-<a name="cl-256"></a>                a earl:TestResult ;
-<a name="cl-257"></a>                earl:outcome earl:passed
-<a name="cl-258"></a>        ] ;
-<a name="cl-259"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-260"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0298.xhtml&gt; .
-<a name="cl-261"></a>[] dc:date &quot;2012-06-05T23:36:34Z&quot;^^xsd:dateTime ;
-<a name="cl-262"></a>        a earl:Assertion ;
-<a name="cl-263"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-264"></a>        earl:mode earl:automatic ;
-<a name="cl-265"></a>        earl:result [
-<a name="cl-266"></a>                earl:outcome earl:passed ;
-<a name="cl-267"></a>                a earl:TestResult
-<a name="cl-268"></a>        ] ;
-<a name="cl-269"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-270"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0299.xhtml&gt; .
-<a name="cl-271"></a>[] dc:date &quot;2012-06-05T23:36:34Z&quot;^^xsd:dateTime ;
-<a name="cl-272"></a>        a earl:Assertion ;
-<a name="cl-273"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-274"></a>        earl:mode earl:automatic ;
-<a name="cl-275"></a>        earl:result [
-<a name="cl-276"></a>                earl:outcome earl:passed ;
-<a name="cl-277"></a>                a earl:TestResult
-<a name="cl-278"></a>        ] ;
-<a name="cl-279"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-280"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0300.xhtml&gt; .
-<a name="cl-281"></a>[] dc:date &quot;2012-06-05T23:36:34Z&quot;^^xsd:dateTime ;
-<a name="cl-282"></a>        a earl:Assertion ;
-<a name="cl-283"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-284"></a>        earl:mode earl:automatic ;
-<a name="cl-285"></a>        earl:result [
-<a name="cl-286"></a>                earl:outcome earl:passed ;
-<a name="cl-287"></a>                a earl:TestResult
-<a name="cl-288"></a>        ] ;
-<a name="cl-289"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-290"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0301.xhtml&gt; .
-<a name="cl-291"></a>[] dc:date &quot;2012-06-05T23:36:34Z&quot;^^xsd:dateTime ;
-<a name="cl-292"></a>        a earl:Assertion ;
-<a name="cl-293"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-294"></a>        earl:mode earl:automatic ;
-<a name="cl-295"></a>        earl:result [
-<a name="cl-296"></a>                earl:outcome earl:passed ;
-<a name="cl-297"></a>                a earl:TestResult
-<a name="cl-298"></a>        ] ;
-<a name="cl-299"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-300"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0302.xhtml&gt; .
-<a name="cl-301"></a>[] dc:date &quot;2012-06-05T23:36:35Z&quot;^^xsd:dateTime ;
-<a name="cl-302"></a>        a earl:Assertion ;
-<a name="cl-303"></a>        earl:assertedBy rrp:xt ;
-<a name="cl-304"></a>        earl:mode earl:automatic ;
-<a name="cl-305"></a>        earl:result [
-<a name="cl-306"></a>                a earl:TestResult ;
-<a name="cl-307"></a>                earl:outcome earl:passed
-<a name="cl-308"></a>        ] ;
-<a name="cl-309"></a>        earl:subject dist:v_1-097 ;
-<a name="cl-310"></a>        earl:test &lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0304.svg&gt; .
-<a name="cl-311"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0201.svg&gt; dc:identifier &quot;0201&quot; ;
-<a name="cl-312"></a>        dc:title &quot;Expressing an attribute using @property&quot; ;
-<a name="cl-313"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-314"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-315"></a>        a earl:TestCase .
-<a name="cl-316"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0202.svg&gt; dc:identifier &quot;0202&quot; ;
-<a name="cl-317"></a>        dc:title &quot;Tests to ensure @xml:base used in SVG and XHTML5&quot; ;
-<a name="cl-318"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-319"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-320"></a>        a earl:TestCase .
-<a name="cl-321"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0203.svg&gt; dc:identifier &quot;0203&quot; ;
-<a name="cl-322"></a>        dc:title &quot;Tests to ensure @, XML+RDFa used in non-root elements in SVG and XHTML5&quot; ;
-<a name="cl-323"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-324"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-325"></a>        a earl:TestCase .
-<a name="cl-326"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0214.xhtml&gt; dc:identifier &quot;0214&quot; ;
-<a name="cl-327"></a>        dc:title &quot;Root element has implicit @about=\&quot;\&quot;&quot; ;
-<a name="cl-328"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-329"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-330"></a>        a earl:TestCase .
-<a name="cl-331"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0218.xhtml&gt; dc:identifier &quot;0218&quot; ;
-<a name="cl-332"></a>        dc:title &quot;@inlist to create empty list&quot; ;
-<a name="cl-333"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-334"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-335"></a>        a earl:TestCase .
-<a name="cl-336"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0219.xhtml&gt; dc:identifier &quot;0219&quot; ;
-<a name="cl-337"></a>        dc:title &quot;@inlist with literal&quot; ;
-<a name="cl-338"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-339"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-340"></a>        a earl:TestCase .
-<a name="cl-341"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0220.xhtml&gt; dc:identifier &quot;0220&quot; ;
-<a name="cl-342"></a>        dc:title &quot;@inlist with IRI&quot; ;
-<a name="cl-343"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-344"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-345"></a>        a earl:TestCase .
-<a name="cl-346"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0221.xhtml&gt; dc:identifier &quot;0221&quot; ;
-<a name="cl-347"></a>        dc:title &quot;@inlist with hetrogenious membership&quot; ;
-<a name="cl-348"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-349"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-350"></a>        a earl:TestCase .
-<a name="cl-351"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0222.xhtml&gt; dc:identifier &quot;0222&quot; ;
-<a name="cl-352"></a>        dc:title &quot;@inlist with multi-level elements&quot; ;
-<a name="cl-353"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-354"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-355"></a>        a earl:TestCase .
-<a name="cl-356"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0223.xhtml&gt; dc:identifier &quot;0223&quot; ;
-<a name="cl-357"></a>        dc:title &quot;@inlist with non-list property&quot; ;
-<a name="cl-358"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-359"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-360"></a>        a earl:TestCase .
-<a name="cl-361"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0224.xhtml&gt; dc:identifier &quot;0224&quot; ;
-<a name="cl-362"></a>        dc:title &quot;@inlist hanging @rel&quot; ;
-<a name="cl-363"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-364"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-365"></a>        a earl:TestCase .
-<a name="cl-366"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0225.xhtml&gt; dc:identifier &quot;0225&quot; ;
-<a name="cl-367"></a>        dc:title &quot;@inlist on different elements with same subject&quot; ;
-<a name="cl-368"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-369"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-370"></a>        a earl:TestCase .
-<a name="cl-371"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0226.xhtml&gt; dc:identifier &quot;0226&quot; ;
-<a name="cl-372"></a>        dc:title &quot;confusion between multiple implicit collections (resource)&quot; ;
-<a name="cl-373"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-374"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-375"></a>        a earl:TestCase .
-<a name="cl-376"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0227.xhtml&gt; dc:identifier &quot;0227&quot; ;
-<a name="cl-377"></a>        dc:title &quot;confusion between multiple implicit collections (about)&quot; ;
-<a name="cl-378"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-379"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-380"></a>        a earl:TestCase .
-<a name="cl-381"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0234.xhtml&gt; dc:identifier &quot;0234&quot; ;
-<a name="cl-382"></a>        dc:title &quot;All defined HTML link relation values&quot; ;
-<a name="cl-383"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-384"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-385"></a>        a earl:TestCase .
-<a name="cl-386"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0259.xhtml&gt; dc:identifier &quot;0259&quot; ;
-<a name="cl-387"></a>        dc:title &quot;XML+RDFa Initial Context&quot; ;
-<a name="cl-388"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-389"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-390"></a>        a earl:TestCase .
-<a name="cl-391"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0289.xhtml&gt; dc:identifier &quot;0289&quot; ;
-<a name="cl-392"></a>        dc:title &quot;@href becomes subject when @property and @content are present&quot; ;
-<a name="cl-393"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-394"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-395"></a>        a earl:TestCase .
-<a name="cl-396"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0290.xhtml&gt; dc:identifier &quot;0290&quot; ;
-<a name="cl-397"></a>        dc:title &quot;@href becomes subject when @property and @datatype are present&quot; ;
-<a name="cl-398"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-399"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-400"></a>        a earl:TestCase .
-<a name="cl-401"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0291.xhtml&gt; dc:identifier &quot;0291&quot; ;
-<a name="cl-402"></a>        dc:title &quot;@href as subject overridden by @about&quot; ;
-<a name="cl-403"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-404"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-405"></a>        a earl:TestCase .
-<a name="cl-406"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0292.xhtml&gt; dc:identifier &quot;0292&quot; ;
-<a name="cl-407"></a>        dc:title &quot;@about overriding @href as subject is used as parent resource&quot; ;
-<a name="cl-408"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-409"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-410"></a>        a earl:TestCase .
-<a name="cl-411"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0293.xhtml&gt; dc:identifier &quot;0293&quot; ;
-<a name="cl-412"></a>        dc:title &quot;Testing the &#39;:&#39; character usage in a CURIE&quot; ;
-<a name="cl-413"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-414"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-415"></a>        a earl:TestCase .
-<a name="cl-416"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0295.xhtml&gt; dc:identifier &quot;0295&quot; ;
-<a name="cl-417"></a>        dc:title &quot;Benchmark test&quot; ;
-<a name="cl-418"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-419"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-420"></a>        a earl:TestCase .
-<a name="cl-421"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0296.xhtml&gt; dc:identifier &quot;0296&quot; ;
-<a name="cl-422"></a>        dc:title &quot;@property does set parent object without @typeof&quot; ;
-<a name="cl-423"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-424"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-425"></a>        a earl:TestCase .
-<a name="cl-426"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0297.xhtml&gt; dc:identifier &quot;0297&quot; ;
-<a name="cl-427"></a>        dc:title &quot;@about=[] with @typeof does not create a new subject&quot; ;
-<a name="cl-428"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-429"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-430"></a>        a earl:TestCase .
-<a name="cl-431"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0298.xhtml&gt; dc:identifier &quot;0298&quot; ;
-<a name="cl-432"></a>        dc:title &quot;@about=[] with @typeof does not create a new object&quot; ;
-<a name="cl-433"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-434"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-435"></a>        a earl:TestCase .
-<a name="cl-436"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0299.xhtml&gt; dc:identifier &quot;0299&quot; ;
-<a name="cl-437"></a>        dc:title &quot;@resource=[] with @href or @src uses @href or @src (@rel)&quot; ;
-<a name="cl-438"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-439"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-440"></a>        a earl:TestCase .
-<a name="cl-441"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0300.xhtml&gt; dc:identifier &quot;0300&quot; ;
-<a name="cl-442"></a>        dc:title &quot;@resource=[] with @href or @src uses @href or @src (@property)&quot; ;
-<a name="cl-443"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-444"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-445"></a>        a earl:TestCase .
-<a name="cl-446"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0301.xhtml&gt; dc:identifier &quot;0301&quot; ;
-<a name="cl-447"></a>        dc:title &quot;@property with @typeof creates a typed_resource for chaining&quot; ;
-<a name="cl-448"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-449"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-450"></a>        a earl:TestCase .
-<a name="cl-451"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0302.xhtml&gt; dc:identifier &quot;0302&quot; ;
-<a name="cl-452"></a>        dc:title &quot;@typeof with different content types&quot; ;
-<a name="cl-453"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-454"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-455"></a>        a earl:TestCase .
-<a name="cl-456"></a>&lt;http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0304.svg&gt; dc:identifier &quot;0304&quot; ;
-<a name="cl-457"></a>        dc:title &quot;Embedded chunks of RDF/XML&quot; ;
-<a name="cl-458"></a>        test:hostLanguage &quot;svg&quot; ;
-<a name="cl-459"></a>        test:rdfaVersion &quot;1.1&quot; ;
-<a name="cl-460"></a>        a earl:TestCase .
-<a name="cl-461"></a>rrp:xt a earl:Software ;
-<a name="cl-462"></a>        foaf:name &quot;RDF-RDFa-Parser Author Tests&quot; ;
-<a name="cl-463"></a>        foaf:page &lt;https://bitbucket.org/tobyink/p5-rdf-rdfa-parser/src/tip/xt&gt; .
-</pre></div>
-</td></tr></table>
-    </div>
-  
-  </div>
-  
-
-
-  <div id="mask"><div></div></div>
-
-  </div>
-
-      </div>
-    </div>
-
-  </div>
-
-  <div id="footer">
-    <ul id="footer-nav">
-      <li>Copyright © 2012 <a href="http://atlassian.com">Atlassian</a></li>
-      <li><a href="http://www.atlassian.com/hosted/terms.jsp">Terms of Service</a></li>
-      <li><a href="http://www.atlassian.com/about/privacy.jsp">Privacy</a></li>
-      <li><a href="//bitbucket.org/site/master/issues/new">Report a Bug to Bitbucket</a></li>
-      <li><a href="http://confluence.atlassian.com/x/IYBGDQ">API</a></li>
-      <li><a href="http://status.bitbucket.org/">Server Status</a></li>
-    </ul>
-    <ul id="social-nav">
-      <li class="blog"><a href="http://blog.bitbucket.org">Bitbucket Blog</a></li>
-      <li class="twitter"><a href="http://www.twitter.com/bitbucket">Twitter</a></li>
-    </ul>
-    <h5>We run</h5>
-    <ul id="technologies">
-      <li><a href="http://www.djangoproject.com/">Django 1.3.1</a></li>
-      <li><a href="//bitbucket.org/jespern/django-piston/">Piston 0.3dev</a></li>
-      <li><a href="http://git-scm.com/">Git 1.7.10.3</a></li>
-      <li><a href="http://www.selenic.com/mercurial/">Hg 2.2.2</a></li>
-      <li><a href="http://www.python.org">Python 2.7.3</a></li>
-      <li>bd31f89ee3e3 | bitbucket12</li>
-    </ul>
-  </div>
-
-  <script src="https://dwz7u9t8u8usb.cloudfront.net/m/7643968c8bac/js/lib/global.js"></script>
-
-
-
-
-
-
-  <script>
-    BB.gaqPush(['_trackPageview']);
-  
-    BB.gaqPush(['atl._trackPageview']);
-
-    
-
-    
-
-    (function () {
-        var ga = document.createElement('script');
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        ga.setAttribute('async', 'true');
-        document.documentElement.firstChild.appendChild(ga);
-    }());
-  </script>
-
-</body>
-</html>
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dist: <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/> .
+@prefix earl: <http://www.w3.org/ns/earl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rrp: <tag:buzzword.org.uk,2012:RDF-RDFa-Parser:> .
+@prefix test: <http://rdfa.info/vocabs/rdfa-test#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] dc:date "2012-06-05T23:36:27Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		a earl:TestResult ;
+		earl:outcome earl:passed
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0201.svg> .
+[] dc:date "2012-06-05T23:36:27Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		earl:outcome earl:passed ;
+		a earl:TestResult
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0202.svg> .
+[] dc:date "2012-06-05T23:36:27Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		earl:outcome earl:passed ;
+		a earl:TestResult
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0203.svg> .
+[] dc:date "2012-06-05T23:36:27Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		earl:outcome earl:passed ;
+		a earl:TestResult
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0214.svg> .
+[] dc:date "2012-06-05T23:36:27Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		a earl:TestResult ;
+		earl:outcome earl:passed
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0218.svg> .
+[] dc:date "2012-06-05T23:36:28Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		earl:outcome earl:passed ;
+		a earl:TestResult
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0219.svg> .
+[] dc:date "2012-06-05T23:36:28Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		a earl:TestResult ;
+		earl:outcome earl:passed
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0220.svg> .
+[] dc:date "2012-06-05T23:36:28Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		a earl:TestResult ;
+		earl:outcome earl:passed
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0221.svg> .
+[] dc:date "2012-06-05T23:36:28Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		a earl:TestResult ;
+		earl:outcome earl:passed
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0222.svg> .
+[] dc:date "2012-06-05T23:36:28Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		earl:outcome earl:passed ;
+		a earl:TestResult
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0223.svg> .
+[] dc:date "2012-06-05T23:36:28Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		earl:outcome earl:passed ;
+		a earl:TestResult
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0224.svg> .
+[] dc:date "2012-06-05T23:36:28Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		earl:outcome earl:passed ;
+		a earl:TestResult
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0225.svg> .
+[] dc:date "2012-06-05T23:36:29Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		earl:outcome earl:passed ;
+		a earl:TestResult
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0226.svg> .
+[] dc:date "2012-06-05T23:36:29Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		a earl:TestResult ;
+		earl:outcome earl:passed
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0227.svg> .
+[] dc:date "2012-06-05T23:36:29Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		a earl:TestResult ;
+		earl:outcome earl:passed
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0234.svg> .
+[] dc:date "2012-06-05T23:36:30Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		a earl:TestResult ;
+		earl:outcome earl:passed
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0259.svg> .
+[] dc:date "2012-06-05T23:36:30Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		a earl:TestResult ;
+		earl:outcome earl:passed
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0289.svg> .
+[] dc:date "2012-06-05T23:36:30Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		earl:outcome earl:passed ;
+		a earl:TestResult
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0290.svg> .
+[] dc:date "2012-06-05T23:36:30Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		earl:outcome earl:passed ;
+		a earl:TestResult
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0291.svg> .
+[] dc:date "2012-06-05T23:36:30Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		earl:outcome earl:passed ;
+		a earl:TestResult
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0292.svg> .
+[] dc:date "2012-06-05T23:36:30Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		a earl:TestResult ;
+		earl:outcome earl:passed
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0293.svg> .
+[] dc:date "2012-06-05T23:36:33Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		earl:outcome earl:passed ;
+		a earl:TestResult
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0295.svg> .
+[] dc:date "2012-06-05T23:36:34Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		a earl:TestResult ;
+		earl:outcome earl:passed
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0296.svg> .
+[] dc:date "2012-06-05T23:36:34Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		earl:outcome earl:passed ;
+		a earl:TestResult
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0297.svg> .
+[] dc:date "2012-06-05T23:36:34Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		a earl:TestResult ;
+		earl:outcome earl:passed
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0298.svg> .
+[] dc:date "2012-06-05T23:36:34Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		earl:outcome earl:passed ;
+		a earl:TestResult
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0299.svg> .
+[] dc:date "2012-06-05T23:36:34Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		earl:outcome earl:passed ;
+		a earl:TestResult
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0300.svg> .
+[] dc:date "2012-06-05T23:36:34Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		earl:outcome earl:passed ;
+		a earl:TestResult
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0301.svg> .
+[] dc:date "2012-06-05T23:36:34Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		earl:outcome earl:passed ;
+		a earl:TestResult
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0302.svg> .
+[] dc:date "2012-06-05T23:36:35Z"^^xsd:dateTime ;
+	a earl:Assertion ;
+	earl:assertedBy rrp:xt ;
+	earl:mode earl:automatic ;
+	earl:result [
+		a earl:TestResult ;
+		earl:outcome earl:passed
+	] ;
+	earl:subject dist:v_1-097 ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0304.svg> .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0201.svg> dc:identifier "0201" ;
+	dc:title "Expressing an attribute using @property" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0202.svg> dc:identifier "0202" ;
+	dc:title "Tests to ensure @xml:base used in SVG and XHTML5" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0203.svg> dc:identifier "0203" ;
+	dc:title "Tests to ensure @, XML+RDFa used in non-root elements in SVG and XHTML5" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0214.svg> dc:identifier "0214" ;
+	dc:title "Root element has implicit @about=\"\"" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0218.svg> dc:identifier "0218" ;
+	dc:title "@inlist to create empty list" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0219.svg> dc:identifier "0219" ;
+	dc:title "@inlist with literal" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0220.svg> dc:identifier "0220" ;
+	dc:title "@inlist with IRI" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0221.svg> dc:identifier "0221" ;
+	dc:title "@inlist with hetrogenious membership" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0222.svg> dc:identifier "0222" ;
+	dc:title "@inlist with multi-level elements" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0223.svg> dc:identifier "0223" ;
+	dc:title "@inlist with non-list property" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0224.svg> dc:identifier "0224" ;
+	dc:title "@inlist hanging @rel" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0225.svg> dc:identifier "0225" ;
+	dc:title "@inlist on different elements with same subject" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0226.svg> dc:identifier "0226" ;
+	dc:title "confusion between multiple implicit collections (resource)" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0227.svg> dc:identifier "0227" ;
+	dc:title "confusion between multiple implicit collections (about)" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0234.svg> dc:identifier "0234" ;
+	dc:title "All defined HTML link relation values" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0259.svg> dc:identifier "0259" ;
+	dc:title "XML+RDFa Initial Context" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0289.svg> dc:identifier "0289" ;
+	dc:title "@href becomes subject when @property and @content are present" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0290.svg> dc:identifier "0290" ;
+	dc:title "@href becomes subject when @property and @datatype are present" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0291.svg> dc:identifier "0291" ;
+	dc:title "@href as subject overridden by @about" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0292.svg> dc:identifier "0292" ;
+	dc:title "@about overriding @href as subject is used as parent resource" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0293.svg> dc:identifier "0293" ;
+	dc:title "Testing the ':' character usage in a CURIE" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0295.svg> dc:identifier "0295" ;
+	dc:title "Benchmark test" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0296.svg> dc:identifier "0296" ;
+	dc:title "@property does set parent object without @typeof" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0297.svg> dc:identifier "0297" ;
+	dc:title "@about=[] with @typeof does not create a new subject" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0298.svg> dc:identifier "0298" ;
+	dc:title "@about=[] with @typeof does not create a new object" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0299.svg> dc:identifier "0299" ;
+	dc:title "@resource=[] with @href or @src uses @href or @src (@rel)" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0300.svg> dc:identifier "0300" ;
+	dc:title "@resource=[] with @href or @src uses @href or @src (@property)" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0301.svg> dc:identifier "0301" ;
+	dc:title "@property with @typeof creates a typed_resource for chaining" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0302.svg> dc:identifier "0302" ;
+	dc:title "@typeof with different content types" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/0304.svg> dc:identifier "0304" ;
+	dc:title "Embedded chunks of RDF/XML" ;
+	test:hostLanguage "svg" ;
+	test:rdfaVersion "1.1" ;
+	a earl:TestCase .
+rrp:xt a earl:Software ;
+	foaf:name "RDF-RDFa-Parser Author Tests" ;
+	foaf:page <https://bitbucket.org/tobyink/p5-rdf-rdfa-parser/src/tip/xt> .
