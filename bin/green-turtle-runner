@@ -1,0 +1,57 @@
+#!/usr/bin/env node
+
+var fs = require('fs'),
+    ospath = require('path'),
+    jsdom = require('jsdom'),
+    optimist = require('optimist');
+
+optimist.usage(
+  "The script takes the standard input and generates Turtle on standard output.\
+  \
+  Usage: #{$0} [options] [rdfa input] \
+  Options: \
+    --format:             Format for output \
+    --host-language:      Run for specified host language \
+    --rdfagraph:          output, processor or output,processor \
+    --version:            Version of processor to use (rdf1.0, rdf1.1). \
+    --uri:                Base URI to use when parsing"
+);
+
+var argv = optimist.argv;
+
+if (!argv.hostLanguage) { argv.hostLanguage = 'xhtml1'}
+if (!argv.version) { argv.version = 'rdfa1.1'}
+
+var file = argv._[0];
+
+var content = "";
+
+if (argv._.length > 0) {
+  content = fs.readFileSync(argv._[0], "utf8")
+  if (!argv.uri) { argv.uri = argv._[0]}
+} else {
+  // Read from STDIN
+  process.stdin.resume();
+  // Read at most 10,000 bytes into content
+  content = fs.readFileSync("/dev/stdin").toString();
+  console.log(content);
+}
+
+var scripts = [
+  "./green-turtle/testpatch.js",
+  "./green-turtle/rdfa_turtle_serializer.js"
+  "../public/js/jquery.min.js",
+  "../public/play/rdfa.js",
+].map(function (src) {
+    return ospath.join(__dirname, src)
+})
+
+jsdom.env(content, scripts, function(errors, window) {
+  var play = window.play,
+    document = window.document,
+    $ = window.$,
+    RDFa = window.RDFa;
+  $('*').each(function () { this.baseURI = argv.uri })
+  RDFa.attach(document, true)
+  console.log(play.toTurtle(document.data))
+})
