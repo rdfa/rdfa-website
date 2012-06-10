@@ -7,8 +7,7 @@
 @prefix toby:    <http://tobyinkster.co.uk/#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-my:project
-	a               :Project ;
+<tag:buzzword.org.uk,2012:RDF-RDFa-Parser:xt>	a :Project ;
 	:name           "RDF-RDFa-Parser" ;
 	:shortdesc      "flexible RDFa parser"@en ;
 	:programming-language  "Perl" ;
