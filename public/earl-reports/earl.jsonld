@@ -240,12 +240,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0001.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -313,12 +313,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0006.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -386,12 +386,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0007.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -459,12 +459,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0008.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -532,12 +532,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0009.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -605,12 +605,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0010.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -678,12 +678,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0012.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -751,12 +751,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0013.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -824,12 +824,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0014.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -897,12 +897,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0015.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -970,12 +970,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0017.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -1043,12 +1043,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0018.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -1116,12 +1116,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0019.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -1189,12 +1189,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0020.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -1262,12 +1262,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0021.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -1335,12 +1335,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0023.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -1408,12 +1408,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0025.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -1481,12 +1481,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0026.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -1554,12 +1554,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0027.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -1627,12 +1627,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0029.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -1700,12 +1700,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0030.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -1773,12 +1773,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0031.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -1846,12 +1846,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0032.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -1919,12 +1919,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0033.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -1992,12 +1992,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0034.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -2065,12 +2065,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0035.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -2138,12 +2138,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0036.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -2211,12 +2211,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0037.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -2284,12 +2284,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0038.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -2357,12 +2357,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0039.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -2430,12 +2430,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0041.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -2503,12 +2503,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0048.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -2576,12 +2576,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0049.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -2649,12 +2649,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0050.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -2722,12 +2722,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0051.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -2795,12 +2795,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0052.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -2868,12 +2868,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0053.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -2941,12 +2941,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0054.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -3014,12 +3014,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0055.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -3087,12 +3087,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0056.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -3160,12 +3160,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0057.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -3233,12 +3233,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0059.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -3306,12 +3306,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0060.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -3379,12 +3379,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0061.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -3452,12 +3452,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0062.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -3525,12 +3525,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0063.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -3598,12 +3598,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0064.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -3671,12 +3671,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0065.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -3744,12 +3744,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0066.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -3817,12 +3817,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0067.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -3890,12 +3890,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0068.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -3963,12 +3963,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0069.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -4036,12 +4036,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0070.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -4109,12 +4109,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0071.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -4182,12 +4182,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0072.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -4255,12 +4255,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0073.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -4328,12 +4328,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0074.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -4401,12 +4401,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0075.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -4474,12 +4474,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0076.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -4547,12 +4547,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0077.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -4620,12 +4620,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0079.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -4693,12 +4693,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0080.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -4766,12 +4766,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0083.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -4839,12 +4839,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0084.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -4912,12 +4912,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0085.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -4985,12 +4985,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0087.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -5058,12 +5058,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0088.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -5131,12 +5131,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0089.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -5204,12 +5204,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0091.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -5277,12 +5277,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0093.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -5350,12 +5350,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0099.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -5423,12 +5423,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0104.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -5496,12 +5496,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0106.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -5569,12 +5569,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0107.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -5642,12 +5642,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0108.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -5715,12 +5715,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0109.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -5788,12 +5788,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0110.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -5861,12 +5861,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0111.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -5934,12 +5934,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0112.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -6007,12 +6007,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0113.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -6080,12 +6080,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0114.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -6153,12 +6153,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0115.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -6226,12 +6226,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0117.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -6299,12 +6299,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0118.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -6372,12 +6372,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0119.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -6445,12 +6445,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0120.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -6518,12 +6518,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0121.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -6591,12 +6591,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0122.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -6664,12 +6664,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0126.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -6737,12 +6737,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0131.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -6810,12 +6810,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0134.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -6883,12 +6883,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0140.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -6956,12 +6956,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0147.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -7029,12 +7029,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0172.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -7102,12 +7102,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0173.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -7175,12 +7175,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0174.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -7248,12 +7248,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0175.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -7321,12 +7321,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0176.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -7394,12 +7394,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0177.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -7467,12 +7467,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0178.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -7540,12 +7540,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0179.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -7613,12 +7613,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0180.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -7686,12 +7686,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0181.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -7759,12 +7759,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0182.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -7832,12 +7832,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0183.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -7905,12 +7905,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0186.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -7978,12 +7978,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0187.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -8051,12 +8051,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0188.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -8124,12 +8124,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0189.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -8197,12 +8197,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0190.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -8270,12 +8270,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0196.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -8343,12 +8343,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0197.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -8416,12 +8416,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0198.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -8489,12 +8489,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0206.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -8562,12 +8562,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0207.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -8635,12 +8635,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0213.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -8708,12 +8708,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0214.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -8781,12 +8781,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0216.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -8854,12 +8854,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0217.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -8927,12 +8927,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0218.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -9000,12 +9000,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0219.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -9073,12 +9073,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0220.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -9146,12 +9146,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0221.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -9219,12 +9219,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0222.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -9292,12 +9292,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0223.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -9365,12 +9365,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0224.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -9438,12 +9438,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0225.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -9511,12 +9511,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0226.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -9584,15 +9584,15 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0227.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:passed"
+            "outcome": "earl:failed"
           }
         },
         "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097": {
@@ -9657,12 +9657,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0228.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -9730,12 +9730,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0229.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -9803,12 +9803,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0230.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -9876,12 +9876,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0231.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -9949,12 +9949,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0232.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -10022,12 +10022,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0233.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -10095,12 +10095,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0234.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -10168,12 +10168,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0246.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -10241,12 +10241,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0247.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -10314,12 +10314,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0248.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -10387,12 +10387,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0249.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -10460,12 +10460,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0250.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -10533,12 +10533,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0251.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -10606,12 +10606,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0252.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -10679,12 +10679,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0253.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -10752,12 +10752,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0254.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -10825,12 +10825,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0255.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -10898,15 +10898,15 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0256.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:failed"
+            "outcome": "earl:passed"
           }
         },
         "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097": {
@@ -10971,12 +10971,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0257.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -11044,12 +11044,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0258.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -11117,12 +11117,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0259.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -11190,12 +11190,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0260.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -11263,12 +11263,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0261.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -11336,12 +11336,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0262.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -11409,15 +11409,15 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0263.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:passed"
+            "outcome": "earl:failed"
           }
         },
         "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097": {
@@ -11482,12 +11482,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0264.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -11555,12 +11555,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0265.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -11628,12 +11628,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0266.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -11701,12 +11701,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0267.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -11774,12 +11774,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0268.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -11847,12 +11847,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0269.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -11920,12 +11920,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0271.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -11993,12 +11993,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0289.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -12066,12 +12066,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0290.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -12139,12 +12139,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0291.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -12212,12 +12212,12 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0292.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -12285,12 +12285,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0293.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -12358,15 +12358,15 @@
             "outcome": "earl:passed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0295.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:failed"
+            "outcome": "earl:passed"
           }
         },
         "http://rubygems.org/gems/rdf-rdfa": {
@@ -12420,12 +12420,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0296.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -12482,12 +12482,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0297.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:failed"
@@ -12544,12 +12544,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0298.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -12606,12 +12606,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0299.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -12668,12 +12668,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0300.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -12730,12 +12730,12 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0301.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
             "outcome": "earl:passed"
@@ -12792,15 +12792,15 @@
             "outcome": "earl:failed"
           }
         },
-        "https://github.com/rdfa/librdfa": {
+        "http://www.w3.org/2012/pyRdfa": {
           "@type": "earl:Assertion",
           "assertedBy": "http://rdfa.info/test-suite/",
           "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0302.xhtml",
           "mode": "earl:automatic",
-          "subject": "https://github.com/rdfa/librdfa",
+          "subject": "http://www.w3.org/2012/pyRdfa",
           "result": {
             "@type": "earl:TestResult",
-            "outcome": "earl:failed"
+            "outcome": "earl:passed"
           }
         },
         "http://rubygems.org/gems/rdf-rdfa": {

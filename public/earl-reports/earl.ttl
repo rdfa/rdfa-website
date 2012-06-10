@@ -2350,6 +2350,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0001.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0001.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2371,6 +2378,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0006.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0006.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2392,6 +2406,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0007.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0007.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2413,6 +2434,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0008.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0008.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2434,6 +2462,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0009.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0009.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2455,6 +2490,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0010.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0010.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2476,6 +2518,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0012.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0012.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2497,6 +2546,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0013.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0013.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2518,6 +2574,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0014.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0014.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2539,6 +2602,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0015.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0015.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2560,6 +2630,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0017.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0017.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2581,6 +2658,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0018.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0018.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2602,6 +2686,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0019.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0019.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2623,6 +2714,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0020.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0020.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2644,6 +2742,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0021.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0021.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2665,6 +2770,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0023.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0023.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2686,6 +2798,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0025.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0025.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2707,6 +2826,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0026.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0026.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2728,6 +2854,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0027.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0027.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2749,6 +2882,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0029.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0029.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2770,6 +2910,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0030.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0030.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2791,6 +2938,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0031.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0031.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2812,6 +2966,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0032.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0032.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2833,6 +2994,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0033.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0033.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2854,6 +3022,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0034.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0034.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2875,6 +3050,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0035.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0035.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2896,6 +3078,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0036.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0036.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2917,6 +3106,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0037.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0037.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2938,6 +3134,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0038.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0038.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2959,6 +3162,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0039.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0039.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -2980,6 +3190,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0041.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0041.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3001,6 +3218,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0048.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0048.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3022,6 +3246,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0049.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0049.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3043,6 +3274,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0050.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0050.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3064,6 +3302,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0051.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0051.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3085,6 +3330,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0052.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0052.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3106,6 +3358,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0053.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0053.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3127,6 +3386,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0054.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0054.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3148,6 +3414,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0055.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0055.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3169,6 +3442,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0056.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0056.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3190,6 +3470,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0057.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0057.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3211,6 +3498,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0059.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0059.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3232,6 +3526,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0060.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0060.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3253,6 +3554,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0061.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0061.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3274,6 +3582,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0062.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0062.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3295,6 +3610,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0063.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0063.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3316,6 +3638,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0064.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0064.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3337,6 +3666,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0065.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0065.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3358,6 +3694,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0066.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0066.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3379,6 +3722,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0067.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0067.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3400,6 +3750,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0068.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0068.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3421,6 +3778,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0069.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0069.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3442,6 +3806,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0070.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0070.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3463,6 +3834,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0071.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0071.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3484,6 +3862,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0072.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0072.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3505,6 +3890,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0073.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0073.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3526,6 +3918,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0074.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0074.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3547,6 +3946,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0075.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0075.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3568,6 +3974,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0076.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0076.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3589,6 +4002,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0077.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0077.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3610,6 +4030,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0079.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0079.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3631,6 +4058,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0080.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0080.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3652,6 +4086,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0083.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0083.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3673,6 +4114,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0084.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0084.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3694,6 +4142,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0085.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0085.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3715,6 +4170,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0087.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0087.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3736,6 +4198,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0088.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0088.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3757,6 +4226,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0089.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0089.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3778,6 +4254,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0091.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0091.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3799,6 +4282,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0093.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0093.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3820,6 +4310,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0099.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0099.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3841,6 +4338,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0104.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0104.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3862,6 +4366,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0106.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0106.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3883,6 +4394,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0107.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0107.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3904,6 +4422,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0108.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0108.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3925,6 +4450,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0109.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0109.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3946,6 +4478,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0110.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0110.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3967,6 +4506,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0111.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0111.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -3988,6 +4534,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0112.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0112.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4009,6 +4562,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0113.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0113.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4030,6 +4590,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0114.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0114.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4051,6 +4618,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0115.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0115.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4072,6 +4646,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0117.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0117.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4093,6 +4674,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0118.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0118.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4114,6 +4702,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0119.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0119.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4135,6 +4730,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0120.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0120.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4156,6 +4758,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0121.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0121.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4177,6 +4786,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0122.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0122.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4198,6 +4814,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0126.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0126.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4219,6 +4842,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0131.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0131.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4240,6 +4870,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0134.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0134.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4261,6 +4898,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0140.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0140.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:failed] ] .
@@ -4282,6 +4926,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0147.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0147.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4303,6 +4954,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0172.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0172.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4324,6 +4982,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0173.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0173.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4345,6 +5010,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0174.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0174.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4366,6 +5038,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0175.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0175.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4387,6 +5066,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0176.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0176.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4408,6 +5094,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0177.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0177.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4429,6 +5122,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0178.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0178.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4450,6 +5150,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0179.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0179.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4471,6 +5178,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0180.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0180.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4492,6 +5206,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0181.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0181.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4513,6 +5234,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0182.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0182.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4534,6 +5262,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0183.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0183.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4555,6 +5290,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0186.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0186.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4576,6 +5318,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0187.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0187.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4597,6 +5346,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0188.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0188.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4618,6 +5374,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0189.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0189.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4639,6 +5402,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0190.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0190.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4660,6 +5430,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0196.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0196.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4681,6 +5458,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0197.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0197.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4702,6 +5486,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0198.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0198.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:failed] ] .
@@ -4723,6 +5514,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0206.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0206.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4744,6 +5542,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0207.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0207.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4765,6 +5570,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0213.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0213.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4786,6 +5598,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0214.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0214.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4807,6 +5626,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0216.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0216.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4828,6 +5654,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0217.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0217.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4849,6 +5682,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0218.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0218.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4870,6 +5710,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0219.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0219.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4891,6 +5738,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0220.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0220.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4912,6 +5766,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0221.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0221.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4933,6 +5794,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0222.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0222.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4954,6 +5822,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0223.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0223.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4975,6 +5850,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0224.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0224.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -4996,6 +5878,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0225.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0225.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5017,6 +5906,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0226.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0226.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5038,6 +5934,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0227.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:failed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0227.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5059,6 +5962,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0228.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0228.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5080,6 +5990,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0229.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0229.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5101,6 +6018,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0230.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0230.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5122,6 +6046,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0231.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0231.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5143,6 +6074,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0232.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0232.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5164,6 +6102,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0233.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0233.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5185,6 +6130,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0234.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0234.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5206,6 +6158,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0246.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0246.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5227,6 +6186,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0247.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0247.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5248,6 +6214,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0248.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0248.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5269,6 +6242,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0249.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0249.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5290,6 +6270,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0250.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0250.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5311,6 +6298,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0251.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0251.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5332,6 +6326,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0252.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0252.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5353,6 +6354,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0253.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0253.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5374,6 +6382,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0254.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0254.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5395,6 +6410,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0255.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0255.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5416,6 +6438,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0256.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0256.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5437,6 +6466,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0257.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0257.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5458,6 +6494,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0258.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0258.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5479,6 +6522,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0259.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0259.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5500,6 +6550,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0260.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0260.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5521,6 +6578,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0261.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0261.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5542,6 +6606,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0262.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0262.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5563,6 +6634,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0263.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:failed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0263.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5584,6 +6662,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0264.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0264.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5605,6 +6690,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0265.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0265.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5626,6 +6718,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0266.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0266.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5647,6 +6746,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0267.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0267.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5668,6 +6774,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0268.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0268.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5689,6 +6802,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0269.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0269.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5710,6 +6830,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0271.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0271.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5731,6 +6858,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0289.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0289.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5752,6 +6886,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0290.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0290.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5773,6 +6914,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0291.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0291.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5794,6 +6942,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0292.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0292.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5815,6 +6970,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0293.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0293.xhtml>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5836,6 +6998,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0295.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0295.xhtml>;
   earl:subject <http://rubygems.org/gems/rdf-rdfa>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5850,6 +7019,13 @@ white   space
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0296.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0296.xhtml>;
   earl:subject <http://rubygems.org/gems/rdf-rdfa>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:passed] ] .
@@ -5858,6 +7034,13 @@ white   space
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0297.xhtml>;
   earl:subject <http://any23.org/>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:failed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0297.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:failed] ] .
 
@@ -5874,6 +7057,13 @@ white   space
   earl:subject <http://any23.org/>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:failed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0298.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
 
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
@@ -5888,6 +7078,13 @@ white   space
   earl:subject <http://any23.org/>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:failed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0299.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
 
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
@@ -5902,6 +7099,13 @@ white   space
   earl:subject <http://any23.org/>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:failed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0300.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
 
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
@@ -5916,6 +7120,13 @@ white   space
   earl:subject <http://any23.org/>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:failed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0301.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
 
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
@@ -5930,6 +7141,13 @@ white   space
   earl:subject <http://any23.org/>;
   earl:mode earl:automatic;
   earl:result [ a earl:Result; earl:failed] ] .
+
+[ a earl:Assertion
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0302.xhtml>;
+  earl:subject <http://www.w3.org/2012/pyRdfa>;
+  earl:mode earl:automatic;
+  earl:result [ a earl:Result; earl:passed] ] .
 
 [ a earl:Assertion
   earl:assertedBy <http://rdfa.info/test-suite/>;
