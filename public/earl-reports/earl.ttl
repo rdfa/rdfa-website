@@ -20,8 +20,8 @@
     <https://github.com/shellac/java-rdfa>,
     <https://github.com/rdfa/librdfa>,
     <http://www.w3.org/2012/pyRdfa>,
-    <tag:buzzword.org.uk,2012:RDF-RDFa-Parser:xt>,
-    <http://rubygems.org/gems/rdf-rdfa>;
+    <http://rubygems.org/gems/rdf-rdfa>,
+    <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
   <http://rdfa.info/vocabs/rdfa-test#version/rdfa1.1> [ a rdfatest:Version;
     <http://rdfa.info/vocabs/rdfa-test#hostLanguage/xhtml1> (
       <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0001.xhtml>
@@ -794,12 +794,6 @@
   doap:developer <http://www.ivan-herman.net/foaf#me> .
 <http://www.ivan-herman.net/foaf#me> a foaf:Person foaf:name "Ivan Herman" .
 
-<tag:buzzword.org.uk,2012:RDF-RDFa-Parser:xt> a earl:TestSubject, doap:Project
-  doap:name "RDF-RDFa-Parser";
-  doap:programming-language "Perl";
-  doap:developer <http://tobyinkster.co.uk/#i> .
-<http://tobyinkster.co.uk/#i> a foaf:Person foaf:name "Toby Inkster" .
-
 <http://rubygems.org/gems/rdf-rdfa> a earl:TestSubject, doap:Project
   doap:name "RDF::RDFa";
   doap:description """
@@ -808,6 +802,12 @@
   doap:programming-language "Ruby";
   doap:developer <http://greggkellogg.net/foaf#me> .
 <http://greggkellogg.net/foaf#me> a foaf:Person foaf:name "Gregg Kellogg" .
+
+<http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097> a earl:TestSubject, doap:Project
+  doap:name "RDF-RDFa-Parser";
+  doap:programming-language "Perl";
+  doap:developer <http://tobyinkster.co.uk/#i> .
+<http://tobyinkster.co.uk/#i> a foaf:Person foaf:name "Toby Inkster" .
 
 #
 # Test Case Definitions

@@ -110,21 +110,6 @@
       "language": "Python"
     },
     {
-      "@id": "tag:buzzword.org.uk,2012:RDF-RDFa-Parser:xt",
-      "@type": [
-        "earl:TestSubject",
-        "doap:Project"
-      ],
-      "name": "RDF-RDFa-Parser",
-      "developer": {
-        "@id": "http://tobyinkster.co.uk/#i",
-        "@type": "foaf:Person",
-        "foaf:name": "Toby Inkster"
-      },
-      "homepage": "https://metacpan.org/release/RDF-RDFa-Parser",
-      "language": "Perl"
-    },
-    {
       "@id": "http://rubygems.org/gems/rdf-rdfa",
       "@type": [
         "earl:TestSubject",
@@ -139,6 +124,21 @@
       "doap_desc": "\n      RDF::RDFa is an RDFa reader/writer for Ruby using the RDF.rb library suite.\n    ",
       "homepage": "http://github.com/gkellogg/rdf-rdfa",
       "language": "Ruby"
+    },
+    {
+      "@id": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+      "@type": [
+        "earl:TestSubject",
+        "doap:Project"
+      ],
+      "name": "RDF-RDFa-Parser",
+      "developer": {
+        "@id": "http://tobyinkster.co.uk/#i",
+        "@type": "foaf:Person",
+        "foaf:name": "Toby Inkster"
+      },
+      "homepage": "https://metacpan.org/release/RDF-RDFa-Parser",
+      "language": "Perl"
     }
   ],
   "vocabulary": {
