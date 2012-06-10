@@ -19,35 +19,37 @@ class EARL
     PREFIX foaf: <http://xmlns.com/foaf/0.1/>
     PREFIX rdfatest: <http://rdfa.info/vocabs/rdfa-test#>
     
-    SELECT ?uri ?name ?developer ?dev_name ?dev_type ?doap_desc ?homepage ?language
+    SELECT DISTINCT ?uri ?name ?developer ?dev_name ?dev_type ?doap_desc ?homepage ?language
     WHERE {
-      [rdfatest:processor ?uri] .
       ?uri doap:name ?name .
-      OPTIONAL { ?uri doap:developer ?developer . }
-      OPTIONAL { ?developer foaf:name ?dev_name . }
-      OPTIONAL { ?developer a ?dev_type . }
+      OPTIONAL { ?uri doap:developer ?developer . ?developer foaf:name ?dev_name .}
+      OPTIONAL { ?uri doap:developer ?developer . ?developer a ?dev_type . }
       OPTIONAL { ?uri doap:homepage ?homepage . }
       OPTIONAL { ?uri doap:description ?doap_desc . }
       OPTIONAL { ?uri doap:programming-language ?language . }
     }
   ).freeze
-  
-  RESULT_QUERY = %(
+
+  ASSERTION_QUERY = %(
     PREFIX earl: <http://www.w3.org/ns/earl#>
     
-    SELECT ?uri ?outcome
+    SELECT ?by ?mode ?outcome ?subject ?test
     WHERE {
-      ?uri a earl:Assertion;
-        earl:result [earl:outcome ?outcome] .
+      [ a earl:Assertion;
+        earl:assertedBy ?by;
+        earl:mode ?mode;
+        earl:result [earl:outcome ?outcome];
+        earl:subject ?subject;
+        earl:test ?test ] .
     }
   ).freeze
-  
+
   VOCAB_QUERY = %(
     PREFIX dc: <http://purl.org/dc/terms/>
     PREFIX owl: <http://www.w3.org/2002/07/owl#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     
-    SELECT ?prop ?label ?description
+    SELECT DISTINCT ?prop ?label ?description
     WHERE {
       ?prop a owl:DatatypeProperty;
         rdfs:label ?label;
@@ -65,9 +67,10 @@ class EARL
   ##
   # @param [Array<String>] files
   def initialize(files)
-    @graph = RDF::Graph.new
+    @graph = RDF::Repository.new
     @prefixes = {}
     [files].flatten.each do |file|
+      puts "read #{file}"
       reader = case file
       when /\.ttl/ then RDF::Turtle::Reader
       when /\.html/ then RDF::RDFa::Reader
@@ -78,17 +81,22 @@ class EARL
       reader.open(file) {|r| @graph << r}
     end
     
+    # Flatten named graphs introduced through loading
+    # so that we can query the default graph
+    @graph = RDF::Graph.new << @graph
+
     processors = ::JSON.parse(File.read(PROCESSORS_PATH))
     processors.each do |proc, info|
-      next if proc.nil?
+      next if (proc || 'other') == 'other'
       # Load DOAP definitions
       doap_url = info["doap_url"] || info["doap"]
-      next unless doap_url
+      puts "check for <#{info["doap"]}> in graph"
+      next unless doap_url && @graph.has_subject?(RDF::URI(info["doap"]))
       doap_url = File.expand_path("../../public", __FILE__) + doap_url if doap_url[0,1] == '/'
       puts "read doap description for #{proc} from #{doap_url}"
       begin
         doap_graph = RDF::Graph.load(doap_url)
-        puts "doap: #{doap_graph.dump(:ttl)}"
+        #puts "doap: #{doap_graph.dump(:ttl)}"
         @graph << doap_graph.to_a
 
         # Load FOAF definitions of doap:developers
@@ -202,6 +210,7 @@ class EARL
     # Get the set of processors
     proc_info = {}
     SPARQL.execute(PROCESSOR_QUERY, @graph).each do |solution|
+      puts "solution #{solution.to_hash.inspect}"
       info = proc_info[solution[:uri].to_s] ||= {}
       %w(name doap_desc homepage language).each do |prop|
         info[prop] = solution[prop.to_sym].to_s if solution[prop.to_sym]
@@ -250,13 +259,8 @@ class EARL
   # Return result information as version/host-language
   # @return [Hash]
   def json_result_info
-    # Collect results
-    results = {}
-    SPARQL.execute(RESULT_QUERY, @graph).each do |solution|
-      results[solution[:uri]] = solution[:outcome] == EARL.passed
-    end
-
     hash = Hash.ordered
+    test_cases = {}
 
     # Get versions and hostLanguages
     @graph.query(:subject => RDF::URI(SUITE_URI)).each do |version_stmt|
@@ -274,6 +278,7 @@ class EARL
           if hl_stmt.predicate.to_s.index(RDFATEST["hostLanguage/"]) == 0
             # This is a hostLanguage predicate, it includes hostLanguage predicates
             hl = hl_stmt.predicate.to_s.sub(RDFATEST["hostLanguage/"].to_s, '')
+            next if version.has_key?(hl)
             puts "hostLanguage: #{hl}"
             version[hl] = []
             
@@ -282,10 +287,10 @@ class EARL
               tc_hash = Hash.ordered
               tc_hash['@id'] = tc.to_s
               tc_hash['@type'] = "earl:TestCase"
+              test_cases[tc.to_s] = tc_hash
               
               # Extract important properties
               title = description = nil
-              assertions = {}
               @graph.query(:subject => tc).each do |tc_stmt|
                 case tc_stmt.predicate.to_s
                 when RDF::DC.title.to_s
@@ -294,38 +299,37 @@ class EARL
                   description = tc_stmt.object.to_s
                 when EARL.mode.to_s, RDF.type.to_s
                   # Skip this
-                else
-                  # Otherwise, if the object is an object, it references an Assertion
-                  # with the predicate being the processorURL
-                  assertions[tc_stmt.predicate.to_s] = tc_stmt.object if tc_stmt.object.uri?
                 end
               end
 
               tc_hash['num'] = tc.to_s.split('/').last.split('.').first
               tc_hash['title'] = title
               tc_hash['description'] = description unless description.empty?
-              tc_hash['mode'] = "earl:automatic"
-              
-              assertions.keys.sort.each do |processor|
-                uri = assertions[processor]
-                result_hash = Hash.ordered
-                result_hash['@type'] = 'earl:TestResult'
-                result_hash['outcome'] = results[uri] ? 'earl:passed' : 'earl:failed'
-                ta_hash = Hash.ordered
-                ta_hash['@id'] = uri.to_s
-                ta_hash['@type'] = 'earl:Assertion'
-                ta_hash['assertedBy'] = SUITE_URI
-                ta_hash['test'] = tc.to_s
-                ta_hash['subject'] = processor
-                ta_hash['result'] = result_hash
-                tc_hash[processor] = ta_hash
-              end
 
               version[hl] << tc_hash
             end
           end
         end
       end
+    end
+
+    # Iterate through assertions and add to appropriate test case
+    SPARQL.execute(ASSERTION_QUERY, @graph).each do |solution|
+      tc = test_cases[solution[:test].to_s]
+      raise "No test case found for #{solution[:test]}" unless tc
+      tc ||= {}
+      processor = solution[:subject].to_s
+      result_hash = Hash.ordered
+      result_hash['@type'] = 'earl:TestResult'
+      result_hash['outcome'] = solution[:outcome] == EARL.passed ? 'earl:passed' : 'earl:failed'
+      ta_hash = Hash.ordered
+      ta_hash['@type'] = 'earl:Assertion'
+      ta_hash['assertedBy'] = SUITE_URI
+      ta_hash['test'] = solution[:test].to_s
+      ta_hash['mode'] = "earl:#{solution[:mode].to_s.split('#').last || 'automatic'}"
+      ta_hash['subject'] = processor
+      ta_hash['result'] = result_hash
+      tc[processor] = ta_hash
     end
 
     hash
@@ -438,28 +442,27 @@ class EARL
   # @prarm[Hash] desc
   # @return [String]
   def tc_turtle(desc)
-    res = %(<#{desc['@id']}> a #{[desc['@type']].flatten.join(', ')}; earl:mode earl:automatic;\n)
+    res = %(<#{desc['@id']}> a #{[desc['@type']].flatten.join(', ')};\n)
     res += %(  dc:title "#{desc['title']}";\n)
     res += %(  dc:description """#{desc['description']}""";\n)
     res += %(  rdfatest:num "#{desc['num']}";\n)
     res += %(  rdfatest:rdfaVersion #{desc['version'].sort.uniq.map(&:dump).join(', ')};\n)
-    res += %(  rdfatest:hostLanguage #{desc['hostLanguage'].sort.uniq.map(&:dump).join(', ')};\n)
-    desc.keys.select {|k| k =~ /^http/}.each do |proc|
-      res += %(  <#{proc}> <#{desc[proc]['@id']}>;\n)
-    end
-    res + "  .\n\n"
+    res += %(  rdfatest:hostLanguage #{desc['hostLanguage'].sort.uniq.map(&:dump).join(', ')}.\n)
+    res + "\n"
   end
-  
+
   ##
   # Write out each Assertion definition
   # @prarm[Hash] desc
   # @return [String]
   def as_turtle(desc)
-    res = %(<#{desc['@id']}> a earl:Assertion\n)
+    res =  %([ a earl:Assertion\n)
     res += %(  earl:assertedBy <#{desc['assertedBy']}>;\n)
     res += %(  earl:test <#{desc['test']}>;\n)
     res += %(  earl:subject <#{desc['subject']}>;\n)
-    res += %(  earl:result [ a earl:Result; #{desc['result']['outcome']}] .\n)
+    res += %(  earl:mode #{desc['mode']};\n)
+    res += %(  earl:result [ a earl:Result; #{desc['result']['outcome']}] ] .\n)
+    res += %(\n)
     res
   end
 end

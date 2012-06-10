@@ -30,11 +30,11 @@
   "RDF Distiller (Ruby)": {
     "endpoint": "http://rdf.greggkellogg.net/distiller?raw=true&in_fmt=rdfa&uri=",
     "doap": "http://rubygems.org/gems/rdf-rdfa",
-    "doap_url": "/earl-reports/rdf-rdfa-doap.ttl"
+    "doap_url": "/earl-reports/rdf.rb-doap.ttl"
   },
   "RDF::RDFa::Parser (Perl)": {
     "endpoint": "http://buzzword.org.uk/2012/rdfa-distiller/?format=rdfxml&url=",
-    "doap": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/project",
+    "doap": "tag:buzzword.org.uk,2012:RDF-RDFa-Parser:xt",
     "doap_url": "/earl-reports/rdf-rdfa-parser-doap.ttl"
   },
   "other":  {

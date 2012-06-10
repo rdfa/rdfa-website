@@ -85,7 +85,9 @@
             <span rel="rdfs:range" resource="xsd:string" property="rdfs:label">RDFa version numbers</span>
             for which this test is defined. Appropriate values include
             <code>rdfa1.0</code>,
-            <code>rdfa1.1</code> and
+            <code>rdfa1.1</code>,
+            <code>rdfa1.1-proc</code>,
+            <code>rdfa1.1-role</code> and
             <code>rdfa1.1-vocab</code>.
           </span>
         </dd>
@@ -150,6 +152,32 @@
             RDFa Core 1.1 [[RDFA-CORE]] defines core processing rules for independent of host
             language, and provides default processing rules for XML-based host languages.
           </span>
+        </dd>
+        <dt>rdfa1.1-proc</dt><dd about="rdfatest:version/rdfa1.1-proc" typeof="owl:DatatypeProperty">
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          <span property="rdfs:label">RDFa 1.1 Processor Graph</span> is a sub-property of
+          <span property="rdfs:subClassOf" resource="rdfatest:versionReport">version report</span>
+          used for reporting on optional Processor Status.
+          <p property="dc:description" datatype="rdf:XMLLiteral">
+            RDFa Core 1.1 [[RDFA-CORE]]
+            <cite><a href="http://www.w3.org/TR/rdfa-core/#processor-status">Processor Status</a></cite>
+            is an optional RDFa feature used to add triples for reporting
+            on errors, warnings and other information. The processor adds a
+            <code>@rdfagraph</code> attribute to indicate if the processor
+            should return the <em>output graph</em>, <em>processor graph</em>,
+            or both.
+          </p>
+        </dd>
+        <dt>rdfa1.1-role</dt><dd about="rdfatest:version/rdfa1.1-role" typeof="owl:DatatypeProperty">
+          <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
+          <span property="rdfs:label">Role Attribute</span> is a sub-property of
+          <span property="rdfs:subClassOf" resource="rdfatest:versionReport">version report</span>
+          used for reporting on the Role Attribute
+          <p property="dc:description" datatype="rdf:XMLLiteral">
+            XHTML Role Attribute Module [[XHTML-ROLE]]
+            is a specification for generating triples from the HTML
+            <code>@role</code> attribute.
+          </p>
         </dd>
         <dt>rdfa1.1-vocab</dt><dd about="rdfatest:version/rdfa1.1-vocab" typeof="owl:DatatypeProperty">
           <link property="rdfs:isDefinedBy" href="http://rdfa.info/vocabs/rdfa-test"/>
