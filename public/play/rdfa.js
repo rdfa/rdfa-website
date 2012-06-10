@@ -618,6 +618,7 @@ RDFaProcessor.prototype.process = function(node) {
       var current = item.current;
       var context = item.context;
 
+      if (current.baseURI == null) { return; }
       //console.log("Tag: "+current.localName+", listMapping="+JSON.stringify(context.listMapping));
 
       // Sequence Step 1
@@ -1485,6 +1486,7 @@ var loaded = document.data ? true : false;
 if (document.head) {
    var meta = document.createElement("meta");
    meta.setAttribute("name","green-turtle-rdfa-message");
+   meta.baseURI = document.head.baseURI;
    document.head.appendChild(meta);
    var makeEvent = function() {
       var event = document.createEvent("Event");

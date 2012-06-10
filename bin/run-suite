@@ -67,11 +67,6 @@ crazy_ivan = CrazyIvan::StandAlone.new
   content = crazy_ivan.send(:get_test_content, options[:version], options[:host_language], tc["num"])
   sparql = crazy_ivan.send(:get_test_content, options[:version], options[:host_language], tc["num"], "sparql")
 
-  if options[:verbose]
-    STDOUT.puts ":\n#{content}\n"
-    STDOUT.puts "query: \n#{sparql}\n"
-  end
-
   runner_args = ARGV[0].split(/\s+/) + [
     "--host-language", options[:host_language],
     "--version", options[:version],
@@ -84,6 +79,12 @@ crazy_ivan = CrazyIvan::StandAlone.new
       runner_args << "--#{arg}"
       runner_args << value if value
     end
+  end
+
+  if options[:verbose]
+    STDOUT.puts ":\n#{content}\n"
+    STDOUT.puts "query: \n#{sparql}\n"
+    STDOUT.puts "exec:\n#{runner_args.join(' ')}\n"
   end
 
   IO.popen(runner_args, "r+") do |io|

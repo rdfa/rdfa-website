@@ -442,7 +442,7 @@ module CrazyIvan
     include Core
     
     def url(offset)
-      "http://#{HOSTNAME}/test-suite#{offset}"
+      "http://#{HOSTNAME}#{offset}"
     end
   end
 end
