@@ -1,6 +1,6 @@
 BASE <$TCPATH/0227.xhtml>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX ex: <http://www.example.org> 
+PREFIX ex: <http://www.example.org/> 
 ASK WHERE {
   <> rdf:value ("Foo");
     ex:inlist <res> .
