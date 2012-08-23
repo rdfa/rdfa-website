@@ -1,2 +1,5 @@
 /cache/
 /manifest.jsonld
+/.bundle
+/tmp
+/vendor
