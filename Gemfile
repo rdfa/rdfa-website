@@ -13,6 +13,7 @@ gem 'sinatra-simple-assets', :require => 'sinatra/simple_assets'
 gem 'sinatra-respond_to', :git => "git://github.com/gkellogg/sinatra-respond_to.git", :require => 'sinatra/respond_to'
 gem 'sinatra-browserid', :git => "git://github.com/gkellogg/sinatra-browserid.git", :require => 'sinatra/browserid'
 gem 'rack-cache', :require => 'rack/cache'
+gem 'curb', :git => "git://github.com/taf2/curb.git"
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
