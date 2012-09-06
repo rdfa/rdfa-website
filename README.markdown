@@ -113,7 +113,7 @@ In order to add a unit test, you must follow these steps:
    For example: tests/250.sparql
 4. Add your test to manifest.ttl and indicate the host language(s) and version(s) for which
    it applies. For example, if you would like your example to only apply to HTML4,
-   you would specify rdfatest:hostLanguage "html4"; to the test case entry.
+   you would specify ```rdfatest:hostLanguage "html4";``` in the test case entry.
 
 There are three classifications for Unit Tests:
 
