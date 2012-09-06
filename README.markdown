@@ -147,7 +147,7 @@ the test suite will also set a `Content-Type` HTTP header appropriate for the do
 * application/xhtml+xml,
 * application/xml,
 * image/svg+xml, and
-* text/haml
+* text/html
 
 The processor is called with HTTP Accept header indicating appropriate result formats (currently,
 `text/turtle` (indicating [Turtle](http://www.w3.org/TR/turtle/)),
