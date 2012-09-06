@@ -113,15 +113,15 @@ In order to add a unit test, you must follow these steps:
    For example: tests/250.sparql
 4. Add your test to manifest.ttl and indicate the host language(s) and version(s) for which
    it applies. For example, if you would like your example to only apply to HTML4,
-   you would modify add :hostLanguage <html4-manifest>; to the test case entry.
+   you would specify rdfatest:hostLanguage "html4"; to the test case entry.
 
 There are three classifications for Unit Tests:
 
-required - These are tests that are required for proper operation per the
+* required - These are tests that are required for proper operation per the
            appropriate RDFa specification.
-optional - These are tests for optional features supported by some RDFa 
+* optional - These are tests for optional features supported by some RDFa 
            Processors.
-buggy    - These are tests that are buggy or are not considered valid test
+* buggy    - These are tests that are buggy or are not considered valid test
            cases by all RDFa processor maintainers.
 
 The test suite is designed to empower RDFa processor maintainers to create
@@ -225,7 +225,7 @@ please follow these steps:
 
 Optionally, you can ask for direct access to the repository and may make
 changes directly to the RDFa Website source code. All updates to the test 
-suite go live within seconds of committing changes to github via a WebHook call.
+suite go live within seconds of pushing changes to github via a WebHook call.
 
 ## Caution: Cached assets
 
