@@ -2459,4 +2459,15 @@ white   space
     http://www.w3.org/TR/role-attribute/#s_role_module_attributes
     says 'The role attribute takes as its value one or more whitespace separated TERMorCURIEorAbsIRIs'
   """ .
-   
+
+<test-cases/0311> dc:contributor "Stéphane Corlosquet";
+  dc:title "Ensure no triples are generated when @property is empty";
+  a test:TestCase;
+  rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+  test:classification test:required;
+  rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
+  test:expectedResults "false"^^xsd:boolean;
+  test:informationResourceInput <test-cases/0311.html>;
+  test:informationResourceResults <test-cases/0311.sparql>;
+  test:purpose "If no terms or CURIEs are present in @property, no triple should be generated from it.";
+  test:specificationReference "RDFa Core 1.1, section 7.5 step 11" .
