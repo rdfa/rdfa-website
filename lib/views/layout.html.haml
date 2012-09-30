@@ -30,7 +30,7 @@
                 %a{:href => '/test-suite/logout'}
                   (logout)
             - else
-              = render_login_button
+              = render_login_button(callback)
     %div.modal.hide.fade#source-modal
       %div.modal-header
         %a.close{"data-dismiss" => 'modal'}= 'x'

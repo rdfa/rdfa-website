@@ -76,8 +76,12 @@ module CrazyIvan
 
     get '/test-suite/' do
       cache_control :private
-      locals = { :email => (authorized_email if authorized?)}
-      haml :test_suite, :locals => locals
+      locals = {
+        :email => (authorized_email if authorized?),
+        :callback => request.url,
+      }
+      haml :test_suite,
+           :locals => locals
     end
     
     get '/test-suite/logout' do
@@ -174,7 +178,13 @@ module CrazyIvan
       test_cases = get_test_alternates(params[:num])
       respond_to do |wants|
         wants.html do
-          haml :test_cases, :format => :html5, :locals => {:test_cases => test_cases, :num => params["num"]}
+          haml :test_cases,
+               :format => :html5,
+               :locals => {
+                 :test_cases => test_cases,
+                 :num => params["num"],
+                 :callback => request.url
+               }
         end
         wants.json do
           test_cases.to_json
@@ -216,7 +226,7 @@ module CrazyIvan
 
       respond_to do |wants|
         wants.html do
-          haml :test_result, :locals => locals.merge(:style => style)
+          haml :test_result, :locals => locals.merge(:style => style, :callback => request.url)
         end
         wants.json do
           locals.to_json
@@ -236,7 +246,9 @@ module CrazyIvan
 
         respond_to do |wants|
           wants.html do
-            haml :test_details, :format => :html5, :locals => locals
+            haml :test_details,
+                 :format => :html5,
+                 :locals => locals.merge(:callback => request.url)
           end
           wants.json do
             locals.to_json(::JSON::State.new(

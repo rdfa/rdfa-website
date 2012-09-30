@@ -22,4 +22,5 @@ group :development, :test do
   gem 'shotgun'
   gem "wirble"
   gem "syntax"
+  gem "debugger"
 end
