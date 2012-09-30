@@ -51,6 +51,16 @@ module CrazyIvan
       }
       ORDER BY ?id ?version ?hostLanguage
     ).freeze
+    
+    ##
+    # Make strings turtle """ safe
+    #
+    # @param [String] unsafe string
+    # @return suitably escaped content
+    def tesc(unsafe_string)
+      # trailing " is bad
+      unsafe_string.sub /"$/, '\"'
+    end
 
     ##
     # Return the Manifest source
@@ -75,9 +85,9 @@ module CrazyIvan
           ttl << "\n"
           ttl << %{<#{tc['num']}> a #{tc['@type']};\n}
           ttl << %{  test:classification test:#{tc['classification'].split('#').last};\n}
-          ttl << %{  dc:title """#{tc['description']}""";\n}
-          ttl << %{  test:purpose """#{tc['purpose']}""";\n}
-          ttl << %{  test:specificationReference """#{tc['reference']}""";\n} unless tc['reference'].empty?
+          ttl << %{  dc:title """#{tesc(tc['description'])}""";\n}
+          ttl << %{  test:purpose """#{tesc(tc['purpose'])}""";\n}
+          ttl << %{  test:specificationReference """#{tesc(tc['reference'])}""";\n} unless tc['reference'].empty?
           ttl << %{  test:informationResourceInput <#{get_test_url(version, suite, tc['num'])}>;\n}
           ttl << %{  test:informationResourceResults <#{get_test_url(version, suite, tc['num'], 'sparql')}>;\n}
           ttl << %{  test:expectedResults #{tc['expectedResults']}.\n}
