@@ -3,3 +3,4 @@
 /.bundle
 /tmp
 /vendor
+/config.ru

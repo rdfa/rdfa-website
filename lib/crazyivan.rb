@@ -76,9 +76,15 @@ module CrazyIvan
 
     get '/test-suite/' do
       cache_control :private
+      callback = if ENV['BROWSERID_CALLBACK_BASE']
+        ENV['BROWSERID_CALLBACK_BASE'] + request.path
+      else
+        request.url
+      end
+
       locals = {
         :email => (authorized_email if authorized?),
-        :callback => request.url,
+        :callback => callback,
       }
       haml :test_suite,
            :locals => locals

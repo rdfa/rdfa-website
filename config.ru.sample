@@ -10,6 +10,9 @@ require 'crazyivan'
 
 set :environment, (ENV['RACK_ENV'] || 'production').to_sym
 
+# Set BROWSERID_CALLBACK_BASE to the base URL. Defaults to request.url
+#ENV['BROWSERID_CALLBACK_BASE'] ="http://rdfa.info/"
+
 if settings.environment == :production
   puts "Mode set to #{settings.environment.inspect}, logging to sinatra.log"
   log = File.new('sinatra.log', 'a')
