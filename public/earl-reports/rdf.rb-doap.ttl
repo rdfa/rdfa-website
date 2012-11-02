@@ -11,7 +11,7 @@
    doap:blog <http://greggkellogg.net/>;
    doap:category <http://dbpedia.org/resource/Resource_Description_Framework>,
      <http://dbpedia.org/resource/Ruby_(programming_language)>;
-   doap:helper <http://nicholas.humfrey@bbc.co.uk>;
+   doap:helper <http://njh.me/>;
    doap:created "2011-08-29"^^xsd:date;
    doap:description """
       RDF::RDFa is an RDFa reader/writer for Ruby using the RDF.rb library suite.
