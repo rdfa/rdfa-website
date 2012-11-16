@@ -2482,3 +2482,20 @@ white   space
    test:informationResourceResults <test-cases/0312.sparql>;
    test:purpose "In HTML5, when @property is present on an element, a @rel attribute on the same element containing only non-CURIE and non-URI values must be completely ignored.";
    test:specificationReference "HTML+RDFa 1.1 3.1" .
+
+<test-cases/0313> dc:contributor "Ivan Herman";
+   dc:title "rdfagraph='processor' redefining an initial context prefix generates rdfa:PrefixRedefinition warning";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1-proc";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   rdfatest:queryParam "rdfagraph=processor";
+   test:informationResourceInput <test-cases/0313.html>;
+   test:informationResourceResults <test-cases/0313.sparql>;
+   test:purpose """
+      Setting rdfagraph query parameter to 'processor' generates an rdfa:PrefixRedefinition warning when 
+      an initial context prefix is redefined.
+   """;
+   test:specificationReference "" .
+
+
