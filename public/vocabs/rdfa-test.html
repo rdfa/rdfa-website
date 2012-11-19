@@ -246,15 +246,15 @@
           The class <code>rdfatest:BaseClass</code> defines a base class useful
           for determining inference rules for sub- and equivalent- classes
         </dd>
-        <dt>Base Property</dt><dd about="rdfatest:baseProp" typeof="rdfs:Property">
+        <dt>Base Property</dt><dd about="rdfatest:baseProp" typeof="rdf:Property">
           The property <code>rdfatest:baseProp</code> defines a base property useful
           for determining inference rules for sub- and equivalent- properties
         </dd>
-        <dt>Sub Property</dt><dd about="rdfatest:subProp" typeof="rdfs:Property">
+        <dt>Sub Property</dt><dd about="rdfatest:subProp" typeof="rdf:Property">
           The property <code>rdfatest:subProp</code> defines a property which is a
           sub-property of <code property="rdfs:subPropertyOf" resource="rdfatest:baseProp">rdfatest:baseProp</code>.
         </dd>
-        <dt>Equivalent Property</dt><dd about="rdfatest:eqProp" typeof="rdfs:Property">
+        <dt>Equivalent Property</dt><dd about="rdfatest:eqProp" typeof="rdf:Property">
           The property <code>rdfatest:eqProp</code> defines a property which is an equivalent-property of
           <code property="owl:equivalentProperty" resource="rdfatest:baseProp">rdfatest:baseProp</code>.
         </dd>
@@ -262,7 +262,7 @@
           The class <code>rdfatest:SubClass</code> defines a class which is a
           sub-class of <code property="rdfs:subClassOf" resource="rdfatest:BaseClass">rdfatest:BaseClass</code>.
         </dd>
-        <dt>Equivalent Class</dt><dd about="rdfatest:EqClass" typeof="rdfs:Property">
+        <dt>Equivalent Class</dt><dd about="rdfatest:EqClass" typeof="rdfs:Class">
           The class <code>rdfatest:prp_eqp</code> defines a class which is an equivalent-class of
           <code property="owl:equivalentClass" resource="rdfatest:BaseClass">rdfatest:BaseClass</code>.
         </dd>
