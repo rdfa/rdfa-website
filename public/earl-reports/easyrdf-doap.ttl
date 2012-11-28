@@ -1,0 +1,31 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+
+<http://www.aelius.com/njh/easyrdf/> a doap:Project;
+   dc:creator <http://njh.me/>;
+   doap:category
+     <http://dbpedia.org/resource/Resource_Description_Framework>,
+     <http://dbpedia.org/resource/PHP>;
+   doap:description """
+      EasyRdf is a PHP library designed to make it easy to consume and produce RDF.
+    """@en;
+   doap:developer <http://njh.me/>;
+   doap:documenter <http://njh.me/>;
+   doap:homepage <http://www.aelius.com/njh/easyrdf/>;
+   doap:implements
+     <http://www.w3.org/TR/rdfa-core/>,
+     <http://www.w3.org/TR/xhtml-rdfa/>,
+     <http://www.w3.org/TR/rdfa-in-html/>,
+     <http://www.w3.org/TR/rdfa-lite/>;
+   doap:license <http://opensource.org/licenses/BSD-3-Clause>;
+   doap:maintainer <http://njh.me/>;
+   doap:name "EasyRdf";
+   doap:programming-language "PHP";
+   rdfa:usesVocabulary doap:;
+   foaf:maker <http://njh.me/> .
+
+<http://njh.me/>
+   foaf:name "Nicholas Humfrey" .

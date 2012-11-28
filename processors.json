@@ -9,6 +9,11 @@
     "doap": "https://github.com/niklasl/clj-rdfa",
     "doap_url": "/earl-reports/clj-rdfa-doap.ttl"
   },
+  "EasyRdf (PHP)": {
+    "endpoint": "http://easyrdf-converter.aelius.com/?input_format=rdfa&raw=1&uri=",
+    "doap": "http://www.aelius.com/njh/easyrdf/",
+    "doap_url": "/earl-reports/easyrdf-doap.ttl"
+  },
   "Green Turtle (JavaScript)": {
     "doap": "http://code.google.com/p/green-turtle/",
     "doap_url": "/earl-reports/green-turtle-doap.ttl"
