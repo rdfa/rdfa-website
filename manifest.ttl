@@ -2498,4 +2498,34 @@ white   space
    """;
    test:specificationReference "" .
 
+<test-cases/0314> dc:contributor "Lev Khomich";
+   dc:title "rdfagraph='processor' should generate rdfa:UnresolvedCURIE warning when it fails to resolve CURIE prefix";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1-proc";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5", "svg";
+   rdfatest:queryParam "rdfagraph=processor";
+   test:informationResourceInput <test-cases/0314.html>;
+   test:informationResourceResults <test-cases/0314.sparql>;
+   test:purpose """
+      Setting rdfagraph query parameter to 'processor' generates an rdfa:UnresolvedCURIE warning when 
+      it fails to resolve CURIE prefix.
+   """;
+   test:specificationReference "RDFa Vocabulary for Term and Prefix Assignment, and for Processor Graph Reporting" .
+
+<test-cases/0315> dc:contributor "Lev Khomich";
+   dc:title "rdfagraph='processor' should generate rdfa:UnresolvedTerm warning when it fails to resolve Term";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1-proc";
+   test:classification test:required;
+   rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5", "svg";
+   rdfatest:queryParam "rdfagraph=processor";
+   test:informationResourceInput <test-cases/0315.html>;
+   test:informationResourceResults <test-cases/0315.sparql>;
+   test:purpose """
+      Setting rdfagraph query parameter to 'processor' generates an rdfa:UnresolvedTerm warning when 
+      it fails to resolve Term.
+   """;
+   test:specificationReference "RDFa Vocabulary for Term and Prefix Assignment, and for Processor Graph Reporting" .
+
 
