@@ -2499,7 +2499,7 @@ white   space
    test:specificationReference "" .
 
 <test-cases/0314> dc:contributor "Shane McCarron";
-  dc:title "Use of many terms from the default vocabulary"
+  dc:title "Use of many terms from the default vocabulary";
   a test:TestCase;
   rdfatest:rdfaVersion "rdfa1.1-role";
   test:classification test:required;  # ?!
