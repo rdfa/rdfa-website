@@ -2498,4 +2498,18 @@ white   space
    """;
    test:specificationReference "" .
 
-
+<test-cases/0314> dc:contributor "Shane McCarron";
+  dc:title "Use of many terms from the default vocabulary"
+  a test:TestCase;
+  rdfatest:rdfaVersion "rdfa1.1-role";
+  test:classification test:required;  # ?!
+  test:expectedResults "true"^^xsd:boolean;
+  rdfatest:hostLanguage "xml", "xhtml1", "html5", "xhtml5";
+  test:informationResourceInput <test-cases/0314.html>;
+  test:informationResourceResults <test-cases/0314.sparql>;
+  test:purpose "When role is specified using default vocabulary terms the expected triples are created.";
+  test:specificationReference """
+    http://www.w3.org/TR/role-attribute/#A_role
+    says 'The default vocabulary for use is defined in XHTML-VOCAB'
+  """ .
+   
