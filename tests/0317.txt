@@ -1,0 +1,17 @@
+<head>
+  <title>Test 0315</title>
+</head>
+<<<<<<< HEAD
+<body prefix="po: http://example.org/">
+  <dl>
+    <dt rel="po:role" class="role">
+      <span typeof="po:Role" property="rdfs:label">Director</span>
+    </dt>
+  </dl>
+=======
+<body>
+    <div about="http://example.org/something">
+      <p rel="unknown" resource="http://example.org/Bender">That's impossible</p>
+    </div>
+>>>>>>> refs/remotes/levkhomich/master
+</body>

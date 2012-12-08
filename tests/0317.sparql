@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+PREFIX po: <http://example.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+ASK WHERE {
+  ?s po:role [ rdfs:label [ a po:Role ] ] .
+}
+=======
+PREFIX rdfa: <http://www.w3.org/ns/rdfa#>
+ASK WHERE { ?s a rdfa:UnresolvedTerm }
+>>>>>>> refs/remotes/levkhomich/master
