@@ -2,5 +2,5 @@
   <title>Test 0316</title>
 </head>
 <body>
-  	<span about="http://example.org/something" property="unknown:property" content="value" />
+  	<span about="http://example.org/something" rel="[unknown:property]" content="value" />
 </body>
