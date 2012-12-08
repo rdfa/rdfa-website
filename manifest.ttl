@@ -2523,33 +2523,3 @@ white   space
    test:informationResourceResults <test-cases/0315.sparql>;
    test:purpose "In HTML5, an element with @property and @typeof with incomplete triples sets uses typed resource.";
    test:specificationReference "HTML+RDFa 1.1 3.1" .
-
-<test-cases/0316> dc:contributor "Lev Khomich";
-   dc:title "rdfagraph='processor' should generate rdfa:UnresolvedCURIE warning when it fails to resolve CURIE prefix";
-   a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1-proc";
-   test:classification test:required;
-   rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5", "svg";
-   rdfatest:queryParam "rdfagraph=processor";
-   test:informationResourceInput <test-cases/0316.html>;
-   test:informationResourceResults <test-cases/0316.sparql>;
-   test:purpose """
-      Setting rdfagraph query parameter to 'processor' generates an rdfa:UnresolvedCURIE warning when 
-      it fails to resolve CURIE prefix.
-   """;
-   test:specificationReference "RDFa Vocabulary for Term and Prefix Assignment, and for Processor Graph Reporting" .
-
-<test-cases/0317> dc:contributor "Lev Khomich";
-   dc:title "rdfagraph='processor' should generate rdfa:UnresolvedTerm warning when it fails to resolve Term";
-   a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1-proc";
-   test:classification test:required;
-   rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5", "svg";
-   rdfatest:queryParam "rdfagraph=processor";
-   test:informationResourceInput <test-cases/0317.html>;
-   test:informationResourceResults <test-cases/0317.sparql>;
-   test:purpose """
-      Setting rdfagraph query parameter to 'processor' generates an rdfa:UnresolvedTerm warning when 
-      it fails to resolve Term.
-   """;
-   test:specificationReference "RDFa Vocabulary for Term and Prefix Assignment, and for Processor Graph Reporting" .

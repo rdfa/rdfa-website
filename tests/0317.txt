@@ -1,8 +1,0 @@
-<head>
-  <title>Test 0317</title>
-</head>
-<body>
-    <div about="http://example.org/something">
-      <p rel="unknown" resource="http://example.org/Bender">That's impossible</p>
-    </div>
-</body>
