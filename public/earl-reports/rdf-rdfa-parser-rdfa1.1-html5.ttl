@@ -2056,7 +2056,7 @@
 	test:rdfaVersion "1.1" ;
 	a earl:TestCase .
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0075.html> dc:identifier "0075" ;
-	dc:title "Reserved word 'license' in @rel with no explizit @about" ;
+	dc:title "Reserved word 'license' in @rel with no explicit @about" ;
 	test:hostLanguage "html5" ;
 	test:rdfaVersion "1.1" ;
 	a earl:TestCase .
@@ -2566,7 +2566,7 @@
 	test:rdfaVersion "1.1" ;
 	a earl:TestCase .
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0279.html> dc:identifier "0279" ;
-	dc:title "@datetype used with @datetime overrides default datatype" ;
+	dc:title "@datatype used with @datetime overrides default datatype" ;
 	test:hostLanguage "html5" ;
 	test:rdfaVersion "1.1" ;
 	a earl:TestCase .

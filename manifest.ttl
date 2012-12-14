@@ -631,7 +631,7 @@
    test:purpose "Tests to ensure that relative URIs are resolved correctly when used in @href with XHTML base set in head";
    test:specificationReference "" .
 <test-cases/0075> dc:contributor "Manu Sporny";
-   dc:title "Reserved word 'license' in @rel with no explizit @about";
+   dc:title "Reserved word 'license' in @rel with no explicit @about";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
@@ -2090,7 +2090,7 @@ white   space
    test:purpose "The @datetime attribute must be utilized when generating output, overriding any value expressed using the @content attribute.";
    test:specificationReference "HTML+RDFa 1.1 3.1" .
 <test-cases/0279> dc:contributor "Gregg Kellogg";
-   dc:title "@datetype used with @datetime overrides default datatype";
+   dc:title "@datatype used with @datetime overrides default datatype";
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;

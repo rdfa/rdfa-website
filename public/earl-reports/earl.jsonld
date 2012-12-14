@@ -4366,7 +4366,7 @@
         "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0075.xhtml",
         "@type": "earl:TestCase",
         "num": "0075",
-        "title": "Reserved word 'license' in @rel with no explizit @about",
+        "title": "Reserved word 'license' in @rel with no explicit @about",
         "description": "Tests to ensure that the XHTML+RDFa reserved word 'license' when used in @rel (with no @about) generates the proper triple",
         "http://any23.org/": {
           "@type": "earl:Assertion",
@@ -16107,7 +16107,7 @@
         "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0075.html",
         "@type": "earl:TestCase",
         "num": "0075",
-        "title": "Reserved word 'license' in @rel with no explizit @about",
+        "title": "Reserved word 'license' in @rel with no explicit @about",
         "description": "Tests to ensure that the XHTML+RDFa reserved word 'license' when used in @rel (with no @about) generates the proper triple",
         "https://github.com/niklasl/clj-rdfa": {
           "@type": "earl:Assertion",
@@ -22431,7 +22431,7 @@
         "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0279.html",
         "@type": "earl:TestCase",
         "num": "0279",
-        "title": "@datetype used with @datetime overrides default datatype",
+        "title": "@datatype used with @datetime overrides default datatype",
         "description": "If @datatype is specified, it must override the automatic datatype.",
         "https://github.com/niklasl/clj-rdfa": {
           "@type": "earl:Assertion",
@@ -29007,7 +29007,7 @@
         "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0075.xhtml",
         "@type": "earl:TestCase",
         "num": "0075",
-        "title": "Reserved word 'license' in @rel with no explizit @about",
+        "title": "Reserved word 'license' in @rel with no explicit @about",
         "description": "Tests to ensure that the XHTML+RDFa reserved word 'license' when used in @rel (with no @about) generates the proper triple",
         "https://github.com/niklasl/clj-rdfa": {
           "@type": "earl:Assertion",
@@ -35517,7 +35517,7 @@
         "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0279.xhtml",
         "@type": "earl:TestCase",
         "num": "0279",
-        "title": "@datetype used with @datetime overrides default datatype",
+        "title": "@datatype used with @datetime overrides default datatype",
         "description": "If @datatype is specified, it must override the automatic datatype.",
         "https://github.com/niklasl/clj-rdfa": {
           "@type": "earl:Assertion",

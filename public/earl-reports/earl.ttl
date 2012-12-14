@@ -1212,7 +1212,7 @@
   rdfatest:hostLanguage "html5", "xhtml1", "xhtml5".
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0075.xhtml> a earl:TestCase;
-  dc:title "Reserved word 'license' in @rel with no explizit @about";
+  dc:title "Reserved word 'license' in @rel with no explicit @about";
   dc:description """Tests to ensure that the XHTML+RDFa reserved word 'license' when used in @rel (with no @about) generates the proper triple""";
   rdfatest:num "0075";
   rdfatest:rdfaVersion "rdfa1.1";
@@ -2131,7 +2131,7 @@ white   space
   rdfatest:hostLanguage "html5", "xhtml5".
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0279.html> a earl:TestCase;
-  dc:title "@datetype used with @datetime overrides default datatype";
+  dc:title "@datatype used with @datetime overrides default datatype";
   dc:description """If @datatype is specified, it must override the automatic datatype.""";
   rdfatest:num "0279";
   rdfatest:rdfaVersion "rdfa1.1";

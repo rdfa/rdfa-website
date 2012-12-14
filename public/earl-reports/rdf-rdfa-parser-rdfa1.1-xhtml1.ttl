@@ -1956,7 +1956,7 @@
 	test:rdfaVersion "1.1" ;
 	a earl:TestCase .
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0075.xhtml> dc:identifier "0075" ;
-	dc:title "Reserved word 'license' in @rel with no explizit @about" ;
+	dc:title "Reserved word 'license' in @rel with no explicit @about" ;
 	test:hostLanguage "xhtml1" ;
 	test:rdfaVersion "1.1" ;
 	a earl:TestCase .
