@@ -77,11 +77,11 @@ You can view and run this test suite at the following URL:
 
 The website may be run locally and access either local or remote services. The site
 is implemented as a Ruby/Sinatra application compatible with [Rack][] interfaces, similar to
-Ruby on Rails. On a production installation, this is usually done with Apache and [Passenger](http://www.modrails.com/). Locally, it can be run using rackup of shotgun.
+Ruby on Rails. On a production installation, this is usually done with Apache and [Passenger](http://www.modrails.com/). Locally, it can be run using rackup or shotgun.
 
 Running the website locally should be as simple as the following:
 
-    git clone [git@github.com:rdfa/rdfa-website.git](https://github.com:rdfa/rdfa-website.git)
+    git clone git@github.com:rdfa/rdfa-website.git
     cd rdfa-website
     [sudo] gem install bundler
     bundle install
