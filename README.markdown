@@ -87,7 +87,7 @@ Running the website locally should be as simple as the following:
     bundle install
     bundle exec shotgun
 
-This will create an instance, usually running on port 9393. If you access as [http://localhost:9393/test-suite/](http://localhost:9393/test-suite/), it will re-write test URIs to http://rdfa.info/test-suite/ so that processors can see any tests that are already uploaded. If you want to run with a local endpoint, run with something else such as http://127.0.0.1/test-suite/, which will inhibit the URI rewriting.
+This will create an instance, usually running on port 9393. If you access as [http://localhost:9393/test-suite/](http://localhost:9393/test-suite/), it will re-write test URIs to http://rdfa.info/test-suite/ so that processors can see any tests that are already uploaded. If you want to run with a local endpoint, run with something else such as [http://127.0.0.1:9393/test-suite/](http://127.0.0.1:9393/test-suite/), which will inhibit the URI rewriting.
 
 ### Command line runner
 
