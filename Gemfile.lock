@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/gkellogg/json-ld.git
-  revision: 91d0cbb19c66801a4aecf65bbf9bea24f60381d8
+  revision: 1afa25dc5b84fada09cc4e497369242cce47783e
   specs:
-    json-ld (0.3.1)
+    json-ld (0.3.2)
       backports
       json (>= 1.7.5)
       rdf (>= 0.3.11)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-rdfa.git
-  revision: 75eca83756da71051851077700a4b43711917825
+  revision: 20983ad075a93fbf33e794b46eb8317824ddc494
   specs:
     rdf-rdfa (0.3.18)
       haml (>= 3.1.7)
@@ -61,15 +61,15 @@ GEM
       rdf-trig (>= 0.1.1)
       rdf-trix (>= 0.3.0)
       rdf-turtle (>= 0.1.1)
-    multi_json (1.4.0)
+    multi_json (1.5.0)
     net-http-persistent (2.8)
     nokogiri (1.5.5)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
-    rack-protection (1.2.0)
+    rack-protection (1.3.2)
       rack
-    rake (10.0.2)
+    rake (10.0.3)
     rdf (0.3.11)
       addressable (>= 2.2.6)
     rdf-isomorphic (0.3.4)
