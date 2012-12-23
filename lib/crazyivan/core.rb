@@ -425,22 +425,30 @@ module CrazyIvan
       # Build the RDF extractor URL
       extract_url = ::URI.decode(extract_url) + get_test_url(version, suite, num)
 
+      # Retrieve the remote graph
+      extracted = RDF::Util::File.open_file(extract_url)
+      puts "tc: #{version}/#{suite}/#{num}"
+      puts "extract from: #{extract_url}, content-type: #{extracted.content_type.inspect}"
+      extracted_doc = extracted.read
+      extracted.rewind
+      puts "extracted:\n#{extracted_doc}"
+      puts "content-type: #{extracted.content_type.inspect}"
+
+      format_opts = {:sample => extracted_doc}
+      format_opts[:content_type] = extracted.content_type if extracted.content_type
+
+      graph = RDF::Graph.new << RDF::Reader.for(format_opts).
+        new(extracted, :base_url => get_test_url(version, suite, num))
+      puts "graph:#{graph.dump(:ttl)}"
+
       # Get the SPARQL query
-      sparql_query = get_test_content(version, suite, num, 'sparql').
-        sub("ASK WHERE", "ASK FROM <#{extract_url}> WHERE")
+      sparql_query = get_test_content(version, suite, num, 'sparql')
 
       puts "sparql_query: #{sparql_query}"
 
       # Perform the SPARQL query
-      result = SPARQL.execute(StringIO.new(sparql_query), nil)
+      result = SPARQL.execute(StringIO.new(sparql_query), graph)
       puts "result: #{result.inspect}, expected: #{expected_results.inspect} == #{(result == expected_results).inspect}"
-      if result != expected_results && settings.environment != :production
-        extracted = RDF::Util::File.open_file(extract_url)
-        puts "extracted: #{extracted.read}"
-        puts "content-type: #{extracted.content_type.inspect}"
-        graph = RDF::Graph.load(extract_url, :base_url => get_test_url(version, suite, num))
-        puts "graph: #{graph.dump(:ttl)}"
-      end
       result == expected_results
     end
     module_function :perform_test_case
