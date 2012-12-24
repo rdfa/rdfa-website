@@ -245,6 +245,8 @@ module CrazyIvan
 
       url("/test-suite/test-cases/#{version}/#{suite}/#{num}.#{suffix}").
         sub(/localhost:\d+/, HOSTNAME) # For local testing
+     rescue
+       "http://rdfa.info/test-suite/test-cases/#{version}/#{suite}/#{num}.#{suffix}"
     end
     module_function :get_test_url
 

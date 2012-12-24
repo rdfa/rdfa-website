@@ -51,8 +51,22 @@ class EARL
     ORDER BY ?test ?subject
   ).freeze
 
+  VOCAB_QUERY = %(
+    PREFIX dc: <http://purl.org/dc/terms/>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    
+    SELECT DISTINCT ?prop ?label ?description
+    WHERE {
+      ?prop a owl:DatatypeProperty;
+        rdfs:label ?label;
+        dc:description ?description .
+    }
+  )
+
   SUITE_URI = "http://rdfa.info/test-suite/"
   PROCESSORS_PATH = File.expand_path("../../processors.json", __FILE__)
+  MANIFEST_PATH = File.expand_path("../../manifest.jsonld", __FILE__)
 
   # Convenience vocabularies
   class EARL < RDF::Vocabulary("http://www.w3.org/ns/earl#"); end
@@ -191,7 +205,7 @@ class EARL
       hash['homepage'] = "http://rdfa.info/"
       hash['name'] = "RDFa Test Suite"
       hash['processor'] = json_test_subject_info
-      hash['manifests'] = json_result_info
+      hash['entries'] = json_result_info
       hash
     end
   end
@@ -234,41 +248,85 @@ class EARL
   end
 
   ##
+  # Return information about JSON vocabularies
+  # @return [Hash]
+  def json_vocabulary_info
+    @vocab_info ||= begin
+      # Get vocabulary information for documentation
+      vocab_graph = RDF::Graph.load(File.expand_path("../../public/vocabs/rdfa-test.html", __FILE__))
+      vocab_info = {}
+      SPARQL.execute(VOCAB_QUERY, vocab_graph).each do |solution|
+        prop_name = solution[:prop].to_s.split('/').last
+        vocab_info[prop_name] = {
+          "@id"         => prop_name,
+          "label"       => solution[:label].to_s,
+          "description" => solution[:description].to_s
+        }
+      end
+      vocab_info
+    end
+  end
+
+
+  ##
+  # Expected results for each test number
+  # @return [Hash{String => TrueClass, FalseClass}]
+  def expected_results
+    @expected_results ||= begin
+      man = ::JSON.parse(File.read(MANIFEST_PATH))
+      man['@graph'].inject({}) {|memo, t| memo[t['num']] = t.fetch('expectedResults', true); memo}
+    end
+  end
+
+  ##
   # @return [Array<Hash>]
   def json_result_info
-    puts "check results"
     manifests = []
     subjects = json_test_subject_info.map {|s| s['@id']}
 
     # Iterate through assertions and add to appropriate test case
     SPARQL.execute(ASSERTION_QUERY, @graph).each do |solution|
       uri = solution[:test].to_s
-      puts solution.inspect
       manifest = uri.split('#').first
       hl_vers = manifests.detect {|m| m['@id'] == manifest}
       # Create entry for this manifest, if it doesn't already exist
       unless hl_vers
-        puts "version: #{manifest}"
-        manifest_title = solution[:test].to_s.match(%r{/([a-z0-9-\.]*)/([a-z0-9]*)/manifest}) && "#{$2}+#{$1}"
-        raise "version, host language not found in #{solution[:test]}" unless manifest_title
+        solution[:test].to_s.match(%r{/([a-z0-9\-\.]*)/([a-z0-9]*)/manifest})
+        version, hostLanguage = $1, $2
+        raise "version, host language not found in #{solution[:test]}" unless version && hostLanguage
+        puts "version: #{version}, hostLanguage: #{hostLanguage}"
+        hl_info = json_vocabulary_info[hostLanguage]
+        vers_info = json_vocabulary_info[version]
         hl_vers = {
           "@id" => manifest,
-          'title' => manifest_title,
-          'tests' => []
+          "@type" => %w{earl:Report mf:Manifest},
+          'title' => "#{hl_info['label']}+#{vers_info['label']}",
+          'description' => [
+            vers_info['description'].strip.gsub(/\s+/m, ' '),
+            hl_info['description'].strip.gsub(/\s+/m, ' ')
+          ],
+          'entries' => []
         }
         manifests << hl_vers
       end
 
       # Create entry for this test case, if it doesn't already exist
-      tc = hl_vers['tests'].detect {|t| t['@id'] == uri}
+      tc = hl_vers['entries'].detect {|t| t['@id'] == uri}
       unless tc
-        puts "Test case: #{solution[:name]}"
+        num = uri.split('#').last
+        #puts "Test case: #{solution[:name]}"
         tc = {
           "@id" => uri,
-          "@type" => "earl:TestCase",
+          "@type" => %w(earl:TestCase mf:QueryEvaluationTest),
           'title' => solution[:name].to_s,
-          'description' => solution[:description].to_s,
-          'mode' => "",
+          'description' => solution[:description].to_s.strip.gsub(/\s+/m, ' '),
+          'testAction' => {
+            '@type' => 'qt:QueryTest',
+            'queryForm' => 'qt:QueryAsk',
+            'query' => CrazyIvan::Core::get_test_url(version, hostLanguage, num, 'sparql'),
+            'data' => CrazyIvan::Core::get_test_url(version, hostLanguage, num)
+          },
+          'testResult' => expected_results[num],
           'assertions' => []
         }
 
@@ -287,7 +345,7 @@ class EARL
           }
         end
 
-        hl_vers['tests'] << tc
+        hl_vers['entries'] << tc
       end
 
       # Assertion info
@@ -306,27 +364,66 @@ class EARL
   # @return [String]
   def earl_turtle(io)
     # Write preamble
-    #{
-    #  :dc       => RDF::DC,
-    #  :doap     => RDF::DOAP,
-    #  :earl     => ::EARL::EARL,
-    #  :foaf     => RDF::FOAF,
-    #  :owl      => RDF::OWL,
-    #  :rdf      => RDF,
-    #  :rdfa     => RDF::RDFA,
-    #  :rdfatest => RDFATEST,
-    #  :rdfs     => RDF::RDFS,
-    #  :xhv      => RDF::XHV,
-    #  :xsd      => RDF::XSD
-    #}.each do |prefix, vocab|
-    #  io.puts("@prefix #{prefix}: <#{vocab.to_uri}> .")
-    #end
-    #io.puts
-    #
-    ## Write earl:Software
-    #io.puts %(<#{json_hash['@id']}> a earl:Softare, doap:Project;)
-    #io.puts %(  doap:homepage <#{json_hash['homepage']}>;)
-    #io.puts %(  doap:name "#{json_hash['homepage']}" .)
+    {
+      :dc       => RDF::DC,
+      :doap     => RDF::DOAP,
+      :earl     => ::EARL::EARL,
+      :foaf     => RDF::FOAF,
+      :mf       => "http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#",
+      :owl      => RDF::OWL,
+      :rdf      => RDF,
+      :rdfa     => RDF::RDFA,
+      :rdfatest => RDFATEST,
+      :rdfs     => RDF::RDFS,
+      :xhv      => RDF::XHV,
+      :xsd      => RDF::XSD
+    }.each do |prefix, vocab|
+      io.puts("@prefix #{prefix}: <#{vocab.respond_to?(:to_uri) ? vocab.to_uri : vocab}> .")
+    end
+    io.puts
+    
+    # Write earl:Software
+    io.puts %(<#{json_hash['@id']}> a earl:Softare, doap:Project;)
+    io.puts %(  doap:homepage <#{json_hash['homepage']}>;)
+    io.puts %(  doap:name "#{json_hash['homepage']}";)
+    
+    # Processors
+    proc_defs = json_hash['processor'].map {|defn| "<#{defn['@id']}>"}.join(",\n    ")
+    io.puts %(  rdfa:processor #{proc_defs};)
+
+    # Manifests
+    man_defs = json_hash['entries'].map {|defn| "<#{defn['@id']}>"}.join("\n    ")
+    io.puts %(  mf:entries (\n    #{man_defs}) .\n)
+
+    # Output Manifest definitions
+    # along with test cases and assertions
+    test_cases = []
+    io.puts %(\n# Manifests)
+    json_hash['entries'].each do |man|
+      io.puts %(<#{man['@id']}> a earl:Report, mf:Manifest;)
+      io.puts %(  dc:title "#{man['title']}";)
+      io.puts %(  mf:name "#{man['title']}";)
+      descriptions = man['description'].map {|d| %("""#{d}"""^^rdf:HTML)}
+      io.puts %(  dc:description\n    ) + descriptions.join(",\n    ") + ';'
+      
+      # Test Cases
+      test_defs = man['entries'].map {|defn| "<#{defn['@id']}>"}.join("\n    ")
+      io.puts %(  mf:entries (\n    #{test_defs}) .\n\n)
+
+      test_cases += man['entries']
+    end
+    
+    # Write out each earl:TestSubject
+    io.puts %(#\n# Processor Definitions\n#)
+    json_hash['processor'].each do |proc_desc|
+      io.write(proc_turtle(proc_desc))
+    end
+    
+    # Write out each earl:TestCase
+    io.puts %(#\n# Test Case Definitions\n#)
+    test_cases.sort_by {|tc| tc['title']}.each do |tc|
+      io.write(tc_turtle(tc))
+    end
   end
   
   ##
@@ -356,13 +453,17 @@ class EARL
   # @prarm[Hash] desc
   # @return [String]
   def tc_turtle(desc)
-    res = %(<#{desc['@id']}> a #{[desc['@type']].flatten.join(', ')};\n)
-    res += %(  dc:title "#{desc['title']}";\n)
-    res += %(  dc:description """#{desc['description']}""";\n)
-    res += %(  rdfatest:num "#{desc['num']}";\n)
-    res += %(  rdfatest:rdfaVersion #{desc['version'].sort.uniq.map(&:dump).join(', ')};\n)
-    res += %(  rdfatest:hostLanguage #{desc['hostLanguage'].sort.uniq.map(&:dump).join(', ')}.\n)
-    res + "\n"
+    %(<#{desc['@id']}> a #{[desc['@type']].flatten.join(', ')};
+      dc:title "#{desc['title']}";
+      mf:name "#{desc['title']}";
+      dc:description """#{desc['description']}""";
+      mf:action [ a qt:QueryTest; qt:queryForm qt:QueryAsk;
+        qt:query <#{desc['testAction']['query']}>;
+        qt:data <#{desc['testAction']['data']}> ];
+      earl:assertions (#{desc['assertions'].map {|a| as_turtle(a)}.join("")}
+      ) .
+
+).gsub(/^      /, '  ')
   end
 
   ##
@@ -370,13 +471,12 @@ class EARL
   # @prarm[Hash] desc
   # @return [String]
   def as_turtle(desc)
-    res =  %([ a earl:Assertion\n)
-    res += %(  earl:assertedBy <#{desc['assertedBy']}>;\n)
-    res += %(  earl:test <#{desc['test']}>;\n)
-    res += %(  earl:subject <#{desc['subject']}>;\n)
-    res += %(  earl:mode #{desc['mode']};\n)
-    res += %(  earl:result [ a earl:Result; #{desc['result']['outcome']}] ] .\n)
-    res += %(\n)
-    res
+    %(
+        [ a earl:Assertion;
+          earl:assertedBy <#{desc['assertedBy']}>;
+          earl:test <#{desc['test']}>;
+          earl:subject <#{desc['subject']}>;
+          earl:mode #{desc['mode']};
+          earl:result [ a earl:Result; #{desc['result']['outcome']}] ])
   end
 end
