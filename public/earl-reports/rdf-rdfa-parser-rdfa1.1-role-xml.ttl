@@ -7,6 +7,7 @@
 @prefix rrp: <tag:buzzword.org.uk,2012:RDF-RDFa-Parser:> .
 @prefix test: <http://rdfa.info/vocabs/rdfa-test#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mf: <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#> .
 
 [] dc:date "2012-06-05T23:39:51Z"^^xsd:dateTime ;
 	a earl:Assertion ;
@@ -17,7 +18,7 @@
 		earl:outcome earl:passed
 	] ;
 	earl:subject dist:v_1-097 ;
-	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/0305.xml> .
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0305> .
 [] dc:date "2012-06-05T23:39:52Z"^^xsd:dateTime ;
 	a earl:Assertion ;
 	earl:assertedBy rrp:xt ;
@@ -27,7 +28,7 @@
 		earl:outcome earl:passed
 	] ;
 	earl:subject dist:v_1-097 ;
-	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/0307.xml> .
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0307> .
 [] dc:date "2012-06-05T23:39:52Z"^^xsd:dateTime ;
 	a earl:Assertion ;
 	earl:assertedBy rrp:xt ;
@@ -37,7 +38,7 @@
 		a earl:TestResult
 	] ;
 	earl:subject dist:v_1-097 ;
-	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/0308.xml> .
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0308> .
 [] dc:date "2012-06-05T23:39:52Z"^^xsd:dateTime ;
 	a earl:Assertion ;
 	earl:assertedBy rrp:xt ;
@@ -47,7 +48,7 @@
 		a earl:TestResult
 	] ;
 	earl:subject dist:v_1-097 ;
-	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/0309.xml> .
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0309> .
 [] dc:date "2012-06-05T23:39:52Z"^^xsd:dateTime ;
 	a earl:Assertion ;
 	earl:assertedBy rrp:xt ;
@@ -57,29 +58,29 @@
 		earl:outcome earl:passed
 	] ;
 	earl:subject dist:v_1-097 ;
-	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/0310.xml> .
-<http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/0305.xml> dc:identifier "0305" ;
-	dc:title "role attribute with explicit id and term" ;
+	earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0310> .
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0305> dc:identifier "0305" ;
+	mf:name "role attribute with explicit id and term" ;
 	test:hostLanguage "xml" ;
 	test:rdfaVersion "1.1-role" ;
 	a earl:TestCase .
-<http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/0307.xml> dc:identifier "0307" ;
-	dc:title "role attribute with term and no id" ;
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0307> dc:identifier "0307" ;
+	mf:name "role attribute with term and no id" ;
 	test:hostLanguage "xml" ;
 	test:rdfaVersion "1.1-role" ;
 	a earl:TestCase .
-<http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/0308.xml> dc:identifier "0308" ;
-	dc:title "role attribute with explicit id and IRI as object" ;
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0308> dc:identifier "0308" ;
+	mf:name "role attribute with explicit id and IRI as object" ;
 	test:hostLanguage "xml" ;
 	test:rdfaVersion "1.1-role" ;
 	a earl:TestCase .
-<http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/0309.xml> dc:identifier "0309" ;
-	dc:title "role attribute with explicit id and CURIE as object" ;
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0309> dc:identifier "0309" ;
+	mf:name "role attribute with explicit id and CURIE as object" ;
 	test:hostLanguage "xml" ;
 	test:rdfaVersion "1.1-role" ;
 	a earl:TestCase .
-<http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/0310.xml> dc:identifier "0310" ;
-	dc:title "role attribute with multiple values" ;
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0310> dc:identifier "0310" ;
+	mf:name "role attribute with multiple values" ;
 	test:hostLanguage "xml" ;
 	test:rdfaVersion "1.1-role" ;
 	a earl:TestCase .

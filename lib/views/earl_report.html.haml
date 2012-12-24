@@ -6,7 +6,7 @@
 -#    "@id": "http://rdfa.info/test-suite/",
 -#    "@type": "earl:Software",
 -#    "homepage": "http://rdfa.info/",
--#    "name": "RDFa Test Suite",
+-#    "title": "RDFa Test Suite",
 -#    "processor": [
 -#      {
 -#        "@id": "http://www.w3.org/2012/pyRdfa/extract?uri=",
@@ -15,6 +15,32 @@
 -#      },
 -#      ...
 -#    ],
+-#    "manifests": [{
+-#      "title": "HTML5+RDFa 1.1",
+-#      "bibRef": "[[...]]",
+-#      "assertions": ["./rdf.rb-earl.ttl"],
+-#      "tests": [{
+-#          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0001",
+-#          "@type": "earl:TestCase",
+-#          "title": "Test 0001: Predicate establishment with @property",
+-#          "description": "Tests @property to establish the predicate; literal object is in the content of the element."
+-#          "mode": "earl:automatic",
+-#          "assertions": [{
+-#            "@type": "earl:Assertion",
+-#            "assertedBy": "http://rdfa.info/test-suite/",
+-#            "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0001",
+-#            "subject": "http://www.w3.org/2012/pyRdfa/extract?uri=",
+-#            "result": {
+-#              "@type": "earl:TestResult",
+-#              "outcome": "earl:passed"
+-#            },
+-#          }]
+-#        }]
+-#      }, {
+-#      }]
+-#    }, {
+-#      "title": "HTML5+RDFa 1.1 with Vocabulary Expansion",
+-#    }]
 -#    "vocabulary": {
 -#      "rdfa1.1": "Description",
 -#    }

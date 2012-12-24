@@ -177,41 +177,35 @@
       <%= sparql_url %>
 
 %script#earl-report-template{:type => "text/template"}<
-  %div{:about => "http://rdfa.info/test-suite/", :typeof => "earl:Software", :prefix => "earl: http://www.w3.org/ns/earl# doap: http://usefulinc.com/ns/doap# rdfatest: http://rdfa.info/vocabs/rdfa-test#"}
+  %div{:about => "http://rdfa.info/test-suite/", :typeof => "earl:Software", :prefix => "earl: http://www.w3.org/ns/earl# doap: http://usefulinc.com/ns/doap# rdfatest: http://rdfa.info/vocabs/rdfa-test# mf: http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#"}
     %h3
       %a{:rel => "doap:homepage", :property => "doap:name", :href => "http://rdfa.info/"}="RDFa Test Suite"
     %p
       Report on
-      %a.href.processorURL{:rel => "rdfatest:processor", :typeof=> "earl:TestSubject"}<
+      %a.href.processorURL{:typeof=> "earl:TestSubject"}<
         %span{:property => "doap:name"}<>
           <%= processorName %>
         = "."
     %p
       Passed <%= passed %> out of <%= total %> test cases ( <%= passed * 100 / total %>%).
-    %div.rel.version{:typeof => ""}
+    %div.rel.version
       RDFa Version <%= version %>.
-      %div.rel.hostLanguage#items{:inlist => true}
+      %div.rel.hostLanguage#items
         Host Language: <%= hostLanguage %>.
 
 %script#earl-item-template{:type => "text/template"}
   %h4
-    [
-    %span{:property => "rdfatest:rdfaVersion"}><
-      <%= version %>
-    %span{:property => "rdfatest:hostLanguage"}<>
-      <%= hostLanguage %>
-    ]
     Test
     %span{:property => "dc:identifier"}<
       <%= num %>: 
-    %span{:property => "dc:title"}<
+    %span{:property => "mf:name"}<
       <%= description %>
-  %p{:property => "dc:description"}<
+  %p{:property => "rdfs:comment"}<
     <%= purpose %>
   %div{:typeof => "earl:Assertion"}
     %span{:property => "earl:assertedBy", :resource => ""}/
     %span.resource.processorURL{:property => "earl:subject"}/
-    %span.resource.docURL{:rel => "earl:test"}/
+    %span.resource.testURI{:rel => "earl:test"}/
     %span{:property => "earl:mode", :resource => "earl:automatic"}/
     %p{:property => "earl:result", :typeof => "earl:TestResult"}
       Result:

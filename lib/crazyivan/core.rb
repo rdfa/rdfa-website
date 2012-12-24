@@ -15,8 +15,6 @@ module CrazyIvan
 
     TESTS_QUERY = %(
       PREFIX dc: <http://purl.org/dc/terms/>
-      PREFIX log: <http://www.w3.org/2000/10/swap/log#>
-      PREFIX owl: <http://www.w3.org/2002/07/owl#>
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX test: <http://www.w3.org/2006/03/test-description#>
@@ -65,34 +63,48 @@ module CrazyIvan
     ##
     # Return the Manifest source
     #
+    # For version/suite specific manifests, the MF syntax is used,
+    # instead of TestQuery; this makes EARL reporting simpler.
+    #
     # @param [String] version
     # @param [String] suite
     def manifest_ttl(version = nil, suite = nil)
       if version && suite
         # Return specific subset of manifest based on host_language and version
         # with appropriate URI re-writing
-        ttl = %{@prefix dc: <http://purl.org/dc/terms/> .
-          @prefix log: <http://www.w3.org/2000/10/swap/log#> .
-          @prefix owl: <http://www.w3.org/2002/07/owl#> .
+        test_ttl = ""
+        ttl = %{@base <#{url("/test-suite/test-cases/#{version}/#{suite}/manifest")}> .
           @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
           @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+          @prefix mf: <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#> .
+          @prefix qt: <http://www.w3.org/2001/sw/DataAccess/tests/test-query#> .
           @prefix test: <http://www.w3.org/2006/03/test-description#> .
-          @prefix rdfatest: <http://rdfa.info/vocabs/rdfa-test#> .
-          @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-        }.gsub(/^\s+/, '')
+
+          <>  rdf:type mf:Manifest ;
+              rdfs:comment "RDFa #{version} tests for #{suite}" ;
+              mf:entries (
+        }.gsub(/^          /, '')
         ::JSON.load(manifest_json)['@graph'].each do |tc|
           next unless tc['hostLanguages'].include?(suite) && tc['versions'].include?(version)
-          ttl << "\n"
-          ttl << %{<#{tc['num']}> a #{tc['@type']};\n}
-          ttl << %{  test:classification test:#{tc['classification'].split('#').last};\n}
-          ttl << %{  dc:title """#{tesc(tc['description'])}""";\n}
-          ttl << %{  test:purpose """#{tesc(tc['purpose'])}""";\n}
-          ttl << %{  test:specificationReference """#{tesc(tc['reference'])}""";\n} unless tc['reference'].empty?
-          ttl << %{  test:informationResourceInput <#{get_test_url(version, suite, tc['num'])}>;\n}
-          ttl << %{  test:informationResourceResults <#{get_test_url(version, suite, tc['num'], 'sparql')}>;\n}
-          ttl << %{  test:expectedResults #{tc['expectedResults']}.\n}
+          ttl << "      <#{get_test_url(version, suite, tc['num'])}>\n"
+          test_ttl << %{
+            <##{tc['num']}> a mf:QueryEvaluationTest;
+              mf:name """Test #{tc['num']}: #{tesc(tc['description'])}""";
+              rdfs:comment """#{tesc(tc['purpose'])}""";
+              test:classification #{tc['classification']};
+              mf:action [ a qt:QueryTest;
+                qt:queryForm qt:QueryAsk;
+                qt:query <#{get_test_url(version, suite, tc['num'], 'sparql')}>;
+                qt:data <#{get_test_url(version, suite, tc['num'])}>
+              ];
+              mf:result #{tc['expectedResults']} .
+          }.gsub(/^            /, '')
+          test_ttl << %{  test:specificationReference """#{tesc(tc['reference'])}""";\n} unless tc['reference'].empty?
         end
-        ttl
+        
+        # Output manifest definition, ordered tests and test definitions
+        ttl << "  )\n"
+        ttl + test_ttl
       else
         @manifest_ttl = File.read(MANIFEST_FILE)
       end

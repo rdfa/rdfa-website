@@ -74,15 +74,13 @@ window.Test = Backbone.Model.extend({
     }
     return url;
   },
-  
-  // Document URL
-  docURL: function() {
-    var extension = '.' + this.get('hostLanguage').replace(/\d/, '');
+
+  // Test URI
+  testURI: function() {
     return "test-cases" +
     '/' + this.get('version') +
     '/' + this.get('hostLanguage') +
-    '/' + this.get('num') +
-    extension;
+    '/manifest#' + this.get('num');
   },
 
   reset: function () {
