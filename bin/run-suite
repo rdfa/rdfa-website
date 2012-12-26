@@ -38,6 +38,8 @@ Options:
   --num:                Run only specified test number
   --verbose:            Show input and expected output
   --version:            Version of processor to use (rdf1.0, rdf1.1). Defaults to #{options[:version]}
+
+If runner is an HTTP URI, it will take that as a processor endpoint and invoke via HTTP
 )
   exit(0)
 end
@@ -87,14 +89,21 @@ crazy_ivan = CrazyIvan::StandAlone.new
     STDOUT.puts "exec:\n#{runner_args.join(' ')}\n"
   end
 
-  IO.popen(runner_args, "r+") do |io|
-    io.write(content)
-    io.close_write
-    out = io.read
-    graph = RDF::Graph.new << RDF::Turtle::Reader.new(out, :base_uri => uri)
-    result = SPARQL.execute(sparql, graph)
+  if ARGV[0].index("http://") == 0
+    result = crazy_ivan.send(:perform_test_case, options[:version], options[:host_language], tc['num'], ARGV[0], tc["expectedResults"], :quiet => !options[:verbose])
     STDOUT.write "result: " if options[:verbose]
-    expected = tc["expectedResults"] ? RDF::Literal::TRUE : RDF::Literal::FALSE
-    STDOUT.puts result == expected ? "passed" : "failed"
+    STDOUT.puts result ? "passed" : "failed"
+  else
+    # Open runner command and retrieve passed/failed state
+    IO.popen(runner_args, "r+") do |io|
+      io.write(content)
+      io.close_write
+      out = io.read
+      graph = RDF::Graph.new << RDF::Turtle::Reader.new(out, :base_uri => uri)
+      result = SPARQL.execute(sparql, graph)
+      STDOUT.write "result: " if options[:verbose]
+      expected = tc["expectedResults"] ? RDF::Literal::TRUE : RDF::Literal::FALSE
+      STDOUT.puts result == expected ? "passed" : "failed"
+    end
   end
 end

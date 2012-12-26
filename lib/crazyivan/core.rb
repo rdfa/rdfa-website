@@ -435,34 +435,34 @@ module CrazyIvan
     # @param [RDF::URI, String] extract_url The RDF extractor web service.
     # @param [Boolean] expected_results `true` or `false`
     # @return [Boolean] pass or fail
-    def perform_test_case(version, suite, num, extract_url, expected_results)
+    def perform_test_case(version, suite, num, extract_url, expected_results, options = {})
       # Build the RDF extractor URL
       extract_url = ::URI.decode(extract_url) + get_test_url(version, suite, num)
 
       # Retrieve the remote graph
       extracted = RDF::Util::File.open_file(extract_url)
-      puts "tc: #{version}/#{suite}/#{num}"
-      puts "extract from: #{extract_url}, content-type: #{extracted.content_type.inspect}"
+      puts "tc: #{version}/#{suite}/#{num}" unless options[:quiet]
+      puts "extract from: #{extract_url}, content-type: #{extracted.content_type.inspect}" unless options[:quiet]
       extracted_doc = extracted.read
       extracted.rewind
-      puts "extracted:\n#{extracted_doc}"
-      puts "content-type: #{extracted.content_type.inspect}"
+      puts "extracted:\n#{extracted_doc}" unless options[:quiet]
+      puts "content-type: #{extracted.content_type.inspect}" unless options[:quiet]
 
       format_opts = {:sample => extracted_doc}
       format_opts[:content_type] = extracted.content_type if extracted.content_type
 
       graph = RDF::Graph.new << RDF::Reader.for(format_opts).
         new(extracted, :base_url => get_test_url(version, suite, num))
-      puts "graph:#{graph.dump(:ttl)}"
+      puts "graph:#{graph.dump(:ttl)}" unless options[:quiet]
 
       # Get the SPARQL query
       sparql_query = get_test_content(version, suite, num, 'sparql')
 
-      puts "sparql_query: #{sparql_query}"
+      puts "sparql_query: #{sparql_query}" unless options[:quiet]
 
       # Perform the SPARQL query
       result = SPARQL.execute(StringIO.new(sparql_query), graph)
-      puts "result: #{result.inspect}, expected: #{expected_results.inspect} == #{(result == expected_results).inspect}"
+      puts "result: #{result.inspect}, expected: #{expected_results.inspect} == #{(result == expected_results).inspect}" unless options[:quiet]
       result == expected_results
     end
     module_function :perform_test_case
