@@ -15,69 +15,47 @@
 -#      },
 -#      ...
 -#    ],
--#    "manifests": [{
+-#    "entries": [{
+-#      "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest",
+-#      "@type": [
+-#        "earl:Report",
+-#        "mf:Manifest"
+-#      ],
 -#      "title": "HTML5+RDFa 1.1",
--#      "bibRef": "[[...]]",
--#      "assertions": ["./rdf.rb-earl.ttl"],
--#      "tests": [{
--#          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0001",
--#          "@type": "earl:TestCase",
--#          "title": "Test 0001: Predicate establishment with @property",
--#          "description": "Tests @property to establish the predicate; literal object is in the content of the element."
--#          "mode": "earl:automatic",
--#          "assertions": [{
+-#      "description": [
+-#        "RDFa Core 1.1 [[RDFA-CORE]] defines core processing rules for independent of host language, and provides default processing rules for XML-based host languages.",
+-#        "The HTML5 [[HTML5]] RDFa Host Language is defined in [[HTML+RDFa]]. HTML+RDFa extends RDFa Core 1.1 [[RDFA-CORE]] with host-language specific processing rules."
+-#      ],
+-#      "entries": [{
+-#        "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0001",
+-#        "@type": "earl:TestCase",
+-#        "title": "Test 0001: Predicate establishment with @property",
+-#        "description": "Tests @property to establish the predicate; literal object is in the content of the element."
+-#        "testAction": {
+-#          "@type": "qt:QueryTest",
+-#          "queryForm": "qt:QueryAsk",
+-#          "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0001.sparql",
+-#          "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0001.html"
+-#        },
+-#        "testResult": true,
+-#        "assertions": [
+-#          {
 -#            "@type": "earl:Assertion",
 -#            "assertedBy": "http://rdfa.info/test-suite/",
 -#            "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0001",
--#            "subject": "http://www.w3.org/2012/pyRdfa/extract?uri=",
+-#            "subject": "http://rubygems.org/gems/rdf-rdfa",
+-#            "mode": "earl:automatic",
 -#            "result": {
 -#              "@type": "earl:TestResult",
 -#              "outcome": "earl:passed"
--#            },
--#          }]
--#        }]
--#      }, {
--#      }]
--#    }, {
--#      "title": "HTML5+RDFa 1.1 with Vocabulary Expansion",
--#    }]
--#    "vocabulary": {
--#      "rdfa1.1": "Description",
--#    }
--#    "rdfa1.1": {
--#      "xml": [
--#        {
--#          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0249.xml",
--#          "@type": "earl:TestCase",
--#          "num": "0001",
--#          "title": "Test 0001: Predicate establishment with @property",
--#          "description": "Tests @property to establish the predicate; literal object is in the content of the element."
--#          "mode": "earl:automatic",
--#          "http://www.w3.org/2012/pyRdfa/extract?uri=": {
--#            "@id": "http://rdfa.info/test-suite/test-details/rdfa1.1/xml/0001?rdfa-extractor=http%3A//www.w3.org/2012/pyRdfa/extract%3Furi%3D",
--#            "@type": "earl:Assertion",
--#            "assertedBy": "http://rdfa.info/test-suite/",
--#            "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0249.xml",
--#            "subject": "http://www.w3.org/2012/pyRdfa/extract?uri=",
--#            "result": {
--#              "@type": "earl:TestResult",
--#              "outcome": "earl:passed"
--#            },
+-#            }
 -#          }
--#        },
--#        ...
--#      ],
--#     "xhtml1": [...],
--#     ...
+-#        ]
+-#      }]
 -#    }
 -#  }
 -# Split 'rdfa1.1' into two parts, for defined languages, and other
 
-- MAIN_HOST_LANGUAGES = %w(xhtml1 xml) # Only report on these host languages in the main section
-- tests['rdfa1.1'] ||= {}
-- tests['rdfa1.1-other'] = tests['rdfa1.1'].reject {|k| MAIN_HOST_LANGUAGES.include?(k)}
-- tests['vocabulary']['rdfa1.1-other'] = {'label' => "Other Host Languages", 'description' => %(The following results are for host languages that are not explicitly specified, or for which standards work is not yet complete.)}
-- tests['rdfa1.1'].select! { |k| MAIN_HOST_LANGUAGES.include?(k)}
 - test_info = {}
 !!! 5
 %html{:lang => "en"}
@@ -86,7 +64,7 @@
     %meta{"http-equiv" => "Content-Type", :content => "text/html;charset=utf-8"}
     %title
       RDFa 1.1 Processor Conformance
-    %script.remove{:type => "text/javascript", :src => "http://dev.w3.org/2009/dap/ReSpec.js/js/respec.js"}
+    %script.remove{:type => "text/javascript", :src => "http://www.w3.org/Tools/respec/respec-w3c-common"}
     :javascript
       var respecConfig = {
           // specification status (e.g. WD, LCWD, NOTE, etc.). If in doubt use ED.
@@ -139,20 +117,20 @@
           ],
 
           // name of the WG
-          wg:           "Linking Data in JSON Community Group",
-
+          wg:           "RDF Web Applications Working Group",
+          
           // URI of the public WG page
-          wgURI:        "http://json-ld.org/",
-
+          wgURI:        "http://www.w3.org/2010/02/rdfa",
+          
           // name (with the @w3c.org) of the public mailing to which comments are due
-          wgPublicList: "public-linked-json@w3c.org",
+          wgPublicList: "public-rdfa",
 
           // URI of the patent status for this WG, for Rec-track documents
           // !!!! IMPORTANT !!!!
           // This is important for Rec-track documents, do not copy a patent URI from a random
           // document unless you know what you're doing. If in doubt ask your friendly neighbourhood
           // Team Contact.
-          wgPatentURI:  "",
+          wgPatentURI:  "http://www.w3.org/2004/01/pp-impl/44350/status",
           maxTocLevel: 4,
           //alternateFormats: [ {uri: "diff-20120112.html", label: "diff to previous version"} ],
       };
@@ -184,10 +162,7 @@
         background-color: white;
         -moz-border-radius: ;
       }
-      pre.example.inputDoc, pre.example.sparqlResults { margin-left: 0;}
-      pre.example.inputDoc::before { content: "Input Document";}
-      pre.example.sparqlResults::before { content: "SPARQL Results";}
-  %body{:prefix => "earl: http://www.w3.org/ns/earl# doap: http://usefulinc.com/ns/doap# rdfatest: http://rdfa.info/vocabs/rdfa-test#"}
+  %body{:prefix => "earl: http://www.w3.org/ns/earl# doap: http://usefulinc.com/ns/doap# rdfatest: http://rdfa.info/vocabs/rdfa-test# mf: http://www.w3.org/2001/sw/DataAccess/tests/test-manifest# qt: http://www.w3.org/2001/sw/DataAccess/tests/test-query#"}
     %section#abstract{:about => tests['@id'], :typeof => tests['@type']}
       %p
         This document reports processor conformance for [[RDFA-CORE]] and related specifications
@@ -198,6 +173,7 @@
         running at
         %a{:property => "doap:homepage", :href => tests['homepage']}<=tests['homepage']
         = '.'
+        according to the requirements of the Evaluation and Report Language (EARL) 1.0 Schema [[EARL10-SCHEMA]].
       %p
         This report is also available in alternate formats:
         %a{:href => "earl.ttl"}
@@ -206,44 +182,40 @@
         %a{:href => "earl.jsonld"}
           JSON-LD
     %section#sodt
-    - %w(rdfa1.0 rdfa1.1 rdfa1.1-proc rdfa1.1-vocab rdfa1.1-other rdfa1.1-role).each do |version|
-      - next unless tests.has_key?(version)
-      %section{:rel => "rdfatest:version/#{version}", :typeof => "rdfatest:Version"}
-        %h2<=tests['vocabulary'][version]['label']
-        %div
-          = tests['vocabulary'][version]['description']
-        - tests[version].keys.sort.each do |hostLanguage|
-          - test_cases = tests[version][hostLanguage]
-          - next unless test_cases.is_a?(Array)
-          %section{:rel => "rdfatest:hostLanguage/#{hostLanguage}", :inlist => true}
-            %h2<=tests['vocabulary'][hostLanguage]['label']
-            %div
-              = tests['vocabulary'][hostLanguage]['description']
-            %table.report
-              %tr
-                %th
-                  Test
-                  - processors.each do |processor|
-                    - next unless test_cases.first.has_key?(processor['@id'])
-                    %th
-                      %a{:href => processor['@id']}<=processor['name']
-              - test_cases.each do |test|
-                - test_info[test['num']] ||= test.clone
-                %tr{:typeof => test['@type'], :resource => test['@id']}
+    %section
+      %h1
+        Test Manifests
+      - tests['entries'].each do |manifest|
+        %section{:property => "mf:entries", :typeof => manifest['@type'].join(" "), :href => manifest['@id'], :inlist => true}
+          %h2<=manifest['title']
+          - manifest['description'].each do |desc|
+            %p<= desc
+          %table.report
+            - skip_processor = {}
+            %tr
+              %th
+                Test
+              - processors.each_with_index do |processor, index|
+                -# If processor is untested for every test in this manifest, skip it
+                - skip_processor[processor['@id']] = manifest['entries'].all? {|t| t['assertions'][index]['result']['outcome'] == 'earl:untested'}
+                - unless skip_processor[processor['@id']]
+                  %th
+                    %a{:href => '#' + processor['name'].gsub(/\W/, '_')}<=processor['name']
+              - manifest['entries'].each do |test|
+                - tid = 'test_' + test['@id'].split('#').last
+                - (test_info[tid] ||= []) << test
+                %tr{:property => "mf:entries", :typeof => test['@type'].join(" "), :resource => test['@id'], :inlist => true}
                   %td
-                    %a{:property => 'rdfatest:num', :href => "#test_#{test['num']}"}<= test['num']
-                    %span{:property => 'dc:title'}<= test['title']
-                    %span{:property => 'dc:description'}<= test['description']
-                  - processors.each do |processor|
-                    - url = processor['@id']
-                    - next unless test.has_key?(url)
-                    - assertion = test[url]
-                    - pass_fail = assertion['result']['outcome'].split(':').last.upcase.sub(/ED$/, '')
-                    %td{:class => pass_fail, :rel => assertion['@id'], :typeof => assertion['@type']}
+                    %a{:href => "##{tid}"}
+                      = test['title']
+                  - test['assertions'].each do |assertion|
+                    - next if skip_processor[assertion['subject']]
+                    - pass_fail = assertion['result']['outcome'].split(':').last.upcase.sub(/(PASS|FAIL)ED$/, '\1')
+                    %td{:class => pass_fail, :rel => 'earl:assertions', :typeof => assertion['@type'], :inlist => true}
                       %link{:property => "earl:assertedBy", :href => assertion['assertedBy']}
                       %link{:property => "earl:test", :href => assertion['test']}
                       %link{:property => "earl:subject", :href => assertion['subject']}
-                      %link{:property => 'earl:mode', :href => assertion['mode']}/ 
+                      %link{:property => 'earl:mode', :href => assertion['mode']}
                       %span{:property => "earl:result", :typeof => assertion['result']['@type'], :resource => assertion['result']['outcome']}
                         = pass_fail
     %section.appendix
@@ -251,39 +223,39 @@
         Processors
       %p
         This report was tested using the following processors:
-      %dl
-        - processors.each do |processor|
-          %dt{:about => processor['@id'], :typeof => processor['@type'].join(" "), :property => "doap:name"}
-            = processor['name']
-          %dd{:about => processor['@id']}
-            %dl
-              - if processor['doap_desc']
-                %dt= "Description"
-                %dd{:property => "doap:description"}<= processor['doap_desc']
-              - if processor['language']
-                %dt= "Programming Language"
-                %dd{:property => "doap:programming-language"}<= processor['language']
-              - if processor['developer']
-                %dt= "Developer"
-                %dd{:property => "doap:developer", :resource => processor['developer']['@id'], :typeof => processor['developer']['@type']}
-                  - if processor['developer']['@id']
-                    %a{:href => processor['developer']['@id']}
-                      %span{:property => "foaf:name"}<= processor['developer']['foaf:name']
-                  - else
+    %dl
+      - processors.each do |processor|
+        %dt{:id => processor['name'].gsub(/\W/, '_'), :about => processor['@id'], :typeof => processor['@type'].join(" "), :property => "doap:name"}
+          = processor['name']
+        %dd{:about => processor['@id']}
+          %dl
+            - if processor['doap_desc']
+              %dt= "Description"
+              %dd{:property => "doap:description"}<= processor['doap_desc']
+            - if processor['language']
+              %dt= "Programming Language"
+              %dd{:property => "doap:programming-language"}<= processor['language']
+            - if processor['developer']
+              %dt= "Developer"
+              %dd{:property => "doap:developer", :resource => processor['developer']['@id'], :typeof => processor['developer']['@type']}
+                - if processor['developer']['@id']
+                  %a{:href => processor['developer']['@id']}
                     %span{:property => "foaf:name"}<= processor['developer']['foaf:name']
-              - if processor['homepage']
-                %dt= "Home Page"
-                %dd{:property => "doap:homepage"}
-                  %a{:href=> processor['homepage']}=processor['homepage']
-    %section.appendix
-      %h2
-        Individual Test Results
-      %p
-        Individual test results used to construct this report are available here:
-      %ul
-        - source_files.each do |file|
-          %li
-            %a.source{:href => file}<= file
+                - else
+                  %span{:property => "foaf:name"}<= processor['developer']['foaf:name']
+            - if processor['homepage']
+              %dt= "Home Page"
+              %dd{:property => "doap:homepage"}
+                %a{:href=> processor['homepage']}=processor['homepage']
+    -#%section.appendix
+    -#  %h2
+    -#    Individual Test Results
+    -#  %p
+    -#    Individual test results used to construct this report are available here:
+    -#  %ul
+    -#    - source_files.each do |file|
+    -#      %li
+    -#        %a.source{:href => file}<= file
     %section.appendix
       %h2
         Test Definitions
@@ -295,15 +267,30 @@
         for different host languages.
       %dl
         - keys = test_info.keys.sort
-        - keys.each do |num|
-          - test = test_info[num]
-          %dt{:id => "test_#{test['num']}"}
-            Test
-            = test['num'] + ":"
-            = test['title']
+        - test_info.keys.sort.each do |id|
+          - test_defs = test_info[id]
+          - test = test_defs.first
+          %dt{:id => id}<= test['title']
           %dd
-            = test['description']
-            %dl
-              %dt
-                %pre{:class => "example inputDoc"}<&= CrazyIvan::Core::get_test_content("rdfa1.1", "xhtml5", test['num'])
-                %pre{:class => "example sparqlResults"}<&= CrazyIvan::Core::get_test_content("rdfa1.1", "xhtml5", test['num'], "sparql")
+            %p<= test['description']
+            %p
+              Expected query to return
+              = test['testResult'].to_s
+            -# Output metadata for each test variation
+            - test_defs.each do |test|
+              %span{:resource => test['@id']}
+                %span{:property => "dc:title mf:name", :content => test['title']}
+                %span{:property => "dc:description", :content => test['description']}
+                %span{:property => "mf:result", :datatype => "xsd:boolean", :content => test['testResult'].to_s}
+                %div{:property => "mf:action", :typeof => test['testAction']['@type']}
+                  - test['@id'].match(%r{/([a-z0-9\-\.]*)/([a-z0-9]*)/manifest#([0-9]+)})
+                  - version, hostLanguage, num = $1, $2, $3
+                  - man = tests['entries'].detect {|m| m['hostLanguage'] == hostLanguage && m['version'] == version}
+                  %p
+                    Test files for
+                    = "#{man['title']}:"
+                  %link{:property => "qt:queryForm", :resource => test['testAction']['queryForm']}
+                  %pre.example{:property => "qt:data", :resource => test['testAction']['data'], :title => test['testAction']['data']}<
+                    ~ CGI.escapeHTML(CrazyIvan::Core::get_test_content(version, hostLanguage, num)).gsub(/\n/, '<br/>').gsub(/\t/, '  ')
+                  %pre.example{:property => "qt:query", :resource => test['testAction']['query'], :title => test['testAction']['query']}<
+                    ~ CGI.escapeHTML(CrazyIvan::Core::get_test_content(version, hostLanguage, num, "sparql")).gsub(/\n/, '<br/>').gsub(/\t/, '  ')

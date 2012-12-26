@@ -35,7 +35,7 @@ class EARL
     PREFIX mf: <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     
-    SELECT ?subject ?test ?by ?mode ?outcome ?name ?description
+    SELECT ?subject ?test ?by ?mode ?outcome
     WHERE {
       [ a earl:Assertion;
         earl:assertedBy ?by;
@@ -43,10 +43,6 @@ class EARL
         earl:result [earl:outcome ?outcome];
         earl:subject ?subject;
         earl:test ?test ] .
-      ?test a earl:TestCase;
-        mf:name ?name;
-        rdfs:comment ?description
-        .
     }
     ORDER BY ?test ?subject
   ).freeze
@@ -234,7 +230,7 @@ class EARL
       end
 
       # Map ids and values to array entries
-      proc_info.keys.sort.map do |id|
+      proc_info.keys.sort_by {|id| proc_info[id]['name'].downcase}.map do |id|
         info = proc_info[id]
         processor = Hash.ordered
         processor["@id"] = id
@@ -271,10 +267,17 @@ class EARL
   ##
   # Expected results for each test number
   # @return [Hash{String => TrueClass, FalseClass}]
-  def expected_results
-    @expected_results ||= begin
+  def manifest_info
+    @manifest_info ||= begin
       man = ::JSON.parse(File.read(MANIFEST_PATH))
-      man['@graph'].inject({}) {|memo, t| memo[t['num']] = t.fetch('expectedResults', true); memo}
+      man['@graph'].inject({}) do |memo, t|
+        memo[t['num']] = {
+          :name => "Test #{t['num']}: #{t['description']}",
+          :description => t['purpose'].strip.gsub(/\s+/m, ' '),
+          :expectedResults => t.fetch('expectedResults', true)
+        }
+        memo
+      end
     end
   end
 
@@ -288,12 +291,12 @@ class EARL
     SPARQL.execute(ASSERTION_QUERY, @graph).each do |solution|
       uri = solution[:test].to_s
       manifest = uri.split('#').first
+      solution[:test].to_s.match(%r{/([a-z0-9\-\.]*)/([a-z0-9]*)/manifest})
+      version, hostLanguage = $1, $2
+      raise "version, host language not found in #{solution[:test]}" unless version && hostLanguage
       hl_vers = manifests.detect {|m| m['@id'] == manifest}
       # Create entry for this manifest, if it doesn't already exist
       unless hl_vers
-        solution[:test].to_s.match(%r{/([a-z0-9\-\.]*)/([a-z0-9]*)/manifest})
-        version, hostLanguage = $1, $2
-        raise "version, host language not found in #{solution[:test]}" unless version && hostLanguage
         puts "version: #{version}, hostLanguage: #{hostLanguage}"
         hl_info = json_vocabulary_info[hostLanguage]
         vers_info = json_vocabulary_info[version]
@@ -301,6 +304,8 @@ class EARL
           "@id" => manifest,
           "@type" => %w{earl:Report mf:Manifest},
           'title' => "#{hl_info['label']}+#{vers_info['label']}",
+          'hostLanguage' => hostLanguage,
+          'version' => version,
           'description' => [
             vers_info['description'].strip.gsub(/\s+/m, ' '),
             hl_info['description'].strip.gsub(/\s+/m, ' ')
@@ -318,15 +323,15 @@ class EARL
         tc = {
           "@id" => uri,
           "@type" => %w(earl:TestCase mf:QueryEvaluationTest),
-          'title' => solution[:name].to_s,
-          'description' => solution[:description].to_s.strip.gsub(/\s+/m, ' '),
+          'title' => manifest_info[num][:name],
+          'description' => manifest_info[num][:description],
           'testAction' => {
             '@type' => 'qt:QueryTest',
             'queryForm' => 'qt:QueryAsk',
             'query' => CrazyIvan::Core::get_test_url(version, hostLanguage, num, 'sparql'),
             'data' => CrazyIvan::Core::get_test_url(version, hostLanguage, num)
           },
-          'testResult' => expected_results[num],
+          'testResult' => manifest_info[num][:expectedResults],
           'assertions' => []
         }
 
@@ -355,7 +360,7 @@ class EARL
       assertion['result']['outcome'] = "earl:#{solution[:outcome].to_s.split('#').last}"
     end
 
-    manifests
+    manifests.sort_by {|m| "#{m['hostLanguage']} #{m['version']}"}
   end
   
   ##
