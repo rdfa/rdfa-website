@@ -95,7 +95,7 @@ class EARL
       # Load DOAP definitions
       doap_url = info["doap_url"] || info["doap"]
       puts "check for <#{info["doap"]}> in graph"
-      next unless doap_url && @graph.has_subject?(RDF::URI(info["doap"]))
+      next unless doap_url && @graph.has_object?(RDF::URI(info["doap"]))
       doap_url = File.expand_path("../../public", __FILE__) + doap_url if doap_url[0,1] == '/'
       puts "read doap description for #{proc} from #{doap_url}"
       begin
@@ -355,7 +355,7 @@ class EARL
 
       # Assertion info
       assertion = tc['assertions'].detect {|a| a['subject'] == solution[:subject].to_s}
-      raise "Assertion not found for #{solution.inspect}" unless assertion
+      raise "Assertion not found for #{solution[:subject]} in #{tc['assertions'].map{|a| a['subject']}.inspect}" unless assertion
       assertion['mode'] = "earl:#{solution[:mode].to_s.split('#').last || 'automatic'}"
       assertion['result']['outcome'] = "earl:#{solution[:outcome].to_s.split('#').last}"
     end
@@ -388,9 +388,9 @@ class EARL
     io.puts
     
     # Write earl:Software
-    io.puts %(<#{json_hash['@id']}> a earl:Softare, doap:Project;)
+    io.puts %(<#{json_hash['@id']}> a earl:Software, doap:Project;)
     io.puts %(  doap:homepage <#{json_hash['homepage']}>;)
-    io.puts %(  doap:name "#{json_hash['homepage']}";)
+    io.puts %(  doap:name "#{json_hash['name']}";)
     
     # Processors
     proc_defs = json_hash['processor'].map {|defn| "<#{defn['@id']}>"}.join(",\n    ")

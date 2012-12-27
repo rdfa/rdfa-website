@@ -14,18 +14,115 @@ $:.unshift(File.expand_path("../../lib", __FILE__))
 require 'crazyivan/core'
 require 'getoptlong'
 
+ASSERTOR = "http://rdfa.info/test-suite/"
+RUN_TIME = Time.now
+RESULTS = {}
+CRAZY_IVAN = CrazyIvan::StandAlone.new
+
+def earl_preamble
+  %(@prefix dc: <http://purl.org/dc/terms/> .
+    @prefix doap: <http://usefulinc.com/ns/doap#> .
+    @prefix earl: <http://www.w3.org/ns/earl#> .
+    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+    <#{ASSERTOR}> a earl:Software, doap:Project;
+      doap:homepage <http://rdfa.info/>;
+      doap:name "RDFa Test Suite" .).gsub(/^    /, '')
+end
+
+def earl_report(subject, version, host_language, num, result)
+  %(
+    [ a earl:Assertion;
+      earl:assertedBy <#{ASSERTOR}>;
+      earl:subject <#{subject}>;
+      earl:test <#{ASSERTOR}test-cases/#{version}/#{host_language}/manifest##{num}>;
+      earl:result [
+        a earl:TestResult;
+        earl:outcome earl:#{result ? 'passed' : 'failed'};
+        dc:date "#{RUN_TIME.xmlschema}"^^xsd:dateTime];
+      earl:mode earl:automatic ] .).gsub(/^    /, '')
+end
+
+# Run a test case using `runner`
+def run_tc(tc, runner, options)
+  version, host_language = options[:version], options[:host_language]
+  content = CRAZY_IVAN.send(:get_test_content, version, host_language, tc["num"])
+  sparql = CRAZY_IVAN.send(:get_test_content, version, host_language, tc["num"], "sparql")
+
+  STDOUT.write "#{host_language}+#{version} #{tc['num']}: "
+
+  if options[:verbose]
+    puts "\n#{content}\n"
+    puts "query: \n#{sparql}\n"
+  end
+
+  # If there is an executable named runner in the running directory,
+  # use that to perform the test.
+  # Otherwise, if there is a processor defined with that name use
+  # the processor endpoint.
+  # Otherwise, presume that runner is an HTTP URL, and use it to
+  # run the test.
+  result = begin
+    if File.executable?(runner.split.first)
+      uri = CRAZY_IVAN.send(:get_test_url, version, host_language, tc["num"])
+      runner_args = ARGV[0].split(/\s+/) + [
+        "--host-language", host_language,
+        "--version", version,
+        "--uri", uri
+      ]
+  
+      if tc["queryParam"]
+        arg, value = tc["queryParam"].split('=')
+        runner_args << "--#{arg}"
+        runner_args << value if value
+      end
+
+      # Open runner command and retrieve passed/failed state
+      IO.popen(runner_args, "r+") do |io|
+        io.write(content)
+        io.close_write
+        out = io.read
+        graph = RDF::Graph.new << RDF::Turtle::Reader.new(out, :base_uri => uri)
+        puts "extracted:\n" + graph.dump(:ttl, :standard_prefixes => true)
+        result = SPARQL.execute(sparql, graph)
+        expected = tc["expectedResults"] ? RDF::Literal::TRUE : RDF::Literal::FALSE
+        result == expected
+      end
+    else
+      # Add any parameter to the processorURL
+      runner = runner.sub(/([\?&])([^\?&]*)$/, '\1' + tc["queryParam"] + '&\2') if tc["queryParam"]
+
+      CRAZY_IVAN.send(:perform_test_case, version, host_language, tc['num'], runner, tc["expectedResults"], :quiet => !options[:verbose])
+    end
+  rescue
+    STDOUT.write "(fault) "
+    false
+  end
+
+  STDOUT.write "result: " if options[:verbose]
+  STDOUT.puts result ? "passed" : "failed"
+
+  RESULTS[version] ||= {}
+  RESULTS[version][host_language] ||= {}
+  RESULTS[version][host_language][tc['num']] = result
+end
+
 options = {
   :format        => :turtle,
-  :host_language => "xhtml1",
-  :version       => "rdfa1.1",
+  :host_language => "all",
+  :version       => "all",
+  :output        => STDOUT,
 }
 opts = GetoptLong.new(
-  ["--help", "-?", GetoptLong::NO_ARGUMENT],
+  ["--earl", GetoptLong::NO_ARGUMENT],
   ["--format", GetoptLong::REQUIRED_ARGUMENT],
+  ["--help", "-?", GetoptLong::NO_ARGUMENT],
   ["--host-language", "-h", GetoptLong::OPTIONAL_ARGUMENT],
+  ["--num", GetoptLong::REQUIRED_ARGUMENT],
+  ["--output", "-o", GetoptLong::REQUIRED_ARGUMENT],
+  ["--processor", GetoptLong::REQUIRED_ARGUMENT],
   ["--verbose", GetoptLong::NO_ARGUMENT],
   ["--version", GetoptLong::REQUIRED_ARGUMENT],
-  ["--num", GetoptLong::REQUIRED_ARGUMENT]
 )
 
 def help(options)
@@ -33,11 +130,14 @@ def help(options)
 
 Usage: #{$0} runner [options]
 Options:
+  -earl:                Generate EARL report
   --format:             Format for output, defaults to #{options[:format].inspect}
   --host-language:      Run for specified host language, defaults to #{options[:host_language]}"
   --num:                Run only specified test number
+  --output (-o):        Output to specified file
+  --processor:          Processor URI for EARL reporting, unless it comes from processor definition
   --verbose:            Show input and expected output
-  --version:            Version of processor to use (rdf1.0, rdf1.1). Defaults to #{options[:version]}
+  --version:            Version of processor to use (rdfa1.0, rdfa1.1, or rdfa1.1 variation). Defaults to #{options[:version]}
 
 If runner is an HTTP URI, it will take that as a processor endpoint and invoke via HTTP
 )
@@ -47,63 +147,78 @@ end
 opts.each do |opt, arg|
   case opt
   when '--help'           then help(options)
+  when '--earl'           then options[:quiet] = options[:earl] = true
   when '--format'         then options[:format] = arg.to_sym
   when '--host-language'  then options[:host_language] = arg
   when '--num'            then options[:num] = arg
+  when '--output'         then options[:output] = File.open(arg, "w")
   when '--verbose'        then options[:verbose] = true
   when '--version'        then options[:version] = arg
   end
 end
 
 help(options) unless ARGV.length > 0
-  
-crazy_ivan = CrazyIvan::StandAlone.new
 
-::JSON.parse(crazy_ivan.send(:manifest_json))['@graph'].each do |tc|
-  next unless tc["versions"].include?(options[:version])
-  next unless tc["hostLanguages"].include?(options[:host_language])
+io = options[:output]
+runner = ARGV[0]
+
+# If we're running from a processor definition, retrieve necessary information
+processors = ::JSON.load(File.read(File.expand_path("../../processors.json", __FILE__)))
+if processors.has_key?(runner)
+  options[:processor] ||= processors[runner]['doap']
+  runner = processors[runner]['endpoint']
+elsif options[:earl] && !options[:processor]
+  raise "Missing processor DOAP IRI"
+end
+
+::JSON.parse(CRAZY_IVAN.send(:manifest_json))['@graph'].each do |tc|
   next if options[:num] && tc["num"] != options[:num]
 
-  STDOUT.write "#{tc["num"]}: "
-  uri = crazy_ivan.send(:get_test_url, options[:version], options[:host_language], tc["num"])
-  content = crazy_ivan.send(:get_test_content, options[:version], options[:host_language], tc["num"])
-  sparql = crazy_ivan.send(:get_test_content, options[:version], options[:host_language], tc["num"], "sparql")
+  versions = if options[:version] == 'all'
+    tc['versions'] - ['rdfa1.0']  # Run against all versions except RDFa 1.0
+  elsif tc['versions'].include?(options[:version])
+    [options[:version]] # Run against specified version
+  else
+    [] # Don't run at all
+  end
 
-  runner_args = ARGV[0].split(/\s+/) + [
-    "--host-language", options[:host_language],
-    "--version", options[:version],
-    "--uri", uri
-  ]
-  
-  if tc["queryParam"]
-    tc["queryParam"].each do |p|
-      arg, value = p.split('=')
-      runner_args << "--#{arg}"
-      runner_args << value if value
+  # Run test against specified versions and host languages
+  versions.each do |version|
+    host_languages = if version.include?('-') && options[:host_language] == 'all'
+      tc['hostLanguages'] & ['xml'] # Just XML
+    elsif options[:host_language] == 'all'
+      tc['hostLanguages'] - ['html4']
+    elsif tc['hostLanguages'].include?(options[:host_language])
+      [options[:host_language]]
+    else
+      [] # Don't run at all
+    end
+
+    host_languages.each do |host_language|
+      run_tc(tc, runner, options.merge(:version => version, :host_language => host_language))
     end
   end
+end
 
-  if options[:verbose]
-    STDOUT.puts ":\n#{content}\n"
-    STDOUT.puts "query: \n#{sparql}\n"
-    STDOUT.puts "exec:\n#{runner_args.join(' ')}\n"
+# Output summary information
+if options[:earl] || !options[:num] || options[:version] == 'all' || options[:host_language] == 'all'
+  puts "Results:"
+  RESULTS.each do |version, host_languages|
+    host_languages.each do |host_language, individual|
+      puts "#{host_language}+#{version}: #{individual.values.reduce(0) {|m, v| v ? m + 1 : m}}/#{individual.values.length}"
+    end
   end
+end
 
-  if ARGV[0].index("http://") == 0
-    result = crazy_ivan.send(:perform_test_case, options[:version], options[:host_language], tc['num'], ARGV[0], tc["expectedResults"], :quiet => !options[:verbose])
-    STDOUT.write "result: " if options[:verbose]
-    STDOUT.puts result ? "passed" : "failed"
-  else
-    # Open runner command and retrieve passed/failed state
-    IO.popen(runner_args, "r+") do |io|
-      io.write(content)
-      io.close_write
-      out = io.read
-      graph = RDF::Graph.new << RDF::Turtle::Reader.new(out, :base_uri => uri)
-      result = SPARQL.execute(sparql, graph)
-      STDOUT.write "result: " if options[:verbose]
-      expected = tc["expectedResults"] ? RDF::Literal::TRUE : RDF::Literal::FALSE
-      STDOUT.puts result == expected ? "passed" : "failed"
+# Output EARL report
+if options[:earl]
+  options[:output].puts earl_preamble
+  RESULTS.each do |version, host_languages|
+    host_languages.each do |host_language, individual|
+      options[:output].puts "\n# Results for #{host_language}+#{version}"
+      individual.each do |num, result|
+        options[:output].puts earl_report(options[:processor], version, host_language, num, result)
+      end
     end
   end
 end

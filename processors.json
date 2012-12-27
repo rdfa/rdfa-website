@@ -39,12 +39,12 @@
   },
   "RDF::RDFa::Parser (Perl)": {
     "endpoint": "http://buzzword.org.uk/2012/rdfa-distiller/?format=rdfxml&url=",
-    "doap": "tag:buzzword.org.uk,2012:RDF-RDFa-Parser:xt",
+    "doap": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
     "doap_url": "/earl-reports/rdf-rdfa-parser-doap.ttl"
   },
   "Semargl (Java)": {
     "endpoint": "http://demo.semarglproject.org/process?uri=",
-    "doap": "http://demo.semarglproject.org/"
+    "doap": "http://semarglproject.org"
   },
   "other":  {
     "endpoint": "",
