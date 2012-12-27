@@ -459,12 +459,13 @@ class EARL
   # @return [String]
   def tc_turtle(desc)
     %(<#{desc['@id']}> a #{[desc['@type']].flatten.join(', ')};
-      dc:title "#{desc['title']}";
       mf:name "#{desc['title']}";
-      dc:description """#{desc['description']}""";
       mf:action [ a qt:QueryTest; qt:queryForm qt:QueryAsk;
         qt:query <#{desc['testAction']['query']}>;
         qt:data <#{desc['testAction']['data']}> ];
+      mf:result #{desc['testResult']};
+      dc:title "#{desc['title']}";
+      dc:description """#{desc['description']}""";
       earl:assertions (#{desc['assertions'].map {|a| as_turtle(a)}.join("")}
       ) .
 
