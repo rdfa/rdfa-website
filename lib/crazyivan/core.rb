@@ -355,7 +355,7 @@ module CrazyIvan
       # Short cut document text
       prefixes = {}
       doc_text = get_test_content(version, suite, num)
-      doc_graph = RDF::Graph.new << RDF::RDFa::Reader.new(doc_text, :format => :rdfa, :prefixes => prefixes)
+      doc_graph = RDF::Graph.new << RDF::RDFa::Reader.new(doc_text, :base_uri => doc_url, :format => :rdfa, :prefixes => prefixes)
 
       # Turtle version of default graph
       ttl_text = doc_graph.dump(:turtle, :prefixes => prefixes, :base_uri => doc_url)
