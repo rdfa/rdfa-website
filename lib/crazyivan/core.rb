@@ -452,8 +452,8 @@ module CrazyIvan
       format_opts[:content_type] = extracted.content_type if extracted.content_type
 
       graph = RDF::Graph.new << RDF::Reader.for(format_opts).
-        new(extracted, :base_url => get_test_url(version, suite, num))
-      puts "graph:#{graph.dump(:ttl)}" unless options[:quiet]
+        new(extracted, :base_uri => get_test_url(version, suite, num))
+      puts "graph:#{graph.dump(:ntriples)}" unless options[:quiet]
 
       # Get the SPARQL query
       sparql_query = get_test_content(version, suite, num, 'sparql')
