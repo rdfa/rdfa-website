@@ -83,7 +83,7 @@ def run_tc(tc, runner, options)
         io.close_write
         out = io.read
         graph = RDF::Graph.new << RDF::Turtle::Reader.new(out, :base_uri => uri)
-        puts "extracted:\n" + graph.dump(:ttl, :standard_prefixes => true)
+        puts "extracted:\n" + graph.dump(:ttl, :standard_prefixes => true) if options[:verbose]
         result = SPARQL.execute(sparql, graph)
         expected = tc["expectedResults"] ? RDF::Literal::TRUE : RDF::Literal::FALSE
         result == expected
