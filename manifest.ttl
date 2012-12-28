@@ -2554,5 +2554,20 @@ white   space
    test:classification test:required;
    test:informationResourceInput <test-cases/0318.html>;
    test:informationResourceResults <test-cases/0318.sparql>;
-   test:purpose "If the value (of @vocab) is empty, then the local default vocabulary must be reset to the Host Language defined default .";
+   test:purpose "If the value (of @vocab) is empty, then the local default vocabulary must be reset to the Host Language defined default.";
    test:specificationReference "RDFa Core 1.1, section 7.5 step 2" .
+
+<test-cases/0319> dc:contributor "Gregg Kellogg";
+   dc:title "Relative @profile";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
+   test:classification test:required;
+   test:informationResourceInput <test-cases/0319.html>;
+   test:informationResourceResults <test-cases/0319.sparql>;
+   test:purpose """
+     Relative IRI's used with @prefix do not resolve against the document base; they are not processed in any way.
+     However, the returned document does have a base, so when queried, it will seem to have
+     the same base as the original document.
+    """;
+   test:specificationReference "RDFa Core 1.1, section 7.5 step 3" .

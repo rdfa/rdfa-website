@@ -1,0 +1,5 @@
+# Checks to see that prefixes with relative IRIs are not resolved to the document base
+# It is resolved against the document origin, though, when the result is parsed
+ASK WHERE {
+  ?s <$TCPATH/relative/iri#prop> ?o; <$TCPATH/relative/uri#prop> ?o .
+}
