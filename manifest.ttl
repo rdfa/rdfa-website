@@ -2571,3 +2571,13 @@ white   space
      the same base as the original document.
     """;
    test:specificationReference "RDFa Core 1.1, section 7.5 step 3" .
+<test-cases/0320> dc:contributor "Gregg Kellogg";
+   dc:title "@property binds to @href";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
+   test:classification test:required;
+   test:informationResourceInput <test-cases/0320.html>;
+   test:informationResourceResults <test-cases/0320.sparql>;
+   test:purpose "Given @property with @href and @src, @href is used as object and sets new subject.";
+   test:specificationReference "RDFa Core 1.1, section 7.5 step 5" .
