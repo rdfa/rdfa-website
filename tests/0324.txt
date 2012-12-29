@@ -1,0 +1,9 @@
+<head></head>
+<body>
+  <div typeof="schema:Person">
+    <link property="rdfa:ref" resource="_:a"/>
+    <link property="rdfa:ref" resource="_:b"/>
+  </div>
+  <p resource="_:a" typeof="rdfa:Prototype">Name: <span property="schema:name">Amanda</span></p>
+  <p resource="_:b" typeof="rdfa:Prototype"><span property="schema:band">Jazz Band</span></p>
+</body>

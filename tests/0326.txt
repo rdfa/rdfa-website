@@ -1,0 +1,10 @@
+<head>
+  <base href="http://example.com/"/>
+</head>
+<body vocab="http://schema.org/">
+  <div resource="#referencing" typeof="Person">
+    <link property="rdfa:ref" resource="#referenced"/>
+  </div>
+  <p resource="#referenced" typeof="rdfa:Prototype">Name: <span property="name">Bella</span></p>
+  <p resource="#unreferenced" typeof="rdfa:Prototype">Name: <span property="name">Lola</span></p>
+</body>

@@ -96,6 +96,7 @@ def run_tc(tc, runner, options)
     end
   rescue
     STDOUT.write "(fault) "
+    STDOUT.write $!.message if options[:verbose]
     false
   end
 
