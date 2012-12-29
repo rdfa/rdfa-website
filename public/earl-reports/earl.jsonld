@@ -18872,7 +18872,7 @@
             "earl:TestCase",
             "mf:QueryEvaluationTest"
           ],
-          "title": "Test 0269: @property appearing on the html element yields the base as the subject, also with @content",
+          "title": "Test 0269: Use of @property in HEAD without explicit subject",
           "description": "@property appearing on the head element gets the subject from parent, also with @content",
           "testAction": {
             "@type": "qt:QueryTest",
@@ -23041,7 +23041,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -23169,7 +23169,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:failed"
               }
             },
             {
@@ -23297,7 +23297,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -23342,6 +23342,646 @@
               "result": {
                 "@type": "earl:TestResult",
                 "outcome": "earl:passed"
+              }
+            }
+          ]
+        },
+        {
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0316",
+          "@type": [
+            "earl:TestCase",
+            "mf:QueryEvaluationTest"
+          ],
+          "title": "Test 0316: @property and @typeof with incomplete triples (@href variant)",
+          "description": "In HTML5, an element with @property and @typeof with incomplete triples sets uses typed resource (@href variant).",
+          "testAction": {
+            "@type": "qt:QueryTest",
+            "queryForm": "qt:QueryAsk",
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0316.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0316.html"
+          },
+          "testResult": true,
+          "assertions": [
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0316",
+              "subject": "http://any23.org/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0316",
+              "subject": "https://github.com/niklasl/clj-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0316",
+              "subject": "http://www.aelius.com/njh/easyrdf/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0316",
+              "subject": "http://code.google.com/p/green-turtle/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0316",
+              "subject": "https://github.com/shellac/java-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0316",
+              "subject": "https://github.com/rdfa/librdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0316",
+              "subject": "http://www.w3.org/2012/pyRdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0316",
+              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0316",
+              "subject": "http://rubygems.org/gems/rdf-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0316",
+              "subject": "http://semarglproject.org",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            }
+          ]
+        },
+        {
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0317",
+          "@type": [
+            "earl:TestCase",
+            "mf:QueryEvaluationTest"
+          ],
+          "title": "Test 0317: @datatype inhibits new @property behavior",
+          "description": "Using @datatype on the same element as @property forces the object to be a literal value.",
+          "testAction": {
+            "@type": "qt:QueryTest",
+            "queryForm": "qt:QueryAsk",
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0317.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0317.html"
+          },
+          "testResult": true,
+          "assertions": [
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0317",
+              "subject": "http://any23.org/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0317",
+              "subject": "https://github.com/niklasl/clj-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0317",
+              "subject": "http://www.aelius.com/njh/easyrdf/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0317",
+              "subject": "http://code.google.com/p/green-turtle/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0317",
+              "subject": "https://github.com/shellac/java-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0317",
+              "subject": "https://github.com/rdfa/librdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0317",
+              "subject": "http://www.w3.org/2012/pyRdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0317",
+              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0317",
+              "subject": "http://rubygems.org/gems/rdf-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0317",
+              "subject": "http://semarglproject.org",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            }
+          ]
+        },
+        {
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0318",
+          "@type": [
+            "earl:TestCase",
+            "mf:QueryEvaluationTest"
+          ],
+          "title": "Test 0318: Setting @vocab to empty strings removes default vocabulary",
+          "description": "If the value (of @vocab) is empty, then the local default vocabulary must be reset to the Host Language defined default.",
+          "testAction": {
+            "@type": "qt:QueryTest",
+            "queryForm": "qt:QueryAsk",
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0318.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0318.html"
+          },
+          "testResult": true,
+          "assertions": [
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0318",
+              "subject": "http://any23.org/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0318",
+              "subject": "https://github.com/niklasl/clj-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0318",
+              "subject": "http://www.aelius.com/njh/easyrdf/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0318",
+              "subject": "http://code.google.com/p/green-turtle/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0318",
+              "subject": "https://github.com/shellac/java-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0318",
+              "subject": "https://github.com/rdfa/librdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:failed"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0318",
+              "subject": "http://www.w3.org/2012/pyRdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0318",
+              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0318",
+              "subject": "http://rubygems.org/gems/rdf-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0318",
+              "subject": "http://semarglproject.org",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            }
+          ]
+        },
+        {
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0319",
+          "@type": [
+            "earl:TestCase",
+            "mf:QueryEvaluationTest"
+          ],
+          "title": "Test 0319: Relative @profile",
+          "description": "Relative IRI's used with @prefix do not resolve against the document base; they are not processed in any way. However, the returned document does have a base, so when queried, it will seem to have the same base as the original document.",
+          "testAction": {
+            "@type": "qt:QueryTest",
+            "queryForm": "qt:QueryAsk",
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0319.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0319.html"
+          },
+          "testResult": true,
+          "assertions": [
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0319",
+              "subject": "http://any23.org/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0319",
+              "subject": "https://github.com/niklasl/clj-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0319",
+              "subject": "http://www.aelius.com/njh/easyrdf/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0319",
+              "subject": "http://code.google.com/p/green-turtle/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0319",
+              "subject": "https://github.com/shellac/java-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0319",
+              "subject": "https://github.com/rdfa/librdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:failed"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0319",
+              "subject": "http://www.w3.org/2012/pyRdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0319",
+              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0319",
+              "subject": "http://rubygems.org/gems/rdf-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0319",
+              "subject": "http://semarglproject.org",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            }
+          ]
+        },
+        {
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0320",
+          "@type": [
+            "earl:TestCase",
+            "mf:QueryEvaluationTest"
+          ],
+          "title": "Test 0320: @property binds to @href",
+          "description": "Given @property with @href and @src, @href is used as object and sets new subject.",
+          "testAction": {
+            "@type": "qt:QueryTest",
+            "queryForm": "qt:QueryAsk",
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0320.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0320.html"
+          },
+          "testResult": true,
+          "assertions": [
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0320",
+              "subject": "http://any23.org/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0320",
+              "subject": "https://github.com/niklasl/clj-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0320",
+              "subject": "http://www.aelius.com/njh/easyrdf/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0320",
+              "subject": "http://code.google.com/p/green-turtle/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0320",
+              "subject": "https://github.com/shellac/java-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0320",
+              "subject": "https://github.com/rdfa/librdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0320",
+              "subject": "http://www.w3.org/2012/pyRdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0320",
+              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0320",
+              "subject": "http://rubygems.org/gems/rdf-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0320",
+              "subject": "http://semarglproject.org",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
               }
             }
           ]
@@ -27281,7 +27921,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -27425,7 +28065,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -27553,7 +28193,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -27681,7 +28321,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -27809,7 +28449,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -27937,7 +28577,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -28065,7 +28705,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -28193,7 +28833,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -28321,7 +28961,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -28449,7 +29089,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -28577,7 +29217,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -28705,7 +29345,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -28833,7 +29473,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -28961,7 +29601,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -29089,7 +29729,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -29217,7 +29857,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -29345,7 +29985,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -29473,7 +30113,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -29601,7 +30241,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -29729,7 +30369,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -29857,7 +30497,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -29985,7 +30625,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -30113,7 +30753,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -30241,7 +30881,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -30369,7 +31009,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -30497,7 +31137,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -30625,7 +31265,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -30753,7 +31393,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -30881,7 +31521,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -31009,7 +31649,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -31137,7 +31777,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -31265,7 +31905,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -31393,7 +32033,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -31521,7 +32161,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -31649,7 +32289,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -31777,7 +32417,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -31905,7 +32545,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -32033,7 +32673,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -32161,7 +32801,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -32289,7 +32929,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -32417,7 +33057,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -32545,7 +33185,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -32673,7 +33313,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -32801,7 +33441,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -32929,7 +33569,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -33057,7 +33697,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -33185,7 +33825,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -33313,7 +33953,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -33441,7 +34081,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -33569,7 +34209,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -33697,7 +34337,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -33825,7 +34465,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -33953,7 +34593,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -34081,7 +34721,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -34209,7 +34849,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -34337,7 +34977,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -34465,7 +35105,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -34593,7 +35233,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -34721,7 +35361,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -34849,7 +35489,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -34977,7 +35617,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -35105,7 +35745,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -35233,7 +35873,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -35361,7 +36001,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -35489,7 +36129,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -35617,7 +36257,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -35745,7 +36385,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -35873,7 +36513,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -36001,7 +36641,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -36129,7 +36769,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -36257,7 +36897,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -36385,7 +37025,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -36513,7 +37153,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -36641,7 +37281,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -36769,7 +37409,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -36897,7 +37537,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -37025,7 +37665,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -37153,7 +37793,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -37281,7 +37921,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -37409,7 +38049,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -37537,7 +38177,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -37665,7 +38305,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -37793,7 +38433,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -37921,7 +38561,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -38049,7 +38689,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -38177,7 +38817,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -38305,7 +38945,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -38433,7 +39073,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -38561,7 +39201,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -38689,7 +39329,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -38817,7 +39457,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -38945,7 +39585,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -39073,7 +39713,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -39201,7 +39841,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -39329,7 +39969,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -39457,7 +40097,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -39585,7 +40225,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -39713,7 +40353,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -39841,7 +40481,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -39969,7 +40609,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -40097,7 +40737,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -40225,7 +40865,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -40353,7 +40993,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -40481,7 +41121,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -40609,7 +41249,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -40737,7 +41377,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -40865,7 +41505,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -40993,7 +41633,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -41121,7 +41761,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -41249,7 +41889,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -41377,7 +42017,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -41505,7 +42145,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -41633,7 +42273,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -41761,7 +42401,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -41889,7 +42529,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -42017,7 +42657,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -42145,7 +42785,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -42273,7 +42913,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -42401,7 +43041,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -42529,7 +43169,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -42657,7 +43297,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -42785,7 +43425,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -42913,7 +43553,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -43041,7 +43681,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -43169,7 +43809,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -43297,7 +43937,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -43425,7 +44065,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -43553,7 +44193,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -43681,7 +44321,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -43809,7 +44449,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -43937,7 +44577,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -44065,7 +44705,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -44193,7 +44833,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -44321,7 +44961,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -44449,7 +45089,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -44577,7 +45217,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -44705,7 +45345,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -44833,7 +45473,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -44961,7 +45601,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -45089,7 +45729,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -45217,7 +45857,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -45345,7 +45985,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -45473,7 +46113,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -45601,7 +46241,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -45729,7 +46369,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -45857,7 +46497,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -45985,7 +46625,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -46113,7 +46753,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:failed"
               }
             },
             {
@@ -46241,7 +46881,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -46369,7 +47009,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -46497,7 +47137,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -46625,7 +47265,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -46753,7 +47393,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -46881,7 +47521,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -47009,7 +47649,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -47137,7 +47777,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -47265,7 +47905,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -47393,7 +48033,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -47521,7 +48161,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -47649,7 +48289,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -47704,7 +48344,7 @@
             "earl:TestCase",
             "mf:QueryEvaluationTest"
           ],
-          "title": "Test 0269: @property appearing on the html element yields the base as the subject, also with @content",
+          "title": "Test 0269: Use of @property in HEAD without explicit subject",
           "description": "@property appearing on the head element gets the subject from parent, also with @content",
           "testAction": {
             "@type": "qt:QueryTest",
@@ -47777,7 +48417,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -47905,7 +48545,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -48033,7 +48673,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -48161,7 +48801,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -48289,7 +48929,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -48417,7 +49057,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -48545,7 +49185,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -48673,7 +49313,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:failed"
               }
             },
             {
@@ -48801,7 +49441,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -48929,7 +49569,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:failed"
               }
             },
             {
@@ -49057,7 +49697,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -49185,7 +49825,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -49313,7 +49953,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -49441,7 +50081,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -49569,7 +50209,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:failed"
               }
             },
             {
@@ -49697,7 +50337,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -49742,6 +50382,390 @@
               "result": {
                 "@type": "earl:TestResult",
                 "outcome": "earl:passed"
+              }
+            }
+          ]
+        },
+        {
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0318",
+          "@type": [
+            "earl:TestCase",
+            "mf:QueryEvaluationTest"
+          ],
+          "title": "Test 0318: Setting @vocab to empty strings removes default vocabulary",
+          "description": "If the value (of @vocab) is empty, then the local default vocabulary must be reset to the Host Language defined default.",
+          "testAction": {
+            "@type": "qt:QueryTest",
+            "queryForm": "qt:QueryAsk",
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0318.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0318.xhtml"
+          },
+          "testResult": true,
+          "assertions": [
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0318",
+              "subject": "http://any23.org/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0318",
+              "subject": "https://github.com/niklasl/clj-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0318",
+              "subject": "http://www.aelius.com/njh/easyrdf/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0318",
+              "subject": "http://code.google.com/p/green-turtle/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0318",
+              "subject": "https://github.com/shellac/java-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0318",
+              "subject": "https://github.com/rdfa/librdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:failed"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0318",
+              "subject": "http://www.w3.org/2012/pyRdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0318",
+              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0318",
+              "subject": "http://rubygems.org/gems/rdf-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0318",
+              "subject": "http://semarglproject.org",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            }
+          ]
+        },
+        {
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0319",
+          "@type": [
+            "earl:TestCase",
+            "mf:QueryEvaluationTest"
+          ],
+          "title": "Test 0319: Relative @profile",
+          "description": "Relative IRI's used with @prefix do not resolve against the document base; they are not processed in any way. However, the returned document does have a base, so when queried, it will seem to have the same base as the original document.",
+          "testAction": {
+            "@type": "qt:QueryTest",
+            "queryForm": "qt:QueryAsk",
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0319.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0319.xhtml"
+          },
+          "testResult": true,
+          "assertions": [
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0319",
+              "subject": "http://any23.org/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0319",
+              "subject": "https://github.com/niklasl/clj-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0319",
+              "subject": "http://www.aelius.com/njh/easyrdf/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0319",
+              "subject": "http://code.google.com/p/green-turtle/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0319",
+              "subject": "https://github.com/shellac/java-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0319",
+              "subject": "https://github.com/rdfa/librdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:failed"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0319",
+              "subject": "http://www.w3.org/2012/pyRdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0319",
+              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0319",
+              "subject": "http://rubygems.org/gems/rdf-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0319",
+              "subject": "http://semarglproject.org",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            }
+          ]
+        },
+        {
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0320",
+          "@type": [
+            "earl:TestCase",
+            "mf:QueryEvaluationTest"
+          ],
+          "title": "Test 0320: @property binds to @href",
+          "description": "Given @property with @href and @src, @href is used as object and sets new subject.",
+          "testAction": {
+            "@type": "qt:QueryTest",
+            "queryForm": "qt:QueryAsk",
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0320.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/0320.xhtml"
+          },
+          "testResult": true,
+          "assertions": [
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0320",
+              "subject": "http://any23.org/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0320",
+              "subject": "https://github.com/niklasl/clj-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0320",
+              "subject": "http://www.aelius.com/njh/easyrdf/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0320",
+              "subject": "http://code.google.com/p/green-turtle/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0320",
+              "subject": "https://github.com/shellac/java-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0320",
+              "subject": "https://github.com/rdfa/librdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0320",
+              "subject": "http://www.w3.org/2012/pyRdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0320",
+              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0320",
+              "subject": "http://rubygems.org/gems/rdf-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0320",
+              "subject": "http://semarglproject.org",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
               }
             }
           ]
@@ -62819,262 +63843,6 @@
           ]
         },
         {
-          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0202",
-          "@type": [
-            "earl:TestCase",
-            "mf:QueryEvaluationTest"
-          ],
-          "title": "Test 0202: Tests to ensure @xml:base used in SVG",
-          "description": "Tests to make sure that @xml:base is used in SVG+RDFa, XML+RDFa.",
-          "testAction": {
-            "@type": "qt:QueryTest",
-            "queryForm": "qt:QueryAsk",
-            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0202.sparql",
-            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0202.xhtml"
-          },
-          "testResult": true,
-          "assertions": [
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0202",
-              "subject": "http://any23.org/",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0202",
-              "subject": "https://github.com/niklasl/clj-rdfa",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0202",
-              "subject": "http://www.aelius.com/njh/easyrdf/",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0202",
-              "subject": "http://code.google.com/p/green-turtle/",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0202",
-              "subject": "https://github.com/shellac/java-rdfa",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0202",
-              "subject": "https://github.com/rdfa/librdfa",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:failed"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0202",
-              "subject": "http://www.w3.org/2012/pyRdfa",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0202",
-              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0202",
-              "subject": "http://rubygems.org/gems/rdf-rdfa",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0202",
-              "subject": "http://semarglproject.org",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            }
-          ]
-        },
-        {
-          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0203",
-          "@type": [
-            "earl:TestCase",
-            "mf:QueryEvaluationTest"
-          ],
-          "title": "Test 0203: Tests to ensure @xml:base, XML+RDFa used in non-root elements in SVG",
-          "description": "Tests to make sure that @xml:base is used in non-root elements in SVG+RDFa, XML+RDFa.",
-          "testAction": {
-            "@type": "qt:QueryTest",
-            "queryForm": "qt:QueryAsk",
-            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0203.sparql",
-            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0203.xhtml"
-          },
-          "testResult": true,
-          "assertions": [
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0203",
-              "subject": "http://any23.org/",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0203",
-              "subject": "https://github.com/niklasl/clj-rdfa",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0203",
-              "subject": "http://www.aelius.com/njh/easyrdf/",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0203",
-              "subject": "http://code.google.com/p/green-turtle/",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0203",
-              "subject": "https://github.com/shellac/java-rdfa",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0203",
-              "subject": "https://github.com/rdfa/librdfa",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:failed"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0203",
-              "subject": "http://www.w3.org/2012/pyRdfa",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0203",
-              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0203",
-              "subject": "http://rubygems.org/gems/rdf-rdfa",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            },
-            {
-              "@type": "earl:Assertion",
-              "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0203",
-              "subject": "http://semarglproject.org",
-              "mode": "earl:automatic",
-              "result": {
-                "@type": "earl:TestResult",
-                "outcome": "earl:untested"
-              }
-            }
-          ]
-        },
-        {
           "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0206",
           "@type": [
             "earl:TestCase",
@@ -68840,7 +69608,7 @@
             "earl:TestCase",
             "mf:QueryEvaluationTest"
           ],
-          "title": "Test 0269: @property appearing on the html element yields the base as the subject, also with @content",
+          "title": "Test 0269: Use of @property in HEAD without explicit subject",
           "description": "@property appearing on the head element gets the subject from parent, also with @content",
           "testAction": {
             "@type": "qt:QueryTest",
@@ -73009,7 +73777,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -73137,7 +73905,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:failed"
               }
             },
             {
@@ -73265,7 +74033,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -73310,6 +74078,646 @@
               "result": {
                 "@type": "earl:TestResult",
                 "outcome": "earl:passed"
+              }
+            }
+          ]
+        },
+        {
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0316",
+          "@type": [
+            "earl:TestCase",
+            "mf:QueryEvaluationTest"
+          ],
+          "title": "Test 0316: @property and @typeof with incomplete triples (@href variant)",
+          "description": "In HTML5, an element with @property and @typeof with incomplete triples sets uses typed resource (@href variant).",
+          "testAction": {
+            "@type": "qt:QueryTest",
+            "queryForm": "qt:QueryAsk",
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0316.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0316.xhtml"
+          },
+          "testResult": true,
+          "assertions": [
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0316",
+              "subject": "http://any23.org/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0316",
+              "subject": "https://github.com/niklasl/clj-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0316",
+              "subject": "http://www.aelius.com/njh/easyrdf/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0316",
+              "subject": "http://code.google.com/p/green-turtle/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0316",
+              "subject": "https://github.com/shellac/java-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0316",
+              "subject": "https://github.com/rdfa/librdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0316",
+              "subject": "http://www.w3.org/2012/pyRdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0316",
+              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0316",
+              "subject": "http://rubygems.org/gems/rdf-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0316",
+              "subject": "http://semarglproject.org",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            }
+          ]
+        },
+        {
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0317",
+          "@type": [
+            "earl:TestCase",
+            "mf:QueryEvaluationTest"
+          ],
+          "title": "Test 0317: @datatype inhibits new @property behavior",
+          "description": "Using @datatype on the same element as @property forces the object to be a literal value.",
+          "testAction": {
+            "@type": "qt:QueryTest",
+            "queryForm": "qt:QueryAsk",
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0317.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0317.xhtml"
+          },
+          "testResult": true,
+          "assertions": [
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0317",
+              "subject": "http://any23.org/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0317",
+              "subject": "https://github.com/niklasl/clj-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0317",
+              "subject": "http://www.aelius.com/njh/easyrdf/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0317",
+              "subject": "http://code.google.com/p/green-turtle/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0317",
+              "subject": "https://github.com/shellac/java-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0317",
+              "subject": "https://github.com/rdfa/librdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0317",
+              "subject": "http://www.w3.org/2012/pyRdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0317",
+              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0317",
+              "subject": "http://rubygems.org/gems/rdf-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0317",
+              "subject": "http://semarglproject.org",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            }
+          ]
+        },
+        {
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0318",
+          "@type": [
+            "earl:TestCase",
+            "mf:QueryEvaluationTest"
+          ],
+          "title": "Test 0318: Setting @vocab to empty strings removes default vocabulary",
+          "description": "If the value (of @vocab) is empty, then the local default vocabulary must be reset to the Host Language defined default.",
+          "testAction": {
+            "@type": "qt:QueryTest",
+            "queryForm": "qt:QueryAsk",
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0318.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0318.xhtml"
+          },
+          "testResult": true,
+          "assertions": [
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0318",
+              "subject": "http://any23.org/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0318",
+              "subject": "https://github.com/niklasl/clj-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0318",
+              "subject": "http://www.aelius.com/njh/easyrdf/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0318",
+              "subject": "http://code.google.com/p/green-turtle/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0318",
+              "subject": "https://github.com/shellac/java-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0318",
+              "subject": "https://github.com/rdfa/librdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:failed"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0318",
+              "subject": "http://www.w3.org/2012/pyRdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0318",
+              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0318",
+              "subject": "http://rubygems.org/gems/rdf-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0318",
+              "subject": "http://semarglproject.org",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            }
+          ]
+        },
+        {
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0319",
+          "@type": [
+            "earl:TestCase",
+            "mf:QueryEvaluationTest"
+          ],
+          "title": "Test 0319: Relative @profile",
+          "description": "Relative IRI's used with @prefix do not resolve against the document base; they are not processed in any way. However, the returned document does have a base, so when queried, it will seem to have the same base as the original document.",
+          "testAction": {
+            "@type": "qt:QueryTest",
+            "queryForm": "qt:QueryAsk",
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0319.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0319.xhtml"
+          },
+          "testResult": true,
+          "assertions": [
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0319",
+              "subject": "http://any23.org/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0319",
+              "subject": "https://github.com/niklasl/clj-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0319",
+              "subject": "http://www.aelius.com/njh/easyrdf/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0319",
+              "subject": "http://code.google.com/p/green-turtle/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0319",
+              "subject": "https://github.com/shellac/java-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0319",
+              "subject": "https://github.com/rdfa/librdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:failed"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0319",
+              "subject": "http://www.w3.org/2012/pyRdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0319",
+              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0319",
+              "subject": "http://rubygems.org/gems/rdf-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0319",
+              "subject": "http://semarglproject.org",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            }
+          ]
+        },
+        {
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0320",
+          "@type": [
+            "earl:TestCase",
+            "mf:QueryEvaluationTest"
+          ],
+          "title": "Test 0320: @property binds to @href",
+          "description": "Given @property with @href and @src, @href is used as object and sets new subject.",
+          "testAction": {
+            "@type": "qt:QueryTest",
+            "queryForm": "qt:QueryAsk",
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0320.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0320.xhtml"
+          },
+          "testResult": true,
+          "assertions": [
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0320",
+              "subject": "http://any23.org/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0320",
+              "subject": "https://github.com/niklasl/clj-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0320",
+              "subject": "http://www.aelius.com/njh/easyrdf/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0320",
+              "subject": "http://code.google.com/p/green-turtle/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0320",
+              "subject": "https://github.com/shellac/java-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0320",
+              "subject": "https://github.com/rdfa/librdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0320",
+              "subject": "http://www.w3.org/2012/pyRdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0320",
+              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0320",
+              "subject": "http://rubygems.org/gems/rdf-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0320",
+              "subject": "http://semarglproject.org",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
               }
             }
           ]
@@ -80065,7 +81473,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -85057,7 +86465,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -86520,7 +87928,7 @@
             "earl:TestCase",
             "mf:QueryEvaluationTest"
           ],
-          "title": "Test 0269: @property appearing on the html element yields the base as the subject, also with @content",
+          "title": "Test 0269: Use of @property in HEAD without explicit subject",
           "description": "@property appearing on the head element gets the subject from parent, also with @content",
           "testAction": {
             "@type": "qt:QueryTest",
@@ -88513,7 +89921,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:untested"
+                "outcome": "earl:passed"
               }
             },
             {
@@ -88558,6 +89966,390 @@
               "result": {
                 "@type": "earl:TestResult",
                 "outcome": "earl:passed"
+              }
+            }
+          ]
+        },
+        {
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0318",
+          "@type": [
+            "earl:TestCase",
+            "mf:QueryEvaluationTest"
+          ],
+          "title": "Test 0318: Setting @vocab to empty strings removes default vocabulary",
+          "description": "If the value (of @vocab) is empty, then the local default vocabulary must be reset to the Host Language defined default.",
+          "testAction": {
+            "@type": "qt:QueryTest",
+            "queryForm": "qt:QueryAsk",
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0318.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0318.xml"
+          },
+          "testResult": true,
+          "assertions": [
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0318",
+              "subject": "http://any23.org/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0318",
+              "subject": "https://github.com/niklasl/clj-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0318",
+              "subject": "http://www.aelius.com/njh/easyrdf/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0318",
+              "subject": "http://code.google.com/p/green-turtle/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0318",
+              "subject": "https://github.com/shellac/java-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0318",
+              "subject": "https://github.com/rdfa/librdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:failed"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0318",
+              "subject": "http://www.w3.org/2012/pyRdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0318",
+              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0318",
+              "subject": "http://rubygems.org/gems/rdf-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0318",
+              "subject": "http://semarglproject.org",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            }
+          ]
+        },
+        {
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0319",
+          "@type": [
+            "earl:TestCase",
+            "mf:QueryEvaluationTest"
+          ],
+          "title": "Test 0319: Relative @profile",
+          "description": "Relative IRI's used with @prefix do not resolve against the document base; they are not processed in any way. However, the returned document does have a base, so when queried, it will seem to have the same base as the original document.",
+          "testAction": {
+            "@type": "qt:QueryTest",
+            "queryForm": "qt:QueryAsk",
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0319.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0319.xml"
+          },
+          "testResult": true,
+          "assertions": [
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0319",
+              "subject": "http://any23.org/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0319",
+              "subject": "https://github.com/niklasl/clj-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0319",
+              "subject": "http://www.aelius.com/njh/easyrdf/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0319",
+              "subject": "http://code.google.com/p/green-turtle/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0319",
+              "subject": "https://github.com/shellac/java-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0319",
+              "subject": "https://github.com/rdfa/librdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:failed"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0319",
+              "subject": "http://www.w3.org/2012/pyRdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0319",
+              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0319",
+              "subject": "http://rubygems.org/gems/rdf-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0319",
+              "subject": "http://semarglproject.org",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            }
+          ]
+        },
+        {
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0320",
+          "@type": [
+            "earl:TestCase",
+            "mf:QueryEvaluationTest"
+          ],
+          "title": "Test 0320: @property binds to @href",
+          "description": "Given @property with @href and @src, @href is used as object and sets new subject.",
+          "testAction": {
+            "@type": "qt:QueryTest",
+            "queryForm": "qt:QueryAsk",
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0320.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/0320.xml"
+          },
+          "testResult": true,
+          "assertions": [
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0320",
+              "subject": "http://any23.org/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0320",
+              "subject": "https://github.com/niklasl/clj-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0320",
+              "subject": "http://www.aelius.com/njh/easyrdf/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0320",
+              "subject": "http://code.google.com/p/green-turtle/",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0320",
+              "subject": "https://github.com/shellac/java-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0320",
+              "subject": "https://github.com/rdfa/librdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:passed"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0320",
+              "subject": "http://www.w3.org/2012/pyRdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0320",
+              "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0320",
+              "subject": "http://rubygems.org/gems/rdf-rdfa",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
+              }
+            },
+            {
+              "@type": "earl:Assertion",
+              "assertedBy": "http://rdfa.info/test-suite/",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0320",
+              "subject": "http://semarglproject.org",
+              "mode": "earl:automatic",
+              "result": {
+                "@type": "earl:TestResult",
+                "outcome": "earl:untested"
               }
             }
           ]
@@ -88913,7 +90705,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:failed"
               }
             },
             {
@@ -89041,7 +90833,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:failed"
               }
             },
             {
@@ -89169,7 +90961,7 @@
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:failed"
               }
             },
             {
