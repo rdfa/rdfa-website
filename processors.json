@@ -24,7 +24,7 @@
     "doap_url": "/earl-reports/java-rdfa-doap.ttl"
   },
   "librdfa (C)": {
-    "endpoint": "http://rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py?uri=",
+    "endpoint": "http://librdfa.digitalbazaar.com/rdfa2rdf.py?uri=",
     "doap": "https://github.com/rdfa/librdfa",
     "doap_url": "/earl-reports/librdfa-doap.ttl"
   },

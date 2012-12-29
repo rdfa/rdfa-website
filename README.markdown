@@ -170,7 +170,7 @@ To add a processor to the test suite, add to the object definition in
 
     {
       "librdfa": {
-        "endpoint": "http://rdfa.digitalbazaar.com/librdfa/rdfa2rdf.py?uri=",
+        "endpoint": "http://librdfa.digitalbazaar.com/rdfa2rdf.py?uri=",
         "doap": "https://github.com/rdfa/librdfa"
       },
       "pyRdfa": {
