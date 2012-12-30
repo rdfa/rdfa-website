@@ -1,0 +1,8 @@
+<head></head>
+<body vocab="http://schema.org/">
+  <div typeof="Person">
+    <p>My name is <span property="name">Gregg</span></p>
+    <link property="rdfa:ref" resource="_:surname"/>
+  </div>
+  <p resource="_:surname" typeof="rdfa:Prototype">My name is <span property="name">Kellogg</span></p>
+</body>
