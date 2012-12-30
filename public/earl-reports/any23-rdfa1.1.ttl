@@ -7,6 +7,1928 @@
   doap:homepage <http://rdfa.info/>;
   doap:name "RDFa Test Suite" .
 
+# Results for html5+rdfa1.1
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0001>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0006>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0007>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0008>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0009>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0010>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0014>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0015>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0017>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0018>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0019>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0020>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0021>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0023>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0025>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0026>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0027>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0029>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0030>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0031>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0032>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0033>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0034>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0035>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0036>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0037>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0038>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0039>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0041>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0048>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0049>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0050>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0051>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0052>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0053>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0054>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0055>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0056>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0057>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0059>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0060>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0063>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0064>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0065>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0066>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0067>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0068>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0069>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0070>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0071>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0072>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0073>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0074>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0075>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0079>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0080>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0083>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0084>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0085>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0087>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0088>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0089>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0091>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0093>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0099>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0104>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0106>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0107>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0109>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0110>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0111>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0112>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0114>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0115>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0117>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0118>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0119>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0120>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0122>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0126>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0131>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0134>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0140>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0147>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0174>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0175>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0176>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0177>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0178>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0179>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0180>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0181>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0182>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0183>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0186>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0187>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0188>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0189>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0190>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0196>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0197>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0206>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0207>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0213>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0214>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0216>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0217>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0218>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0219>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0220>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0221>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0222>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0223>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0224>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0225>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0226>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0227>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0228>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0229>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0230>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0231>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0232>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0233>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0234>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0246>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0247>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0248>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0249>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0250>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0251>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0252>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0253>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0254>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0255>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0256>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0257>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0258>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0259>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0261>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0262>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0263>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0264>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0265>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0266>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0267>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0268>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0269>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0271>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0272>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0273>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0274>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0275>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0276>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0277>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0278>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0279>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0280>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0281>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0282>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0283>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0284>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0285>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0286>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0287>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0289>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0290>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0291>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0292>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0293>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0295>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0296>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0297>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0298>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0299>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0300>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0301>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0302>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0303>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0311>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0312>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0315>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0316>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0317>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0318>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0319>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0320>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
 # Results for xhtml1+rdfa1.1
 
 [ a earl:Assertion;
@@ -16,7 +1938,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -26,7 +1948,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -36,7 +1958,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -46,7 +1968,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -56,7 +1978,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -66,7 +1988,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -76,7 +1998,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -86,7 +2008,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -96,7 +2018,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -106,7 +2028,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -116,7 +2038,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -126,7 +2048,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -136,7 +2058,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -146,7 +2068,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -156,7 +2078,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -166,7 +2088,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -176,7 +2098,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -186,7 +2108,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -196,7 +2118,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -206,7 +2128,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -216,7 +2138,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -226,7 +2148,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -236,7 +2158,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -246,7 +2168,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -256,7 +2178,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -266,7 +2188,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -276,7 +2198,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -286,7 +2208,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -296,7 +2218,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -306,7 +2228,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -316,7 +2238,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -326,7 +2248,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -336,7 +2258,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -346,7 +2268,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -356,7 +2278,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -366,7 +2288,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -376,7 +2298,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -386,7 +2308,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -396,7 +2318,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -406,7 +2328,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -416,7 +2338,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -426,7 +2348,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -436,7 +2358,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -446,7 +2368,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -456,7 +2378,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -466,7 +2388,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -476,7 +2398,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -486,7 +2408,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -496,7 +2418,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -506,7 +2428,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -516,7 +2438,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -526,7 +2448,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -536,7 +2458,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -546,7 +2468,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -556,7 +2478,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -566,7 +2488,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -576,7 +2498,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -586,7 +2508,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -596,7 +2518,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -606,7 +2528,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -616,7 +2538,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -626,7 +2548,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -636,7 +2558,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -646,7 +2568,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -656,7 +2578,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -666,7 +2588,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -676,7 +2598,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -686,7 +2608,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -696,7 +2618,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -706,7 +2628,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -716,7 +2638,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -726,7 +2648,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -736,7 +2658,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -746,7 +2668,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -756,7 +2678,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -766,7 +2688,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -776,7 +2698,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -786,7 +2708,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -796,7 +2718,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -806,7 +2728,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -816,7 +2738,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -826,7 +2748,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -836,7 +2758,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -846,7 +2768,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -856,7 +2778,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -866,7 +2788,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -876,7 +2798,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -886,7 +2808,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -896,7 +2818,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -906,7 +2828,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -916,7 +2838,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -926,7 +2848,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -936,7 +2858,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -946,7 +2868,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -956,7 +2878,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -966,7 +2888,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -976,7 +2898,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -986,7 +2908,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -996,7 +2918,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1006,7 +2928,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1016,7 +2938,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1026,7 +2948,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1036,7 +2958,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1046,7 +2968,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1056,7 +2978,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1066,7 +2988,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1076,7 +2998,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1086,7 +3008,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1096,7 +3018,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1106,7 +3028,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1116,7 +3038,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1126,7 +3048,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1136,7 +3058,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1146,7 +3068,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1156,7 +3078,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1166,7 +3088,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1176,7 +3098,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1186,7 +3108,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1196,7 +3118,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1206,7 +3128,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1216,7 +3138,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1226,7 +3148,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1236,7 +3158,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1246,7 +3168,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1256,7 +3178,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1266,7 +3188,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1276,7 +3198,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1286,7 +3208,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1296,7 +3218,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1306,7 +3228,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1316,7 +3238,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1326,7 +3248,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1336,7 +3258,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1346,7 +3268,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1356,7 +3278,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1366,7 +3288,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1376,7 +3298,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1386,7 +3308,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1396,7 +3318,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1406,7 +3328,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1416,7 +3338,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1426,7 +3348,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1436,7 +3358,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1446,7 +3368,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1456,7 +3378,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1466,7 +3388,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1476,7 +3398,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1486,7 +3408,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1496,7 +3418,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1506,7 +3428,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1516,7 +3438,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1526,7 +3448,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1536,7 +3458,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1546,7 +3468,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1556,7 +3478,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1566,7 +3488,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1576,7 +3498,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1586,7 +3508,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1596,7 +3518,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1606,7 +3528,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1616,7 +3538,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1626,7 +3548,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1636,7 +3558,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1646,7 +3568,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1656,7 +3578,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1666,7 +3588,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1676,7 +3598,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1686,7 +3608,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1696,7 +3618,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1706,7 +3628,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1716,7 +3638,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1726,7 +3648,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1736,7 +3658,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1746,7 +3668,7 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
 [ a earl:Assertion;
@@ -1756,5 +3678,1967 @@
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
-    dc:date "2012-12-26T23:25:01-08:00"^^xsd:dateTime];
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0318>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0319>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0320>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+# Results for xhtml5+rdfa1.1
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0001>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0006>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0007>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0008>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0009>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0010>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0014>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0015>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0017>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0018>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0019>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0020>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0021>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0023>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0025>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0026>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0027>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0029>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0030>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0031>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0032>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0033>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0034>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0035>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0036>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0037>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0038>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0039>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0041>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0048>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0049>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0050>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0051>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0052>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0053>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0054>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0055>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0056>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0057>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0059>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0060>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0063>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0064>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0065>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0066>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0067>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0068>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0069>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0070>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0071>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0072>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0073>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0074>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0075>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0079>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0080>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0083>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0084>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0085>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0087>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0088>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0089>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0091>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0093>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0099>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0104>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0106>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0107>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0110>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0111>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0112>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0114>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0115>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0117>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0118>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0119>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0120>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0121>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0122>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0126>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0131>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0134>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0140>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0147>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0174>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0175>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0176>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0177>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0178>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0179>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0180>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0181>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0182>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0183>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0186>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0187>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0188>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0189>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0190>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0196>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0197>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0198>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0206>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0207>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0213>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0214>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0216>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0217>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0218>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0219>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0220>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0221>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0222>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0223>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0224>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0225>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0226>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0227>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0228>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0229>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0230>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0231>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0232>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0233>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0234>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0246>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0247>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0248>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0249>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0250>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0251>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0252>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0253>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0254>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0255>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0256>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0257>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0258>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0259>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0261>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0262>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0263>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0264>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0265>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0266>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0267>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0268>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0269>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0271>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0272>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0273>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0274>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0275>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0276>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0277>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0278>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0279>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0280>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0281>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0282>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0283>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0284>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0285>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0286>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0287>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0289>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0290>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0291>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0292>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0293>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0295>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0296>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0297>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0298>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0299>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0300>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0301>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0302>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0303>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0311>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0312>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0315>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0316>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0317>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0318>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0319>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0320>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:failed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion;
+  earl:assertedBy <http://rdfa.info/test-suite/>;
+  earl:subject <http://any23.org/>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326>;
+  earl:result [
+    a earl:TestResult;
+    earl:outcome earl:passed;
+    dc:date "2012-12-30T12:12:51-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .

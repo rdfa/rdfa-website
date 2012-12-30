@@ -32,7 +32,7 @@
     "endpoint": "http://www.w3.org/2012/pyRdfa/extract?uri=",
     "doap": "http://www.w3.org/2012/pyRdfa"
   },
-  "RDF Distiller (Ruby)": {
+  "RDF::RDFa (Ruby)": {
     "endpoint": "http://rdf.greggkellogg.net/distiller?raw=true&in_fmt=rdfa&uri=",
     "doap": "http://rubygems.org/gems/rdf-rdfa",
     "doap_url": "/earl-reports/rdf.rb-doap.ttl"

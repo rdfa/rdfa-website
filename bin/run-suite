@@ -165,9 +165,9 @@ runner = ARGV[0]
 
 # If we're running from a processor definition, retrieve necessary information
 processors = ::JSON.load(File.read(File.expand_path("../../processors.json", __FILE__)))
-if processors.has_key?(runner)
-  options[:processor] ||= processors[runner]['doap']
-  runner = processors[runner]['endpoint']
+if key = processors.keys.detect {|k| k.index("#{runner} (")}
+  options[:processor] ||= processors[key]['doap']
+  runner = processors[key]['endpoint']
 elsif options[:earl] && !options[:processor]
   raise "Missing processor DOAP IRI"
 end
