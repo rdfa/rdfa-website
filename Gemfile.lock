@@ -17,9 +17,9 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-rdfa.git
-  revision: 119c3aa01174250b0f2cbd38c3bb959d1d32784a
+  revision: 7d9974fc2ec32986d6163697a47fe5b5e443af25
   specs:
-    rdf-rdfa (0.3.18)
+    rdf-rdfa (0.3.19)
       haml (>= 3.1.7)
       htmlentities (>= 4.3.1)
       rdf (>= 0.3.11)
@@ -34,13 +34,13 @@ GEM
     columnize (0.3.6)
     cssmin (1.0.2)
     curb (0.8.3)
-    debugger (1.2.2)
+    debugger (1.2.3)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.1.1)
       debugger-ruby_core_source (~> 1.1.5)
     debugger-linecache (1.1.2)
       debugger-ruby_core_source (>= 1.1.1)
-    debugger-ruby_core_source (1.1.5)
+    debugger-ruby_core_source (1.1.6)
     equivalent-xml (0.3.0)
       nokogiri (>= 1.4.3)
     execjs (1.4.0)
