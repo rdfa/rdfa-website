@@ -1869,66 +1869,6 @@
     dc:date "2012-12-30T11:30:49-08:00"^^xsd:dateTime];
   earl:mode earl:automatic ] .
 
-[ a earl:Assertion;
-  earl:assertedBy <http://rdfa.info/test-suite/>;
-  earl:subject <https://github.com/shellac/java-rdfa>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:failed;
-    dc:date "2012-12-30T11:30:49-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <http://rdfa.info/test-suite/>;
-  earl:subject <https://github.com/shellac/java-rdfa>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:failed;
-    dc:date "2012-12-30T11:30:49-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <http://rdfa.info/test-suite/>;
-  earl:subject <https://github.com/shellac/java-rdfa>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:failed;
-    dc:date "2012-12-30T11:30:49-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <http://rdfa.info/test-suite/>;
-  earl:subject <https://github.com/shellac/java-rdfa>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:failed;
-    dc:date "2012-12-30T11:30:49-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <http://rdfa.info/test-suite/>;
-  earl:subject <https://github.com/shellac/java-rdfa>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:failed;
-    dc:date "2012-12-30T11:30:49-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <http://rdfa.info/test-suite/>;
-  earl:subject <https://github.com/shellac/java-rdfa>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:failed;
-    dc:date "2012-12-30T11:30:49-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
 # Results for xhtml1+rdfa1.1
 
 [ a earl:Assertion;
@@ -5577,66 +5517,6 @@
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:subject <https://github.com/shellac/java-rdfa>;
   earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0320>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:failed;
-    dc:date "2012-12-30T11:30:49-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <http://rdfa.info/test-suite/>;
-  earl:subject <https://github.com/shellac/java-rdfa>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:failed;
-    dc:date "2012-12-30T11:30:49-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <http://rdfa.info/test-suite/>;
-  earl:subject <https://github.com/shellac/java-rdfa>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:failed;
-    dc:date "2012-12-30T11:30:49-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <http://rdfa.info/test-suite/>;
-  earl:subject <https://github.com/shellac/java-rdfa>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:failed;
-    dc:date "2012-12-30T11:30:49-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <http://rdfa.info/test-suite/>;
-  earl:subject <https://github.com/shellac/java-rdfa>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:failed;
-    dc:date "2012-12-30T11:30:49-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <http://rdfa.info/test-suite/>;
-  earl:subject <https://github.com/shellac/java-rdfa>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325>;
-  earl:result [
-    a earl:TestResult;
-    earl:outcome earl:failed;
-    dc:date "2012-12-30T11:30:49-08:00"^^xsd:dateTime];
-  earl:mode earl:automatic ] .
-
-[ a earl:Assertion;
-  earl:assertedBy <http://rdfa.info/test-suite/>;
-  earl:subject <https://github.com/shellac/java-rdfa>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;

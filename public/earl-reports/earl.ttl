@@ -26,9 +26,11 @@
     <http://semarglproject.org>;
   mf:entries (
     <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest>
+    <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest>
     <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest>
     <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest>
     <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest>
+    <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest>
     <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest>
     <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest>
     <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest>
@@ -227,13 +229,21 @@
     <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0317>
     <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0318>
     <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0319>
-    <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0320>
-    <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321>
-    <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322>
-    <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323>
-    <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324>
-    <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325>
-    <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326>) .
+    <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0320>) .
+
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest> a earl:Report, mf:Manifest;
+  dc:title "HTML5+RDFa 1.1 Vocabulary";
+  mf:name "HTML5+RDFa 1.1 Vocabulary";
+  dc:description
+    """RDFa Core 1.1 [[RDFA-CORE]] <cite><a href="http://www.w3.org/TR/rdfa-core/#s_vocab_expansion">Vocabulary Expansion</a></cite> is an optional RDFa extension used to perform limited OWL and RDFS expansion of terms associated with a Vocabulary."""^^rdf:HTML,
+    """The HTML5 [[HTML5]] RDFa Host Language is defined in [[HTML-RDFA]]. HTML+RDFa extends RDFa Core 1.1 [[RDFA-CORE]] with host-language specific processing rules."""^^rdf:HTML;
+  mf:entries (
+    <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321>
+    <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322>
+    <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323>
+    <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324>
+    <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325>
+    <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326>) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest> a earl:Report, mf:Manifest;
   dc:title "SVG+RDFa 1.1";
@@ -653,13 +663,21 @@
     <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0317>
     <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0318>
     <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0319>
-    <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0320>
-    <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321>
-    <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322>
-    <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323>
-    <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324>
-    <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325>
-    <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326>) .
+    <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0320>) .
+
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest> a earl:Report, mf:Manifest;
+  dc:title "XHTML5+RDFa 1.1 Vocabulary";
+  mf:name "XHTML5+RDFa 1.1 Vocabulary";
+  dc:description
+    """RDFa Core 1.1 [[RDFA-CORE]] <cite><a href="http://www.w3.org/TR/rdfa-core/#s_vocab_expansion">Vocabulary Expansion</a></cite> is an optional RDFa extension used to perform limited OWL and RDFS expansion of terms associated with a Vocabulary."""^^rdf:HTML,
+    """The HTML5 [[HTML5]] RDFa Host Language is defined in [[HTML-RDFA]]. HTML+RDFa extends RDFa Core 1.1 [[RDFA-CORE]] with host-language specific processing rules."""^^rdf:HTML;
+  mf:entries (
+    <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321>
+    <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322>
+    <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323>
+    <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324>
+    <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325>
+    <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326>) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest> a earl:Report, mf:Manifest;
   dc:title "XML+RDFa 1.1";
@@ -52104,855 +52122,855 @@ The main goal of project is to provide lightweight and performant tool without e
       earl:result [ a earl:Result; earl:passed] ]
   ) .
 
-<http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321> a earl:TestCase, mf:QueryEvaluationTest;
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321> a earl:TestCase, mf:QueryEvaluationTest;
   mf:name "Test 0321: rdfa:ref to rdfa:Prototype";
   mf:action [ a qt:QueryTest; qt:queryForm qt:QueryAsk;
-    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0321.sparql>;
-    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0321.xhtml> ];
+    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0321.sparql>;
+    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0321.xhtml> ];
   mf:result true;
   dc:title "Test 0321: rdfa:ref to rdfa:Prototype";
   dc:description """Simple reference to an rdfa:Prototype.""";
   earl:assertions (
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321>;
       earl:subject <http://code.google.com/p/green-turtle/>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321>;
       earl:subject <http://www.w3.org/2012/pyRdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321>;
       earl:subject <http://rubygems.org/gems/rdf-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
   ) .
 
-<http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321> a earl:TestCase, mf:QueryEvaluationTest;
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321> a earl:TestCase, mf:QueryEvaluationTest;
   mf:name "Test 0321: rdfa:ref to rdfa:Prototype";
   mf:action [ a qt:QueryTest; qt:queryForm qt:QueryAsk;
-    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0321.sparql>;
-    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0321.html> ];
+    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0321.sparql>;
+    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0321.html> ];
   mf:result true;
   dc:title "Test 0321: rdfa:ref to rdfa:Prototype";
   dc:description """Simple reference to an rdfa:Prototype.""";
   earl:assertions (
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321>;
       earl:subject <http://code.google.com/p/green-turtle/>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321>;
       earl:subject <http://www.w3.org/2012/pyRdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321>;
       earl:subject <http://rubygems.org/gems/rdf-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
   ) .
 
-<http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322> a earl:TestCase, mf:QueryEvaluationTest;
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322> a earl:TestCase, mf:QueryEvaluationTest;
   mf:name "Test 0322: rdfa:ref for additional property value";
   mf:action [ a qt:QueryTest; qt:queryForm qt:QueryAsk;
-    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0322.sparql>;
-    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0322.html> ];
+    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0322.sparql>;
+    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0322.html> ];
   mf:result true;
   dc:title "Test 0322: rdfa:ref for additional property value";
   dc:description """an rdfa:Prototype can add an additional property value.""";
   earl:assertions (
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322>;
       earl:subject <http://code.google.com/p/green-turtle/>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322>;
       earl:subject <http://www.w3.org/2012/pyRdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322>;
       earl:subject <http://rubygems.org/gems/rdf-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
   ) .
 
-<http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322> a earl:TestCase, mf:QueryEvaluationTest;
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322> a earl:TestCase, mf:QueryEvaluationTest;
   mf:name "Test 0322: rdfa:ref for additional property value";
   mf:action [ a qt:QueryTest; qt:queryForm qt:QueryAsk;
-    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0322.sparql>;
-    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0322.xhtml> ];
+    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0322.sparql>;
+    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0322.xhtml> ];
   mf:result true;
   dc:title "Test 0322: rdfa:ref for additional property value";
   dc:description """an rdfa:Prototype can add an additional property value.""";
   earl:assertions (
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322>;
       earl:subject <http://code.google.com/p/green-turtle/>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322>;
       earl:subject <http://www.w3.org/2012/pyRdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322>;
       earl:subject <http://rubygems.org/gems/rdf-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
   ) .
 
-<http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323> a earl:TestCase, mf:QueryEvaluationTest;
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323> a earl:TestCase, mf:QueryEvaluationTest;
   mf:name "Test 0323: Multiple references to rdfa:Prototype";
   mf:action [ a qt:QueryTest; qt:queryForm qt:QueryAsk;
-    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0323.sparql>;
-    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0323.html> ];
+    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0323.sparql>;
+    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0323.html> ];
   mf:result true;
   dc:title "Test 0323: Multiple references to rdfa:Prototype";
   dc:description """Multiple subjects can reference the same rdfa:Prototype.""";
   earl:assertions (
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323>;
       earl:subject <http://code.google.com/p/green-turtle/>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323>;
       earl:subject <http://www.w3.org/2012/pyRdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323>;
       earl:subject <http://rubygems.org/gems/rdf-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
   ) .
 
-<http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323> a earl:TestCase, mf:QueryEvaluationTest;
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323> a earl:TestCase, mf:QueryEvaluationTest;
   mf:name "Test 0323: Multiple references to rdfa:Prototype";
   mf:action [ a qt:QueryTest; qt:queryForm qt:QueryAsk;
-    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0323.sparql>;
-    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0323.xhtml> ];
+    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0323.sparql>;
+    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0323.xhtml> ];
   mf:result true;
   dc:title "Test 0323: Multiple references to rdfa:Prototype";
   dc:description """Multiple subjects can reference the same rdfa:Prototype.""";
   earl:assertions (
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323>;
       earl:subject <http://code.google.com/p/green-turtle/>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323>;
       earl:subject <http://www.w3.org/2012/pyRdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323>;
       earl:subject <http://rubygems.org/gems/rdf-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
   ) .
 
-<http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324> a earl:TestCase, mf:QueryEvaluationTest;
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324> a earl:TestCase, mf:QueryEvaluationTest;
   mf:name "Test 0324: Multiple references to rdfa:Prototype";
   mf:action [ a qt:QueryTest; qt:queryForm qt:QueryAsk;
-    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0324.sparql>;
-    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0324.html> ];
+    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0324.sparql>;
+    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0324.html> ];
   mf:result true;
   dc:title "Test 0324: Multiple references to rdfa:Prototype";
   dc:description """A subject can reference multiple rdfa:Prototype definitions.""";
   earl:assertions (
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324>;
       earl:subject <http://code.google.com/p/green-turtle/>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324>;
       earl:subject <http://www.w3.org/2012/pyRdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324>;
       earl:subject <http://rubygems.org/gems/rdf-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
   ) .
 
-<http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324> a earl:TestCase, mf:QueryEvaluationTest;
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324> a earl:TestCase, mf:QueryEvaluationTest;
   mf:name "Test 0324: Multiple references to rdfa:Prototype";
   mf:action [ a qt:QueryTest; qt:queryForm qt:QueryAsk;
-    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0324.sparql>;
-    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0324.xhtml> ];
+    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0324.sparql>;
+    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0324.xhtml> ];
   mf:result true;
   dc:title "Test 0324: Multiple references to rdfa:Prototype";
   dc:description """A subject can reference multiple rdfa:Prototype definitions.""";
   earl:assertions (
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324>;
       earl:subject <http://code.google.com/p/green-turtle/>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324>;
       earl:subject <http://www.w3.org/2012/pyRdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324>;
       earl:subject <http://rubygems.org/gems/rdf-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
   ) .
 
-<http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325> a earl:TestCase, mf:QueryEvaluationTest;
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325> a earl:TestCase, mf:QueryEvaluationTest;
   mf:name "Test 0325: Multiple references to rdfa:Prototype creating a resource";
   mf:action [ a qt:QueryTest; qt:queryForm qt:QueryAsk;
-    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0325.sparql>;
-    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0325.html> ];
+    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0325.sparql>;
+    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0325.html> ];
   mf:result true;
   dc:title "Test 0325: Multiple references to rdfa:Prototype creating a resource";
   dc:description """An rdfa:Prototype defining a new blank-node object only creates a single node.""";
   earl:assertions (
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325>;
       earl:subject <http://code.google.com/p/green-turtle/>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325>;
       earl:subject <http://www.w3.org/2012/pyRdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:passed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325>;
       earl:subject <http://rubygems.org/gems/rdf-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
   ) .
 
-<http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325> a earl:TestCase, mf:QueryEvaluationTest;
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325> a earl:TestCase, mf:QueryEvaluationTest;
   mf:name "Test 0325: Multiple references to rdfa:Prototype creating a resource";
   mf:action [ a qt:QueryTest; qt:queryForm qt:QueryAsk;
-    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0325.sparql>;
-    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0325.xhtml> ];
+    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0325.sparql>;
+    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0325.xhtml> ];
   mf:result true;
   dc:title "Test 0325: Multiple references to rdfa:Prototype creating a resource";
   dc:description """An rdfa:Prototype defining a new blank-node object only creates a single node.""";
   earl:assertions (
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325>;
       earl:subject <http://code.google.com/p/green-turtle/>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325>;
       earl:subject <http://www.w3.org/2012/pyRdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:passed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325>;
       earl:subject <http://rubygems.org/gems/rdf-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
   ) .
 
-<http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326> a earl:TestCase, mf:QueryEvaluationTest;
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326> a earl:TestCase, mf:QueryEvaluationTest;
   mf:name "Test 0326: rdfa:Prototype removed only if referenced";
   mf:action [ a qt:QueryTest; qt:queryForm qt:QueryAsk;
-    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0326.sparql>;
-    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0326.xhtml> ];
+    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0326.sparql>;
+    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0326.xhtml> ];
   mf:result true;
   dc:title "Test 0326: rdfa:Prototype removed only if referenced";
   dc:description """An rdfa:Prototype is removed if referenced, and not otherwise""";
   earl:assertions (
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326>;
       earl:subject <http://code.google.com/p/green-turtle/>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326>;
       earl:subject <http://www.w3.org/2012/pyRdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326>;
       earl:subject <http://rubygems.org/gems/rdf-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
   ) .
 
-<http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326> a earl:TestCase, mf:QueryEvaluationTest;
+<http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326> a earl:TestCase, mf:QueryEvaluationTest;
   mf:name "Test 0326: rdfa:Prototype removed only if referenced";
   mf:action [ a qt:QueryTest; qt:queryForm qt:QueryAsk;
-    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0326.sparql>;
-    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0326.html> ];
+    qt:query <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0326.sparql>;
+    qt:data <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0326.html> ];
   mf:result true;
   dc:title "Test 0326: rdfa:Prototype removed only if referenced";
   dc:description """An rdfa:Prototype is removed if referenced, and not otherwise""";
   earl:assertions (
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326>;
       earl:subject <http://code.google.com/p/green-turtle/>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326>;
       earl:subject <http://www.w3.org/2012/pyRdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
       earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326>;
       earl:subject <http://rubygems.org/gems/rdf-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
-      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326>;
+      earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
   ) .
 

@@ -23985,9 +23985,25 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest",
+      "@type": [
+        "earl:Report",
+        "mf:Manifest"
+      ],
+      "title": "HTML5+RDFa 1.1 Vocabulary",
+      "hostLanguage": "html5",
+      "version": "rdfa1.1-vocab",
+      "description": [
+        "RDFa Core 1.1 [[RDFA-CORE]] <cite><a href=\"http://www.w3.org/TR/rdfa-core/#s_vocab_expansion\">Vocabulary Expansion</a></cite> is an optional RDFa extension used to perform limited OWL and RDFS expansion of terms associated with a Vocabulary.",
+        "The HTML5 [[HTML5]] RDFa Host Language is defined in [[HTML-RDFA]]. HTML+RDFa extends RDFa Core 1.1 [[RDFA-CORE]] with host-language specific processing rules."
+      ],
+      "entries": [
         {
-          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321",
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321",
           "@type": [
             "earl:TestCase",
             "mf:QueryEvaluationTest"
@@ -23997,48 +24013,48 @@
           "testAction": {
             "@type": "qt:QueryTest",
             "queryForm": "qt:QueryAsk",
-            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0321.sparql",
-            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0321.html"
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0321.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0321.html"
           },
           "testResult": true,
           "assertions": [
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321",
               "subject": "http://any23.org/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321",
               "subject": "https://github.com/niklasl/clj-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321",
               "subject": "http://www.aelius.com/njh/easyrdf/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321",
               "subject": "http://code.google.com/p/green-turtle/",
               "mode": "earl:automatic",
               "result": {
@@ -24049,40 +24065,40 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321",
               "subject": "https://github.com/shellac/java-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321",
               "subject": "https://github.com/rdfa/librdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321",
               "subject": "http://www.w3.org/2012/pyRdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321",
               "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
               "mode": "earl:automatic",
               "result": {
@@ -24093,29 +24109,29 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321",
               "subject": "http://rubygems.org/gems/rdf-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321",
               "subject": "http://semarglproject.org",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             }
           ]
         },
         {
-          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322",
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322",
           "@type": [
             "earl:TestCase",
             "mf:QueryEvaluationTest"
@@ -24125,48 +24141,48 @@
           "testAction": {
             "@type": "qt:QueryTest",
             "queryForm": "qt:QueryAsk",
-            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0322.sparql",
-            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0322.html"
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0322.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0322.html"
           },
           "testResult": true,
           "assertions": [
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322",
               "subject": "http://any23.org/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322",
               "subject": "https://github.com/niklasl/clj-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322",
               "subject": "http://www.aelius.com/njh/easyrdf/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322",
               "subject": "http://code.google.com/p/green-turtle/",
               "mode": "earl:automatic",
               "result": {
@@ -24177,40 +24193,40 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322",
               "subject": "https://github.com/shellac/java-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322",
               "subject": "https://github.com/rdfa/librdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322",
               "subject": "http://www.w3.org/2012/pyRdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322",
               "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
               "mode": "earl:automatic",
               "result": {
@@ -24221,29 +24237,29 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322",
               "subject": "http://rubygems.org/gems/rdf-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322",
               "subject": "http://semarglproject.org",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             }
           ]
         },
         {
-          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323",
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323",
           "@type": [
             "earl:TestCase",
             "mf:QueryEvaluationTest"
@@ -24253,48 +24269,48 @@
           "testAction": {
             "@type": "qt:QueryTest",
             "queryForm": "qt:QueryAsk",
-            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0323.sparql",
-            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0323.html"
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0323.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0323.html"
           },
           "testResult": true,
           "assertions": [
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323",
               "subject": "http://any23.org/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323",
               "subject": "https://github.com/niklasl/clj-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323",
               "subject": "http://www.aelius.com/njh/easyrdf/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323",
               "subject": "http://code.google.com/p/green-turtle/",
               "mode": "earl:automatic",
               "result": {
@@ -24305,40 +24321,40 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323",
               "subject": "https://github.com/shellac/java-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323",
               "subject": "https://github.com/rdfa/librdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323",
               "subject": "http://www.w3.org/2012/pyRdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323",
               "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
               "mode": "earl:automatic",
               "result": {
@@ -24349,29 +24365,29 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323",
               "subject": "http://rubygems.org/gems/rdf-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323",
               "subject": "http://semarglproject.org",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             }
           ]
         },
         {
-          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324",
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324",
           "@type": [
             "earl:TestCase",
             "mf:QueryEvaluationTest"
@@ -24381,48 +24397,48 @@
           "testAction": {
             "@type": "qt:QueryTest",
             "queryForm": "qt:QueryAsk",
-            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0324.sparql",
-            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0324.html"
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0324.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0324.html"
           },
           "testResult": true,
           "assertions": [
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324",
               "subject": "http://any23.org/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324",
               "subject": "https://github.com/niklasl/clj-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324",
               "subject": "http://www.aelius.com/njh/easyrdf/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324",
               "subject": "http://code.google.com/p/green-turtle/",
               "mode": "earl:automatic",
               "result": {
@@ -24433,40 +24449,40 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324",
               "subject": "https://github.com/shellac/java-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324",
               "subject": "https://github.com/rdfa/librdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324",
               "subject": "http://www.w3.org/2012/pyRdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324",
               "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
               "mode": "earl:automatic",
               "result": {
@@ -24477,29 +24493,29 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324",
               "subject": "http://rubygems.org/gems/rdf-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324",
               "subject": "http://semarglproject.org",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             }
           ]
         },
         {
-          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325",
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325",
           "@type": [
             "earl:TestCase",
             "mf:QueryEvaluationTest"
@@ -24509,48 +24525,48 @@
           "testAction": {
             "@type": "qt:QueryTest",
             "queryForm": "qt:QueryAsk",
-            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0325.sparql",
-            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0325.html"
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0325.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0325.html"
           },
           "testResult": true,
           "assertions": [
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325",
               "subject": "http://any23.org/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325",
               "subject": "https://github.com/niklasl/clj-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325",
               "subject": "http://www.aelius.com/njh/easyrdf/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325",
               "subject": "http://code.google.com/p/green-turtle/",
               "mode": "earl:automatic",
               "result": {
@@ -24561,40 +24577,40 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325",
               "subject": "https://github.com/shellac/java-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325",
               "subject": "https://github.com/rdfa/librdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325",
               "subject": "http://www.w3.org/2012/pyRdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325",
               "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
               "mode": "earl:automatic",
               "result": {
@@ -24605,29 +24621,29 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325",
               "subject": "http://rubygems.org/gems/rdf-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325",
               "subject": "http://semarglproject.org",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             }
           ]
         },
         {
-          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326",
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326",
           "@type": [
             "earl:TestCase",
             "mf:QueryEvaluationTest"
@@ -24637,48 +24653,48 @@
           "testAction": {
             "@type": "qt:QueryTest",
             "queryForm": "qt:QueryAsk",
-            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0326.sparql",
-            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/0326.html"
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0326.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/0326.html"
           },
           "testResult": true,
           "assertions": [
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326",
               "subject": "http://any23.org/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326",
               "subject": "https://github.com/niklasl/clj-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326",
               "subject": "http://www.aelius.com/njh/easyrdf/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326",
               "subject": "http://code.google.com/p/green-turtle/",
               "mode": "earl:automatic",
               "result": {
@@ -24689,40 +24705,40 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326",
               "subject": "https://github.com/shellac/java-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326",
               "subject": "https://github.com/rdfa/librdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326",
               "subject": "http://www.w3.org/2012/pyRdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326",
               "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
               "mode": "earl:automatic",
               "result": {
@@ -24733,23 +24749,23 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326",
               "subject": "http://rubygems.org/gems/rdf-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326",
               "subject": "http://semarglproject.org",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             }
           ]
@@ -75489,9 +75505,25 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest",
+      "@type": [
+        "earl:Report",
+        "mf:Manifest"
+      ],
+      "title": "XHTML5+RDFa 1.1 Vocabulary",
+      "hostLanguage": "xhtml5",
+      "version": "rdfa1.1-vocab",
+      "description": [
+        "RDFa Core 1.1 [[RDFA-CORE]] <cite><a href=\"http://www.w3.org/TR/rdfa-core/#s_vocab_expansion\">Vocabulary Expansion</a></cite> is an optional RDFa extension used to perform limited OWL and RDFS expansion of terms associated with a Vocabulary.",
+        "The HTML5 [[HTML5]] RDFa Host Language is defined in [[HTML-RDFA]]. HTML+RDFa extends RDFa Core 1.1 [[RDFA-CORE]] with host-language specific processing rules."
+      ],
+      "entries": [
         {
-          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321",
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321",
           "@type": [
             "earl:TestCase",
             "mf:QueryEvaluationTest"
@@ -75501,48 +75533,48 @@
           "testAction": {
             "@type": "qt:QueryTest",
             "queryForm": "qt:QueryAsk",
-            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0321.sparql",
-            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0321.xhtml"
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0321.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0321.xhtml"
           },
           "testResult": true,
           "assertions": [
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321",
               "subject": "http://any23.org/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321",
               "subject": "https://github.com/niklasl/clj-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321",
               "subject": "http://www.aelius.com/njh/easyrdf/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321",
               "subject": "http://code.google.com/p/green-turtle/",
               "mode": "earl:automatic",
               "result": {
@@ -75553,40 +75585,40 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321",
               "subject": "https://github.com/shellac/java-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321",
               "subject": "https://github.com/rdfa/librdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321",
               "subject": "http://www.w3.org/2012/pyRdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321",
               "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
               "mode": "earl:automatic",
               "result": {
@@ -75597,29 +75629,29 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321",
               "subject": "http://rubygems.org/gems/rdf-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321",
               "subject": "http://semarglproject.org",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             }
           ]
         },
         {
-          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322",
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322",
           "@type": [
             "earl:TestCase",
             "mf:QueryEvaluationTest"
@@ -75629,48 +75661,48 @@
           "testAction": {
             "@type": "qt:QueryTest",
             "queryForm": "qt:QueryAsk",
-            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0322.sparql",
-            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0322.xhtml"
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0322.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0322.xhtml"
           },
           "testResult": true,
           "assertions": [
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322",
               "subject": "http://any23.org/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322",
               "subject": "https://github.com/niklasl/clj-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322",
               "subject": "http://www.aelius.com/njh/easyrdf/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322",
               "subject": "http://code.google.com/p/green-turtle/",
               "mode": "earl:automatic",
               "result": {
@@ -75681,40 +75713,40 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322",
               "subject": "https://github.com/shellac/java-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322",
               "subject": "https://github.com/rdfa/librdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322",
               "subject": "http://www.w3.org/2012/pyRdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322",
               "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
               "mode": "earl:automatic",
               "result": {
@@ -75725,29 +75757,29 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322",
               "subject": "http://rubygems.org/gems/rdf-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322",
               "subject": "http://semarglproject.org",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             }
           ]
         },
         {
-          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323",
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323",
           "@type": [
             "earl:TestCase",
             "mf:QueryEvaluationTest"
@@ -75757,48 +75789,48 @@
           "testAction": {
             "@type": "qt:QueryTest",
             "queryForm": "qt:QueryAsk",
-            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0323.sparql",
-            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0323.xhtml"
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0323.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0323.xhtml"
           },
           "testResult": true,
           "assertions": [
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323",
               "subject": "http://any23.org/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323",
               "subject": "https://github.com/niklasl/clj-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323",
               "subject": "http://www.aelius.com/njh/easyrdf/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323",
               "subject": "http://code.google.com/p/green-turtle/",
               "mode": "earl:automatic",
               "result": {
@@ -75809,40 +75841,40 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323",
               "subject": "https://github.com/shellac/java-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323",
               "subject": "https://github.com/rdfa/librdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323",
               "subject": "http://www.w3.org/2012/pyRdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323",
               "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
               "mode": "earl:automatic",
               "result": {
@@ -75853,29 +75885,29 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323",
               "subject": "http://rubygems.org/gems/rdf-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323",
               "subject": "http://semarglproject.org",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             }
           ]
         },
         {
-          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324",
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324",
           "@type": [
             "earl:TestCase",
             "mf:QueryEvaluationTest"
@@ -75885,48 +75917,48 @@
           "testAction": {
             "@type": "qt:QueryTest",
             "queryForm": "qt:QueryAsk",
-            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0324.sparql",
-            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0324.xhtml"
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0324.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0324.xhtml"
           },
           "testResult": true,
           "assertions": [
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324",
               "subject": "http://any23.org/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324",
               "subject": "https://github.com/niklasl/clj-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324",
               "subject": "http://www.aelius.com/njh/easyrdf/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324",
               "subject": "http://code.google.com/p/green-turtle/",
               "mode": "earl:automatic",
               "result": {
@@ -75937,40 +75969,40 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324",
               "subject": "https://github.com/shellac/java-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324",
               "subject": "https://github.com/rdfa/librdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324",
               "subject": "http://www.w3.org/2012/pyRdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324",
               "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
               "mode": "earl:automatic",
               "result": {
@@ -75981,29 +76013,29 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324",
               "subject": "http://rubygems.org/gems/rdf-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324",
               "subject": "http://semarglproject.org",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             }
           ]
         },
         {
-          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325",
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325",
           "@type": [
             "earl:TestCase",
             "mf:QueryEvaluationTest"
@@ -76013,48 +76045,48 @@
           "testAction": {
             "@type": "qt:QueryTest",
             "queryForm": "qt:QueryAsk",
-            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0325.sparql",
-            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0325.xhtml"
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0325.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0325.xhtml"
           },
           "testResult": true,
           "assertions": [
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325",
               "subject": "http://any23.org/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325",
               "subject": "https://github.com/niklasl/clj-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325",
               "subject": "http://www.aelius.com/njh/easyrdf/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325",
               "subject": "http://code.google.com/p/green-turtle/",
               "mode": "earl:automatic",
               "result": {
@@ -76065,40 +76097,40 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325",
               "subject": "https://github.com/shellac/java-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325",
               "subject": "https://github.com/rdfa/librdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325",
               "subject": "http://www.w3.org/2012/pyRdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325",
               "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
               "mode": "earl:automatic",
               "result": {
@@ -76109,29 +76141,29 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325",
               "subject": "http://rubygems.org/gems/rdf-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325",
               "subject": "http://semarglproject.org",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             }
           ]
         },
         {
-          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326",
+          "@id": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326",
           "@type": [
             "earl:TestCase",
             "mf:QueryEvaluationTest"
@@ -76141,48 +76173,48 @@
           "testAction": {
             "@type": "qt:QueryTest",
             "queryForm": "qt:QueryAsk",
-            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0326.sparql",
-            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/0326.xhtml"
+            "query": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0326.sparql",
+            "data": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/0326.xhtml"
           },
           "testResult": true,
           "assertions": [
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326",
               "subject": "http://any23.org/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326",
               "subject": "https://github.com/niklasl/clj-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326",
               "subject": "http://www.aelius.com/njh/easyrdf/",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326",
               "subject": "http://code.google.com/p/green-turtle/",
               "mode": "earl:automatic",
               "result": {
@@ -76193,40 +76225,40 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326",
               "subject": "https://github.com/shellac/java-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326",
               "subject": "https://github.com/rdfa/librdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326",
               "subject": "http://www.w3.org/2012/pyRdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326",
               "subject": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
               "mode": "earl:automatic",
               "result": {
@@ -76237,23 +76269,23 @@
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326",
               "subject": "http://rubygems.org/gems/rdf-rdfa",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:passed"
+                "outcome": "earl:untested"
               }
             },
             {
               "@type": "earl:Assertion",
               "assertedBy": "http://rdfa.info/test-suite/",
-              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326",
+              "test": "http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326",
               "subject": "http://semarglproject.org",
               "mode": "earl:automatic",
               "result": {
                 "@type": "earl:TestResult",
-                "outcome": "earl:failed"
+                "outcome": "earl:untested"
               }
             }
           ]

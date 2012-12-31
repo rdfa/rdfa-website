@@ -1872,7 +1872,7 @@
 [ a earl:Assertion;
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0321>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
@@ -1882,7 +1882,7 @@
 [ a earl:Assertion;
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0322>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
@@ -1892,7 +1892,7 @@
 [ a earl:Assertion;
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0323>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
@@ -1902,7 +1902,7 @@
 [ a earl:Assertion;
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0324>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
@@ -1912,7 +1912,7 @@
 [ a earl:Assertion;
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0325>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -1922,7 +1922,7 @@
 [ a earl:Assertion;
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/html5/manifest#0326>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
@@ -5586,7 +5586,7 @@
 [ a earl:Assertion;
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0321>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
@@ -5596,7 +5596,7 @@
 [ a earl:Assertion;
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0322>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
@@ -5606,7 +5606,7 @@
 [ a earl:Assertion;
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0323>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
@@ -5616,7 +5616,7 @@
 [ a earl:Assertion;
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0324>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
@@ -5626,7 +5626,7 @@
 [ a earl:Assertion;
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0325>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0325>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:passed;
@@ -5636,7 +5636,7 @@
 [ a earl:Assertion;
   earl:assertedBy <http://rdfa.info/test-suite/>;
   earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
-  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326>;
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xhtml5/manifest#0326>;
   earl:result [
     a earl:TestResult;
     earl:outcome earl:failed;
