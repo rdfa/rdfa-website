@@ -162,6 +162,10 @@
         background-color: white;
         -moz-border-radius: ;
       }
+      tr.summary {font-weight: bold;}
+      td.passed-all {color: green;}
+      td.passed-most {color: darkseagreen;}
+      td.passed-some {color: red;}
   %body{:prefix => "earl: http://www.w3.org/ns/earl# doap: http://usefulinc.com/ns/doap# rdfatest: http://rdfa.info/vocabs/rdfa-test# mf: http://www.w3.org/2001/sw/DataAccess/tests/test-manifest# qt: http://www.w3.org/2001/sw/DataAccess/tests/test-query#"}
     %section#abstract{:about => tests['@id'], :typeof => tests['@type']}
       %p
@@ -192,6 +196,7 @@
             %p<= desc
           %table.report
             - skip_processor = {}
+            - passed_tests = []
             %tr
               %th
                 Test
@@ -208,9 +213,10 @@
                   %td
                     %a{:href => "##{tid}"}
                       = test['title']
-                  - test['assertions'].each do |assertion|
+                  - test['assertions'].each_with_index do |assertion, ndx|
                     - next if skip_processor[assertion['subject']]
                     - pass_fail = assertion['result']['outcome'].split(':').last.upcase.sub(/(PASS|FAIL)ED$/, '\1')
+                    - passed_tests[ndx] = (passed_tests[ndx] || 0) + (pass_fail == 'PASS' ? 1 : 0)
                     %td{:class => pass_fail, :rel => 'earl:assertions', :typeof => assertion['@type'], :inlist => true}
                       %link{:property => "earl:assertedBy", :href => assertion['assertedBy']}
                       %link{:property => "earl:test", :href => assertion['test']}
@@ -218,13 +224,21 @@
                       %link{:property => 'earl:mode', :href => assertion['mode']}
                       %span{:property => "earl:result", :typeof => assertion['result']['@type'], :resource => assertion['result']['outcome']}
                         = pass_fail
+              %tr.summary
+                %td
+                  = "Percentage passed out of #{manifest['entries'].length} Tests"
+                - passed_tests.compact.each do |r|
+                  - pct = (r * 100) / manifest['entries'].length
+                  %td{:class => (pct == 100 ? 'passed-all' : (pct > 95 ? 'passed-most' : 'passed-some'))}
+                    = "#{pct}%"
+                  
     %section.appendix
       %h2
         Processors
       %p
         This report was tested using the following processors:
     %dl
-      - processors.each do |processor|
+      - processors.each_with_index do |processor, index|
         %dt{:id => processor['name'].gsub(/\W/, '_'), :about => processor['@id'], :typeof => processor['@type'].join(" "), :property => "doap:name"}
           = processor['name']
         %dd{:about => processor['@id']}
@@ -247,6 +261,21 @@
               %dt= "Home Page"
               %dd{:property => "doap:homepage"}
                 %a{:href=> processor['homepage']}=processor['homepage']
+            %dt
+              Test Suite Compliance
+            %dd
+              %table.report
+                %tbody
+                  - tests['entries'].each do |manifest|
+                    - passed = manifest['entries'].select {|t| t['assertions'][index]['result']['outcome'] == 'earl:passed' }.length
+                    - next if passed == 0
+                    - total = manifest['entries'].length
+                    - pct = (passed * 100) / total
+                    %tr
+                      %td
+                        = manifest['title']
+                      %td{:class => (pct == 100 ? 'passed-all' : (pct > 85 ? 'passed-most' : 'passed-some'))}
+                        = "#{passed}/#{total} (#{pct}%)"
     -#%section.appendix
     -#  %h2
     -#    Individual Test Results
