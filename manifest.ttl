@@ -2586,7 +2586,7 @@ white   space
 <test-cases/0321> dc:contributor "Gregg Kellogg";
    dc:title "rdfa:ref to rdfa:Prototype";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1-vocab";
    rdfatest:hostLanguage "html5", "xhtml5";
    test:classification test:required;
    test:informationResourceInput <test-cases/0321.html>;
@@ -2597,7 +2597,7 @@ white   space
 <test-cases/0322> dc:contributor "Gregg Kellogg";
    dc:title "rdfa:ref for additional property value";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1-vocab";
    rdfatest:hostLanguage "html5", "xhtml5";
    test:classification test:required;
    test:informationResourceInput <test-cases/0322.html>;
@@ -2608,7 +2608,7 @@ white   space
 <test-cases/0323> dc:contributor "Gregg Kellogg";
    dc:title "Multiple references to rdfa:Prototype";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1-vocab";
    rdfatest:hostLanguage "html5", "xhtml5";
    test:classification test:required;
    test:informationResourceInput <test-cases/0323.html>;
@@ -2619,7 +2619,7 @@ white   space
 <test-cases/0324> dc:contributor "Gregg Kellogg";
    dc:title "Multiple references to rdfa:Prototype";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1-vocab";
    rdfatest:hostLanguage "html5", "xhtml5";
    test:classification test:required;
    test:informationResourceInput <test-cases/0324.html>;
@@ -2630,7 +2630,7 @@ white   space
 <test-cases/0325> dc:contributor "Gregg Kellogg";
    dc:title "Multiple references to rdfa:Prototype creating a resource";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1-vocab";
    rdfatest:hostLanguage "html5", "xhtml5";
    test:classification test:required;
    test:informationResourceInput <test-cases/0325.html>;
@@ -2641,7 +2641,7 @@ white   space
 <test-cases/0326> dc:contributor "Gregg Kellogg";
    dc:title "rdfa:Prototype removed only if referenced";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1-vocab";
    rdfatest:hostLanguage "html5", "xhtml5";
    test:classification test:required;
    test:informationResourceInput <test-cases/0325.html>;
@@ -2652,7 +2652,7 @@ white   space
 <test-cases/0327> dc:contributor "Gregg Kellogg";
    dc:title "rdfa:Prototype chaining";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1-vocab";
    rdfatest:hostLanguage "html5", "xhtml5";
    test:classification test:required;
    test:informationResourceInput <test-cases/0325.html>;
