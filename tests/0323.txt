@@ -1,10 +1,10 @@
 <head></head>
 <body>
   <div typeof="schema:Person">
-    <link property="rdfa:ref" resource="_:a"/>
+    <link property="rdfa:copy" resource="_:a"/>
   </div>
   <div typeof="foaf:Person">
-    <link property="rdfa:ref" resource="_:a"/>
+    <link property="rdfa:copy" resource="_:a"/>
   </div>
-  <p resource="_:a" typeof="rdfa:Prototype">Name: <span property="schema:name foaf:name">Amanda</span></p>
+  <p resource="_:a" typeof="rdfa:Pattern">Name: <span property="schema:name foaf:name">Amanda</span></p>
 </body>

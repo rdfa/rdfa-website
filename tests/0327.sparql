@@ -4,7 +4,7 @@ ASK WHERE {
   ?r a schema:Person; schema:name "Amanda" ; schema:band ?b .
   ?b a schema:MusicGroup; schema:name "Jazz Band"; schema:size "12" .
   OPTIONAL {
-    ?p a rdfa:Prototype; .
+    ?p a rdfa:Pattern; .
   }
   FILTER (! bound (?p))
 }

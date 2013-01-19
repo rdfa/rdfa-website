@@ -1,7 +1,7 @@
 <head></head>
 <body vocab="http://schema.org/">
   <div typeof="Person">
-    <link property="rdfa:ref" resource="_:a"/>
+    <link property="rdfa:copy" resource="_:a"/>
   </div>
-  <p resource="_:a" typeof="rdfa:Prototype">Name: <span property="name">Amanda</span></p>
+  <p resource="_:a" typeof="rdfa:Pattern">Name: <span property="name">Amanda</span></p>
 </body>

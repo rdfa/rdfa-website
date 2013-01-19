@@ -3,8 +3,8 @@
 </head>
 <body vocab="http://schema.org/">
   <div resource="#referencing" typeof="Person">
-    <link property="rdfa:ref" resource="#referenced"/>
+    <link property="rdfa:copy" resource="#referenced"/>
   </div>
-  <p resource="#referenced" typeof="rdfa:Prototype">Name: <span property="name">Bella</span></p>
-  <p resource="#unreferenced" typeof="rdfa:Prototype">Name: <span property="name">Lola</span></p>
+  <p resource="#referenced" typeof="rdfa:Pattern">Name: <span property="name">Bella</span></p>
+  <p resource="#unreferenced" typeof="rdfa:Pattern">Name: <span property="name">Lola</span></p>
 </body>
