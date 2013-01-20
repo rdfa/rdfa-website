@@ -91,7 +91,7 @@ module CrazyIvan
             <##{tc['num']}> a mf:QueryEvaluationTest;
               mf:name """Test #{tc['num']}: #{tesc(tc['description'])}""";
               rdfs:comment """#{tesc(tc['purpose'])}""";
-              test:classification #{tc['classification']};
+              test:classification <#{tc['classification']}>;
               mf:action [ a qt:QueryTest;
                 qt:queryForm qt:QueryAsk;
                 qt:query <#{get_test_url(version, suite, tc['num'], 'sparql')}>;
@@ -99,11 +99,11 @@ module CrazyIvan
               ];
               mf:result #{tc['expectedResults']} .
           }.gsub(/^            /, '')
-          test_ttl << %{  test:specificationReference """#{tesc(tc['reference'])}""";\n} unless tc['reference'].empty?
+          test_ttl << %{<##{tc['num']}> test:specificationReference """#{tesc(tc['reference'])}""" .\n} unless tc['reference'].empty?
         end
         
         # Output manifest definition, ordered tests and test definitions
-        ttl << "  )\n"
+        ttl << "  ) .\n"
         ttl + test_ttl
       else
         @manifest_ttl = File.read(MANIFEST_FILE)
