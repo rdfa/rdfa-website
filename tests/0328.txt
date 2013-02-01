@@ -1,0 +1,7 @@
+<head>
+  <title>Test 0278</title>
+</head>
+<body>
+  <p>The value of @content has a higher priority than the content of the element</p>
+  <time property="rdf:value" content="this should be the value">18 March 2012</time>
+</body>
