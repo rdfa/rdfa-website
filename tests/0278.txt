@@ -3,5 +3,5 @@
 </head>
 <body>
   <p>The value of @content has a higher priority than @datetime</p>
-  <time property="rdf:value" datetime="2012-03-18" content="2013-02-01">18 March 2012</time>
+  <time property="rdf:value" datetime="2012-03-18" content="this should be the value">18 March 2012</time>
 </body>
