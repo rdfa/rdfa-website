@@ -1,10 +1,9 @@
-   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+
 <head>
-   <title>Test 0328</title>
+  <title>Test 0278</title>
 </head>
 <body>
-  <div about="http://example.org/foaf#me" property="foaf:name">
-    <span property="foaf:givenName">John</span> 
-    <span property="foaf:familyName">Doe</span> 
-  </div>
+  <p>The value of @content has a higher priority than the content of the element</p>
+  <time property="rdf:value" content="this should be the value">18 March 2012</time>
 </body>
+

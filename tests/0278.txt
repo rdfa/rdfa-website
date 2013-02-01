@@ -2,5 +2,6 @@
   <title>Test 0278</title>
 </head>
 <body>
-  <time property="rdf:value" datetime="2012-03-18" content="not this">18 March 2012</time>
+  <p>The value of @content has a higher priority than @datetime</p>
+  <time property="rdf:value" datetime="2012-03-18" content="2013-02-01">18 March 2012</time>
 </body>
