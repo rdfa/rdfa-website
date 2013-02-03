@@ -4,3 +4,4 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 ASK WHERE {
   [ rdf:value "this should be the value" ] .
 }
+
