@@ -92,13 +92,15 @@ Note that you might have to create config.ru manually, you can just copy the exi
 
 ### Command line runner
 
-By implementing a command-line runner, the tests can be run using spec/run-suite. This allows a processor that does not implement an HTTP-based distiller to run through test cases using a shell commant.
+By implementing a command-line runner, the tests can be run using spec/run-suite. This allows a processor that does not implement an HTTP-based distiller to run through test cases using a shell command.
 
 To use this, implement a shell command accepting input RDFa on standard input generating Turtle or N-Triples on standard output. It should also accept the --host-language, --version and --url options.
 
 For example, to run with the Ruby RDFa processor, invoke the following:
 
     spec/run-suite spec/rdf-rdfa
+
+Remote endpoints can also be called using either the URL of the processor, or the name of the processor from the `processors.json` file.
 
 See spec/run-suite --help for more on the test runner.
 

@@ -121,7 +121,6 @@ opts = GetoptLong.new(
   ["--host-language", "-h", GetoptLong::OPTIONAL_ARGUMENT],
   ["--num", GetoptLong::REQUIRED_ARGUMENT],
   ["--output", "-o", GetoptLong::REQUIRED_ARGUMENT],
-  ["--processor", GetoptLong::REQUIRED_ARGUMENT],
   ["--verbose", GetoptLong::NO_ARGUMENT],
   ["--version", GetoptLong::REQUIRED_ARGUMENT],
 )
@@ -131,14 +130,13 @@ def help(options)
 
 Usage: #{$0} runner [options]
 Options:
-  -earl:                Generate EARL report
+  --earl:               Generate EARL report
   --format:             Format for output, defaults to #{options[:format].inspect}
-  --host-language:      Run for specified host language, defaults to #{options[:host_language]}"
+  --host-language:      Run for specified host language (comma separated), defaults to #{options[:host_language]}"
   --num:                Run only specified test number
   --output (-o):        Output to specified file
-  --processor:          Processor URI for EARL reporting, unless it comes from processor definition
   --verbose:            Show input and expected output
-  --version:            Version of processor to use (rdfa1.0, rdfa1.1, or rdfa1.1 variation). Defaults to #{options[:version]}
+  --version:            Version of processor (comma separated) to use (rdfa1.0, rdfa1.1, or rdfa1.1 variation). Defaults to #{options[:version]}
 
 If runner is an HTTP URI, it will take that as a processor endpoint and invoke via HTTP
 )
@@ -178,7 +176,7 @@ end
   versions = if options[:version] == 'all'
     tc['versions'] - ['rdfa1.0']  # Run against all versions except RDFa 1.0
   elsif tc['versions'].include?(options[:version])
-    [options[:version]] # Run against specified version
+    options[:version].split(',') # Run against specified version(s)
   else
     [] # Don't run at all
   end
@@ -190,7 +188,7 @@ end
     elsif options[:host_language] == 'all'
       tc['hostLanguages'] - ['html4']
     elsif tc['hostLanguages'].include?(options[:host_language])
-      [options[:host_language]]
+      options[:host_language].split(',')
     else
       [] # Don't run at all
     end
