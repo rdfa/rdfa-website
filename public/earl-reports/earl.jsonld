@@ -160,7 +160,7 @@
         "foaf:name": "Lev Khomich"
       },
       "doap_desc": "Semargl is a modular framework for crawling\n        linked data from structured documents.\n        The main goal of project is to provide lightweight and performant tool without excess dependencies.",
-      "language": "Java"
+      "language": "java"
     }
   ],
   "entries": [

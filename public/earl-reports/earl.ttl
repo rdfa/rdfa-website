@@ -913,7 +913,7 @@
   doap:description """Semargl is a modular framework for crawling
         linked data from structured documents.
         The main goal of project is to provide lightweight and performant tool without excess dependencies.""";
-  doap:programming-language "Java";
+  doap:programming-language "java";
   doap:developer <http://levkhomich.ru/foaf#me> .
 <http://levkhomich.ru/foaf#me> a foaf:Person foaf:name "Lev Khomich" .
 

@@ -85,24 +85,24 @@ Running the website locally should be as simple as the following:
     cd rdfa-website
     [sudo] gem install bundler
     bundle install
-    bundle exec shotgun
+    rackup
 
-This will create an instance, usually running on port 9393. If you access as [http://localhost:9393/test-suite/](http://localhost:9393/test-suite/), it will re-write test URIs to http://rdfa.info/test-suite/ so that processors can see any tests that are already uploaded. If you want to run with a local endpoint, run with something else such as [http://127.0.0.1:9393/test-suite/](http://127.0.0.1:9393/test-suite/), which will inhibit the URI rewriting.
+This will create an instance, usually running on port 9292. If you access as [http://localhost:9292/test-suite/](http://localhost:9292/test-suite/), it will re-write test URIs to http://rdfa.info/test-suite/ so that processors can see any tests that are already uploaded. If you want to run with a local endpoint, run with something else such as [http://127.0.0.1:9292/test-suite/](http://127.0.0.1:9292/test-suite/), which will inhibit the URI rewriting.
 Note that you might have to create config.ru manually, you can just copy the existing config.ru.sample.
 
 ### Command line runner
 
-By implementing a command-line runner, the tests can be run using spec/run-suite. This allows a processor that does not implement an HTTP-based distiller to run through test cases using a shell command.
+By implementing a command-line runner, the tests can be run using bin/run-suite. This allows a processor that does not implement an HTTP-based distiller to run through test cases using a shell command.
 
-To use this, implement a shell command accepting input RDFa on standard input generating Turtle or N-Triples on standard output. It should also accept the --host-language, --version and --url options.
+To use this, implement a shell command accepting input RDFa on standard input generating Turtle or N-Triples on standard output. It should also accept the `--host-language`, `--version`, `--vocab_expansion`, `--rdfagrap`h, and `--uri` options.
 
 For example, to run with the Ruby RDFa processor, invoke the following:
 
-    spec/run-suite spec/rdf-rdfa
+    bin/run-suite bin/rdf-rdfa
 
 Remote endpoints can also be called using either the URL of the processor, or the name of the processor from the `processors.json` file.
 
-See spec/run-suite --help for more on the test runner.
+See bin/run-suite --help for more on the test runner.
 
 ## How to add a unit test
 
