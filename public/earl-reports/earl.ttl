@@ -1005,7 +1005,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0001>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0001>;
@@ -1100,7 +1100,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0001>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0001>;
@@ -1171,7 +1171,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0001>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0001>;
@@ -1360,7 +1360,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0006>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0006>;
@@ -1502,7 +1502,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0007>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0007>;
@@ -1999,7 +1999,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0008>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0008>;
@@ -2212,7 +2212,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0009>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0009>;
@@ -2354,7 +2354,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0010>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0010>;
@@ -2638,7 +2638,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0012>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0012>;
@@ -2851,7 +2851,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0013>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0013>;
@@ -2993,7 +2993,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0014>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0014>;
@@ -3206,7 +3206,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0015>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0015>;
@@ -3561,7 +3561,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0017>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0017>;
@@ -3987,7 +3987,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0018>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0018>;
@@ -4200,7 +4200,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0019>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0019>;
@@ -4484,7 +4484,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0020>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0020>;
@@ -4697,7 +4697,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0021>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0021>;
@@ -4863,7 +4863,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0021>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0021>;
@@ -4910,7 +4910,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0023>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0023>;
@@ -5407,7 +5407,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0025>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0025>;
@@ -5478,7 +5478,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0026>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0026>;
@@ -5904,7 +5904,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0027>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0027>;
@@ -6188,7 +6188,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0029>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0029>;
@@ -6543,7 +6543,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0030>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0030>;
@@ -6827,7 +6827,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0031>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0031>;
@@ -6898,7 +6898,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0032>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0032>;
@@ -7253,7 +7253,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0033>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0033>;
@@ -7466,7 +7466,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0034>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0034>;
@@ -7963,7 +7963,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0035>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0035>;
@@ -8105,7 +8105,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0036>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0036>;
@@ -8389,7 +8389,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0037>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0037>;
@@ -8673,7 +8673,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0038>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0038>;
@@ -8957,7 +8957,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0039>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0039>;
@@ -9383,7 +9383,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0041>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0041>;
@@ -9407,7 +9407,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0041>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0041>;
@@ -9478,7 +9478,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0048>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0048>;
@@ -9596,7 +9596,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0048>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0048>;
@@ -9951,7 +9951,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0049>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0049>;
@@ -10235,7 +10235,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0050>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0050>;
@@ -10306,7 +10306,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0051>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0051>;
@@ -10472,7 +10472,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0051>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0051>;
@@ -10543,7 +10543,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0051>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0051>;
@@ -10661,7 +10661,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0052>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0052>;
@@ -10732,7 +10732,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0052>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0052>;
@@ -11016,7 +11016,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0053>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0053>;
@@ -11229,7 +11229,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0054>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0054>;
@@ -11442,7 +11442,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0055>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0055>;
@@ -11797,7 +11797,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0056>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0056>;
@@ -12081,7 +12081,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0057>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0057>;
@@ -12436,7 +12436,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0059>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0059>;
@@ -12649,7 +12649,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0060>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0060>;
@@ -12720,7 +12720,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0060>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0060>;
@@ -13004,7 +13004,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0063>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0063>;
@@ -13359,7 +13359,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0064>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0064>;
@@ -13714,7 +13714,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0065>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0065>;
@@ -13738,7 +13738,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0065>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0065>;
@@ -13809,7 +13809,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0065>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0065>;
@@ -14069,7 +14069,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0067>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0067>;
@@ -14353,7 +14353,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0068>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0068>;
@@ -15063,7 +15063,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0071>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0071>;
@@ -15276,7 +15276,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0071>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0071>;
@@ -15915,7 +15915,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0074>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0074>;
@@ -16554,7 +16554,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0079>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0079>;
@@ -16767,7 +16767,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0080>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0080>;
@@ -16980,7 +16980,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0083>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0083>;
@@ -17075,7 +17075,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0083>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0083>;
@@ -17288,7 +17288,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0084>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0084>;
@@ -17335,7 +17335,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0084>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0084>;
@@ -17430,7 +17430,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0084>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0084>;
@@ -17548,7 +17548,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0085>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0085>;
@@ -17619,7 +17619,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0085>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0085>;
@@ -17761,7 +17761,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0087>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0087>;
@@ -18045,7 +18045,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0088>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0088>;
@@ -18542,7 +18542,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0089>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0089>;
@@ -18684,7 +18684,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0091>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0091>;
@@ -18897,7 +18897,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0093>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0093>;
@@ -18992,7 +18992,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0093>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0093>;
@@ -19181,7 +19181,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0099>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0099>;
@@ -19465,7 +19465,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0104>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0104>;
@@ -19891,7 +19891,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0106>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0106>;
@@ -20033,7 +20033,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0107>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0107>;
@@ -20388,7 +20388,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0108>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0108>;
@@ -21240,7 +21240,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0112>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0112>;
@@ -21382,7 +21382,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0113>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0113>;
@@ -21737,7 +21737,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0115>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0115>;
@@ -22163,7 +22163,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0118>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0118>;
@@ -22258,7 +22258,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0118>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0118>;
@@ -22329,7 +22329,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0118>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0118>;
@@ -22376,7 +22376,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0118>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0118>;
@@ -22589,7 +22589,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0119>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0119>;
@@ -22731,7 +22731,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0120>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0120>;
@@ -23157,7 +23157,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0121>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0121>;
@@ -23299,7 +23299,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0122>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0122>;
@@ -23512,7 +23512,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0126>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0126>;
@@ -23607,7 +23607,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0126>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0126>;
@@ -23678,7 +23678,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0126>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0126>;
@@ -23725,7 +23725,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0126>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0126>;
@@ -24293,7 +24293,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0140>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0140>;
@@ -24648,7 +24648,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0147>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0147>;
@@ -25145,7 +25145,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0174>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0174>;
@@ -25429,7 +25429,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0175>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0175>;
@@ -25500,7 +25500,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0176>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0176>;
@@ -26636,7 +26636,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0180>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0180>;
@@ -26849,7 +26849,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0181>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0181>;
@@ -28695,7 +28695,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0196>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0196>;
@@ -29145,7 +29145,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0201>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0201>;
@@ -29192,7 +29192,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0202>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0202>;
@@ -29287,7 +29287,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0202>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0202>;
@@ -29358,7 +29358,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0203>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0203>;
@@ -29405,7 +29405,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0203>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0203>;
@@ -29476,7 +29476,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0206>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0206>;
@@ -29831,7 +29831,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0207>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0207>;
@@ -30186,7 +30186,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0213>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0213>;
@@ -30470,7 +30470,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0214>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0214>;
@@ -30565,7 +30565,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0214>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0214>;
@@ -31133,7 +31133,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0218>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0218>;
@@ -31559,7 +31559,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0219>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0219>;
@@ -31772,7 +31772,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0220>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0220>;
@@ -32056,7 +32056,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0221>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0221>;
@@ -32482,7 +32482,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0222>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0222>;
@@ -32695,7 +32695,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0223>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0223>;
@@ -32979,7 +32979,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0224>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0224>;
@@ -33334,7 +33334,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0225>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0225>;
@@ -33547,7 +33547,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0226>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0226>;
@@ -33760,7 +33760,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0227>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0227>;
@@ -34162,7 +34162,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0229>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0229>;
@@ -35464,7 +35464,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0234>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0234>;
@@ -35594,7 +35594,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0235>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0235>;
@@ -35606,13 +35606,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0235>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0235>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0235>;
@@ -35624,7 +35624,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0235>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0235>;
@@ -35665,7 +35665,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0236>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0236>;
@@ -35677,13 +35677,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0236>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0236>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0236>;
@@ -35695,7 +35695,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0236>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0236>;
@@ -35736,7 +35736,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0237>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0237>;
@@ -35748,25 +35748,25 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0237>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0237>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0237>;
       earl:subject <http://www.w3.org/2012/pyRdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0237>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0237>;
@@ -35807,7 +35807,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0238>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0238>;
@@ -35819,13 +35819,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0238>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0238>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0238>;
@@ -35837,7 +35837,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0238>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0238>;
@@ -35878,7 +35878,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0239>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0239>;
@@ -35890,25 +35890,25 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0239>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0239>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0239>;
       earl:subject <http://www.w3.org/2012/pyRdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0239>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-proc/xml/manifest#0239>;
@@ -35949,7 +35949,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0240>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0240>;
@@ -35961,13 +35961,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0240>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0240>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0240>;
@@ -35979,7 +35979,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0240>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0240>;
@@ -36020,7 +36020,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0241>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0241>;
@@ -36032,13 +36032,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0241>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0241>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0241>;
@@ -36050,7 +36050,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0241>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0241>;
@@ -36091,7 +36091,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0242>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0242>;
@@ -36103,13 +36103,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0242>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0242>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0242>;
@@ -36121,7 +36121,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0242>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0242>;
@@ -36162,7 +36162,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0243>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0243>;
@@ -36174,13 +36174,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0243>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0243>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0243>;
@@ -36192,7 +36192,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0243>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0243>;
@@ -36233,7 +36233,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0244>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0244>;
@@ -36245,13 +36245,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0244>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0244>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0244>;
@@ -36263,7 +36263,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0244>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0244>;
@@ -36304,7 +36304,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0245>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0245>;
@@ -36316,13 +36316,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0245>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0245>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0245>;
@@ -36334,7 +36334,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0245>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-vocab/xml/manifest#0245>;
@@ -36363,7 +36363,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0246>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0246>;
@@ -36647,7 +36647,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0247>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0247>;
@@ -36931,7 +36931,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0248>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0248>;
@@ -37286,7 +37286,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0249>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0249>;
@@ -37641,7 +37641,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0250>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0250>;
@@ -39487,7 +39487,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0258>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0258>;
@@ -39724,7 +39724,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0259>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0259>;
@@ -39771,7 +39771,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0259>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0259>;
@@ -40055,7 +40055,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0261>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0261>;
@@ -40410,7 +40410,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0262>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0262>;
@@ -40694,7 +40694,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0263>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0263>;
@@ -41049,7 +41049,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0264>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0264>;
@@ -41191,7 +41191,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0265>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0265>;
@@ -41546,7 +41546,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0266>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0266>;
@@ -41830,7 +41830,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0267>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0267>;
@@ -42185,7 +42185,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0268>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0268>;
@@ -42256,7 +42256,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0269>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0269>;
@@ -42753,7 +42753,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0271>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0271>;
@@ -43730,7 +43730,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0278>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0278> a earl:TestCase, mf:QueryEvaluationTest;
@@ -43801,7 +43801,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0278>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0279> a earl:TestCase, mf:QueryEvaluationTest;
@@ -45096,7 +45096,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0289>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0289>;
@@ -45191,7 +45191,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0289>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0289>;
@@ -45404,7 +45404,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0290>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0290>;
@@ -45593,7 +45593,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0290>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0290>;
@@ -45735,7 +45735,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0291>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0291>;
@@ -45901,7 +45901,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0291>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0291>;
@@ -45972,7 +45972,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0291>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0291>;
@@ -46043,7 +46043,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0292>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0292>;
@@ -46303,7 +46303,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0292>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0292>;
@@ -46374,7 +46374,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0293>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0293>;
@@ -46540,7 +46540,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0293>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0293>;
@@ -46806,7 +46806,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0295>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:failed] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0295>;
@@ -46895,7 +46895,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0295>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0295>;
@@ -46942,7 +46942,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0295>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0295>;
@@ -47108,7 +47108,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0296>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0296>;
@@ -47368,7 +47368,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0296>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0296>;
@@ -47581,7 +47581,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0297>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0297>;
@@ -47676,7 +47676,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0297>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0297>;
@@ -47936,7 +47936,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0298>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0298>;
@@ -48031,7 +48031,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0298>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0298>;
@@ -48315,7 +48315,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0299>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0299>;
@@ -48362,7 +48362,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0299>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0299>;
@@ -48646,7 +48646,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0300>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0300>;
@@ -48741,7 +48741,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0300>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0300>;
@@ -48954,7 +48954,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0301>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0301>;
@@ -49143,7 +49143,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0301>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0301>;
@@ -49309,7 +49309,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0302>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0302>;
@@ -49498,7 +49498,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0302>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0302>;
@@ -49735,7 +49735,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0304>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0304>;
@@ -49788,13 +49788,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0305>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0305>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0305>;
@@ -49806,13 +49806,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0305>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0305>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0305>;
@@ -49824,7 +49824,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0305>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0305>;
@@ -49859,13 +49859,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0307>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0307>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0307>;
@@ -49877,13 +49877,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0307>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0307>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0307>;
@@ -49895,7 +49895,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0307>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0307>;
@@ -49930,13 +49930,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0308>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0308>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0308>;
@@ -49948,13 +49948,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0308>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0308>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0308>;
@@ -49966,7 +49966,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0308>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0308>;
@@ -50001,13 +50001,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0309>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0309>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0309>;
@@ -50019,13 +50019,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0309>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0309>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0309>;
@@ -50037,7 +50037,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0309>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0309>;
@@ -50072,13 +50072,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0310>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0310>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0310>;
@@ -50090,13 +50090,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0310>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0310>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0310>;
@@ -50108,7 +50108,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0310>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0310>;
@@ -50137,7 +50137,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0311>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0311>;
@@ -50374,7 +50374,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0311>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:passed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/svg/manifest#0311>;
@@ -50640,13 +50640,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0314>;
       earl:subject <https://github.com/niklasl/clj-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0314>;
       earl:subject <http://www.aelius.com/njh/easyrdf/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0314>;
@@ -50658,13 +50658,13 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0314>;
       earl:subject <https://github.com/shellac/java-rdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0314>;
       earl:subject <https://github.com/rdfa/librdfa>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0314>;
@@ -50676,7 +50676,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0314>;
       earl:subject <http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1-role/xml/manifest#0314>;
@@ -51273,7 +51273,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0318>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0318>;
@@ -51628,7 +51628,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0319>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0319>;
@@ -51770,7 +51770,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0320>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0320>;
@@ -52037,7 +52037,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0321>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321> a earl:TestCase, mf:QueryEvaluationTest;
@@ -52108,7 +52108,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0321>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322> a earl:TestCase, mf:QueryEvaluationTest;
@@ -52179,7 +52179,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0322>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322> a earl:TestCase, mf:QueryEvaluationTest;
@@ -52250,7 +52250,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0322>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323> a earl:TestCase, mf:QueryEvaluationTest;
@@ -52321,7 +52321,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0323>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323> a earl:TestCase, mf:QueryEvaluationTest;
@@ -52392,7 +52392,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0323>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324> a earl:TestCase, mf:QueryEvaluationTest;
@@ -52463,7 +52463,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0324>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324> a earl:TestCase, mf:QueryEvaluationTest;
@@ -52534,7 +52534,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0324>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0325> a earl:TestCase, mf:QueryEvaluationTest;
@@ -52747,7 +52747,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0326>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326> a earl:TestCase, mf:QueryEvaluationTest;
@@ -52818,7 +52818,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0326>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0327> a earl:TestCase, mf:QueryEvaluationTest;
@@ -52889,7 +52889,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0327>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0327> a earl:TestCase, mf:QueryEvaluationTest;
@@ -52960,7 +52960,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0327>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0328> a earl:TestCase, mf:QueryEvaluationTest;
@@ -53173,7 +53173,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml5/manifest#0329>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0329> a earl:TestCase, mf:QueryEvaluationTest;
@@ -53244,7 +53244,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/html5/manifest#0329>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0329> a earl:TestCase, mf:QueryEvaluationTest;
@@ -53315,7 +53315,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xhtml1/manifest#0329>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
 <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0329> a earl:TestCase, mf:QueryEvaluationTest;
@@ -53332,7 +53332,7 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0329>;
       earl:subject <http://any23.org/>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:untested] ]
     [ a earl:Assertion;
       earl:assertedBy <http://rdfa.info/test-suite/>;
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0329>;
@@ -53386,6 +53386,6 @@
       earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0329>;
       earl:subject <http://semarglproject.org>;
       earl:mode earl:automatic;
-      earl:result [ a earl:Result; earl:failed] ]
+      earl:result [ a earl:Result; earl:passed] ]
   ) .
 
