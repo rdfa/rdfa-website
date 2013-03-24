@@ -67,6 +67,12 @@
     %script.remove{:type => "text/javascript", :src => "http://www.w3.org/Tools/respec/respec-w3c-common"}
     :javascript
       var respecConfig = {
+          // extend the bibliography entries
+          localBiblio: {
+              "HTML-RDFA": "Manu Sporny. <cite><a href=\"http://www.w3.org/TR/2013/WD-html-rdfa-20130207/\">HTML+RDFa 1.1: Support for RDFa in HTML4 and HTML5.</a></cite> W3C Working Draft 07 February 2013. URL: <a href=\"http://www.w3.org/TR/2013/WD-html-rdfa-20130207/\">http://www.w3.org/TR/2013/WD-html-rdfa-20130207/</a>",
+              DOAP: "Ed Dumbill. <cite><a href=\"https://github.com/edumbill/doap/wiki\">Turtle: Terse RDF Triple Language.</a></cite> Community Specification. URL: <a href=\"https://github.com/edumbill/doap/wiki\">https://github.com/edumbill/doap/wiki</a>",
+          },
+
           // specification status (e.g. WD, LCWD, NOTE, etc.). If in doubt use ED.
           specStatus:           "unofficial",
           copyrightStart:       "2010",
