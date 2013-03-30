@@ -214,8 +214,73 @@
       'name': 'Web Page',
       'children': []
     };
-    
+
     var subjects = data.getSubjects();
+    var embedded = {};
+
+    var createNode = function(s, p, data, rval) {
+      if(embedded[s] === undefined) {
+        var triples = data.getSubjectTriples(s);
+        var predicates = triples === null ? [] : triples.predicates;
+        var name = '';
+        var node = {
+          'name': '',
+          'children': []
+        };
+        
+        // calculate the short name of the node
+        // prepend the predicate name if there is one
+        if(p !== undefined) {
+          name = play.getIriShortName(p) + ': ';
+        }
+
+        if(s.charAt(0) == '_') {
+          name += 'Item ' + bnodeNames[s];
+        }
+        else if(p == RDF_TYPE) {
+          name += play.getIriShortName(s);
+        }
+        else {
+          name += play.getIriShortName(s, true);
+        }
+        node.name = name;
+        
+        // create nodes for all predicates and objects
+        for(p in predicates)
+        {
+          // do not include which vocabulary was used in the visualization
+          if(p == "http://www.w3.org/ns/rdfa#usesVocabulary") {
+            continue;
+          }
+        
+          var objects = triples.predicates[p].objects;
+          for(oi in objects) {
+            var value = '';
+            var o = objects[oi];
+
+            if(o.type == RDF_OBJECT) {
+              // recurse to create a node for the object if it's an object
+              createNode(o.value, p, data, node);
+              embedded[o.value] = true;
+            }
+            else {
+              // generate the leaf node
+              var child = {
+                 'name': play.getIriShortName(p) + ': ' + o.value
+              };
+              node.children.push(child);
+            }
+          }        
+        }
+
+        // remove the children property if there are no children
+        if(node.children.length === 0) {
+          node.children = undefined;
+        }
+        
+        rval.children.push(node);
+      }
+    };
     
     // Pre-generate names for all bnodes in the graph
     for(si in subjects) {
@@ -231,74 +296,19 @@
     // Generate the D3 tree graph
     for(si in subjects) {
       var s = subjects[si];
-      var triples = data.getSubjectTriples(s);
-      var predicates = data.getSubjectTriples(s).predicates;
-      var node = {
-        'name': '',
-        'children': []
-      };
-      
-      // calculate the short name of the node
-      if(s.charAt(0) == '_') {
-        node.name = 'Item ' + bnodeNames[s];
-      }
-      else {
-        node.name = play.getIriShortName(s, true);
-      }
-      
-      // create nodes for all predicates and objects
-      for(p in predicates)
-      {
-        // do not include which vocabulary was used in the visualization
-        if(p == "http://www.w3.org/ns/rdfa#usesVocabulary") {
-          continue;
-        }
-      
-        var objects = triples.predicates[p].objects;
-        for(oi in objects) {
-          var value = '';
-          var o = objects[oi];
-          var child = {
-             'name': ''
-          };
-          
-          // if the object is a bnode, use the generated name
-          if(o.type == RDF_OBJECT && o.value.charAt(0) == '_')
-          {            
-            if(bnodeNames.hasOwnProperty(o.value)) {
-              value = 'Item ' + bnodeNames[o.value];
-            }
-          }
-          else if(o.type == RDF_OBJECT && p == RDF_TYPE)
-          {
-            // if the property is an rdf:type, shorten the IRI
-            value = play.getIriShortName(o.value);
-          }
-          else
-          {
-            value = o.value;
-          }
-          
-          // generate the leaft node name
-          child.name = play.getIriShortName(p) + ': ' + value;
-          
-          node.children.push(child);
-        }        
-      }
-      
-      rval.children.push(node);
+      createNode(s, undefined, data, rval);
     }
     
     // clean up any top-level children with no data
     for(c in rval.children)
     {
       var child = rval.children[c];
-      if(child.children && child.children.length == 0)
+      if(child.children === undefined)
       {
         rval.children.splice(c, 1);
       }
     }
-    
+
     return rval;
   };
   

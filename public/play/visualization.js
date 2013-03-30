@@ -23,7 +23,19 @@
     $('#graph').empty();
   
     // create a new tree layout
-    viz.tree = d3.layout.tree().size([h, w]);
+    viz.tree = d3.layout.tree()
+      .size([h, w])
+      .separation(function (a, b) { 
+        if(a.children !== undefined && a.children.length > 1) {
+          return (a.children.length / 2) + 0.5;
+        }
+        else if(b.children !== undefined && b.children.length > 1) {
+          return (b.children.length / 2) + 0.5;
+        }
+        else {
+          return a.parent == b.parent ? 1 : 2; 
+        }
+      });
     
     // create the projection
     viz.diagonal = d3.svg.diagonal()
