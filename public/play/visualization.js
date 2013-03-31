@@ -26,15 +26,17 @@
     viz.tree = d3.layout.tree()
       .size([h, w])
       .separation(function (a, b) { 
-        if(a.children !== undefined && a.children.length > 1) {
-          return (a.children.length / 2) + 0.5;
-        }
-        else if(b.children !== undefined && b.children.length > 1) {
-          return (b.children.length / 2) + 0.5;
-        }
-        else {
-          return a.parent == b.parent ? 1 : 2; 
-        }
+        var descendants = function(node) {
+          var count = 0;
+          for(d in node.children) {
+            count++;
+            count += descendants(node.children[d]);
+          }
+          return count;
+        };
+        var aDesc = Math.max(descendants(a), a.parent == b.parent ? 1 : 2);
+        var bDesc = Math.max(descendants(b), a.parent == b.parent ? 1 : 2);
+        return (aDesc + bDesc) / 2;
       });
     
     // create the projection
