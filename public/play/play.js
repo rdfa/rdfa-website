@@ -219,32 +219,32 @@
     var embedded = {};
 
     var createNode = function(s, p, data, rval) {
-      if(embedded[s] === undefined) {
-        var triples = data.getSubjectTriples(s);
-        var predicates = triples === null ? [] : triples.predicates;
-        var name = '';
-        var node = {
-          'name': '',
-          'children': []
-        };
-        
-        // calculate the short name of the node
-        // prepend the predicate name if there is one
-        if(p !== undefined) {
-          name = play.getIriShortName(p) + ': ';
-        }
+      var triples = data.getSubjectTriples(s);
+      var predicates = triples === null ? [] : triples.predicates;
+      var name = '';
+      var node = {
+        'name': '',
+        'children': []
+      };
+      
+      // calculate the short name of the node
+      // prepend the predicate name if there is one
+      if(p !== undefined) {
+        name = play.getIriShortName(p) + ': ';
+      }
 
-        if(s.charAt(0) == '_') {
-          name += 'Item ' + bnodeNames[s];
-        }
-        else if(p == RDF_TYPE) {
-          name += play.getIriShortName(s);
-        }
-        else {
-          name += play.getIriShortName(s, true);
-        }
-        node.name = name;
-        
+      if(s.charAt(0) == '_') {
+        name += 'Item ' + bnodeNames[s];
+      }
+      else if(p == RDF_TYPE) {
+        name += play.getIriShortName(s);
+      }
+      else {
+        name += play.getIriShortName(s, true);
+      }
+      node.name = name;
+      
+      if(embedded[s] === undefined) {
         // create nodes for all predicates and objects
         for(p in predicates)
         {
@@ -272,14 +272,14 @@
             }
           }        
         }
-
-        // remove the children property if there are no children
-        if(node.children.length === 0) {
-          node.children = undefined;
-        }
-        
-        rval.children.push(node);
       }
+
+      // remove the children property if there are no children
+      if(node.children.length === 0) {
+        node.children = undefined;
+      }
+      
+      rval.children.push(node);
     };
     
     // Pre-generate names for all bnodes in the graph
@@ -300,14 +300,16 @@
     }
     
     // clean up any top-level children with no data
+    var cleaned = [];
     for(c in rval.children)
     {
       var child = rval.children[c];
-      if(child.children === undefined)
+      if(child.children !== undefined)
       {
-        rval.children.splice(c, 1);
+        cleaned.push(child);
       }
     }
+    rval.children = cleaned;
 
     return rval;
   };
