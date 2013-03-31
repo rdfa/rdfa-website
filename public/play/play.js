@@ -244,38 +244,41 @@
       }
       node.name = name;
       
-      if(embedded[s] === undefined) {
-        // create nodes for all predicates and objects
-        for(p in predicates)
-        {
-          // do not include which vocabulary was used in the visualization
-          if(p == "http://www.w3.org/ns/rdfa#usesVocabulary") {
-            continue;
-          }
-        
-          var objects = triples.predicates[p].objects;
-          for(oi in objects) {
-            var value = '';
-            var o = objects[oi];
-
-            if(o.type == RDF_OBJECT) {
-              // recurse to create a node for the object if it's an object
-              createNode(o.value, p, data, node);
-              embedded[o.value] = true;
-            }
-            else {
-              // generate the leaf node
-              var child = {
-                 'name': play.getIriShortName(p) + ': ' + o.value
-              };
-              node.children.push(child);
-            }
-          }        
+      // create nodes for all predicates and objects
+      for(p in predicates)
+      {
+        // do not include which vocabulary was used in the visualization
+        if(p == "http://www.w3.org/ns/rdfa#usesVocabulary") {
+          continue;
         }
+      
+        var objects = triples.predicates[p].objects;
+        for(oi in objects) {
+          var value = '';
+          var o = objects[oi];
+
+          if(o.type == RDF_OBJECT) {
+            // recurse to create a node for the object if it's an object
+            createNode(o.value, p, data, node);
+            embedded[o.value] = true;
+          }
+          else {
+            // generate the leaf node
+            var child = {
+               'name': play.getIriShortName(p) + ': ' + o.value
+            };
+            node.children.push(child);
+          }
+        }        
       }
 
       // remove the children property if there are no children
       if(node.children.length === 0) {
+        node.children = undefined;
+      }
+      // collapse children of nodes that have already been embedded
+      if(embedded[s] !== undefined && node.children !== undefined) {
+        node._children = node.children;
         node.children = undefined;
       }
       
