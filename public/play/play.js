@@ -7,6 +7,7 @@
   RDF_TYPE = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type';
   RDF_PLAIN_LITERAL = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral';
   RDF_TYPED_LITERAL = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#TypedLiteral';
+  RDF_XML_LITERAL = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral';
   RDF_OBJECT = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#object';
 
   // create the play instance if it doesn't already exist
@@ -264,8 +265,17 @@
           }
           else {
             // generate the leaf node
+            var name = '';
+            if(o.type == RDF_XML_LITERAL) {
+              // if the property is an XMLLiteral, serialise it
+              name = play.nodelistToXMLLiteral(o.value);
+            }
+            else {
+              name = o.value;
+            }
+
             var child = {
-               'name': play.getIriShortName(p) + ': ' + o.value
+               'name': play.getIriShortName(p) + ': ' + name
             };
             node.children.push(child);
           }
@@ -346,7 +356,21 @@
      
      return rval;
   };
-  
+
+  /**
+   * Converts a NodeList into an rdf:XMLLiteral string.
+   *
+   * @param nodelist the nodelist.
+   */
+  play.nodelistToXMLLiteral = function(nodelist) {
+    var str = '';
+    for(var i = 0; i < nodelist.length; i++) {
+      var n = nodelist[i];
+      str += n.outerHTML || n.nodeValue;
+    }
+    return str;
+  };
+
   /**
    * Converts the RDFa data in the page to a N-Triples representation.
    *
@@ -467,6 +491,11 @@
             else {
               rval += play.iriToCurie(o.value, prefixesUsed);
             }
+          }
+          else if(o.type == RDF_XML_LITERAL) {
+            rval += '"';
+            rval += play.nodelistToXMLLiteral(o.value).replace('"', '\\"');
+            rval += '"^^rdf:XMLLiteral';
           }
           else if(o.type != null) {
             rval += '"' + o.value.replace('"', '\\"') + '"' + '^^' +
