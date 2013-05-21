@@ -86,7 +86,7 @@ module CrazyIvan
         }.gsub(/^          /, '')
         ::JSON.load(manifest_json)['@graph'].each do |tc|
           next unless tc['hostLanguages'].include?(suite) && tc['versions'].include?(version)
-          ttl << "      <#{get_test_url(version, suite, tc['num'])}>\n"
+          ttl << "      <##{tc['num']}>\n"
           test_ttl << %{
             <##{tc['num']}> a mf:QueryEvaluationTest;
               mf:name """Test #{tc['num']}: #{tesc(tc['description'])}""";
