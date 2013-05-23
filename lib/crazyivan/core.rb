@@ -303,7 +303,7 @@ module CrazyIvan
       when 'html'
         if suite == 'html4'
           %(<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa11-1.dtd">\n) +
-          %(<html version="XHTML+RDFa 1.1"#{namespaces}>\n)
+          %(<html version="HTML+RDFa 1.1"#{namespaces}>\n)
         else
           "<!DOCTYPE html>\n" +
           %(<html#{namespaces}>\n)
