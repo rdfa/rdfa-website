@@ -33,7 +33,7 @@ namespace :earl do
   task :collate => :environment do
     require 'earl'
     puts "parse individual results"
-    files = Dir.glob(File.expand_path("../public/earl-reports/*rdfa1.1*", __FILE__))
+    files = Dir.glob(File.expand_path("../public/earl-reports/*-earl*", __FILE__))
     earl = EARL.new(files)
     File.open(File.expand_path("../public/earl-reports/earl.jsonld", __FILE__), "w") do |file|
       puts "dump #{earl.graph.count} triples to JSON-LD"
@@ -48,7 +48,7 @@ namespace :earl do
   desc 'Generate comprehensive report'
   task :report do
     require 'earl'
-    source_files = Dir.glob(File.expand_path("../public/earl-reports/*-rdfa*.html", __FILE__)).map do |f|
+    source_files = Dir.glob(File.expand_path("../public/earl-reports/*-earl*", __FILE__)).map do |f|
       f.split('/').last
     end
     earl_json = File.read(File.expand_path("../public/earl-reports/earl.jsonld", __FILE__))

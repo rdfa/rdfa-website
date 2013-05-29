@@ -355,7 +355,7 @@ class EARL
 
       # Assertion info
       assertion = tc['assertions'].detect {|a| a['subject'] == solution[:subject].to_s}
-      raise "Assertion not found for #{solution[:subject]} in #{tc['assertions'].map{|a| a['subject']}.inspect}" unless assertion
+      raise "Assertion not found for #{solution[:subject]} in #{tc['assertions'].map{|a| a['subject']}.inspect}\nsubjects: #{subjects.inspect}" unless assertion
       assertion['mode'] = "earl:#{solution[:mode].to_s.split('#').last || 'automatic'}"
       assertion['result']['outcome'] = "earl:#{solution[:outcome].to_s.split('#').last}"
     end

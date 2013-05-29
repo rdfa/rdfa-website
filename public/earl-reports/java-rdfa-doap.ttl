@@ -1,0 +1,17 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://github.com/shellac/java-rdfa> a doap:GitRepository, doap:Project;
+  dc:title "java-rdfa";
+  doap:browse <https://github.com/shellac/java-rdfa>;
+  dc:creator [ a foaf:Person; foaf:name "Damian Steer"];
+  doap:developer [ a foaf:Person; foaf:name "Damian Steer"];
+  doap:bug-database <https://github.com/rdfa/librdfa/issues>;
+  doap:description "A SAX-based java RDFa parser.";
+  doap:name "java-rdfa";
+  doap:programming-language "Java";
+  doap:repository <https://github.com/shellac/java-rdfa>;
+  doap:homepage <http://www.rootdev.net/maven/projects/java-rdfa/project-info.html> .

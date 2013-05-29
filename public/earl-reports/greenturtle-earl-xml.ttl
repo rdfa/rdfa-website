@@ -1,0 +1,1286 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:   <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix earl: <http://www.w3.org/ns/earl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<https://code.google.com/p/green-turtle/> a doap:Project, earl:TestSubject, earl:Software ;
+  doap:name          "Green Turtle" ;
+  doap:homepage      <https://code.google.com/p/green-turtle/> ;
+  doap:license       <http://opensource.org/licenses/BSD-3-Clause> ;
+  doap:shortdesc     "RDFa Processor in Green Turtle"@en ;
+  doap:description   "Green Turtle support for RDFa 1.1"@en ;
+  doap:created       "2013-05-24"^^xsd:date ;
+  doap:programming-language "Javascript" ;
+  doap:implements    <http://www.w3.org/TR/rdfa-syntax/> ;
+  doap:category      <http://dbpedia.org/resource/Resource_Description_Framework>;
+  doap:download-page <https://code.google.com/p/green-turtle/> ;
+  doap:bug-database  <https://code.google.com/p/green-turtle/issues/list> ;
+  doap:blog          <http://www.milowski.com/> ;
+  doap:developer     <http://www.milowski.com#alex> ;
+  doap:maintainer    <http://www.milowski.com#alex> ;
+  doap:documenter    <http://www.milowski.com#alex> ;
+  foaf:maker         <http://www.milowski.com#alex> ;
+  dc:title           "Green Turtle" ;
+  dc:description     "Green Turtle support for RDFa 1.1"@en;
+  dc:date            "2013-05-24"^^xsd:date ;
+  dc:creator         <http://www.milowski.com#alex> ;
+  dc:isPartOf        <https://code.google.com/p/green-turtle/> .
+  
+  <http://www.milowski.com#alex> a foaf:Person, earl:Assertor;
+  foaf:name "Alex Milowski";
+  foaf:title "Implementor";
+  foaf:homepage <http://www.milowski.com/> .
+  
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0001> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0006> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0007> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0008> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0009> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0010> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0012> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0013> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0014> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0015> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0017> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0018> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0019> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0020> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0021> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0023> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0025> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0026> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0027> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0029> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0030> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0031> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0032> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0033> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0034> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0035> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0036> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0037> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0038> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0039> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0041> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0048> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0049> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0050> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0051> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0052> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0053> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0054> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0055> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0056> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0057> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0059> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0060> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0063> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0064> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0065> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0067> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0068> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0071> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0079> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0080> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0083> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0084> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0085> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0087> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0088> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0089> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0091> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0093> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0099> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0104> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0106> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0107> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0108> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0112> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0113> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0115> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0118> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0119> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0120> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0121> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0122> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0126> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0140> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0147> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0174> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0175> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0176> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0180> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0181> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0196> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0202> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0203> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0206> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0207> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0213> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0214> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0229> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0246> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0247> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0248> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0249> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0250> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0258> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0259> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0261> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0262> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0263> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0264> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0265> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0266> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0267> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0268> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0269> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0271> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0289> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0290> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0291> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0292> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0293> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0295> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0296> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0297> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0298> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0299> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0300> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0301> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0302> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0311> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0318> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0319> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0320> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0329> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0330> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+
+[ a earl:Assertion; 
+  earl:assertedBy <http://www.milowski.com#alex>; 
+  earl:subject <https://code.google.com/p/green-turtle/>; 
+  earl:test <http://rdfa.info/test-suite/test-cases/rdfa1.1/xml/manifest#0331> ;
+  earl:result [
+    a earl:TestResult; 
+    earl:outcome earl:passed; 
+    dc:date "2013-05-24T13:08:27-0700"^^xsd:dateTime ];
+  earl:mode earl:automatic ] .
+

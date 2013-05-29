@@ -150,7 +150,7 @@ opts.each do |opt, arg|
   when '--format'         then options[:format] = arg.to_sym
   when '--host-language'  then options[:host_language] = arg
   when '--num'            then options[:num] = arg
-  when '--output'         then options[:output] = File.open(arg, "w")
+  when '--output'         then options[:output] = File.open(arg.gsub('::', '-'), "w")
   when '--verbose'        then options[:verbose] = true
   when '--version'        then options[:version] = arg
   end
@@ -159,11 +159,11 @@ end
 help(options) unless ARGV.length > 0
 
 io = options[:output]
-runner = ARGV[0]
+runner = ARGV[0].downcase
 
 # If we're running from a processor definition, retrieve necessary information
 processors = ::JSON.load(File.read(File.expand_path("../../processors.json", __FILE__)))
-if key = processors.keys.detect {|k| k.index("#{runner} (")}
+if key = processors.keys.detect {|k| k.downcase.index("#{runner} (")}
   options[:processor] ||= processors[key]['doap']
   runner = processors[key]['endpoint']
 elsif options[:earl] && !options[:processor]
@@ -186,7 +186,7 @@ end
     host_languages = if version.include?('-') && options[:host_language] == 'all'
       tc['hostLanguages'] & ['xml'] # Just XML
     elsif options[:host_language] == 'all'
-      tc['hostLanguages'] - ['html4']
+      tc['hostLanguages']
     elsif tc['hostLanguages'].include?(options[:host_language])
       options[:host_language].split(',')
     else

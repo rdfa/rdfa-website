@@ -22,5 +22,5 @@ group :development, :test do
   gem 'shotgun'
   gem "wirble"
   gem "syntax"
-  gem "debugger"
+  gem "debugger", :platforms => :mri_19
 end

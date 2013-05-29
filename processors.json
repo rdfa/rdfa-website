@@ -15,7 +15,7 @@
     "doap_url": "/earl-reports/easyrdf-doap.ttl"
   },
   "Green Turtle (JavaScript)": {
-    "doap": "http://code.google.com/p/green-turtle/",
+    "doap": "https://code.google.com/p/green-turtle/",
     "doap_url": "/earl-reports/green-turtle-doap.ttl"
   },
   "java-rdfa (Java)": {
@@ -35,7 +35,7 @@
   "RDF::RDFa (Ruby)": {
     "endpoint": "http://rdf.greggkellogg.net/distiller?raw=true&in_fmt=rdfa&uri=",
     "doap": "http://rubygems.org/gems/rdf-rdfa",
-    "doap_url": "/earl-reports/rdf.rb-doap.ttl"
+    "doap_url": "/earl-reports/rdf-rdfa-doap.ttl"
   },
   "RDF::RDFa::Parser (Perl)": {
     "endpoint": "http://buzzword.org.uk/2012/rdfa-distiller/?format=rdfxml&url=",
