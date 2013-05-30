@@ -183,14 +183,12 @@ end
 
   # Run test against specified versions and host languages
   versions.each do |version|
-    host_languages = if version.include?('-') && options[:host_language] == 'all'
-      tc['hostLanguages'] & ['xml'] # Just XML
+    host_languages = if version.include?('-') && options[:host_language] =~ /all|,/
+      tc['hostLanguages'] & ['html5'] # Just HTML5
     elsif options[:host_language] == 'all'
       tc['hostLanguages']
-    elsif tc['hostLanguages'].include?(options[:host_language])
-      options[:host_language].split(',')
     else
-      [] # Don't run at all
+      tc['hostLanguages'] & options[:host_language].split(',')
     end
 
     host_languages.each do |host_language|
