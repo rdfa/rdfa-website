@@ -153,11 +153,11 @@
     
     if(!preview.data)
     {
-       RDFa.attach(preview);
+       GreenTurtle.attach(preview);
     }
     else
     {
-       RDFa.attach(preview, true);       
+       GreenTurtle.attach(preview, true);
     }
     
     // iterate through all triples and insert them into the output display
@@ -220,7 +220,7 @@
     var embedded = {};
 
     var createNode = function(s, p, data, rval) {
-      var triples = data.getSubjectTriples(s);
+      var triples = data.getSubject(s);
       var predicates = triples === null ? [] : triples.predicates;
       var name = '';
       var node = {
@@ -381,7 +381,7 @@
     var subjects = data.getSubjects();
     for(si in subjects) {
       var s = subjects[si];
-      var triples = data.getSubjectTriples(s);
+      var triples = data.getSubject(s);
       var predicates = triples.predicates;
       
       for(p in predicates)
@@ -443,7 +443,7 @@
     var subjects = data.getSubjects();
     for(si in subjects) {
       var s = subjects[si];
-      var triples = data.getSubjectTriples(s);
+      var triples = data.getSubject(s);
       var predicates = triples.predicates;
 
       // print the subject
