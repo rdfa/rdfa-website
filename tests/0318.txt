@@ -1,4 +1,6 @@
-  <head></head>
+  <head>
+    <title>Test 0318</title>
+  </head>
   <body>
     <div vocab="http://xmlns.com/foaf/0.1/">
       <div about ="#me">

@@ -1,4 +1,6 @@
-<head></head>
+<head>
+  <title>Test 0323</title>
+</head>
 <body>
   <div typeof="schema:Person">
     <link property="rdfa:copy" resource="_:a"/>
