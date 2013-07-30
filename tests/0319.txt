@@ -1,5 +1,5 @@
 <head>
-  <base href="http://example.com/"></base>
+  <base href="http://example.com/"/>
 </head>
 <body xml:base="http://example.com/" prefix="pr: relative/iri#" xmlns:xpr="relative/uri#">
   <p property="pr:prop xpr:prop">value</p>
