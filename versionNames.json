@@ -1,6 +1,7 @@
 {
   "rdfa1.0": "RDFa 1.0",
   "rdfa1.1": "RDFa 1.1",
+  "rdfa1.1-lite": "RDFa 1.1 Lite",
   "rdfa1.1-vocab": "RDFa 1.1 with Vocabulary Expansion",
   "rdfa1.1-proc": "RDFa 1.1 with Processor Graph",
   "rdfa1.1-role": "RDFa 1.1 with Role"
