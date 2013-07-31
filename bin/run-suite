@@ -51,6 +51,19 @@ def run_tc(tc, runner, options)
 
   STDOUT.write "#{host_language}+#{version} #{tc['num']}: "
 
+  if options[:write_file]
+    if host_language.include?('xhtml')
+      filename = tc["num"] + ".xhtml"
+    elsif host_language.include?('html')
+      filename = tc["num"] + ".html"
+    else
+      filename = tc["num"] + "." + host_language
+    end
+    tcfile = File.new(filename, "w")
+    tcfile.puts "#{content}"
+    tcfile.close
+  end
+
   if options[:verbose]
     puts "\n#{content}\n"
     puts "query: \n#{sparql}\n"
@@ -123,6 +136,7 @@ opts = GetoptLong.new(
   ["--output", "-o", GetoptLong::REQUIRED_ARGUMENT],
   ["--verbose", GetoptLong::NO_ARGUMENT],
   ["--version", GetoptLong::REQUIRED_ARGUMENT],
+  ["--write-file", GetoptLong::NO_ARGUMENT],
 )
 
 def help(options)
@@ -137,6 +151,7 @@ Options:
   --output (-o):        Output to specified file
   --verbose:            Show input and expected output
   --version:            Version of processor (comma separated) to use (rdfa1.0, rdfa1.1, or rdfa1.1 variation). Defaults to #{options[:version]}
+  --write-file:         Write an NNNN.html|xhtml|xml|svg file containing the test-case content
 
 If runner is an HTTP URI, it will take that as a processor endpoint and invoke via HTTP
 )
@@ -153,6 +168,7 @@ opts.each do |opt, arg|
   when '--output'         then options[:output] = File.open(arg.gsub('::', '-'), "w")
   when '--verbose'        then options[:verbose] = true
   when '--version'        then options[:version] = arg
+  when '--write-file'     then options[:write_file] = true
   end
 end
 
