@@ -1,5 +1,6 @@
 <head>
   <base href="http://example.org/"/>
+  <title>Test 0325</title>
 </head>
 <body vocab="http://schema.org/">
   <div resource="#foo" typeof=""><link property="rdfa:copy" resource="_:a"/></div>

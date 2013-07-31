@@ -1,4 +1,6 @@
-<head></head>
+<head>
+  <title>Test 0321</title>
+</head>
 <body vocab="http://schema.org/">
   <div typeof="Person">
     <link property="rdfa:copy" resource="_:a"/>

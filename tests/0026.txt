@@ -5,7 +5,7 @@
   <body>
   	<p>
 		<span 	about="http://internet-apps.blogspot.com/"
-	      		property="dc:creator" content="Mark Birbeck" />
+	      		property="dc:creator" content="Mark Birbeck"></span>
 	</p>	
   </body>
 

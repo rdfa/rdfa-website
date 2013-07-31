@@ -3,6 +3,6 @@
 </head>
 <body>
   <div about ="">
-    <p rel="rdf:value" inlist=""/>
+    <p rel="rdf:value" inlist=""></p>
   </div>
 </body>
