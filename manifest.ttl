@@ -101,7 +101,7 @@
 <test-cases/0015> dc:contributor "Elias Torres";
    dc:title "meta and link";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0015.html>;
@@ -151,7 +151,7 @@
 <test-cases/0021> dc:contributor "Wing Yung";
    dc:title "Subject inheritance with no @about";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0021.html>;
@@ -161,7 +161,7 @@
 <test-cases/0023> dc:contributor "Wing Yung";
    dc:title "@id does not generate subjects";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0023.html>;
@@ -211,7 +211,7 @@
 <test-cases/0030> dc:contributor "Michael Hausenblas";
    dc:title "omitted @about";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0030.html>;
@@ -382,7 +382,7 @@
 <test-cases/0050> dc:contributor "Ivan Herman";
    dc:title "@typeof without anything else";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0050.html>;
@@ -402,7 +402,7 @@
 <test-cases/0052> dc:contributor "Ivan Herman";
    dc:title "@typeof with @resource and nothing else";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0052.html>;
@@ -412,7 +412,7 @@
 <test-cases/0053> dc:contributor "Ivan Herman";
    dc:title "@typeof with @resource and nothing else, with a subelement";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0053.html>;
@@ -543,7 +543,7 @@
 <test-cases/0066> dc:contributor "Manu Sporny";
    dc:title "@about with @typeof in the head";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0066.html>;
@@ -553,7 +553,7 @@
 <test-cases/0067> dc:contributor "Manu Sporny";
    dc:title "@property in the head";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0067.html>;
@@ -593,7 +593,7 @@
 <test-cases/0071> dc:contributor "Manu Sporny";
    dc:title "No explicit @about";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0071.html>;
@@ -623,7 +623,7 @@
 <test-cases/0074> dc:contributor "Manu Sporny";
    dc:title "Relative URI in @href (with XHTML base in head)";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0074.html>;
@@ -633,7 +633,7 @@
 <test-cases/0075> dc:contributor "Manu Sporny";
    dc:title "Reserved word 'license' in @rel with no explicit @about";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0075.html>;
@@ -763,7 +763,7 @@
 <test-cases/0089> dc:contributor "Manu Sporny";
    dc:title "@src sets a new subject (@typeof)";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0089.html>;
@@ -917,7 +917,7 @@ white   space
    "Toby Inkster";
    dc:title "XML Entities must be supported by RDFa parser";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0115.html>;
@@ -927,7 +927,7 @@ white   space
 <test-cases/0117> dc:contributor "Manu Sporny";
    dc:title "Fragment identifiers stripped from BASE";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0117.html>;
@@ -1019,7 +1019,7 @@ white   space
 <test-cases/0134> dc:contributor "Philip Taylor";
    dc:title "Uppercase reserved words";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    test:expectedResults "true"^^xsd:boolean;
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
@@ -1030,7 +1030,7 @@ white   space
 <test-cases/0140> dc:contributor "Manu Sporny";
    dc:title "Blank nodes identifiers are not allowed as predicates";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    test:expectedResults "false"^^xsd:boolean;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
@@ -1041,7 +1041,7 @@ white   space
 <test-cases/0147> dc:contributor "Philip Taylor";
    dc:title "xmlns prefix 'xmlzzz' (reserved)";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    test:expectedResults "true"^^xsd:boolean;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
@@ -1380,7 +1380,7 @@ white   space
 <test-cases/0214> dc:contributor "Gregg Kellogg";
    dc:title "Root element has implicit @about=\"\"";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    test:expectedResults "true"^^xsd:boolean;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5", "svg";
@@ -1605,7 +1605,7 @@ white   space
 <test-cases/0235> dc:contributor "Gregg Kellogg";
    dc:title "rdfagraph='processor' does not generate standard triples";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1-proc";
+   rdfatest:rdfaVersion "rdfa1.1-proc", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5", "svg";
    rdfatest:queryParam "rdfagraph=processor";
@@ -1642,7 +1642,7 @@ white   space
 <test-cases/0238> dc:contributor "Gregg Kellogg";
    dc:title "rdfagraph='processor' with missing Term definition generates rdfa:Warning";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1-proc";
+   rdfatest:rdfaVersion "rdfa1.1-proc", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5", "svg";
    rdfatest:queryParam "rdfagraph=processor";
@@ -1656,7 +1656,7 @@ white   space
 <test-cases/0239> dc:contributor "Gregg Kellogg";
    dc:title "rdfagraph='processor' with undefined prefix generates rdfa:Warning";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1-proc";
+   rdfatest:rdfaVersion "rdfa1.1-proc", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5", "svg";
    rdfatest:queryParam "rdfagraph=processor";
@@ -1670,7 +1670,7 @@ white   space
 <test-cases/0240> dc:contributor "Gregg Kellogg";
    dc:title "vocab_expansion='true' expands sub-property";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1-vocab";
+   rdfatest:rdfaVersion "rdfa1.1-vocab", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5", "svg";
    rdfatest:queryParam "vocab_expansion=true";
@@ -1684,7 +1684,7 @@ white   space
 <test-cases/0241> dc:contributor "Gregg Kellogg";
    dc:title "vocab_expansion='true' expands equivalent-property";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1-vocab";
+   rdfatest:rdfaVersion "rdfa1.1-vocab", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5", "svg";
    rdfatest:queryParam "vocab_expansion=true";
@@ -1698,7 +1698,7 @@ white   space
 <test-cases/0242> dc:contributor "Gregg Kellogg";
    dc:title "vocab_expansion='true' expands referenced equivalent-property";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1-vocab";
+   rdfatest:rdfaVersion "rdfa1.1-vocab", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5", "svg";
    rdfatest:queryParam "vocab_expansion=true";
@@ -1847,7 +1847,7 @@ white   space
 <test-cases/0255> dc:contributor "KANZAKI, Masahide";
    dc:title "lang=\"\" clears language setting";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    test:expectedResults "true"^^xsd:boolean;
    rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
@@ -1889,7 +1889,7 @@ white   space
 <test-cases/0259> dc:contributor "Gregg Kellogg";
    dc:title "XML+RDFa Initial Context";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    test:expectedResults "true"^^xsd:boolean;
    rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
@@ -1932,7 +1932,7 @@ white   space
 <test-cases/0263> dc:contributor "Ivan Herman";
    dc:title "@property appearing on the html element yields the base as the subject";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0263.html>;
@@ -1942,7 +1942,7 @@ white   space
 <test-cases/0264> dc:contributor "Ivan Herman";
    dc:title "@property appearing on the head element gets the subject from <html>, ie, parent";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
    test:informationResourceInput <test-cases/0264.html>;
@@ -2022,7 +2022,7 @@ white   space
 <test-cases/0272> dc:contributor "Gregg Kellogg";
    dc:title "time element with @datetime an xsd:date";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "html5", "xhtml5";
    test:informationResourceInput <test-cases/0272.html>;
@@ -2032,7 +2032,7 @@ white   space
 <test-cases/0273> dc:contributor "Gregg Kellogg";
    dc:title "time element with @datetime an xsd:time";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "html5", "xhtml5";
    test:informationResourceInput <test-cases/0273.html>;
@@ -2042,7 +2042,7 @@ white   space
 <test-cases/0274> dc:contributor "Gregg Kellogg";
    dc:title "time element with @datetime an xsd:dateTime";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "html5", "xhtml5";
    test:informationResourceInput <test-cases/0274.html>;
@@ -2052,7 +2052,7 @@ white   space
 <test-cases/0275> dc:contributor "Gregg Kellogg";
    dc:title "time element with value an xsd:date";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "html5", "xhtml5";
    test:informationResourceInput <test-cases/0275.html>;
@@ -2062,7 +2062,7 @@ white   space
 <test-cases/0276> dc:contributor "Gregg Kellogg";
    dc:title "time element with value an xsd:time";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "html5", "xhtml5";
    test:informationResourceInput <test-cases/0276.html>;
@@ -2072,7 +2072,7 @@ white   space
 <test-cases/0277> dc:contributor "Gregg Kellogg";
    dc:title "time element with value an xsd:dateTime";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "html5", "xhtml5";
    test:informationResourceInput <test-cases/0277.html>;
@@ -2112,7 +2112,7 @@ white   space
 <test-cases/0281> dc:contributor "Gregg Kellogg";
    dc:title "time element with @datetime an xsd:gYear";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "html5", "xhtml5";
    test:informationResourceInput <test-cases/0281.html>;
@@ -2122,7 +2122,7 @@ white   space
 <test-cases/0282> dc:contributor "Gregg Kellogg";
    dc:title "time element with @datetime an xsd:gYearMonth";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "html5", "xhtml5";
    test:informationResourceInput <test-cases/0282.html>;
@@ -2132,7 +2132,7 @@ white   space
 <test-cases/0283> dc:contributor "Gregg Kellogg";
    dc:title "time element with @datetime an invalid datatype generates plain literal";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "html5", "xhtml5";
    test:informationResourceInput <test-cases/0283.html>;
@@ -2173,7 +2173,7 @@ white   space
 <test-cases/0287> dc:contributor "Gregg Kellogg";
    dc:title "time element with @datetime an xsd:dateTime with TZ offset";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "html5", "xhtml5";
    test:informationResourceInput <test-cases/0287.html>;
@@ -2266,7 +2266,7 @@ white   space
 <test-cases/0296> dc:contributor "Manu Sporny";
    dc:title "@property does set parent object without @typeof";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
    test:expectedResults "true"^^xsd:boolean;
@@ -2321,7 +2321,7 @@ white   space
 <test-cases/0301> dc:contributor "Alex Milowski";
    dc:title "@property with @typeof creates a typed_resource for chaining";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
    test:expectedResults "true"^^xsd:boolean;
@@ -2332,7 +2332,7 @@ white   space
 <test-cases/0302> dc:contributor "Stéphane Corlosquet";
    dc:title "@typeof with different content types";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
    test:expectedResults "true"^^xsd:boolean;
@@ -2374,7 +2374,7 @@ white   space
 <test-cases/0305> dc:contributor "Shane McCarron";
   dc:title "role attribute with explicit id and term";
   a test:TestCase;
-  rdfatest:rdfaVersion "rdfa1.1-role";
+  rdfatest:rdfaVersion "rdfa1.1-role", "rdfa1.1-lite";
   test:classification test:required;  # ?!
   test:expectedResults "true"^^xsd:boolean;
   rdfatest:hostLanguage "xml", "xhtml1", "html5", "xhtml5";
@@ -2389,7 +2389,7 @@ white   space
 <test-cases/0306> dc:contributor "Shane McCarron";
   dc:title "role attribute with explicit base id and term";
   a test:TestCase;
-  rdfatest:rdfaVersion "rdfa1.1-role";
+  rdfatest:rdfaVersion "rdfa1.1-role", "rdfa1.1-lite";
   test:classification test:required;  # ?!
   test:expectedResults "true"^^xsd:boolean;
   rdfatest:hostLanguage "xhtml1", "html5", "xhtml5";
@@ -2404,7 +2404,7 @@ white   space
 <test-cases/0307> dc:contributor "Shane McCarron";
   dc:title "role attribute with term and no id";
   a test:TestCase;
-  rdfatest:rdfaVersion "rdfa1.1-role";
+  rdfatest:rdfaVersion "rdfa1.1-role", "rdfa1.1-lite";
   test:classification test:required;  # ?!
   test:expectedResults "true"^^xsd:boolean;
   rdfatest:hostLanguage "xml", "xhtml1", "html5", "xhtml5";
@@ -2464,7 +2464,7 @@ white   space
 <test-cases/0311> dc:contributor "Stéphane Corlosquet";
   dc:title "Ensure no triples are generated when @property is empty";
   a test:TestCase;
-  rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
+  rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
   test:classification test:required;
   rdfatest:hostLanguage "xml", "svg", "xhtml1", "html4", "html5", "xhtml5";
   test:expectedResults "false"^^xsd:boolean;
@@ -2476,7 +2476,7 @@ white   space
 <test-cases/0312> dc:contributor "Niklas Lindström";
    dc:title "Mute plain @rel if @property is present";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "html5", "xhtml5";
    test:informationResourceInput <test-cases/0312.html>;
@@ -2487,7 +2487,7 @@ white   space
 <test-cases/0313> dc:contributor "Ivan Herman";
    dc:title "rdfagraph='processor' redefining an initial context prefix generates rdfa:PrefixRedefinition warning";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1-proc";
+   rdfatest:rdfaVersion "rdfa1.1-proc", "rdfa1.1-lite";
    test:classification test:required;
    rdfatest:hostLanguage "html5", "xhtml5";
    rdfatest:queryParam "rdfagraph=processor";
@@ -2561,7 +2561,7 @@ white   space
 <test-cases/0319> dc:contributor "Gregg Kellogg";
    dc:title "Relative @profile";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
    test:classification test:required;
    test:informationResourceInput <test-cases/0319.html>;
@@ -2587,7 +2587,7 @@ white   space
 <test-cases/0321> dc:contributor "Gregg Kellogg";
    dc:title "rdfa:copy to rdfa:Pattern";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    rdfatest:hostLanguage "html5", "xhtml5";
    test:classification test:required;
    test:informationResourceInput <test-cases/0321.html>;
@@ -2598,7 +2598,7 @@ white   space
 <test-cases/0322> dc:contributor "Gregg Kellogg";
    dc:title "rdfa:copy for additional property value";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    rdfatest:hostLanguage "html5", "xhtml5";
    test:classification test:required;
    test:informationResourceInput <test-cases/0322.html>;
@@ -2609,7 +2609,7 @@ white   space
 <test-cases/0323> dc:contributor "Gregg Kellogg";
    dc:title "Multiple references to rdfa:Pattern";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    rdfatest:hostLanguage "html5", "xhtml5";
    test:classification test:required;
    test:informationResourceInput <test-cases/0323.html>;
@@ -2620,7 +2620,7 @@ white   space
 <test-cases/0324> dc:contributor "Gregg Kellogg";
    dc:title "Multiple references to rdfa:Pattern";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    rdfatest:hostLanguage "html5", "xhtml5";
    test:classification test:required;
    test:informationResourceInput <test-cases/0324.html>;
@@ -2631,7 +2631,7 @@ white   space
 <test-cases/0325> dc:contributor "Gregg Kellogg";
    dc:title "Multiple references to rdfa:Pattern creating a resource";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    rdfatest:hostLanguage "html5", "xhtml5";
    test:classification test:required;
    test:informationResourceInput <test-cases/0325.html>;
@@ -2642,7 +2642,7 @@ white   space
 <test-cases/0326> dc:contributor "Gregg Kellogg";
    dc:title "rdfa:Pattern removed only if referenced";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    rdfatest:hostLanguage "html5", "xhtml5";
    test:classification test:required;
    test:informationResourceInput <test-cases/0326.html>;
@@ -2653,7 +2653,7 @@ white   space
 <test-cases/0327> dc:contributor "Gregg Kellogg";
    dc:title "rdfa:Pattern chaining";
    a test:TestCase;
-   rdfatest:rdfaVersion "rdfa1.1";
+   rdfatest:rdfaVersion "rdfa1.1", "rdfa1.1-lite";
    rdfatest:hostLanguage "html5", "xhtml5";
    test:classification test:required;
    test:informationResourceInput <test-cases/0327.html>;
