@@ -5,7 +5,7 @@
   <body>
     <div rel="xhv:next">
       <div rel="xhv:next">
-        <div rel="xhv:next" />
+        <div rel="xhv:next"></div>
       </div>
     </div>
   </body>

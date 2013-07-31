@@ -1,6 +1,6 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/"
    <head>
-      <base href="http://www.example.org/"></base>
+      <base href="http://www.example.org/"/>
       <title>Test 0072</title>
    </head>
    <body>

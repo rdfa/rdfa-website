@@ -1,5 +1,6 @@
 <head>
   <base href="http://example.com/"/>
+  <title>Test 0326</title>
 </head>
 <body vocab="http://schema.org/">
   <div resource="#referencing" typeof="Person">

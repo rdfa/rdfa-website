@@ -4,6 +4,6 @@
   </head>
   <body>
     <div rel="xhv:next">
-      <div rel="xhv:next" />
+      <div rel="xhv:next"></div>
     </div>
   </body>

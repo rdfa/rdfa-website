@@ -1,4 +1,6 @@
-<head></head>
+<head>
+  <title>Test 0322</title>
+</head>
 <body vocab="http://schema.org/">
   <div typeof="Person">
     <p>My name is <span property="name">Gregg</span></p>

@@ -1,5 +1,6 @@
 <head>
   <base href="http://example.com/"/>
+  <title>Test 0327</title>
 </head>
 <body>
   <div typeof="schema:Person">
