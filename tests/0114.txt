@@ -1,6 +1,6 @@
-      xmlns:cc="http://creativecommons.org/ns#"
-      xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#"
-      xmlns:rdfatest="http://rdfa.info/vocabs/rdfa-test#"
+      {"cc": "http://creativecommons.org/ns#",
+       "xhv": "http://www.w3.org/1999/xhtml/vocab#",
+       "rdfatest": "http://rdfa.info/vocabs/rdfa-test#"}
   <head>
     <title>Test 0114</title>
   </head>

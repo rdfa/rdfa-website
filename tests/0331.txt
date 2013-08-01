@@ -1,4 +1,4 @@
-   xmlns:dcterms="http://purl.org/dc/terms/"
+   {"dcterms": "http://purl.org/dc/terms/"}
 <head>
    <title>Test 0331</title>
 </head>

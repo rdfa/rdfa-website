@@ -1,4 +1,4 @@
-         xmlns:ex="http://www.example.com/"
+         {"ex": "http://www.example.com/"}
    <head>
      <title>Test 0115</title>
    </head>

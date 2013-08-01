@@ -1,4 +1,4 @@
-      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      {"dc": "http://purl.org/dc/elements/1.1/"}
    <head>
       <base href="http://www.example.org/"></base>
       <title>Test 0072</title>
