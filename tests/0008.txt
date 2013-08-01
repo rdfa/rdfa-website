@@ -1,4 +1,4 @@
-  xmlns:cc="http://creativecommons.org/ns#"
+  {"cc": "http://creativecommons.org/ns#"}
 	<head>
 		<title>Test 0008</title>
 	</head>

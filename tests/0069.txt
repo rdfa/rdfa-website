@@ -1,4 +1,4 @@
-      xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#"
+      {"xhv": "http://www.w3.org/1999/xhtml/vocab#"}
    <head>
       <title>Test 0069</title>
    </head>

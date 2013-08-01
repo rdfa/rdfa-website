@@ -1,4 +1,4 @@
-      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      {"foaf": "http://xmlns.com/foaf/0.1/"}
   <head>
     <title>Test 0065</title>
   </head>
