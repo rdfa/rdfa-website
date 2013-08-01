@@ -1,5 +1,5 @@
-      xmlns:dc="http://purl.org/dc/elements/1.1/"
-      xmlns:example="http://example.org/"
+      {"dc": "http://purl.org/dc/elements/1.1/",
+       "example": "http://example.org/"}
    <head>
       <title>Test 0119</title>
    </head>

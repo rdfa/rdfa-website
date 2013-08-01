@@ -1,4 +1,4 @@
-      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      {"foaf": "http://xmlns.com/foaf/0.1/"}
  <head profile="http://www.w3.org/1999/xhtml/vocab">
       <title>Test 0090</title>
    </head>

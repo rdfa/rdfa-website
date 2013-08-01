@@ -257,8 +257,8 @@ module CrazyIvan
     # @param [String] suite "rdfa1.1" or other
     # @param [String] num "0001" or greater
     # @param [String] format "sparql", nil
-    # @return [{:namespaces => {}, :content => String, :suite => String, :version => String}]
-    #   Serialized document and namespaces
+    # @return [{:root_attributes => {}, :content => String, :suite => String, :version => String}]
+    #   Serialized document and root attributes (including prefix mappings)
     def get_test_content(version, suite, num, format = nil)
       suffix = case suite
       when /xhtml/  then "xhtml"
@@ -272,28 +272,57 @@ module CrazyIvan
       tcpath = url("/test-suite/test-cases/#{version}/#{suite}") rescue "http://rdfa.info/test-suite/test-cases/#{version}/#{suite}"
       tcpath.sub!(/localhost:\d+/, HOSTNAME) # For local testing
 
-      # Read in the file, extracting namespaces
+      # Read in the file, extracting prefix mappings and other root attributes
       found_head = format == 'sparql'
-      namespaces = []
+      in_json = false
+      prefix_mappings = []
+      root_attributes = []
+      prefix_mappings_json= ""
       content = File.readlines(filename).map do |line|
         line.force_encoding(Encoding::UTF_8) if line.respond_to?(:force_encoding)
         case line
         when %r(<head)
           found_head ||= true
+        when %r({)
+          in_json ||= true
         end
       
         if found_head
           line
         else
           found_head = !!line.match(%r(http://www.w3.org/2000/svg))
-          namespaces << line.strip
+          if in_json then
+            prefix_mappings_json << line.strip
+            in_json = false if line.include?("}")
+          else
+            root_attributes << line.strip
+          end
           nil
         end
       end.compact.join("")
       content.force_encoding(Encoding::UTF_8) if content.respond_to?(:force_encoding)
     
-      namespaces = namespaces.join("\n")
-      namespaces = ' ' + namespaces unless namespaces.empty?
+      unless prefix_mappings_json.empty?
+        ::JSON.parse(prefix_mappings_json).each do |prefix,iri|
+          if version == 'rdfa1.0' then
+            prefix_mappings << 'xmlns:' + prefix + '="' + iri + '"'
+          else
+            prefix_mappings << prefix + ": " + iri
+          end
+        end
+        if version == 'rdfa1.0' then
+          prefix_mappings = prefix_mappings.join(" ")
+        else
+          prefix_mappings = ' prefix="' + prefix_mappings.join(" ") + '"'
+        end
+      else
+        prefix_mappings = ""
+      end
+      root_attributes = root_attributes.join("\n")
+      root_attributes = ' ' + root_attributes unless root_attributes.empty?
+      root_attributes = prefix_mappings + root_attributes
+      root_attributes = ' ' + root_attributes unless root_attributes.empty?
+
       content.gsub!(HTMLRE, "\\1.#{suffix}")
       content.gsub!(TCPATHRE, tcpath)
 
@@ -303,31 +332,31 @@ module CrazyIvan
       when 'html'
         if suite == 'html4'
           %(<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa11-1.dtd">\n) +
-          %(<html version="HTML+RDFa 1.1"#{namespaces}>\n)
+          %(<html version="HTML+RDFa 1.1"#{root_attributes}>\n)
         else
           "<!DOCTYPE html>\n" +
-          %(<html#{namespaces}>\n)
+          %(<html#{root_attributes}>\n)
         end +
         content +
         "</html>"
       when 'xml'
-        %(<?xml version="1.0" encoding="UTF-8"?>\n<root#{namespaces}>\n) +
+        %(<?xml version="1.0" encoding="UTF-8"?>\n<root#{root_attributes}>\n) +
         content +
         "</root>"
       when 'svg'
-        %(<?xml version="1.0" encoding="UTF-8"?>\n<svg#{namespaces}>\n) +
+        %(<?xml version="1.0" encoding="UTF-8"?>\n<svg#{root_attributes}>\n) +
         content +
         "</svg>"
       when 'xhtml'
         %(<?xml version="1.0" encoding="UTF-8"?>\n) +
         if suite == 'xhtml1' && version == 'rdfa1.0'
           %(<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">\n) +
-          %(<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.0"#{namespaces}>\n)
+          %(<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.0"#{root_attributes}>\n)
         elsif suite == 'xhtml1'
           %(<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd">\n) +
-          %(<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1"#{namespaces}>\n)
+          %(<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1"#{root_attributes}>\n)
         else
-          %(<!DOCTYPE html>\n<html xmlns="http://www.w3.org/1999/xhtml"#{namespaces}>\n)
+          %(<!DOCTYPE html>\n<html xmlns="http://www.w3.org/1999/xhtml"#{root_attributes}>\n)
         end +
         content +
         "</html>"

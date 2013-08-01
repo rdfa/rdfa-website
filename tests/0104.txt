@@ -1,5 +1,5 @@
-      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      xmlns:example="http://www.example.org/"
+      {"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+       "example": "http://www.example.org/"}
   <head profile="http://www.w3.org/1999/xhtml/vocab">
 	<title>Test 0104</title>
   </head>

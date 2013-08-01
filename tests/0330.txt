@@ -1,5 +1,5 @@
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   {"dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"}
 <head>
    <title>Test 0330</title>
 </head>
