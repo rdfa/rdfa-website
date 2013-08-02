@@ -2,6 +2,6 @@
   <base href="http://example.com/"/>
   <title>Test 0319</title>
 </head>
-<body xml:base="http://example.com/" prefix="pr: relative/iri#" xmlns:xpr="relative/uri#">
+<body prefix="pr: relative/iri#" xmlns:xpr="relative/uri#">
   <p property="pr:prop xpr:prop">value</p>
 </body>
