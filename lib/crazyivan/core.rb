@@ -313,7 +313,7 @@ module CrazyIvan
         if version == 'rdfa1.0' then
           prefix_mappings = prefix_mappings.join(" ")
         else
-          prefix_mappings = ' prefix="' + prefix_mappings.join(" ") + '"'
+          prefix_mappings = 'prefix="' + prefix_mappings.join(" ") + '"'
         end
       else
         prefix_mappings = ""
@@ -321,7 +321,7 @@ module CrazyIvan
       root_attributes = root_attributes.join("\n")
       root_attributes = ' ' + root_attributes unless root_attributes.empty?
       root_attributes = prefix_mappings + root_attributes
-      root_attributes = ' ' + root_attributes unless root_attributes.empty?
+      root_attributes = ' ' + root_attributes unless prefix_mappings.empty?
 
       content.gsub!(HTMLRE, "\\1.#{suffix}")
       content.gsub!(TCPATHRE, tcpath)
