@@ -1,4 +1,4 @@
- <head profile="http://www.w3.org/1999/xhtml/vocab">
+ <head>
       <title>Test 0091</title>
    </head>
    <body>
