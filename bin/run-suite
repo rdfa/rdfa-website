@@ -52,12 +52,13 @@ def run_tc(tc, runner, options)
   STDOUT.write "#{host_language}+#{version} #{tc['num']}: "
 
   if options[:write_file]
+    invalid = host_language.include?('invalid') ? ".invalid" : ""
     if host_language.include?('xhtml')
-      filename = tc["num"] + ".xhtml"
+      filename = tc["num"] + invalid + ".xhtml"
     elsif host_language.include?('html')
-      filename = tc["num"] + ".html"
+      filename = tc["num"] + invalid + ".html"
     else
-      filename = tc["num"] + "." + host_language
+      filename = tc["num"] + invalid + "." + host_language
     end
     tcfile = File.new(filename, "w")
     tcfile.puts "#{content}"
