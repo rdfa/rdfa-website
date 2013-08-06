@@ -263,7 +263,7 @@
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5-invalid", "xhtml5-invalid";
    test:informationResourceInput <test-cases/0035.html>;
    test:informationResourceResults <test-cases/0035.sparql>;
    test:purpose "Tests if @href overwrites @src";
