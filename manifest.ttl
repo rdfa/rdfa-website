@@ -1044,7 +1044,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1", "rdfa1.1-lite";
    test:classification test:required;
    test:expectedResults "true"^^xsd:boolean;
-   rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5-invalid", "xhtml5";
    test:informationResourceInput <test-cases/0147.html>;
    test:informationResourceResults <test-cases/0147.sparql>;
    test:purpose "Ensures that RDFa processors allow the prefix 'xmlzzz', even though it is a reserved prefix in XML.";
