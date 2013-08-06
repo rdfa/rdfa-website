@@ -1471,7 +1471,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    test:expectedResults "true"^^xsd:boolean;
-   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5", "svg";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5-invalid", "xhtml5-invalid", "svg";
    test:informationResourceInput <test-cases/0222.html>;
    test:informationResourceResults <test-cases/0222.sparql>;
    test:purpose "@inlist with @property at different levels of descendence creates single list.";
