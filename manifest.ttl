@@ -858,7 +858,7 @@ white   space
    a test:TestCase;
    rdfatest:rdfaVersion "rdfa1.0", "rdfa1.1";
    test:classification test:required;
-   rdfatest:hostLanguage "html4", "html5";
+   rdfatest:hostLanguage "html4", "html5-invalid";
    test:informationResourceInput <test-cases/0109.html>;
    test:informationResourceResults <test-cases/0109.sparql>;
    test:purpose "Tests to make sure that @xml:base is ignored in XHTML+RDFa 1.0. The input test document is invalid XHTML.";
