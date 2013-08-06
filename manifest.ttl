@@ -1143,7 +1143,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    test:expectedResults "false"^^xsd:boolean;
-   rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xml", "xhtml1", "html4", "html5-invalid", "xhtml5-invalid";
    test:informationResourceInput <test-cases/0180.html>;
    test:informationResourceResults <test-cases/0180.sparql>;
    test:purpose "Checks to make sure @prefix with empty prefix does not create a mapping.";
