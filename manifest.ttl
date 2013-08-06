@@ -1176,7 +1176,7 @@ white   space
    rdfatest:rdfaVersion "rdfa1.1";
    test:classification test:required;
    test:expectedResults "true"^^xsd:boolean;
-   rdfatest:hostLanguage "xhtml1", "html4", "html5", "xhtml5";
+   rdfatest:hostLanguage "xhtml1", "html4", "html5-invalid", "xhtml5";
    test:informationResourceInput <test-cases/0183.html>;
    test:informationResourceResults <test-cases/0183.sparql>;
    test:purpose "A new @xmlns definition should override a previous @prefix definition at this element.";
