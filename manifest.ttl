@@ -2422,7 +2422,7 @@ white   space
   rdfatest:rdfaVersion "rdfa1.1-role";
   test:classification test:required;  # ?!
   test:expectedResults "true"^^xsd:boolean;
-  rdfatest:hostLanguage "xml", "xhtml1", "html5", "xhtml5";
+  rdfatest:hostLanguage "xml", "xhtml1", "html5-invalid", "xhtml5-invalid";
   test:informationResourceInput <test-cases/0308.html>;
   test:informationResourceResults <test-cases/0308.sparql>;
   test:purpose "When role is specified along with an id the appropriate triple is created.";
@@ -2437,7 +2437,7 @@ white   space
   rdfatest:rdfaVersion "rdfa1.1-role";
   test:classification test:required;  # ?!
   test:expectedResults "true"^^xsd:boolean;
-  rdfatest:hostLanguage "xml", "xhtml1", "html5", "xhtml5";
+  rdfatest:hostLanguage "xml", "xhtml1", "html5-invalid", "xhtml5-invalid";
   test:informationResourceInput <test-cases/0309.html>;
   test:informationResourceResults <test-cases/0309.sparql>;
   test:purpose "When role is specified along with an id the appropriate triple is created.";
@@ -2452,7 +2452,7 @@ white   space
   rdfatest:rdfaVersion "rdfa1.1-role";
   test:classification test:required;  # ?!
   test:expectedResults "true"^^xsd:boolean;
-  rdfatest:hostLanguage "xml", "xhtml1", "html5", "xhtml5";
+  rdfatest:hostLanguage "xml", "xhtml1", "html5-invalid", "xhtml5-invalid";
   test:informationResourceInput <test-cases/0310.html>;
   test:informationResourceResults <test-cases/0310.sparql>;
   test:purpose "The datatype permits multiple whitespace separated roles";
@@ -2505,7 +2505,7 @@ white   space
   rdfatest:rdfaVersion "rdfa1.1-role";
   test:classification test:required;  # ?!
   test:expectedResults "true"^^xsd:boolean;
-  rdfatest:hostLanguage "xml", "xhtml1", "html5", "xhtml5";
+  rdfatest:hostLanguage "xml", "xhtml1", "html5-invalid", "xhtml5-invalid";
   test:informationResourceInput <test-cases/0314.html>;
   test:informationResourceResults <test-cases/0314.sparql>;
   test:purpose "When role is specified using default vocabulary terms the expected triples are created.";
