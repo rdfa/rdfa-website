@@ -79,7 +79,7 @@ def run_tc(tc, runner, options)
     if File.executable?(runner.split.first)
       uri = CRAZY_IVAN.send(:get_test_url, version, host_language, tc["num"])
       runner_args = ARGV[0].split(/\s+/) + [
-        "--host-language", host_language,
+        "--host-language", host_language.split('-')[0],
         "--version", version.split('-')[0],
         "--uri", uri
       ]
