@@ -2715,3 +2715,13 @@ white   space
    test:informationResourceResults <test-cases/0332.sparql>;
    test:purpose "Tests @lang is used instead of @datatype when @datatype is empty, and @content is used for the value (e.g. annotating a language with human and machine readable text).";
    test:specificationReference "7.5 step 11" .
+<test-cases/0333> dc:contributor "Stéphane Corlosquet";
+   dc:title "@content overrides @datetime (with @datatype specified)";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0333.html>;
+   test:informationResourceResults <test-cases/0333.sparql>;
+   test:purpose "If @content is specified, it must override the value of @datetime (with @datatype specified).";
+   test:specificationReference "HTML+RDFa 1.1 3.1" .
