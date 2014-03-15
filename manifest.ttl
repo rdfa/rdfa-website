@@ -2725,3 +2725,13 @@ white   space
    test:informationResourceResults <test-cases/0333.sparql>;
    test:purpose "If @content is specified, it must override the value of @datetime (with @datatype specified).";
    test:specificationReference "HTML+RDFa 1.1 3.1" .
+<test-cases/0334> dc:contributor "Stéphane Corlosquet";
+   dc:title "@resource changes the current subject for the nested elements";
+   a test:TestCase;
+   rdfatest:rdfaVersion "rdfa1.1";
+   test:classification test:required;
+   rdfatest:hostLanguage "html5", "xhtml5";
+   test:informationResourceInput <test-cases/0334.html>;
+   test:informationResourceResults <test-cases/0334.sparql>;
+   test:purpose "@resource should change the current subject of the triples generated from nested HTML elements.";
+   test:specificationReference "RDFa Core 1.1, section 7.5 step 5" .
