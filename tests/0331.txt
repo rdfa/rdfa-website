@@ -2,6 +2,6 @@
 <head>
    <title>Test 0331</title>
 </head>
-<body lang="en">
+<body lang="en" xml:lang="en">
   <div property="dcterms:language" datatype="dcterms:RFC5646" content="af">Afrikaans</div>
 </body>
