@@ -1,6 +1,6 @@
 # Introduction
 
-This repository controls the [rdfa.info](http://rdfa.info/) webisite, including the
+This repository controls the [rdfa.info](http://rdfa.info/) website, including the
 [RDFa Test Suite](http://rdfa.info/test-suite).
 
 # License
@@ -171,25 +171,59 @@ To add a processor to the test suite, add to the object definition in
 `processors.json` in alphabetical order. This is currently defined as follows:
 
     {
-      "librdfa": {
-        "endpoint": "http://librdfa.digitalbazaar.com/rdfa2rdf.py?uri=",
-        "doap": "https://github.com/rdfa/librdfa"
+      "any23 (Java)": {
+        "endpoint": "http://any23.org/turtle/",
+        "doap": "http://any23.org/",
+        "doap_url": "/earl-reports/any23-doap.ttl"
       },
-      "pyRdfa": {
+      "clj-rdfa (Clojure)": {
+        "endpoint": "http://clj-rdfa.herokuapp.com/extract.ttl?url=",
+        "doap": "https://github.com/niklasl/clj-rdfa",
+        "doap_url": "/earl-reports/clj-rdfa-doap.ttl"
+      },
+      "EasyRdf (PHP)": {
+        "endpoint": "http://www.easyrdf.org/converter?input_format=rdfa&raw=1&uri=",
+        "doap": "http://www.aelius.com/njh/easyrdf/",
+        "doap_url": "/earl-reports/easyrdf-doap.ttl"
+      },
+      "Green Turtle (JavaScript)": {
+        "doap": "https://code.google.com/p/green-turtle/",
+        "doap_url": "/earl-reports/green-turtle-doap.ttl"
+      },
+      "java-rdfa (Java)": {
+        "endpoint": "http://rdf-in-html.appspot.com/translate/?parser=XHTML&uri=",
+        "doap": "https://github.com/shellac/java-rdfa",
+        "doap_url": "/earl-reports/java-rdfa-doap.ttl"
+      },
+      "librdfa (C)": {
+        "endpoint": "http://librdfa.digitalbazaar.com/rdfa2rdf.py?uri=",
+        "doap": "https://github.com/rdfa/librdfa",
+        "doap_url": "/earl-reports/librdfa-doap.ttl"
+      },
+      "pyRdfa (Python)": {
         "endpoint": "http://www.w3.org/2012/pyRdfa/extract?uri=",
         "doap": "http://www.w3.org/2012/pyRdfa"
       },
-      "RDF.rb": {
+      "RDF::RDFa (Ruby)": {
         "endpoint": "http://rdf.greggkellogg.net/distiller?raw=true&in_fmt=rdfa&uri=",
         "doap": "http://rubygems.org/gems/rdf-rdfa",
-        "doap_url": "https://raw.github.com/gkellogg/rdf-rdfa/master/etc/doap.html"
+        "doap_url": "/earl-reports/rdf-rdfa-doap.ttl"
+      },
+      "RDF::RDFa::Parser (Perl)": {
+        "endpoint": "http://buzzword.org.uk/2012/rdfa-distiller/?format=rdfxml&url=",
+        "doap": "http://purl.org/NET/cpan-uri/dist/RDF-RDFa-Parser/v_1-097",
+        "doap_url": "/earl-reports/rdf-rdfa-parser-doap.ttl"
+      },
+      "Semargl (Java)": {
+        "endpoint": "http://demo.semarglproject.org/process?uri=",
+        "doap": "http://semarglproject.org"
       },
       "other":  {
         "endpoint": "",
         "doap": ""
       }
     }
-
+    
 The `doap` is the IRI defining the processor. It should be an information resource resulting in a
 [DOAP](https://github.com/edumbill/doap/wiki) project description, and will be used when formatting reports.
 
