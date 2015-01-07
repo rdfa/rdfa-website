@@ -219,7 +219,7 @@
     var subjects = data.getSubjects();
     var embedded = {};
 
-    var createNode = function(s, p, data, rval) {
+    var createNode = function(s, p, data, rval, ancestors) {
       var triples = data.getSubject(s);
       var predicates = triples === null ? [] : triples.predicates;
       var name = '';
@@ -233,6 +233,13 @@
       if(p !== undefined) {
         name = play.getIriShortName(p) + ': ';
       }
+
+      // keep track of subjects that we're branching from
+      // to avoid recursing into them again.
+      if (ancestors === undefined) {
+        ancestors = [];
+      }
+      ancestors = ancestors.concat(s);
 
       if(s.charAt(0) == '_') {
         name += 'Item ' + bnodeNames[s];
@@ -258,9 +265,10 @@
           var value = '';
           var o = objects[oi];
 
-          if(o.type == RDF_OBJECT) {
+          if(o.type == RDF_OBJECT && ancestors.indexOf(o.value) == -1) {
             // recurse to create a node for the object if it's an object
-            createNode(o.value, p, data, node);
+            // and is not referring to itself
+            createNode(o.value, p, data, node, ancestors);
             embedded[o.value] = true;
           }
           else {
@@ -269,6 +277,11 @@
             if(o.type == RDF_XML_LITERAL) {
               // if the property is an XMLLiteral, serialise it
               name = play.nodelistToXMLLiteral(o.value);
+            }
+            else if (o.type == RDF_OBJECT) {
+              // shorten any IRIs (if the property is referring to the
+              // object itself)
+              name = play.getIriShortName(o.value, true);
             }
             else {
               name = o.value;
