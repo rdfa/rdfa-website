@@ -4,13 +4,20 @@
 <body>
   <div>
     Vocabulary Prefixes
+    <span property="csvw:">CSVW</span>
+    <span property="dcat:">DCAT</span>
+    <span property="qb:">QB</span>
     <span property="grddl:">GRDDL</span>
     <span property="ma:">MA</span>
+    <span property="org:">ORG</span>ORG
     <span property="owl:">OWL</span>
+    <span property="prov:">PROV</span>
     <span property="rdf:">RDF</span>
     <span property="rdfa:">RDFa</span>
     <span property="rdfs:">RDFS</span>
     <span property="rif:">RIF</span>
+    <span property="rr:">RR</span>
+    <span property="sd:">SD</span>
     <span property="skos:">SKOS</span>
     <span property="skosxl:">SKOS-XL</span>
     <span property="wdr:">WDR</span>
