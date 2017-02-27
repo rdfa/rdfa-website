@@ -32,12 +32,8 @@ var AppRouter = Backbone.Router.extend({
     this.testList = new TestCollection([], {version: this.version});
     this.runAllView = new RunAllView({model: this.testList});
     this.progressView = new ProgressView({model: this.testList});
-    if ($("span.email").length > 0) {
-      this.testList.fetch();
-      this.testListView = new TestListView({model: this.testList});
-    } else {
-      this.unauthorizedView = new UnauthorizedView();
-    }
+    this.testList.fetch();
+    this.testListView = new TestListView({model: this.testList});
   },
 
   routes: {

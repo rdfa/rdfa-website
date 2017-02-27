@@ -2,7 +2,6 @@ require 'linkeddata'
 require 'sparql'
 require 'sinatra'
 require 'sinatra/respond_to'
-require 'sinatra/browserid'
 require 'sinatra/sparql'
 require 'digest/sha1'
 require 'crazyivan/core'
@@ -16,7 +15,6 @@ module CrazyIvan
 
     configure do
       register Sinatra::RespondTo
-      register Sinatra::BrowserID
       register Sinatra::SPARQL
       register Sinatra::SimpleAssets
 
@@ -26,7 +24,6 @@ module CrazyIvan
       set :app_name, "The RDFa Test Harness"
       set :public_folder, File.expand_path('../../public',  __FILE__)
       set :views, File.expand_path('../views',  __FILE__)
-      set :browserid_login_button, :grey
 
       mime_type :sparql, "application/sparql-query"
       mime_type :ttl, "text/turtle"
@@ -55,7 +52,6 @@ module CrazyIvan
           '/javascripts/views/run-all-view.js',
           '/javascripts/views/source-view.js',
           '/javascripts/views/test-view.js',
-          '/javascripts/views/unauthorized-view.js',
           '/javascripts/views/version-view.js',
           '/javascripts/application.js'
         ]
@@ -66,8 +62,7 @@ module CrazyIvan
       puts "[#{request.path_info}], " +
            "#{params.inspect}, " +
            "#{format}, " +
-           "#{request.accept.inspect}, " +
-           "#{authorized? ? Digest::SHA1.hexdigest(authorized_email) : 'unauthorized'}"
+           "#{request.accept.inspect}"
     end
 
     get '/test-suite' do
@@ -76,23 +71,9 @@ module CrazyIvan
 
     get '/test-suite/' do
       cache_control :private
-      callback = if ENV['BROWSERID_CALLBACK_BASE']
-        ENV['BROWSERID_CALLBACK_BASE'] + request.path
-      else
-        request.url
-      end
+      callback = request.url
 
-      locals = {
-        :email => (authorized_email if authorized?),
-        :callback => callback,
-      }
-      haml :test_suite,
-           :locals => locals
-    end
-    
-    get '/test-suite/logout' do
-      logout!
-      redirect '/test-suite/'
+      haml :test_suite, locals: {:callback => callback}
     end
 
     ##
@@ -205,8 +186,6 @@ module CrazyIvan
       expected_results = params["expected-results"] == 'true'
       format :json if format == :js
 
-      return [403, "Unauthorized access is not allowed"] unless authorized?
-
       begin
         if perform_test_case(params[:version], params[:suite], params[:num], params["rdfa-extractor"], expected_results)
           status = "PASS"
@@ -244,8 +223,6 @@ module CrazyIvan
       params["rdfa-extractor"] ||= "http://www.w3.org/2012/pyRdfa/extract?uri="
       format :json if format == :js
       prefixes = {}
-
-      return [403, "Unauthorized access is not allowed"] unless authorized?
 
       begin
         locals = get_test_details(params[:version], params[:suite], params[:num])

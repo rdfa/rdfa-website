@@ -11,7 +11,6 @@ gem 'rdf-rdfa', :git => "git://github.com/ruby-rdf/rdf-rdfa.git", :require => 'r
 gem 'json-ld', :git => "git://github.com/ruby-rdf/json-ld.git", :require => 'json/ld'
 gem 'sinatra-simple-assets', :require => 'sinatra/simple_assets'
 gem 'sinatra-respond_to', :require => 'sinatra/respond_to'
-gem 'sinatra-browserid', :git => "git://github.com/gkellogg/sinatra-browserid.git", :require => 'sinatra/browserid'
 gem 'rack-cache', :require => 'rack/cache'
 gem 'curb'
 
@@ -20,7 +19,6 @@ gem 'curb'
 # and rake tasks are available in development mode:
 group :development, :test do
   gem 'shotgun'
-  gem "wirble"
   gem "syntax"
   gem "debugger", :platforms => :mri_19
 end
