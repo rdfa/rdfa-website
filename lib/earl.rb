@@ -194,15 +194,15 @@ class EARL
   def json_hash
     @json_hash ||= begin
       # Customized JSON-LD output
-      hash = Hash.ordered
-      hash["@context"] = "http://rdfa.info/contexts/rdfa-earl.jsonld"
-      hash["@id"] = SUITE_URI
-      hash["@type"] = %w(earl:Software doap:Project)
-      hash['homepage'] = "http://rdfa.info/"
-      hash['name'] = "RDFa Test Suite"
-      hash['processor'] = json_test_subject_info
-      hash['entries'] = json_result_info
-      hash
+      {
+        "@context" => "http://rdfa.info/contexts/rdfa-earl.jsonld",
+        "@id" => SUITE_URI,
+        "@type" => %w(earl:Software doap:Project),
+        "homepage" => "http://rdfa.info/",
+        "name" => "RDFa Test Suite",
+        "processor" => json_test_subject_info,
+        "entries" => json_result_info
+      }
     end
   end
 
@@ -222,7 +222,7 @@ class EARL
         end
         if solution[:dev_name]
           dev_type = solution[:dev_type].to_s =~ /Organization/ ? "foaf:Organization" : "foaf:Person"
-          info['developer'] = Hash.ordered
+          info['developer'] = {}
           info['developer']['@id'] = solution[:developer].to_s if solution[:developer].uri?
           info['developer']['@type'] = dev_type
           info['developer']['foaf:name'] = solution[:dev_name].to_s if solution[:dev_name]
@@ -232,9 +232,10 @@ class EARL
       # Map ids and values to array entries
       proc_info.keys.sort_by {|id| proc_info[id]['name'].downcase}.map do |id|
         info = proc_info[id]
-        processor = Hash.ordered
-        processor["@id"] = id
-        processor["@type"] = %w(earl:TestSubject doap:Project)
+        processor = {
+          "@id" => id,
+          "@type" => %w(earl:TestSubject doap:Project)
+        }
         %w(name developer doap_desc homepage language).each do |prop|
           processor[prop] = info[prop] if info[prop]
         end

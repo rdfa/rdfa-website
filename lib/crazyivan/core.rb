@@ -118,18 +118,20 @@ module CrazyIvan
     # and /contexts/rdfa-test.jsonld
     def manifest_json
       unless File.exist?(MANIFEST_JSON) && File.mtime(MANIFEST_JSON) >= File.mtime(MANIFEST_FILE)
-        hash = Hash.ordered
-        hash["@context"] = "http://rdfa.info/contexts/rdfa-test.jsonld"
-        hash['@graph'] = []
+        hash = {
+          "@context" => "http://rdfa.info/contexts/rdfa-test.jsonld",
+          "@graph" => []
+        }
 
         start = Time.now
         puts "Started SPARQL @ #{start.to_s}"
         SPARQL.execute(TESTS_QUERY, graph).each do |tc|
           tc_hash = hash['@graph'].last
           unless tc_hash && tc_hash['@id'] == tc[:id]
-            tc_hash = Hash.ordered
-            tc_hash['@id'] = tc[:id].to_s
-            tc_hash['@type'] = 'test:TestCase'
+            tc_hash = {
+              "@id" => tc[:id].to_s,
+              "@type" => "test:TestCase"
+            }
             tc[:num] = tc_hash['@id'].split('/').last.split('.').first
             tc[:classification] ||= 'http://www.w3.org/2006/03/test-description#required'
             %w(num classification contribuor description input purpose queryParam reference results).each do |prop|
